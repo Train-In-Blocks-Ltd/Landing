@@ -6,7 +6,6 @@ import PricingComponent from '../components/Pricing.vue'
 import RoadmapComponent from '../components/Roadmap.vue'
 import ExploreComponent from '../components/Explore.vue'
 
-
 Vue.use(VueRouter)
 
 const router = new VueRouter({

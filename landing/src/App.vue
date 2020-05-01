@@ -59,6 +59,10 @@ export default {
     margin: 0;
     padding: 0 20%;
     overflow-y: hidden;
+    letter-spacing: 0.10em;
+  }
+  h1 {
+    font-size: 3em;
   }
   #top {
     display: flex;
@@ -138,7 +142,6 @@ export default {
   }
   p {
     font-size: 1em;
-    letter-spacing: 0.10em;
     line-height: 1.5em;
   }
 
@@ -158,4 +161,6 @@ export default {
   ::-webkit-scrollbar-thumb:hover {
       background: #00000030;
   }
+
+  /* Quill */
 </style>

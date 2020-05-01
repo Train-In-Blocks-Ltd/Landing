@@ -1,20 +1,39 @@
 <template>
     <div>
         <h1 class="paper--title">{{title}}</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><br><br><br> Optio totam unde distinctio, doloribus minima nemo tenetur. Tempora, nisi. Eius odit modi pariatur ut adipisci rem iusto ab minima perspiciatis maxime. Eveniet, atque totam? Corporis quibusdam fugiat doloremque accusamus quisquam, laudantium ipsa facilis unde, praesentium sint porro reprehenderit illo. Eius eveniet culpa, autem minus dolorum, illum dolores fugit quae quibusdam quis deserunt? Dolorum quaerat, amet eius nobis quo, incidunt laboriosam ratione, magni provident sapiente earum aliquam possimus! Sit quis obcaecati assumenda, quisquam ratione aliquid. Magnam soluta sit animi quibusdam nam magni. Eveniet, aliquid ut cum aspernatur sequi ad quod quis? Aliquam rem autem pariatur asperiores repellendus velit dolor id illum sed tempora nam assumenda, incidunt reiciendis nostrum itaque aliquid nemo error, optio dignissimos!<br><br><br><br><br> Minus fuga doloribus, asperiores ab quo incidunt deserunt neque et commodi soluta ratione. Veniam magni aspernatur nihil, numquam assumenda voluptates? Deserunt incidunt dolor magnam quis fuga, omnis voluptas architecto quod. Numquam facere ullam, temporibus, ducimus cumque nobis nisi laudantium dolores id odit commodi libero delectus tempore reiciendis, voluptas iusto tempora quasi. Est, quasi at accusantium facere voluptatum quae? <br> Ex voluptatum aut obcaecati eveniet quasi. Expedita provident asperiores ea blanditiis earum, suscipit, eveniet dignissimos ut quo, amet libero odit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dicta similique repellendus corporis ipsum. Corporis at deleniti debitis iusto nobis dicta facere sunt dignissimos, voluptate illum explicabo alias harum repellat, nostrum culpa neque. Tenetur dolore quasi nobis, delectus dicta voluptate? Debitis voluptates quod laudantium eaque harum, nisi quidem quas nam.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium aliquid obcaecati consectetur nihil quis voluptates, at beatae quisquam quasi animi autem assumenda fugiat? Deleniti sit fugit qui ad amet corporis, placeat eos repellat nam voluptate obcaecati eaque praesentium quibusdam voluptatibus optio harum sed laborum! Rerum, officiis. Sapiente doloribus itaque iste.</p>
+        <div id="container--2c">
+            <line-chart id="container--2c__chart"></line-chart>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit facilis enim necessitatibus voluptatibus. Nobis mollitia quasi, aperiam error expedita maxime maiores nemo quia necessitatibus excepturi! Ut accusantium optio et quas aliquam! Iste consequatur nam illo soluta voluptatum dignissimos recusandae inventore, alias atque minima! Molestiae corporis sapiente deserunt consectetur maxime.</p>
+        </div>
     </div>
 </template>
 
 <script>
+    import LineChart from './Chart'
+
     export default {
+        components: {
+            LineChart
+        },
         data() {
             return {
-                title: 'Features'
+                title: 'Features',
             }
-        }
+        },
     }
 </script>
 
 <style scoped>
-
+    #container--2c {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #container--2c__chart {
+        width: 100%;
+        height: 100%;
+    }
+    #container--2c > p {
+        padding: 0 1.5em;
+    }
 </style>
