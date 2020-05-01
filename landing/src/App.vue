@@ -20,7 +20,7 @@
     <div class="paper paper--back animated fadeInUp" style="top: 35vh; left: 13vw; background: #00000004; animation-delay: 400ms"></div>
     <div class="paper paper--back animated fadeInUp" style="top: 40vh; right: 15vw; background: #00000008; animation-delay: 200ms"></div>
     <div class="animated fadeInUp">
-      <div class="paper">
+      <div id="paper--display" class="paper">
         <transition enter-active-class="animated fadeInUp delay-1s" leave-active-class="animated fadeOutDown">
           <router-view></router-view>
         </transition>
@@ -76,9 +76,41 @@ export default {
     margin-left: 2vw;
     text-decoration: none;
     color: #282828;
+
+    transition: 300ms;
+  }
+  .input--option:hover {
+    opacity: 70%;
+  }
+  .input--option
+  {
+    position: relative;
+  }
+  .input--option:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #282828;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all 300ms;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .input--option:hover:before {
+    transform: scaleX(1);
+    opacity: 70%;
+  }
+  nav a.router-link-exact-active {
+    font-weight: bold;
   }
 
   /* Paper and Child Element */
+  #paper--display {
+    overflow-y: auto;
+  }
   .paper {
     vertical-align: bottom;
     height: 60vh;
@@ -108,5 +140,22 @@ export default {
     font-size: 1em;
     letter-spacing: 0.10em;
     line-height: 1.5em;
+  }
+
+  /* Scroll-bar */
+  ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+      background: transparent; 
+  }
+    
+  ::-webkit-scrollbar-thumb {
+      background: #00000020; 
+  }
+    
+  ::-webkit-scrollbar-thumb:hover {
+      background: #00000030;
   }
 </style>
