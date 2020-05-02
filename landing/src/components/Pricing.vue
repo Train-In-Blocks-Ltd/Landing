@@ -63,4 +63,9 @@
         background-color: #282828;
         color: #fff;
     }
+    @media (max-width: 992px) {
+        #pricing {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>

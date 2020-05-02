@@ -53,4 +53,10 @@
         letter-spacing: 0.10em;
         color: #282828;
     }
+    @media (max-width: 768px) {
+        #workout {
+            grid-template-columns: 1fr;
+            width: auto;
+        }
+    }
 </style>

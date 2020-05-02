@@ -17,8 +17,8 @@
         <router-link class="input--option" to="/explore">Explore</router-link>
       </nav>
     </div>
-    <div class="paper paper--back animated fadeInUp" style="top: 35vh; left: 13vw; background: #00000004; animation-delay: 400ms"></div>
-    <div class="paper paper--back animated fadeInUp" style="top: 40vh; right: 15vw; background: #00000008; animation-delay: 200ms"></div>
+    <div id="back--two" class="paper paper--back animated fadeInUp"></div>
+    <div id="back--one" class="paper paper--back animated fadeInUp"></div>
     <div class="animated fadeInUp">
       <div id="paper--display" class="paper">
         <transition enter-active-class="animated fadeInUp delay-1s" leave-active-class="animated fadeOutDown">
@@ -31,17 +31,20 @@
 
 <script>
 
-export default {
-  name: 'App',
-  components: {
-  },
-  data() {
-    return {
+  export default {
+    name: 'App',
+    components: {
 
+    },
+    data() {
+      return {
+
+}
+    },
+    methods: {
 
     }
-  },
-}
+  }
 </script>
 
 <style>
@@ -141,6 +144,18 @@ export default {
     transition: 500ms;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
+  #back--one {
+    top: 35vh; 
+    left: 13vw; 
+    background: #00000004; 
+    animation-delay: 400ms
+  }
+  #back--two {
+    top: 40vh; 
+    right: 15vw; 
+    background: #00000008; 
+    animation-delay: 200ms
+  }
   .paper--title {
     margin: 0;
   }
@@ -151,8 +166,8 @@ export default {
 
   /* Scroll-bar */
   ::-webkit-scrollbar {
-      width: 6px;
-      height: 6px;
+      width: 10px;
+      height: 10px;
   }
   ::-webkit-scrollbar-track {
       background: transparent; 
@@ -165,6 +180,33 @@ export default {
   ::-webkit-scrollbar-thumb:hover {
       background: #00000030;
   }
-
-  /* Quill */
+  @media (max-width: 1200px) {
+    .paper {
+      padding: 5em;
+    }
+  }
+  @media (max-width: 992px) {
+    body {
+      padding: 0 15%;
+    }
+    .paper {
+      padding: 4em;
+    }
+    #back--one {
+      left: 10vw;
+    }
+    #back--two {
+      right: 10vw;
+    }
+  }
+  @media (max-width: 768px) {
+    .paper {
+      padding: 3em;
+    }
+  }
+  @media (max-width: 576px) {
+    body {
+      padding: 0 10%;
+    }
+  }
 </style>

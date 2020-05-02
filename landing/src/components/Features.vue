@@ -46,4 +46,9 @@
     .container--2c > p {
         padding: 6vh 3vw;
     }
+    @media (max-width: 768px) {
+        .container--2c {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
