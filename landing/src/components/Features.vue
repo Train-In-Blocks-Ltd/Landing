@@ -10,6 +10,7 @@
         <div class="spacer"></div>
         <line-chart id="chart"></line-chart><br><br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit facilis enim necessitatibus voluptatibus. Nobis mollitia quasi, aperiam error expedita maxime maiores nemo quia necessitatibus excepturi! Ut accusantium optio et quas aliquam! Iste consequatur nam illo soluta voluptatum dignissimos recusandae inventore, alias atque minima! Molestiae corporis sapiente deserunt consectetur maxime.</p>        
+        <div class="spacer"></div>
     </div>
 </template>
 
@@ -49,6 +50,9 @@
     @media (max-width: 768px) {
         .container--2c {
             grid-template-columns: 1fr;
+        }
+        .container--2c > p {
+            padding: 2vh 1vw;
         }
     }
 </style>

@@ -4,23 +4,23 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aut unde quidem ipsum error, dolor magnam, eos, dolorem sed veritatis incidunt eaque natus? Officia, quos aliquam consectetur natus reiciendis ea.</p><br>
         <div id="roadmap">
             <div>
-                <div class="icon">Icon</div>
+                <img class="icon" src="../assets/svg/Cog.svg">
                 <p>Prototype Completed</p>
             </div>
             <div>
-                <div class="icon">Icon</div>
+                <img class="icon" src="../assets/svg/UserTested.svg">              
                 <p>User Tested</p>
             </div>
             <div>
-                <div class="icon">Icon</div>
+                <img class="icon" src="../assets/svg/Released.svg">
                 <p>Version 1.0</p>
             </div>
             <div>
-                <div class="icon">Icon</div>
+                <img class="icon" src="../assets/svg/Upgrade.svg">
                 <p>Version 1.1</p>
             </div>     
             <div>
-                <div class="icon">Icon</div>
+                <img class="icon" src="../assets/svg/SC.svg">
                 <p>Strength and Conditioning Addon</p>
             </div>    
         </div>
@@ -50,9 +50,8 @@
         margin: 0 1em;
     }
     .icon {
-        background-color: #c4c4c4;
         text-align: center;
-        height: 5em;
-        width: 5em;
+        height: 4em;
+        width: 4em;
     }
 </style>

@@ -3,15 +3,20 @@
         <h1 class="paper--title">{{title}}</h1>
         <div id="pricing">
             <div class="pricing__plans">
-                <h3>Basic</h3>
+                <img class="icon--gif" src="../assets/gif/deadlift.gif"/>
+                <h2>Basic - Monthly</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae saepe modi consequatur cumque asperiores sunt nihil, repudiandae ipsa? Ipsum voluptatum minus ducimus tempore vel modi, et perferendis quis incidunt ab.</p>
             </div>
             <div class="pricing__plans">
-                <h3>Pro</h3>
+                <img class="icon--gif" src="../assets/gif/trophy.gif"/>
+                <h2 id="pro">Pro - Yearly</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero ut voluptatum debitis ipsa consequatur deleniti molestiae totam voluptates animi, blanditiis ex illo? Reprehenderit ex minima vitae quidem sit quos!</p>
             </div>    
         </div>
         <button id="button--start">What are you waiting for?</button>
+        <footer>
+            <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a>
+        </footer>
     </div>
 </template>
 
@@ -63,9 +68,28 @@
         background-color: #282828;
         color: #fff;
     }
+    h2 {
+        width: fit-content;
+        padding: 0.1em 1em;
+        margin: auto;
+    }
+    #pro {
+        background-color: #282828;
+        color: #fff;
+    }
+    .icon--gif {
+        margin: 3em;
+    }
     @media (max-width: 992px) {
         #pricing {
             grid-template-columns: 1fr;
+        }
+    }
+    @media (max-width: 576px) {
+        .pricing__plans {
+            background-color: transparent;
+            padding: 0;
+            box-shadow: none;
         }
     }
 </style>
