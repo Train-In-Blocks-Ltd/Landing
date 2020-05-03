@@ -1,9 +1,11 @@
 <template>
     <div>
         <h1 class="paper--title">{{title}}</h1>
+        <h2 id="text--good" class="desc">Good Trainers Make Programmes,</h2>
+        <h2 id="text--exceptional" class="desc">Exceptional Trainers Design Them.</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis rerum, similique eligendi labore sit alias laudantium commodi consequatur voluptatibus necessitatibus expedita reprehenderit ex incidunt quis dolores architecto ullam fuga provident.</p>
         <div id="container--2c">
-            <img id="laptop" src="../assets/svg/Laptop.svg">
+            <img id="laptop" src="../assets/svg/LaptopTablet.svg">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus incidunt dignissimos natus fuga aspernatur voluptatum.</p>
         </div>
         <div class="spacer"></div>
@@ -24,7 +26,7 @@
         },
         data() {
             return {
-                title: 'Welcome'
+                title: 'Want to train more clients effectively?'
             }
         }
     }
@@ -33,7 +35,7 @@
 <style scoped>
     #container--2c {
         display: grid;
-        grid-template-columns: 1fr 0.6fr;
+        grid-template-columns: 1fr 0.4fr;
         grid-gap: 1em;
         height: auto;
         width: 100%;
@@ -52,10 +54,26 @@
     #container--2c3r > div {
         margin: 5vh 0;
     }
+    #text--good {
+        border: 2px solid #282828;
+    }
+    #text--exceptional {
+        background-color: #282828;
+        color: #fff;
+    }
     .img {
         width: 100%;
     }
     #laptop {
-        width: 30vw;
+        width: 40vw;
+    }
+    @media (max-width: 768px) {
+        #container--2c {
+            grid-template-columns: 1fr;
+        }
+        #laptop {
+            width: 50vw;
+            margin: auto;
+        }
     }
 </style>

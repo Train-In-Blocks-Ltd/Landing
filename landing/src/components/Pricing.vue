@@ -9,11 +9,11 @@
             </div>
             <div class="pricing__plans">
                 <img class="icon--gif" src="../assets/gif/trophy.gif"/>
-                <h2 id="pro">Pro - Yearly</h2>
+                <h2 id="pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">Pro - Yearly</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero ut voluptatum debitis ipsa consequatur deleniti molestiae totam voluptates animi, blanditiis ex illo? Reprehenderit ex minima vitae quidem sit quos!</p>
             </div>    
         </div>
-        <button id="button--start">What are you waiting for?</button>
+        <button id="button--start" >What are you waiting for?</button>
         <footer>
             <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a>
         </footer>

@@ -52,7 +52,7 @@
     font-size: 1em;
   }
   #logo--home {
-    width: 20%;
+    width: 15%;
     height: auto;
   }
   body {
@@ -63,6 +63,10 @@
   }
   h1 {
     font-size: 3em;
+  }
+  .desc {
+    padding: 0.4em;
+    margin: 0.4em 0;
   }
   .spacer {
     width: 100%;
@@ -138,7 +142,7 @@
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   #back--one {
-    top: 35vh; 
+    top: 35vh;
     left: 3vw; 
     animation-delay: 400ms
   }
@@ -148,11 +152,12 @@
     animation-delay: 200ms
   }
   .paper--title {
-    margin: 0;
+    margin: 0 0 0.6em 0;
   }
   p {
     font-size: 1em;
     line-height: 1.5em;
+    margin: 3em 0;
   }
 
   /* Scroll-bar */
