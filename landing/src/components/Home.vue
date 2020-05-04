@@ -1,8 +1,7 @@
 <template>
     <div>
-        <h1 class="paper--title">{{title}}</h1>
-        <h2 id="text--good" class="desc">Good Trainers Make Programmes,</h2>
-        <h2 id="text--exceptional" class="desc">Exceptional Trainers Design Them.</h2>
+        <h1 id="text--good" class="desc">Good Trainers Make Programmes,</h1>
+        <h1 id="text--exceptional" class="desc">Exceptional Trainers Design Them.</h1>
         <div class="spacer"></div>
         <div id="container--2c">
             <h1>Save more time and get more clients.</h1>
@@ -29,6 +28,7 @@
             </svg>
             <h1 class="text--right">Use features that you only need, save your money and expand.</h1>
         </div>
+        <div class="spacer"></div>
     </div>
 </template>
 
@@ -80,12 +80,16 @@
     #container--2c3r > h1 {
         margin: auto;
     }
+    .desc {
+        cursor: default;
+    }
     #text--good {
         margin: 2rem 0 0 0;
         border: 2px solid #282828;
     }
     #text--exceptional {
         background-color: #282828;
+        border: 2px solid #282828;
         color: #fff;
     }
     .text--right {

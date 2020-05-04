@@ -48,7 +48,7 @@
   }
   body {
     margin: 0;
-    padding: 0 15%;
+    padding: 0 8%;
     overflow-y: hidden;
     letter-spacing: 0.10em;
     font-size: 16px;
@@ -135,12 +135,12 @@
   }
   #back--one {
     top: 35vh;
-    left: 3vw; 
+    left: 0; 
     animation-delay: 400ms
   }
   #back--two {
     top: 40vh; 
-    right: 5vw; 
+    right: 0; 
     animation-delay: 200ms
   }
   .paper--title {
@@ -200,6 +200,11 @@
   }
 
   /* Responsiveness */
+  @media (min-width: 1440px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
   @media (max-width: 1200px) {
     .paper {
       padding: 5rem;
@@ -207,19 +212,13 @@
   }
   @media (max-width: 992px) {
     body {
-      padding: 0 10%;
+      padding: 0 6%;
     }
     .paper {
       padding: 4rem;
     }
     .paper--back {
       height: 80vh;
-    }
-    #back--one {
-      left: 0vw;
-    }
-    #back--two {
-      right: 0vw;
     }
   }
   @media (max-width: 768px) {
@@ -254,6 +253,7 @@
     }
     .paper {
       padding: 2rem;
+      height: 70vh;
     }
   }
 </style>
