@@ -14,15 +14,30 @@
                 </defs>
             </svg>
             <img class="icon" src="../assets/svg/Cog.svg" style="grid-area: i1">
-            <p style="grid-area: d1"><b>{{i1}}</b><br></p>
-            <img class="icon" src="../assets/svg/UserTested.svg" style="grid-area: i2">              
-            <p style="grid-area: d2"><b>{{i2}}</b><br></p>
+            <div style="grid-area: d1">
+                <p class="roadmap--title">{{d1a}}</p>
+                <p>{{d1b}}</p>
+            </div>
+            <img class="icon" src="../assets/svg/UserTested.svg" style="grid-area: i2">
+            <div style="grid-area: d2">
+                <p class="roadmap--title">{{d2a}}</p>
+                <p>{{d2b}}</p>
+            </div>
             <img class="icon" src="../assets/svg/Released.svg" style="grid-area: i3">
-            <p style="grid-area: d3"><b>{{i3}}</b><br></p>
+            <div style="grid-area: d3">
+                <p class="roadmap--title">{{d3a}}</p>
+                <p>{{d3b}}</p>
+            </div>
             <img class="icon" src="../assets/svg/Upgrade.svg" style="grid-area: i4">
-            <p style="grid-area: d4"><b>{{i4}}</b><br></p>
+            <div style="grid-area: d4">
+                <p class="roadmap--title">{{d4a}}</p>
+                <p>{{d4b}}</p>
+            </div>
             <img class="icon" src="../assets/svg/SC.svg" style="grid-area: i5">
-            <p style="grid-area: d5"><b>{{i5}}</b></p>
+            <div style="grid-area: d5">
+                <p class="roadmap--title">{{d5a}}</p>
+                <p>{{d5b}}</p>
+            </div>
         </div>    
     </div>
 </template>
@@ -32,11 +47,16 @@
         data() {
             return {
                 title: 'Roadmap',
-                i1: 'Prototyping',
-                i2: 'User Testing',
-                i3: 'Version 1.0',
-                i4: 'Version 1.1',
-                i5: 'Strength and Conditioning Add-on'
+                d1a: 'Prototyping',
+                d2a: 'User Testing',
+                d3a: 'Version 1.0',
+                d4a: 'Version 1.1',
+                d5a: 'Strength and Conditioning Add-on',
+                d1b: 'Mastering and building the essential features.',
+                d2b: 'Getting some feedback and improving the app from the get-go.',
+                d3b: '',
+                d4b: 'Patching it up to give you guys the latest.',
+                d5b: 'Take your business to the next level.'
             }
         }
     }
@@ -60,16 +80,20 @@
         margin: 0 0 0 10%;
     }
     #roadmap > div {
-        margin: 1rem 0;
+        margin: auto 0;
     }
     #roadmap > div > p {
-        margin: 0 1rem;
+        margin: 0.5rem 1rem;
     }
     .icon {
         margin: auto;
         text-align: center;
         height: 4rem;
         width: 4rem;
+    }
+    .roadmap--title {
+        font-size: 1.5rem;
+        font-weight: bold;
     }
     #progress {
         grid-area: p;

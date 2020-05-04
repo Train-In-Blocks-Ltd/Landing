@@ -1,16 +1,14 @@
 <template>
     <div>
         <h1 class="paper--title">{{title}}</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium aliquid obcaecati consectetur nihil quis voluptates, at beatae quisquam quasi animi autem assumenda fugiat? Deleniti sit fugit qui ad amet corporis, placeat eos repellat nam voluptate obcaecati eaque praesentium quibusdam voluptatibus optio harum sed laborum! Rerum, officiis. Sapiente doloribus itaque iste.</p>
-        <h2>Give it a try!!</h2>
+        <div class="spacer"></div>
         <div class="container--2c">
             <Editor></Editor>
             <div>
-                <p><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, animi.</b><br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nulla?</p>
-                <button>Workout 1</button>
-                <button>Workout 2</button>
-                <button>Workout 3</button>
-                <button>Workout 4</button>
+                <h2>Say Goodbye to Manually Tracking Data</h2>
+                <p>Our text box will understand the workouts and will do all the math for you!!</p>
+                <h2>Just learn the format and start speaking with us.</h2>
+                <p>A) Back Squat: 3 x 6 at 70/80/90kg<br>B) Bench Press: 2 x 15 at 50/55/60kg</p>
             </div>
         </div>
         <div class="spacer"></div>
@@ -31,7 +29,7 @@
         },
         data() {
             return {
-                title: 'Features',
+                title: 'Give it a try!',
             }
         }
     }
