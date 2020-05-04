@@ -5,12 +5,13 @@
             <div class="pricing__plans">
                 <img class="icon--gif" src="../assets/gif/deadlift.gif"/>
                 <h2>Basic - Monthly</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae saepe modi consequatur cumque asperiores sunt nihil, repudiandae ipsa? Ipsum voluptatum minus ducimus tempore vel modi, et perferendis quis incidunt ab.</p>
+                <h1 class="pricing__cost">£10</h1>
             </div>
             <div class="pricing__plans">
                 <img class="icon--gif" src="../assets/gif/trophy.gif"/>
                 <h2 id="pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">Pro - Yearly</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum vero ut voluptatum debitis ipsa consequatur deleniti molestiae totam voluptates animi, blanditiis ex illo? Reprehenderit ex minima vitae quidem sit quos!</p>
+                <h1 class="pricing__cost">£90</h1>
+                <p>Save 25% on the annual plan,<br><b>that's £7.50/month</b></p>
             </div>    
         </div>
         <button id="button--start" >What are you waiting for?</button>
@@ -35,30 +36,34 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1vw;
-        margin-top: 3em;
+        margin-top: 3rem;
     }
     .pricing__plans {
-        height: fit-content, 100%;
+        height: 35vh;
         box-shadow: 0px 20px 40px 12px rgba(0,0,0,0.05);
         background-color: #fff;
-        padding: 2em;
+        padding: 2rem;
         text-align: center;
     }
-    p {
-        text-align: left;
+    .pricing__plans > p {
+        margin: 0;
+    }
+    .pricing__cost {
+        font-size: 4rem;
+        margin-bottom: 0;
     }
     #button--start {
         background-color: transparent;
         border: 1px solid #282828;
         width: 100%;
-        height: 3em;
+        height: 3rem;
         outline-width: 0;
-        margin: 2em 0;
+        margin: 2rem 0;
 
-        font-size: 1.5em;
+        font-size: 1.5rem;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
-        letter-spacing: 0.15em;
+        letter-spacing: 0.15rem;
 
         cursor: pointer;
         transition: all 400ms;
@@ -70,15 +75,18 @@
     }
     h2 {
         width: fit-content;
-        padding: 0.1em 1em;
+        padding: 0.1rem 1rem;
         margin: auto;
     }
     #pro {
         background-color: #282828;
         color: #fff;
     }
+    footer {
+        text-align: right;
+    }
     .icon--gif {
-        margin: 3em;
+        margin: 3rem;
     }
     @media (max-width: 992px) {
         #pricing {

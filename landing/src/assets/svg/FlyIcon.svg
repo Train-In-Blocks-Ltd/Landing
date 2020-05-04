@@ -1,0 +1,7 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M68.0008 100L52.0001 54.0263H0L100 0L68.0008 100Z" fill="#282828">
+        <animateMotion dur="3000ms" repeatCount="indefinite"
+        path="M 20 20 L 45 35 L 20 20"/>
+    </path>
+    <line x1="170" y1="0" x2="0" y2="160" stroke="#282828" stroke-width="3"/>
+</svg>

@@ -5,7 +5,13 @@
         <h2>Give it a try!!</h2>
         <div class="container--2c">
             <Editor></Editor>
-            <p><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, animi.</b><br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nulla?</p>
+            <div>
+                <p><b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, animi.</b><br><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nulla?</p>
+                <button>Workout 1</button>
+                <button>Workout 2</button>
+                <button>Workout 3</button>
+                <button>Workout 4</button>
+            </div>
         </div>
         <div class="spacer"></div>
         <line-chart id="chart"></line-chart><br><br>
@@ -27,7 +33,7 @@
             return {
                 title: 'Features',
             }
-        },
+        }
     }
 </script>
 
@@ -38,7 +44,7 @@
         margin: auto;
     }
     h2 {
-        margin: 2em 0 0 0;
+        margin: 2rem 0 0 0;
     }
     .container--2c {
         display: grid;

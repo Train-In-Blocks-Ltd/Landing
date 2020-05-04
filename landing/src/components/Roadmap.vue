@@ -44,7 +44,7 @@
 
 <style scoped>
     #roadmap {
-        line-height: 5em;
+        line-height: 5rem;
         display: grid;
         grid-template-areas: 
             "i1 p d1"
@@ -54,22 +54,22 @@
             "i5 p d5";
         grid-template-columns: 0.1fr 0.1fr 1fr;
         grid-template-rows: repeat(5, 1fr);
-        grid-gap: 0 1em;
+        grid-gap: 0 1rem;
         width: fit-content;
         height: auto;
         margin: 0 0 0 10%;
     }
     #roadmap > div {
-        margin: 1em 0;
+        margin: 1rem 0;
     }
     #roadmap > div > p {
-        margin: 0 1em;
+        margin: 0 1rem;
     }
     .icon {
         margin: auto;
         text-align: center;
-        height: 4em;
-        width: 4em;
+        height: 4rem;
+        width: 4rem;
     }
     #progress {
         grid-area: p;

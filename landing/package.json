@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "animate.css": "^3.7.2",
+    "aos": "^2.3.4",
     "chart.js": "^2.9.3",
     "core-js": "^3.6.4",
+    "hammerjs": "^2.0.8",
     "vue": "^2.6.11",
     "vue-chartjs": "^3.5.0",
     "vue-quill": "^1.5.1",

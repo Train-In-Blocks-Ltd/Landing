@@ -23,6 +23,7 @@
 </template>
 
 <script>
+
   export default {
     name: 'App',
     components: {
@@ -40,7 +41,6 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: left;
     color: #282828;
-    font-size: 1em;
   }
   #logo--home {
     width: 15%;
@@ -51,13 +51,14 @@
     padding: 0 15%;
     overflow-y: hidden;
     letter-spacing: 0.10em;
+    font-size: 16px;
   }
   h1 {
-    font-size: 3em;
+    font-size: 3rem;
   }
   .desc {
-    padding: 0.4em;
-    margin: 0.4em 0;
+    padding: 0.4rem;
+    margin: 0.4rem 0;
   }
   .spacer {
     width: 100%;
@@ -113,7 +114,7 @@
     vertical-align: bottom;
     height: 60vh;
     margin: auto;
-    padding: 5.9276575395915em;
+    padding: 5.9276575395915rem;
     box-shadow: 0px 20px 40px 12px rgba(0,0,0,0.1);
     background-color: #fff;
 
@@ -143,12 +144,12 @@
     animation-delay: 200ms
   }
   .paper--title {
-    margin: 0 0 0.6em 0;
+    margin: 0 0 0.6rem 0;
   }
   p {
-    font-size: 1em;
-    line-height: 1.5em;
-    margin: 3em 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 3rem 0;
   }
 
   /* Scroll-bar */
@@ -171,7 +172,7 @@
   /* Misc. */
   .ref--icons8 {
     position: relative;
-    font-size: 1em;
+    font-size: 1rem;
     color: #282828;
     text-decoration: none;
     
@@ -201,7 +202,7 @@
   /* Responsiveness */
   @media (max-width: 1200px) {
     .paper {
-      padding: 5em;
+      padding: 5rem;
     }
   }
   @media (max-width: 992px) {
@@ -209,7 +210,7 @@
       padding: 0 10%;
     }
     .paper {
-      padding: 4em;
+      padding: 4rem;
     }
     .paper--back {
       height: 80vh;
@@ -223,10 +224,10 @@
   }
   @media (max-width: 768px) {
     h1 {
-      font-size: 2em;
+      font-size: 2rem;
     }
     .paper {
-      padding: 3em;
+      padding: 3rem;
     }
     .paper--back {
       display: none;
@@ -252,7 +253,7 @@
       margin: 5vh 0;
     }
     .paper {
-      padding: 2em;
+      padding: 2rem;
     }
   }
 </style>
