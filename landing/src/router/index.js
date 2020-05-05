@@ -27,7 +27,7 @@ const router = new VueRouter({
       component: RoadmapComponent,
     },
     {
-      path: '/explore',
+      path: '/philosophy',
       component: ExploreComponent,
     }
   ]

@@ -25,7 +25,7 @@
     export default {
         data() {
             return {
-                title: 'Pricing'
+                title: 'Yes. That\'s It.'
             }
         }
     }

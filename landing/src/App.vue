@@ -3,11 +3,11 @@
     <div id="top">
       <img id="logo--home" class="animated bounceInDown" src="./assets/svg/LogoC.svg">
       <nav id='nav--main' class="animated bounceInDown">
-        <router-link class="input--option" to="/">Home</router-link>
-        <router-link class="input--option" to="/features">Features</router-link>
+        <router-link class="input--option" to="/">Welcome</router-link>
+        <router-link class="input--option" to="/features">Demo</router-link>
         <router-link class="input--option" to="/pricing">Pricing</router-link>
         <router-link class="input--option" to="/roadmap">Roadmap</router-link>
-        <router-link class="input--option" to="/explore">Explore</router-link>
+        <router-link class="input--option" to="/philosophy">Our Philosophy</router-link>
       </nav>
     </div>
     <img src="./assets/svg/Paper.svg" id="back--two" class="paper--back animated fadeInUp">

@@ -56,7 +56,7 @@
                 d2b: 'Getting some feedback and improving the app from the get-go.',
                 d3b: '',
                 d4b: 'Patching it up to give you guys the latest.',
-                d5b: 'Take your business to the next level.'
+                d5b: 'Take your business to the next level.',
             }
         }
     }
