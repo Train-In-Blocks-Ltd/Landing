@@ -43,7 +43,7 @@
     color: #282828;
   }
   #logo--home {
-    width: 15%;
+    width: 10rem;
     height: auto;
   }
   body {
@@ -173,6 +173,7 @@
   .ref--icons8 {
     position: relative;
     font-size: 1rem;
+    font-weight: 700;
     color: #282828;
     text-decoration: none;
     
@@ -225,6 +226,9 @@
     h1 {
       font-size: 2rem;
     }
+    .spacer {
+      height: 5vh;
+    }
     .paper {
       padding: 3rem;
     }
@@ -245,8 +249,14 @@
     }
   }
   @media (max-width: 576px) {
+    #logo--home {
+      width: 8rem;
+    }
     body {
       padding: 0 5%;
+    }
+    .spacer {
+      height: 5vh;
     }
     #top {
       margin: 5vh 0;
@@ -254,6 +264,14 @@
     .paper {
       padding: 2rem;
       height: 70vh;
+    }
+  }
+  @media (max-width: 360px) {
+    body {
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 1.5rem;
     }
   }
 </style>

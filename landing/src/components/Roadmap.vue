@@ -13,28 +13,33 @@
                     </linearGradient>
                 </defs>
             </svg>
-            <img class="icon" src="../assets/svg/Cog.svg" style="grid-area: i1">
+            <img class="icon active" src="../assets/svg/Cog.svg" style="grid-area: i1">
             <div style="grid-area: d1">
+                <p class="desc">{{d1p}}</p>
                 <p class="roadmap--title">{{d1a}}</p>
                 <p>{{d1b}}</p>
             </div>
             <img class="icon" src="../assets/svg/UserTested.svg" style="grid-area: i2">
             <div style="grid-area: d2">
+                <p class="desc">{{d2p}}</p>
                 <p class="roadmap--title">{{d2a}}</p>
                 <p>{{d2b}}</p>
             </div>
             <img class="icon" src="../assets/svg/Released.svg" style="grid-area: i3">
             <div style="grid-area: d3">
+                <p class="desc">{{d3p}}</p>
                 <p class="roadmap--title">{{d3a}}</p>
                 <p>{{d3b}}</p>
             </div>
             <img class="icon" src="../assets/svg/Upgrade.svg" style="grid-area: i4">
             <div style="grid-area: d4">
+                <p class="desc">{{d4p}}</p>
                 <p class="roadmap--title">{{d4a}}</p>
                 <p>{{d4b}}</p>
             </div>
             <img class="icon" src="../assets/svg/SC.svg" style="grid-area: i5">
             <div style="grid-area: d5">
+                <p class="desc">{{d5p}}</p>
                 <p class="roadmap--title">{{d5a}}</p>
                 <p>{{d5b}}</p>
             </div>
@@ -57,12 +62,21 @@
                 d3b: '',
                 d4b: 'Patching it up to give you guys the latest.',
                 d5b: 'Take your business to the next level.',
+                d1p: 'In-Progess',
+                d2p: 'Scheduled',
+                d3p: '01.08.20',
+                d4p: 'Planned',
+                d5p: 'Planned'
             }
         }
     }
 </script>
 
 <style scoped>
+    .desc {
+        font-size: 0.8rem;
+        padding: 0;
+    }
     #roadmap {
         line-height: 5rem;
         display: grid;
@@ -108,6 +122,19 @@
         }
         to {
             fill-opacity: 100%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        #roadmap {
+            grid-template-areas: "i1" "d1" "i2" "d2" "i3" "d3" "i4" "d4" "i5" "d5";
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, 0.4fr 1fr) ;
+            grid-gap: 1rem;
+            margin: 0;
+        }
+        #progress {
+            display: none;
         }
     }
 </style>

@@ -12,7 +12,7 @@
         display: grid;
         grid-template-rows: auto 1fr ;
         height: 50vh;
-        width: 25vw;
+        width: 30vw;
         box-shadow: 0px 20px 40px 12px rgba(0,0,0,0.1);
         margin: 3em 0;
         
@@ -48,20 +48,32 @@
         background-color: #fff;
         border: none;
         height: 41vh;
-        width: 25vw;
+        width: 30vw;
     }
     .ql-editor {
         overflow-y: auto;
+        width: 100%;
     }
     .ql-toolbar.ql-snow {
         border: none!important;
     }
 
     /* Responsiveness */
+    @media (min-width: 1440px) {
+        #workout {
+            width: 25vw;
+        }
+        .ui.attached.segment.ql-container.ql-snow {
+            width: 25vw;
+        }
+    }
     @media (max-width: 768px) {
         #workout {
             grid-template-columns: 1fr;
             width: auto;
+        }
+       .ui.attached.segment.ql-container.ql-snow {
+            width: 73vw;
         }
     }
 </style>

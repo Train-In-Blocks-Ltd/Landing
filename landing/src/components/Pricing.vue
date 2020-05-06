@@ -3,21 +3,24 @@
         <h1 class="paper--title">{{title}}</h1>
         <div id="pricing">
             <div class="pricing__plans">
-                <img class="icon--gif" src="../assets/gif/deadlift.gif"/>
-                <h2>Basic - Monthly</h2>
-                <h1 class="pricing__cost">£10</h1>
+                <div>
+                    <img class="icon--gif" src="../assets/gif/deadlift.gif"/>
+                    <h2>Basic - Monthly</h2>
+                    <h1 class="pricing__cost">£10</h1>
+                </div>
+                <button class="signUp">{{btn1}}</button>
             </div>
             <div class="pricing__plans">
-                <img class="icon--gif" src="../assets/gif/trophy.gif"/>
-                <h2 id="pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">Pro - Yearly</h2>
-                <h1 class="pricing__cost">£90</h1>
-                <p>Save 25% on the annual plan,<br><b>that's £7.50/month</b></p>
+                <div>
+                    <img class="icon--gif" src="../assets/gif/trophy.gif"/>
+                    <h2 id="pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">Pro - Yearly</h2>
+                    <h1 class="pricing__cost">£90</h1>
+                    <p>Save 25% on the annual plan,<br><b>that's £7.50/month</b></p><br><br>
+                </div>
+                <button class="signUp">{{btn2}}</button>
             </div>    
         </div>
-        <button id="button--start" >What are you waiting for?</button>
-        <footer>
-            <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a>
-        </footer>
+        <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with the cool icons!</p>
     </div>
 </template>
 
@@ -25,7 +28,9 @@
     export default {
         data() {
             return {
-                title: 'Yes. That\'s It.'
+                title: 'Yes. That\'s It.',
+                btn1: 'Let\'s Get Started',
+                btn2: 'Start Saving'
             }
         }
     }
@@ -39,28 +44,32 @@
         margin-top: 3rem;
     }
     .pricing__plans {
-        height: 35vh;
+        display: grid;
+        grid-template-rows: 1fr 0.1fr;
+        height: auto;
+        min-height: fit-content;
         box-shadow: 0px 20px 40px 12px rgba(0,0,0,0.05);
         background-color: #fff;
         padding: 2rem;
         text-align: center;
     }
-    .pricing__plans > p {
+    .pricing__plans > div > p {
         margin: 0;
     }
     .pricing__cost {
         font-size: 4rem;
         margin-bottom: 0;
     }
-    #button--start {
+    .signUp {
         background-color: transparent;
         border: 1px solid #282828;
-        width: 100%;
-        height: 3rem;
+        width: 70%;
+        height: auto;
         outline-width: 0;
-        margin: 2rem 0;
+        margin: auto;
+        padding: 1rem 0.5rem;
 
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         letter-spacing: 0.15rem;
@@ -69,14 +78,17 @@
         transition: all 400ms;
         transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     }
-    #button--start:hover {
+    .signUp:hover {
         background-color: #282828;
         color: #fff;
     }
     h2 {
         width: fit-content;
-        padding: 0.1rem 1rem;
         margin: auto;
+    }
+    .subtitle {
+        margin: 0;
+        font-size: 2rem;
     }
     #pro {
         background-color: #282828;
