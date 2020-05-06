@@ -82,6 +82,7 @@
 
         font-size: 1rem;
         font-weight: 700;
+        letter-spacing: 0.1rem;
 
         transition: color 400ms, background-color 400ms, transform 100ms cubic-bezier(0.165, 0.84, 0.44, 1);
     } 

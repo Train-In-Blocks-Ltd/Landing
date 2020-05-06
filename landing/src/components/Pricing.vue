@@ -70,7 +70,6 @@
         padding: 1rem 0.5rem;
 
         font-size: 1rem;
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         letter-spacing: 0.15rem;
 
@@ -81,6 +80,9 @@
     .signUp:hover {
         background-color: #282828;
         color: #fff;
+    }
+    .signUp:active {
+        transform: scale(0.9);
     }
     h2 {
         width: fit-content;
