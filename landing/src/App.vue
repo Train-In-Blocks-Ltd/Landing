@@ -7,7 +7,7 @@
         <router-link class="input--option" to="/features">Demo</router-link>
         <router-link class="input--option" to="/pricing">Pricing</router-link>
         <router-link class="input--option" to="/roadmap">Roadmap</router-link>
-        <router-link class="input--option" to="/philosophy">Our Philosophy</router-link>
+        <router-link class="input--option" to="/Explore">Explore</router-link>
       </nav>
     </div>
     <img src="./assets/svg/Paper.svg" id="back--two" class="paper--back animated fadeInUp">
