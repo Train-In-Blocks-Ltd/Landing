@@ -42,28 +42,34 @@
     text-align: left;
     color: #282828;
   }
+
   #logo--home {
     width: 10rem;
     height: auto;
   }
+
   body {
     margin: 0;
     padding: 0 8%;
     overflow-y: hidden;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.1em;
     font-size: 16px;
   }
+
   h1 {
     font-size: 3rem;
   }
+
   .desc {
     padding: 0.4rem;
     margin: 0.4rem 0;
   }
+
   .spacer {
     width: 100%;
     height: 10vh;
   }
+
   #top {
     display: flex;
     flex-direction: row;
@@ -71,6 +77,7 @@
     margin: auto;
     margin: 10vh 0;
   }
+
   #nav--main {
     animation-delay: 100ms;
   }
@@ -81,13 +88,14 @@
     margin-left: 2vw;
     text-decoration: none;
     color: #282828;
-
     transition: 300ms;
   }
+
   .input--option:hover {
     opacity: 70%;
   }
-  .input--option:before {
+
+  .input--option::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -100,10 +108,12 @@
     transition: all 300ms;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
-  .input--option:hover:before {
+
+  .input--option:hover::before {
     transform: scaleX(1);
     opacity: 70%;
   }
+
   nav a.router-link-exact-active {
     font-weight: bold;
   }
@@ -115,37 +125,41 @@
     height: 60vh;
     margin: auto;
     padding: 5.9276575395915rem;
-    box-shadow: 0px 20px 40px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 40px 12px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-
     transition: 500ms;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
+
   .paper:hover {
     transform: translateY(-3vh);
   }
+
   .paper--back {
     position: absolute;
     width: 50%;
     height: auto;
     z-index: -1;
-
     transition: 500ms;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
+
   #back--one {
     top: 35vh;
-    left: 0; 
-    animation-delay: 400ms
+    left: 0;
+    animation-delay: 400ms;
   }
+
   #back--two {
-    top: 40vh; 
-    right: 0; 
-    animation-delay: 200ms
+    top: 40vh;
+    right: 0;
+    animation-delay: 200ms;
   }
+
   .paper--title {
     margin: 0 0 0.6rem 0;
   }
+
   p {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -154,19 +168,20 @@
 
   /* Scroll-bar */
   ::-webkit-scrollbar {
-      width: 10px;
-      height: 10px;
+    width: 10px;
+    height: 10px;
   }
+
   ::-webkit-scrollbar-track {
-      background: transparent; 
+    background: transparent;
   }
-    
+
   ::-webkit-scrollbar-thumb {
-      background: #00000020; 
+    background: #00000020;
   }
-    
+
   ::-webkit-scrollbar-thumb:hover {
-      background: #00000030;
+    background: #00000030;
   }
 
   /* Misc. */
@@ -176,13 +191,14 @@
     font-weight: 700;
     color: #282828;
     text-decoration: none;
-    
     transition: 300ms;
   }
+
   .ref--icons8:hover {
     opacity: 70%;
   }
-  .ref--icons8:before {
+
+  .ref--icons8::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -195,7 +211,8 @@
     transition: all 300ms;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   }
-  .ref--icons8:hover:before {
+
+  .ref--icons8:hover::before {
     transform: scaleX(1);
     opacity: 70%;
   }
@@ -206,70 +223,88 @@
       font-size: 3.5rem;
     }
   }
+
   @media (max-width: 1200px) {
     .paper {
       padding: 5rem;
     }
   }
+
   @media (max-width: 992px) {
     body {
       padding: 0 6%;
     }
+
     .paper {
       padding: 4rem;
     }
+
     .paper--back {
       height: 80vh;
     }
   }
+
   @media (max-width: 768px) {
     h1 {
       font-size: 2rem;
     }
+
     .spacer {
       height: 5vh;
     }
+
     .paper {
       padding: 3rem;
     }
+
     .paper--back {
       display: none;
     }
+
     #nav--main {
       display: grid;
       grid-template-columns: 1fr;
       justify-items: right;
     }
+
     .input--option {
       margin: 0.2em 0;
       width: fit-content;
     }
+
     .input--option:hover {
       opacity: 100%;
     }
   }
+
   @media (max-width: 576px) {
     #logo--home {
       width: 8rem;
     }
+
     body {
       padding: 0 5%;
     }
+
     .spacer {
       height: 5vh;
     }
+
     #top {
       margin: 5vh 0;
     }
+
     .paper {
       padding: 2rem;
       height: 70vh;
     }
   }
+
   @media (max-width: 360px) {
     body {
       font-size: 14px;
     }
+
     h1 {
       font-size: 1.5rem;
     }
