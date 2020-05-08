@@ -33,53 +33,45 @@
 </script>
 
 <style>
-  @import "../node_modules/animate.css";
-
+  @import '../node_modules/animate.css';
   #app {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: left;
-    color: #282828;
+    color: #282828
   }
-
   #logo--home {
     width: 10rem;
-    height: auto;
+    height: auto
   }
-
   body {
     margin: 0;
     padding: 0 8%;
     overflow-y: hidden;
-    letter-spacing: 0.1em;
-    font-size: 16px;
+    letter-spacing: .1rem;
+    font-size: 16px
   }
-
   h1 {
-    font-size: 3rem;
+    font-size: 3rem
   }
-
   .desc {
-    padding: 0.4rem;
-    margin: 0.4rem 0;
+    padding: .4rem;
+    margin: .4rem 0
   }
-
   .spacer {
     width: 100%;
-    height: 10vh;
+    height: 10vh
   }
-
   #top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
-    margin: 10vh 0;
+    margin: 10vh 0
   }
-
   #nav--main {
-    animation-delay: 100ms;
+    animation-delay: 100ms
   }
 
   /* Nav Hover Animation */
@@ -88,15 +80,13 @@
     margin-left: 2vw;
     text-decoration: none;
     color: #282828;
-    transition: 300ms;
+    transition: 300ms
   }
-
   .input--option:hover {
-    opacity: 70%;
+    opacity: .7
   }
-
-  .input--option::before {
-    content: "";
+  .input--option:before {
+    content: '';
     position: absolute;
     width: 100%;
     height: 1px;
@@ -106,16 +96,14 @@
     opacity: 0;
     transform: scaleX(0);
     transition: all 300ms;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-timing-function: cubic-bezier(.165, .84, .44, 1)
   }
-
-  .input--option:hover::before {
+  .input--option:hover:before {
     transform: scaleX(1);
-    opacity: 70%;
+    opacity: .7
   }
-
   nav a.router-link-exact-active {
-    font-weight: bold;
+    font-weight: bold
   }
 
   /* Paper and Child Element */
@@ -124,64 +112,55 @@
     vertical-align: bottom;
     height: 60vh;
     margin: auto;
-    padding: 5.9276575395915rem;
-    box-shadow: 0 20px 40px 12px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    padding: 5.9277rem;
+    box-shadow: 0 20px 40px 12px rgba(0, 0, 0, .1);
+    background-color: rgb(255, 255, 255);
     transition: 500ms;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-timing-function: cubic-bezier(.165, .84, .44, 1)
   }
-
   .paper:hover {
-    transform: translateY(-3vh);
+    transform: translateY(-3vh)
   }
-
   .paper--back {
     position: absolute;
     width: 50%;
     height: auto;
     z-index: -1;
     transition: 500ms;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-timing-function: cubic-bezier(.165, .84, .44, 1)
   }
-
   #back--one {
     top: 35vh;
     left: 0;
-    animation-delay: 400ms;
+    animation-delay: 400ms
   }
-
   #back--two {
     top: 40vh;
     right: 0;
-    animation-delay: 200ms;
+    animation-delay: 200ms
   }
-
   .paper--title {
-    margin: 0 0 0.6rem 0;
+    margin: 0 0 .6rem 0
   }
-
   p {
     font-size: 1rem;
     line-height: 1.5rem;
-    margin: 3rem 0;
+    margin: 3rem 0
   }
 
   /* Scroll-bar */
   ::-webkit-scrollbar {
     width: 10px;
-    height: 10px;
+    height: 10px
   }
-
   ::-webkit-scrollbar-track {
-    background: transparent;
+    background: transparent
   }
-
   ::-webkit-scrollbar-thumb {
-    background: #00000020;
+    background: #00000020
   }
-
   ::-webkit-scrollbar-thumb:hover {
-    background: #00000030;
+    background: #00000030
   }
 
   /* Misc. */
@@ -191,15 +170,13 @@
     font-weight: 700;
     color: #282828;
     text-decoration: none;
-    transition: 300ms;
+    transition: 300ms
   }
-
   .ref--icons8:hover {
-    opacity: 70%;
+    opacity: .7
   }
-
-  .ref--icons8::before {
-    content: "";
+  .ref--icons8:before {
+    content: '';
     position: absolute;
     width: 100%;
     height: 1px;
@@ -209,104 +186,85 @@
     opacity: 0;
     transform: scaleX(0);
     transition: all 300ms;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-timing-function: cubic-bezier(.165, .84, .44, 1)
   }
-
-  .ref--icons8:hover::before {
+  .ref--icons8:hover:before {
     transform: scaleX(1);
-    opacity: 70%;
+    opacity: .7
   }
 
   /* Responsiveness */
   @media (min-width: 1440px) {
     h1 {
-      font-size: 3.5rem;
+      font-size: 3.5rem
     }
   }
-
   @media (max-width: 1200px) {
     .paper {
-      padding: 5rem;
+      padding: 5rem
     }
   }
-
   @media (max-width: 992px) {
     body {
-      padding: 0 6%;
+      padding: 0 6%
     }
-
     .paper {
-      padding: 4rem;
+      padding: 4rem
     }
-
     .paper--back {
-      height: 80vh;
+      height: 80vh
     }
   }
-
   @media (max-width: 768px) {
     h1 {
-      font-size: 2rem;
+      font-size: 2rem
     }
-
     .spacer {
-      height: 5vh;
+      height: 5vh
     }
-
     .paper {
-      padding: 3rem;
+      padding: 3rem
     }
-
     .paper--back {
-      display: none;
+      display: none
     }
-
     #nav--main {
       display: grid;
       grid-template-columns: 1fr;
-      justify-items: right;
+      justify-items: right
     }
-
     .input--option {
-      margin: 0.2em 0;
-      width: fit-content;
+      margin: .2rem 0;
+      width: fit-content
     }
-
     .input--option:hover {
-      opacity: 100%;
+      opacity: 1
     }
   }
-
   @media (max-width: 576px) {
     #logo--home {
-      width: 8rem;
+      width: 8rem
     }
-
     body {
-      padding: 0 5%;
+      padding: 0 5%
     }
-
     .spacer {
-      height: 5vh;
+      height: 5vh
     }
-
     #top {
-      margin: 5vh 0;
+      margin: 5vh 0
     }
-
     .paper {
       padding: 2rem;
-      height: 70vh;
+      height: 70vh
     }
   }
-
   @media (max-width: 360px) {
     body {
-      font-size: 14px;
+      font-size: 14px
     }
-
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.5rem
     }
   }
 </style>
