@@ -55,28 +55,28 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                title: 'Our Roadmap...',
-                d1a: 'Prototyping',
-                d2a: 'User Testing',
-                d3a: 'Version 1.0',
-                d4a: 'Version 1.1',
-                d5a: 'Strength and Conditioning Add-on',
-                d1b: 'Mastering and building the essential features.',
-                d2b: 'Getting some feedback and improving the app from the get-go.',
-                d3b: 'Our big day! Giving you a new way to build programmes.',
-                d4b: 'Patching it up to give you guys the latest.',
-                d5b: 'Take your business to the next level.',
-                d1p: 'In-Progess',
-                d2p: 'Scheduled',
-                d3p: '01.08.20',
-                d4p: 'Planned',
-                d5p: 'Planned'
-            }
-        }
+  export default {
+    data() {
+      return {
+        title: 'Our Roadmap...',
+        d1a: 'Prototyping',
+        d2a: 'User Testing',
+        d3a: 'Version 1.0',
+        d4a: 'Version 1.1',
+        d5a: 'Strength and Conditioning Add-on',
+        d1b: 'Mastering and building the essential features.',
+        d2b: 'Getting some feedback and improving the app from the get-go.',
+        d3b: 'Our big day! Giving you a new way to build programmes.',
+        d4b: 'Patching it up to give you guys the latest.',
+        d5b: 'Take your business to the next level.',
+        d1p: 'In-Progess',
+        d2p: 'Scheduled',
+        d3p: '01.08.20',
+        d4p: 'Planned',
+        d5p: 'Planned'
+      }
     }
+  }
 </script>
 
 <style scoped>
