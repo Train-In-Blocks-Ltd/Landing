@@ -13,23 +13,20 @@
     grid-template-rows: auto 1fr;
     height: 50vh;
     width: 30vw;
-    box-shadow: 0 20px 40px 12px rgba(0, 0, 0, 0.1);
-    margin: 3em 0;
+    box-shadow: 0 20px 40px 12px rgba(0, 0, 0, .1);
+    margin: 3rem 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1rem
   }
-
   #workout__header {
-    height: 2.5em;
+    height: 2.5rem;
     width: 100%;
-    box-shadow: 0 20px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 15px rgba(0, 0, 0, .05)
   }
-
   #workout__editor {
     height: 100%;
-    width: 100%;
+    width: 100%
   }
-
   #workout__editor > textarea {
     margin: 0 1vw;
     background-color: transparent;
@@ -39,8 +36,8 @@
     resize: none;
     outline-width: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    letter-spacing: 0.1em;
+    font-size: 1rem;
+    letter-spacing: .1rem;
     color: #282828;
   }
 
@@ -49,37 +46,32 @@
     background-color: #fff;
     border: none;
     height: 41vh;
-    width: 30vw;
+    width: 30vw
   }
-
   .ql-editor {
     overflow-y: auto;
-    width: 100%;
+    width: 100%
   }
-
   .ql-toolbar.ql-snow {
-    border: none !important;
+    border: none !important
   }
 
   /* Responsiveness */
   @media (min-width: 1440px) {
     #workout {
-      width: 25vw;
+      width: 25vw
     }
-
     .ui.attached.segment.ql-container.ql-snow {
-      width: 25vw;
+      width: 25vw
     }
   }
-
   @media (max-width: 768px) {
     #workout {
       grid-template-columns: 1fr;
-      width: auto;
+      width: auto
     }
-
     .ui.attached.segment.ql-container.ql-snow {
-      width: 73vw;
+      width: 73vw
     }
   }
 </style>

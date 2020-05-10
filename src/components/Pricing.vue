@@ -41,29 +41,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1vw;
-    margin-top: 3rem;
+    margin-top: 3rem
   }
-
   .pricing__plans {
     display: grid;
-    grid-template-rows: 1fr 0.1fr;
+    grid-template-rows: 1fr .1fr;
     height: auto;
     min-height: fit-content;
-    box-shadow: 0 20px 40px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 40px 12px rgba(0, 0, 0, .05);
     background-color: #fff;
     padding: 2rem;
-    text-align: center;
+    text-align: center
   }
-
   .pricing__plans > div > p {
-    margin: 0;
+    margin: 0
   }
-
   .pricing__cost {
     font-size: 4rem;
-    margin-bottom: 0;
+    margin-bottom: 0
   }
-
   .signUp {
     background-color: transparent;
     border: 1px solid #282828;
@@ -71,58 +67,49 @@
     height: auto;
     outline-width: 0;
     margin: auto;
-    padding: 1rem 0.5rem;
+    padding: 1rem .5rem;
     font-size: 1rem;
     font-weight: bold;
-    letter-spacing: 0.15rem;
+    letter-spacing: .15rem;
     cursor: pointer;
     transition: all 400ms;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-timing-function: cubic-bezier(.165, .84, .44, 1)
   }
-
   .signUp:hover {
     background-color: #282828;
-    color: #fff;
+    color: #fff
   }
-
   .signUp:active {
-    transform: scale(0.9);
+    transform: scale(.9)
   }
-
   h2 {
     width: fit-content;
-    margin: auto;
+    margin: auto
   }
-
   .subtitle {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2rem
   }
-
   #pro {
     background-color: #282828;
-    color: #fff;
+    color: #fff
   }
-
   footer {
-    text-align: right;
+    text-align: right
   }
-
   .icon--gif {
-    margin: 3rem;
+    margin: 3rem
   }
-
   @media (max-width: 992px) {
     #pricing {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr
     }
   }
-
   @media (max-width: 576px) {
     .pricing__plans {
       background-color: transparent;
       padding: 0;
-      box-shadow: none;
+      box-shadow: none
     }
   }
 </style>

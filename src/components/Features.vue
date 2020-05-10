@@ -3,18 +3,18 @@
         <h1 class="paper--title">{{title}}</h1>
         <div class="spacer"></div>
         <div class="container--2c">
-            <div style="grid-area: b;">
+            <div style="grid-area: b">
                 <div class="spacer"></div>
                 <h2>Say Goodbye to Manually Tracking Data</h2>
                 <p>Our text box will understand the workouts and will do all the math for you!!</p>
                 <h2>Just learn the format and start speaking with us.</h2>
                 <p>A) Back Squat: 3 x 6 at 70/80/90kg<br>B) Bench Press: 2 x 15 at 50/55/60kg</p>
             </div>
-            <Editor style="grid-area: a;"></Editor>
+            <Editor style="grid-area: a"></Editor>
         </div>
         <div class="spacer"></div>
         <div>
-            <line-chart style="grid-area: b;"></line-chart><br><br>
+            <line-chart style="grid-area: b"></line-chart><br><br>
             <div id="stats">
                 <h2>Statistics</h2>
                 <select>
@@ -80,71 +80,60 @@
 
 <style scoped>
   h2 {
-    margin: 0;
+    margin: 0
   }
-
   .container--2c {
     display: grid;
-    grid-template-areas: "a b";
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'a b';
+    grid-template-columns: 1fr 1fr
   }
-
   .container--2c > p {
-    padding: 6vh 3vw;
+    padding: 6vh 3vw
   }
-
   .container--features {
     display: grid;
-    grid-template-columns: 0.4fr 1fr;
+    grid-template-columns: .4fr 1fr;
     width: 100%;
-    margin: 4rem 0;
+    margin: 4rem 0
   }
-
   .container--features > div > p {
     width: 80%;
-    margin: 1rem 0;
+    margin: 1rem 0
   }
-
   .icon {
     margin: auto;
-    text-align: center;
+    text-align: center
   }
-
   @media (max-width: 992px) {
     .container--features > img {
-      width: 60%;
+      width: 60%
     }
   }
-
   @media (max-width: 768px) {
     .container--2c {
-      grid-template-areas: "b" "a";
       grid-template-columns: 1fr;
-      grid-template-rows: 0.6fr 1fr;
+      grid-template-rows: .6fr 1fr;
+      grid-template-areas: 'b' 'a'
     }
-
     .container--2c > p {
-      padding: 2vh 1vw;
+      padding: 2vh 1vw
     }
   }
-
   @media (max-width: 576px) {
     .container--features > img {
       width: 70%;
-      margin: 0;
+      margin: 0
     }
   }
-
   @media (max-width: 360px) {
     .container--features {
       grid-template-columns: 1fr;
-      grid-template-rows: 0.4fr 1fr;
-      grid-gap: 2rem;
+      grid-template-rows: .4fr 1fr;
+      grid-gap: 2rem
     }
-
     .container--features > img {
       margin: auto;
-      width: auto;
+      width: auto
     }
   }
 </style>
