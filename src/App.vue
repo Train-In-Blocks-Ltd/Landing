@@ -9,6 +9,7 @@
         <router-link class="input--option" to="/roadmap">Roadmap</router-link>
         <router-link class="input--option" to="/Explore">Explore</router-link>
       </nav>
+      <hamMenu id="hamMenu"></hamMenu>
     </div>
     <img src="./assets/svg/Paper.svg" id="back--two" class="paper--back animated fadeInUp">
     <img src="./assets/svg/Paper.svg" id="back--one" class="paper--back animated fadeInUp"/>
@@ -23,11 +24,11 @@
 </template>
 
 <script>
-
+  import hamMenu from './components/Hamburger.vue'
   export default {
     name: 'App',
     components: {
-
+      hamMenu
     },
   }
 </script>
@@ -48,7 +49,7 @@
   body {
     margin: 0;
     padding: 0 8%;
-    overflow-y: hidden;
+    overflow: hidden;
     letter-spacing: .1rem;
     font-size: 16px
   }
@@ -72,6 +73,9 @@
   }
   #nav--main {
     animation-delay: 100ms
+  }
+  #hamMenu {
+    display: none
   }
 
   /* Nav Hover Animation */
@@ -185,8 +189,7 @@
     background-color: #282828;
     opacity: 0;
     transform: scaleX(0);
-    transition: all 300ms;
-    transition-timing-function: cubic-bezier(.165, .84, .44, 1)
+    transition: all 300ms cubic-bezier(.165, .84, .44, 1)
   }
   .ref--icons8:hover:before {
     transform: scaleX(1);
@@ -216,6 +219,9 @@
     }
   }
   @media (max-width: 768px) {
+    body {
+      padding: 0
+    }
     h1 {
       font-size: 2rem
     }
@@ -223,15 +229,23 @@
       height: 5vh
     }
     .paper {
-      padding: 3rem
+      padding: 3rem;
+      height: 80vh
     }
     .paper--back {
       display: none
     }
-    #nav--main {
+    #top {
       display: grid;
-      grid-template-columns: 1fr;
-      justify-items: right
+      grid-template-columns: 1fr .1fr;
+      padding: 0 1rem;
+      margin: 5vh 0
+    }
+    #nav--main {
+      display: none
+    }
+    #hamMenu {
+      display: grid
     }
     .input--option {
       margin: .2rem 0;
@@ -245,9 +259,6 @@
     #logo--home {
       width: 8rem
     }
-    body {
-      padding: 0 5%
-    }
     .spacer {
       height: 5vh
     }
@@ -256,7 +267,6 @@
     }
     .paper {
       padding: 2rem;
-      height: 70vh
     }
   }
   @media (max-width: 360px) {
