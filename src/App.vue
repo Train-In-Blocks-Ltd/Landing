@@ -29,7 +29,7 @@
     name: 'App',
     components: {
       hamMenu
-    },
+    }
   }
 </script>
 

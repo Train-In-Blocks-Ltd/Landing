@@ -71,7 +71,7 @@
       width: auto
     }
     .ui.attached.segment.ql-container.ql-snow {
-      width: 73vw
+      width: 85vw
     }
   }
 </style>
