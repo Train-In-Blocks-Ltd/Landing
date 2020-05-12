@@ -24,14 +24,19 @@
         <path id="box" d="M 10 10 L 90 10 L 90 90 L 10 90 Z" stroke="#282828" stroke-width="8"/>
       </svg>
       <h1 class="text--right" style="grid-area: cT">Use features that you only need, save your money and expand.</h1>
-      <img class="icon--custom" style="grid-area: cI" src="../assets/svg/Custom.svg"/>
+      <inline-svg class="icon--custom" style="grid-area: cI" :src="require('../assets/svg/Custom.svg')"/>
     </div>
     <div class="spacer"></div>
   </div>
 </template>
 
 <script>
+  import InlineSvg from 'vue-inline-svg'
+
   export default {
+    components: {
+      InlineSvg
+    },
     data() {
       return {
         title: 'Want to train more clients effectively?'

@@ -1,0 +1,79 @@
+/* GLOBAL */
+body {
+  background-color: #2C3E50;
+  transition: all .4s cubic-bezier(.165, .84, .44, 1)
+}
+#app {
+  color: #FFFFFF
+}
+svg path, svg line, .container--features rect {
+  fill: #FFFFFF;
+  stroke: #FFFFFF
+}
+.signUp, #mc-embedded-subscribe, #darkmode {
+  color: #FFFFFF!important;
+  border: 1px solid #FFFFFF!important
+}
+.signUp:hover, #mc-embedded-subscribe:hover, #darkmode:hover {
+  background-color: #FFFFFF!important;
+  color: #2C3E50!important
+}
+.input--option {
+  color: #FFFFFF
+}
+.input--option:before {
+  background-color: #FFFFFF
+}
+.paper {
+  background-color: #485868
+}
+.paper--back rect {
+  fill: #485868
+}
+
+/* HOME PAGE*/
+#text--good {
+  border: 2px solid #FFFFFF!important
+}
+#text--exceptional {
+  border: 2px solid #FFFFFF!important;
+  background-color: #FFFFFF!important;
+  color: #2C3E50!important
+}
+
+/* FEATURES PAGE*/
+.ql-editor.ql-blank, .ql-editor {
+  background-color: #485868
+}
+.ql-snow .ql-stroke {
+  stroke: #FFFFFF!important
+}
+.ql-snow .ql-fill {
+  fill: #FFFFFF
+}
+.ql-formats button:hover {
+  background-color: #FFFFFF30
+}
+
+/* PRICING PAGE */
+.pricing__plans {
+  background-color: #485868!important
+}
+#pro {
+  background-color: #FFFFFF!important;
+  color: #2C3E50!important
+}
+
+/* ROADMAP PAGE */
+#title--involved {
+  background-color: #FFFFFF!important;
+  color: #2C3E50!important
+}
+#progress__bar {
+  fill: #FFFFFF!important
+}
+#progress__track {
+  fill-opacity: .2
+}
+
+/* Explore*/

@@ -4,7 +4,7 @@
     <h2>We believe in transparency, check out what we're up to.</h2><br><br>
     <div id="roadmap">
       <svg id="progress" width="95" height="600" viewBox="0 0 95 560" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect id="progress_track" x="40" y="20" width="15" height="520" fill="#e9e9e9"/>
+        <rect id="progress__track" x="40" y="20" width="15" height="520" fill="#e9e9e9"/>
         <rect id="progress__bar" x="40" y="20" width="15" height="40" fill="url(#grad)"/>
         <defs>
           <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -13,31 +13,31 @@
           </linearGradient>
         </defs>
       </svg>
-      <img class="icon active" src="../assets/svg/Cog.svg" style="grid-area: i1">
+      <inline-svg class="icon active" :src="require('../assets/svg/Cog.svg')" style="grid-area: i1"/>
       <div style="grid-area: d1">
         <p class="desc">{{d1p}}</p>
         <p class="roadmap--title">{{d1a}}</p>
         <p>{{d1b}}</p>
       </div>
-      <img class="icon" src="../assets/svg/UserTested.svg" style="grid-area: i2">
+      <inline-svg class="icon" :src="require('../assets/svg/UserTested.svg')" style="grid-area: i2"/>
       <div style="grid-area: d2">
         <p class="desc">{{d2p}}</p>
         <p class="roadmap--title">{{d2a}}</p>
         <p>{{d2b}}</p>
       </div>
-      <img class="icon" src="../assets/svg/Released.svg" style="grid-area: i3">
+      <inline-svg class="icon" :src="require('../assets/svg/Released.svg')" style="grid-area: i3"/>
       <div style="grid-area: d3">
         <p class="desc">{{d3p}}</p>
         <p class="roadmap--title">{{d3a}}</p>
         <p>{{d3b}}</p>
       </div>
-      <img class="icon" src="../assets/svg/Upgrade.svg" style="grid-area: i4">
+      <inline-svg class="icon" :src="require('../assets/svg/Upgrade.svg')" style="grid-area: i4"/>
       <div style="grid-area: d4">
         <p class="desc">{{d4p}}</p>
         <p class="roadmap--title">{{d4a}}</p>
         <p>{{d4b}}</p>
       </div>
-      <img class="icon" src="../assets/svg/SC.svg" style="grid-area: i5">
+      <inline-svg class="icon" :src="require('../assets/svg/SC.svg')" style="grid-area: i5"/>
       <div style="grid-area: d5">
         <p class="desc">{{d5p}}</p>
         <p class="roadmap--title">{{d5a}}</p>
@@ -45,7 +45,7 @@
       </div>
     </div>
     <div class="container--2c">
-        <img id="community" src="../assets/svg/community.svg"/>
+        <inline-svg id="community" :src="require('../assets/svg/community.svg')"/>
         <div>
             <h1 id="title--involved">Get Involved</h1>
             <p>We want every paying member to have a say in the direction of the app and the company. You can <b>vote</b> for features and add-ons and we'll do the rest!</p>
@@ -55,7 +55,12 @@
 </template>
 
 <script>
+  import InlineSvg from 'vue-inline-svg'
+
   export default {
+    components: {
+      InlineSvg
+    },
     data() {
       return {
         title: 'Our Roadmap...',
@@ -136,9 +141,8 @@
     padding: 1rem 2rem;
     letter-spacing: .3rem
   }
-  #community {
-    width: 25vw
-  }
+
+  /* Responsive */
   @keyframes fadeInf {
     from {
       fill-opacity: 60%

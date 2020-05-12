@@ -61,26 +61,10 @@
     margin-bottom: 0
   }
   .signUp {
-    background-color: transparent;
-    border: 1px solid #282828;
     width: 70%;
     height: auto;
-    outline-width: 0;
     margin: auto;
     padding: 1rem .5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: .15rem;
-    cursor: pointer;
-    transition: all 400ms;
-    transition-timing-function: cubic-bezier(.165, .84, .44, 1)
-  }
-  .signUp:hover {
-    background-color: #282828;
-    color: #fff
-  }
-  .signUp:active {
-    transform: scale(.9)
   }
   h2 {
     width: fit-content;
@@ -92,7 +76,8 @@
   }
   #pro {
     background-color: #282828;
-    color: #fff
+    color: #FFFFFF;
+    padding: 0 1rem
   }
   footer {
     text-align: right

@@ -29,7 +29,7 @@
         <div class="spacer"></div>
         <h1>{{featuresTitle}}</h1><br>
         <div class="container--features" v-for="feature in features" :key="feature.id">
-            <img class="icon" :src="feature.icon">
+            <inline-svg class="icon" :src="feature.icon"/>
             <div>
                 <h2>{{feature.subtitle}}</h2>
                 <p>{{feature.desc}}</p>
@@ -39,6 +39,7 @@
 </template>
 
 <script>
+    import InlineSvg from 'vue-inline-svg'
     import LineChart from './Chart'
     import Editor from './WorkoutBuilder'
     import reduceTime from '../assets/svg/features/reduceTime.svg'
@@ -55,7 +56,8 @@
     export default {
         components: {
             LineChart,
-            Editor
+            Editor,
+            InlineSvg
         },
         data() {
             return {
