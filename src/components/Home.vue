@@ -5,7 +5,7 @@
     <div class="spacer"></div>
     <div id="container--2c">
       <h1>Save more time and get more clients.</h1>
-      <img id="laptop" src="../assets/svg/LaptopTablet.svg">
+      <img id="laptop" src="../assets/svg/LaptopTablet.svg"/>
     </div>
     <div class="spacer"></div>
     <div id="container--2c3r">
@@ -19,25 +19,26 @@
         <line id="line2" x1="100" y1="0" x2="0" y2="90" stroke="#282828" stroke-width="3"><animateMotion dur="2000ms" repeatCount="indefinite" path="M 20 20 L 45 35 L 20 20"/></line>
         <line id="line3" x1="170" y1="0" x2="0" y2="160" stroke="#282828" stroke-width="3"><animateMotion dur="3000ms" repeatCount="indefinite" path="M 20 20 L 45 35 L 20 20"/></line>
       </svg>
-        <h1 style="grid-area: bT">Speed, simplicity and functionality is our philosophy.</h1>
+      <h1 style="grid-area: bT">Speed, simplicity and functionality is our philosophy.</h1>
       <svg style="grid-area: bI" width="200" height="200" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path id="box" d="M 10 10 L 90 10 L 90 90 L 10 90 Z" stroke="#282828" stroke-width="8"/>
       </svg>
       <h1 class="text--right" style="grid-area: cT">Use features that you only need, save your money and expand.</h1>
-      <svg style="grid-area: cI" width="300" height="300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path id="expand" d="M 50 50 L 70 50 L 70 30 L 60 30 L 60 40 L 40 40 L 40 20 L 20 20 L 20 10 L 90 10 L 90 40 L 80 40 L 80 60 L 60 60 L 60 70 L 80 70 L 80 80 L 40 80 L 40 70 L 30 70 L 30 90 L 10 90 L 10 60 L 20 60 L 20 40 L 30 40 L 30 50 L 50 50" stroke="#282828" stroke-width="3" />
-      </svg>
+      <inline-svg class="icon--custom" style="grid-area: cI" :src="require('../assets/svg/Custom.svg')"/>
     </div>
     <div class="spacer"></div>
   </div>
 </template>
 
 <script>
+  import InlineSvg from 'vue-inline-svg'
+
   export default {
-    component: {
+    components: {
+      InlineSvg
     },
-      data() {
-        return {
+    data() {
+      return {
         title: 'Want to train more clients effectively?'
       }
     }
@@ -93,6 +94,11 @@
   }
   #laptop {
     width: 40vw
+  }
+
+  /* SVG */
+  .icon--custom {
+    margin: auto
   }
 
   /* SVG Anim */

@@ -1,18 +1,22 @@
 <template>
   <div id="app">
     <div id="top">
-      <img id="logo--home" class="animated bounceInDown" src="./assets/svg/LogoC.svg">
+      <router-link to="/">
+        <inline-svg id="logo--home" class="animated bounceInDown" :src="require('./assets/svg/LogoC.svg')"/>
+      </router-link>
       <nav id='nav--main' class="animated bounceInDown">
         <router-link class="input--option" to="/">Welcome</router-link>
         <router-link class="input--option" to="/features">Demo</router-link>
         <router-link class="input--option" to="/pricing">Pricing</router-link>
         <router-link class="input--option" to="/roadmap">Roadmap</router-link>
-        <router-link class="input--option" to="/Explore">Explore</router-link>
+        <router-link class="input--option" to="/Explore">Explore</router-link><br>
+        <!--<v-swatches v-model="color" :swatches="swatches" popover-x="right"></v-swatches>-->
+        <button id="darkmode" @click="darkThemeSwitch">Dark Mode</button>
       </nav>
       <hamMenu id="hamMenu"></hamMenu>
     </div>
-    <img src="./assets/svg/Paper.svg" id="back--two" class="paper--back animated fadeInUp">
-    <img src="./assets/svg/Paper.svg" id="back--one" class="paper--back animated fadeInUp"/>
+    <inline-svg :src="require('./assets/svg/Paper.svg')" id="back--two" class="paper--back animated fadeInUp"/>
+    <inline-svg :src="require('./assets/svg/Paper.svg')" id="back--one" class="paper--back animated fadeInUp"/>
     <div class="animated fadeInUp">
       <div class="paper">
         <transition enter-active-class="animated fadeInUp delay-1s" leave-active-class="animated fadeOutDown">
@@ -24,27 +28,61 @@
 </template>
 
 <script>
+  import InlineSvg from 'vue-inline-svg'
+  // import VSwatches from 'vue-swatches'
+  // import 'vue-swatches/dist/vue-swatches.css'
   import hamMenu from './components/Hamburger.vue'
+
   export default {
     name: 'App',
     components: {
-      hamMenu
+      hamMenu,
+      InlineSvg
+      // VSwatches
+    },
+    data() {
+      return {
+        // color: '#ffffff',
+        // swatches: ['#fff5f5', '#fefff5', '#f6fff5', '#f5fcff', '#fbf5ff', 'ffffff']
+      }
+    },
+    methods: {
+      _addDarkTheme() {
+        let darkThemeLinkEl = document.createElement("link");
+        darkThemeLinkEl.setAttribute("rel", "stylesheet");
+        darkThemeLinkEl.setAttribute("href", "/css/darktheme.css");
+        darkThemeLinkEl.setAttribute("id", "dark-theme-style");
+
+        let docHead = document.querySelector("head");
+        docHead.append(darkThemeLinkEl);
+      },
+      _removeDarkTheme() {
+        let darkThemeLinkEl = document.querySelector("#dark-theme-style");
+        let parentNode = darkThemeLinkEl.parentNode;
+        parentNode.removeChild(darkThemeLinkEl);
+      },
+      darkThemeSwitch() {
+        let darkThemeLinkEl = document.querySelector("#dark-theme-style");
+        if (!darkThemeLinkEl) {
+          this._addDarkTheme()
+        } else {
+          this._removeDarkTheme()
+        }
+      }
     }
   }
 </script>
 
 <style>
   @import '../node_modules/animate.css';
+
+  /*GLOBAL */
   #app {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: left;
     color: #282828
-  }
-  #logo--home {
-    width: 10rem;
-    height: auto
   }
   body {
     margin: 0;
@@ -55,6 +93,23 @@
   }
   h1 {
     font-size: 3rem
+  }
+  button {
+    background-color: transparent;
+    outline-width: 0;
+    border: 1px solid #282828;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .15rem;
+    cursor: pointer;
+    transition: all 400ms cubic-bezier(.165, .84, .44, 1)
+  }
+  button:hover {
+    background-color: #282828;
+    color: #FFFFFF;
+  }
+  button:active {
+    transform: scale(.9)
   }
   .desc {
     padding: .4rem;
@@ -76,6 +131,49 @@
   }
   #hamMenu {
     display: none
+  }
+
+  /* Logo */
+  #logo--home {
+    width: 10rem;
+    height: auto
+  }
+  #logo--home > path {
+    opacity: 1;
+    transition: all .2s cubic-bezier(.165, .84, .44, 1)
+  }
+  #logo--home:hover > path {
+    opacity: .8
+  }
+  #logo--home:active > path {
+    opacity: .6
+  }
+
+  /* Color 
+  .vue-swatches {
+    vertical-align: middle;
+    margin-left: 1rem
+  }
+  .vue-swatches__trigger, .vue-swatches__container, .vue-swatches__swatch {
+    border-radius: 0!important
+  }
+  .vue-swatches__trigger {
+    height: 1rem!important;
+    width: 1rem!important;
+    border: 1px solid #282828
+  }
+  .vue-swatches__swatch {
+    border: 1px solid #282828;
+    height: 2rem!important;
+    width: 2rem!important
+  }
+  */
+  #darkmode {
+    font-size: .8rem;
+    padding: .4rem 1rem;
+    display: block;
+    margin: 1rem 0 0 0;
+    float: right
   }
 
   /* Nav Hover Animation */

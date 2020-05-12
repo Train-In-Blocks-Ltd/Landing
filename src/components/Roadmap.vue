@@ -2,50 +2,19 @@
   <div>
     <h1 class="paper--title">{{title}}</h1><br>
     <h2>We believe in transparency, check out what we're up to.</h2><br><br>
-    <div id="roadmap">
-      <svg id="progress" width="95" height="600" viewBox="0 0 95 560" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect id="progress_track" x="40" y="20" width="15" height="520" fill="#e9e9e9"/>
-        <rect id="progress__bar" x="40" y="20" width="15" height="40" fill="url(#grad)"/>
-        <defs>
-          <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="50%" style="stop-color: #282828" />
-            <stop offset="100%" style="stop-color: #686868" />
-          </linearGradient>
-        </defs>
-      </svg>
-      <img class="icon active" src="../assets/svg/Cog.svg" style="grid-area: i1">
-      <div style="grid-area: d1">
-        <p class="desc">{{d1p}}</p>
-        <p class="roadmap--title">{{d1a}}</p>
-        <p>{{d1b}}</p>
-      </div>
-      <img class="icon" src="../assets/svg/UserTested.svg" style="grid-area: i2">
-      <div style="grid-area: d2">
-        <p class="desc">{{d2p}}</p>
-        <p class="roadmap--title">{{d2a}}</p>
-        <p>{{d2b}}</p>
-      </div>
-      <img class="icon" src="../assets/svg/Released.svg" style="grid-area: i3">
-      <div style="grid-area: d3">
-        <p class="desc">{{d3p}}</p>
-        <p class="roadmap--title">{{d3a}}</p>
-        <p>{{d3b}}</p>
-      </div>
-      <img class="icon" src="../assets/svg/Upgrade.svg" style="grid-area: i4">
-      <div style="grid-area: d4">
-        <p class="desc">{{d4p}}</p>
-        <p class="roadmap--title">{{d4a}}</p>
-        <p>{{d4b}}</p>
-      </div>
-      <img class="icon" src="../assets/svg/SC.svg" style="grid-area: i5">
-      <div style="grid-area: d5">
-        <p class="desc">{{d5p}}</p>
-        <p class="roadmap--title">{{d5a}}</p>
-        <p>{{d5b}}</p>
+    <div id="roadmap" v-for="dev in development" :key="dev.id">
+      <inline-svg class="icon--main" :src="dev.icon"/>
+      <div>
+        <div class="container--progress">
+          <p class="roadmap__progress">{{dev.progress}}</p>
+          <inline-svg class="icon--progress" :src="dev.progressIcon"/>
+        </div>
+        <p class="roadmap__title">{{dev.title}}</p>
+        <p class="roadmap__desc">{{dev.desc}}</p>
       </div>
     </div>
     <div class="container--2c">
-        <img id="community" src="../assets/svg/community.svg"/>
+        <inline-svg id="vote" :src="require('../assets/svg/Vote.svg')"/>
         <div>
             <h1 id="title--involved">Get Involved</h1>
             <p>We want every paying member to have a say in the direction of the app and the company. You can <b>vote</b> for features and add-ons and we'll do the rest!</p>
@@ -55,72 +24,65 @@
 </template>
 
 <script>
+  import InlineSvg from 'vue-inline-svg'
+  import InDev from '../assets/svg/progress/InDev.svg'
+  import Planned from '../assets/svg/progress/Planned.svg'
+  import Scheduled from '../assets/svg/progress/Scheduled.svg'
+  import Idea from '../assets/svg/roadmap/Idea.svg'
+  import UserTested from '../assets/svg/roadmap/UserTested.svg'
+  import Released from '../assets/svg/roadmap/Released.svg'
+  import Upgrade from '../assets/svg/roadmap/Upgrade.svg'
+  import SCon from '../assets/svg/roadmap/SC.svg'
+
   export default {
+    components: {
+      InlineSvg
+    },
     data() {
       return {
         title: 'Our Roadmap...',
-        d1a: 'Prototyping',
-        d2a: 'User Testing',
-        d3a: 'Version 1.0',
-        d4a: 'Version 1.1',
-        d5a: 'Strength and Conditioning Add-on',
-        d1b: 'Mastering and building the essential features.',
-        d2b: 'Getting some feedback and improving the app from the get-go.',
-        d3b: 'Our big day! Giving you a new way to build programmes.',
-        d4b: 'Patching it up to give you guys the latest.',
-        d5b: 'Take your business to the next level.',
-        d1p: 'In-Progess',
-        d2p: 'Scheduled',
-        d3p: '01.08.20',
-        d4p: 'Planned',
-        d5p: 'Planned'
+        development: [
+          {id: 1, icon: Idea, progress: 'In-Progess', progressIcon: InDev, title: 'Prototyping', desc: 'Mastering and building the essential features.'},
+          {id: 2, icon: UserTested, progress: 'Planned', progressIcon: Planned, title: 'User Testing', desc: 'Getting some feedback and improving the app from the get-go.'},
+          {id: 3, icon: Released, progress: '01.08.20', progressIcon: Scheduled, title: 'Version 1.0', desc: 'Our big day! Giving you a new way to build programmes.'},
+          {id: 4, icon: Upgrade, progress: 'Planned', progressIcon: Planned, title: 'Version 1.1', desc: 'Patching it up to give you guys the latest.'},
+          {id: 5, icon: SCon, progress: 'Planned', progressIcon: Planned, title: 'Strength and Conditioning Add-on', desc: 'Take your business to the next level.'}
+        ]
       }
     }
   }
 </script>
 
 <style scoped>
-  .desc {
-    font-size: .8rem;
-    padding: 0
-  }
   #roadmap {
-    line-height: 5rem;
     display: grid;
-    grid-template-columns: .1fr .1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-      'i1 p d1'
-      'i2 p d2'
-      'i3 p d3'
-      'i4 p d4'
-      'i5 p d5';
-    grid-gap: 0 1rem;
-    width: fit-content;
-    height: auto;
-    margin: 0
+    margin: 3rem 0;
+    grid-template-columns: .2fr 1fr
   }
-  #roadmap > div {
+  .icon--main {
+    width: 5rem;
     margin: auto 0
   }
-  #roadmap > div > p {
-    margin: .5rem 1rem
-  }
-  .icon {
-    margin: auto;
+  .icon--progress {
     text-align: center;
-    width: 4rem
+    width: 1.5rem;
+    height: auto;
+    margin: 0 .2rem
   }
-  .roadmap--title {
-    font-size: 1.5rem;
-    font-weight: bold
+  .container--progress {
+    display: flex;
+    align-items: center
   }
-  #progress {
-    grid-area: p
+  .roadmap__progress {
+    font-size: .8rem;
+    margin: 0 .4rem 0 0
   }
-  #progress__bar {
-    animation: fadeInf 1000ms infinite;
-    animation-direction: alternate
+  .roadmap__title {
+    font-weight: 700;
+    margin: 1rem 0
+  }
+  .roadmap__desc {
+    margin: 1rem 0
   }
   .container--2c {
     display: grid;
@@ -136,9 +98,11 @@
     padding: 1rem 2rem;
     letter-spacing: .3rem
   }
-  #community {
-    width: 25vw
+  #vote {
+    margin: auto
   }
+
+  /* Responsive */
   @keyframes fadeInf {
     from {
       fill-opacity: 60%
@@ -148,6 +112,9 @@
     }
   }
   @media (max-width: 992px) {
+    #roadmap {
+      grid-gap: 3rem
+    }
     .roadmap--title {
       font-size: 1rem
     }
@@ -155,25 +122,11 @@
       margin: 5rem 0
     }
   }
-  @media (max-width: 768px) {
-    #roadmap {
-      grid-template-columns: .1fr 1fr;
-      grid-gap: 3rem 1rem
-    }
-    #progress {
-      display: none
-    }
-  }
   @media (max-width: 576px) {
     #roadmap {
-      grid-template-areas: "i1" "d1" "i2" "d2" "i3" "d3" "i4" "d4" "i5" "d5";
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(5, .4fr 1fr);
       grid-gap: 1rem;
-      margin: 0
-    }
-    #progress {
-      display: none
+      margin: 3rem 0
     }
     .container--2c {
       grid-template-columns: 1fr
