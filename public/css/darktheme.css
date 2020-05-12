@@ -25,14 +25,20 @@ svg path#box {
 .input--option {
   color: #FFFFFF
 }
-.input--option:before {
-  background-color: #FFFFFF
+#menu > a.input--option {
+  color: #2C3E50
+}
+#menu > a.input--option:before {
+  color: #2C3E50
 }
 .paper {
   background-color: #485868
 }
 .paper--back rect {
   fill: #485868
+}
+#menuToggle span {
+  background-color: #FFFFFF!important
 }
 
 /* HOME PAGE*/
