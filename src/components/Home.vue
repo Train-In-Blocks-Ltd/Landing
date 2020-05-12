@@ -5,7 +5,6 @@
     <div class="spacer"></div>
     <div id="container--2c">
       <h1>Save more time and get more clients.</h1>
-      <img id="laptop" src="../assets/svg/LaptopTablet.svg"/>
     </div>
     <div class="spacer"></div>
     <div id="container--2c3r">

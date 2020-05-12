@@ -29,7 +29,6 @@
         }
       }
     }),
-
     mounted () {
       this.renderChart(this.chartdata, this.options)
     }
