@@ -11,7 +11,7 @@
         <router-link class="input--option" to="/roadmap">Roadmap</router-link>
         <router-link class="input--option" to="/Explore">Explore</router-link><br>
         <!--<v-swatches v-model="color" :swatches="swatches" popover-x="right"></v-swatches>-->
-        <button id="darkmode" @click="darkThemeSwitch">Dark Mode</button>
+        <button class="darkmode" @click="darkThemeSwitch()">{{toMode}} Mode</button>
       </nav>
       <hamMenu id="hamMenu"></hamMenu>
     </div>
@@ -44,6 +44,7 @@
       return {
         // color: '#ffffff',
         // swatches: ['#fff5f5', '#fefff5', '#f6fff5', '#f5fcff', '#fbf5ff', 'ffffff']
+        toMode: 'Dark'
       }
     },
     methods: {
@@ -65,8 +66,10 @@
         let darkThemeLinkEl = document.querySelector("#dark-theme-style");
         if (!darkThemeLinkEl) {
           this._addDarkTheme()
+          this.toMode = 'Light'
         } else {
           this._removeDarkTheme()
+          this.toMode = 'Dark'
         }
       }
     }
@@ -168,7 +171,7 @@
     width: 2rem!important
   }
   */
-  #darkmode {
+  .darkmode {
     font-size: .8rem;
     padding: .4rem 1rem;
     display: block;

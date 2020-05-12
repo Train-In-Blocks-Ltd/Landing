@@ -11,6 +11,7 @@
       <router-link class="input--option" to="/pricing">Pricing</router-link>
       <router-link class="input--option" to="/roadmap">Roadmap</router-link>
       <router-link class="input--option" to="/Explore">Explore</router-link>
+      <button class="darkmode" @click="$parent.darkThemeSwitch()">{{$parent.toMode}} Mode</button>
     </ul>
   </div>
   </div>
