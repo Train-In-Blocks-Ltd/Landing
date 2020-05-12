@@ -15,7 +15,7 @@ const router = new VueRouter({
       path: '/',
       component: HomeComponent,
       meta: {
-        title: 'Welcome'
+        title: 'Train In Blocks'
       }
     },
     {
