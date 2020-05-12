@@ -83,7 +83,8 @@
     text-align: right
   }
   .icon--gif {
-    margin: 3rem
+    margin: 3rem;
+    border-radius: 5px
   }
   @media (max-width: 992px) {
     #pricing {

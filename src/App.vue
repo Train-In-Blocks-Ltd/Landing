@@ -11,7 +11,7 @@
         <router-link class="input--option" to="/roadmap">Roadmap</router-link>
         <router-link class="input--option" to="/Explore">Explore</router-link><br>
         <!--<v-swatches v-model="color" :swatches="swatches" popover-x="right"></v-swatches>-->
-        <!--<button id="darkmode" @click="darkThemeSwitch">Dark Mode</button>-->
+        <button id="darkmode" @click="darkThemeSwitch">Dark Mode</button>
       </nav>
       <hamMenu id="hamMenu"></hamMenu>
     </div>
@@ -169,6 +169,7 @@
   }
   */
   #darkmode {
+    font-size: .8rem;
     padding: .4rem 1rem;
     display: block;
     margin: 1rem 0 0 0;
