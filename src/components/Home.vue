@@ -61,12 +61,11 @@
   }
   #container--2c3r {
     display: grid;
+    grid-template: repeat(3, 1fr) / 1fr 1fr;
     grid-template-areas:
-      "aI aT"
-      "bT bI"
-      "cI cT";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+      'aI aT'
+      'bT bI'
+      'cI cT';
     grid-gap: 10rem 1rem;
     height: auto
   }
@@ -83,7 +82,7 @@
   #text--exceptional {
     background-color: #282828;
     border: 2px solid #282828;
-    color: #fff
+    color: white
   }
   .text--right {
     text-align: right
@@ -137,9 +136,8 @@
       grid-gap: 3rem
     }
     #container--2c3r {
-      grid-template-columns: 1fr;
-      grid-template-areas: "aT" "aI" "bT" "bI" "cT" "cI";
-      grid-template-rows: repeat(3, .4fr 1fr);
+      grid-template: repeat(3, .4fr 1fr) / 1fr;
+      grid-template-areas: 'aT' 'aI' 'bT' 'bI' 'cT' 'cI';
       grid-gap: 5rem 0
     }
     #laptop {

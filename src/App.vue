@@ -10,7 +10,6 @@
         <router-link class="input--option" to="/pricing">Pricing</router-link>
         <router-link class="input--option" to="/roadmap">Roadmap</router-link>
         <router-link class="input--option" to="/Explore">Explore</router-link><br>
-        <!--<v-swatches v-model="color" :swatches="swatches" popover-x="right"></v-swatches>-->
         <button class="darkmode" @click="darkThemeSwitch()">{{toMode}} Mode</button>
       </nav>
       <hamMenu id="hamMenu"></hamMenu>
@@ -29,8 +28,6 @@
 
 <script>
   import InlineSvg from 'vue-inline-svg'
-  // import VSwatches from 'vue-swatches'
-  // import 'vue-swatches/dist/vue-swatches.css'
   import hamMenu from './components/Hamburger.vue'
 
   export default {
@@ -38,12 +35,9 @@
     components: {
       hamMenu,
       InlineSvg
-      // VSwatches
     },
     data() {
       return {
-        // color: '#ffffff',
-        // swatches: ['#fff5f5', '#fefff5', '#f6fff5', '#f5fcff', '#fbf5ff', 'ffffff']
         toMode: 'Dark'
       }
     },
@@ -79,7 +73,7 @@
 <style>
   @import '../node_modules/animate.css';
 
-  /*GLOBAL */
+  /* GLOBAL */
   #app {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -109,7 +103,7 @@
   }
   button:hover {
     background-color: #282828;
-    color: #FFFFFF;
+    color: white
   }
   button:active {
     transform: scale(.9)
@@ -151,26 +145,6 @@
   #logo--home:active > path {
     opacity: .6
   }
-
-  /* Color 
-  .vue-swatches {
-    vertical-align: middle;
-    margin-left: 1rem
-  }
-  .vue-swatches__trigger, .vue-swatches__container, .vue-swatches__swatch {
-    border-radius: 0!important
-  }
-  .vue-swatches__trigger {
-    height: 1rem!important;
-    width: 1rem!important;
-    border: 1px solid #282828
-  }
-  .vue-swatches__swatch {
-    border: 1px solid #282828;
-    height: 2rem!important;
-    width: 2rem!important
-  }
-  */
   .darkmode {
     font-size: .8rem;
     padding: .4rem 1rem;
@@ -219,7 +193,7 @@
     margin: auto;
     padding: 5.9277rem;
     box-shadow: 0 20px 40px 12px rgba(0, 0, 0, .1);
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     transition: 500ms;
     transition-timing-function: cubic-bezier(.165, .84, .44, 1)
   }
@@ -367,7 +341,7 @@
       margin: 5vh 0
     }
     .paper {
-      padding: 2rem;
+      padding: 2rem
     }
   }
   @media (max-width: 360px) {

@@ -118,8 +118,7 @@
   }
   @media (max-width: 768px) {
     .container--2c {
-      grid-template-columns: 1fr;
-      grid-template-rows: .6fr 1fr;
+      grid-template: .6fr 1fr / 1fr;
       grid-template-areas: 'b' 'a'
     }
     .container--2c > p {

@@ -49,7 +49,7 @@
     height: auto;
     min-height: fit-content;
     box-shadow: 0 20px 40px 12px rgba(0, 0, 0, .05);
-    background-color: #fff;
+    background-color: white;
     padding: 2rem;
     text-align: center
   }
@@ -64,7 +64,7 @@
     width: 70%;
     height: auto;
     margin: auto;
-    padding: 1rem .5rem;
+    padding: 1rem .5rem
   }
   h2 {
     width: fit-content;
@@ -76,7 +76,7 @@
   }
   #pro {
     background-color: #282828;
-    color: #FFFFFF;
+    color: white;
     padding: 0 1rem
   }
   footer {
