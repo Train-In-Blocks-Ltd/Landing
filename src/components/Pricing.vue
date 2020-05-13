@@ -2,7 +2,7 @@
   <div>
     <h1 class="paper--title">{{title}}</h1>
     <div id="pricing">
-      <div class="pricing__plans">
+      <div class="pricing__plans dark">
         <div>
           <img class="icon--gif" src="../assets/gif/deadlift.gif"/>
           <h2>Basic - Monthly</h2>
@@ -10,10 +10,10 @@
         </div>
         <button class="signUp">{{btn1}}</button>
       </div>
-      <div class="pricing__plans">
+      <div class="pricing__plans dark">
         <div>
           <img class="icon--gif" src="../assets/gif/trophy.gif"/>
-          <h2 id="pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">Pro - Yearly</h2>
+          <h2 class="pro dark" href="https://trolley.link/p/" data-trolley="true" data-tpk="">Pro - Yearly</h2>
           <h1 class="pricing__cost">£90</h1>
           <p>Save 25% on the annual plan,<br><b>that's £7.50/month</b></p><br><br>
         </div>
@@ -74,7 +74,7 @@
     margin: 0;
     font-size: 2rem
   }
-  #pro {
+  .pro {
     background-color: #282828;
     color: white;
     padding: 0 1rem

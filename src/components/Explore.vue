@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1 class="paper--title">{{title}}</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt sit ipsum architecto repellendus? Quo, molestias! Praesentium maiores ea in iste autem nisi, aliquid provident saepe, ipsa animi ad est! Fugit porro nihil error neque quisquam corrupti maiores perferendis ipsam molestiae. Mollitia officiis nesciunt, quam repudiandae magni deserunt nam illo quo?</p>
+    <div class="spacer"></div>
+    <h2>What's with our obsession with paper?</h2>
     <div class="spacer"></div>
     <div class="spacer"></div>
     <div class="container--2c">
@@ -9,6 +10,9 @@
         <h1>Get More From Our Emails</h1>
       </div>
       <Subscribe></Subscribe>
+    </div>
+    <div class="socials">
+      
     </div>
   </div>
 </template>

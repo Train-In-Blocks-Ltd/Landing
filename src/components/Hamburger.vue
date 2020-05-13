@@ -2,9 +2,9 @@
   <div>
     <div id="menuToggle">
     <input type="checkbox" />
-    <span></span>
-    <span></span>
-    <span></span>
+    <span class="dark"></span>
+    <span class="dark"></span>
+    <span class="dark"></span>
     <ul id="menu">
       <router-link class="input--option" to="/">Welcome</router-link>
       <router-link class="input--option" to="/features">Demo</router-link>

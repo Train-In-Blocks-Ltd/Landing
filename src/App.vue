@@ -38,7 +38,7 @@
     },
     data() {
       return {
-        toMode: 'Dark'
+        toMode: 'Night'
       }
     },
     methods: {
@@ -60,10 +60,10 @@
         let darkThemeLinkEl = document.querySelector("#dark-theme-style");
         if (!darkThemeLinkEl) {
           this._addDarkTheme()
-          this.toMode = 'Light'
+          this.toMode = 'Day'
         } else {
           this._removeDarkTheme()
-          this.toMode = 'Dark'
+          this.toMode = 'Night'
         }
       }
     }
@@ -91,8 +91,10 @@
   h1 {
     font-size: 3rem
   }
+  input, button {
+    background-color: transparent
+  }
   button {
-    background-color: transparent;
     outline-width: 0;
     border: 1px solid #282828;
     font-size: 1rem;

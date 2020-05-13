@@ -15,7 +15,7 @@
     font-size: 2rem
   }
   .email {
-    width: 30vw;
+    width: 70%;
     margin: 3rem 0;
     padding: .4rem;
     border: none;
@@ -26,7 +26,7 @@
     transition: all 500ms cubic-bezier(.165, .84, .44, 1)
   }
   .email:hover, .email:focus {
-    width: 35vw
+    width: 75%
   }
   .button {
     width: 20rem;
@@ -39,13 +39,7 @@
     background-color: transparent;
     transition: all 500ms cubic-bezier(.165, .84, .44, 1)
   }
-  .button:hover {
-    background-color: #282828;
-    color: #ffffff
-  }
-  .button:active {
-    transform: scale(.95)
-  }
+
 
   /* Responsiveness */
   @media (max-width: 768px) {
