@@ -20,6 +20,15 @@
         <button class="signUp">{{btn2}}</button>
       </div>    
     </div>
+    <div class="spacer"></div>
+    <div>
+      <h1>What does the app get you again?</h1><br>
+      <h2 id="to-features">Let me show you <router-link class="input--option link" to="./features/#features">(Click here for the full list)</router-link></h2>
+      <div class="list--overview" v-for="item in overview" :key="item.id">
+        <p class="list__desc"><b>{{item.name}}</b> - {{item.desc}}</p>
+      </div>
+    </div>
+    <div class="spacer"></div>
     <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with the cool icons!</p>
   </div>
 </template>
@@ -30,7 +39,12 @@
       return {
         title: 'Yes. That\'s It.',
         btn1: 'Let\'s Get Started',
-        btn2: 'Start Saving'
+        btn2: 'Start Saving',
+        overview: [
+          {id: 1, name: 'Unlimited Clients', desc: 'Again, we don\'t want to cap you on how many clients you can train. Go for it!',},
+          {id: 2, name: 'Instant Access', desc: 'No waiting around here, just dive right in.',},
+          {id: 3, name: 'Voting', desc: 'Help us decide where to go. We really value your opinion. Check our Roadmap and find out more.',}
+        ]
       }
     }
   }
@@ -79,8 +93,11 @@
     color: white;
     padding: 0 1rem
   }
-  footer {
-    text-align: right
+  #to-features {
+    margin: 0
+  }
+  .link {
+    margin: 0
   }
   .icon--gif {
     margin: 3rem;

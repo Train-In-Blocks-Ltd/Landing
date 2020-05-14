@@ -111,6 +111,9 @@
       width: 70vw;
       margin: auto
     }
+    #svg--3 {
+      width: auto
+    }
   }
   @media (max-width: 360px) {
     #container--2c3r {
