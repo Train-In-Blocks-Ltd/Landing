@@ -5,6 +5,7 @@
     <div class="spacer"></div>
     <div id="container--2c">
       <h1>Save more time and get more clients.</h1>
+      <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device"/>
     </div>
     <div class="spacer"></div>
     <div id="container--2c3r">
@@ -13,7 +14,7 @@
       <h1 style="grid-area: bT">Speed, simplicity and functionality is our philosophy.</h1>
       <inline-svg style="grid-area: bI" :src="require('../assets/svg/FlyArrow.svg')"/>
       <h1 style="grid-area: cT">Use features that you only need, save your money and expand.</h1>
-      <inline-svg style="grid-area: cI" :src="require('../assets/svg/Custom.svg')"/>
+      <inline-svg id="svg--3" style="grid-area: cI" :src="require('../assets/svg/Custom.svg')"/>
     </div>
     <div class="spacer"></div>
   </div>
@@ -46,8 +47,8 @@
     width: 100%;
     margin: 5vh 0
   }
-  #container--2c > p {
-    text-align: left
+  #container--2c > h1 {
+    margin: auto
   }
   #container--2c3r {
     display: grid;
@@ -76,14 +77,14 @@
     border: 2px solid #282828;
     color: white
   }
-  .img {
+  #img--DevicePC {
     width: 100%
-  }
-  #laptop {
-    width: 40vw
   }
   .text--right {
     text-align: right
+  }
+  #svg--3 {
+    width: 30vw
   }
 
   @keyframes dash {

@@ -63,6 +63,13 @@ h1#text--exceptional.desc {
 .ql-formats button:hover {
   background-color: #FFFFFF30
 }
+#dataCat, select {
+  border: 1px solid white;
+  color: white
+}
+#dataCat option {
+  color: #2C3E50
+}
 
 /* PRICING PAGE */
 div.pricing__plans.dark {

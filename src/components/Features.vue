@@ -1,14 +1,24 @@
 <template>
   <div>
     <h1 class="paper--title">{{title}}</h1>
-    <div class="spacer"></div>
+    <div class="spacer--small"></div>
+    <div class="container--intro">
+      <h2>How do we track performance? Spreadsheets right?</h2>
+      <p>No.</p>
+      <h2>Numbers in boxes and clicking back and forth?</h2>
+      <p>No.</p>
+    </div>
+    <div class="spacer--small"></div>
     <div class="container--2c">
       <div style="grid-area: b">
-        <div class="spacer"></div>
-        <h2>Say Goodbye to Manually Tracking Data</h2>
-        <p>Our text box will understand the workouts and will do all the math for you!!</p>
+        <h2>Say Goodbye to Manually Tracking Data.</h2>
+        <p>Our app will understand the workouts and will do all the math for you. That's right. You build, visualise, adjust and adapt even before the first session.</p>
         <h2>Just learn the format and start speaking with us.</h2>
-        <p>A) Back Squat: 3 x 6 at 70/80/90kg<br>B) Bench Press: 2 x 15 at 50/55/60kg</p>
+        <p><b>A) Back Squat: 3 x 6 at 70/80/90kg</b><br><br>
+          <i>This means the<b>back squat</b> for<b> 3 sets</b> of<b> 6 reps</b> at<b> 70, 80</b> and<b> 90kg.</b></i><br><br><br>
+          <b>B) Bench Press: 2 x 20/15 at 50/55kg</b><br><br>
+          <i>Now, the <b>bench press</b> but for <b>20 reps</b> at<b> 50kg</b> and<b> 15 reps</b> at <b>55kg.</b></i>
+        </p>
       </div>
       <Editor style="grid-area: a"></Editor>
     </div>
@@ -17,7 +27,7 @@
       <line-chart id="chart--line"></line-chart><br><br>
       <div id="stats">
         <h2>Statistics</h2>
-        <select>
+        <select id="dataCat">
           <option>Select a Measure</option>
           <option>Sets</option>
           <option>Reps</option>
@@ -61,37 +71,39 @@
     },
     data() {
       return {
-        title: 'Give it a try!',
+        title: 'Go on...try before you buy!',
         featuresTitle: 'What\'s included?',
         features: [
-          {id: 1, subtitle: 'Save Time', desc: 'Create a new long-term bespoke programme in less than 10 minutes.', icon: reduceTime},
-          {id: 2, subtitle: 'Powerful', desc: 'Powerful workout design tool using free-form text editors.', icon: powerful},
-          {id: 3, subtitle: 'Visual', desc: 'Show the client a graphic overview of their programme using a block periodisation model.', icon: visualGrid},
+          {id: 1, subtitle: 'Save Time', desc: 'Create a new long-term bespoke programme in less than 15 minutes.', icon: reduceTime},
+          {id: 2, subtitle: 'Workout Builder', desc: 'A powerful workout design tool using free-form text editors. Write anything you want.', icon: powerful},
+          {id: 3, subtitle: 'Visuals', desc: 'Analyse and visualise the programme without spending your day entering numbers into boxes. We\'ll handle that.', icon: visualGrid},
           {id: 4, subtitle: 'Cloud', desc: 'It\'s all on the internet. Access anytime and anywhere.', icon: cloud},
-          {id: 5, subtitle: 'Easy Planning', desc: 'Copy the workouts across a set time-frame with one-click. Then make any changes required for programme progression.', icon: easyPlanning},
+          {id: 5, subtitle: 'Easy Planning', desc: 'Copy the workouts across a set time-frame with one-click. Then make any changes required for progression.', icon: easyPlanning},
           {id: 6, subtitle: 'Sleek and Minimal UI', desc: 'Minimal and easy to understand. Simplicity goes a long way.', icon: sleek},
           {id: 7, subtitle: 'Super Affordable', desc: 'No complicated pricing plans with different restrictions. Just pay and get instant access.', icon: cheap},
-          {id: 8, subtitle: 'Unlimited Clients and Programmes', desc: 'There are no limits on number of clients or programmes.', icon: noLimits},
-          {id: 9, subtitle: 'In-Session Toolkit', desc: 'Collect, store and visualise data collected within sessions. E.g. Vertical CMJ, RPE, etc.', icon: toolkit},
-          {id: 10, subtitle: 'Connect, Learn and Grow', desc: 'Access resources and materials to boost your career by staying up-to-date with the industry.', icon: learn}
+          {id: 8, subtitle: 'Unlimited Clients', desc: 'There is no limit on the number of clients you can have. Go out there and get more.', icon: noLimits},
+          {id: 9, subtitle: 'In-Session Toolkit', desc: 'Ready-to-use calculators to help you deliver an outstanding session.', icon: toolkit},
+          {id: 10, subtitle: 'Connect, Learn and Grow', desc: 'Access resources and materials to boost your career by staying up-to-date with the industry. Have a say in our development as well.', icon: learn}
         ],
-        color: ''
       }
     }
   }
 </script>
 
 <style scoped>
-  h2 {
-    margin: 0
+  h2, .container--intro p {
+    margin: 1.5rem 0
   }
   .container--2c {
     display: grid;
     grid-template-areas: 'a b';
     grid-template-columns: 1fr 1fr
   }
-  .container--2c > p {
-    padding: 6vh 3vw
+  .container--2c > div {
+    margin: auto 0
+  }
+  .container--2c p {
+    margin: 1.5rem 0
   }
   #chart--line {
     grid-area: b;

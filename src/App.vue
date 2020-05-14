@@ -110,12 +110,21 @@
   button:active {
     transform: scale(.9)
   }
+  select {
+    background-color: transparent;
+    border: 1px solid #282828;
+    padding: .1rem;
+    letter-spacing: .05rem;
+    margin: 2rem 0
+  }
   .desc {
     padding: .4rem;
     margin: .4rem 0
   }
+  .spacer--small {
+    height: 5vh
+  }
   .spacer {
-    width: 100%;
     height: 10vh
   }
   #top {

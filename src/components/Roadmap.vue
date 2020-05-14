@@ -17,7 +17,7 @@
         <inline-svg id="vote" :src="require('../assets/svg/Vote.svg')"/>
         <div>
             <h1 id="title--involved">Get Involved</h1>
-            <p>We want every paying member to have a say in the direction of the app and the company. You can <b>vote</b> for features and add-ons and we'll do the rest!</p>
+            <p>We want every paying member to have a say in the direction of the app and the company. You can<b> vote</b> for features and add-ons and we'll do the rest!</p>
         </div>
     </div>
   </div>
@@ -42,11 +42,11 @@
       return {
         title: 'Our Roadmap...',
         development: [
-          {id: 1, icon: Idea, progress: 'In-Progess', progressIcon: InDev, title: 'Prototyping', desc: 'Mastering and building the essential features.'},
+          {id: 1, icon: Idea, progress: 'In-Progess', progressIcon: InDev, title: 'Prototyping', desc: 'Mastering and building essential features.'},
           {id: 2, icon: UserTested, progress: 'Planned', progressIcon: Planned, title: 'User Testing', desc: 'Getting some feedback and improving the app from the get-go.'},
-          {id: 3, icon: Released, progress: '01.08.20', progressIcon: Scheduled, title: 'Version 1.0', desc: 'Our big day! Giving you a new way to build programmes.'},
+          {id: 3, icon: Released, progress: '01.08.20', progressIcon: Scheduled, title: 'Version 1.0', desc: 'Our big day! Giving you a new way to build programmes, earn more and to expand your business.'},
           {id: 4, icon: Upgrade, progress: 'Planned', progressIcon: Planned, title: 'Version 1.1', desc: 'Patching it up to give you guys the latest.'},
-          {id: 5, icon: SCon, progress: 'Planned', progressIcon: Planned, title: 'Strength and Conditioning Add-on', desc: 'Take your business to the next level.'}
+          {id: 5, icon: SCon, progress: 'Planned', progressIcon: Planned, title: 'Strength and Conditioning Add-on', desc: 'Take your business to the next level by tailoring the app towards your niche.'}
         ]
       }
     }
