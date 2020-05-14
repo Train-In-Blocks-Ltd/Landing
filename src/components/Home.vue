@@ -66,9 +66,6 @@
   #container--2c3r > h1 {
     margin: auto
   }
-  .desc {
-    cursor: default
-  }
   #text--good {
     margin: 2rem 0 0 0;
     border: 2px solid #282828

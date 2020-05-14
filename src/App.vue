@@ -38,7 +38,7 @@
     },
     data() {
       return {
-        toMode: 'Night'
+        toMode: 'Night',
       }
     },
     methods: {

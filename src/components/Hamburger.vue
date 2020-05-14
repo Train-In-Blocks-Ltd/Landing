@@ -84,7 +84,7 @@
   grid-template-rows: repeat(5, 1fr);
   position: absolute;
   width: fit-content;
-  background: #fff;
+  background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   box-shadow: 0 0 20px 12px rgba(0, 0, 0, .05);

@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
+
 import HomeComponent from '../components/Home.vue'
 import FeaturesComponent from '../components/Features.vue'
 import PricingComponent from '../components/Pricing.vue'
@@ -52,6 +55,17 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title
   next()
+})
+
+router.beforeResolve((to, from, next) => {
+  if (to.path) {
+    NProgress.start()
+  }
+  next()
+})
+
+router.afterEach(() => {
+  NProgress.done()
 })
 
 export default router
