@@ -9,9 +9,9 @@
     </div>
     <div class="spacer"></div>
     <div id="container--2c3r">
-      <h1 class="text--right" style="grid-area: aT">We've taken exercise programming to the next level.</h1>
+      <h1 style="grid-area: aT">We've taken exercise programming to the next level.</h1>
       <inline-svg style="grid-area: aI" :src="require('../assets/svg/Arrow.svg')"/>
-      <h1 style="grid-area: bT">Speed, simplicity and functionality is our philosophy.</h1>
+      <h1 class="text--right" style="grid-area: bT">Speed, simplicity and functionality is our philosophy.</h1>
       <inline-svg style="grid-area: bI" :src="require('../assets/svg/FlyArrow.svg')"/>
       <h1 style="grid-area: cT">Use features that you only need, save your money and expand.</h1>
       <inline-svg id="svg--3" style="grid-area: cI" :src="require('../assets/svg/Custom.svg')"/>
@@ -57,6 +57,7 @@
       'aI aT'
       'bT bI'
       'cI cT';
+    grid-gap: 1vw;
     height: auto
   }
   #container--2c3r > div {
@@ -113,6 +114,12 @@
     }
     #svg--3 {
       width: auto
+    }
+  }
+
+  @media (max-width: 992px) {
+    .container--2c3r {
+      grid-gap: 10vh
     }
   }
   @media (max-width: 360px) {

@@ -199,7 +199,6 @@
   /* Paper and Child Element */
   .paper {
     overflow-y: auto;
-    vertical-align: bottom;
     height: 60vh;
     margin: auto;
     padding: 5.9277rem;
@@ -322,8 +321,6 @@
       display: none
     }
     #top {
-      display: grid;
-      grid-template-columns: 1fr .1fr;
       padding: 0 1rem;
       margin: 5vh 0
     }

@@ -75,14 +75,13 @@
 
 /* Menu box */
 #menu {
-  display: grid;
+  display: none;
   margin: 0;
   padding: 1rem 0;
   top: -5px;
   right: 60px;
   justify-items: center;
   grid-template-rows: repeat(5, 1fr);
-  opacity: 0;
   position: absolute;
   width: fit-content;
   background: #fff;
@@ -98,6 +97,6 @@
   font-weight: 700
 }
 #menuToggle input:checked ~ ul {
-  opacity: 1
+  display: grid
 }
 </style>
