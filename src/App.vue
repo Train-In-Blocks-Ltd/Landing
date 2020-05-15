@@ -110,6 +110,11 @@
   button:active {
     transform: scale(.9)
   }
+  button:disabled:hover {
+    background: transparent;
+    color: gray;
+    cursor: default
+  }
   select {
     background-color: transparent;
     border: 1px solid #282828;

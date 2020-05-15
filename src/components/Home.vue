@@ -3,6 +3,7 @@
     <h1 id="text--good" class="desc">Good Trainers Make Programmes,</h1>
     <h1 id="text--exceptional" class="desc">Exceptional Trainers Design Them.</h1>
     <div class="spacer"></div>
+    <Countdown end="August 1, 2020"/>
     <div id="container--2c">
       <h1>Save more time and get more clients.</h1>
       <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device"/>
@@ -22,10 +23,12 @@
 
 <script>
   import InlineSvg from 'vue-inline-svg'
+  import Countdown from 'vuejs-countdown'
 
   export default {
     components: {
-      InlineSvg
+      InlineSvg,
+      Countdown
     },
     data() {
       return {
@@ -36,6 +39,9 @@
 </script>
 
 <style scoped>
+  .vuejs-countdown {
+    text-align: center
+  }
   svg {
     margin: auto
   }
@@ -83,12 +89,6 @@
   }
   #svg--3 {
     width: 30vw
-  }
-
-  @keyframes dash {
-    to {
-      stroke-dashoffset: -1000
-    }
   }
 
   /* Responsiveness */

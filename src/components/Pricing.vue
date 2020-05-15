@@ -8,7 +8,7 @@
           <h2>Basic - Monthly</h2>
           <h1 class="pricing__cost">£10</h1>
         </div>
-        <button class="signUp">{{btn1}}</button>
+        <button class="signUp" :disabled="isOpen">{{btn1}}</button>
       </div>
       <div class="pricing__plans dark">
         <div>
@@ -17,7 +17,7 @@
           <h1 class="pricing__cost">£90</h1>
           <p>Save 25% on the annual plan,<br><b>that's £7.50/month</b></p><br><br>
         </div>
-        <button class="signUp">{{btn2}}</button>
+        <button class="signUp" :disabled="isOpen">{{btn2}}</button>
       </div>    
     </div>
     <div class="spacer"></div>
@@ -38,8 +38,9 @@
   data() {
       return {
         title: 'Yes. That\'s It.',
-        btn1: 'Let\'s Get Started',
-        btn2: 'Start Saving',
+        btn1: 'We\'re almost there...',
+        btn2: 'It will be out soon...',
+        isOpen: true,
         overview: [
           {id: 1, name: 'Unlimited Clients', desc: 'Again, we don\'t want to cap you on how many clients you can train. Go for it!',},
           {id: 2, name: 'Instant Access', desc: 'No waiting around here, just dive right in.',},

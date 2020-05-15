@@ -21,6 +21,11 @@ button.signUp:hover, input#mc-embedded-subscribe:hover, .darkmode:hover {
   background-color: white;
   color: #2C3E50
 }
+button:disabled:hover, button.signUp:disabled:hover {
+  background: transparent;
+  color: white;
+  cursor: default
+}
 .input--option {
   color: white
 }
