@@ -10,12 +10,12 @@
     </div>
     <div class="container--nav animated bounceInRight">
       <nav id='nav--main'>
-          <router-link class="input--option" to="/">Welcome</router-link>
-          <router-link class="input--option" to="/features">Demo</router-link>
-          <router-link class="input--option" to="/pricing">Pricing</router-link>
-          <router-link class="input--option" to="/roadmap">Roadmap</router-link>
-          <router-link class="input--option" to="/Explore">Explore</router-link><br>
-          <button class="darkmode" @click="darkThemeSwitch()">{{toMode}} Mode</button>
+        <router-link class="input--option" to="/">Welcome</router-link>
+        <router-link class="input--option" to="/features">Demo</router-link>
+        <router-link class="input--option" to="/pricing">Pricing</router-link>
+        <router-link class="input--option" to="/roadmap">Roadmap</router-link>
+        <router-link class="input--option" to="/Explore">Explore</router-link><br>
+        <button class="darkmode" @click="darkThemeSwitch()">{{toMode}} Mode</button>
       </nav>
     </div>
     <div class="viewer animated fadeInUp">
@@ -130,36 +130,12 @@
     margin: 2rem 0
   }
 
-  /* Line */
-  .viewer:before {
-    content: '';
-    height: 2px;
-    background-color: #282828;
-    width: 30vw
-  }
-
   /* Misc. */
-  .countdown--wrapper {
-    display: grid;
-    margin: 8rem 0;
-    animation-delay: 600ms
-  }
-  .container--countdown {
-    text-align: center;
-    letter-spacing: .4rem;
-    font-size: 1.5rem
-  }
   .spacer--small {
     height: 5vh
   }
   .spacer {
     height: 10vh
-  }
-  .container--nav {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 10vh;
-    animation-delay: 100ms
   }
   #logo--home {
     width: 10rem;
@@ -172,6 +148,22 @@
     display: block;
     margin: 1.5rem 0 0 0;
     float: right
+  }
+  .countdown--wrapper {
+    display: grid;
+    margin: 8rem 0;
+    animation-delay: 600ms
+  }
+  .container--countdown {
+    text-align: center;
+    letter-spacing: .4rem;
+    font-size: 1.5rem
+  }
+  .container--nav {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 10vh;
+    animation-delay: 100ms
   }
 
   /* Nav Hover Animation */
@@ -263,19 +255,16 @@
     body {
       padding: 0 6%
     }
-    .input--option.router-link-exact-active:before {
-      transform: scaleX(1);
-      opacity: 1
-    }
     button:hover {
       background-color: transparent;
       color: #282828
     }
+    .input--option.router-link-exact-active:before {
+      transform: scaleX(1);
+      opacity: 1
+    }
   }
   @media (max-width: 768px) {
-    main {
-      width: 100%
-    }
     h1 {
       font-size: 2rem
     }
@@ -287,15 +276,28 @@
     }
   }
   @media (max-width: 576px) {
-    #logo--home {
-      width: 8rem
+    /* Containers */
+    .container--countdown h2 {
+      font-size: 1.5rem
     }
-    .spacer {
-      height: 5vh
+    .container--countdown p {
+      font-size: .8rem;
+      margin: .6rem 0
     }
     .container--nav {
       height: fit-content;
       margin-bottom: 3rem
+    }
+    .container--features {
+      grid-gap: 2rem
+    }
+
+    /* Misc. */
+    .spacer {
+      height: 5vh
+    }
+    #logo--home {
+      width: 8rem
     }
     #nav--main {
       display: grid;
@@ -308,16 +310,6 @@
     .darkmode {
       margin: 0
     }
-    .container--countdown h2 {
-      font-size: 1.5rem
-    }
-    .container--countdown p {
-      font-size: .8rem;
-      margin: .6rem 0
-    }
-    .container--features {
-      grid-gap: 2rem
-    }
   }
   @media (max-width: 360px) {
     body {
@@ -326,6 +318,8 @@
     h1 {
       font-size: 1.5rem
     }
+
+    /* Containers */
     .container--countdown h2 {
       font-size: 1rem
     }

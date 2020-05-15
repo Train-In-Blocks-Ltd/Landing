@@ -129,9 +129,6 @@
     text-align: center
   }
   @media (max-width: 992px) {
-    .container--features > img {
-      width: 60%
-    }
     .container--2c {
       grid-template-columns: 300px 1fr
     }
@@ -149,12 +146,6 @@
       width: 70vw
     }
   }
-  @media (max-width: 576px) {
-    .container--features > img {
-      width: 70%;
-      margin: 0
-    }
-  }
   @media (max-width: 360px) {
     #editor {
       width: 100%
@@ -163,10 +154,6 @@
       grid-template-columns: 1fr;
       grid-template-rows: .4fr 1fr;
       grid-gap: 2rem
-    }
-    .container--features > img {
-      margin: auto;
-      width: auto
     }
   }
 </style>
