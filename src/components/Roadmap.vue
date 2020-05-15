@@ -135,8 +135,11 @@
       margin: auto;
       width: 70%
     }
+    #vote {
+      height: 10vh
+    }
     #title--involved {
-      margin: 0
+      margin: auto
     }
   }
 </style>

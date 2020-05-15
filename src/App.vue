@@ -1,44 +1,45 @@
 <template>
   <div id="app">
-    <div id="top">
-      <router-link to="/">
-        <inline-svg id="logo--home" class="animated bounceInDown" :src="require('./assets/svg/LogoC.svg')"/>
-      </router-link>
-      <nav id='nav--main' class="animated bounceInDown">
-        <router-link class="input--option" to="/">Welcome</router-link>
-        <router-link class="input--option" to="/features">Demo</router-link>
-        <router-link class="input--option" to="/pricing">Pricing</router-link>
-        <router-link class="input--option" to="/roadmap">Roadmap</router-link>
-        <router-link class="input--option" to="/Explore">Explore</router-link><br>
-        <button class="darkmode" @click="darkThemeSwitch()">{{toMode}} Mode</button>
-      </nav>
-      <HamMenu id="hamMenu"/>
-    </div>
-    <inline-svg :src="require('./assets/svg/Paper.svg')" id="back--two" class="paper--back animated fadeInUp"/>
-    <inline-svg :src="require('./assets/svg/Paper.svg')" id="back--one" class="paper--back animated fadeInUp"/>
-    <div class="animated fadeInUp">
-      <div class="paper">
-        <transition enter-active-class="animated fadeInUp delay-1s" leave-active-class="animated fadeOutDown">
-          <router-view></router-view>
-        </transition>
+    <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('./assets/svg/LogoC.svg')"/>
+    <div class="countdown--wrapper animated fadeIn">
+      <div class="container--countdown">
+        <h2>01.08.20</h2>
+        <Countdown end="August 1, 2020"/>
+        <p><b>BETA RELEASE</b></p>
       </div>
+    </div>
+    <div class="container--nav animated bounceInRight">
+      <nav id='nav--main'>
+          <router-link class="input--option" to="/">Welcome</router-link>
+          <router-link class="input--option" to="/features">Demo</router-link>
+          <router-link class="input--option" to="/pricing">Pricing</router-link>
+          <router-link class="input--option" to="/roadmap">Roadmap</router-link>
+          <router-link class="input--option" to="/Explore">Explore</router-link><br>
+          <button class="darkmode" @click="darkThemeSwitch()">{{toMode}} Mode</button>
+      </nav>
+    </div>
+    <div class="viewer animated fadeInUp">
+      <transition enter-active-class="animated fadeInRight delay-1s" leave-active-class="animated fadeOutLeft">
+        <router-view></router-view>
+      </transition>
     </div>
   </div>
 </template>
 
 <script>
   import InlineSvg from 'vue-inline-svg'
-  import HamMenu from './components/parts/Hamburger'
+  import Countdown from './components/parts/Countdown'
 
   export default {
     name: 'App',
     components: {
-      HamMenu,
-      InlineSvg
+      InlineSvg,
+      Countdown
     },
     data() {
       return {
         toMode: 'Night',
+        descSub: 'Get Notified When We Launch'
       }
     },
     methods: {
@@ -84,13 +85,19 @@
   body {
     margin: 0;
     padding: 0 8%;
-    overflow: hidden;
     letter-spacing: .1rem;
     font-size: 16px
   }
   h1 {
     font-size: 3rem
   }
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 3rem 0
+  }
+
+  /* GLOBAL: Inputs and Buttons */
   input, button {
     background-color: transparent
   }
@@ -122,9 +129,25 @@
     letter-spacing: .05rem;
     margin: 2rem 0
   }
-  .desc {
-    padding: .4rem;
-    margin: .4rem 0
+
+  /* Line */
+  .viewer:before {
+    content: '';
+    height: 2px;
+    background-color: #282828;
+    width: 30vw
+  }
+
+  /* Misc. */
+  .countdown--wrapper {
+    display: grid;
+    margin: 8rem 0;
+    animation-delay: 600ms
+  }
+  .container--countdown {
+    text-align: center;
+    letter-spacing: .4rem;
+    font-size: 1.5rem
   }
   .spacer--small {
     height: 5vh
@@ -132,47 +155,29 @@
   .spacer {
     height: 10vh
   }
-  #top {
+  .container--nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-    margin: 10vh 0
-  }
-  #nav--main {
+    flex-direction: row-reverse;
+    height: 10vh;
     animation-delay: 100ms
   }
-  #hamMenu {
-    display: none
-  }
-
-  /* Logo */
   #logo--home {
     width: 10rem;
-    height: auto
-  }
-  #logo--home > path {
-    opacity: 1;
-    transition: all .2s cubic-bezier(.165, .84, .44, 1)
-  }
-  #logo--home:hover > path {
-    opacity: .8
-  }
-  #logo--home:active > path {
-    opacity: .6
+    height: auto;
+    margin: 5rem 0 0 0
   }
   .darkmode {
     font-size: .8rem;
     padding: .4rem 1rem;
     display: block;
-    margin: 1rem 0 0 0;
+    margin: 1.5rem 0 0 0;
     float: right
   }
 
   /* Nav Hover Animation */
   .input--option {
     position: relative;
-    margin-left: 2vw;
+    margin: 0 0 0 2rem;
     text-decoration: none;
     color: #282828;
     transition: 300ms
@@ -204,47 +209,6 @@
     font-weight: bold
   }
 
-  /* Paper and Child Element */
-  .paper {
-    overflow-y: auto;
-    height: 60vh;
-    margin: auto;
-    padding: 5.9277rem;
-    box-shadow: 0 20px 40px 12px rgba(0, 0, 0, .1);
-    background-color: white;
-    transition: 500ms;
-    transition-timing-function: cubic-bezier(.165, .84, .44, 1)
-  }
-  .paper:hover {
-    transform: translateY(-3vh)
-  }
-  .paper--back {
-    position: absolute;
-    width: 50%;
-    height: auto;
-    z-index: -1;
-    transition: 500ms;
-    transition-timing-function: cubic-bezier(.165, .84, .44, 1)
-  }
-  #back--one {
-    top: 35vh;
-    left: 0;
-    animation-delay: 400ms
-  }
-  #back--two {
-    top: 40vh;
-    right: 0;
-    animation-delay: 200ms
-  }
-  .paper--title {
-    margin: 0 0 .6rem 0
-  }
-  p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin: 3rem 0
-  }
-
   /* Scroll-bar */
   ::-webkit-scrollbar {
     width: 10px;
@@ -260,7 +224,7 @@
     background: #00000030
   }
 
-  /* Misc. */
+  /* References */
   .ref--icons8 {
     position: relative;
     font-size: 1rem;
@@ -295,11 +259,6 @@
       font-size: 3.5rem
     }
   }
-  @media (max-width: 1200px) {
-    .paper {
-      padding: 5rem
-    }
-  }
   @media (max-width: 992px) {
     body {
       padding: 0 6%
@@ -308,51 +267,20 @@
       transform: scaleX(1);
       opacity: 1
     }
-    .paper {
-      padding: 4rem
-    }
-    .paper:hover {
-      transform: translateY(0)
-    }
-    .paper--back {
-      height: 80vh
-    }
     button:hover {
       background-color: transparent;
       color: #282828
     }
   }
   @media (max-width: 768px) {
-    body {
-      padding: 0
+    main {
+      width: 100%
     }
     h1 {
       font-size: 2rem
     }
     .spacer {
       height: 5vh
-    }
-    .paper {
-      padding: 3rem;
-      height: 80vh;
-      box-shadow: 0 -10px 40px 12px rgba(0, 0, 0, .1)
-    }
-    .paper--back {
-      display: none
-    }
-    #top {
-      padding: 0 1rem;
-      margin: 5vh 0
-    }
-    #nav--main {
-      display: none
-    }
-    #hamMenu {
-      display: grid
-    }
-    .input--option {
-      margin: .2rem 0;
-      width: fit-content
     }
     .input--option:hover {
       opacity: 1
@@ -365,11 +293,27 @@
     .spacer {
       height: 5vh
     }
-    #top {
-      margin: 5vh 0
+    .container--nav {
+      height: fit-content;
+      margin-bottom: 3rem
     }
-    .paper {
-      padding: 2rem
+    #nav--main {
+      display: grid;
+      justify-items: right
+    }
+    .input--option {
+      width: fit-content;
+      margin: .4rem 0
+    }
+    .darkmode {
+      margin: 0
+    }
+    .container--countdown h2 {
+      font-size: 1.5rem
+    }
+    .container--countdown p {
+      font-size: .8rem;
+      margin: .6rem 0
     }
     .container--features {
       grid-gap: 2rem
@@ -381,6 +325,13 @@
     }
     h1 {
       font-size: 1.5rem
+    }
+    .container--countdown h2 {
+      font-size: 1rem
+    }
+    .container--countdown p {
+      font-size: .5rem;
+      margin: .4rem 0
     }
   }
 </style>
