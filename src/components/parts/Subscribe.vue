@@ -67,6 +67,9 @@
     .email {
       width: 100%
     }
+    .email:hover, .email:focus {
+      width: 100%
+    }
     .button {
       width: 70%
     }
