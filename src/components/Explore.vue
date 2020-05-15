@@ -15,14 +15,9 @@
         <h1>Minimal</h1>
       </div>
     </div>
-    <div class="spacer"></div>
-    <div class="spacer"></div>
-    <div class="container--2c">
-      <div class="desc--subscribe">
-        <h1>Get More From Our Emails</h1>
-      </div>
-      <Subscribe></Subscribe>
-    </div>
+    <div class="spacer"/>
+    <Subscribe></Subscribe>
+    <div class="spacer"/>
     <div class="socials">
       
     </div>
@@ -31,7 +26,7 @@
   
 <script>
   import InlineSvg from 'vue-inline-svg'
-  import Subscribe from './Subscribe'
+  import Subscribe from './parts/Subscribe'
 
   export default {
     components: {
@@ -40,7 +35,8 @@
     },
     data() {
       return {
-        title: 'What\'s with our obsession with paper?'
+        title: 'What\'s with our obsession with paper?',
+        descSub: 'Get More From Our Emails'
       }
     }
   }
@@ -61,21 +57,11 @@
   .container--desc-text {
     grid-area: b
   }
-  .desc--subscribe > h1 {
-    margin: 0;
-    text-align: right
-  }
-  .svg--paper {
-    height: 25vh;
-    width: auto
-  }
 
   /* Responsiveness */
   @media (max-width: 992px) {
-    .container--2c {
-      grid-template-columns: 1fr
-    }
-    .container--2c.intro {
+    .container--2c, .container--2c.subscribe, .container--2c.intro {
+      grid-template-columns: 1fr;
       grid-template-areas: 'b' 'a';
       grid-gap: 0
     }

@@ -12,7 +12,7 @@
         <router-link class="input--option" to="/Explore">Explore</router-link><br>
         <button class="darkmode" @click="darkThemeSwitch()">{{toMode}} Mode</button>
       </nav>
-      <hamMenu id="hamMenu"></hamMenu>
+      <HamMenu id="hamMenu"/>
     </div>
     <inline-svg :src="require('./assets/svg/Paper.svg')" id="back--two" class="paper--back animated fadeInUp"/>
     <inline-svg :src="require('./assets/svg/Paper.svg')" id="back--one" class="paper--back animated fadeInUp"/>
@@ -28,12 +28,12 @@
 
 <script>
   import InlineSvg from 'vue-inline-svg'
-  import hamMenu from './components/Hamburger.vue'
+  import HamMenu from './components/parts/Hamburger'
 
   export default {
     name: 'App',
     components: {
-      hamMenu,
+      HamMenu,
       InlineSvg
     },
     data() {
@@ -103,11 +103,11 @@
     cursor: pointer;
     transition: all 400ms cubic-bezier(.165, .84, .44, 1)
   }
-  button:hover {
+  button:hover, #mc-embedded-subscribe:hover {
     background-color: #282828;
     color: white
   }
-  button:active {
+  button:active, #mc-embedded-subscribe:active {
     transform: scale(.9)
   }
   button:disabled:hover {
@@ -190,12 +190,15 @@
     background-color: #282828;
     opacity: 0;
     transform: scaleX(0);
-    transition: all 300ms;
+    transition: all 200ms;
     transition-timing-function: cubic-bezier(.165, .84, .44, 1)
   }
   .input--option:hover:before {
     transform: scaleX(1);
     opacity: .7
+  }
+  .input--option:active {
+    transform: scale(.9)
   }
   nav a.router-link-exact-active {
     font-weight: bold
@@ -301,11 +304,22 @@
     body {
       padding: 0 6%
     }
+    .input--option.router-link-exact-active:before {
+      transform: scaleX(1);
+      opacity: 1
+    }
     .paper {
       padding: 4rem
     }
+    .paper:hover {
+      transform: translateY(0)
+    }
     .paper--back {
       height: 80vh
+    }
+    button:hover {
+      background-color: transparent;
+      color: #282828
     }
   }
   @media (max-width: 768px) {
@@ -320,7 +334,8 @@
     }
     .paper {
       padding: 3rem;
-      height: 80vh
+      height: 80vh;
+      box-shadow: 0 -10px 40px 12px rgba(0, 0, 0, .1)
     }
     .paper--back {
       display: none
@@ -355,6 +370,9 @@
     }
     .paper {
       padding: 2rem
+    }
+    .container--features {
+      grid-gap: 2rem
     }
   }
   @media (max-width: 360px) {

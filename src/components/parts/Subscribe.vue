@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="container--2c">
+    <h1 class="desc--subscribe">{{$parent.descSub}}</h1>
     <form action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <label for="mce-EMAIL">Sign Me Up</label><br>
       <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
@@ -10,6 +11,15 @@
 </template>
 
 <style scoped>
+  .container--2c {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    margin: 3rem 0
+  }
+  .desc--subscribe {
+    text-align: right
+  }
   #mc-embedded-subscribe-form > label {
     font-weight: 700;
     font-size: 2rem
@@ -40,23 +50,34 @@
     transition: all 500ms cubic-bezier(.165, .84, .44, 1)
   }
 
-
   /* Responsiveness */
+  @media (max-width: 992px) {
+    .container--2c {
+      grid-template-columns: 1fr;
+      grid-gap: 0
+    }
+    .desc--subscribe {
+      text-align: left
+    }
+  }
   @media (max-width: 768px) {
     #mc-embedded-subscribe-form > label {
       font-size: 1.5rem
     }
     .email {
-      width: 50%
+      width: 70%
     }
     .email:hover,
     .email:focus {
-      width: 70%
+      width: 75%
     }
   }
   @media (max-width: 576px) {
+    .email {
+      width: 100%
+    }
     .button {
-      width: 50%
+      width: 70%
     }
   }
 </style>

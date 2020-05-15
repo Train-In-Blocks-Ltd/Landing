@@ -50,8 +50,8 @@
 
 <script>
   import InlineSvg from 'vue-inline-svg'
-  import LineChart from './Chart'
-  import Editor from './WorkoutBuilder'
+  import LineChart from './parts/Chart'
+  import Editor from './parts/WorkoutBuilder'
   import reduceTime from '../assets/svg/features/reduceTime.svg'
   import powerful from '../assets/svg/features/powerful.svg'
   import visualGrid from '../assets/svg/features/visualGrid.svg'
