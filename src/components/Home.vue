@@ -29,7 +29,7 @@
 
 <script>
   import InlineSvg from 'vue-inline-svg'
-  import Countdown from 'vuejs-countdown'
+  import Countdown from './parts/Countdown'
   import Subscribe from './parts/Subscribe'
 
   export default {
