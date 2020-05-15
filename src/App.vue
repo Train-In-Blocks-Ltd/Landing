@@ -18,7 +18,7 @@
         <button class="darkmode" @click="darkThemeSwitch()">{{toMode}} Mode</button>
       </nav>
     </div>
-    <div class="viewer animated fadeInUp">
+    <div class="animated fadeInUp">
       <transition enter-active-class="animated fadeInRight delay-1s" leave-active-class="animated fadeOutLeft">
         <router-view></router-view>
       </transition>
