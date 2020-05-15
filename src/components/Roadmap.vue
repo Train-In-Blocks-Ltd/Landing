@@ -54,36 +54,7 @@
 </script>
 
 <style scoped>
-  #roadmap {
-    display: grid;
-    margin: 3rem 0;
-    grid-template-columns: .2fr 1fr
-  }
-  .icon--main {
-    width: 5rem;
-    margin: auto 0
-  }
-  .icon--progress {
-    text-align: center;
-    width: 1.5rem;
-    height: auto;
-    margin: 0 .2rem
-  }
-  .container--progress {
-    display: flex;
-    align-items: center
-  }
-  .roadmap__progress {
-    font-size: .8rem;
-    margin: 0 .4rem 0 0
-  }
-  .roadmap__title {
-    font-weight: 700;
-    margin: 1rem 0
-  }
-  .roadmap__desc {
-    margin: 1rem 0
-  }
+  /* Container */
   .container--2c {
     display: grid;
     grid-template-columns: .6fr 1fr;
@@ -98,19 +69,43 @@
     padding: 1rem 2rem;
     letter-spacing: .3rem
   }
+  .container--progress {
+    display: flex;
+    align-items: center
+  }
+
+  /* Misc. */
+  #roadmap {
+    display: grid;
+    margin: 3rem 0;
+    grid-template-columns: .2fr 1fr
+  }
+  .roadmap__progress {
+    font-size: .8rem;
+    margin: 0 .4rem 0 0
+  }
+  .roadmap__title {
+    font-weight: 700;
+    margin: 1rem 0
+  }
+  .roadmap__desc {
+    margin: 1rem 0
+  }
+  .icon--main {
+    width: 5rem;
+    margin: auto 0
+  }
+  .icon--progress {
+    text-align: center;
+    width: 1.5rem;
+    height: auto;
+    margin: 0 .2rem
+  }
   #vote {
     margin: auto
   }
 
   /* Responsive */
-  @keyframes fadeInf {
-    from {
-      fill-opacity: 60%
-    }
-    to {
-      fill-opacity: 100%
-    }
-  }
   @media (max-width: 992px) {
     #roadmap {
       grid-gap: 3rem
@@ -135,8 +130,11 @@
       margin: auto;
       width: 70%
     }
+    #vote {
+      height: 10vh
+    }
     #title--involved {
-      margin: 0
+      margin: auto
     }
   }
 </style>

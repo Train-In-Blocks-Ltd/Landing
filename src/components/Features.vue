@@ -20,7 +20,7 @@
           <i>Now, the <b>bench press</b> but for <b>20 reps</b> at<b> 50kg</b> and<b> 15 reps</b> at <b>55kg.</b></i>
         </p>
       </div>
-      <Editor style="grid-area: a"></Editor>
+      <Editor id="editor" style="grid-area: a"></Editor>
     </div>
     <div class="spacer"></div>
     <div>
@@ -97,13 +97,18 @@
   .container--2c {
     display: grid;
     grid-template-areas: 'a b';
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 400px 1fr;
+    grid-gap: 3rem
   }
   .container--2c > div {
     margin: auto 0
   }
   .container--2c p {
     margin: 1.5rem 0
+  }
+  #editor {
+    height: 50vh;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, .1)
   }
   #chart--line {
     grid-area: b;
@@ -124,34 +129,31 @@
     text-align: center
   }
   @media (max-width: 992px) {
-    .container--features > img {
-      width: 60%
+    .container--2c {
+      grid-template-columns: 300px 1fr
     }
   }
   @media (max-width: 768px) {
     .container--2c {
       grid-template: .6fr 1fr / 1fr;
-      grid-template-areas: 'b' 'a'
+      grid-template-areas: 'b' 'a';
+      grid-gap: 0
     }
     .container--2c > p {
       padding: 2vh 1vw
     }
-  }
-  @media (max-width: 576px) {
-    .container--features > img {
-      width: 70%;
-      margin: 0
+    #editor {
+      width: 70vw
     }
   }
   @media (max-width: 360px) {
+    #editor {
+      width: 100%
+    }
     .container--features {
       grid-template-columns: 1fr;
       grid-template-rows: .4fr 1fr;
       grid-gap: 2rem
-    }
-    .container--features > img {
-      margin: auto;
-      width: auto
     }
   }
 </style>

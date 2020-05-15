@@ -125,12 +125,48 @@
     font-size: 5rem;
     font-weight: 600;
     line-height: 1.4;
-    margin-bottom: 0;
-    letter-spacing: 1rem
+    margin: 0 .4rem
   }
   .vuejs-countdown .text {
     text-transform: uppercase;
     margin-bottom: 0;
     font-size: 1rem
+  }
+
+  @media (max-width: 768px) {
+    .vuejs-countdown .digit {
+      font-size: 3rem
+    }
+    .vuejs-countdown .text {
+      font-size: .8rem
+    }
+  }
+  @media (max-width: 560px) {
+    .countdown--wrapper {
+      margin: 6rem 0
+    }
+    .vuejs-countdown li {
+      margin: 0 .7rem
+    }
+    .vuejs-countdown .digit {
+      font-size: 2rem
+    }
+    .vuejs-countdown .text {
+      font-size: .6rem
+    }
+  }
+  @media (max-width: 360px) {
+    .countdown--wrapper {
+      margin: 6rem 0
+    }
+    .vuejs-countdown li {
+      margin: 0 .6rem
+    }
+    .vuejs-countdown .digit {
+      font-size: 1.5rem
+    }
+    .vuejs-countdown .text {
+      font-size: .5rem
+    }
   }
 </style>

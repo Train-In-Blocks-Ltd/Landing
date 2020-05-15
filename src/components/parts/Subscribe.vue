@@ -1,24 +1,15 @@
 <template>
-  <div class="container--2c">
-    <h1 class="desc--subscribe">{{$parent.descSub}}</h1>
-    <form action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <label for="mce-EMAIL">Sign Me Up</label><br>
-      <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
-      <div style="position: absolute; left: -5000px" aria-hidden="true"><input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value=""></div>
-      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </form>
-  </div>
+  <form action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <label for="mce-EMAIL">{{$parent.descSub}}</label><br>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
+    <div style="position: absolute; left: -5000px" aria-hidden="true"><input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+  </form>
 </template>
 
 <style scoped>
-  .container--2c {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
-    margin: 3rem 0
-  }
-  .desc--subscribe {
-    text-align: right
+  #mc-embedded-subscribe-form {
+    text-align: left
   }
   #mc-embedded-subscribe-form > label {
     font-weight: 700;

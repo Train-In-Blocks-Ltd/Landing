@@ -1,15 +1,5 @@
 <template>
   <div>
-    <h1 id="text--good" class="desc">Good Trainers Make Programmes,</h1>
-    <h1 id="text--exceptional" class="desc">Exceptional Trainers Design Them.</h1>
-    <div class="spacer"/>
-    <div class="container--countdown">
-      <h2>01.08.20</h2>
-      <Countdown end="August 1, 2020"/>
-    </div>
-    <div class="spacer"/>
-    <Subscribe/>
-    <div class="spacer"/>
     <div id="container--2c">
       <h1>Save more time and get more clients.</h1>
       <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device"/>
@@ -29,33 +19,21 @@
 
 <script>
   import InlineSvg from 'vue-inline-svg'
-  import Countdown from './parts/Countdown'
-  import Subscribe from './parts/Subscribe'
 
   export default {
     components: {
-      InlineSvg,
-      Countdown,
-      Subscribe
+      InlineSvg
     },
     data() {
       return {
-        title: 'Want to train more clients effectively?',
-        descSub: 'Get Notified When We Launch'
+        title: 'Want to train more clients effectively?'
       }
     }
   } 
 </script>
 
 <style scoped>
-  .container--countdown {
-    text-align: center;
-    letter-spacing: .4rem;
-    font-size: 1.5rem
-  }
-  svg {
-    margin: auto
-  }
+  /* Containers */
   #container--2c {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -82,20 +60,16 @@
   #container--2c3r > h1 {
     margin: auto
   }
-  #text--good {
-    margin: 2rem 0 0 0;
-    border: 2px solid #282828
-  }
-  #text--exceptional {
-    background-color: #282828;
-    border: 2px solid #282828;
-    color: white
-  }
+
+  /* Misc. */
   #img--DevicePC {
     width: 100%
   }
   .text--right {
     text-align: right
+  }
+  svg {
+    margin: auto
   }
   #svg--3 {
     width: 30vw
@@ -115,15 +89,10 @@
       grid-template-areas: 'aT' 'aI' 'bT' 'bI' 'cT' 'cI';
       grid-gap: 0
     }
-    #laptop {
-      width: 70vw;
-      margin: auto
-    }
     #svg--3 {
       width: auto
     }
   }
-
   @media (max-width: 992px) {
     .container--2c3r {
       grid-gap: 10vh

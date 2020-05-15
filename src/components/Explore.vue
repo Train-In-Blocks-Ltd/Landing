@@ -43,6 +43,7 @@
 </script>
 
 <style scoped>
+  /* Container */
   .container--2c {
     display: grid;
     grid-template-columns: 1fr 1fr;
