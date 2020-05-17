@@ -24,7 +24,7 @@
         <router-view></router-view>
       </transition>
     </div>
-    <a class="to-top" v-scroll-to="{
+    <a class="to-top" v-if="scrollpx > 800" v-scroll-to="{
         el: '#nav--top',
         duratiob: 1200,
         easing: 'ease'
@@ -47,7 +47,8 @@
     data() {
       return {
         toMode: 'Night',
-        descSub: 'Get Notified When We Launch'
+        descSub: 'Get Notified When We Launch',
+        scrollpx: 0
       }
     },
     methods: {
@@ -74,7 +75,16 @@
           this._removeDarkTheme()
           this.toMode = 'Night'
         }
+      },
+      handleScroll() {
+        this.scrollpx = window.scrollY;
       }
+    },
+    created() {
+      window.addEventListener('scroll', this.handleScroll);
+    },
+    destroyed() {
+      window.removeEventListener('scroll', this.handleScroll);
     }
   }
 </script>
@@ -112,7 +122,7 @@
   .to-top {
     opacity: 0;
     position: fixed;
-    left: 8%;
+    right: 8%;
     bottom: 3rem;
     background-color: #28282815;
     border-radius: 5px;
@@ -120,8 +130,7 @@
     padding: .6rem;
     cursor: pointer;
     transition: all .2s cubic-bezier(.165, .84, .44, 1);
-    animation: showIn 1.2s cubic-bezier(.165, .84, .44, 1) forwards;
-    animation-delay: 2s
+    animation: showIn 1.2s cubic-bezier(.165, .84, .44, 1) forwards
   }
   .to-top:active {
     transform: scale(.9)
@@ -134,6 +143,9 @@
   }
   #nprogress .peg {
     box-shadow: 0 0 10px #282828, 0 0 5px #282828
+  }
+  #nprogress .spinner {
+    display: none
   }
 
   /* GLOBAL: Inputs and Buttons */
