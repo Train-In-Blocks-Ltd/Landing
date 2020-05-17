@@ -1,26 +1,19 @@
 <template>
   <div>
     <h1 class="paper--title">{{title}}</h1>
-    <div class="spacer--small"></div>
-    <div class="container--intro">
-      <h2>How do we track performance? Spreadsheets right?</h2>
-      <p>No.</p>
-      <h2>Numbers in boxes and clicking back and forth?</h2>
-      <p>No.</p>
-    </div>
-    <div class="spacer--small"></div>
     <div class="container--2c">
-      <div style="grid-area: b">
-        <h2>Say Goodbye to Manually Tracking Data.</h2>
+      <Editor id="editor"></Editor>
+      <div id="text">
+        <p><b>How do we track performance? Spreadsheets right?</b></p>
+        <p>No.</p>
+        <p><b>Numbers in boxes and clicking back and forth?</b></p>
+        <p>No.</p>
+        <p><b>Say Goodbye to Manually Tracking Data.</b></p>
         <p>Our app will understand the workouts and will do all the math for you. That's right. You build, visualise, adjust and adapt even before the first session.</p>
-        <h2>Just learn the format and start speaking with us.</h2>
-        <p><b>A) Back Squat: 3 x 6 at 70/80/90kg</b><br><br>
-          <i>This means the<b>back squat</b> for<b> 3 sets</b> of<b> 6 reps</b> at<b> 70, 80</b> and<b> 90kg.</b></i><br><br><br>
-          <b>B) Bench Press: 2 x 20/15 at 50/55kg</b><br><br>
-          <i>Now, the <b>bench press</b> but for <b>20 reps</b> at<b> 50kg</b> and<b> 15 reps</b> at <b>55kg.</b></i>
-        </p>
+        <p><b>Just learn the format</b><br>
+          A) Back Squat: 3 x 6 at 70/80/90kg<br>
+          B) Bench Press: 2 x 20/15 at 50/55kg</p>
       </div>
-      <Editor id="editor" style="grid-area: a"></Editor>
     </div>
     <div class="spacer"></div>
     <div>
@@ -95,20 +88,13 @@
     margin: 1.5rem 0
   }
   .container--2c {
-    display: grid;
-    grid-template-areas: 'a b';
-    grid-template-columns: 400px 1fr;
-    grid-gap: 3rem
+    display: flex
   }
   .container--2c > div {
-    margin: auto 0
+    margin: auto 3rem
   }
   .container--2c p {
     margin: 1.5rem 0
-  }
-  #editor {
-    height: 50vh;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, .1)
   }
   #chart--line {
     grid-area: b;
@@ -132,18 +118,16 @@
     .container--2c {
       grid-template-columns: 300px 1fr
     }
+    #editor {
+      margin: auto 0
+    }
   }
   @media (max-width: 768px) {
     .container--2c {
-      grid-template: .6fr 1fr / 1fr;
-      grid-template-areas: 'b' 'a';
-      grid-gap: 0
+      flex-direction: column-reverse
     }
-    .container--2c > p {
-      padding: 2vh 1vw
-    }
-    #editor {
-      width: 70vw
+    #text {
+      margin: 2rem 0
     }
   }
   @media (max-width: 360px) {
