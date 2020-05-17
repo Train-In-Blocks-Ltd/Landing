@@ -8,6 +8,7 @@
         <p><b>BETA RELEASE</b></p>
       </div>
     </div>
+    <div id="nav--top" class="spacer--small"></div>
     <div class="container--nav animated bounceInRight">
       <nav id='nav--main'>
         <router-link class="input--option" to="/">Welcome</router-link>
@@ -23,6 +24,13 @@
         <router-view></router-view>
       </transition>
     </div>
+    <a class="to-top" v-scroll-to="{
+        el: '#nav--top',
+        duratiob: 1200,
+        easing: 'ease'
+      }">
+      <inline-svg id="to-top__icon" :src="require('./assets/svg/Top.svg')"/>
+    </a>
   </div>
 </template>
 
@@ -75,6 +83,9 @@
   @import '../node_modules/animate.css';
 
   /* GLOBAL */
+  html {
+    scroll-behavior: smooth
+  }
   #app {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -95,6 +106,34 @@
     font-size: 1rem;
     line-height: 1.5rem;
     margin: 3rem 0
+  }
+
+  /* GLOBAL: To Top */
+  .to-top {
+    opacity: 0;
+    position: fixed;
+    left: 8%;
+    bottom: 3rem;
+    background-color: #28282815;
+    border-radius: 5px;
+    width: fit-content;
+    padding: .6rem;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(.165, .84, .44, 1);
+    animation: showIn 1.2s cubic-bezier(.165, .84, .44, 1) forwards;
+    animation-delay: 2s
+  }
+  .to-top:active {
+    transform: scale(.9)
+  }
+
+  /* GLOBAL: nprogress */
+  #nprogress .bar {
+    background: #282828;
+    height: 3px
+  }
+  #nprogress .peg {
+    box-shadow: 0 0 10px #282828, 0 0 5px #282828
   }
 
   /* GLOBAL: Inputs and Buttons */
@@ -245,6 +284,13 @@
     opacity: .7
   }
 
+  /* Animimations */
+  @keyframes showIn {
+    to {
+      opacity: 1
+    }
+  }
+
   /* Responsiveness */
   @media (min-width: 1440px) {
     h1 {
@@ -265,6 +311,24 @@
     }
   }
   @media (max-width: 768px) {
+    /* Nav */
+    .container--nav {
+      height: fit-content;
+      margin-bottom: 3rem
+    }
+    #nav--main {
+      display: grid;
+      justify-items: right
+    }
+    .input--option {
+      width: fit-content;
+      margin: .4rem 0
+    }
+    .darkmode {
+      margin: 0
+    }
+
+    /* Misc. */
     h1 {
       font-size: 2rem
     }
@@ -284,10 +348,6 @@
       font-size: .8rem;
       margin: .6rem 0
     }
-    .container--nav {
-      height: fit-content;
-      margin-bottom: 3rem
-    }
     .container--features {
       grid-gap: 2rem
     }
@@ -298,17 +358,6 @@
     }
     #logo--home {
       width: 8rem
-    }
-    #nav--main {
-      display: grid;
-      justify-items: right
-    }
-    .input--option {
-      width: fit-content;
-      margin: .4rem 0
-    }
-    .darkmode {
-      margin: 0
     }
   }
   @media (max-width: 360px) {

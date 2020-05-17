@@ -3,7 +3,9 @@ import App from './App.vue'
 import router from './router'
 import VueQuill from 'vue-quill'
 import 'quill/dist/quill.snow.css'
-
+import VueScrollTo from 'vue-scrollto'
+ 
+Vue.use(VueScrollTo)
 Vue.use(VueQuill)
 Vue.config.productionTip = false
 

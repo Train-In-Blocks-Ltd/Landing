@@ -32,6 +32,10 @@ button:disabled:hover, button.signUp:disabled:hover {
 .input--option:before {
   background-color: white
 }
+div.to-top {
+  background-color: #ffffff20
+}
+
 @media (max-width: 992px) {
   button.signUp:hover, input#mc-embedded-subscribe:hover, .darkmode:hover {
     background-color: transparent;
