@@ -54,7 +54,7 @@ h1#text--exceptional.desc {
 }
 
 /* FEATURES PAGE */
-.ql-editor.ql-blank, .ql-editor {
+.ql-editor.ql-blank, .ql-editor, #workout--container {
   background-color: #2C3E50
 }
 .ql-snow .ql-stroke {

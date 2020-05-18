@@ -69,7 +69,7 @@
     transition: all .4s cubic-bezier(.165, .84, .44, 1)
   }
   #workout__header svg:hover {
-    opacity: .8
+    opacity: .6
   }
 
   /* Quill */
