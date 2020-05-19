@@ -43,6 +43,14 @@ div.to-top {
   }
 }
 
+/* Quill */
+.ql-formats .ql-stroke {
+  stroke: white
+}
+.ql-formats .ql-fill, .ql-formats rect {
+  fill: white
+}
+
 /* HOME PAGE */
 h1#text--good.desc {
   border: 2px solid white
@@ -56,15 +64,6 @@ h1#text--exceptional.desc {
 /* FEATURES PAGE */
 .ql-editor.ql-blank, .ql-editor, #workout--container {
   background-color: #2C3E50
-}
-.ql-snow .ql-stroke {
-  stroke: white
-}
-.ql-snow .ql-fill {
-  fill: white
-}
-.ql-formats button:hover {
-  background-color: #FFFFFF30
 }
 #dataCat, select {
   border: 1px solid white;
@@ -95,7 +94,7 @@ h1#title--involved {
   color: #2C3E50
 }
 
-/* Explore */
+/* EXPLORE PAGE */
 input#mce-EMAIL.email {
   border-bottom: 1px solid white;
   color: white

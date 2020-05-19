@@ -112,7 +112,6 @@
   @media (max-width: 576px) {
     .pricing__plans {
       background-color: transparent;
-      padding: 0;
       box-shadow: none
     }
   }
