@@ -13,6 +13,9 @@ svg path#box {
   fill: none;
   stroke: white
 }
+g#BLOCKS > path {
+  fill: #2C3E50
+}
 button.signUp, input#mc-embedded-subscribe, .darkmode {
   color: white;
   border: 1px solid white
@@ -32,7 +35,7 @@ button:disabled:hover, button.signUp:disabled:hover {
 .input--option:before {
   background-color: white
 }
-div.to-top {
+a.to-top {
   background-color: #FFFFFF20
 }
 

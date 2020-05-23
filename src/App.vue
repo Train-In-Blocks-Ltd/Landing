@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('./assets/svg/LogoC.svg')"/>
+    <modal class="modal--format" name="format" height="auto" :adaptive="true">
+      <p><b>Just learn the format:</b><br>
+          A) Back Squat: 3 x 6 at 70/80/90kg<br>
+          B) Bench Press: 2 x 20/15 at 50/55kg</p>
+    </modal>
+    <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('./assets/svg/LogoV8.svg')"/>
     <div class="countdown--wrapper animated fadeIn">
       <div class="container--countdown">
         <h2>01.08.20</h2>
@@ -52,6 +57,9 @@
       }
     },
     methods: {
+      showFormat() {
+        this.$modal.show('format');
+      },
       _addDarkTheme() {
         let darkThemeLinkEl = document.createElement("link");
         darkThemeLinkEl.setAttribute("rel", "stylesheet");
@@ -122,6 +130,9 @@
     line-height: 1.5rem;
     margin: 3rem 0
   }
+  .vm--modal {
+    padding: 1rem 1.6rem
+  }
 
   /* GLOBAL: To Top */
   .to-top {
@@ -187,6 +198,9 @@
   }
 
   /* Misc. */
+  .modal--format p {
+    margin: 0
+  }
   .spacer--small {
     height: 5vh
   }
@@ -194,7 +208,7 @@
     height: 10vh
   }
   #logo--home {
-    width: 10rem;
+    width: 15rem;
     height: auto;
     margin: 5rem 0 0 0
   }

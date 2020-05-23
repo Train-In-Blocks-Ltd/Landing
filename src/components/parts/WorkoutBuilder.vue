@@ -4,7 +4,7 @@
       <div id="workout--container">
         <div id="workout__header">
           <p><b>Full Body Smash-Up</b></p>
-          <inline-svg id="info" @click="show()" class="svg" :src="require('../../assets/svg/demo/Info.svg')"/>
+          <inline-svg id="info" @click="$parent.$parent.showFormat()" class="svg" :src="require('../../assets/svg/demo/Info.svg')"/>
         </div>
         <quill output="html" :config="quillOptions"></quill>
       </div>
@@ -24,21 +24,13 @@
         quillOptions: {
           modules: {
             toolbar: [
-              [{ 'header': 1 }, { 'header': 2 }],
+              [{'header': 1}, {'header': 2}],
               ['bold', 'italic', 'underline', 'strike'],
-              [{ 'script': 'sub'}, { 'script': 'super' }]
+              [{'script': 'sub'}, {'script': 'super'}]
             ]
           },
           placeholder: 'Make a workout...'
         }
-      }
-    },
-    methods: {
-      show() {
-        this.$modal.show('format');
-      },
-      hide() {
-        this.$modal.hide('format');
       }
     }
   }
@@ -64,14 +56,6 @@
   }
   #workout__header p {
     margin: 0
-  }
-
-  /* Modal */
-  .vm--modal {
-    padding: .6rem 2rem
-  }
-  .vm--container .vm--overlay {
-    background: transparent
   }
 
   /* SVG Btns */

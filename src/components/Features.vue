@@ -10,9 +10,6 @@
         <p>No.</p>
         <p><b>Say Goodbye to Manually Tracking Data.</b></p>
         <p>Our app will understand the workouts and will do all the math for you. That's right. You build, visualise, adjust and adapt even before the first session.</p>
-        <p><b>Just learn the format:</b><br>
-          A) Back Squat: 3 x 6 at 70/80/90kg<br>
-          B) Bench Press: 2 x 20/15 at 50/55kg</p>
       </div>
     </div>
     <div class="spacer"></div>
