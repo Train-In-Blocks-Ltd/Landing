@@ -13,9 +13,6 @@ svg path#box {
   fill: none;
   stroke: white
 }
-g#BLOCKS > path {
-  fill: #2C3E50
-}
 button.signUp, input#mc-embedded-subscribe, .darkmode {
   color: white;
   border: 1px solid white
@@ -78,10 +75,17 @@ h1#text--exceptional.desc {
 #dataCat option {
   color: #2C3E50
 }
+div#workout--container {
+  box-shadow: 0 20px 20px rgba(255, 255, 255, .1)
+}
+div#workout__header {
+  box-shadow: 0 0 15px rgba(255, 255, 255, .1)
+}
 
 /* PRICING PAGE */
 div.pricing__plans.dark {
-  background-color: #485868
+  background-color: #485868;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, .1)
 }
 h2.pro.dark {
   background-color: white;

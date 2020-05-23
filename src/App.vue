@@ -5,7 +5,7 @@
           A) Back Squat: 3 x 6 at 70/80/90kg<br>
           B) Bench Press: 2 x 20/15 at 50/55kg</p>
     </modal>
-    <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('./assets/svg/LogoV8.svg')"/>
+    <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('./assets/svg/LogoV12.svg')"/>
     <div class="countdown--wrapper animated fadeIn">
       <div class="container--countdown">
         <h2>01.08.20</h2>
@@ -208,7 +208,7 @@
     height: 10vh
   }
   #logo--home {
-    width: 15rem;
+    width: 10rem;
     height: auto;
     margin: 5rem 0 0 0
   }
