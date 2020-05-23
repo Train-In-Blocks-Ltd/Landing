@@ -6,7 +6,7 @@
           <p><b>Full Body Smash-Up</b></p>
           <inline-svg id="info" @click="show()" class="svg" :src="require('../../assets/svg/demo/Info.svg')"/>
         </div>
-        <quill output="html"></quill>
+        <quill output="html" :config="quillOptions"></quill>
       </div>
     </div>
   </div>
@@ -18,6 +18,20 @@
   export default {
     components: {
       InlineSvg
+    },
+    data() {
+      return {
+        quillOptions: {
+          modules: {
+            toolbar: [
+              [{ 'header': 1 }, { 'header': 2 }],
+              ['bold', 'italic', 'underline', 'strike'],
+              [{ 'script': 'sub'}, { 'script': 'super' }]
+            ]
+          },
+          placeholder: 'Make a workout...'
+        }
+      }
     },
     methods: {
       show() {

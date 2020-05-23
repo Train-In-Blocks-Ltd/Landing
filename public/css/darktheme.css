@@ -33,7 +33,7 @@ button:disabled:hover, button.signUp:disabled:hover {
   background-color: white
 }
 div.to-top {
-  background-color: #ffffff20
+  background-color: #FFFFFF20
 }
 
 @media (max-width: 992px) {
@@ -49,6 +49,9 @@ div.to-top {
 }
 .ql-formats .ql-fill, .ql-formats rect {
   fill: white
+}
+.ql-editor.ql-blank:before {
+  color: white
 }
 
 /* HOME PAGE */
