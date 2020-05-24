@@ -6,7 +6,7 @@
         <h2>01.08.20</h2>
         <Countdown end="August 1, 2020"/>
         <p><b>BETA RELEASE</b></p><br>
-        <q style="font-size: 1rem; letter-spacing: .2rem">You can't buy more time, but you can use it better.</q>
+        <q style="font-size: 1rem; letter-spacing: .2rem">You can't buy more time to train your clients, but you can use it better.</q>
       </div>
     </div>
     <div class="container--signup">
