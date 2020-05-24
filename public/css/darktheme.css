@@ -43,6 +43,18 @@ a.to-top {
   }
 }
 
+/* nprogress */
+#nprogress .bar {
+  background: white;
+  height: 3px
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px white, 0 0 5px white
+}
+#nprogress .spinner {
+  display: none
+}
+
 /* Quill */
 .ql-formats .ql-stroke {
   stroke: white

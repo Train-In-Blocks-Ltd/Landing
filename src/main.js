@@ -1,5 +1,8 @@
 import Vue from 'vue'
-import App from './App.vue'
+
+// import App from './App.vue' [ remove this comment and remove the Landing.vue for production version]
+import App from './Landing.vue'
+
 import router from './router'
 import VueQuill from 'vue-quill'
 import 'quill/dist/quill.snow.css'
