@@ -9,14 +9,14 @@
         <q style="font-size: 1rem; letter-spacing: .2rem">You can't buy more time to train your clients, but you can use it better.</q>
       </div>
     </div>
-    <div class="container--signup">
+    <div class="container--signup animated fadeInLeft">
       <form action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <label for="mce-EMAIL">Get Notified When We Launch!</label><br>
         <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
         <div style="position: absolute; left: -5000px" aria-hidden="true"><input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value=""></div>
         <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
       </form>
-      <button class="darkmode" @click="darkThemeSwitch()">{{toMode}} Mode</button>
+      <button class="darkmode animated fadeInRight" @click="darkThemeSwitch()">{{toMode}} Mode</button>
     </div>
   </div>
 </template>
