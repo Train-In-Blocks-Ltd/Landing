@@ -1,19 +1,31 @@
 <template>
   <div>
     <div id="menuToggle">
-    <input type="checkbox" />
-    <span class="dark"></span>
-    <span class="dark"></span>
-    <span class="dark"></span>
-    <ul id="menu">
-      <router-link class="input--option" to="/">Welcome</router-link>
-      <router-link class="input--option" to="/features">Demo</router-link>
-      <router-link class="input--option" to="/pricing">Pricing</router-link>
-      <router-link class="input--option" to="/roadmap">Roadmap</router-link>
-      <router-link class="input--option" to="/Explore">Explore</router-link>
-      <button class="darkmode" @click="$parent.darkThemeSwitch()">{{$parent.toMode}} Mode</button>
-    </ul>
-  </div>
+      <input type="checkbox">
+      <span class="dark" />
+      <span class="dark" />
+      <span class="dark" />
+      <ul id="menu">
+        <nuxt-link class="input--option" to="/">
+          Welcome
+        </nuxt-link>
+        <nuxt-link class="input--option" to="/features">
+          Demo
+        </nuxt-link>
+        <nuxt-link class="input--option" to="/pricing">
+          Pricing
+        </nuxt-link>
+        <nuxt-link class="input--option" to="/roadmap">
+          Roadmap
+        </nuxt-link>
+        <nuxt-link class="input--option" to="/Explore">
+          Explore
+        </nuxt-link>
+        <button class="darkmode" @click="$parent.darkThemeSwitch()">
+          {{ $parent.toMode }} Mode
+        </button>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -93,7 +105,7 @@
 #menu > a {
   margin: .6rem 2rem
 }
-#menu > a.router-link-exact-active {
+#menu > a.nuxt-link-exact-active {
   font-weight: 700
 }
 #menuToggle input:checked ~ ul {

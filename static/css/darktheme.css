@@ -21,49 +21,23 @@ button.signUp:hover, input#mc-embedded-subscribe:hover, .darkmode:hover {
   background-color: white;
   color: #2C3E50
 }
-button:disabled:hover, button.signUp:disabled:hover {
-  background: transparent;
-  color: white;
-  cursor: default
-}
 .input--option {
   color: white
 }
-.input--option:before {
+#menu > a.input--option {
+  color: #2C3E50
+}
+#menu > a.input--option:before {
+  color: #2C3E50
+}
+.paper {
+  background-color: #485868
+}
+.paper--back rect {
+  fill: #485868
+}
+#menuToggle span.dark {
   background-color: white
-}
-a.to-top {
-  background-color: #FFFFFF20
-}
-
-@media (max-width: 992px) {
-  button.signUp:hover, input#mc-embedded-subscribe:hover, .darkmode:hover {
-    background-color: transparent;
-    color: white
-  }
-}
-
-/* nprogress */
-#nprogress .bar {
-  background: white;
-  height: 3px
-}
-#nprogress .peg {
-  box-shadow: 0 0 10px white, 0 0 5px white
-}
-#nprogress .spinner {
-  display: none
-}
-
-/* Quill */
-.ql-formats .ql-stroke {
-  stroke: white
-}
-.ql-formats .ql-fill, .ql-formats rect {
-  fill: white
-}
-.ql-editor.ql-blank:before {
-  color: white
 }
 
 /* HOME PAGE */
@@ -77,8 +51,17 @@ h1#text--exceptional.desc {
 }
 
 /* FEATURES PAGE */
-.ql-editor.ql-blank, .ql-editor, #workout--container {
-  background-color: #2C3E50
+.ql-editor.ql-blank, .ql-editor {
+  background-color: #485868
+}
+.ql-snow .ql-stroke {
+  stroke: white
+}
+.ql-snow .ql-fill {
+  fill: white
+}
+.ql-formats button:hover {
+  background-color: #FFFFFF30
 }
 #dataCat, select {
   border: 1px solid white;
@@ -87,17 +70,10 @@ h1#text--exceptional.desc {
 #dataCat option {
   color: #2C3E50
 }
-div#workout--container {
-  box-shadow: 0 20px 20px rgba(255, 255, 255, .1)
-}
-div#workout__header {
-  box-shadow: 0 0 15px rgba(255, 255, 255, .1)
-}
 
 /* PRICING PAGE */
 div.pricing__plans.dark {
-  background-color: #485868;
-  box-shadow: 0 10px 20px rgba(255, 255, 255, .1)
+  background-color: #485868
 }
 h2.pro.dark {
   background-color: white;
@@ -116,7 +92,7 @@ h1#title--involved {
   color: #2C3E50
 }
 
-/* EXPLORE PAGE */
+/* Explore */
 input#mce-EMAIL.email {
   border-bottom: 1px solid white;
   color: white

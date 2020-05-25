@@ -1,39 +1,44 @@
 <template>
-<div>
+  <div>
     <div>
       <div id="workout--container">
         <div id="workout__header">
           <p><b>Full Body Smash-Up</b></p>
-          <inline-svg id="info" @click="$parent.$parent.showFormat()" class="svg" :src="require('../../assets/svg/demo/Info.svg')"/>
+          <inline-svg id="info" class="svg" :src="require('../assets/svg/demo/Info.svg')" @click="showFormat()" />
         </div>
-        <quill output="html" :config="quillOptions"></quill>
+        <quill output="html" :config="quillOptions" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import InlineSvg from 'vue-inline-svg'
+import InlineSvg from 'vue-inline-svg'
 
-  export default {
-    components: {
-      InlineSvg
-    },
-    data() {
-      return {
-        quillOptions: {
-          modules: {
-            toolbar: [
-              [{'header': 1}, {'header': 2}],
-              ['bold', 'italic', 'underline', 'strike'],
-              [{'script': 'sub'}, {'script': 'super'}]
-            ]
-          },
-          placeholder: 'Make a workout...'
-        }
+export default {
+  components: {
+    InlineSvg
+  },
+  data () {
+    return {
+      quillOptions: {
+        modules: {
+          toolbar: [
+            [{ header: 1 }, { header: 2 }],
+            ['bold', 'italic', 'underline', 'strike'],
+            [{ script: 'sub' }, { script: 'super' }]
+          ]
+        },
+        placeholder: 'Make a workout...'
       }
     }
+  },
+  methods: {
+    showFormat () {
+      this.$modal.show('format')
+    }
   }
+}
 </script>
 
 <style>

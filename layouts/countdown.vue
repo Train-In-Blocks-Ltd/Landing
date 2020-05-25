@@ -1,104 +1,49 @@
-<template>
-  <div id="app">
-    <modal class="modal--format" name="format" height="auto" :adaptive="true">
-      <p><b>Just learn the format:</b><br>
-          A) Back Squat: 3 x 6 at 70/80/90kg<br>
-          B) Bench Press: 2 x 20/15 at 50/55kg</p>
-    </modal>
-    <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('./assets/svg/LogoV12.svg')"/>
-    <div class="countdown--wrapper animated fadeIn">
-      <div class="container--countdown">
-        <h2>01.08.20</h2>
-        <Countdown end="August 1, 2020"/>
-        <p><b>BETA RELEASE</b></p>
-      </div>
-    </div>
-    <div id="nav--top" class="spacer--small"></div>
-    <div class="container--nav animated bounceInRight">
-      <nav id='nav--main'>
-        <router-link class="input--option" to="/">Welcome</router-link>
-        <router-link class="input--option" to="/features">Demo</router-link>
-        <router-link class="input--option" to="/pricing">Pricing</router-link>
-        <router-link class="input--option" to="/roadmap">Roadmap</router-link>
-        <router-link class="input--option" to="/Explore">Explore</router-link><br>
-        <button class="darkmode" @click="darkThemeSwitch()">{{toMode}} Mode</button>
-      </nav>
-    </div>
-    <div class="animated fadeInUp">
-      <transition enter-active-class="animated fadeInRight delay-1s" leave-active-class="animated fadeOutLeft">
-        <router-view></router-view>
-      </transition>
-    </div>
-    <a class="to-top" v-if="scrollpx > 800" v-scroll-to="{
-        el: '#nav--top',
-        duratiob: 1200,
-        easing: 'ease'
-      }">
-      <inline-svg id="to-top__icon" :src="require('./assets/svg/Top.svg')"/>
-    </a>
-  </div>
-</template>
-
-<script>
-  import InlineSvg from 'vue-inline-svg'
-  import Countdown from './components/parts/Countdown'
-
-  export default {
-    name: 'App',
-    components: {
-      InlineSvg,
-      Countdown
-    },
-    data() {
-      return {
-        toMode: 'Night',
-        descSub: 'Get Notified When We Launch',
-        scrollpx: 0
-      }
-    },
-    methods: {
-      showFormat() {
-        this.$modal.show('format');
-      },
-      _addDarkTheme() {
-        let darkThemeLinkEl = document.createElement("link");
-        darkThemeLinkEl.setAttribute("rel", "stylesheet");
-        darkThemeLinkEl.setAttribute("href", "/css/darktheme.css");
-        darkThemeLinkEl.setAttribute("id", "dark-theme-style");
-
-        let docHead = document.querySelector("head");
-        docHead.append(darkThemeLinkEl);
-      },
-      _removeDarkTheme() {
-        let darkThemeLinkEl = document.querySelector("#dark-theme-style");
-        let parentNode = darkThemeLinkEl.parentNode;
-        parentNode.removeChild(darkThemeLinkEl);
-      },
-      darkThemeSwitch() {
-        let darkThemeLinkEl = document.querySelector("#dark-theme-style");
-        if (!darkThemeLinkEl) {
-          this._addDarkTheme()
-          this.toMode = 'Day'
-        } else {
-          this._removeDarkTheme()
-          this.toMode = 'Night'
-        }
-      },
-      handleScroll() {
-        this.scrollpx = window.scrollY;
-      }
-    },
-    created() {
-      window.addEventListener('scroll', this.handleScroll);
-    },
-    destroyed() {
-      window.removeEventListener('scroll', this.handleScroll);
-    }
-  }
-</script>
 
 <style>
   @import '../node_modules/animate.css';
+
+  /* TEMPORARY: Email */
+  #mc-embedded-subscribe-form label {
+    font-weight: bold;
+    font-size: 2rem
+  }
+  #mce-EMAIL {
+    opacity: .6;
+    padding: .4rem;
+    font-size: 1rem;
+    width: 95%;
+    margin: 1rem 0;
+    outline-width: 0;
+    border: none;
+    border-bottom: 1px solid #282828;
+    transition: all .6s cubic-bezier(.165, .84, .44, 1)
+  }
+  #mce-EMAIL:hover, #mce-EMAIL:focus {
+    width: 100%;
+    opacity: 1
+  }
+  #mc-embedded-subscribe {
+    cursor: pointer;
+    padding: .4rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #282828;
+    outline-width: 0;
+    transition: all .2s cubic-bezier(.165, .84, .44, 1)
+  }
+  #mc-embedded-subscribe:hover {
+    color: white;
+    background-color: #282828
+  }
+  #mc-embedded-subscribe:active {
+    transform: scale(.9)
+  }
+  .container--signup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem
+  }
 
   /* GLOBAL */
   html {
@@ -213,11 +158,11 @@
     margin: 5rem 0 0 0
   }
   .darkmode {
+    height: 2rem;
+    width: fit-content;
     font-size: .8rem;
     padding: .4rem 1rem;
-    display: block;
-    margin: 1.5rem 0 0 0;
-    float: right
+    margin: 0 0 auto auto
   }
   .countdown--wrapper {
     display: grid;
@@ -340,6 +285,9 @@
       transform: scaleX(1);
       opacity: 1
     }
+    .container--signup {
+      grid-gap: 4rem
+    }
   }
   @media (max-width: 768px) {
     /* Nav */
@@ -355,9 +303,6 @@
       width: fit-content;
       margin: .4rem 0
     }
-    .darkmode {
-      margin: 0
-    }
 
     /* Misc. */
     h1 {
@@ -368,6 +313,15 @@
     }
     .input--option:hover {
       opacity: 1
+    }
+    .container--signup {
+      grid-gap: 3rem
+    }
+    #mc-embedded-subscribe-form label {
+      font-size: 1.6rem
+    }
+    .darkmode:hover {
+      background-color: transparent
     }
   }
   @media (max-width: 576px) {
@@ -390,6 +344,12 @@
     #logo--home {
       width: 8rem
     }
+    .container--signup {
+      grid-gap: 2rem
+    }
+    #mc-embedded-subscribe-form label {
+      font-size: 1.2rem
+    }
   }
   @media (max-width: 360px) {
     body {
@@ -407,5 +367,111 @@
       font-size: .5rem;
       margin: .4rem 0
     }
+    .container--signup {
+      grid-gap: 1rem
+    }
+    #mc-embedded-subscribe-form label {
+      font-size: 1rem
+    }
   }
 </style>
+
+<template>
+  <div id="app">
+    <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('../assets/svg/LogoV12.svg')" />
+    <div class="countdown--wrapper animated fadeIn">
+      <div class="container--countdown">
+        <h2>01.08.20</h2>
+        <Countdown end="August 1, 2020" />
+        <p><b>BETA RELEASE</b></p><br>
+        <q style="font-size: 1rem; letter-spacing: .2rem">You can't buy more time to train your clients, but you can use it better.</q>
+      </div>
+    </div>
+    <div class="container--signup">
+      <form
+        id="mc-embedded-subscribe-form"
+        action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
+        method="post"
+        name="mc-embedded-subscribe-form"
+        class="validate animated fadeInLeft"
+        target="_blank"
+        novalidate
+      >
+        <label for="mce-EMAIL">Get Notified When We Launch!</label><br>
+        <input
+          id="mce-EMAIL"
+          type="email"
+          value=""
+          name="EMAIL"
+          class="email"
+          placeholder="Email"
+          required
+        >
+        <div style="position: absolute; left: -5000px" aria-hidden="true">
+          <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
+        </div>
+        <div class="clear">
+          <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
+        </div>
+      </form>
+      <button class="darkmode animated fadeInRight" @click="darkThemeSwitch()">
+        {{ toMode }} Mode
+      </button>
+    </div>
+  </div>
+</template>
+
+<script>
+import InlineSvg from 'vue-inline-svg'
+import Countdown from '../components/Countdown'
+
+export default {
+  name: 'App',
+  components: {
+    InlineSvg,
+    Countdown
+  },
+  data () {
+    return {
+      toMode: 'Night',
+      descSub: 'Get Notified When We Launch',
+      scrollpx: 0
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    _addDarkTheme () {
+      const darkThemeLinkEl = document.createElement('link')
+      darkThemeLinkEl.setAttribute('rel', 'stylesheet')
+      darkThemeLinkEl.setAttribute('href', '/css/darktheme.css')
+      darkThemeLinkEl.setAttribute('id', 'dark-theme-style')
+
+      const docHead = document.querySelector('head')
+      docHead.append(darkThemeLinkEl)
+    },
+    _removeDarkTheme () {
+      const darkThemeLinkEl = document.querySelector('#dark-theme-style')
+      const parentNode = darkThemeLinkEl.parentNode
+      parentNode.removeChild(darkThemeLinkEl)
+    },
+    darkThemeSwitch () {
+      const darkThemeLinkEl = document.querySelector('#dark-theme-style')
+      if (!darkThemeLinkEl) {
+        this._addDarkTheme()
+        this.toMode = 'Day'
+      } else {
+        this._removeDarkTheme()
+        this.toMode = 'Night'
+      }
+    },
+    handleScroll () {
+      this.scrollpx = window.scrollY
+    }
+  }
+}
+</script>
