@@ -59,6 +59,17 @@ export default {
         { id: 5, icon: SCon, progress: 'Planned', progressIcon: Planned, title: 'Strength and Conditioning Add-on', desc: 'Take your business to the next level by tailoring the app towards your niche.' }
       ]
     }
+  },
+  head () {
+    return {
+      title: 'Roadmap',
+      meta: [
+        { hid: 'description', name: 'description', content: '' },
+        { hid: 'og:title', content: 'Roadmap' },
+        { hid: 'twitter:title', content: 'Roadmap' },
+        { hid: 'og:url', content: '/roadmap' }
+      ]
+    }
   }
 }
 </script>

@@ -65,6 +65,17 @@ export default {
         { id: 3, name: 'Voting', desc: 'Help us decide where to go. We really value your opinion. Check our Roadmap and find out more.' }
       ]
     }
+  },
+  head () {
+    return {
+      title: 'Pricing',
+      meta: [
+        { hid: 'description', name: 'description', content: '' },
+        { hid: 'og:title', content: 'Pricing' },
+        { hid: 'twitter:title', content: 'Pricing' },
+        { hid: 'og:url', content: '/pricing' }
+      ]
+    }
   }
 }
 </script>

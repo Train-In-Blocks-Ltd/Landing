@@ -38,6 +38,17 @@ export default {
       title: 'What\'s with our obsession with paper?',
       descSub: 'Get More From Our Emails'
     }
+  },
+  head () {
+    return {
+      title: 'Explore',
+      meta: [
+        { hid: 'description', name: 'description', content: '' },
+        { hid: 'og:title', content: 'Explore' },
+        { hid: 'twitter:title', content: 'Explore' },
+        { hid: 'og:url', content: '/explore' }
+      ]
+    }
   }
 }
 </script>

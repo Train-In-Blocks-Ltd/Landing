@@ -17,7 +17,8 @@
     margin: 0;
     padding: 0 8%;
     letter-spacing: .1rem;
-    font-size: 16px
+    font-size: 16px;
+    overflow-x: hidden
   }
   h1 {
     font-size: 3rem;
@@ -385,7 +386,8 @@ export default {
     return {
       toMode: 'Night',
       descSub: 'Get Notified When We Launch',
-      scrollpx: 0
+      scrollpx: 0,
+      color: '#282828'
     }
   },
   mounted () {
@@ -403,11 +405,15 @@ export default {
 
       const docHead = document.querySelector('head')
       docHead.append(darkThemeLinkEl)
+      this.color = '#FFFFFF'
+      this.$forceUpdate()
     },
     _removeDarkTheme () {
       const darkThemeLinkEl = document.querySelector('#dark-theme-style')
       const parentNode = darkThemeLinkEl.parentNode
       parentNode.removeChild(darkThemeLinkEl)
+      this.color = '#282828'
+      this.$forceUpdate()
     },
     darkThemeSwitch () {
       const darkThemeLinkEl = document.querySelector('#dark-theme-style')

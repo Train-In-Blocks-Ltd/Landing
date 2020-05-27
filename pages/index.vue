@@ -34,6 +34,17 @@ export default {
     return {
       title: 'Want to train more clients effectively?'
     }
+  },
+  head () {
+    return {
+      title: 'Home',
+      meta: [
+        { hid: 'description', name: 'description', content: '' },
+        { hid: 'og:title', content: 'Home' },
+        { hid: 'twitter:title', content: 'Home' },
+        { hid: 'og:url', content: '/' }
+      ]
+    }
   }
 }
 </script>

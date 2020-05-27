@@ -5,14 +5,63 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    titleTemplate: '%s | Train In Blocks',
+    htmlAttrs: {
+      lang: 'en-GB'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+
+      // Need filling in
+      { name: 'description', content: '' },
+      { property: 'og:description', content: '' },
+      { name: 'twitter:description', content: '' },
+
+      { name: 'apple-mobile-web-app-title', content: 'Train In Blocks' },
+      { name: 'application-name', content: 'Train In Blocks' },
+      { name: 'msapplication-TileColor', content: '#ffffff' },
+      { name: 'theme-color', content: '#ffffff' },
+      { hid: 'twitter:title', name: 'twitter:title', template: chunk => `${chunk} | Train In Blocks` },
+      { name: 'twitter:image', content: 'https://traininblocks.com/android-chrome-192x192.png' },
+      { property: 'og:site_name', content: 'Train In Blocks' },
+      { hid: 'og:title', property: 'og:title', template: chunk => `${chunk} | Train In Blocks` },
+      { hid: 'og:url', property: 'og:url', template: 'https://traininblocks.com%s' },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:image', content: 'https://traininblocks.com/android-chrome-192x192.png' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://traininblocks.com/apple-touch-icon.png' },
+      { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://traininblocks.com/favicon-32x32.png' },
+      { rel: 'icon', type: 'image/png', sizes: '194x194', href: 'https://traininblocks.com/favicon-194x194.png' },
+      { rel: 'icon', type: 'image/png', sizes: '192x192', href: 'https://traininblocks.com/android-chrome-192x192.png' },
+      { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://traininblocks.com/favicon-16x16.png' },
+      { rel: 'manifest', href: 'https://traininblocks.com/site.webmanifest' },
+      { rel: 'mask-icon', href: 'https://traininblocks.com/safari-pinned-tab.svg', color: '#282828' }
+    ],
+    script: [
+      {
+        inner: `{ 
+          "@context": "http://schema.org",
+          "@type": "Person",
+          "email": "joe@joebailey.xyz",
+          "image": "/Me.jpg",
+          "jobTitle": "Front-End Web Developer",
+          "name": "Joe Bailey",
+          "birthPlace": "Cambridge, UK",
+          "birthDate": "2000-06-02",
+          "gender": "male",
+          "nationality": "English",
+          "telephone": "+44 7477737535",
+          "url": "https://joebailey.xyz",
+          "sameAs" : [ "https://www.linkedin.com/in/joe-bailey-b68b17171/",
+          "https://twitter.com/JoeBailey26",
+          "https://www.behance.net/joebailey26",
+          "https://github.com/joebailey26",
+          "https://codepen.io/joebailey26" 
+        }`,
+        type: 'application/ld+json'
+      }
     ]
   },
   /*

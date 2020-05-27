@@ -16,7 +16,7 @@
     </div>
     <div class="spacer" />
     <div>
-      <line-chart id="chart--line" /><br><br>
+      <line-chart id="chart--line" :mode="$parent.$parent.toMode" /><br><br>
       <div id="stats">
         <h2>Statistics</h2>
         <select id="dataCat">
@@ -76,6 +76,17 @@ export default {
         { id: 8, subtitle: 'Unlimited Clients', desc: 'There is no limit on the number of clients you can have. Go out there and get more.', icon: noLimits },
         { id: 9, subtitle: 'In-Session Toolkit', desc: 'Ready-to-use calculators to help you deliver an outstanding session.', icon: toolkit },
         { id: 10, subtitle: 'Connect, Learn and Grow', desc: 'Access resources and materials to boost your career by staying up-to-date with the industry. Have a say in our development as well.', icon: learn }
+      ]
+    }
+  },
+  head () {
+    return {
+      title: 'Demo',
+      meta: [
+        { hid: 'description', name: 'description', content: '' },
+        { hid: 'og:title', content: 'Demo' },
+        { hid: 'twitter:title', content: 'Demo' },
+        { hid: 'og:url', content: '/features' }
       ]
     }
   }
