@@ -36,7 +36,6 @@ export default {
       { rel: 'icon', type: 'image/png', sizes: '194x194', href: 'https://traininblocks.com/favicon-194x194.png' },
       { rel: 'icon', type: 'image/png', sizes: '192x192', href: 'https://traininblocks.com/android-chrome-192x192.png' },
       { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://traininblocks.com/favicon-16x16.png' },
-      { rel: 'manifest', href: 'https://traininblocks.com/site.webmanifest' },
       { rel: 'mask-icon', href: 'https://traininblocks.com/safari-pinned-tab.svg', color: '#282828' }
     ],
     script: [

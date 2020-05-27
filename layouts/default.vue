@@ -315,13 +315,6 @@
 
 <template>
   <div id="app">
-    <modal class="modal--format" name="format" height="auto" :adaptive="true">
-      <p>
-        <b>Just learn the format:</b><br>
-        A) Back Squat: 3 x 6 at 70/80/90kg<br>
-        B) Bench Press: 2 x 20/15 at 50/55kg
-      </p>
-    </modal>
     <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('../assets/svg/LogoV12.svg')" />
     <div class="countdown--wrapper animated fadeIn">
       <div class="container--countdown">
@@ -369,6 +362,13 @@
     >
       <inline-svg id="to-top__icon" :src="require('../assets/svg/Top.svg')" />
     </a>
+    <modal class="modal--format" name="format" height="auto" :adaptive="true">
+      <p>
+        <b>Just learn the format:</b><br>
+        A) Back Squat: 3 x 6 at 70/80/90kg<br>
+        B) Bench Press: 2 x 20/15 at 50/55kg
+      </p>
+    </modal>
   </div>
 </template>
 
