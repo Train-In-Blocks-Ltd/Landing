@@ -87,18 +87,23 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/pwa'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/pwa',
     '@nuxtjs/sitemap'
   ],
   sitemap: {
     hostname: 'https://traininblocks.com',
     gzip: true
+  },
+  pwa: {
+    manifest: {
+      display: 'browser'
+    }
   },
   /*
   ** Build configuration

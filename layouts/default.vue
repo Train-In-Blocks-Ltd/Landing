@@ -311,6 +311,11 @@
       margin: .4rem 0
     }
   }
+
+  /* Nuxt Modal fix */
+  modal.modal--format {
+    display: none
+  }
 </style>
 
 <template>
