@@ -313,7 +313,7 @@
   }
 
   /* Nuxt Modal fix */
-  modal.modal--format {
+  modal {
     display: none
   }
 </style>
