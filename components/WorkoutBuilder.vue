@@ -6,7 +6,9 @@
           <p><b>Full Body Smash-Up</b></p>
           <inline-svg id="info" class="svg" :src="require('../assets/svg/demo/Info.svg')" @click="showFormat()" />
         </div>
-        <quill output="html" :config="quillOptions" />
+        <client-only>
+          <quill output="html" :config="quillOptions" />
+        </client-only>
       </div>
     </div>
   </div>
