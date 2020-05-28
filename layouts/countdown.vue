@@ -157,13 +157,6 @@
     height: auto;
     margin: 5rem 0 0 0
   }
-  .darkmode {
-    height: 2rem;
-    width: fit-content;
-    font-size: .8rem;
-    padding: .4rem 1rem;
-    margin: 0 0 auto auto
-  }
   .countdown--wrapper {
     display: grid;
     margin: 8rem 0;
@@ -414,9 +407,6 @@
           <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
         </div>
       </form>
-      <button class="darkmode animated fadeInRight" @click="darkThemeSwitch()">
-        {{ toMode }} Mode
-      </button>
     </div>
   </div>
 </template>
@@ -433,7 +423,6 @@ export default {
   },
   data () {
     return {
-      toMode: 'Night',
       descSub: 'Get Notified When We Launch',
       scrollpx: 0
     }
@@ -445,30 +434,6 @@ export default {
     window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
-    _addDarkTheme () {
-      const darkThemeLinkEl = document.createElement('link')
-      darkThemeLinkEl.setAttribute('rel', 'stylesheet')
-      darkThemeLinkEl.setAttribute('href', '/css/darktheme.css')
-      darkThemeLinkEl.setAttribute('id', 'dark-theme-style')
-
-      const docHead = document.querySelector('head')
-      docHead.append(darkThemeLinkEl)
-    },
-    _removeDarkTheme () {
-      const darkThemeLinkEl = document.querySelector('#dark-theme-style')
-      const parentNode = darkThemeLinkEl.parentNode
-      parentNode.removeChild(darkThemeLinkEl)
-    },
-    darkThemeSwitch () {
-      const darkThemeLinkEl = document.querySelector('#dark-theme-style')
-      if (!darkThemeLinkEl) {
-        this._addDarkTheme()
-        this.toMode = 'Day'
-      } else {
-        this._removeDarkTheme()
-        this.toMode = 'Night'
-      }
-    },
     handleScroll () {
       this.scrollpx = window.scrollY
     }

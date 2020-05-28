@@ -4,7 +4,16 @@
       {{ title }}
     </h1>
     <div class="container--2c">
-      <Editor id="editor" />
+      <div id="editor">
+        <div class="workout-header">
+          <div class="workout-header__name-wrapper">
+            <p class="workout-header__name">Upper Body - Push</p>
+            <inline-svg class="svg--info" @click="showFormat()" :src="require('../assets/svg/demo/Info.svg')"/>
+          </div>
+          <p class="workout-header__date">06.09.20</p>
+        </div>
+        <quill v-model="quillContent" output="html" :config="quillConfig"/>
+      </div>
       <div id="text">
         <p><b>How do we track performance? Spreadsheets right?</b></p>
         <p>No.</p>
@@ -15,18 +24,31 @@
       </div>
     </div>
     <div class="spacer" />
-    <div>
-      <line-chart id="chart--line" :mode="$parent.$parent.toMode" /><br><br>
+    <div class="container--chart">
       <div id="stats">
         <h2>Statistics</h2>
-        <select id="dataCat">
-          <option>Select a Measure</option>
-          <option>Sets</option>
-          <option>Reps</option>
-          <option>Load</option>
-          <option>Volume</option>
-        </select>
+        <div class="container--data">
+          <p class="main">Total Sets: </p>
+          <p class="result">Result</p>
+        </div>
+        <div class="container--data">
+          <p class="main">Average Sets: </p>
+          <p class="result">Result</p>
+        </div>
+        <div class="container--data">
+          <p class="main">Maximum Sets: </p>
+          <p class="result">Result</p>
+        </div>
+        <div class="container--data">
+          <p class="main">Minimum Sets: </p>
+          <p class="result">Result</p>
+        </div>
+        <div class="container--data">
+          <p class="">Percentage change (%): </p>
+          <p class="result">Result</p>
+        </div>
       </div>
+      <line-chart id="chart" :chart-data="this.dataCollection" :options="this.options" />
     </div>
     <div class="spacer" />
     <h1>{{ featuresTitle }}</h1><br>
@@ -43,7 +65,6 @@
 <script>
 import InlineSvg from 'vue-inline-svg'
 import LineChart from '../components/Chart'
-import Editor from '../components/WorkoutBuilder'
 import reduceTime from '../assets/svg/features/reduceTime.svg'
 import powerful from '../assets/svg/features/powerful.svg'
 import visualGrid from '../assets/svg/features/visualGrid.svg'
@@ -58,7 +79,6 @@ import learn from '../assets/svg/features/learn.svg'
 export default {
   components: {
     LineChart,
-    Editor,
     InlineSvg
   },
   data () {
@@ -76,7 +96,49 @@ export default {
         { id: 8, subtitle: 'Unlimited Clients', desc: 'There is no limit on the number of clients you can have. Go out there and get more.', icon: noLimits },
         { id: 9, subtitle: 'In-Session Toolkit', desc: 'Ready-to-use calculators to help you deliver an outstanding session.', icon: toolkit },
         { id: 10, subtitle: 'Connect, Learn and Grow', desc: 'Access resources and materials to boost your career by staying up-to-date with the industry. Have a say in our development as well.', icon: learn }
-      ]
+      ],
+      quillContent: '<p><b>Warm-Up</b></p><p>A) Treadmill: 10 min </p><p>- Take it light and easy.</p><br><p><b>Main CV</b></p><p>B) Rower: 1500m</p><p>- Back straight </p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p><br><b>Main resistance</b></p><p>A) Bench Press: 2x20 at 40/45kg</p><p>B) Incline Dumbbell Press: 2x18 at 14/16kg</p><p>C) Decline Dumbbell Press: 2x16 at 12/14kg</p><br><p><b>Cooldown</b></p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p>',
+      quillConfig: {
+        modules: {
+          toolbar: [
+            [{ header: 1 }, { header: 2 }],
+            ['bold', 'italic', 'underline', 'strike'],
+            [{ script: 'sub' }, { script: 'super' }],
+            ['link'],
+            ['clean']
+          ]
+        },
+        placeholder: 'Start programming...'
+      },
+      dataCollection: {
+        labels: [1, 2, 3, 4, 5, 6, 7, 8],
+        datasets: [
+          {
+            label: 'Load (kg)',
+            borderColor: '#282828',
+            backgroundColor: 'transparent',
+            data: [20, 30, 40, 40, 44, 50, 49, 60]
+          }
+        ]
+      },
+      options: {
+        chartOptions: {
+          responsive: true,
+          maintainAspectRatio: false
+        },
+        scales: {
+          yAxes: [{
+            ticks: {
+              stepSize: 1
+            }
+          }]
+        }
+      }
+    }
+  },
+  methods: {
+    showFormat () {
+      this.$modal.show('format')
     }
   },
   head () {
@@ -94,25 +156,79 @@ export default {
 </script>
 
 <style scoped>
+  /* Containers */
   h2, .container--intro p {
     margin: 1.5rem 0
   }
   .container--2c {
-    display: flex
-  }
-  .container--2c > div {
-    margin: auto 3rem
+    display: grid;
+    grid-template-columns: .6fr 1fr
   }
   .container--2c p {
     margin: 1.5rem 0
   }
-  #chart--line {
-    grid-area: b;
-    max-width: 1000px
+
+  /* Editor */
+  #editor {
+    width: 250px;
+    border: 1px solid #282828;
+    margin: auto
   }
-  .container--features {
+  .workout-header {
+    padding: .4rem 1rem;
+    background-color: white
+  }
+  .workout-header__name-wrapper {
     display: grid;
-    grid-template-columns: .4fr 1fr;
+    grid-template-columns: 1fr 20px;
+    grid-gap: .4rem
+  }
+  .svg--info {
+    cursor: pointer;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    transition: opacity .4s, transform .1s cubic-bezier(.165, .84, .44, 1)
+  }
+  .svg--info:hover {
+    opacity: .6
+  }
+  .svg--info:active {
+    transform: scale(.9)
+  }
+  p.workout-header__name {
+    margin: 0;
+    font-weight: bold
+  }
+  p.workout-header__date {
+    margin: 0;
+    font-size: .8rem
+  }
+
+  /* Chart and Stats */
+  .container--chart {
+    display: grid;
+    grid-template-columns: .4fr 1fr
+  }
+  #chart {
+    margin: auto
+  }
+  #stats {
+    text-align: right
+  }
+  .main {
+    font-weight: bold
+  }
+  .container--data {
+    display: grid;
+    grid-template-columns: 1fr .4fr
+  }
+  .container--data p {
+    margin: .4rem 0
+  }
+
+  /* Features */
+  .container--features {
     width: 100%;
     margin: 4rem 0
   }
@@ -124,6 +240,8 @@ export default {
     margin: auto;
     text-align: center
   }
+
+  /* Responsive */
   @media (max-width: 992px) {
     .container--2c {
       grid-template-columns: 300px 1fr

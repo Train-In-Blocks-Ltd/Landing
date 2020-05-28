@@ -6,7 +6,7 @@
           <p><b>Full Body Smash-Up</b></p>
           <inline-svg id="info" class="svg" :src="require('../assets/svg/demo/Info.svg')" @click="showFormat()" />
         </div>
-        <quill output="html" :config="quillOptions" />
+        <quill v-model="this.content" output="html" :config="quillOptions" />
       </div>
     </div>
   </div>
@@ -19,6 +19,7 @@ export default {
   components: {
     InlineSvg
   },
+  props: ['content'],
   data () {
     return {
       quillOptions: {

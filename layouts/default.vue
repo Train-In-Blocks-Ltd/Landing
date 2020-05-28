@@ -29,12 +29,25 @@
     margin: 0 0 1.5rem 0
   }
   p {
-    font-size: 1rem;
     line-height: 1.5rem;
     margin: 3rem 0
   }
   .vm--modal {
     padding: 1rem 1.6rem
+  }
+
+  /* GLOBAL: Quill */
+  div.ql-editor {
+    max-height: 250px
+  }
+  div.ql-editor p {
+    font-size: 14px
+  }
+  div.ql-container.ql-snow {
+    border: none
+  }
+  div.ql-toolbar.ql-snow {
+    border: none
   }
 
   /* GLOBAL: To Top */
@@ -114,13 +127,6 @@
     width: 10rem;
     height: auto;
     margin: 5rem 0 0 0
-  }
-  .darkmode {
-    font-size: .8rem;
-    padding: .4rem 1rem;
-    display: block;
-    margin: 1.5rem 0 0 0;
-    float: right
   }
   .countdown--wrapper {
     display: grid;
@@ -313,7 +319,7 @@
   }
 
   /* Nuxt Modal fix */
-  modal.modal--format {
+  modal {
     display: none
   }
 </style>
@@ -346,9 +352,6 @@
         <nuxt-link class="input--option" to="/explore">
           Explore
         </nuxt-link><br>
-        <button class="darkmode" @click="darkThemeSwitch()">
-          {{ toMode }} Mode
-        </button>
       </nav>
     </div>
     <div class="animated fadeInUp">
@@ -389,10 +392,8 @@ export default {
   },
   data () {
     return {
-      toMode: 'Night',
       descSub: 'Get Notified When We Launch',
-      scrollpx: 0,
-      color: '#282828'
+      scrollpx: 0
     }
   },
   mounted () {
@@ -402,34 +403,6 @@ export default {
     window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
-    _addDarkTheme () {
-      const darkThemeLinkEl = document.createElement('link')
-      darkThemeLinkEl.setAttribute('rel', 'stylesheet')
-      darkThemeLinkEl.setAttribute('href', '/css/darktheme.css')
-      darkThemeLinkEl.setAttribute('id', 'dark-theme-style')
-
-      const docHead = document.querySelector('head')
-      docHead.append(darkThemeLinkEl)
-      this.color = '#FFFFFF'
-      this.$forceUpdate()
-    },
-    _removeDarkTheme () {
-      const darkThemeLinkEl = document.querySelector('#dark-theme-style')
-      const parentNode = darkThemeLinkEl.parentNode
-      parentNode.removeChild(darkThemeLinkEl)
-      this.color = '#282828'
-      this.$forceUpdate()
-    },
-    darkThemeSwitch () {
-      const darkThemeLinkEl = document.querySelector('#dark-theme-style')
-      if (!darkThemeLinkEl) {
-        this._addDarkTheme()
-        this.toMode = 'Day'
-      } else {
-        this._removeDarkTheme()
-        this.toMode = 'Night'
-      }
-    },
     handleScroll () {
       this.scrollpx = window.scrollY
     }
