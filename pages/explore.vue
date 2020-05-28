@@ -41,11 +41,11 @@ export default {
   },
   head () {
     return {
-      title: 'Explore',
+      title: 'Free Content for Personal Trainers',
       meta: [
-        { hid: 'description', name: 'description', content: '' },
-        { hid: 'og:title', content: 'Explore' },
-        { hid: 'twitter:title', content: 'Explore' },
+        { hid: 'description', name: 'description', content: 'We offer so much more than just software for fitness trainers and coaches. Access our free content on health and fitness related topics.' },
+        { hid: 'og:title', content: 'Free Content for Personal Trainers' },
+        { hid: 'twitter:title', content: 'Free Content for Personal Trainers' },
         { hid: 'og:url', content: '/explore' }
       ]
     }

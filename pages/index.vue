@@ -37,11 +37,11 @@ export default {
   },
   head () {
     return {
-      title: 'Home',
+      title: 'Programming for Personal Trainers',
       meta: [
-        { hid: 'description', name: 'description', content: '' },
-        { hid: 'og:title', content: 'Home' },
-        { hid: 'twitter:title', content: 'Home' },
+        { hid: 'description', name: 'description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
+        { hid: 'og:title', content: 'Programming for Personal Trainers' },
+        { hid: 'twitter:title', content: 'Programming for Personal Trainers' },
         { hid: 'og:url', content: '/' }
       ]
     }

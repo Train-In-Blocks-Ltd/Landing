@@ -81,9 +81,9 @@ export default {
   },
   head () {
     return {
-      title: 'Demo',
+      title: 'Faster Exercise Programming',
       meta: [
-        { hid: 'description', name: 'description', content: '' },
+        { hid: 'description', name: 'description', content: 'Say goodbye to spreadsheets. They\'ve served us well but we\'ve found a better way of tracking client data.' },
         { hid: 'og:title', content: 'Demo' },
         { hid: 'twitter:title', content: 'Demo' },
         { hid: 'og:url', content: '/features' }

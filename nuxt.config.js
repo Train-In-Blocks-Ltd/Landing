@@ -5,27 +5,24 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: '%s | Train In Blocks',
+    titleTemplate: 'Train In Blocks | %s',
     htmlAttrs: {
       lang: 'en-GB'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-
-      // Need filling in
-      { name: 'description', content: '' },
-      { property: 'og:description', content: '' },
-      { name: 'twitter:description', content: '' },
-
+      { name: 'description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
+      { property: 'og:description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
+      { name: 'twitter:description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
       { name: 'apple-mobile-web-app-title', content: 'Train In Blocks' },
       { name: 'application-name', content: 'Train In Blocks' },
       { name: 'msapplication-TileColor', content: '#ffffff' },
       { name: 'theme-color', content: '#ffffff' },
-      { hid: 'twitter:title', name: 'twitter:title', template: chunk => `${chunk} | Train In Blocks` },
+      { hid: 'twitter:title', name: 'twitter:title', template: chunk => `Train In Blocks | ${chunk}` },
       { name: 'twitter:image', content: 'https://traininblocks.com/android-chrome-192x192.png' },
       { property: 'og:site_name', content: 'Train In Blocks' },
-      { hid: 'og:title', property: 'og:title', template: chunk => `${chunk} | Train In Blocks` },
+      { hid: 'og:title', property: 'og:title', template: chunk => `Train In Blocks | ${chunk}` },
       { hid: 'og:url', property: 'og:url', template: 'https://traininblocks.com%s' },
       { property: 'og:type', content: 'website' },
       { property: 'og:image', content: 'https://traininblocks.com/android-chrome-192x192.png' }
