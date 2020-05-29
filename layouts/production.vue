@@ -341,9 +341,6 @@
         <nuxt-link class="input--option" to="/explore">
           Explore
         </nuxt-link><br>
-        <button class="darkmode" @click="darkThemeSwitch()">
-          {{ toMode }} Mode
-        </button>
       </nav>
     </div>
     <div class="animated fadeInUp">
@@ -386,10 +383,8 @@ export default {
   },
   data () {
     return {
-      toMode: 'Night',
       descSub: 'Get Notified When We Launch',
-      scrollpx: 0,
-      color: '#282828'
+      scrollpx: 0
     }
   },
   mounted () {
@@ -399,34 +394,6 @@ export default {
     window.removeEventListener('scroll', this.handleScroll)
   },
   methods: {
-    _addDarkTheme () {
-      const darkThemeLinkEl = document.createElement('link')
-      darkThemeLinkEl.setAttribute('rel', 'stylesheet')
-      darkThemeLinkEl.setAttribute('href', '/css/darktheme.css')
-      darkThemeLinkEl.setAttribute('id', 'dark-theme-style')
-
-      const docHead = document.querySelector('head')
-      docHead.append(darkThemeLinkEl)
-      this.color = '#FFFFFF'
-      this.$forceUpdate()
-    },
-    _removeDarkTheme () {
-      const darkThemeLinkEl = document.querySelector('#dark-theme-style')
-      const parentNode = darkThemeLinkEl.parentNode
-      parentNode.removeChild(darkThemeLinkEl)
-      this.color = '#282828'
-      this.$forceUpdate()
-    },
-    darkThemeSwitch () {
-      const darkThemeLinkEl = document.querySelector('#dark-theme-style')
-      if (!darkThemeLinkEl) {
-        this._addDarkTheme()
-        this.toMode = 'Day'
-      } else {
-        this._removeDarkTheme()
-        this.toMode = 'Night'
-      }
-    },
     handleScroll () {
       this.scrollpx = window.scrollY
     }
