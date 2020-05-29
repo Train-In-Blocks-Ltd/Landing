@@ -115,13 +115,6 @@
     height: auto;
     margin: 5rem 0 0 0
   }
-  .darkmode {
-    font-size: .8rem;
-    padding: .4rem 1rem;
-    display: block;
-    margin: 1.5rem 0 0 0;
-    float: right
-  }
   .countdown--wrapper {
     display: grid;
     margin: 8rem 0;
@@ -257,9 +250,6 @@
     .input--option {
       width: fit-content;
       margin: .4rem 0
-    }
-    .darkmode {
-      margin: 0
     }
 
     /* Misc. */
