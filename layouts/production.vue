@@ -342,6 +342,20 @@
         <nuxt />
       </transition>
     </div>
+    <footer>
+      <nuxt-link class="input--option" to="/gdpr">
+        GDPR Statement
+      </nuxt-link>
+      <nuxt-link class="input--option" to="/privacy-policy">
+        Privacy Policy
+      </nuxt-link>
+      <nuxt-link class="input--option" to="/cookie-policy">
+        Cookie Policy
+      </nuxt-link>
+      <nuxt-link class="input--option" to="/terms-conditions">
+        Terms & Conditions
+      </nuxt-link>
+    </footer>
     <a
       v-if="scrollpx > 800"
       v-scroll-to="{
