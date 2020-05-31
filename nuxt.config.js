@@ -107,11 +107,15 @@ export default async () => {
     ** Nuxt.js modules
     */
     modules: [
-      '@nuxtjs/sitemap'
+      '@nuxtjs/sitemap',
+      '@nuxtjs/google-analytics'
     ],
     sitemap: {
       hostname: 'https://traininblocks.com',
       gzip: true
+    },
+    googleAnalytics: {
+      id: 'UA-12301-2'
     },
     pwa: {
       manifest: {
