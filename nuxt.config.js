@@ -70,7 +70,7 @@ export default async () => {
             "https://twitter.com/JoeBailey26",
             "https://www.behance.net/joebailey26",
             "https://github.com/joebailey26",
-            "https://codepen.io/joebailey26" 
+            "https://codepen.io/joebailey26"
           }`,
           type: 'application/ld+json'
         }

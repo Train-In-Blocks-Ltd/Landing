@@ -2,6 +2,44 @@
 <style>
   @import '../node_modules/animate.css';
 
+  /* TEMPORARY: Email */
+  #mc-embedded-subscribe-form label {
+    font-weight: bold;
+    font-size: 2rem
+  }
+  #mce-EMAIL {
+    opacity: .6;
+    padding: .4rem;
+    font-size: 1rem;
+    width: 95%;
+    margin: 1rem 0;
+    outline-width: 0;
+    border: none;
+    border-bottom: 1px solid #282828;
+    transition: all .6s cubic-bezier(.165, .84, .44, 1)
+  }
+  #mce-EMAIL:hover, #mce-EMAIL:focus {
+    width: 100%;
+    opacity: 1
+  }
+  #mc-embedded-subscribe {
+    cursor: pointer;
+    padding: .4rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #282828;
+    outline-width: 0;
+    transition: all .2s cubic-bezier(.165, .84, .44, 1)
+  }
+  #mc-embedded-subscribe:hover {
+    color: white;
+    background-color: #282828
+  }
+  #mc-embedded-subscribe:active {
+    transform: scale(.9)
+  }
+
   /* GLOBAL */
   html {
     scroll-behavior: smooth
@@ -17,8 +55,7 @@
     margin: 0;
     padding: 0 8%;
     letter-spacing: .1rem;
-    font-size: 16px;
-    overflow-x: hidden
+    font-size: 16px
   }
   h1 {
     font-size: 3rem;
@@ -163,7 +200,7 @@
   .input--option:active {
     transform: scale(.9)
   }
-  nav a.nuxt-link-exact-active {
+  nav a.router-link-exact-active {
     font-weight: bold
   }
 
@@ -232,9 +269,12 @@
       background-color: transparent;
       color: #282828
     }
-    .input--option.nuxt-link-exact-active:before {
+    .input--option.router-link-exact-active:before {
       transform: scaleX(1);
       opacity: 1
+    }
+    .container--signup {
+      grid-gap: 4rem
     }
   }
   @media (max-width: 768px) {
@@ -262,6 +302,12 @@
     .input--option:hover {
       opacity: 1
     }
+    .container--signup {
+      grid-gap: 3rem
+    }
+    #mc-embedded-subscribe-form label {
+      font-size: 1.6rem
+    }
   }
   @media (max-width: 576px) {
     /* Containers */
@@ -283,6 +329,12 @@
     #logo--home {
       width: 8rem
     }
+    .container--signup {
+      grid-gap: 2rem
+    }
+    #mc-embedded-subscribe-form label {
+      font-size: 1.2rem
+    }
   }
   @media (max-width: 360px) {
     body {
@@ -300,6 +352,12 @@
       font-size: .5rem;
       margin: .4rem 0
     }
+    .container--signup {
+      grid-gap: 1rem
+    }
+    #mc-embedded-subscribe-form label {
+      font-size: 1rem
+    }
   }
 </style>
 
@@ -310,58 +368,36 @@
       <div class="container--countdown">
         <h2>01.08.20</h2>
         <Countdown end="August 1, 2020" />
-        <p><b>BETA RELEASE</b></p>
+        <p><b>BETA RELEASE</b></p><br>
+        <q style="font-size: 1rem; letter-spacing: .2rem">You can't buy more time to train your clients, but you can use it better.</q>
       </div>
     </div>
-    <div id="nav--top" class="spacer--small" />
-    <div class="container--nav animated bounceInRight">
-      <nav id="nav--main">
-        <nuxt-link class="input--option" to="/">
-          Welcome
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/features">
-          Demo
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/pricing">
-          Pricing
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/roadmap">
-          Roadmap
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/explore">
-          Explore
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/blog">
-          Blog
-        </nuxt-link>
-        <br>
-      </nav>
-    </div>
-    <div class="animated fadeInUp">
-      <transition enter-active-class="animated fadeInRight delay-1s" leave-active-class="animated fadeOutLeft">
-        <nuxt />
-      </transition>
-    </div>
-    <a
-      v-if="scrollpx > 800"
-      v-scroll-to="{
-        el: '#nav--top',
-        duratiob: 1200,
-        easing: 'ease'
-      }"
-      class="to-top"
+    <form
+      id="mc-embedded-subscribe-form"
+      action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
+      method="post"
+      name="mc-embedded-subscribe-form"
+      class="validate animated fadeInLeft"
+      target="_blank"
+      novalidate
     >
-      <inline-svg id="to-top__icon" :src="require('../assets/svg/Top.svg')" />
-    </a>
-    <client-only>
-      <modal class="modal--format" name="format" height="auto" :adaptive="true">
-        <p>
-          <b>Just learn the format:</b><br>
-          A) Back Squat: 3 x 6 at 70/80/90kg<br>
-          B) Bench Press: 2 x 20/15 at 50/55kg
-        </p>
-      </modal>
-    </client-only>
+      <label for="mce-EMAIL">Get Notified When We Launch!</label><br>
+      <input
+        id="mce-EMAIL"
+        type="email"
+        value=""
+        name="EMAIL"
+        class="email"
+        placeholder="Email"
+        required
+      >
+      <div style="position: absolute; left: -5000px" aria-hidden="true">
+        <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
+      </div>
+      <div class="clear">
+        <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
+      </div>
+    </form>
   </div>
 </template>
 
