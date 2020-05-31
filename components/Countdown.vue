@@ -50,10 +50,12 @@ export default {
   },
   props: {
     deadline: {
-      type: String
+      type: String,
+      default: ''
     },
     end: {
-      type: String
+      type: String,
+      default: ''
     },
     stop: {
       type: Boolean
