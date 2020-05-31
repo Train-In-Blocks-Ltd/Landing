@@ -39,11 +39,6 @@
   #mc-embedded-subscribe:active {
     transform: scale(.9)
   }
-  .container--signup {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5rem
-  }
 
   /* GLOBAL */
   html {
@@ -377,34 +372,32 @@
         <q style="font-size: 1rem; letter-spacing: .2rem">You can't buy more time to train your clients, but you can use it better.</q>
       </div>
     </div>
-    <div class="container--signup">
-      <form
-        id="mc-embedded-subscribe-form"
-        action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
-        method="post"
-        name="mc-embedded-subscribe-form"
-        class="validate animated fadeInLeft"
-        target="_blank"
-        novalidate
+    <form
+      id="mc-embedded-subscribe-form"
+      action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
+      method="post"
+      name="mc-embedded-subscribe-form"
+      class="validate animated fadeInLeft"
+      target="_blank"
+      novalidate
+    >
+      <label for="mce-EMAIL">Get Notified When We Launch!</label><br>
+      <input
+        id="mce-EMAIL"
+        type="email"
+        value=""
+        name="EMAIL"
+        class="email"
+        placeholder="Email"
+        required
       >
-        <label for="mce-EMAIL">Get Notified When We Launch!</label><br>
-        <input
-          id="mce-EMAIL"
-          type="email"
-          value=""
-          name="EMAIL"
-          class="email"
-          placeholder="Email"
-          required
-        >
-        <div style="position: absolute; left: -5000px" aria-hidden="true">
-          <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
-        </div>
-        <div class="clear">
-          <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
-        </div>
-      </form>
-    </div>
+      <div style="position: absolute; left: -5000px" aria-hidden="true">
+        <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
+      </div>
+      <div class="clear">
+        <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
+      </div>
+    </form>
   </div>
 </template>
 
