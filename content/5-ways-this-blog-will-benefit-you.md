@@ -8,7 +8,7 @@
 
 ## 4. A chance to connect
 
-## 5. 
+## 5. It's free
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjUyMTkyMTksLTU4MzgyNzAyMV19
+eyJoaXN0b3J5IjpbMTY5MjMxMjk0NiwtNTgzODI3MDIxXX0=
 -->
