@@ -1,10 +1,14 @@
 # How can this blog benefit you?
 120620 Mikey Lau
-## 1.
-## 2.
-## 3.
-## 4.
-## 5.
+## 1. We're keeping it simple
+
+## 2. High-quality content
+
+## 3. We don't like spam either
+
+## 4. A chance to connect
+
+## 5. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNjk3MDkzOSwtNTgzODI3MDIxXX0=
+eyJoaXN0b3J5IjpbLTEwNjUyMTkyMTksLTU4MzgyNzAyMV19
 -->
