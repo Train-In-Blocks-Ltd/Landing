@@ -13,10 +13,12 @@ Sign-up to our mailing list to get notified of our blog posts, special offers an
 We've made it pain-free to access your email preferences as well to make any adjustments.
 
 ## 4. A chance to connect
-You're not alone in your journey
+You're not alone in your journey. Find other similar minded individuals to collaborate and share ideas with. You never know what type of professional network you'll be able to build.
+
+To achieve this, we'll release posts to celebrate achievements by trainers and cpaches 
 
 ## 5. It's free
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUzMTE3NzMyLDE2OTIzMTI5NDYsLTU4Mz
-gyNzAyMV19
+eyJoaXN0b3J5IjpbMTQyMTg4NDY0MiwxNjkyMzEyOTQ2LC01OD
+M4MjcwMjFdfQ==
 -->
