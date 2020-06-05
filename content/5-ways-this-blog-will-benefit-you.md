@@ -15,10 +15,11 @@ We've made it pain-free to access your email preferences as well to make any adj
 ## 4. A chance to connect
 You're not alone in your journey. Find other similar minded individuals to collaborate and share ideas with. You never know what type of professional network you'll be able to build.
 
-To achieve this, we'll release posts to celebrate achievements by trainers and cpaches 
+To achieve this, we'll release posts to celebrate achievements by trainers and coaches alike and share their social platforms with you. Simply get in contact and help us build a community.
 
 ## 5. It's free
+Knowledge is power, it's even better when it's free.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMTg4NDY0MiwxNjkyMzEyOTQ2LC01OD
+eyJoaXN0b3J5IjpbLTg3NjY2NTY1NywxNjkyMzEyOTQ2LC01OD
 M4MjcwMjFdfQ==
 -->
