@@ -8,13 +8,15 @@ Following our core values and philosophy, we love cutting-to-the-chase and simpl
 To make the most of your time, all of our content will be of outstanding quality to ensure you can really benefit from its practise.
 
 ## 3. We don't like spam either
-Sign-up to our mailing list to get notified of our blog posts an
+Sign-up to our mailing list to get notified of our blog posts, special offers and exclusive content. We will only send out emails that are relevant and as specified by you in the options.
+
+We've made it pain-free to access your email preferences as well to make any adjustments.
 
 ## 4. A chance to connect
-
+You're not alone in your journey
 
 ## 5. It's free
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3ODM5MjEwNiwxNjkyMzEyOTQ2LC01OD
-M4MjcwMjFdfQ==
+eyJoaXN0b3J5IjpbMjUzMTE3NzMyLDE2OTIzMTI5NDYsLTU4Mz
+gyNzAyMV19
 -->
