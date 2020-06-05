@@ -1,5 +1,7 @@
 # How can this blog benefit you?
+
 120620 Mikey Lau
+
 ## 1. We're keeping it simple
 
 Following our core values and philosophy, we love cutting-to-the-chase and simplifying ideas. Reading is important but action is key. We want you to take action and put our content to good use.
@@ -20,6 +22,6 @@ To achieve this, we'll release posts to celebrate achievements by trainers and c
 ## 5. It's free
 Knowledge is power, it's even better when it's free.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NjY2NTY1NywxNjkyMzEyOTQ2LC01OD
-M4MjcwMjFdfQ==
+eyJoaXN0b3J5IjpbLTExNjQ0NTg5MDEsLTg3NjY2NTY1NywxNj
+kyMzEyOTQ2LC01ODM4MjcwMjFdfQ==
 -->
