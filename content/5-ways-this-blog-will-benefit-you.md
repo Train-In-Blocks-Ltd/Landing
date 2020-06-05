@@ -2,7 +2,7 @@
 120620 Mikey Lau
 ## 1. We're keeping it simple
 
-
+Following our core values and philosophy, we love cutting-to-the-chase and simplifying ideas. Reading is important but 
 ## 2. High-quality content
 
 ## 3. We don't like spam either
@@ -11,6 +11,6 @@
 
 ## 5. It's free
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyODk3MzYzNiwxNjkyMzEyOTQ2LC01OD
-M4MjcwMjFdfQ==
+eyJoaXN0b3J5IjpbLTEwMzcyMTU2OTIsMTY5MjMxMjk0NiwtNT
+gzODI3MDIxXX0=
 -->
