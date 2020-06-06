@@ -105,11 +105,15 @@
       <div class="wrapper--workout">
         <div class="workouts--workout">
           <p><b>Workout 4</b></p>
-          <p class="text--date">SAT 01.08.2020</p>
+          <p class="text--date">
+            SAT 01.08.2020
+          </p>
         </div>
         <quill v-model="exampleWorkout" output="html" class="quill" :config="config" />
         <div class="bottom-bar">
-          <button class="button--save" @click="scan()">Save</button>
+          <button class="button--save" @click="scan()">
+            Save
+          </button>
         </div>
       </div>
       <div id="text">
@@ -126,13 +130,6 @@
       <line-chart id="chart" :chart-data="dataCollection" :options="options" />
       <div id="stats">
         <h2>Statistics</h2>
-        <div v-show="showType">
-          <p id="p1" />
-          <p id="p2" />
-          <p id="p3" />
-          <p id="p4" />
-          <p id="p5" />
-        </div>
         <select id="dataName" @change="selection()" />
         <select v-show="showType" id="dataType" @change="selection()">
           <option>Sets</option>
@@ -140,6 +137,13 @@
           <option>Load</option>
           <option>Volume</option>
         </select>
+        <div v-show="showType">
+          <p id="p1" />
+          <p id="p2" />
+          <p id="p3" />
+          <p id="p4" />
+          <p id="p5" />
+        </div>
       </div>
     </div>
     <div class="spacer" />
@@ -202,12 +206,12 @@ export default {
           ]
         }
       },
-      exampleWorkout: '<h1><strong>How to use</strong></h1><p>Give this a try, just simply make changes to the exercise protocols in the <b>square brackets</b>.</p><p>======================</p><h2><strong>Warm-Up</strong></h2><p><br></p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p><br></p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A) [bench press: 3x6 at 50/60/62.5kg]</p><p>B) [Incline Dumbbell Press: 2x8 at 20/20/22kg]</p><p>C) [Decline Dumbbell Press: 3x10 at 18/20/24kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[sRPE: 8]</p><p>[Weight: 56.2kg]</p>',
+      exampleWorkout: '<h1><strong>How to use</strong></h1><p>Give this a try, just simply make changes to the exercise protocols in the <b>square brackets</b>.</p><p>======================</p><h2><strong>Warm-Up</strong></h2><p><br></p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p><br></p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A) [bench press: 3x6 at 50/60/62.5kg]</p><p>B) [Incline Dumbbell Press: 2x8 at 20/20/22kg]</p><p>C) [Decline Dumbbell Press: 3x10 at 18/20/24kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 8]</p><p>[Weight: 56.2kg]</p>',
       exampleWorkoutStore: [
-        '<p><b>WORKOUT 1</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [Bench press: 2x20 at 40/45kg]</p><p>A2) [Bench press: 2x30 at 50/60kg]</p><p>B) [Incline Dumbbell Press: 2x18 at 14/16kg]</p><p>C) [Decline Dumbbell Press: 2x16 at 12/14kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s - RPE: 5]</p><p>[Weight: 55kg]</p>',
-        '<p><b>WORKOUT 2</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench Press: 2x15 at 50/60kg]</p><p>B) [Incline Dumbbell Press: 2x12 at 14/16kg]</p><p>C) [Decline Dumbbell Press: 2x10 at 18/18kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s - RPE: 6]</p><p>[Weight: 55.8kg]</p>',
-        '<p><b>WORKOUT 3</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench Press: 3x10 at 40/47.5/50kg]</p><p>B) [Incline Dumbbell Press: 3x12/40/5 at 16/18/20kg]</p><p>C) [Decline Dumbbell Press: 2x10 at 16/18/20kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[sRPE: 6]</p><p>[Weight: 56kg]</p>',
-        '<p><b>WORKOUT 4</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench press: 3x6 at 50/60/62.5kg]</p><p>B) [Incline Dumbbell Press: 3x8 at 20/20/22kg]</p><p>C) [Decline Dumbbell Press: 3x10 at 18/20/24kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[sRPE: 8]</p><p>[Weight: 56.2kg]</p>'
+        '<p><b>WORKOUT 1</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [Bench press: 2x20 at 40/45kg]</p><p>A2) [Bench press: 2x30 at 50/60kg]</p><p>B) [Incline Dumbbell Press: 2x18 at 14/16kg]</p><p>C) [Decline Dumbbell Press: 2x16 at 12/14kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 5]</p><p>[Weight: 55kg]</p>',
+        '<p><b>WORKOUT 2</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench Press: 2x15 at 50/60kg]</p><p>B) [Incline Dumbbell Press: 2x12 at 14/16kg]</p><p>C) [Decline Dumbbell Press: 2x10 at 18/18kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 6]</p><p>[Weight: 55.8kg]</p>',
+        '<p><b>WORKOUT 3</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench Press: 3x10 at 40/47.5/50kg]</p><p>B) [Incline Dumbbell Press: 3x12/40/5 at 16/18/20kg]</p><p>C) [Decline Dumbbell Press: 2x10 at 16/18/20kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 6]</p><p>[Weight: 56kg]</p>',
+        '<p><b>WORKOUT 4</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench press: 3x6 at 50/60/62.5kg]</p><p>B) [Incline Dumbbell Press: 3x8 at 20/20/22kg]</p><p>C) [Decline Dumbbell Press: 3x10 at 18/20/24kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 8]</p><p>[Weight: 56.2kg]</p>'
       ],
       showType: true,
       dataPacketStore: [],
@@ -268,7 +272,9 @@ export default {
       this.dataPacketStore.forEach((item) => {
         overviewStore.length = 0
         item.forEach((exerciseDataPacket) => {
-          const regex = RegExp(dataForName, 'gi')
+          const tidyA = dataForName.replace(/\(/g, '\\(')
+          const tidyB = tidyA.replace(/\)/g, '\\)')
+          const regex = RegExp(tidyB, 'gi')
           const protocol = exerciseDataPacket[1].replace(/\s/g, '')
           if (regex.test(exerciseDataPacket[0]) === true) {
             if ((dataForType === 'Sets' || dataForType === 'Reps') && exerciseDataPacket[1].includes('at') === true) {
@@ -361,13 +367,16 @@ export default {
       const tempItemStoreLate = []
       this.dataPacketStore.forEach((item) => {
         item.forEach((exerciseDataPacket) => {
-          const regex = RegExp(exerciseDataPacket[0], 'gi')
+          const tidyA = exerciseDataPacket[0].replace(/\(/g, '\\(')
+          const tidyB = tidyA.replace(/\)/g, '\\)')
+          const regexA = RegExp(tidyB, 'gi')
+          const regexB = RegExp(/[|\\/)(~^:,;?!&%$@*+]/, 'g')
           const itemCased = this.properCase(exerciseDataPacket[0])
-          if (regex.test(tempItemStore) !== true && exerciseDataPacket[1].includes('at') === true) {
+          if (regexA.test(tempItemStore) !== true && exerciseDataPacket[1].includes('at') === true) {
             tempItemStore.push(itemCased)
           }
-          if (regex.test(tempItemStoreLate) !== true && exerciseDataPacket[1].includes('at') !== true) {
-            if (exerciseDataPacket[0].includes('-') === true) {
+          if (regexA.test(tempItemStoreLate) !== true && exerciseDataPacket[1].includes('at') !== true) {
+            if (regexB.test(exerciseDataPacket[0]) === true) {
               tempItemStoreLate.push(exerciseDataPacket[0])
             } else {
               tempItemStoreLate.push(itemCased)

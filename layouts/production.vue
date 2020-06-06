@@ -34,10 +34,6 @@
   .vm--modal {
     padding: 1rem 1.6rem
   }
-  .dyn-text:after {
-    color: aqua;
-    mix-blend-mode: difference
-  }
 
   /* GLOBAL: Email */
   #mc-embedded-subscribe-form label {
@@ -241,15 +237,15 @@
   div.ql-container.ql-snow {
     border: none
   }
-  .ql-snow .ql-stroke {
+  div.ql-snow .ql-stroke {
     stroke: #282828
   }
-  .ql-editor {
+  div.ql-editor {
     max-height: 250px;
     color: #282828;
     overflow-y: auto
   }
-  .ql-editor ul li:not(.ql-direction-rtl) {
+  div.ql-editor ul li:not(.ql-direction-rtl) {
     padding: 0
   }
   .ql-snow.ql-toolbar button:hover, .ql-snow .ql-toolbar button:hover, .ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar .ql-picker-label:hover, .ql-snow .ql-toolbar .ql-picker-label:hover, .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-item:hover, .ql-snow .ql-toolbar .ql-picker-item:hover, .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
@@ -440,10 +436,10 @@
     <div id="nav--top" class="spacer--small" />
     <div class="container--nav animated bounceInLeft">
       <div class="social-bar">
-        <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')"/></a>
-        <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')"/></a>
-        <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')"/></a>
-        <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')"/></a>
+        <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
+        <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
+        <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')" /></a>
+        <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
       </div>
       <nav id="nav--main">
         <nuxt-link class="input--option" to="/">
@@ -498,15 +494,6 @@
     >
       <inline-svg id="to-top__icon" :src="require('../assets/svg/Top.svg')" />
     </a>
-    <client-only>
-      <modal class="modal--format" name="format" height="auto" :adaptive="true">
-        <p>
-          <b>Just learn the format:</b><br>
-          A) Back Squat: 3 x 6 at 70/80/90kg<br>
-          B) Bench Press: 2 x 20/15 at 50/55kg
-        </p>
-      </modal>
-    </client-only>
   </div>
 </template>
 

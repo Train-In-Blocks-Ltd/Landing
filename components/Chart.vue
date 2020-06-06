@@ -10,9 +10,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-  #line-chart {
-    width: fit-content
-  }
-</style>
