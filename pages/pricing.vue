@@ -34,12 +34,7 @@
     </div>
     <div class="spacer" />
     <div>
-      <h1>What does the app get you again?</h1><br>
-      <h2 id="to-features">
-        Let me show you <nuxt-link class="input--option link" to="./features/#features">
-          (Click here for the full list)
-        </nuxt-link>
-      </h2>
+      <h1>How do we compare to...</h1><br>
       <div v-for="item in overview" :key="item.id" class="list--overview">
         <p class="list__desc">
           <b>{{ item.name }}</b> - {{ item.desc }}
@@ -47,7 +42,6 @@
       </div>
     </div>
     <div class="spacer" />
-    <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with the cool icons!</p>
   </div>
 </template>
 
@@ -59,10 +53,11 @@ export default {
       btn1: 'We\'re almost there...',
       btn2: 'It will be out soon...',
       isOpen: true,
+      tibInfo: 'Train In Blocks',
       overview: [
-        { id: 1, name: 'Unlimited Clients', desc: 'Again, we don\'t want to cap you on how many clients you can train. Go for it!' },
-        { id: 2, name: 'Instant Access', desc: 'No waiting around here, just dive right in.' },
-        { id: 3, name: 'Voting', desc: 'Help us decide where to go. We really value your opinion. Check our Roadmap and find out more.' }
+        { id: 1, name: 'TrueCoach', desc: '$19 per month for 5 clients' },
+        { id: 2, name: 'My PT Hub', desc: '£20 per month for 5 clients' },
+        { id: 3, name: 'PTminder', desc: 'Cheapest plan for £25 per month' }
       ]
     }
   },
@@ -94,7 +89,7 @@ export default {
     min-height: fit-content;
     box-shadow: 0 20px 40px 12px rgba(0, 0, 0, .05);
     background-color: white;
-    padding: 2rem;
+    padding: 6rem 2rem;
     text-align: center
   }
   .pricing__plans > div > p {
@@ -122,9 +117,6 @@ export default {
     background-color: #282828;
     color: white;
     padding: 0 1rem
-  }
-  #to-features {
-    margin: 0
   }
   .link {
     margin: 0

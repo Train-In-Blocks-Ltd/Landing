@@ -1,4 +1,3 @@
-
 <style>
   @import '../node_modules/animate.css';
 
@@ -29,12 +28,53 @@
     margin: 0 0 1.5rem 0
   }
   p {
-    font-size: 1rem;
     line-height: 1.5rem;
     margin: 3rem 0
   }
   .vm--modal {
     padding: 1rem 1.6rem
+  }
+  .dyn-text:after {
+    color: aqua;
+    mix-blend-mode: difference
+  }
+
+  /* GLOBAL: Email */
+  #mc-embedded-subscribe-form label {
+    font-weight: bold;
+    font-size: 2rem
+  }
+  #mce-EMAIL {
+    opacity: .6;
+    padding: .4rem;
+    font-size: 1rem;
+    width: 40%;
+    margin: 1rem 0;
+    outline-width: 0;
+    border: none;
+    border-bottom: 1px solid #282828;
+    transition: all .6s cubic-bezier(.165, .84, .44, 1)
+  }
+  #mce-EMAIL:hover, #mce-EMAIL:focus {
+    width: 45%;
+    opacity: 1
+  }
+  #mc-embedded-subscribe {
+    cursor: pointer;
+    padding: .4rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #282828;
+    outline-width: 0;
+    transition: all .2s cubic-bezier(.165, .84, .44, 1)
+  }
+  #mc-embedded-subscribe:hover {
+    color: white;
+    background-color: #282828
+  }
+  #mc-embedded-subscribe:active {
+    transform: scale(.9)
   }
 
   /* GLOBAL: To Top */
@@ -100,6 +140,17 @@
     margin: 2rem 0
   }
 
+  /* GLOBAL: Footer */
+  footer {
+    padding: 2rem 0;
+    background-color: white;
+    border-top: 1px solid #28282820
+  }
+  footer p {
+    margin-left: 2rem;
+    font-size: .8rem
+  }
+
   /* Misc. */
   .modal--format p {
     margin: 0
@@ -121,15 +172,31 @@
     animation-delay: 600ms
   }
   .container--countdown {
-    text-align: center;
     letter-spacing: .4rem;
     font-size: 1.5rem
   }
+
+  /* GLOBAL: Nav */
   .container--nav {
     display: flex;
-    flex-direction: row-reverse;
+    margin: 0 0 6rem 0;
+    justify-content: space-between;
     height: 10vh;
     animation-delay: 100ms
+  }
+  .social-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 1rem;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .4s, transform .1s cubic-bezier(.165, .84, .44, 1)
+  }
+  .social-icon:hover {
+    opacity: .6
+  }
+  .social-icon:active {
+    transform: scale(.9)
   }
 
   /* Nav Hover Animation */
@@ -167,6 +234,34 @@
     font-weight: bold
   }
 
+  /* Quill */
+  div.ql-toolbar.ql-snow {
+    border: none
+  }
+  div.ql-container.ql-snow {
+    border: none
+  }
+  .ql-snow .ql-stroke {
+    stroke: #282828
+  }
+  .ql-editor {
+    max-height: 250px;
+    color: #282828;
+    overflow-y: auto
+  }
+  .ql-editor ul li:not(.ql-direction-rtl) {
+    padding: 0
+  }
+  .ql-snow.ql-toolbar button:hover, .ql-snow .ql-toolbar button:hover, .ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar .ql-picker-label:hover, .ql-snow .ql-toolbar .ql-picker-label:hover, .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-item:hover, .ql-snow .ql-toolbar .ql-picker-item:hover, .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+    color: #28282899
+  }
+  .ql-snow.ql-toolbar button:hover .ql-stroke, .ql-snow .ql-toolbar button:hover .ql-stroke, .ql-snow.ql-toolbar button.ql-active .ql-stroke, .ql-snow .ql-toolbar button.ql-active .ql-stroke, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow.ql-toolbar button:hover .ql-stroke-miter, .ql-snow .ql-toolbar button:hover .ql-stroke-miter, .ql-snow.ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+    stroke: #28282899
+  }
+  .ql-snow.ql-toolbar button:hover .ql-fill, .ql-snow .ql-toolbar button:hover .ql-fill, .ql-snow.ql-toolbar button.ql-active .ql-fill, .ql-snow .ql-toolbar button.ql-active .ql-fill, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-fill, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-fill, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-fill, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-fill, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-fill, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-fill, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-fill, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-fill, .ql-snow.ql-toolbar button:hover .ql-stroke.ql-fill, .ql-snow .ql-toolbar button:hover .ql-stroke.ql-fill, .ql-snow.ql-toolbar button.ql-active .ql-stroke.ql-fill, .ql-snow .ql-toolbar button.ql-active .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+    fill: #28282899
+  }
+
   /* Scroll-bar */
   ::-webkit-scrollbar {
     width: 10px;
@@ -185,7 +280,6 @@
   /* References */
   .ref--icons8 {
     position: relative;
-    font-size: 1rem;
     font-weight: 700;
     color: #282828;
     text-decoration: none;
@@ -228,6 +322,12 @@
     body {
       padding: 0 6%
     }
+    #mce-EMAIL {
+      width: 60%
+    }
+    #mce-EMAIL:hover, #mce-EMAIL:focus {
+      width: 65%
+    }
     button:hover {
       background-color: transparent;
       color: #282828
@@ -235,6 +335,14 @@
     .input--option.nuxt-link-exact-active:before {
       transform: scaleX(1);
       opacity: 1
+    }
+  }
+  @media (max-width: 992px) {
+    .input--option {
+      margin: 0 0 0 1rem
+    }
+    .social-icon {
+      margin: 0 .4rem
     }
   }
   @media (max-width: 768px) {
@@ -251,6 +359,10 @@
       width: fit-content;
       margin: .4rem 0
     }
+    .social-icon {
+      display: grid;
+      margin: 1rem 0
+    }
 
     /* Misc. */
     h1 {
@@ -261,6 +373,18 @@
     }
     .input--option:hover {
       opacity: 1
+    }
+    .social-icon:hover {
+      opacity: 1
+    }
+    #mce-EMAIL {
+      width: 80%
+    }
+    #mce-EMAIL:hover {
+      width: 80%
+    }
+    #mce-EMAIL:focus {
+      width: 85%
     }
   }
   @media (max-width: 576px) {
@@ -306,7 +430,7 @@
 <template>
   <div id="app">
     <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('../assets/svg/LogoV12.svg')" />
-    <div class="countdown--wrapper animated fadeIn">
+    <div class="countdown--wrapper animated fadeIn delay-1s">
       <div class="container--countdown">
         <h2>01.08.20</h2>
         <Countdown end="August 1, 2020" />
@@ -314,7 +438,13 @@
       </div>
     </div>
     <div id="nav--top" class="spacer--small" />
-    <div class="container--nav animated bounceInRight">
+    <div class="container--nav animated bounceInLeft">
+      <div class="social-bar">
+        <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')"/></a>
+        <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')"/></a>
+        <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')"/></a>
+        <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')"/></a>
+      </div>
       <nav id="nav--main">
         <nuxt-link class="input--option" to="/">
           Welcome
@@ -355,6 +485,7 @@
       <nuxt-link class="input--option" to="/terms-conditions">
         Terms & Conditions
       </nuxt-link>
+      <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with some icons!</p>
     </footer>
     <a
       v-if="scrollpx > 800"
