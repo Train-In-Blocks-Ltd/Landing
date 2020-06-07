@@ -33,6 +33,17 @@ export default {
     getPermalink (post) {
       return this.prefix + '/' + post.attributes.slug
     }
+  },
+  head () {
+    return {
+      title: 'Learn',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Free high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.' },
+        { hid: 'og:title', content: 'Learn' },
+        { hid: 'twitter:title', content: 'Learn' },
+        { hid: 'og:url', content: '/blog' }
+      ]
+    }
   }
 }
 </script>
