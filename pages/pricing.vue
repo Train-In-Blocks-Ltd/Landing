@@ -4,7 +4,7 @@
       {{ title }}
     </h1>
     <div id="pricing">
-      <div class="pricing__plans dark">
+      <div class="pricing__plans">
         <div>
           <img class="icon--gif" src="../assets/gif/deadlift.gif">
           <h2>Basic - Monthly</h2>
@@ -16,10 +16,10 @@
           {{ btn1 }}
         </button>
       </div>
-      <div class="pricing__plans dark">
+      <div class="pricing__plans">
         <div>
           <img class="icon--gif" src="../assets/gif/trophy.gif">
-          <h2 class="pro dark" href="https://trolley.link/p/" data-trolley="true" data-tpk="">
+          <h2 class="pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">
             Pro - Yearly
           </h2>
           <h1 class="pricing__cost">
@@ -34,20 +34,22 @@
     </div>
     <div class="spacer" />
     <div>
-      <h1>What does the app get you again?</h1><br>
-      <h2 id="to-features">
-        Let me show you <nuxt-link class="input--option link" to="./features/#features">
-          (Click here for the full list)
-        </nuxt-link>
-      </h2>
-      <div v-for="item in overview" :key="item.id" class="list--overview">
-        <p class="list__desc">
-          <b>{{ item.name }}</b> - {{ item.desc }}
-        </p>
+      <h1 class="title--compare">How do we compare to...</h1><br>
+      <div class="container--comparison">
+        <div class="container--tib">
+          <p class="list__name">Train In Blocks</p>
+          <p class="list__desc">£10 per month for unlimited clients</p>
+        </div>
+        <h1>vs.</h1>
+        <div class="container--comp">
+          <div v-for="item in overview" :key="item.id" class="list--overview">
+            <p class="list__name">{{ item.name }}</p>
+            <p class="list__desc">{{ item.desc }}</p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="spacer" />
-    <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with the cool icons!</p>
   </div>
 </template>
 
@@ -59,10 +61,12 @@ export default {
       btn1: 'We\'re almost there...',
       btn2: 'It will be out soon...',
       isOpen: true,
+      tibInfo: 'Train In Blocks',
       overview: [
-        { id: 1, name: 'Unlimited Clients', desc: 'Again, we don\'t want to cap you on how many clients you can train. Go for it!' },
-        { id: 2, name: 'Instant Access', desc: 'No waiting around here, just dive right in.' },
-        { id: 3, name: 'Voting', desc: 'Help us decide where to go. We really value your opinion. Check our Roadmap and find out more.' }
+        { id: 1, name: 'TrueCoach', desc: '$99 per month for 50 clients' },
+        { id: 2, name: 'My PT Hub', desc: '£49 per month for full access' },
+        { id: 3, name: 'PTminder', desc: 'Cheapest plan for £25 per month' },
+        { id: 4, name: 'PT Distinction', desc: '$80 for 50 clients' }
       ]
     }
   },
@@ -94,7 +98,7 @@ export default {
     min-height: fit-content;
     box-shadow: 0 20px 40px 12px rgba(0, 0, 0, .05);
     background-color: white;
-    padding: 2rem;
+    padding: 6rem 2rem;
     text-align: center
   }
   .pricing__plans > div > p {
@@ -102,7 +106,7 @@ export default {
   }
   .pricing__cost {
     font-size: 4rem;
-    margin-bottom: 0
+    margin: 1rem 0
   }
   .signUp {
     width: 70%;
@@ -123,12 +127,36 @@ export default {
     color: white;
     padding: 0 1rem
   }
-  #to-features {
+
+  /* Competition */
+  .title--compare {
+    text-align: center
+  }
+  .container--comparison {
+    display: grid;
+    grid-template-columns: 1fr .4fr 1fr;
+    grid-gap: 4rem
+  }
+  .container--tib {
+    text-align: right
+  }
+  .container--comparison h1 {
+    margin: auto
+  }
+  .container--comp {
+    display: grid;
+    grid-gap: 3rem
+  }
+  .list__name {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 1rem 0
+  }
+  .list__desc {
     margin: 0
   }
-  .link {
-    margin: 0
-  }
+
+  /* Other */
   .icon--gif {
     margin: 3rem;
     border-radius: 5px
@@ -137,11 +165,25 @@ export default {
     #pricing {
       grid-template-columns: 1fr
     }
+    .container--comparison {
+      grid-gap: 2rem
+    }
+  }
+  @media (max-width: 768px) {
+    .list__name {
+      font-size: 1.4rem
+    }
   }
   @media (max-width: 576px) {
     .pricing__plans {
       background-color: transparent;
       box-shadow: none
+    }
+    .title--compare {
+      text-align: left
+    }
+    .container--comparison {
+      grid-template: repeat(3, .2fr) / 1fr
     }
   }
 </style>
