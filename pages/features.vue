@@ -48,6 +48,9 @@
   #stats {
     grid-area: a
   }
+  #dataName, #dataType {
+    outline-width: 0
+  }
 
   /* Other */
   .container--features {

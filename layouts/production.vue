@@ -116,16 +116,15 @@
     cursor: pointer;
     transition: all 400ms cubic-bezier(.165, .84, .44, 1)
   }
-  button:hover, #mc-embedded-subscribe:hover {
+  button:not(:disabled):hover, #mc-embedded-subscribe:hover {
     background-color: #282828;
     color: white
   }
-  button:active, #mc-embedded-subscribe:active {
+  button:not(:disabled):active, #mc-embedded-subscribe:active {
     transform: scale(.9)
   }
   button:disabled:hover {
     background: transparent;
-    color: gray;
     cursor: default
   }
   select {
@@ -143,8 +142,14 @@
     border-top: 1px solid #28282820
   }
   footer p {
-    margin-left: 2rem;
     font-size: .8rem
+  }
+  .nav--footer {
+    display: flex;
+    justify-content: space-between
+  }
+  footer a.input--option {
+    margin: 0 2rem 0 0
   }
 
   /* Misc. */
@@ -360,6 +365,12 @@
       margin: 1rem 0
     }
 
+    /* Footer */
+    footer a.input--option {
+      display: grid;
+      margin: 0 0 2rem 0
+    }
+
     /* Misc. */
     h1 {
       font-size: 2rem
@@ -464,23 +475,33 @@
       </nav>
     </div>
     <div class="animated fadeInUp">
-      <transition enter-active-class="animated fadeInRight delay-1s" leave-active-class="animated fadeOutLeft">
+      <transition enter-active-class="animated fadeInRight delay-1s" leave-active-class="animated fadeOut">
         <nuxt />
       </transition>
     </div>
     <footer>
-      <nuxt-link class="input--option" to="/gdpr">
-        GDPR Statement
-      </nuxt-link>
-      <nuxt-link class="input--option" to="/privacy-policy">
-        Privacy Policy
-      </nuxt-link>
-      <nuxt-link class="input--option" to="/cookie-policy">
-        Cookie Policy
-      </nuxt-link>
-      <nuxt-link class="input--option" to="/terms-conditions">
-        Terms & Conditions
-      </nuxt-link>
+      <div class="nav--footer">
+        <div>
+          <nuxt-link class="input--option" to="/gdpr">
+            GDPR Statement
+          </nuxt-link>
+          <nuxt-link class="input--option" to="/privacy-policy">
+            Privacy Policy
+          </nuxt-link>
+          <nuxt-link class="input--option" to="/cookie-policy">
+            Cookie Policy
+          </nuxt-link>
+          <nuxt-link class="input--option" to="/terms-conditions">
+            Terms & Conditions
+          </nuxt-link>
+        </div>
+        <div class="social-bar footer">
+          <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
+          <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
+          <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')" /></a>
+          <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
+        </div>
+      </div>
       <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with some icons!</p>
     </footer>
     <a
