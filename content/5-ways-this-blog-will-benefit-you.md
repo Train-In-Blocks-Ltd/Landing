@@ -1,8 +1,8 @@
 ---
-title: 5 ways on how this blog will benefit your personal training business
-slug: 5-ways-on-how-this-blog-will-benefit-your-personal-training-business
+title: 5 ways this blog will benefit you
+slug: 5-ways-this-blog-will-benefit-you
 img: /01/man-beach-run.jpg
-excerpt: It will only take less than 2 minutes to read
+excerpt: Take less than two minutes to find out how this blog will benefit you greatly.
 ---
 
 # How can this blog benefit you?

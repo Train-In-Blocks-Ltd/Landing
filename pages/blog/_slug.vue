@@ -60,6 +60,7 @@
       </ShareNetwork>
       <ShareNetwork
         network="linkedin"
+        :title="'Train In Blocks'"
         :url="'https://www.traininblocks.com' + this.$route.fullPath"
       >
       LinkedIn
@@ -77,7 +78,7 @@ export default {
         { hid: 'description', name: 'description', content: 'We love for you to get involved in our development. Vote for new features and join our community of health and fitness professionals.' },
         { hid: 'og:title', content: 'Here’s Our Journey, Join Us' },
         { hid: 'twitter:title', content: 'Here’s Our Journey, Join Us' },
-        { hid: 'og:url', content: '/learn' }
+        { hid: 'og:url', content: '/blog' }
       ]
     }
   },
