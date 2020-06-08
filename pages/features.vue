@@ -124,7 +124,7 @@
         <p>No.</p>
         <p><b>Numbers in boxes and clicking back and forth?</b></p>
         <p>No.</p>
-        <p><b>Say Goodbye to Manually Tracking Data.</b></p>
+        <p><b>Say goodbye to manually tracking data.</b></p>
         <p>Our app will understand the workouts and will do all the math for you. That's right. You build, visualise, adjust and adapt even before the first session.</p>
       </div>
     </div>
@@ -182,8 +182,8 @@ export default {
   },
   data () {
     return {
-      title: 'Go on...try before you buy!',
-      featuresTitle: 'What\'s included?',
+      title: 'Try before you buy!',
+      featuresTitle: 'What are the benefits?',
       features: [
         { id: 1, subtitle: 'Save Time', desc: 'Create a new long-term bespoke programme in less than 15 minutes.', icon: reduceTime },
         { id: 2, subtitle: 'Workout Builder', desc: 'A powerful workout design tool using free-form text editors. Write anything you want.', icon: powerful },
@@ -197,7 +197,7 @@ export default {
         { id: 10, subtitle: 'Connect, Learn and Grow', desc: 'Access resources and materials to boost your career by staying up-to-date with the industry. Have a say in our development as well.', icon: learn }
       ],
       config: {
-        placeholder: 'Type away...',
+        placeholder: 'Get programming...',
         modules: {
           toolbar: [
             [{ header: 1 }, { header: 2 }],
@@ -226,6 +226,17 @@ export default {
       options: null,
       yData: [],
       xLabel: []
+    }
+  },
+  head () {
+    return {
+      title: 'Features',
+      meta: [
+        { hid: 'description', name: 'description', content: 'We love for you to get involved in our development. Vote for new features and join our community of health and fitness professionals.' },
+        { hid: 'og:title', content: 'Here’s Our Journey, Join Us' },
+        { hid: 'twitter:title', content: 'Here’s Our Journey, Join Us' },
+        { hid: 'og:url', content: '/roadmap' }
+      ]
     }
   },
   mounted () {

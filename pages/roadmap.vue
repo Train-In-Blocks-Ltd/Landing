@@ -79,8 +79,8 @@ export default {
   .container--2c {
     display: grid;
     grid-template-columns: .6fr 1fr;
-    grid-gap: 3rem;
-    margin: 3rem 0
+    grid-gap: 4rem;
+    margin: 6rem 0
   }
   .container--2c > div > h1 {
     margin: 2rem 0 0 0;

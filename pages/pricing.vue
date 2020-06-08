@@ -23,9 +23,9 @@
             Pro - Yearly
           </h2>
           <h1 class="pricing__cost">
-            £90
+            £102
           </h1>
-          <p>Save 25% on the annual plan,<br><b>that's £7.50/month</b></p><br><br>
+          <p>Save 15% on the annual plan,<br><b>that's £8.50/month</b></p><br><br>
         </div>
         <button class="signUp" :disabled="isOpen">
           {{ btn2 }}

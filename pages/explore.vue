@@ -18,19 +18,14 @@
       </div>
     </div>
     <div class="spacer" />
-    <Subscribe />
-    <div class="spacer" />
-    <div class="socials" />
   </div>
 </template>
 
 <script>
 import InlineSvg from 'vue-inline-svg'
-import Subscribe from '../components/Subscribe'
 
 export default {
   components: {
-    Subscribe,
     InlineSvg
   },
   data () {

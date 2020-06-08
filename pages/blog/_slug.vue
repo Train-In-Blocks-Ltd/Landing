@@ -7,6 +7,36 @@
   .container--share h3 {
     margin: 0
   }
+  .container--share a {
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+    border: 0
+  }
+  .container--share a:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color: #282828;
+    opacity: 0;
+    transition: all .6s cubic-bezier(.075, .82, .165, 1)
+  }
+  .container--share a:hover:before {
+    opacity: 1;
+    width: 100%
+  }
+  .container--share a:active {
+    opacity: .6
+  }
+
+  @media (max-width: 768px) {
+    .container--share a:hover:before {
+      opacity: 0
+    }
+  }
 </style>
 
 <template>

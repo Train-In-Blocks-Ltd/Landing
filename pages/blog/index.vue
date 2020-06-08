@@ -40,7 +40,7 @@
     opacity: .8
   }
   .blog-post__link:active {
-    opacity: .6
+    opacity: .4
   }
 
   /* Responsiveness */
@@ -71,6 +71,10 @@
     .blog-post__image {
       height: auto;
       width: 100%
+    }
+    .blog-post__link:hover {
+      grid-gap: .4rem;
+      opacity: 1
     }
   }
 </style>
@@ -125,12 +129,12 @@ export default {
   },
   head () {
     return {
-      title: 'Learn',
+      title: 'Free Content for Personal Trainers',
       meta: [
-        { hid: 'description', name: 'description', content: 'Free high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.' },
-        { hid: 'og:title', content: 'Learn' },
-        { hid: 'twitter:title', content: 'Learn' },
-        { hid: 'og:url', content: '/blog' }
+        { hid: 'description', name: 'description', content: 'We offer so much more than just software for fitness trainers and coaches. Access our free content on health and fitness related topics.' },
+        { hid: 'og:title', content: 'Free Content for Personal Trainers' },
+        { hid: 'twitter:title', content: 'Free Content for Personal Trainers' },
+        { hid: 'og:url', content: '/learn' }
       ]
     }
   }
