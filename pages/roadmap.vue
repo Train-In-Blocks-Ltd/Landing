@@ -83,7 +83,7 @@ export default {
     margin: 3rem 0
   }
   .container--2c > div > h1 {
-    margin: 6rem 0 0 0;
+    margin: 2rem 0 0 0;
     background-color: #282828;
     color: white;
     width: fit-content;

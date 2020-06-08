@@ -28,8 +28,7 @@
     margin: 0 0 1.5rem 0
   }
   p {
-    line-height: 1.5rem;
-    margin: 3rem 0
+    line-height: 1.4
   }
   .vm--modal {
     padding: 1rem 1.6rem
@@ -78,7 +77,7 @@
     opacity: 0;
     position: fixed;
     right: 8%;
-    bottom: 3rem;
+    bottom: 10rem;
     background-color: #28282815;
     border-radius: 5px;
     width: fit-content;
@@ -182,7 +181,7 @@
     display: flex;
     margin: 0 0 6rem 0;
     justify-content: space-between;
-    height: 10vh;
+    height: 8vh;
     animation-delay: 100ms
   }
   .social-icon {
@@ -397,7 +396,7 @@
   @media (max-width: 576px) {
     /* Containers */
     .container--countdown h2 {
-      font-size: 1.5rem
+      font-size: 1rem
     }
     .container--countdown p {
       font-size: .8rem;
@@ -424,9 +423,6 @@
     }
 
     /* Containers */
-    .container--countdown h2 {
-      font-size: 1rem
-    }
     .container--countdown p {
       font-size: .5rem;
       margin: .4rem 0
@@ -453,24 +449,12 @@
         <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
       </div>
       <nav id="nav--main">
-        <nuxt-link class="input--option" to="/">
-          Welcome
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/features">
-          Demo
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/pricing">
-          Pricing
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/roadmap">
-          Roadmap
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/explore">
-          Explore
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/blog">
-          Blog
-        </nuxt-link>
+        <nuxt-link class="input--option" to="/">Welcome</nuxt-link>
+        <nuxt-link class="input--option" to="/features">Demo</nuxt-link>
+        <nuxt-link class="input--option" to="/pricing">Pricing</nuxt-link>
+        <nuxt-link class="input--option" to="/roadmap">Roadmap</nuxt-link>
+        <nuxt-link class="input--option" to="/explore">Explore</nuxt-link>
+        <nuxt-link class="input--option" to="/blog">Learn</nuxt-link>
         <br>
       </nav>
     </div>

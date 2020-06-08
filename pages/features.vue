@@ -107,7 +107,7 @@
     <div class="container--2c">
       <div class="wrapper--workout">
         <div class="workouts--workout">
-          <p><b>Workout 4</b></p>
+          <p><b>Workout 5</b></p>
           <p class="text--date">
             SAT 01.08.2020
           </p>
@@ -230,7 +230,6 @@ export default {
   },
   mounted () {
     this.scan()
-    this.selection()
   },
   methods: {
     // CHART METHODS //
@@ -268,6 +267,12 @@ export default {
       this.showType = true
       this.yData.length = 0
       this.xLabel.length = 0
+      this.exampleWorkoutStore = [
+        '<p><b>WORKOUT 1</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [Bench press: 2x20 at 40/45kg]</p><p>A2) [Bench press: 2x30 at 50/60kg]</p><p>B) [Incline Dumbbell Press: 2x18 at 14/16kg]</p><p>C) [Decline Dumbbell Press: 2x16 at 12/14kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 5]</p><p>[Weight: 55kg]</p>',
+        '<p><b>WORKOUT 2</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench Press: 2x15 at 50/60kg]</p><p>B) [Incline Dumbbell Press: 2x12 at 14/16kg]</p><p>C) [Decline Dumbbell Press: 2x10 at 18/18kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 6]</p><p>[Weight: 55.8kg]</p>',
+        '<p><b>WORKOUT 3</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench Press: 3x10 at 40/47.5/50kg]</p><p>B) [Incline Dumbbell Press: 3x12/40/5 at 16/18/20kg]</p><p>C) [Decline Dumbbell Press: 2x10 at 16/18/20kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 6]</p><p>[Weight: 56kg]</p>',
+        '<p><b>WORKOUT 4</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench press: 3x6 at 50/60/62.5kg]</p><p>B) [Incline Dumbbell Press: 3x8 at 20/20/22kg]</p><p>C) [Decline Dumbbell Press: 3x10 at 18/20/24kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 8]</p><p>[Weight: 56.2kg]</p>'
+      ]
       const dataForName = document.getElementById('dataName').value
       const dataForType = document.getElementById('dataType').value
       let dataForSum = 0
