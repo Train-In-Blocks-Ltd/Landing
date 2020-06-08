@@ -81,7 +81,7 @@
 
 <template>
   <div>
-    <h1>Learn something new</h1>
+    <h1 class="main-title">Learn something new</h1>
     <div class="container--blog">
       <div class="blog-post" v-for="post in posts" :key="post.attributes.title">
         <div class="blog-post__top-wrapper">
@@ -134,7 +134,7 @@ export default {
         { hid: 'description', name: 'description', content: 'We offer so much more than just software for fitness trainers and coaches. Access our free content on health and fitness related topics.' },
         { hid: 'og:title', content: 'Free Content for Personal Trainers' },
         { hid: 'twitter:title', content: 'Free Content for Personal Trainers' },
-        { hid: 'og:url', content: '/learn' }
+        { hid: 'og:url', content: '/blog' }
       ]
     }
   }

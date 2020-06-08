@@ -1,20 +1,20 @@
 <template>
   <div>
     <div id="container--2c">
-      <h1>Save more time and get more clients.</h1>
+      <h1 class="main-title">Save more time and get more clients.</h1>
       <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device">
     </div>
     <div class="spacer" />
     <div id="container--2c3r">
-      <h1 style="grid-area: aT">
+      <h1 class="main-title" style="grid-area: aT">
         We've taken exercise programming to the next level.
       </h1>
       <inline-svg style="grid-area: aI" :src="require('../assets/svg/Arrow.svg')" />
-      <h1 class="text--right" style="grid-area: bT">
+      <h1 class="text--right main-title" style="grid-area: bT">
         Speed, simplicity and functionality is our philosophy.
       </h1>
       <inline-svg style="grid-area: bI" :src="require('../assets/svg/FlyArrow.svg')" />
-      <h1 style="grid-area: cT">
+      <h1 class="main-title" style="grid-area: cT">
         Use features that you only need, save your money and expand.
       </h1>
       <inline-svg id="svg--3" style="grid-area: cI" :src="require('../assets/svg/Custom.svg')" />
@@ -99,7 +99,8 @@ export default {
     }
     #container--2c {
       grid-template-columns: 1fr;
-      grid-gap: 0
+      grid-gap: 4rem;
+      margin: 0 0 4rem 0
     }
     #container--2c3r {
       grid-template: repeat(3, .4fr 1fr) / 1fr;

@@ -6,15 +6,15 @@
     <div class="spacer" />
     <div class="container--2c intro">
       <div class="container--paper-text">
-        <h2>It supports the process of creation.</h2>
+        <h2 class="sub-title">It supports the process of creation.</h2>
         <p>Don't forget, exercise programming is an art-form. Every great health and fitness professional needs a fresh, new and contemporary software to be their canvas.</p>
         <inline-svg class="svg--paper" :src="require('../assets/svg/PaperStack.svg')" />
       </div>
       <div class="container--desc-text">
-        <h1>Flexible</h1>
-        <h1>Customisable</h1>
-        <h1>Affordable</h1>
-        <h1>Minimal</h1>
+        <h1 class="main-title">Flexible</h1>
+        <h1 class="main-title">Customisable</h1>
+        <h1 class="main-title">Affordable</h1>
+        <h1 class="main-title">Minimal</h1>
       </div>
     </div>
     <div class="spacer" />

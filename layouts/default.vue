@@ -19,16 +19,17 @@
     font-size: 16px;
     overflow-x: hidden
   }
-  h1 {
+  .main-title {
     font-size: 3rem;
     margin: 0 0 2rem 0
   }
-  h2 {
+  .sub-title {
     font-size: 2rem;
     margin: 0 0 1.5rem 0
   }
   p {
-    line-height: 1.4
+    line-height: 1.4;
+    margin: 0
   }
   .vm--modal {
     padding: 1rem 1.6rem
@@ -318,7 +319,7 @@
 
   /* Responsiveness */
   @media (min-width: 1440px) {
-    h1 {
+    .paper--title {
       font-size: 3.5rem
     }
   }
@@ -396,6 +397,15 @@
     #mce-EMAIL:focus {
       width: 85%
     }
+    div.ql-editor {
+      width: 400px
+    }
+    .to-top {
+      bottom: 4rem
+    }
+    button:disabled:hover {
+      color: rgba(16, 16, 16, .3)
+    }
   }
   @media (max-width: 576px) {
     /* Containers */
@@ -416,6 +426,12 @@
     }
     #logo--home {
       width: 8rem
+    }
+    div.ql-editor {
+      width: 300px
+    }
+    button {
+      font-size: .8rem
     }
   }
   @media (max-width: 360px) {
@@ -439,7 +455,7 @@
     <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('../assets/svg/LogoV12.svg')" />
     <div class="countdown--wrapper animated fadeIn delay-1s">
       <div class="container--countdown">
-        <h2>01.08.20</h2>
+        <h2 class="sub-title">01.08.20</h2>
         <Countdown end="August 1, 2020" />
         <p><b>BETA RELEASE</b></p>
       </div>
@@ -484,7 +500,7 @@
         <nuxt-link class="input--option" to="/pricing">Pricing</nuxt-link>
         <nuxt-link class="input--option" to="/roadmap">Roadmap</nuxt-link>
         <nuxt-link class="input--option" to="/explore">Explore</nuxt-link>
-        <nuxt-link class="input--option" to="/blog">Learn</nuxt-link>
+        <nuxt-link class="input--option" to="/blog">Blog</nuxt-link>
         <br>
       </nav>
     </div>

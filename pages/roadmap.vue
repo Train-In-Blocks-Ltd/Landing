@@ -3,7 +3,7 @@
     <h1 class="paper--title">
       {{ title }}
     </h1><br>
-    <h2>We believe in transparency, check out what we're up to.</h2><br><br>
+    <h2 class="sub-title">We believe in transparency, check out what we're up to.</h2><br><br>
     <div v-for="dev in development" id="roadmap" :key="dev.id">
       <inline-svg class="icon--main" :src="dev.icon" />
       <div>
@@ -27,7 +27,7 @@
         <h1 id="title--involved">
           Get Involved
         </h1>
-        <p>We want every paying member to have a say in the direction of the app and the company. You can<b> vote</b> for features and add-ons and we'll do the rest!</p>
+        <p class="text--involved">We want every paying member to have a say in the direction of the app and the company. You can<b> vote</b> for features and add-ons and we'll do the rest!</p>
       </div>
     </div>
   </div>
@@ -124,6 +124,9 @@ export default {
   }
   #vote {
     margin: auto
+  }
+  .text--involved {
+    margin: 2rem 0
   }
 
   /* Responsive */

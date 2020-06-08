@@ -164,7 +164,7 @@ export default {
       margin: 6rem 0
     }
     .vuejs-countdown li {
-      margin: 0 .7rem
+      margin: 0
     }
     .vuejs-countdown .digit {
       font-size: 2rem
@@ -176,9 +176,6 @@ export default {
   @media (max-width: 360px) {
     .countdown--wrapper {
       margin: 6rem 0
-    }
-    .vuejs-countdown li {
-      margin: 0 .6rem
     }
     .vuejs-countdown .digit {
       font-size: 1.5rem

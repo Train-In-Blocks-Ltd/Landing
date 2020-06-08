@@ -15,8 +15,9 @@
   /* Workout */
   .wrapper--workout {
     width: 600px;
-    border: 1px solid #282828;
-    height: fit-content
+    height: fit-content;
+    background-color: #F4F4F4;
+    transition: all 1s cubic-bezier(.165, .84, .44, 1)
   }
   .workouts--workout {
     margin: 0;
@@ -29,27 +30,55 @@
     font-size: .8rem
   }
   .bottom-bar {
-    padding: .6rem 1rem;
-    border-top: 1px solid #282828
+    padding: .6rem 1rem
   }
   .bottom-bar .button {
     margin: 0
   }
 
+  /* Workout state */
+  .show-workout {
+    padding: 0 15px;
+    max-height: 314px;
+    color: #282828;
+    overflow-y: auto;
+    font-size: .8rem
+  }
+  .show-workout h2 {
+    font-size: 1.5rem
+  }
+  .show-workout p, .show-workout ul, .show-workout ol {
+    text-decoration: none;
+    margin: 0;
+    padding: 0
+  }
+  .activeWorkout {
+    background-color: white;
+    box-shadow: 0 0 20px 10px #28282810
+  }
+
   /* Chart */
   .container--demo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-areas: 'a b'
   }
   #chart {
-    grid-area: b
+    grid-area: b;
+    position: relative;
+    margin: auto;
+    width: 40vw
   }
   #stats {
     grid-area: a
   }
+  #stats h2 {
+    margin-top: 0
+  }
   #dataName, #dataType {
     outline-width: 0
+  }
+  .container--desc-data {
+    margin: 2rem 0
   }
 
   /* Other */
@@ -75,6 +104,12 @@
     .container--2c {
       grid-template-columns: 300px 1fr
     }
+    .container--2c > div {
+      margin: auto 1rem
+    }
+    .wrapper--workout {
+      width: 400px
+    }
     #editor {
       margin: auto 0
     }
@@ -83,8 +118,29 @@
     .container--2c {
       flex-direction: column-reverse
     }
+    .container--2c > div {
+      margin: auto
+    }
     #text {
       margin: 2rem 0
+    }
+  }
+  @media (max-width: 576px) {
+    .container--demo {
+      margin: 4rem 0;
+      grid-template-areas:
+        'a'
+        'b'
+    }
+    .container--features {
+      margin: 0 0 2rem 0
+    }
+    .wrapper--workout {
+      width: 300px
+    }
+    #chart {
+      margin: 0;
+      width: 70vw
     }
   }
   @media (max-width: 360px) {
@@ -105,24 +161,26 @@
       {{ title }}
     </h1>
     <div class="container--2c">
-      <div class="wrapper--workout">
+      <div class="wrapper--workout" :class="{activeWorkout: editWorkout}">
         <div class="workouts--workout">
           <p><b>Workout 5</b></p>
           <p class="text--date">
             SAT 01.08.2020
           </p>
         </div>
-        <quill v-model="exampleWorkout" output="html" class="quill" :config="config" />
+        <quill v-show="editWorkout" v-model="exampleWorkout" output="html" class="quill" :config="config" />
+        <div v-show="!editWorkout" v-html="exampleWorkout" class="show-workout"/>
         <div class="bottom-bar">
-          <button class="button--save" @click="scan()">
+          <button v-show="editWorkout" class="button--save" @click="scan(), toggleEdit()">
             Save
+          </button>
+          <button v-show="!editWorkout" class="button--save" @click="toggleEdit()">
+            Edit
           </button>
         </div>
       </div>
       <div id="text">
         <p><b>How do we track performance? Spreadsheets right?</b></p>
-        <p>No.</p>
-        <p><b>Numbers in boxes and clicking back and forth?</b></p>
         <p>No.</p>
         <p><b>Say goodbye to manually tracking data.</b></p>
         <p>Our app will understand the workouts and will do all the math for you. That's right. You build, visualise, adjust and adapt even before the first session.</p>
@@ -132,7 +190,7 @@
     <div class="container--demo">
       <line-chart id="chart" :chart-data="dataCollection" :options="options" />
       <div id="stats">
-        <h2>Statistics</h2>
+        <h2 class="sub-title">Statistics</h2>
         <select id="dataName" @change="selection()" />
         <select v-show="showType" id="dataType" @change="selection()">
           <option>Sets</option>
@@ -140,9 +198,9 @@
           <option>Load</option>
           <option>Volume</option>
         </select>
-        <div v-show="showType">
+        <div v-show="showType" class="container--desc-data">
           <p id="p1" />
-          <p id="p2" />
+          <p id="p2" /><br>
           <p id="p3" />
           <p id="p4" />
           <p id="p5" />
@@ -150,11 +208,11 @@
       </div>
     </div>
     <div class="spacer" />
-    <h1>{{ featuresTitle }}</h1><br>
+    <h1 class="main-title">{{ featuresTitle }}</h1><br>
     <div v-for="feature in features" :key="feature.id" class="container--features">
       <inline-svg class="icon" :src="feature.icon" />
       <div>
-        <h2>{{ feature.subtitle }}</h2>
+        <h2 class="sub-title">{{ feature.subtitle }}</h2>
         <p>{{ feature.desc }}</p>
       </div>
     </div>
@@ -209,12 +267,12 @@ export default {
           ]
         }
       },
-      exampleWorkout: '<h1><strong>How to use</strong></h1><p>Give this a try, just simply make changes to the exercise protocols in the <b>square brackets</b>.</p><p>======================</p><h2><strong>Warm-Up</strong></h2><p><br></p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p><br></p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A) [bench press: 3x6 at 50/60/62.5kg]</p><p>B) [Incline Dumbbell Press: 2x8 at 20/20/22kg]</p><p>C) [Decline Dumbbell Press: 3x10 at 18/20/24kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 8]</p><p>[Weight: 56.2kg]</p>',
+      exampleWorkout: '<h1><strong>How to use</strong></h1><p><br></p><p>Anything contained in the <strong>square brackets</strong> are automatically <strong>tracked</strong>!!</p><p><br></p><p>Format:</p><p>-------------</p><p><em>Exercise Name</em><strong>:</strong> <em>Sets</em> <strong>x</strong> <em>Reps</em> <strong>at</strong> <em>Load</em></p><p><em>Others</em><strong>:</strong> <em>Measurement</em></p><p><br></p><p><strong>(You must separate the name and the measurement with a colon)</strong></p><p><br></p><p><strong>Example Workout Below</strong></p><p>======================</p><h2><strong>Warm-Up</strong></h2><p><br></p><p>A [Treadmill: 10 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p><br></p><p>B [Rower: 1500m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A [Bench Press: 3x6 at 37.5/40/47.5kg]</p><p><br></p><p>B [Incline Dumbbell Press: 2x12/10 at 18/20kg]</p><p><br></p><p>C [Decline Dumbbell Press: 2x12 at 18/20kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 8]</p><p>[Weight (kg): 57.3]</p><p>[Hydration (%): 57]</p><p>[CMJ Test (cm): 43.2]</p>',
       exampleWorkoutStore: [
-        '<p><b>WORKOUT 1</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [Bench press: 2x20 at 40/45kg]</p><p>A2) [Bench press: 2x30 at 50/60kg]</p><p>B) [Incline Dumbbell Press: 2x18 at 14/16kg]</p><p>C) [Decline Dumbbell Press: 2x16 at 12/14kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 5]</p><p>[Weight: 55kg]</p>',
-        '<p><b>WORKOUT 2</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench Press: 2x15 at 50/60kg]</p><p>B) [Incline Dumbbell Press: 2x12 at 14/16kg]</p><p>C) [Decline Dumbbell Press: 2x10 at 18/18kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 6]</p><p>[Weight: 55.8kg]</p>',
-        '<p><b>WORKOUT 3</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench Press: 3x10 at 40/47.5/50kg]</p><p>B) [Incline Dumbbell Press: 3x12/40/5 at 16/18/20kg]</p><p>C) [Decline Dumbbell Press: 2x10 at 16/18/20kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 6]</p><p>[Weight: 56kg]</p>',
-        '<p><b>WORKOUT 4</b></p><p>Warm-Up</p><p>A) Treadmill: 10 min</p><p>- Take it light and easy.</p><p>Main CV</p><p>B) Rower: 1500m</p><p>- Back straight</p><p>- Legs, arms, and legs</p><p>- Push hard!!</p><p>Main resistance</p><p>A) [bench press: 3x6 at 50/60/62.5kg]</p><p>B) [Incline Dumbbell Press: 3x8 at 20/20/22kg]</p><p>C) [Decline Dumbbell Press: 3x10 at 18/20/24kg]</p><p>Cooldown</p><p>A) Foam Roll and Stretch: 10 min</p><p>- Whole-body, do as much as you can</p><p>[s-RPE (CR10): 8]</p><p>[Weight: 56.2kg]</p>'
+        '<h1><strong>How to use</strong></h1><p><br></p><p>Anything contained in the <strong>square brackets</strong> are automatically <strong>tracked</strong>!!</p><p><br></p><p>Format:</p><p>-------------</p><p><em>Exercise Name</em><strong>:</strong> <em>Sets</em> <strong>x</strong> <em>Reps</em> <strong>at</strong> <em>Load</em></p><p><em>Others</em><strong>:</strong> <em>Measurement</em></p><p><br></p><p><strong>(You must separate the name and the measurement with a colon)</strong></p><p><br></p><p><strong>Example Workout Below</strong></p><p>======================</p><h2><strong>Warm-Up</strong></h2><p><br></p><p>A [Treadmill: 6 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p><br></p><p>B [Rower: 1000m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A [Bench Press: 2x14 at 30/35/40kg]</p><p><br></p><p>B [Incline Dumbbell Press: 2x14/12 at 16/16kg]</p><p><br></p><p>C [Decline Dumbbell Press: 2x10/8 at 12/14kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 6]</p><p>[Weight (kg): 56.2]</p><p>[Hydration (%): 56]</p><p>[CMJ Test (cm): 40]</p>',
+        '<h1><strong>How to use</strong></h1><p><br></p><p>Anything contained in the <strong>square brackets</strong> are automatically <strong>tracked</strong>!!</p><p><br></p><p>Format:</p><p>-------------</p><p><em>Exercise Name</em><strong>:</strong> <em>Sets</em> <strong>x</strong> <em>Reps</em> <strong>at</strong> <em>Load</em></p><p><em>Others</em><strong>:</strong> <em>Measurement</em></p><p><br></p><p><strong>(You must separate the name and the measurement with a colon)</strong></p><p><br></p><p><strong>Example Workout Below</strong></p><p>======================</p><h2><strong>Warm-Up</strong></h2><p><br></p><p>A [Treadmill: 6 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p><br></p><p>B [Rower: 1200m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A [Bench Press: 2x12 at 35/40/42.5kg]</p><p><br></p><p>B [Incline Dumbbell Press: 2x14 at 16/18kg]</p><p><br></p><p>C [Decline Dumbbell Press: 2x10 at 14/14kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 7]</p><p>[Weight (kg): 55.1]</p><p>[Hydration (%): 54]</p><p>[CMJ Test (cm): 41.5]</p>',
+        '<h1><strong>How to use</strong></h1><p><br></p><p>Anything contained in the <strong>square brackets</strong> are automatically <strong>tracked</strong>!!</p><p><br></p><p>Format:</p><p>-------------</p><p><em>Exercise Name</em><strong>:</strong> <em>Sets</em> <strong>x</strong> <em>Reps</em> <strong>at</strong> <em>Load</em></p><p><em>Others</em><strong>:</strong> <em>Measurement</em></p><p><br></p><p><strong>(You must separate the name and the measurement with a colon)</strong></p><p><br></p><p><strong>Example Workout Below</strong></p><p>======================</p><h2><strong>Warm-Up</strong></h2><p><br></p><p>A [Treadmill: 8 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p><br></p><p>B [Rower: 1400m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A [Bench Press: 2x10 at 40/42.5/42.5kg]</p><p><br></p><p>B [Incline Dumbbell Press: 2x12 at 18/16kg]</p><p><br></p><p>C [Decline Dumbbell Press: 2x10/12 at 14/16kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 8]</p><p>[Weight (kg): 55.2]</p><p>[Hydration (%): 61]</p><p>[CMJ Test (cm): 43.5]</p>',
+        '<h1><strong>How to use</strong></h1><p><br></p><p>Anything contained in the <strong>square brackets</strong> are automatically <strong>tracked</strong>!!</p><p><br></p><p>Format:</p><p>-------------</p><p><em>Exercise Name</em><strong>:</strong> <em>Sets</em> <strong>x</strong> <em>Reps</em> <strong>at</strong> <em>Load</em></p><p><em>Others</em><strong>:</strong> <em>Measurement</em></p><p><br></p><p><strong>(You must separate the name and the measurement with a colon)</strong></p><p><br></p><p><strong>Example Workout Below</strong></p><p>======================</p><h2><strong>Warm-Up</strong></h2><p><br></p><p>A [Treadmill: 10 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p><br></p><p>B [Rower: 1300m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A [Bench Press: 3x8 at 40/40/45kg]</p><p><br></p><p>B [Incline Dumbbell Press: 2x12 at 16/16kg]</p><p><br></p><p>C [Decline Dumbbell Press: 2x10 at 16/18kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 7]</p><p>[Weight (kg): 56.7]</p><p>[Hydration (%): 59]</p><p>[CMJ Test (cm): 44.2]</p>'
       ],
       showType: true,
       dataPacketStore: [],
@@ -225,7 +283,8 @@ export default {
       dataCollection: null,
       options: null,
       yData: [],
-      xLabel: []
+      xLabel: [],
+      editWorkout: false
     }
   },
   head () {
@@ -243,6 +302,10 @@ export default {
     this.scan()
   },
   methods: {
+    toggleEdit () {
+      this.editWorkout = !this.editWorkout
+    },
+
     // CHART METHODS //
     fillData () {
       this.dataCollection = {
@@ -515,7 +578,7 @@ export default {
         store = Math.min(store, value)
       })
       document.getElementById('p4').innerHTML = '<b>Minimum' + ' ' + dataForType + ':</b> ' + store
-      document.getElementById('p5').innerHTML = '- Percentage Change: ' + ((storeMax / store) * 100).toFixed(1) + '%'
+      document.getElementById('p5').innerHTML = 'Percentage Change: ' + (((storeMax / store) - 1) * 100).toFixed(1) + '%'
     },
     head () {
       return {

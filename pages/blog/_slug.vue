@@ -46,18 +46,21 @@
       <h3>Share on:</h3>
       <ShareNetwork
         network="facebook"
+        :title="'Train In Blocks'"
         :url="'https://www.traininblocks.com' + this.$route.fullPath"
       >
       Facebook
       </ShareNetwork>
       <ShareNetwork
         network="twitter"
+        :title="'Train In Blocks'"
         :url="'https://www.traininblocks.com' + this.$route.fullPath"
       >
       Twitter
       </ShareNetwork>
       <ShareNetwork
         network="linkedin"
+        :title="'Train In Blocks'"
         :url="'https://www.traininblocks.com' + this.$route.fullPath"
       >
       LinkedIn
