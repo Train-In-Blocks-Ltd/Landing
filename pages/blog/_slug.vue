@@ -47,21 +47,21 @@
       <ShareNetwork
         network="facebook"
         :title="'Train In Blocks'"
-        :url="'https://www.traininblocks.com' + this.$route.fullPath"
+        :url="'https://www.traininblocks.com/blog/' + this.$route.params.slug"
       >
       Facebook
       </ShareNetwork>
       <ShareNetwork
         network="twitter"
         :title="'Train In Blocks'"
-        :url="'https://www.traininblocks.com' + this.$route.fullPath"
+        :url="'https://www.traininblocks.com/blog/' + this.$route.params.slug"
       >
       Twitter
       </ShareNetwork>
       <ShareNetwork
         network="linkedin"
         :title="'Train In Blocks'"
-        :url="'https://www.traininblocks.com' + this.$route.fullPath"
+        :url="'https://www.traininblocks.com/blog/' + this.$route.params.slug"
       >
       LinkedIn
       </ShareNetwork>
