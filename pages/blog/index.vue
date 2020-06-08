@@ -19,6 +19,7 @@
     margin: 0
   }
   .blog-post__image {
+    margin: auto;
     height: 400px;
     width: auto
   }

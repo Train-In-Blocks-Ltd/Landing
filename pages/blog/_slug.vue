@@ -60,7 +60,6 @@
       </ShareNetwork>
       <ShareNetwork
         network="linkedin"
-        :title="'Train In Blocks'"
         :url="'https://www.traininblocks.com' + this.$route.fullPath"
       >
       LinkedIn
