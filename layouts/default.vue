@@ -256,7 +256,7 @@
   }
   div.ql-editor {
     max-height: 250px;
-    width: 351px;
+    height: 351px;
     color: #282828;
     overflow-y: auto
   }

@@ -100,11 +100,6 @@
     padding: .4rem 1rem
   }
 
-  @supports (-webkit-touch-callout: none) {
-    .container--demo, .container--2c {
-      display: none
-    }
-  }
   @media (max-width: 992px) {
     .container--2c {
       grid-template-columns: 300px 1fr
@@ -281,7 +276,7 @@ export default {
       ],
       showType: true,
       dataPacketStore: [],
-      regexExtract: /(?<=\[)(.*?)\s*:\s*(.*?)(?=\])/gi,
+      regexExtract: /\[\s*(.*?)\s*:\s*(.*?)\]/gi,
       regexSetsReps: /(\d*)x((\d*\/*)*)/gi,
       regexLoadCapture: /(at|@)(.+)/gi,
       regexNumberBreakdown: /[0-9.]+/gi,
