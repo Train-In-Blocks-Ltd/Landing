@@ -114,14 +114,64 @@ export default async () => {
     modules: [
       '@nuxtjs/sitemap',
       '@nuxtjs/google-analytics',
-      'vue-social-sharing/nuxt'
+      'vue-social-sharing/nuxt',
+      ['nuxt-cookie-control', {
+        colors: {
+          barTextColor: '#282828',
+          barBackground: '#F4F4F4',
+          barButtonColor: '#282828',
+          modalOverlay: '#282828',
+          checkboxActiveBackground: '#282828',
+          checkboxInactiveBackground: '#DDDDDD',
+          checkboxDisabledBackground: '#282828',
+          checkboxActiveCircleBackground: '#FFFFFF'
+        }
+      }]
     ],
+    cookies: {
+      necessary: [
+        {
+          //if multilanguage
+          name: {
+            en: 'Default Cookies'
+          },
+          //else
+          name:  'Default Cookies',
+          description:  'Used for cookie control (cannot be disabled).',
+          cookies: ['cookie_control_consent', 'cookie_control_enabled_cookies']
+        }
+      ],
+      optional: [
+        {
+          name:  {
+            en: 'Google Analytics',
+            de: 'Google Analytics',
+            es: 'Google Analytics',
+            fr: 'Google Analytics',
+            hr: 'Google Analitika',
+            it: 'Google Analytics'
+          },
+          description: 'Google Analytics is a web analytics service offered by Google that tracks and reports website traffic.',
+          src:  'https://www.googletagmanager.com/gtag/js?id=UA-167770206-1',
+          async:  true,
+          cookies: ['_ga', '_gat', '_gid'],
+          accepted: () => {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-167770206-1');            
+          },
+          declined: () =>{
+          }
+        }
+      ]
+    },
     sitemap: {
       hostname: 'https://traininblocks.com',
       gzip: true
     },
     googleAnalytics: {
-      id: 'UA-12301-2'
+      id: 'UA-167770206-1'
     },
     pwa: {
       manifest: {

@@ -86,8 +86,8 @@
   .to-top {
     opacity: 0;
     position: fixed;
-    right: 8%;
-    bottom: 10rem;
+    right: 20px;
+    bottom: 5rem;
     background-color: #28282815;
     border-radius: 5px;
     width: fit-content;
@@ -380,9 +380,6 @@
     div.ql-editor {
       width: 400px
     }
-    .to-top {
-      bottom: 4rem
-    }
     button:disabled:hover {
       color: rgba(16, 16, 16, .3)
     }
@@ -485,6 +482,14 @@
     </div>
     <footer>
       <div class="nav--footer">
+        <CookieControl>
+          <template v-slot:bar>
+            <p>We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our Cookies Policy</p><br>
+            <nuxt-link class="input--option" to="/cookie-policy">
+              <b>Read More</b>
+            </nuxt-link>
+          </template>
+        </CookieControl>
         <div class="social-bar">
           <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
           <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
