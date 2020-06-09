@@ -36,7 +36,7 @@
   }
 
   /* IOS Disable Corners */
-  textarea, input.text, input[type='text'], input[type='button'], input[type='submit'], .input-checkbox {
+  textarea, input.text, input[type='text'], input[type='button'], input[type='submit'], .input-checkbox, #mce-EMAIL {
     -webkit-appearance: none;
     border-radius: 0
   }
@@ -349,14 +349,6 @@
     }
   }
   @media (max-width: 992px) {
-    .input--option {
-      margin: 0 0 0 1rem
-    }
-    .social-icon {
-      margin: 0 .4rem
-    }
-  }
-  @media (max-width: 768px) {
     /* Nav */
     .container--nav {
       height: fit-content;
@@ -374,7 +366,8 @@
       display: grid;
       margin: 1rem 0
     }
-
+  }
+  @media (max-width: 768px) {
     /* Footer */
     footer a.input--option {
       display: grid;

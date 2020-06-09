@@ -100,6 +100,11 @@
     padding: .4rem 1rem
   }
 
+  @supports (-webkit-touch-callout: none) {
+    .container--demo, .container--2c {
+      display: none
+    }
+  }
   @media (max-width: 992px) {
     .container--2c {
       grid-template-columns: 300px 1fr
@@ -289,12 +294,12 @@ export default {
   },
   head () {
     return {
-      title: 'Features',
+      title: 'Powerful Features Made Simple',
       meta: [
-        { hid: 'description', name: 'description', content: 'We love for you to get involved in our development. Vote for new features and join our community of health and fitness professionals.' },
-        { hid: 'og:title', content: 'Here’s Our Journey, Join Us' },
-        { hid: 'twitter:title', content: 'Here’s Our Journey, Join Us' },
-        { hid: 'og:url', content: '/roadmap' }
+        { hid: 'description', name: 'description', content: 'It\'s time for personal trainers to track their client\'s performance like it\'s 2020. Say goodbye to spreadsheets.' },
+        { hid: 'og:title', content: 'Powerful Features Made Simple' },
+        { hid: 'twitter:title', content: 'Powerful Features Made Simple' },
+        { hid: 'og:url', content: '/features' }
       ]
     }
   },

@@ -30,17 +30,16 @@ export default {
   },
   data () {
     return {
-      title: 'What\'s with our obsession with paper?',
-      descSub: 'Get More From Our Emails'
+      title: 'What\'s with our obsession with paper?'
     }
   },
   head () {
     return {
-      title: 'Free Content for Personal Trainers',
+      title: 'Our Core Values',
       meta: [
-        { hid: 'description', name: 'description', content: 'We offer so much more than just software for fitness trainers and coaches. Access our free content on health and fitness related topics.' },
-        { hid: 'og:title', content: 'Free Content for Personal Trainers' },
-        { hid: 'twitter:title', content: 'Free Content for Personal Trainers' },
+        { hid: 'description', name: 'description', content: 'These are our promises to you. A service that is flexible, customisable, affordable and minimal.' },
+        { hid: 'og:title', content: 'Our Core Values' },
+        { hid: 'twitter:title', content: 'Our Core Values' },
         { hid: 'og:url', content: '/explore' }
       ]
     }
