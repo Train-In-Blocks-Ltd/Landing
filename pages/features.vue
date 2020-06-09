@@ -405,18 +405,20 @@ export default {
     },
     // INIT METHODS //
     scan () {
-      this.dataPacketStore.length = 0
-      this.exampleWorkoutStore.push(this.exampleWorkout)
-      // Pulls and creates nested arrays. dataPacketStore > workoutDataPackets > exerciseDataPackets
-      this.exampleWorkoutStore.forEach((object) => {
-        if (object !== null) {
-          const pulledProtocols = this.pullProtocols(object)
-          this.dataPacketStore.push(this.chunkArray(pulledProtocols))
-        }
-      })
-      // Appends the options to the select
-      this.dropdownInit()
-      this.selection()
+      if(!navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+        this.dataPacketStore.length = 0
+        this.exampleWorkoutStore.push(this.exampleWorkout)
+        // Pulls and creates nested arrays. dataPacketStore > workoutDataPackets > exerciseDataPackets
+        this.exampleWorkoutStore.forEach((object) => {
+          if (object !== null) {
+            const pulledProtocols = this.pullProtocols(object)
+            this.dataPacketStore.push(this.chunkArray(pulledProtocols))
+          }
+        })
+        // Appends the options to the select
+        this.dropdownInit()
+        this.selection()
+      }
     },
     // Extracts the protocols and measures and stores it all into a temporary array
     pullProtocols (text) {
