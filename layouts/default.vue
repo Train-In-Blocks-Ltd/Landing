@@ -206,27 +206,7 @@
     transition: 300ms
   }
   .input--option:hover {
-    opacity: .7
-  }
-  .input--option:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #282828;
-    opacity: 0;
-    transform: scaleX(0);
-    transition: all 200ms;
-    transition-timing-function: cubic-bezier(.165, .84, .44, 1)
-  }
-  .input--option:hover:before {
-    transform: scaleX(1);
-    opacity: .7
-  }
-  .input--option:active {
-    transform: scale(.9)
+    opacity: .4
   }
   nav a.nuxt-link-exact-active {
     font-weight: bold
@@ -432,9 +412,13 @@
     <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('../assets/svg/LogoV12.svg')" />
     <div class="countdown--wrapper animated fadeIn delay-1s">
       <div class="container--countdown">
-        <h2 class="sub-title">01.08.20</h2>
+        <h2 class="sub-title">
+          01.08.20
+        </h2>
         <Countdown end="August 1, 2020" />
-        <p class="countdown--desc"><b>BETA RELEASE</b></p>
+        <p class="countdown--desc">
+          <b>BETA RELEASE</b>
+        </p>
       </div>
     </div>
     <form
@@ -466,12 +450,24 @@
     <div id="nav--top" class="spacer--small" />
     <div class="container--nav animated bounceInLeft">
       <nav id="nav--main">
-        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/">Welcome</nuxt-link>
-        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/features">Features</nuxt-link>
-        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/pricing">Pricing</nuxt-link>
-        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/roadmap">Roadmap</nuxt-link>
-        <nuxt-link class="input--option" to="/explore">Explore</nuxt-link>
-        <nuxt-link class="input--option" to="/blog">Blog</nuxt-link>
+        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/">
+          Welcome
+        </nuxt-link>
+        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/features">
+          Features
+        </nuxt-link>
+        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/pricing">
+          Pricing
+        </nuxt-link>
+        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/roadmap">
+          Roadmap
+        </nuxt-link>
+        <nuxt-link class="input--option" to="/explore">
+          Explore
+        </nuxt-link>
+        <nuxt-link class="input--option" to="/blog">
+          Blog
+        </nuxt-link>
         <br>
       </nav>
     </div>

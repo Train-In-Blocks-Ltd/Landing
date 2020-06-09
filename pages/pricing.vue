@@ -7,7 +7,9 @@
       <div class="pricing__plans">
         <div>
           <img class="icon--gif" src="../assets/gif/deadlift.gif">
-          <h2 class="sub-title">Basic - Monthly</h2>
+          <h2 class="sub-title">
+            Basic - Monthly
+          </h2>
           <h1 class="pricing__cost">
             £10
           </h1>
@@ -25,7 +27,9 @@
           <h1 class="pricing__cost">
             £102
           </h1>
-          <p>Save 15% on the annual plan,<br><b>that's £8.50/month</b></p><br><br>
+          <p>
+            Save 15% on the annual plan,<br><b>that's £8.50/month</b>
+          </p><br><br>
         </div>
         <button class="signUp" :disabled="isOpen">
           {{ btn2 }}
@@ -34,26 +38,52 @@
     </div>
     <div class="spacer" />
     <div>
-      <h1 class="title--compare main-title">How do we compare?</h1><br>
+      <h1 class="title--compare main-title">
+        How do we compare?
+      </h1><br>
       <div class="container--comparison">
         <div class="container--tib">
-          <p class="list__name">Train In Blocks</p>
+          <p class="list__name">
+            Train In Blocks
+          </p>
           <ul>
-            <li class="list__desc"><b>£10 per month</b> for unlimited clients, that's it!</li>
-            <li class="list__desc">Have a say in our development and vote for features and add-ons.</li>
-            <li class="list__desc">Free high-quality content our social media and our blog.</li>
-            <li class="list__desc">Great future add-ons to boost your business in the right direction (we'll still be more affordable).</li>
-            <li class="list__desc">Fast and functional, build a completely bespoke programme in a matter of minutes - not hours.</li>
-            <li class="list__desc">Visualise your client's exercise programme before the first session.</li>
-            <li class="list__desc">Save time and re-invest it into generating new leads and prospects.</li>
-            <li class="list__desc">Great technical support and we're more than happy to book in a demo with you.</li>
+            <li class="list__desc">
+              <b>£10 per month</b> for unlimited clients, that's it!
+            </li>
+            <li class="list__desc">
+              Have a say in our development and vote for features and add-ons.
+            </li>
+            <li class="list__desc">
+              Free high-quality content our social media and our blog.
+            </li>
+            <li class="list__desc">
+              Great future add-ons to boost your business in the right direction (we'll still be more affordable).
+            </li>
+            <li class="list__desc">
+              Fast and functional, build a completely bespoke programme in a matter of minutes - not hours.
+            </li>
+            <li class="list__desc">
+              Visualise your client's exercise programme before the first session.
+            </li>
+            <li class="list__desc">
+              Save time and re-invest it into generating new leads and prospects.
+            </li>
+            <li class="list__desc">
+              Great technical support and we're more than happy to book in a demo with you.
+            </li>
           </ul>
         </div>
-        <h1 class="main-title">vs.</h1>
+        <h1 class="main-title">
+          vs.
+        </h1>
         <div class="container--comp">
           <div v-for="item in overview" :key="item.id" class="list--overview">
-            <p class="list__name">{{ item.name }}</p>
-            <p class="list__desc">{{ item.desc }}</p>
+            <p class="list__name">
+              {{ item.name }}
+            </p>
+            <p class="list__desc">
+              {{ item.desc }}
+            </p>
           </div>
         </div>
       </div>

@@ -3,10 +3,13 @@
     <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('../assets/svg/LogoV12.svg')" />
     <div class="countdown--wrapper animated fadeIn">
       <div class="container--countdown">
-        <h2 class="sub-title">01.08.20</h2>
+        <h2 class="sub-title">
+          01.08.20
+        </h2>
         <Countdown end="August 1, 2020" />
-        <p><b>BETA RELEASE</b></p><br>
-        <q style="font-size: 1rem; letter-spacing: .1rem">You can't buy more time to train your clients, but you can use it better.</q>
+        <p>
+          <b>BETA RELEASE</b>
+        </p>
       </div>
     </div>
     <form

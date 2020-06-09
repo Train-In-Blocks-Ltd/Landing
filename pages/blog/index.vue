@@ -82,20 +82,28 @@
 
 <template>
   <div>
-    <h1 class="main-title">Learn something new</h1>
+    <h1 class="main-title">
+      Learn something new
+    </h1>
     <div class="container--blog">
-      <div class="blog-post" v-for="post in posts" :key="post.attributes.title">
+      <div v-for="post in posts" :key="post.attributes.title" class="blog-post">
         <div class="blog-post__top-wrapper">
           <div>
-            <h2 class="blog-post__title">{{ post.attributes.title }}</h2>
-            <p class="blog-post__excerpt">{{ post.attributes.excerpt }}</p>
+            <h2 class="blog-post__title">
+              {{ post.attributes.title }}
+            </h2>
+            <p class="blog-post__excerpt">
+              {{ post.attributes.excerpt }}
+            </p>
           </div>
           <div class="blog-post__link">
-            <nuxt-link class="blog-post__link-text" :to="getPermalink(post)">Read more</nuxt-link>
+            <nuxt-link class="blog-post__link-text" :to="getPermalink(post)">
+              Read more
+            </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/blog/Arrow.svg')" />
           </div>
         </div>
-        <img class="blog-post__image" :src="'/blog-img/' + post.attributes.img" loading="lazy" />
+        <img class="blog-post__image" :src="'/blog-img/' + post.attributes.img" loading="lazy">
       </div>
     </div>
   </div>
@@ -105,6 +113,9 @@
 import InlineSvg from 'vue-inline-svg'
 
 export default {
+  components: {
+    InlineSvg
+  },
   asyncData () {
     const resolve = require.context('~/content/', true, /\.md$/)
     const imports = resolve.keys().map((key) => {
@@ -114,9 +125,6 @@ export default {
     return {
       posts: imports
     }
-  },
-  components: {
-    InlineSvg
   },
   data () {
     return {

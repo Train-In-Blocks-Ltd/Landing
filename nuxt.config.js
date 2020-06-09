@@ -113,7 +113,6 @@ export default async () => {
     */
     modules: [
       '@nuxtjs/sitemap',
-      '@nuxtjs/google-analytics',
       'vue-social-sharing/nuxt',
       ['nuxt-cookie-control', {
         colors: {
@@ -169,9 +168,6 @@ export default async () => {
     sitemap: {
       hostname: 'https://traininblocks.com',
       gzip: true
-    },
-    googleAnalytics: {
-      id: 'UA-167770206-1'
     },
     pwa: {
       manifest: {

@@ -1,7 +1,9 @@
 <template>
   <div>
     <div id="container--2c">
-      <h1 class="main-title">Save more time and get more clients.</h1>
+      <h1 class="main-title">
+        Save more time and get more clients.
+      </h1>
       <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device">
     </div>
     <div class="spacer" />

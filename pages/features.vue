@@ -172,7 +172,7 @@
           </p>
         </div>
         <quill v-show="editWorkout" v-model="exampleWorkout" output="html" class="quill" :config="config" />
-        <div v-show="!editWorkout" v-html="exampleWorkout" class="show-workout"/>
+        <div v-show="!editWorkout" class="show-workout" v-html="exampleWorkout" />
         <div class="bottom-bar">
           <button v-show="editWorkout" class="button--save" @click="scan(), toggleEdit()">
             Save
@@ -193,7 +193,9 @@
     <div class="container--demo">
       <line-chart id="chart" :chart-data="dataCollection" :options="options" />
       <div id="stats">
-        <h2 class="sub-title">Statistics</h2>
+        <h2 class="sub-title">
+          Statistics
+        </h2>
         <select id="dataName" @change="selection()" />
         <select v-show="showType" id="dataType" @change="selection()">
           <option>Sets</option>
@@ -211,11 +213,15 @@
       </div>
     </div>
     <div class="spacer" />
-    <h1 class="main-title">{{ featuresTitle }}</h1><br>
+    <h1 class="main-title">
+      {{ featuresTitle }}
+    </h1><br>
     <div v-for="feature in features" :key="feature.id" class="container--features">
       <inline-svg class="icon" :src="feature.icon" />
       <div>
-        <h2 class="sub-title">{{ feature.subtitle }}</h2>
+        <h2 class="sub-title">
+          {{ feature.subtitle }}
+        </h2>
         <p>{{ feature.desc }}</p>
       </div>
     </div>
@@ -288,17 +294,6 @@ export default {
       yData: [],
       xLabel: [],
       editWorkout: false
-    }
-  },
-  head () {
-    return {
-      title: 'Train In Blocks | Powerful Features Made Simple',
-      meta: [
-        { hid: 'description', name: 'description', content: 'It\'s time for personal trainers to track their client\'s performance like it\'s 2020. Say goodbye to spreadsheets.' },
-        { hid: 'og:title', content: 'Powerful Features Made Simple' },
-        { hid: 'twitter:title', content: 'Powerful Features Made Simple' },
-        { hid: 'og:url', content: '/features' }
-      ]
     }
   },
   mounted () {
@@ -588,8 +583,8 @@ export default {
         title: 'Faster Exercise Programming',
         meta: [
           { hid: 'description', name: 'description', content: 'Say goodbye to spreadsheets. They\'ve served us well but we\'ve found a better way of tracking client data.' },
-          { hid: 'og:title', content: 'Demo' },
-          { hid: 'twitter:title', content: 'Demo' },
+          { hid: 'og:title', content: 'Features' },
+          { hid: 'twitter:title', content: 'Features' },
           { hid: 'og:url', content: '/features' }
         ]
       }
