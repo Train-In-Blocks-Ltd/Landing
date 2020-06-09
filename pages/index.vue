@@ -104,8 +104,7 @@ export default {
     }
     #container--2c3r {
       grid-template: repeat(3, .4fr 1fr) / 1fr;
-      grid-template-areas: 'aT' 'aI' 'bT' 'bI' 'cT' 'cI';
-      grid-gap: 0
+      grid-template-areas: 'aT' 'aI' 'bT' 'bI' 'cT' 'cI'
     }
     #svg--3 {
       width: auto
@@ -113,13 +112,10 @@ export default {
   }
   @media (max-width: 992px) {
     .container--2c3r {
-      grid-gap: 10vh
+      grid-gap: 2rem
     }
   }
   @media (max-width: 360px) {
-    #container--2c3r {
-      grid-gap: 2rem 0
-    }
     svg {
       width: 80%
     }

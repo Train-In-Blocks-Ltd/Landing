@@ -34,11 +34,20 @@
     </div>
     <div class="spacer" />
     <div>
-      <h1 class="title--compare">How do we compare to...</h1><br>
+      <h1 class="title--compare main-title">How do we compare?</h1><br>
       <div class="container--comparison">
         <div class="container--tib">
           <p class="list__name">Train In Blocks</p>
-          <p class="list__desc">£10 per month for unlimited clients</p>
+          <ul>
+            <li class="list__desc"><b>£10 per month</b> for unlimited clients, that's it!</li>
+            <li class="list__desc">Have a say in our development and vote for features and add-ons.</li>
+            <li class="list__desc">Free high-quality content our social media and our blog.</li>
+            <li class="list__desc">Great future add-ons to boost your business in the right direction (we'll still be more affordable).</li>
+            <li class="list__desc">Fast and functional, build a completely bespoke programme in a matter of minutes - not hours.</li>
+            <li class="list__desc">Visualise your client's exercise programme before the first session.</li>
+            <li class="list__desc">Save time and re-invest it into generating new leads and prospects.</li>
+            <li class="list__desc">Great technical support and we're more than happy to book in a demo with you.</li>
+          </ul>
         </div>
         <h1 class="main-title">vs.</h1>
         <div class="container--comp">
@@ -137,9 +146,6 @@ export default {
     grid-template-columns: 1fr .4fr 1fr;
     grid-gap: 4rem
   }
-  .container--tib {
-    text-align: right
-  }
   .container--comparison h1 {
     margin: auto
   }
@@ -149,11 +155,12 @@ export default {
   }
   .list__name {
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 1rem 0
   }
   .list__desc {
-    margin: 0
+    margin: 1rem 0;
+    list-style-type: square
   }
 
   /* Other */
@@ -172,7 +179,7 @@ export default {
   }
   @media (max-width: 768px) {
     .list__name {
-      font-size: 1.4rem
+      font-size: 1.6rem
     }
   }
   @media (max-width: 576px) {

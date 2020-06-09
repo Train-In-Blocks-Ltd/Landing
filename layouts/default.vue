@@ -100,18 +100,6 @@
     transform: scale(.9)
   }
 
-  /* GLOBAL: nprogress */
-  #nprogress .bar {
-    background: #282828;
-    height: 3px
-  }
-  #nprogress .peg {
-    box-shadow: 0 0 10px #282828, 0 0 5px #282828
-  }
-  #nprogress .spinner {
-    display: none
-  }
-
   /* GLOBAL: Inputs and Buttons */
   input, button {
     background-color: transparent
@@ -153,12 +141,9 @@
   footer p {
     font-size: .8rem
   }
-  .nav--footer {
-    display: flex;
-    justify-content: space-between
-  }
   footer a.input--option {
-    margin: 0 2rem 0 0
+    font-size: .8rem;
+    margin: 0 1rem 0 0
   }
 
   /* Misc. */
@@ -193,14 +178,14 @@
   .container--nav {
     display: flex;
     margin: 0 0 6rem 0;
-    justify-content: space-between;
+    justify-content: flex-end;
     height: 8vh;
     animation-delay: 100ms
   }
   .social-icon {
     width: 25px;
     height: 25px;
-    margin: 0 1rem;
+    margin: 0 1rem 2rem 0;
     cursor: pointer;
     opacity: 1;
     transition: opacity .4s, transform .1s cubic-bezier(.165, .84, .44, 1)
@@ -351,7 +336,7 @@
       opacity: 1
     }
   }
-  @media (max-width: 992px) {
+  @media (max-width: 768px) {
     /* Nav */
     .container--nav {
       height: fit-content;
@@ -365,17 +350,6 @@
       width: fit-content;
       margin: .4rem 0
     }
-    .social-icon {
-      display: grid;
-      margin: 1rem 0
-    }
-  }
-  @media (max-width: 768px) {
-    /* Footer */
-    footer a.input--option {
-      display: grid;
-      margin: 0 0 2rem 0
-    }
 
     /* Misc. */
     .paper--title {
@@ -383,6 +357,10 @@
     }
     .spacer {
       height: 5vh
+    }
+    footer a.input--option {
+      display: grid;
+      margin: 1rem 0
     }
     .input--option:hover {
       opacity: 1
@@ -440,7 +418,7 @@
     body {
       font-size: 14px
     }
-    h1 {
+    .main-title {
       font-size: 1.5rem
     }
 
@@ -490,17 +468,11 @@
     </form>
     <div id="nav--top" class="spacer--small" />
     <div class="container--nav animated bounceInLeft">
-      <div class="social-bar">
-        <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
-        <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
-        <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')" /></a>
-        <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
-      </div>
       <nav id="nav--main">
-        <nuxt-link class="input--option" to="/">Welcome</nuxt-link>
-        <nuxt-link class="input--option" to="/features">Features</nuxt-link>
-        <nuxt-link class="input--option" to="/pricing">Pricing</nuxt-link>
-        <nuxt-link class="input--option" to="/roadmap">Roadmap</nuxt-link>
+        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/">Welcome</nuxt-link>
+        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/features">Features</nuxt-link>
+        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/pricing">Pricing</nuxt-link>
+        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/roadmap">Roadmap</nuxt-link>
         <nuxt-link class="input--option" to="/explore">Explore</nuxt-link>
         <nuxt-link class="input--option" to="/blog">Blog</nuxt-link>
         <br>
@@ -513,6 +485,12 @@
     </div>
     <footer>
       <div class="nav--footer">
+        <div class="social-bar">
+          <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
+          <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
+          <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')" /></a>
+          <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
+        </div>
         <div>
           <nuxt-link class="input--option" to="/gdpr">
             GDPR Statement
@@ -527,13 +505,7 @@
             Terms & Conditions
           </nuxt-link>
         </div>
-        <div class="social-bar footer">
-          <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
-          <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
-          <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')" /></a>
-          <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
-        </div>
-      </div>
+      </div><br>
       <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with some icons!</p>
     </footer>
     <a

@@ -47,7 +47,7 @@
       <ShareNetwork
         network="facebook"
         :title="title"
-        :url="'https://www.traininblocks.com/blog/' + this.$route.params.slug"
+        :url="'https://www.traininblocks.com/blog/'"
       >
       Facebook
       </ShareNetwork>
@@ -55,15 +55,9 @@
         network="twitter"
         :title="title"
         :url="'https://www.traininblocks.com/blog/' + this.$route.params.slug"
+        twitterUser="traininblocks"
       >
       Twitter
-      </ShareNetwork>
-      <ShareNetwork
-        network="linkedin"
-        :title="title"
-        :url="'https://www.traininblocks.com/blog/' + this.$route.params.slug"
-      >
-      LinkedIn
       </ShareNetwork>
     </div>
   </div>
@@ -78,7 +72,7 @@ export default {
         { hid: 'description', name: 'description', content: this.excerpt },
         { hid: 'og:title', content: this.title },
         { hid: 'twitter:title', content: this.title },
-        { hid: 'og:url', content: '/blog' }
+        { hid: 'og:url', content: '/blog/' + this.$route.params.slug}
       ]
     }
   },
