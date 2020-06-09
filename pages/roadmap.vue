@@ -62,7 +62,7 @@ export default {
   },
   head () {
     return {
-      title: 'Here’s Our Journey, Join Us',
+      title: 'Train In Blocks | Here’s Our Journey, Join Us',
       meta: [
         { hid: 'description', name: 'description', content: 'We love for you to get involved in our development. Vote for new features and join our community of health and fitness professionals.' },
         { hid: 'og:title', content: 'Here’s Our Journey, Join Us' },

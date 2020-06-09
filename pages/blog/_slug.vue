@@ -46,21 +46,21 @@
       <h3>Share on:</h3>
       <ShareNetwork
         network="facebook"
-        :title="'Train In Blocks'"
+        :title="title"
         :url="'https://www.traininblocks.com/blog/' + this.$route.params.slug"
       >
       Facebook
       </ShareNetwork>
       <ShareNetwork
         network="twitter"
-        :title="'Train In Blocks'"
+        :title="title"
         :url="'https://www.traininblocks.com/blog/' + this.$route.params.slug"
       >
       Twitter
       </ShareNetwork>
       <ShareNetwork
         network="linkedin"
-        :title="'Train In Blocks'"
+        :title="title"
         :url="'https://www.traininblocks.com/blog/' + this.$route.params.slug"
       >
       LinkedIn
@@ -73,11 +73,11 @@
 export default {
   head () {
     return {
-      title: 'Learn',
+      title: this.title,
       meta: [
-        { hid: 'description', name: 'description', content: 'We love for you to get involved in our development. Vote for new features and join our community of health and fitness professionals.' },
-        { hid: 'og:title', content: 'Here’s Our Journey, Join Us' },
-        { hid: 'twitter:title', content: 'Here’s Our Journey, Join Us' },
+        { hid: 'description', name: 'description', content: this.excerpt },
+        { hid: 'og:title', content: this.title },
+        { hid: 'twitter:title', content: this.title },
         { hid: 'og:url', content: '/blog' }
       ]
     }
@@ -88,6 +88,7 @@ export default {
       let post = await import(`~/content/${params.slug}.md`);
       return {
         title: post.attributes.title,
+        desc: post.attributes.excerpt,
         singlePostComponent: post.vue.component
       };
     } catch (err) {

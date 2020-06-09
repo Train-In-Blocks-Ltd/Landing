@@ -72,7 +72,7 @@ export default {
   },
   head () {
     return {
-      title: 'Affordable Personal Trainer Software',
+      title: 'Train In Blocks | Affordable Personal Trainer Software',
       meta: [
         { hid: 'description', name: 'description', content: 'You can\'t beat our pricing. All with no restriction on the number of clients and programmes. Get instant access now!' },
         { hid: 'og:title', content: 'Affordable Personal Trainer Software' },

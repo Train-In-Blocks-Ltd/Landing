@@ -35,7 +35,7 @@ export default {
   },
   head () {
     return {
-      title: 'Our Core Values',
+      title: 'Train In Blocks | Our Core Values',
       meta: [
         { hid: 'description', name: 'description', content: 'These are our promises to you. A service that is flexible, customisable, affordable and minimal.' },
         { hid: 'og:title', content: 'Our Core Values' },

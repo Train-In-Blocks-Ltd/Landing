@@ -185,6 +185,9 @@
     letter-spacing: .4rem;
     font-size: 1.5rem
   }
+  .countdown--desc {
+    margin: 2rem 0
+  }
 
   /* GLOBAL: Nav */
   .container--nav {
@@ -375,8 +378,8 @@
     }
 
     /* Misc. */
-    h1 {
-      font-size: 2rem
+    .paper--title {
+      font-size: 3rem
     }
     .spacer {
       height: 5vh
@@ -456,7 +459,7 @@
       <div class="container--countdown">
         <h2 class="sub-title">01.08.20</h2>
         <Countdown end="August 1, 2020" />
-        <p><b>BETA RELEASE</b></p>
+        <p class="countdown--desc"><b>BETA RELEASE</b></p>
       </div>
     </div>
     <form

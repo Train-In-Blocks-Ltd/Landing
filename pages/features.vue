@@ -30,7 +30,7 @@
     font-size: .8rem
   }
   .bottom-bar {
-    padding: .6rem 1rem
+    padding: 1rem
   }
   .bottom-bar .button {
     margin: 0
@@ -289,7 +289,7 @@ export default {
   },
   head () {
     return {
-      title: 'Powerful Features Made Simple',
+      title: 'Train In Blocks | Powerful Features Made Simple',
       meta: [
         { hid: 'description', name: 'description', content: 'It\'s time for personal trainers to track their client\'s performance like it\'s 2020. Say goodbye to spreadsheets.' },
         { hid: 'og:title', content: 'Powerful Features Made Simple' },

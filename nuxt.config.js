@@ -21,7 +21,7 @@ export default async () => {
     ** Headers of the page
     */
     head: {
-      titleTemplate: 'Train In Blocks | %s',
+      titleTemplate: '%s',
       htmlAttrs: {
         lang: 'en-GB'
       },

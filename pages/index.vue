@@ -37,7 +37,7 @@ export default {
   },
   head () {
     return {
-      title: 'Programming for Personal Trainers',
+      title: 'Train In Blocks | Programming for Personal Trainers',
       meta: [
         { hid: 'description', name: 'description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
         { hid: 'og:title', content: 'Programming for Personal Trainers' },
