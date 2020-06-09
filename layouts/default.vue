@@ -35,6 +35,12 @@
     padding: 1rem 1.6rem
   }
 
+  /* IOS Disable Corners */
+  textarea, input.text, input[type='text'], input[type='button'], input[type='submit'], .input-checkbox {
+    -webkit-appearance: none;
+    border-radius: 0
+  }
+
   /* GLOBAL: Email */
   #mc-embedded-subscribe-form {
     margin: 4rem 0
@@ -519,7 +525,7 @@
             Privacy Policy
           </nuxt-link>
           <nuxt-link class="input--option" to="/cookie-policy">
-            Cookie Policy
+            Cookies Policy
           </nuxt-link>
           <nuxt-link class="input--option" to="/terms-conditions">
             Terms & Conditions
