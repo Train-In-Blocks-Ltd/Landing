@@ -55,22 +55,27 @@ export default async () => {
         {
           inner: `{ 
             "@context": "http://schema.org",
-            "@type": "Person",
-            "email": "joe@joebailey.xyz",
-            "image": "/Me.jpg",
-            "jobTitle": "Front-End Web Developer",
-            "name": "Joe Bailey",
-            "birthPlace": "Cambridge, UK",
-            "birthDate": "2000-06-02",
-            "gender": "male",
-            "nationality": "English",
-            "telephone": "+44 7477737535",
-            "url": "https://joebailey.xyz",
-            "sameAs" : [ "https://www.linkedin.com/in/joe-bailey-b68b17171/",
-            "https://twitter.com/JoeBailey26",
-            "https://www.behance.net/joebailey26",
-            "https://github.com/joebailey26",
-            "https://codepen.io/joebailey26"
+            "@type": "Organization",
+            "name": "Train In Blocks",
+            "legalName" : "Train In Blocks Ltd",
+            "foundingDate": "2020",
+            "founders": [
+              {
+              "@type": "Person",
+              "name": "Mikey Lau"
+            }, ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "email": "hello@traininblocks.com"
+            },
+            "url": "https://www.traininblocks.com",
+            "sameAs": [
+              "https://www.linkedin.com/company/train-in-blocks",
+              "https://www.twitter.com/traininblocks",
+              "https://www.instagram.com/traininblocks",
+              "https://www.facebook.com/traininblocks"
+            ]
           }`,
           type: 'application/ld+json'
         }
@@ -79,7 +84,7 @@ export default async () => {
     /*
     ** Customize the progress-bar color
     */
-    loading: { color: '#fff' },
+    loading: { color: '#282828' },
     /*
     ** Global CSS
     */
@@ -108,7 +113,8 @@ export default async () => {
     */
     modules: [
       '@nuxtjs/sitemap',
-      '@nuxtjs/google-analytics'
+      '@nuxtjs/google-analytics',
+      'vue-social-sharing/nuxt'
     ],
     sitemap: {
       hostname: 'https://traininblocks.com',

@@ -7,7 +7,7 @@
       <div class="pricing__plans">
         <div>
           <img class="icon--gif" src="../assets/gif/deadlift.gif">
-          <h2>Basic - Monthly</h2>
+          <h2 class="sub-title">Basic - Monthly</h2>
           <h1 class="pricing__cost">
             £10
           </h1>
@@ -19,13 +19,13 @@
       <div class="pricing__plans">
         <div>
           <img class="icon--gif" src="../assets/gif/trophy.gif">
-          <h2 class="pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">
+          <h2 class="sub-title pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">
             Pro - Yearly
           </h2>
           <h1 class="pricing__cost">
-            £90
+            £102
           </h1>
-          <p>Save 25% on the annual plan,<br><b>that's £7.50/month</b></p><br><br>
+          <p>Save 15% on the annual plan,<br><b>that's £8.50/month</b></p><br><br>
         </div>
         <button class="signUp" :disabled="isOpen">
           {{ btn2 }}
@@ -40,7 +40,7 @@
           <p class="list__name">Train In Blocks</p>
           <p class="list__desc">£10 per month for unlimited clients</p>
         </div>
-        <h1>vs.</h1>
+        <h1 class="main-title">vs.</h1>
         <div class="container--comp">
           <div v-for="item in overview" :key="item.id" class="list--overview">
             <p class="list__name">{{ item.name }}</p>
@@ -163,7 +163,8 @@ export default {
   }
   @media (max-width: 992px) {
     #pricing {
-      grid-template-columns: 1fr
+      grid-template-columns: 1fr;
+      margin: 0 0 4rem 0
     }
     .container--comparison {
       grid-gap: 2rem
