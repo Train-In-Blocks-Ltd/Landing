@@ -576,11 +576,11 @@ export default {
     },
     head () {
       return {
-        title: 'Faster Exercise Programming',
+        title: 'Train In Blocks | Faster Exercise Programming',
         meta: [
           { hid: 'description', name: 'description', content: 'Say goodbye to spreadsheets. They\'ve served us well but we\'ve found a better way of tracking client data.' },
-          { hid: 'og:title', content: 'Features' },
-          { hid: 'twitter:title', content: 'Features' },
+          { hid: 'og:title', content: 'Train In Blocks | Faster Exercise Programming' },
+          { hid: 'twitter:title', content: 'Train In Blocks | Faster Exercise Programming' },
           { hid: 'og:url', content: '/features' }
         ]
       }
