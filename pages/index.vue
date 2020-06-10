@@ -37,16 +37,9 @@ export default {
       title: 'Want to train more clients effectively?'
     }
   },
-  head () {
-    return {
-      title: 'Train In Blocks | Programming for Personal Trainers',
-      meta: [
-        { hid: 'description', name: 'description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
-        { hid: 'og:title', content: 'Programming for Personal Trainers' },
-        { hid: 'twitter:title', content: 'Programming for Personal Trainers' },
-        { hid: 'og:url', content: '/' }
-      ]
-    }
+  mounted () {
+    this.$parent.$parent.metaHelper.title = 'Programming for Personal Trainers'
+    this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
   }
 }
 </script>

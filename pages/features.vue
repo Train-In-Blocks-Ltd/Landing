@@ -167,11 +167,11 @@
     </h1>
     <div class="container--2c">
       <div class="container--workouts">
-        <div class="wrapper--workout" :class="{activeWorkout: currentID === exampleWorkout.id}" v-for="exampleWorkout in exampleWorkoutStore" :key="exampleWorkout.id">
+        <div v-for="exampleWorkout in exampleWorkoutStore" :key="exampleWorkout.id" class="wrapper--workout" :class="{activeWorkout: currentID === exampleWorkout.id}">
           <div class="workouts--workout">
-            <p><b>Workout {{exampleWorkout.id}}</b></p>
+            <p><b>Workout {{ exampleWorkout.id }}</b></p>
             <p class="text--date">
-              {{exampleWorkout.date}}
+              {{ exampleWorkout.date }}
             </p>
           </div>
           <quill v-if="currentID === exampleWorkout.id" v-model="exampleWorkout.content" output="html" class="quill" :config="config" />
@@ -311,6 +311,8 @@ export default {
   },
   mounted () {
     this.scan()
+    this.$parent.$parent.metaHelper.title = 'Faster Exercise Programming'
+    this.$parent.$parent.metaHelper.description = 'Say goodbye to spreadsheets. They\'ve served us well but we\'ve found a better way of tracking client data.'
   },
   methods: {
     toggleEdit (id) {
@@ -588,17 +590,6 @@ export default {
       })
       this.p4 = '<b>Minimum' + ' ' + dataForType + ':</b> ' + store
       this.p5 = 'Percentage Change: ' + (((storeMax / store) - 1) * 100).toFixed(1) + '%'
-    },
-    head () {
-      return {
-        title: 'Train In Blocks | Faster Exercise Programming',
-        meta: [
-          { hid: 'description', name: 'description', content: 'Say goodbye to spreadsheets. They\'ve served us well but we\'ve found a better way of tracking client data.' },
-          { hid: 'og:title', content: 'Train In Blocks | Faster Exercise Programming' },
-          { hid: 'twitter:title', content: 'Train In Blocks | Faster Exercise Programming' },
-          { hid: 'og:url', content: '/features' }
-        ]
-      }
     }
   }
 }

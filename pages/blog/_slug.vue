@@ -41,7 +41,7 @@
 
 <template>
   <div>
-    <component :is="singlePostComponent" />
+    <div v-html="html" />
     <div class="container--share">
       <h3>Share on:</h3>
       <ShareNetwork
@@ -49,15 +49,15 @@
         :title="title"
         :url="'https://www.traininblocks.com/blog/'"
       >
-      Facebook
+        Facebook
       </ShareNetwork>
       <ShareNetwork
         network="twitter"
         :title="title"
         :url="'https://www.traininblocks.com/blog/' + this.$route.params.slug"
-        twitterUser="traininblocks"
+        twitter-user="traininblocks"
       >
-      Twitter
+        Twitter
       </ShareNetwork>
     </div>
   </div>
@@ -65,30 +65,25 @@
 
 <script>
 export default {
-  head () {
-    return {
-      title: this.title,
-      meta: [
-        { hid: 'description', name: 'description', content: this.excerpt },
-        { hid: 'og:title', content: this.title },
-        { hid: 'twitter:title', content: this.title },
-        { hid: 'og:url', content: '/blog/' + this.$route.params.slug}
-      ]
+  async asyncData ({ params }) {
+    try {
+      const post = await require(`~/content/${params.slug}.md`)
+      return {
+        html: post.html,
+        excerpt: post.attributes.excerpt,
+        title: post.attributes.title,
+        img: post.attributes.img
+      }
+    } catch (err) {
+      // eslint-disable-next-line
+      console.debug(err)
+      return false
     }
   },
-  async asyncData({ params }) {
-    try {
-      console.info(params.slug);
-      let post = await import(`~/content/${params.slug}.md`);
-      return {
-        title: post.attributes.title,
-        desc: post.attributes.excerpt,
-        singlePostComponent: post.vue.component
-      };
-    } catch (err) {
-      console.debug(err);
-      return false;
-    }
+  mounted () {
+    this.$parent.$parent.metaHelper.title = this.title
+    this.$parent.$parent.metaHelper.description = this.excerpt
+    this.$parent.$parent.metaHelper.image = this.img
   }
-};
+}
 </script>

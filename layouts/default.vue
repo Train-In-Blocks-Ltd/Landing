@@ -462,7 +462,7 @@
         <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/roadmap">
           Roadmap
         </nuxt-link>
-        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }"  class="input--option" to="/explore">
+        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/explore">
           Explore
         </nuxt-link>
         <nuxt-link class="input--option" to="/blog">
@@ -536,7 +536,12 @@ export default {
   data () {
     return {
       descSub: 'Get Notified When We Launch',
-      scrollpx: 0
+      scrollpx: 0,
+      metaHelper: {
+        title: 'Train In Blocks',
+        description: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.',
+        image: 'https://traininblocks.com/android-chrome-192x192.png'
+      }
     }
   },
   mounted () {
@@ -548,6 +553,20 @@ export default {
   methods: {
     handleScroll () {
       this.scrollpx = window.scrollY
+    }
+  },
+  head () {
+    return {
+      title: this.metaHelper.title,
+      meta: [
+        { hid: 'description', content: this.metaHelper.description },
+        { hid: 'og:title', content: this.metaHelper.title },
+        { hid: 'og:description', content: this.metaHelper.description },
+        { hid: 'og:image', content: this.metaHelper.img },
+        { hid: 'twitter:title', content: this.metaHelper.title },
+        { hid: 'twitter:description', content: this.metaHelper.description },
+        { hid: 'twitter:img', content: this.metaHelper.image }
+      ]
     }
   }
 }

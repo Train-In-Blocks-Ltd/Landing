@@ -131,20 +131,13 @@ export default {
       prefix: 'blog'
     }
   },
+  mounted () {
+    this.$parent.$parent.metaHelper.title = 'Learn'
+    this.$parent.$parent.metaHelper.description = 'Free high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.'
+  },
   methods: {
     getPermalink (post) {
       return this.prefix + '/' + post.attributes.slug
-    }
-  },
-  head () {
-    return {
-      title: 'Train In Blocks | Free Content for Personal Trainers',
-      meta: [
-        { hid: 'description', name: 'description', content: 'We offer so much more than just software for fitness trainers and coaches. Access our free content on health and fitness related topics.' },
-        { hid: 'og:title', content: 'Free Content for Personal Trainers' },
-        { hid: 'twitter:title', content: 'Free Content for Personal Trainers' },
-        { hid: 'og:url', content: '/blog' }
-      ]
     }
   }
 }

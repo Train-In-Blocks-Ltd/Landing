@@ -109,16 +109,9 @@ export default {
       ]
     }
   },
-  head () {
-    return {
-      title: 'Train In Blocks | Affordable Personal Trainer Software',
-      meta: [
-        { hid: 'description', name: 'description', content: 'You can\'t beat our pricing. All with no restriction on the number of clients and programmes. Get instant access now!' },
-        { hid: 'og:title', content: 'Affordable Personal Trainer Software' },
-        { hid: 'twitter:title', content: 'Affordable Personal Trainer Software' },
-        { hid: 'og:url', content: '/pricing' }
-      ]
-    }
+  mounted () {
+    this.$parent.$parent.metaHelper.title = 'Affordable Personal Trainer Software'
+    this.$parent.$parent.metaHelper.description = 'You can\'t beat our pricing. All with no restriction on the number of clients and programmes. Get instant access now!'
   }
 }
 </script>

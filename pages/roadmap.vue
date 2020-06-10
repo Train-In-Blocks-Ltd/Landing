@@ -64,16 +64,9 @@ export default {
       ]
     }
   },
-  head () {
-    return {
-      title: 'Train In Blocks | Here’s Our Journey, Join Us',
-      meta: [
-        { hid: 'description', name: 'description', content: 'We love for you to get involved in our development. Vote for new features and join our community of health and fitness professionals.' },
-        { hid: 'og:title', content: 'Here’s Our Journey, Join Us' },
-        { hid: 'twitter:title', content: 'Here’s Our Journey, Join Us' },
-        { hid: 'og:url', content: '/roadmap' }
-      ]
-    }
+  mounted () {
+    this.$parent.$parent.metaHelper.title = 'Here’s Our Journey, Join Us'
+    this.$parent.$parent.metaHelper.description = 'We love for you to get involved in our development. Vote for new features and join our community of health and fitness professionals.'
   }
 }
 </script>

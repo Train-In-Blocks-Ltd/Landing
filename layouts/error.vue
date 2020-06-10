@@ -16,9 +16,13 @@
 export default {
   props: {
     error: {
-      type: String,
+      type: Object,
       default: null
     }
+  },
+  mounted () {
+    // eslint-disable-next-line
+    console.error(this.error)
   }
 }
 </script>

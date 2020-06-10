@@ -21,27 +21,33 @@ export default async () => {
     ** Headers of the page
     */
     head: {
-      titleTemplate: '%s',
+      titleTemplate: 'Train In Blocks | %s',
       htmlAttrs: {
         lang: 'en-GB'
       },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
-        { property: 'og:description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
-        { name: 'twitter:description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
+        { hid: 'description', name: 'description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
         { name: 'apple-mobile-web-app-title', content: 'Train In Blocks' },
         { name: 'application-name', content: 'Train In Blocks' },
         { name: 'msapplication-TileColor', content: '#ffffff' },
         { name: 'theme-color', content: '#ffffff' },
+
+        // Twitter Card data
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'tiwtter:site', content: '@traininblocks' },
         { hid: 'twitter:title', name: 'twitter:title', template: chunk => `Train In Blocks | ${chunk}` },
-        { name: 'twitter:image', content: 'https://traininblocks.com/android-chrome-192x192.png' },
-        { property: 'og:site_name', content: 'Train In Blocks' },
-        { hid: 'og:title', property: 'og:title', template: chunk => `Train In Blocks | ${chunk}` },
-        { hid: 'og:url', property: 'og:url', template: 'https://traininblocks.com%s' },
+        { hid: 'twitter:description', name: 'twitter:description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
+        { hid: 'twitter:image', name: 'twitter:image', content: 'https://traininblocks.com/android-chrome-192x192.png' },
+
+        // Open Graph data
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://traininblocks.com/android-chrome-192x192.png' }
+        { property: 'og:site_name', content: 'Train In Blocks' },
+        { hid: 'og:description', property: 'og:description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
+        { hid: 'og:title', property: 'og:title', template: chunk => `Train In Blocks | ${chunk}` },
+        { hid: 'og:image', property: 'og:image', content: 'https://traininblocks.com/android-chrome-192x192.png' },
+        { property: 'og:url', content: 'https://traininblocks.com' }
       ],
       link: [
         { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://traininblocks.com/apple-touch-icon.png' },
@@ -130,37 +136,27 @@ export default async () => {
     cookies: {
       necessary: [
         {
-          //if multilanguage
-          name: {
-            en: 'Default Cookies'
-          },
-          //else
-          name:  'Default Cookies',
-          description:  'Used for cookie control (cannot be disabled).',
+          name: 'Default Cookies',
+          description: 'Used for cookie control (cannot be disabled).',
           cookies: ['cookie_control_consent', 'cookie_control_enabled_cookies']
         }
       ],
       optional: [
         {
-          name:  {
-            en: 'Google Analytics',
-            de: 'Google Analytics',
-            es: 'Google Analytics',
-            fr: 'Google Analytics',
-            hr: 'Google Analitika',
-            it: 'Google Analytics'
-          },
+          name: 'Google Analytics',
           description: 'Google Analytics is a web analytics service offered by Google that tracks and reports website traffic.',
-          src:  'https://www.googletagmanager.com/gtag/js?id=UA-167770206-1',
-          async:  true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=UA-167770206-1',
+          async: true,
           cookies: ['_ga', '_gat', '_gid'],
           accepted: () => {
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-167770206-1');            
+            window.dataLayer = window.dataLayer || []
+            function gtag () {
+              dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+            gtag('config', 'UA-167770206-1')
           },
-          declined: () =>{
+          declined: () => {
           }
         }
       ]
@@ -183,9 +179,6 @@ export default async () => {
     ** Build configuration
     */
     build: {
-      /*
-      ** You can extend webpack config here
-      */
       extend (config, ctx) {
         // add frontmatter-markdown-loader
         config.module.rules.push({
@@ -193,7 +186,7 @@ export default async () => {
           include: path.resolve(__dirname, 'content'),
           loader: 'frontmatter-markdown-loader',
           options: {
-            mode: [Mode.VUE_COMPONENT, Mode.META]
+            mode: [Mode.HTML, Mode.META]
           }
         })
       }
