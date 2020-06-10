@@ -36,8 +36,9 @@
   }
 
   /* IOS Disable Corners */
-  textarea, input.text, input[type='text'], input[type='button'], input[type='submit'], .input-checkbox, #mce-EMAIL {
+  textarea, input.text, input[type='text'], input[type='button'], input[type='button']:hover, input[type='button']:active, input[type='submit'], .input-checkbox, #mce-EMAIL, select {
     -webkit-appearance: none;
+    outline-width: 0;
     border-radius: 0
   }
 
