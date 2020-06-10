@@ -462,7 +462,7 @@
         <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/roadmap">
           Roadmap
         </nuxt-link>
-        <nuxt-link class="input--option" to="/explore">
+        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }"  class="input--option" to="/explore">
           Explore
         </nuxt-link>
         <nuxt-link class="input--option" to="/blog">
