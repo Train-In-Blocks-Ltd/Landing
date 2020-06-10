@@ -451,6 +451,11 @@ export default {
     // Init the dropdown selection with validation
     dropdownInit () {
       const dropdownEl = document.getElementById('dataName')
+      const ddLength = dropdownEl.options.length
+      let i
+      for (i = ddLength - 1; i >= 0; i--) {
+        dropdownEl.remove(i)
+      }
       const option = document.createElement('option')
       option.text = 'Block Overview'
       dropdownEl.add(option)
@@ -535,6 +540,9 @@ export default {
     // Extracts anything for Loads
     load (protocol) {
       const tempLoadStore = []
+      let sum = 0
+      let isMultiple = false
+      const sets = this.setsReps(protocol, 'Sets')
       let m
       while ((m = this.regexLoadCapture.exec(protocol)) !== null) {
         if (m.index === this.regexLoadCapture.lastIndex) {
@@ -542,21 +550,26 @@ export default {
         }
         m.forEach((loadMatch, groupIndex) => {
           if (groupIndex === 2) {
-            if (loadMatch.includes('/') === true) {
-              let n
-              while ((n = this.regexNumberBreakdown.exec(loadMatch)) !== null) {
-                if (n.index === this.regexNumberBreakdown.lastIndex) {
-                  this.regexNumberBreakdown.lastIndex++
-                }
-                n.forEach((loadMatchExact) => {
-                  tempLoadStore.push(parseFloat(loadMatchExact))
-                })
+            let n
+            while ((n = this.regexNumberBreakdown.exec(loadMatch)) !== null) {
+              if (n.index === this.regexNumberBreakdown.lastIndex) {
+                this.regexNumberBreakdown.lastIndex++
               }
+              n.forEach((loadMatchExact) => {
+                if (loadMatch.includes('/') === true) {
+                  tempLoadStore.push(parseFloat(loadMatchExact))
+                  isMultiple = true
+                } else {
+                  sum = parseFloat(loadMatchExact) * sets
+                }
+              })
             }
           }
         })
       }
-      const sum = tempLoadStore.reduce((a, b) => a + b)
+      if (isMultiple) {
+        sum = tempLoadStore.reduce((a, b) => a + b)
+      }
       return sum
     },
     // Extracts any other measures
