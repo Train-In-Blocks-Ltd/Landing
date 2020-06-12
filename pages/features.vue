@@ -95,6 +95,8 @@
     margin-top: 0
   }
   #dataName, #dataType {
+    width: 70%;
+    font-size: 1.6rem;
     outline-width: 0
   }
   .container--desc-data {
@@ -102,6 +104,16 @@
   }
   .container--desc-data p {
     margin: 1rem 0
+  }
+  .wrapper--data {
+    display: grid;
+    grid-gap: 1rem;
+    margin-bottom: 2rem
+  }
+  .data-desc__value {
+    margin: .4rem 0 2rem 0;
+    font-size: 1.6rem;
+    font-weight: bold
   }
 
   /* Other */
@@ -127,22 +139,25 @@
         'b'
         'a'
     }
-    #text {
-      margin: 2rem 0
-    }
-  }
-  @media (max-width: 576px) {
     .container--demo {
       grid-template-areas:
         'a'
         'b'
     }
-    .container--features {
-      margin: 0 0 2rem 0
-    }
     #chart {
       margin: 0;
       width: 70vw
+    }
+    #text {
+      margin: 2rem 0
+    }
+  }
+  @media (max-width: 576px) {
+    #dataName, #dataType {
+      width: 100%
+    }
+    .container--features {
+      margin: 0 0 2rem 0
     }
   }
   @media (max-width: 360px) {
@@ -204,19 +219,72 @@
         <h2 class="sub-title">
           Statistics
         </h2>
-        <select id="dataName" @change="selection()" />
-        <select v-show="showType" id="dataType" @change="selection()">
-          <option>Sets</option>
-          <option>Reps</option>
-          <option>Load</option>
-          <option>Volume</option>
-        </select>
+        <div class="wrapper--data">
+          <label for="dataName"><b>Measurement:</b></label>
+          <select id="dataName" v-model="selectedDataName" name="dataName" @change="selection()">
+            <option v-for="option in optionsForDataName" :key="option.id" :value="option.value">
+              {{ option.text }}
+            </option>
+          </select>
+        </div>
+        <div v-show="showType" class="wrapper--data">
+          <label for="dataType"><b>Data Type:</b></label>
+          <select id="dataType" v-model="selectedDataType" name="dataType" @change="selection()">
+            <option value="Sets">
+              Sets
+            </option>
+            <option value="Reps">
+              Reps
+            </option>
+            <option value="Load">
+              Load
+            </option>
+            <option value="Volume">
+              Volume
+            </option>
+          </select>
+        </div>
         <div v-show="showType" class="container--desc-data">
-          <p v-html="p1" />
-          <p v-html="p2" /><br>
-          <p v-html="p3" />
-          <p v-html="p4" />
-          <p v-html="p5" />
+          <div class="container--data-desc">
+            <p class="data-desc__desc">
+              <b>{{ p1.desc }}</b>
+            </p>
+            <p class="data-desc__value">
+              {{ p1.value }}
+            </p>
+          </div>
+          <div class="container--data-desc">
+            <p class="data-desc__desc">
+              <b>{{ p2.desc }}</b>
+            </p>
+            <p class="data-desc__value">
+              {{ p2.value }}
+            </p>
+          </div>
+          <div class="container--data-desc">
+            <p class="data-desc__desc">
+              <b>{{ p3.desc }}</b>
+            </p>
+            <p class="data-desc__value">
+              {{ p3.value }}
+            </p>
+          </div>
+          <div class="container--data-desc">
+            <p class="data-desc__desc">
+              <b>{{ p4.desc }}</b>
+            </p>
+            <p class="data-desc__value">
+              {{ p4.value }}
+            </p>
+          </div>
+          <div class="container--data-desc">
+            <p class="data-desc__desc">
+              {{ p5.desc }}
+            </p>
+            <p class="data-desc__value">
+              {{ p5.value }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -301,11 +369,14 @@ export default {
       options: null,
       yData: [],
       xLabel: [],
-      p1: null,
-      p2: null,
-      p3: null,
-      p4: null,
-      p5: null,
+      p1: '',
+      p2: '',
+      p3: '',
+      p4: '',
+      p5: '',
+      selectedDataName: 'Block Overview',
+      optionsForDataName: [],
+      selectedDataType: 'Sets',
       currentID: null
     }
   },
@@ -354,8 +425,8 @@ export default {
       this.showType = true
       this.yData.length = 0
       this.xLabel.length = 0
-      const dataForName = document.getElementById('dataName').value
-      const dataForType = document.getElementById('dataType').value
+      const dataForName = this.selectedDataName
+      const dataForType = this.selectedDataType
       let dataForSum = 0
       const overviewStore = []
       this.dataPacketStore.forEach((item) => {
@@ -450,17 +521,10 @@ export default {
     },
     // Init the dropdown selection with validation
     dropdownInit () {
-      const dropdownEl = document.getElementById('dataName')
-      const ddLength = dropdownEl.options.length
-      let i
-      for (i = ddLength - 1; i >= 0; i--) {
-        dropdownEl.remove(i)
-      }
-      const option = document.createElement('option')
-      option.text = 'Block Overview'
-      dropdownEl.add(option)
+      this.optionsForDataName = [{ id: 0, text: 'Block Overview', value: 'Block Overview' }]
       const tempItemStore = []
       const tempItemStoreLate = []
+      let continueValue = 0
       this.dataPacketStore.forEach((item) => {
         item.forEach((exerciseDataPacket) => {
           const tidyA = exerciseDataPacket[0].replace(/\(/g, '\\(')
@@ -480,15 +544,12 @@ export default {
           }
         })
       })
-      tempItemStore.forEach((item) => {
-        const option = document.createElement('option')
-        option.text = item
-        dropdownEl.add(option)
+      tempItemStore.forEach((item, index) => {
+        continueValue = index + 1
+        this.optionsForDataName.push({ id: continueValue, text: item, value: item })
       })
-      tempItemStoreLate.forEach((item) => {
-        const option = document.createElement('option')
-        option.text = item
-        dropdownEl.add(option)
+      tempItemStoreLate.forEach((item, index) => {
+        this.optionsForDataName.push({ id: continueValue + index + 1, text: item, value: item })
       })
     },
     // Creates proper casing, works in conjuction with dropdownAppend to validate if exercise is already in the list.
@@ -591,18 +652,18 @@ export default {
       let store = 0
       const sum = this.yData.reduce((a, b) => a + b)
       // Sets descriptive data with its corresponding info.
-      this.p1 = '<b>Total' + ' ' + dataForType + ':</b> ' + sum
-      this.p2 = '<b>Average' + ' ' + dataForType + ':</b> ' + (sum / this.yData.length).toFixed(1)
+      this.p1 = { desc: 'Total ' + dataForType + ': ', value: sum }
+      this.p2 = { desc: 'Average ' + dataForType + ': ', value: (sum / this.yData.length).toFixed(1) }
       this.yData.forEach((value) => {
         storeMax = Math.max(storeMax, value)
       })
-      this.p3 = '<b>Maximum' + ' ' + dataForType + ':</b> ' + storeMax
+      this.p3 = { desc: 'Maximum ' + dataForType + ': ', value: storeMax }
       store = storeMax
       this.yData.forEach((value) => {
         store = Math.min(store, value)
       })
-      this.p4 = '<b>Minimum' + ' ' + dataForType + ':</b> ' + store
-      this.p5 = 'Percentage Change: ' + (((storeMax / store) - 1) * 100).toFixed(1) + '%'
+      this.p4 = { desc: 'Minimum ' + dataForType + ': ', value: store }
+      this.p5 = { desc: 'Percentage Change: ', value: ((storeMax / store) * 100).toFixed(1) + '%' }
     }
   }
 }
