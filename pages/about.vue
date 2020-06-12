@@ -28,6 +28,14 @@
       </div>
     </div>
     <div class="spacer" />
+    <div class="container--social">
+      <div v-for="social in socialAccounts" :key="social.id" class="wrapper--social">
+        <a target="_blank" :href="social.link"><inline-svg :src="require('../assets/svg/socials/' + social.icon)" class="social-icon" /></a>
+        <h2 class="text--social">
+          {{ social.desc }}
+        </h2>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -40,7 +48,13 @@ export default {
   },
   data () {
     return {
-      title: 'What\'s with our obsession with paper?'
+      title: 'What\'s with our obsession with paper?',
+      socialAccounts: [
+        { id: 1, icon: 'Facebook.svg', desc: 'A quick overview of our services and some casual content.', link: 'https://www.facebook.com/traininblocks' },
+        { id: 2, icon: 'Instagram.svg', desc: 'Casual snapshots of our team, behind-the-scenes and showing some love to our community.', link: 'https://www.instagram.com/traininblocks' },
+        { id: 3, icon: 'Twitter.svg', desc: 'Get support and details of updates on the app.', link: 'https://www.twitter.com/traininblocks' },
+        { id: 4, icon: 'LinkedIn.svg', desc: 'Learn more about our company and employees. We all have stories.', link: 'https://www.linkedin.com/company/train-in-blocks' }
+      ]
     }
   },
   mounted () {
@@ -67,6 +81,21 @@ export default {
     grid-area: b
   }
 
+  /* Socials */
+  .wrapper--social {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 2rem
+  }
+  .social-icon {
+    height: 100px;
+    width: 100px
+  }
+  .text--social {
+    margin: 0
+  }
+
   /* Responsiveness */
   @media (max-width: 992px) {
     .container--2c, .container--2c.subscribe, .container--2c.intro {
@@ -77,6 +106,11 @@ export default {
     .container--desc-text h1 {
       font-size: 2rem;
       margin: 1rem 0
+    }
+  }
+  @media (max-width: 576px) {
+    .text--social {
+      font-size: 1.2rem
     }
   }
 </style>

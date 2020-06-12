@@ -128,11 +128,13 @@
   select {
     background-color: transparent;
     border: 1px solid #282828;
-    padding: .2rem;
+    padding: .2rem .6rem;
+    width: fit-content;
+    font-weight: bold;
     font-size: 1rem;
     outline-width: 0;
-    letter-spacing: .05rem;
-    margin: 2rem 0
+    letter-spacing: .1rem;
+    margin: 0
   }
 
   /* GLOBAL: Footer */
@@ -465,8 +467,8 @@
         <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/roadmap">
           Roadmap
         </nuxt-link>
-        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/explore">
-          Explore
+        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/about">
+          About
         </nuxt-link>
         <nuxt-link class="input--option" to="/blog">
           Blog
