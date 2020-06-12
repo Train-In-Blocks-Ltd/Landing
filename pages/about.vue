@@ -48,7 +48,7 @@ export default {
   },
   data () {
     return {
-      title: 'What\'s with our obsession with paper?',
+      title: 'What\'s our obsession with paper?',
       socialAccounts: [
         { id: 1, icon: 'Facebook.svg', desc: 'A quick overview of our services and some casual content.', link: 'https://www.facebook.com/traininblocks' },
         { id: 2, icon: 'Instagram.svg', desc: 'Casual snapshots of our team, behind-the-scenes and showing some love to our community.', link: 'https://www.instagram.com/traininblocks' },
