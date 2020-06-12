@@ -128,7 +128,9 @@
   select {
     background-color: transparent;
     border: 1px solid #282828;
-    padding: .1rem;
+    padding: .2rem;
+    font-size: 1rem;
+    outline-width: 0;
     letter-spacing: .05rem;
     margin: 2rem 0
   }
