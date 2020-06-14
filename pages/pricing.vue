@@ -128,7 +128,7 @@
           >
             <template slot="checkout-button">
               <button @click="checkout">
-                Shutup and take my money!
+                Start Saving!
               </button>
             </template>
           </stripe-checkout>
@@ -146,22 +146,22 @@
           <p>
             Save 15% on the annual plan,<br><b>that's £8.50/month</b>
           </p><br><br>
-          <client-only>
-            <stripe-checkout
-              ref="checkoutRef"
-              :pk="publishableKey"
-              :items="yearly"
-              :success-url="successUrl"
-              :cancel-url="cancelUrl"
-            >
-              <template slot="checkout-button">
-                <button @click="checkout">
-                  Shutup and take my money!
-                </button>
-              </template>
-            </stripe-checkout>
-          </client-only>
         </div>
+        <client-only>
+          <stripe-checkout
+            ref="checkoutRef"
+            :pk="publishableKey"
+            :items="yearly"
+            :success-url="successUrl"
+            :cancel-url="cancelUrl"
+          >
+            <template slot="checkout-button">
+              <button @click="checkout">
+                Wow! Sign Me Up.
+              </button>
+            </template>
+          </stripe-checkout>
+        </client-only>
       </div>
     </div>
     <div class="spacer" />

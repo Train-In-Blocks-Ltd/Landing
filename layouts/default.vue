@@ -107,10 +107,13 @@
   }
   button {
     outline-width: 0;
-    border: 1px solid #282828;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 10px #28282815;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .15rem;
+    padding: .8rem 1rem;
     cursor: pointer;
     transition: all 400ms cubic-bezier(.165, .84, .44, 1)
   }
@@ -120,10 +123,6 @@
   }
   button:not(:disabled):active, #mc-embedded-subscribe:active {
     transform: scale(.9)
-  }
-  button:disabled:hover {
-    background: transparent;
-    cursor: default
   }
   select {
     background-color: transparent;
