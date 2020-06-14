@@ -1,120 +1,3 @@
-<template>
-  <div>
-    <h1 class="paper--title">
-      {{ title }}
-    </h1>
-    <div id="pricing">
-      <div class="pricing__plans">
-        <div>
-          <img class="icon--gif" src="../assets/gif/deadlift.gif">
-          <h2 class="sub-title">
-            Basic - Monthly
-          </h2>
-          <h1 class="pricing__cost">
-            £10
-          </h1>
-        </div>
-        <button class="signUp" :disabled="isOpen">
-          {{ btn1 }}
-        </button>
-      </div>
-      <div class="pricing__plans">
-        <div>
-          <img class="icon--gif" src="../assets/gif/trophy.gif">
-          <h2 class="sub-title pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">
-            Pro - Yearly
-          </h2>
-          <h1 class="pricing__cost">
-            £102
-          </h1>
-          <p>
-            Save 15% on the annual plan,<br><b>that's £8.50/month</b>
-          </p><br><br>
-        </div>
-        <button class="signUp" :disabled="isOpen">
-          {{ btn2 }}
-        </button>
-      </div>
-    </div>
-    <div class="spacer" />
-    <div>
-      <h1 class="title--compare main-title">
-        How do we compare?
-      </h1><br>
-      <div class="container--comparison">
-        <div class="container--tib">
-          <p class="list__name">
-            Train In Blocks
-          </p>
-          <ul>
-            <li class="list__desc">
-              <b>£10 per month</b> for unlimited clients, that's it!
-            </li>
-            <li class="list__desc">
-              Have a say in our development and vote for features and add-ons.
-            </li>
-            <li class="list__desc">
-              Free high-quality content our social media and our blog.
-            </li>
-            <li class="list__desc">
-              Great future add-ons to boost your business in the right direction (we'll still be more affordable).
-            </li>
-            <li class="list__desc">
-              Fast and functional, build a completely bespoke programme in a matter of minutes - not hours.
-            </li>
-            <li class="list__desc">
-              Visualise your client's exercise programme before the first session.
-            </li>
-            <li class="list__desc">
-              Save time and re-invest it into generating new leads and prospects.
-            </li>
-            <li class="list__desc">
-              Great technical support and we're more than happy to book in a demo with you.
-            </li>
-          </ul>
-        </div>
-        <h1 class="main-title">
-          vs.
-        </h1>
-        <div class="container--comp">
-          <div v-for="item in overview" :key="item.id" class="list--overview">
-            <p class="list__name">
-              {{ item.name }}
-            </p>
-            <p class="list__desc">
-              {{ item.desc }}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="spacer" />
-  </div>
-</template>
-
-<script>
-export default {
-  data () {
-    return {
-      title: 'Yes. That\'s It.',
-      btn1: 'We\'re almost there...',
-      btn2: 'It will be out soon...',
-      isOpen: true,
-      tibInfo: 'Train In Blocks',
-      overview: [
-        { id: 1, name: 'TrueCoach', desc: '$99 per month for 50 clients' },
-        { id: 2, name: 'My PT Hub', desc: '£49 per month for full access' },
-        { id: 3, name: 'PTminder', desc: 'Cheapest plan for £25 per month' },
-        { id: 4, name: 'PT Distinction', desc: '$80 for 50 clients' }
-      ]
-    }
-  },
-  mounted () {
-    this.$parent.$parent.metaHelper.title = 'Affordable Personal Trainer Software'
-    this.$parent.$parent.metaHelper.description = 'You can\'t beat our pricing. All with no restriction on the number of clients and programmes. Get instant access now!'
-  }
-}
-</script>
 
 <style scoped>
   #pricing {
@@ -218,3 +101,161 @@ export default {
     }
   }
 </style>
+
+<template>
+  <div>
+    <h1 class="paper--title">
+      Yes. That's It.
+    </h1>
+    <div id="pricing">
+      <div class="pricing__plans">
+        <div>
+          <img class="icon--gif" src="../assets/gif/deadlift.gif">
+          <h2 class="sub-title">
+            Basic - Monthly
+          </h2>
+          <h1 class="pricing__cost">
+            £10
+          </h1>
+        </div>
+        <client-only>
+          <stripe-checkout
+            ref="checkoutRef"
+            :pk="publishableKey"
+            :items="monthly"
+            :success-url="successUrl"
+            :cancel-url="cancelUrl"
+          >
+            <template slot="checkout-button">
+              <button @click="checkout">
+                Shutup and take my money!
+              </button>
+            </template>
+          </stripe-checkout>
+        </client-only>
+      </div>
+      <div class="pricing__plans">
+        <div>
+          <img class="icon--gif" src="../assets/gif/trophy.gif">
+          <h2 class="sub-title pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">
+            Pro - Yearly
+          </h2>
+          <h1 class="pricing__cost">
+            £102
+          </h1>
+          <p>
+            Save 15% on the annual plan,<br><b>that's £8.50/month</b>
+          </p><br><br>
+          <client-only>
+            <stripe-checkout
+              ref="checkoutRef"
+              :pk="publishableKey"
+              :items="yearly"
+              :success-url="successUrl"
+              :cancel-url="cancelUrl"
+            >
+              <template slot="checkout-button">
+                <button @click="checkout">
+                  Shutup and take my money!
+                </button>
+              </template>
+            </stripe-checkout>
+          </client-only>
+        </div>
+      </div>
+    </div>
+    <div class="spacer" />
+    <div>
+      <h1 class="title--compare main-title">
+        How do we compare?
+      </h1><br>
+      <div class="container--comparison">
+        <div class="container--tib">
+          <p class="list__name">
+            Train In Blocks
+          </p>
+          <ul>
+            <li class="list__desc">
+              <b>£10 per month</b> for unlimited clients, that's it!
+            </li>
+            <li class="list__desc">
+              Have a say in our development and vote for features and add-ons.
+            </li>
+            <li class="list__desc">
+              Free high-quality content our social media and our blog.
+            </li>
+            <li class="list__desc">
+              Great future add-ons to boost your business in the right direction (we'll still be more affordable).
+            </li>
+            <li class="list__desc">
+              Fast and functional, build a completely bespoke programme in a matter of minutes - not hours.
+            </li>
+            <li class="list__desc">
+              Visualise your client's exercise programme before the first session.
+            </li>
+            <li class="list__desc">
+              Save time and re-invest it into generating new leads and prospects.
+            </li>
+            <li class="list__desc">
+              Great technical support and we're more than happy to book in a demo with you.
+            </li>
+          </ul>
+        </div>
+        <h1 class="main-title">
+          vs.
+        </h1>
+        <div class="container--comp">
+          <div v-for="item in overview" :key="item.id" class="list--overview">
+            <p class="list__name">
+              {{ item.name }}
+            </p>
+            <p class="list__desc">
+              {{ item.desc }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="spacer" />
+  </div>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      loading: false,
+      publishableKey: 'pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX',
+      monthly: [
+        {
+          plan: 'price_1GtvcPBYbiJubfJM2voqpLIo',
+          quantity: 1
+        }
+      ],
+      yearly: [
+        {
+          plan: 'price_1GtvcPBYbiJubfJM7nWmNywN',
+          quantity: 1
+        }
+      ],
+      successUrl: 'https://traininblocks.com/success',
+      cancelUrl: 'https://traininblocks.com/pricing',
+      overview: [
+        { id: 1, name: 'TrueCoach', desc: '$99 per month for 50 clients' },
+        { id: 2, name: 'My PT Hub', desc: '£49 per month for full access' },
+        { id: 3, name: 'PTminder', desc: 'Cheapest plan for £25 per month' },
+        { id: 4, name: 'PT Distinction', desc: '$80 for 50 clients' }
+      ]
+    }
+  },
+  mounted () {
+    this.$parent.$parent.metaHelper.title = 'Affordable Personal Trainer Software'
+    this.$parent.$parent.metaHelper.description = 'You can\'t beat our pricing. All with no restriction on the number of clients and programmes. Get instant access now!'
+  },
+  methods: {
+    checkout () {
+      this.$refs.checkoutRef.redirectToCheckout()
+    }
+  }
+}
+</script>
