@@ -7,6 +7,12 @@ excerpt: Learn how to take advantage of current trends and grow your business.
 
 # How to ride the fitness trends in 2020
 
-<br/><br/>
+## Preface
 
-TEXT
+
+
+## 1.
+
+## 2.
+
+## 3.
