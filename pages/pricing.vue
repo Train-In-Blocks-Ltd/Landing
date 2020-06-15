@@ -43,9 +43,12 @@
       </h1><br>
       <div class="container--comparison">
         <div class="container--tib">
-          <p class="list__name">
-            Train In Blocks
-          </p>
+          <div class="tib">
+            <inline-svg class="icon" :src="require('../assets/svg/Icon.svg')" />
+            <p class="list__name">
+              Train In Blocks
+            </p>
+          </div>
           <ul>
             <li class="list__desc">
               <b>£10 per month</b> for unlimited clients, that's it!
@@ -78,12 +81,15 @@
         </h1>
         <div class="container--comp">
           <div v-for="item in overview" :key="item.id" class="list--overview">
-            <p class="list__name">
-              {{ item.name }}
-            </p>
-            <p class="list__desc">
-              {{ item.desc }}
-            </p>
+            <img class="icon" :src="require('../assets/comp/' + item.icon)">
+            <div>
+              <p class="list__name">
+                {{ item.name }}
+              </p>
+              <p class="list__desc">
+                {{ item.desc }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -93,7 +99,12 @@
 </template>
 
 <script>
+import InlineSvg from 'vue-inline-svg'
+
 export default {
+  components: {
+    InlineSvg
+  },
   data () {
     return {
       title: 'Yes. That\'s It.',
@@ -102,10 +113,9 @@ export default {
       isOpen: true,
       tibInfo: 'Train In Blocks',
       overview: [
-        { id: 1, name: 'TrueCoach', desc: '$99 per month for 50 clients' },
-        { id: 2, name: 'My PT Hub', desc: '£49 per month for full access' },
-        { id: 3, name: 'PTminder', desc: 'Cheapest plan for £25 per month' },
-        { id: 4, name: 'PT Distinction', desc: '$80 for 50 clients' }
+        { id: 1, name: 'TrueCoach', icon: 'truecoach.jpg', desc: '$99 per month for 50 clients' },
+        { id: 2, name: 'My PT Hub', icon: 'mypthub.jpg', desc: '£49 per month for full access' },
+        { id: 3, name: 'PTminder', icon: 'ptminder.jpg', desc: 'Cheapest plan for £25 per month' }
       ]
     }
   },
@@ -173,8 +183,7 @@ export default {
     margin: auto
   }
   .container--comp {
-    display: grid;
-    grid-gap: 3rem
+    display: grid
   }
   .list__name {
     font-weight: bold;
@@ -184,6 +193,19 @@ export default {
   .list__desc {
     margin: 1rem 0;
     list-style-type: square
+  }
+  .list--overview, .tib {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    grid-gap: 2rem
+  }
+  .icon {
+    height: 44px;
+    width: 44px;
+    margin: 1rem 0 0 0
+  }
+  .tib {
+    margin: 0 0 2rem 0
   }
 
   /* Other */
@@ -204,17 +226,17 @@ export default {
     .list__name {
       font-size: 1.6rem
     }
-  }
-  @media (max-width: 576px) {
-    .pricing__plans {
-      background-color: transparent;
-      box-shadow: none
-    }
     .title--compare {
       text-align: left
     }
     .container--comparison {
       grid-template: repeat(3, .2fr) / 1fr
+    }
+  }
+  @media (max-width: 576px) {
+    .pricing__plans {
+      background-color: transparent;
+      box-shadow: none
     }
   }
 </style>

@@ -15,7 +15,7 @@
       <h1 class="text--right main-title" style="grid-area: bT">
         Speed, simplicity and functionality is our philosophy.
       </h1>
-      <img id="img--deviceTablet" style="grid-area: bI" src="../assets/DeviceTablet.png" />
+      <img id="img--deviceTablet" style="grid-area: bI" src="../assets/DeviceTablet.png">
       <h1 class="main-title" style="grid-area: cT">
         Use features that you only need, save your money and expand.
       </h1>

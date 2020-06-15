@@ -27,19 +27,22 @@
     font-size: 2rem;
     margin: 0 0 1.5rem 0
   }
+  h1, h2 {
+    margin: 2rem 0 1rem 0
+  }
   p {
     line-height: 1.4;
-    margin: 0
+    margin: 1rem 0
   }
   .vm--modal {
     padding: 1rem 1.6rem
   }
 
   /* IOS Disable Corners */
-  textarea, input.text, input[type='text'], input[type='button'], input[type='button']:hover, input[type='button']:active, input[type='submit'], .input-checkbox, #mce-EMAIL, select {
+  textarea, input.text, input[type='text'], input[type='button'], input[type='button']:hover, input[type='button']:active, input[type='submit'], .input-checkbox, #mce-EMAIL, select, select:focus, select:active, input:active, input:focus {
     -webkit-appearance: none;
     outline-width: 0;
-    border-radius: 0
+    border-radius: 3px
   }
 
   /* GLOBAL: Email */
@@ -102,17 +105,19 @@
   }
 
   /* GLOBAL: Inputs and Buttons */
-  input, button {
+  input {
     background-color: transparent
   }
-  button {
+  button, #mc-embedded-subscribe {
     outline-width: 0;
-    border: 1px solid #282828;
+    border: 0;
+    background-color: white;
+    box-shadow: 0 0 20px 10px #28282815;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .15rem;
     cursor: pointer;
-    transition: all 400ms cubic-bezier(.165, .84, .44, 1)
+    transition: background-color .6s, color .6s, transform .1s cubic-bezier(.165, .84, .44, 1)
   }
   button:not(:disabled):hover, #mc-embedded-subscribe:hover {
     background-color: #282828;
@@ -156,7 +161,7 @@
     margin: 0
   }
   .spacer--small {
-    height: 5vh
+    height: 6vh
   }
   .spacer {
     height: 10vh
@@ -340,9 +345,6 @@
     .paper--title {
       font-size: 3rem
     }
-    .spacer {
-      height: 5vh
-    }
     footer a.input--option {
       display: grid;
       margin: 1rem 0
@@ -383,9 +385,6 @@
     }
 
     /* Misc. */
-    .spacer {
-      height: 5vh
-    }
     #logo--home {
       width: 8rem
     }
