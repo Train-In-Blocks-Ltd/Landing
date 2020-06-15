@@ -86,6 +86,17 @@
     transform: scale(.9)
   }
 
+  /* GLOBAL: Top bar */
+  .wrapper--top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem
+  }
+  #logo--home {
+    width: 10rem;
+    height: auto
+  }
+
   /* GLOBAL: To Top */
   .to-top {
     opacity: 0;
@@ -144,6 +155,15 @@
   }
 
   /* GLOBAL: Footer */
+  .cookieControl__BarContainer {
+    padding: 2rem 6rem
+  }
+  .cookieControl__BarContainer p, .cookieControl__BarContainer button {
+    font-size: .8rem
+  }
+  iframe#jsd-widget {
+    left: 0
+  }
   footer {
     padding: 2rem 0;
     background-color: white;
@@ -166,11 +186,6 @@
   }
   .spacer {
     height: 10vh
-  }
-  #logo--home {
-    width: 10rem;
-    height: auto;
-    margin: 5rem 0 0 0
   }
   .countdown--wrapper {
     display: grid;
@@ -310,7 +325,7 @@
   }
   @media (max-width: 992px) {
     body {
-      padding: 0 6%
+      padding: 0 4%
     }
     #mce-EMAIL {
       width: 60%
@@ -328,6 +343,10 @@
     }
   }
   @media (max-width: 768px) {
+    .cookieControl__BarContainer {
+      padding: 2rem 4rem
+    }
+
     /* Nav */
     .container--nav {
       height: fit-content;
@@ -414,7 +433,10 @@
 
 <template>
   <div id="app">
-    <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('../assets/svg/LogoV12.svg')" />
+    <script data-jsd-embedded data-key="200dadd3-915c-4769-ba8d-ec7792145827" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+    <div class="wrapper--top-bar">
+      <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('../assets/svg/LogoV12.svg')" />
+    </div>
     <div class="countdown--wrapper animated fadeIn delay-1s">
       <div class="container--countdown">
         <h2 class="sub-title">
@@ -473,6 +495,9 @@
         <nuxt-link class="input--option" to="/blog">
           Blog
         </nuxt-link>
+        <a class="input--option get-help" href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3" target="_blank">
+          Help
+        </a>
         <br>
       </nav>
     </div>
@@ -485,10 +510,12 @@
       <div class="nav--footer">
         <CookieControl>
           <template v-slot:bar>
-            <p>We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our Cookies Policy</p><br>
-            <nuxt-link class="input--option" to="/cookie-policy">
-              <b>Read More</b>
-            </nuxt-link>
+            <p>
+              We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
+              <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/cookie-policy">
+                <b>Cookies Policy</b>.
+              </nuxt-link>
+            </p>
           </template>
         </CookieControl>
         <div class="social-bar">
