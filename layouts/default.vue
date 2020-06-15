@@ -59,6 +59,7 @@
     outline-width: 0;
     border: none;
     border-bottom: 1px solid #282828;
+    border-radius: 0;
     transition: all .6s cubic-bezier(.165, .84, .44, 1)
   }
   #mce-EMAIL:hover, #mce-EMAIL:focus {
