@@ -24,7 +24,7 @@ Currently, the fitness industry is not very much on pause. New developments in r
 
 Here are some statistics for you. People are looking to improve their diet! More specifically, **37% of UK consumers and 55% of Italian** consumers said that COVID-19 has caused them to eat healthier to support their immune systems. It was also reported that the majority of people that are eating healthier are between the ages of 16-34.
 
-By providing nutritional advice and plans could add that **extra value** to your service. It is important to note that you should always act within your scope of practice. I’m sure that you are well-aware of how poor advice could affect your reputation as a trainer; therefore, be safe and be honest.
+By providing nutritional advice and plans could add that **extra value** to your services. It is important to note that you should always act within your scope of practice. I’m sure that you are well-aware of how poor advice could affect your reputation as a trainer; therefore, be safe and be honest.
 
 If you feel that you are lacking in knowledge, don’t be afraid to seek out a nutritional CPD, diploma or a degree pathway. An example of this could be a course such as the one provided by *Precision Nutrition*.
 
@@ -40,7 +40,7 @@ However, you cannot replace that kind of focus and care from a great personal tr
 
 Here’s a quick overview of some techniques you could implement:
 
-1. Make sure you are optimising your marketing strategies to target your specific audience Otherwise, you just become another PT in the crowd.
+1. Make sure you are optimising your marketing strategies to target your specific audience. Otherwise, you just become another PT in the crowd.
 
 2. Give out free content. A lot of it. Not only it’s great for brand awareness, but it also gives you the opportunity to teach and reinforce your own knowledge.
 
