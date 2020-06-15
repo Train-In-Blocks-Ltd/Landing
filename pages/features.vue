@@ -414,6 +414,7 @@ export default {
         scales: {
           yAxes: [{
             ticks: {
+              suggestedMin: 0,
               beginAtZero: false
             }
           }]
