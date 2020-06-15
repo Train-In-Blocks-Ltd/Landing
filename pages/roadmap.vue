@@ -152,7 +152,7 @@ export default {
       width: 70%
     }
     #vote {
-      height: 10vh
+      height: 16vh
     }
     #title--involved {
       margin: auto

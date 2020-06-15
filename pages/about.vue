@@ -98,14 +98,19 @@ export default {
 
   /* Responsiveness */
   @media (max-width: 992px) {
+    .container--desc-text {
+      padding: 1rem 0
+    }
+    .container--desc-text h1 {
+      font-size: 2.4rem;
+      margin: 1rem 0
+    }
+  }
+  @media (max-width: 768px) {
     .container--2c, .container--2c.subscribe, .container--2c.intro {
       grid-template-columns: 1fr;
       grid-template-areas: 'b' 'a';
       grid-gap: 0
-    }
-    .container--desc-text h1 {
-      font-size: 2rem;
-      margin: 1rem 0
     }
   }
   @media (max-width: 576px) {

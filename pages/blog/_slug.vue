@@ -1,4 +1,8 @@
 <style scoped>
+  .blog--body {
+    padding: 6rem;
+    background-color: #F6F6F6
+  }
   .container--share {
     display: grid;
     grid-gap: 1rem;
@@ -31,16 +35,34 @@
   .container--share a:active {
     opacity: .6
   }
-
+  @media (min-width: 1440px) {
+    .blog--body {
+      padding: 6rem 20rem
+    }
+  }
+  @media (max-width: 992px) {
+    .blog--body {
+      padding: 6rem
+    }
+  }
   @media (max-width: 768px) {
     .container--share a:hover:before {
       opacity: 0
+    }
+    .blog--body {
+      padding: 4rem
+    }
+  }
+  @media (max-width: 567px) {
+    .blog--body {
+      padding: 0;
+      background-color: white
     }
   }
 </style>
 
 <template>
-  <div>
+  <div class="blog--body">
     <div v-html="html" />
     <div class="container--share">
       <h3>Share on:</h3>
