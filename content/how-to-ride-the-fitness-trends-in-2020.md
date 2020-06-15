@@ -70,6 +70,8 @@ Look. The industry is now packed full of apps and ready-made online programmes t
 
 Speaking of which, be sure to check out our app that you can use to create a bespoke programme in a matter of minutes - not hours. Not to forget that it’s only **£10 a month (save 15% on an annual plan)** with amazing up and coming features. Give one of our main features a try [here](http://www.traininblocks.com/features).
 
+<br>
+
 ---
 
 Mintel, (2020). How COVID-19 is boosting our predicted trends for 2030? [online] Available at: [http://www.mintel.com](http://www.mintel.com) [Accessed 14 June 2020]
