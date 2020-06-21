@@ -24,7 +24,6 @@ Following our core values and philosophy, we love cutting-to-the-chase and simpl
 
 ![High-quality](/blog-img/01/quality.svg)
 
-
 ## 2. High-quality content
 
 To make the most of your time, all of our content will be of outstanding quality to ensure that you can really benefit from what it preaches.
