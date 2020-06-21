@@ -1,4 +1,5 @@
 ---
+id: 3
 title: 3 ways to impress your clients
 slug: 3-ways-to-impress-your-clients
 img: /03/man-indoor-pose.jpg
@@ -28,7 +29,7 @@ It’s also important to keep some of this quiet and use it to surprise them. It
 
 You should be keeping in contact with your clients throughout the entire personal training experience. From start to finish. This will build great rapport and it will feel like a real friendship that they would hate to have less of.
 
-You can use the information that you have gathered to show how much you care by sending resources that will help them reach their goals faster. For example, the client wanted to know which shoes are good for running. You’ll give them an explanation in the session and follow-up with a few Google searches later that day. Then send them a message like: 
+You can use the information that you have gathered to show how much you care by sending resources that will help them reach their goals faster. For example, the client wanted to know which shoes are good for running. You’ll give them an explanation in the session and follow-up with a few Google searches later that day. Then send them a message like:
 
 “Hey \[client\], I’ve taken the time to look around for some running shoes for you as you’ve asked earlier. These are quite nice and I’ve picked them from different price ranges so you can find one that suits your budget. Get back to me with what you think, would love to hear which one you’ve picked and to answer any questions.”
 

@@ -86,7 +86,7 @@
       Learn something new
     </h1>
     <div class="container--blog">
-      <div v-for="post in posts.slice().reverse()" :key="post.attributes.title" class="blog-post">
+      <div v-for="post in posts.slice().reverse()" :key="post.attributes.id" class="blog-post">
         <div class="blog-post__top-wrapper">
           <div>
             <h2 class="blog-post__title">

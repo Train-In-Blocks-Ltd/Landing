@@ -119,7 +119,7 @@
   input {
     background-color: transparent
   }
-  button, #mc-embedded-subscribe {
+  button:not(.ql-header):not(.ql-bold):not(.ql-italic):not(.ql-underline):not(.ql-script):not(.ql-list):not(.ql-indent):not(.ql-link):not(.ql-clean), #mc-embedded-subscribe {
     border-radius: 3px;
     outline-width: 0;
     border: 0;
