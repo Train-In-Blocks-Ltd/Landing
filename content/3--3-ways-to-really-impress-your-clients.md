@@ -1,9 +1,8 @@
 ---
-id: 3
-title: 3 ways to impress your clients
-slug: 3-ways-to-impress-your-clients
+title: 3 ways to really impress your clients
+slug: 3--3-ways-to-really-impress-your-clients
 img: /03/man-indoor-pose.jpg
-excerpt: Take less than two minutes to find out how this blog will benefit you greatly.
+excerpt: Here are some good ways to improve your client retention and satisfaction.
 ---
 
 **Mikey Lau**  
@@ -11,7 +10,7 @@ excerpt: Take less than two minutes to find out how this blog will benefit you g
 
 ---
 
-# 3 ways to impress your clients
+# 3 ways to really impress your clients
 
 <br><br>
 

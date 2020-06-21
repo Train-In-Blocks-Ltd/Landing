@@ -58,8 +58,8 @@ export default {
     }
   },
   mounted () {
-    this.$parent.$parent.metaHelper.title = 'Free Content for Personal Trainers'
-    this.$parent.$parent.metaHelper.description = 'We offer so much more than just software for fitness trainers and coaches. Access our free content on health and fitness related topics.'
+    this.$parent.$parent.metaHelper.title = 'Our Philosophy'
+    this.$parent.$parent.metaHelper.description = 'Find more about our core values and what we stand for!'
   }
 }
 </script>
