@@ -132,8 +132,8 @@ export default {
     }
   },
   mounted () {
-    this.$parent.$parent.metaHelper.title = 'Learn'
-    this.$parent.$parent.metaHelper.description = 'Free high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.'
+    this.$parent.$parent.metaHelper.title = 'Free Content for Personal Trainers'
+    this.$parent.$parent.metaHelper.description = 'Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.'
   },
   methods: {
     getPermalink (post) {

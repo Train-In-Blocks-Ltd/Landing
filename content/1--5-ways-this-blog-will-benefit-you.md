@@ -1,6 +1,6 @@
 ---
 title: 5 ways this blog will benefit you
-slug: 5-ways-this-blog-will-benefit-you
+slug: 1--5-ways-this-blog-will-benefit-you
 img: /01/man-beach-run.jpg
 excerpt: Take less than two minutes to find out how this blog will benefit you greatly.
 ---
@@ -23,7 +23,6 @@ Following our core values and philosophy, we love cutting-to-the-chase and simpl
 <br><br>
 
 ![High-quality](/blog-img/01/quality.svg)
-
 
 ## 2. High-quality content
 

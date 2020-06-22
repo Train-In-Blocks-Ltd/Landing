@@ -119,7 +119,7 @@
   input {
     background-color: transparent
   }
-  button, #mc-embedded-subscribe {
+  button:not(.ql-header):not(.ql-bold):not(.ql-italic):not(.ql-underline):not(.ql-script):not(.ql-list):not(.ql-indent):not(.ql-link):not(.ql-clean), #mc-embedded-subscribe {
     border-radius: 3px;
     outline-width: 0;
     border: 0;
@@ -433,7 +433,7 @@
 
 <template>
   <div id="app">
-    <script data-jsd-embedded data-key="200dadd3-915c-4769-ba8d-ec7792145827" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
+    <script data-jsd-embedded data-key="200dadd3-915c-4769-ba8d-ec7792145827" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js" />
     <div class="wrapper--top-bar">
       <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('../assets/svg/LogoV12.svg')" />
     </div>
