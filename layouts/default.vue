@@ -10,11 +10,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: left;
-    color: #282828
+    color: #282828;
+    background-color: #F6F6F6
   }
   body {
     margin: 0;
-    padding: 0 8%;
     letter-spacing: .1rem;
     font-size: 16px;
     overflow-x: hidden
@@ -37,64 +37,19 @@
   .vm--modal {
     padding: 1rem 1.6rem
   }
+  .wrapper--app {
+    background-color: white;
+    padding: 0 8%;
+    transition: transform .6s cubic-bezier(.165, .84, .44, 1)
+  }
+  .center {
+    text-align: center
+  }
 
   /* IOS Disable Corners */
   textarea, input.text, input[type='text'], input[type='button'], input[type='button']:hover, input[type='button']:active, input[type='submit'], .input-checkbox, #mce-EMAIL, select, select:focus, select:active, input:active, input:focus {
     -webkit-appearance: none;
     outline-width: 0
-  }
-
-  /* GLOBAL: Email */
-  #mc-embedded-subscribe-form {
-    margin: 4rem 0
-  }
-  #mc-embedded-subscribe-form label {
-    font-weight: bold;
-    font-size: 2rem
-  }
-  #mce-EMAIL {
-    opacity: .6;
-    padding: .4rem;
-    font-size: 1rem;
-    width: 40%;
-    margin: 1rem 0;
-    outline-width: 0;
-    border: none;
-    border-bottom: 1px solid #282828;
-    border-radius: 0;
-    transition: all .6s cubic-bezier(.165, .84, .44, 1)
-  }
-  #mce-EMAIL:hover, #mce-EMAIL:focus {
-    width: 45%;
-    opacity: 1
-  }
-  #mc-embedded-subscribe {
-    cursor: pointer;
-    padding: .4rem 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: transparent;
-    border: 1px solid #282828;
-    outline-width: 0;
-    transition: all .2s cubic-bezier(.165, .84, .44, 1)
-  }
-  #mc-embedded-subscribe:hover {
-    color: white;
-    background-color: #282828
-  }
-  #mc-embedded-subscribe:active {
-    transform: scale(.9)
-  }
-
-  /* GLOBAL: Top bar */
-  .wrapper--top-bar {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 6rem
-  }
-  #logo--home {
-    width: 10rem;
-    height: auto
   }
 
   /* GLOBAL: To Top */
@@ -154,6 +109,99 @@
     margin: 0
   }
 
+  /* GLOBAL: Nav */
+  .navOpen {
+    transform: rotate(-2deg) translateX(-8rem)
+  }
+  #logo--home {
+    width: 10rem;
+    height: auto
+  }
+  .container--nav {
+    display: flex;
+    margin: 0 0 6rem 0;
+    justify-content: space-between;
+    height: 8vh;
+    animation-delay: 100ms
+  }
+  #nav--main {
+    display: grid;
+    grid-gap: 2rem;
+    text-align: right;
+    position: fixed;
+    right: 2rem;
+    top: 2.8rem
+  }
+
+  /* Nav Hover Animation */
+  .nav-button {
+    cursor: pointer;
+    transition: opacity .6s, transform .1s cubic-bezier(.165, .84, .44, 1)
+  }
+  .nav-button:hover {
+    opacity: .6
+  }
+  .nav-button:active {
+    transform: scale(.9)
+  }
+  .input--option {
+    position: relative;
+    margin: 0 0 0 2rem;
+    text-decoration: none;
+    color: #282828;
+    transition: 300ms
+  }
+  .input--option:hover {
+    opacity: .4
+  }
+  nav a.nuxt-link-exact-active {
+    font-weight: bold
+  }
+
+  /* GLOBAL: Email */
+  #mc-embedded-subscribe-form {
+    margin: 4rem 0
+  }
+  #mc-embedded-subscribe-form label {
+    font-weight: bold;
+    font-size: 2rem
+  }
+  #mce-EMAIL {
+    opacity: .6;
+    padding: .4rem;
+    font-size: 1rem;
+    width: 40%;
+    margin: 1rem 0;
+    outline-width: 0;
+    border: none;
+    border-bottom: 1px solid #282828;
+    border-radius: 0;
+    transition: all .6s cubic-bezier(.165, .84, .44, 1)
+  }
+  #mce-EMAIL:hover, #mce-EMAIL:focus {
+    width: 45%;
+    opacity: 1
+  }
+  #mc-embedded-subscribe {
+    padding: .4rem 1rem
+  }
+
+  /* GLOBAL: Footer Social Icons */
+  .social-icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 1rem 2rem 0;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .4s, transform .1s cubic-bezier(.165, .84, .44, 1)
+  }
+  .social-icon:hover {
+    opacity: .6
+  }
+  .social-icon:active {
+    transform: scale(.9)
+  }
+
   /* GLOBAL: Footer */
   .cookieControl__BarContainer {
     padding: 2rem 6rem
@@ -186,56 +234,6 @@
   }
   .spacer {
     height: 10vh
-  }
-  .countdown--wrapper {
-    display: grid;
-    margin: 4rem 0;
-    animation-delay: 600ms
-  }
-  .container--countdown {
-    letter-spacing: .4rem;
-    font-size: 1.5rem
-  }
-  .countdown--desc {
-    margin: 2rem 0
-  }
-
-  /* GLOBAL: Nav */
-  .container--nav {
-    display: flex;
-    margin: 0 0 6rem 0;
-    justify-content: flex-end;
-    height: 8vh;
-    animation-delay: 100ms
-  }
-  .social-icon {
-    width: 25px;
-    height: 25px;
-    margin: 0 1rem 2rem 0;
-    cursor: pointer;
-    opacity: 1;
-    transition: opacity .4s, transform .1s cubic-bezier(.165, .84, .44, 1)
-  }
-  .social-icon:hover {
-    opacity: .6
-  }
-  .social-icon:active {
-    transform: scale(.9)
-  }
-
-  /* Nav Hover Animation */
-  .input--option {
-    position: relative;
-    margin: 0 0 0 2rem;
-    text-decoration: none;
-    color: #282828;
-    transition: 300ms
-  }
-  .input--option:hover {
-    opacity: .4
-  }
-  nav a.nuxt-link-exact-active {
-    font-weight: bold
   }
 
   /* Quill */
@@ -324,9 +322,6 @@
     }
   }
   @media (max-width: 992px) {
-    body {
-      padding: 0 4%
-    }
     #mce-EMAIL {
       width: 60%
     }
@@ -345,20 +340,6 @@
   @media (max-width: 768px) {
     .cookieControl__BarContainer {
       padding: 2rem 4rem
-    }
-
-    /* Nav */
-    .container--nav {
-      height: fit-content;
-      margin-bottom: 3rem
-    }
-    #nav--main {
-      display: grid;
-      justify-items: right
-    }
-    .input--option {
-      width: fit-content;
-      margin: .4rem 0
     }
 
     /* Misc. */
@@ -393,13 +374,6 @@
   }
   @media (max-width: 576px) {
     /* Containers */
-    .container--countdown h2 {
-      font-size: 1rem
-    }
-    .container--countdown p {
-      font-size: .8rem;
-      margin: .6rem 0
-    }
     .container--features {
       grid-gap: 2rem
     }
@@ -422,151 +396,141 @@
     .main-title {
       font-size: 1.5rem
     }
-
-    /* Containers */
-    .container--countdown p {
-      font-size: .5rem;
-      margin: .4rem 0
-    }
   }
 </style>
 
 <template>
   <div id="app">
     <script data-jsd-embedded data-key="200dadd3-915c-4769-ba8d-ec7792145827" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js" />
-    <div class="wrapper--top-bar">
-      <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('../assets/svg/LogoV12.svg')" />
-    </div>
-    <div class="countdown--wrapper animated fadeIn delay-1s">
-      <div class="container--countdown">
-        <h2 class="sub-title">
-          01.08.20
-        </h2>
-        <Countdown end="August 1, 2020" />
-        <p class="countdown--desc">
-          <b>BETA RELEASE</b>
-        </p>
-      </div>
-    </div>
-    <form
-      id="mc-embedded-subscribe-form"
-      action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
-      method="post"
-      name="mc-embedded-subscribe-form"
-      class="validate animated fadeInLeft"
-      target="_blank"
-      novalidate
-    >
-      <label for="mce-EMAIL">Get Notified When We Launch!</label><br>
-      <input
-        id="mce-EMAIL"
-        type="email"
-        value=""
-        name="EMAIL"
-        class="email"
-        placeholder="Email"
-        required
-      >
-      <div style="position: absolute; left: -5000px" aria-hidden="true">
-        <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
-      </div>
-      <div class="clear">
-        <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
-      </div>
-    </form>
-    <div id="nav--top" class="spacer--small" />
-    <div class="container--nav animated bounceInLeft">
-      <nav id="nav--main">
-        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/">
+    <transition enter-active-class="animated fadeInRight faster" leave-active-class="animated fadeOutRight faster">
+      <nav v-show="openNav" id="nav--main">
+        <nuxt-link class="input--option" to="/" @click.native="openNav = false">
           Welcome
         </nuxt-link>
-        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/features">
+        <nuxt-link class="input--option" to="/features" @click.native="openNav = false">
           Features
         </nuxt-link>
-        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/pricing">
+        <nuxt-link class="input--option" to="/pricing" @click.native="openNav = false">
           Pricing
         </nuxt-link>
-        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/roadmap">
+        <nuxt-link class="input--option" to="/roadmap" @click.native="openNav = false">
           Roadmap
         </nuxt-link>
-        <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/about">
+        <nuxt-link class="input--option" to="/about" @click.native="openNav = false">
           About
         </nuxt-link>
-        <nuxt-link class="input--option" to="/blog">
+        <nuxt-link class="input--option" to="/blog" @click.native="openNav = !openNav">
           Blog
         </nuxt-link>
-        <a class="input--option get-help" href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3" target="_blank">
+        <a class="input--option get-help" href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3" target="_blank" @click="openNav = false">
           Help
         </a>
         <br>
       </nav>
-    </div>
-    <div class="animated fadeInUp">
-      <transition enter-active-class="animated fadeInRight delay-1s" leave-active-class="animated fadeOut">
-        <nuxt />
-      </transition>
-    </div>
-    <footer>
-      <div class="nav--footer">
-        <CookieControl>
-          <template v-slot:bar>
-            <p>
-              We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
-              <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/cookie-policy">
-                <b>Cookies Policy</b>.
-              </nuxt-link>
-            </p>
-          </template>
-        </CookieControl>
-        <div class="social-bar">
-          <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
-          <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
-          <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')" /></a>
-          <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
+    </transition>
+    <div :class="{ navOpen: openNav }" class="wrapper--app">
+      <div id="nav--top" class="spacer--small" />
+      <div class="container--nav animated bounceInLeft">
+        <nuxt-link to="/">
+          <inline-svg id="logo--home" class="nav-button" :src="require('../assets/svg/LogoV12.svg')" />
+        </nuxt-link>
+        <inline-svg v-show="!openNav" class="nav-button" :src="require('../assets/svg/hamburger.svg')" @click="openNav = true" />
+        <inline-svg v-show="openNav" class="nav-button" :src="require('../assets/svg/close.svg')" @click="openNav = false" />
+      </div>
+      <div class="animated fadeIn">
+        <transition enter-active-class="animated fadeIn delay-1s" leave-active-class="animated fadeOut">
+          <nuxt />
+        </transition>
+      </div>
+      <div class="spacer--small" />
+      <form
+        id="mc-embedded-subscribe-form"
+        action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
+        method="post"
+        name="mc-embedded-subscribe-form"
+        class="validate animated fadeInLeft"
+        target="_blank"
+        novalidate
+      >
+        <label for="mce-EMAIL">Get Notified When We Launch!</label><br>
+        <input
+          id="mce-EMAIL"
+          type="email"
+          value=""
+          name="EMAIL"
+          class="email"
+          placeholder="Email"
+          required
+        >
+        <div style="position: absolute; left: -5000px" aria-hidden="true">
+          <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
         </div>
-        <div>
-          <nuxt-link class="input--option" to="/gdpr">
-            GDPR Statement
-          </nuxt-link>
-          <nuxt-link class="input--option" to="/privacy-policy">
-            Privacy Policy
-          </nuxt-link>
-          <nuxt-link class="input--option" to="/cookie-policy">
-            Cookies Policy
-          </nuxt-link>
-          <nuxt-link class="input--option" to="/terms-conditions">
-            Terms & Conditions
-          </nuxt-link>
+        <div class="clear">
+          <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
         </div>
-      </div><br>
-      <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with some icons!</p>
-    </footer>
-    <a
-      v-if="scrollpx > 800"
-      v-scroll-to="{
-        el: '#nav--top',
-        duratiob: 1200,
-        easing: 'ease'
-      }"
-      class="to-top"
-    >
-      <inline-svg id="to-top__icon" :src="require('../assets/svg/Top.svg')" />
-    </a>
+      </form>
+      <div class="spacer" />
+      <footer>
+        <div class="nav--footer">
+          <CookieControl>
+            <template v-slot:bar>
+              <p>
+                We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
+                <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/cookie-policy">
+                  <b>Cookies Policy</b>.
+                </nuxt-link>
+              </p>
+            </template>
+          </CookieControl>
+          <div class="social-bar">
+            <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
+            <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
+            <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')" /></a>
+            <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
+          </div>
+          <div>
+            <nuxt-link class="input--option" to="/gdpr">
+              GDPR Statement
+            </nuxt-link>
+            <nuxt-link class="input--option" to="/privacy-policy">
+              Privacy Policy
+            </nuxt-link>
+            <nuxt-link class="input--option" to="/cookie-policy">
+              Cookies Policy
+            </nuxt-link>
+            <nuxt-link class="input--option" to="/terms-conditions">
+              Terms & Conditions
+            </nuxt-link>
+          </div>
+        </div><br>
+        <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with some icons!</p>
+      </footer>
+      <a
+        v-if="scrollpx > 800"
+        v-scroll-to="{
+          el: '#nav--top',
+          duratiob: 1200,
+          easing: 'ease'
+        }"
+        class="to-top"
+      >
+        <inline-svg id="to-top__icon" :src="require('../assets/svg/Top.svg')" />
+      </a>
+    </div>
   </div>
 </template>
 
 <script>
 import InlineSvg from 'vue-inline-svg'
-import Countdown from '../components/Countdown'
 
 export default {
   name: 'App',
   components: {
-    InlineSvg,
-    Countdown
+    InlineSvg
   },
   data () {
     return {
+      openNav: false,
       descSub: 'Get Notified When We Launch',
       scrollpx: 0,
       metaHelper: {
