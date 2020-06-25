@@ -118,7 +118,7 @@
     display: grid;
     grid-template-columns: .4fr 1fr;
     width: 100%;
-    margin: 4rem 0
+    margin: 2rem 0 6rem 0
   }
   .container--features > div > p {
     width: 80%;

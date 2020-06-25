@@ -16,7 +16,7 @@
       'aI aT'
       'bT bI'
       'cI cT';
-    grid-gap: 4rem;
+    grid-gap: 10rem;
     height: auto
   }
   #container--2c3r > div {
