@@ -125,10 +125,6 @@
       <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device PC">
     </div>
     <div class="spacer" />
-    <h1 class="main-title center">
-      Save more time and get more clients.
-    </h1>
-    <div class="spacer" />
     <div id="container--2c3r">
       <h1 class="main-title" style="grid-area: aT">
         We've taken exercise programming to the next level.
@@ -139,7 +135,7 @@
       </h1>
       <img id="img--deviceTablet" style="grid-area: bI" src="../assets/DeviceTablet.png">
       <h1 class="main-title" style="grid-area: cT">
-        Use features that you only need, save your money and expand.
+        Save more time and get more clients.
       </h1>
       <inline-svg style="grid-area: cI" :src="require('../assets/svg/FlyArrow.svg')" />
     </div>

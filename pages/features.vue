@@ -35,7 +35,7 @@
   }
   .wrapper--workout {
     height: fit-content;
-    background-color: #F4F4F4;
+    box-shadow: 0 0 14px 6px #28282808;
     transition: all 1s cubic-bezier(.165, .84, .44, 1)
   }
   .workouts--workout {
@@ -73,8 +73,7 @@
     padding: 0
   }
   .activeWorkout {
-    background-color: white;
-    box-shadow: 0 0 20px 10px #28282810
+    box-shadow: 0 0 20px 10px #28282820
   }
 
   /* Chart */
@@ -95,7 +94,6 @@
     margin-top: 0
   }
   #dataName, #dataType {
-    width: 70%;
     font-size: 1.6rem
   }
   .container--desc-data {
@@ -471,7 +469,7 @@ export default {
       })
       let x = 1
       for (; x <= this.yData.length; x++) {
-        this.xLabel.push('Workout ' + x)
+        this.xLabel.push(x)
       }
       this.descStats(dataForType)
       this.fillData()

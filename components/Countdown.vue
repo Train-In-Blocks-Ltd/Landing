@@ -42,7 +42,7 @@
       font-size: .8rem
     }
   }
-  @media (max-width: 560px) {
+  @media (max-width: 576px) {
     .countdown--wrapper {
       margin: 6rem 0
     }
