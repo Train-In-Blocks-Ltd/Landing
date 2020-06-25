@@ -47,7 +47,7 @@
   }
 
   /* IOS Disable Corners */
-  textarea, input.text, input[type='text'], input[type='button'], input[type='button']:hover, input[type='button']:active, input[type='submit'], .input-checkbox, #mce-EMAIL, select, select:focus, select:active, input:active, input:focus {
+  textarea, input.text, input[type='text'], input[type='button'], input[type='button']:hover, input[type='button']:active, input[type='submit'], .input-checkbox, #mce-EMAIL, input:active, input:focus {
     -webkit-appearance: none;
     outline-width: 0
   }
@@ -98,13 +98,14 @@
     cursor: default
   }
   select {
+    cursor: pointer;
     background-color: transparent;
-    border: 1px solid #282828;
+    border: none;
+    border-radius: 3px;
     padding: .2rem .6rem;
     width: fit-content;
     font-weight: bold;
     font-size: 1rem;
-    outline-width: 0;
     letter-spacing: .1rem;
     margin: 0
   }

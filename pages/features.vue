@@ -96,8 +96,7 @@
   }
   #dataName, #dataType {
     width: 70%;
-    font-size: 1.6rem;
-    outline-width: 0
+    font-size: 1.6rem
   }
   .container--desc-data {
     margin: 2rem 0
