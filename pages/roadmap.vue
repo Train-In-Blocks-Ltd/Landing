@@ -95,7 +95,7 @@ export default {
   /* Misc. */
   #roadmap {
     display: grid;
-    margin: 3rem 0;
+    margin: 2rem 0 6rem 0;
     grid-template-columns: .2fr 1fr
   }
   .roadmap__progress {
@@ -141,8 +141,7 @@ export default {
   @media (max-width: 576px) {
     #roadmap {
       grid-template-columns: 1fr;
-      grid-gap: 1rem;
-      margin: 3rem 0
+      grid-gap: 1rem
     }
     .container--2c {
       grid-template-columns: 1fr

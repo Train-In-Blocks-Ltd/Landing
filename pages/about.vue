@@ -103,7 +103,8 @@ export default {
     }
     .container--desc-text h1 {
       font-size: 2.4rem;
-      margin: 1rem 0
+      margin: 1rem 0;
+      text-align: right
     }
   }
   @media (max-width: 768px) {

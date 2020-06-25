@@ -42,12 +42,9 @@
     padding: 0 8%;
     transition: transform .6s cubic-bezier(.165, .84, .44, 1)
   }
-  .center {
-    text-align: center
-  }
 
   /* IOS Disable Corners */
-  textarea, input.text, input[type='text'], input[type='button'], input[type='button']:hover, input[type='button']:active, input[type='submit'], .input-checkbox, #mce-EMAIL, select, select:focus, select:active, input:active, input:focus {
+  textarea, input.text, input[type='text'], input[type='button'], input[type='button']:hover, input[type='button']:active, input[type='submit'], .input-checkbox, #mce-EMAIL, input:active, input:focus {
     -webkit-appearance: none;
     outline-width: 0
   }
@@ -74,12 +71,12 @@
   input {
     background-color: transparent
   }
-  button:not(.ql-header):not(.ql-bold):not(.ql-italic):not(.ql-underline):not(.ql-script):not(.ql-list):not(.ql-indent):not(.ql-link):not(.ql-clean), #mc-embedded-subscribe {
+  button, #mc-embedded-subscribe {
     border-radius: 3px;
     outline-width: 0;
     border: 0;
     background-color: white;
-    box-shadow: 0 0 20px 10px #28282815;
+    box-shadow: 0 0 14px 6px #28282816;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .15rem;
@@ -98,13 +95,14 @@
     cursor: default
   }
   select {
+    cursor: pointer;
     background-color: transparent;
-    border: 1px solid #282828;
+    border: none;
+    border-radius: 3px;
     padding: .2rem .6rem;
     width: fit-content;
     font-weight: bold;
     font-size: 1rem;
-    outline-width: 0;
     letter-spacing: .1rem;
     margin: 0
   }
@@ -239,6 +237,9 @@
   /* Quill */
   div.ql-toolbar.ql-snow {
     border: none
+  }
+  .ql-header, .ql-bold, .ql-italic, .ql-underline, .ql-script, .ql-list, .ql-indent, .ql-link, .ql-clean {
+    box-shadow: none
   }
   div.ql-container.ql-snow {
     border: none
