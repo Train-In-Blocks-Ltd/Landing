@@ -497,7 +497,7 @@
               Privacy Policy
             </nuxt-link>
             <nuxt-link class="input--option" to="/cookie-policy">
-              Cookies Policy
+              Cookie Policy
             </nuxt-link>
             <nuxt-link class="input--option" to="/terms-conditions">
               Terms & Conditions
