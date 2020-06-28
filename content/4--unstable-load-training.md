@@ -16,13 +16,17 @@ excerpt: A comparison between different training conditions by hanging weights a
 
 ## What are *Quick Articles*?
 
-This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest and some exclusive contents and offers.
+This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
 <br><br>
 
 ![Paper](/blog-img/quick-articles/purpose.svg)
 
-## What is the purpose of this study?
+## The study and its purpose
+
+<br>
+
+### Williams, et al. (2018)
 
 Shoulder injuries are prevalent in overhead-dominant sports such as baseball, softball and tennis. The rotator cuff is usually placed under high eccentric stress during such events. Therefore, athletes would need to consider an effective injury prevention programme to reduce the likelihood of being 'out-of-action'.
 Many methodologies exist for stability training with some research to show its use to prevent injuries. The rationale behind such training is to provide a stimulus to increase muscle activation, joint stiffness, and to improve bio-motor abilities associated with stability.
