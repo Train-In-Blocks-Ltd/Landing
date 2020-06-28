@@ -21,7 +21,7 @@ Many methodologies exist for stability training with some research to show its u
 
 Common methods of training involve exercising on unstable surfaces such as the BOSU or Swiss-ball. Another way to incorporate instability into a training regime is recognised as unstable load training (ULT). This combines equipment such as barbells, kettle-bells, plates and resistance bands to generate instability. Typically, ULT involves suspending the weights using resistance bands at the ends of a barbell.
 
-It was proposed that this form of training could increase muscle fibre, motor and spindle recruitment. Though there's a lack of research supporting this claim, other studies have shown that ULT on squats could increase activation of the rectus abdominis, external oblique, and soleus compared to other forms of stable training. 
+It was proposed that this form of training could increase muscle fibre, motor and spindle recruitment. Though there's a lack of research supporting this claim, other studies have shown that ULT on squats could increase activation of the rectus abdominis, external oblique, and soleus compared to other forms of stable training.
 
 The authors of this study aimed to determine any differences between stable and unstable load training. They’ve hypothesised that ULT will increase muscle activation of all prime movers and stabilisers with an increase in anterior/posterior movement of the centre of pressure (COP). In addition, they hypothesised that an unstable load on a flexible barbell will have a greater effect size compared to an unstable load on a regular barbell.
 
@@ -56,7 +56,7 @@ Unstable load training could be included to introduce instability within a clien
 ## Limitations
 
 The subjects were recreationally active. This presented some issues as they could have various levels of experience with resistance training. In turn, performance could be reflected in the results.
-The small sample size may not reflect the true population. 
+The small sample size may not reflect the true population.
 
 ## References
 
