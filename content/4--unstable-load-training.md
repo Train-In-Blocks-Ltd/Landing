@@ -10,9 +10,17 @@ excerpt: A comparison between different training conditions by hanging weights a
 
 ---
 
-# What are Quick Articles?
+# How to improve overhead stability using unstable loads
+
+<br>
+
+## What are *Quick Articles*?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest and some exclusive contents and offers.
+
+<br><br>
+
+![Paper](/blog-img/quick-articles/purpose.svg)
 
 ## What is the purpose of this study?
 
@@ -24,6 +32,10 @@ Common methods of training involve exercising on unstable surfaces such as the B
 It was proposed that this form of training could increase muscle fibre, motor and spindle recruitment. Though there's a lack of research supporting this claim, other studies have shown that ULT on squats could increase activation of the rectus abdominis, external oblique, and soleus compared to other forms of stable training.
 
 The authors of this study aimed to determine any differences between stable and unstable load training. They’ve hypothesised that ULT will increase muscle activation of all prime movers and stabilisers with an increase in anterior/posterior movement of the centre of pressure (COP). In addition, they hypothesised that an unstable load on a flexible barbell will have a greater effect size compared to an unstable load on a regular barbell.
+
+<br><br>
+
+![Science](/blog-img/quick-articles/methods.svg)
 
 ## The Method
 
@@ -41,6 +53,10 @@ The authors of this study aimed to determine any differences between stable and 
 - On the first day, a 1RM test was conducted for the overhead press with a standard barbell and plates.
 - The subjects performed 10 reps of each condition at least a week after the first session.
 
+<br><br>
+
+![Ruler](/blog-img/quick-articles/results.svg)
+
 ## The Results
 
 It was discovered that EQ significantly increased muscle activation for the biceps brachii, erector spinae, latissimus dorsi, pectoralis major, rectus abdominis, rhomboid and the serratus anterior compared to SS whilst SU produced significantly greater activation of the erector spinae and latissimus dorsi compared to SS. Additionally, EQ significantly increased COP compared to both SU and SS.
@@ -49,17 +65,27 @@ The findings agreed with the author's hypothesis that EQ would increase prime mo
 
 In short, the findings of this paper suggest the use of ULT as a viable method to train stabilisers around the upper-body musculature involved in overhead pressing
 
+<br><br>
+
+![Apply](/blog-img/quick-articles/application.svg)
+
 ## Practical applications
 
 Unstable load training could be included to introduce instability within a client's programme. The use of the earthquake bar with suspended loads generates significantly greater activation of such stabilisers. However, a lighter load of about 50% of the client’s 1RM was suggested to elicit such a response.
+
+<br><br>
+
+![Alert](/blog-img/quick-articles/limitations.svg)
 
 ## Limitations
 
 The subjects were recreationally active. This presented some issues as they could have various levels of experience with resistance training. In turn, performance could be reflected in the results.
 The small sample size may not reflect the true population.
 
+<br>
+
 ## References
 
-Williams, M. R., Hendricks, D. S., Dannen, M. J., Arnold, A. M., Lawrence, M. A., (2018). Activity of Shoulder Stabilizers and Prime Movers During an Unstable Overhead Press. Journal of Strength and Conditioning Research, 34(1). 73-78.
+Williams, M. R., Hendricks, D. S., Dannen, M. J., Arnold, A. M., Lawrence, M. A., (2018). Activity of Shoulder Stabilizers and Prime Movers During an Unstable Overhead Press. *Journal of Strength and Conditioning Research*, 34(1). 73-78.
 
 ---
