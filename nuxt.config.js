@@ -20,6 +20,9 @@ export default async () => {
     /*
     ** Headers of the page
     */
+    router: {
+      trailingSlash: false
+    },
     head: {
       titleTemplate: 'Train In Blocks | %s',
       htmlAttrs: {
