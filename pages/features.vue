@@ -22,20 +22,23 @@
     grid-template-columns: 240px 24px
   }
   .text--scroll p {
-    margin: auto;
-    font-weight: bold
+    margin: auto
+  }
+  .text--scroll svg {
+    margin: auto
   }
   .container--workouts {
     display: grid;
     grid-area: a;
-    grid-template: 1fr 24px/repeat(5, 400px);
+    grid-template: 1fr 24px/repeat(5, 300px);
     grid-gap: 1rem;
     padding: 1rem;
     overflow-x: auto
   }
   .wrapper--workout {
     height: fit-content;
-    box-shadow: 0 0 14px 6px #28282808;
+    border-left: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
     transition: all 1s cubic-bezier(.165, .84, .44, 1)
   }
   .workouts--workout {
@@ -55,25 +58,10 @@
     margin: 1rem;
     padding: .4rem 1rem
   }
-
-  /* Workout state */
-  .show-workout {
-    padding: 0 15px;
-    max-height: 314px;
-    color: #282828;
-    overflow-y: auto;
-    font-size: .8rem
-  }
-  .show-workout h2 {
-    font-size: 1.5rem
-  }
-  .show-workout p, .show-workout ul, .show-workout ol {
-    text-decoration: none;
-    margin: 0;
-    padding: 0
-  }
   .activeWorkout {
-    box-shadow: 0 0 20px 10px #28282820
+    border-left: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;
+    box-shadow: 0 0 20px 10px #28282815
   }
 
   /* Chart */
