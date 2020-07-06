@@ -72,23 +72,32 @@
     background-color: transparent
   }
   button, #mc-embedded-subscribe {
-    border-radius: 3px;
-    outline-width: 0;
-    border: 0;
-    background-color: white;
-    box-shadow: 0 0 14px 6px #28282816;
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: .15rem;
     cursor: pointer;
-    transition: background-color .6s, color .6s, transform .1s cubic-bezier(.165, .84, .44, 1)
+    user-select: none;
+    text-transform: capitalize;
+    text-align: center;
+    outline-width: 0;
+    border: 1px solid #E1E1E1;
+    padding: .5rem 1rem;
+    height: auto;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    color: #282828;
+    background-color: white;
+    margin: 1rem 0 .5rem 0;
+    display: inline-block;
+    transition: color .4s, background-color .4s, transform .1s cubic-bezier(.165, .84, .44, 1)
   }
   button:not(:disabled):hover, #mc-embedded-subscribe:hover {
+    color: white;
     background-color: #282828;
-    color: white
+    text-decoration: none
   }
   button:not(:disabled):active, #mc-embedded-subscribe:active {
-    transform: scale(.9)
+    transform: scale(.96)
   }
   button:disabled:hover {
     background: transparent;
@@ -279,6 +288,28 @@
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #00000030
+  }
+
+  /* Workout state */
+  .show-workout {
+    overflow-wrap: break-word;
+    padding: 12px 15px;
+    max-height: 338px;
+    color: #282828;
+    line-height: 1.42;
+    overflow-y: auto;
+    font-size: .8rem
+  }
+  .show-workout a {
+    color: blue
+  }
+  .show-workout h2 {
+    font-size: 1.5rem
+  }
+  .show-workout p {
+    text-decoration: none;
+    margin: 0;
+    padding: 0
   }
 
   /* References */

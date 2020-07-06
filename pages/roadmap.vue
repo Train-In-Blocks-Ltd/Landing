@@ -46,7 +46,6 @@ import Idea from '../assets/svg/roadmap/Idea.svg'
 import UserTested from '../assets/svg/roadmap/UserTested.svg'
 import Released from '../assets/svg/roadmap/Released.svg'
 import Upgrade from '../assets/svg/roadmap/Upgrade.svg'
-import SCon from '../assets/svg/roadmap/SC.svg'
 
 export default {
   components: {
@@ -59,8 +58,7 @@ export default {
         { id: 1, icon: Idea, progress: 'In-Progess', progressIcon: InDev, title: 'Prototyping', desc: 'Mastering and building essential features.' },
         { id: 2, icon: UserTested, progress: 'Planned', progressIcon: Planned, title: 'User Testing', desc: 'Getting some feedback and improving the app from the get-go.' },
         { id: 3, icon: Released, progress: '01.08.20', progressIcon: Scheduled, title: 'Version 1.0', desc: 'Our big day! Giving you a new way to build programmes, earn more and to expand your business.' },
-        { id: 4, icon: Upgrade, progress: 'Planned', progressIcon: Planned, title: 'Version 1.1', desc: 'Patching it up to give you guys the latest.' },
-        { id: 5, icon: SCon, progress: 'Planned', progressIcon: Planned, title: 'Strength and Conditioning Add-on', desc: 'Take your business to the next level by tailoring the app towards your niche.' }
+        { id: 4, icon: Upgrade, progress: 'Planned', progressIcon: Planned, title: 'Version 1.1', desc: 'Patching it up to give you guys the latest.' }
       ]
     }
   },
