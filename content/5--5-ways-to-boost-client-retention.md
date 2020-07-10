@@ -34,7 +34,7 @@ With that in mind, you can schedule weekly meetings or if you’re busy, just gi
 
 ![Group chat](/blog-img/05/group-chat.svg)
 
-# 3. Create a community or a group chat
+## 3. Create a community or a group chat
 
 This is going above and beyond. It may or may not work depending on the number of clients and their personalities. Nevertheless, offering a community is a strong way to boost your brand. It could be as simple as creating a group chat for your clients to get to know and encourage each other. This will add extra value to your services and you'll always have an army of loyal clients who will testify how great you are!
 
