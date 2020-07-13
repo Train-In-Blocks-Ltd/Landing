@@ -1,3 +1,74 @@
+<style>
+  .vuejs-countdown {
+    text-align: center;
+    padding: 0;
+    margin: 0
+  }
+  .vuejs-countdown li {
+    display: inline-block;
+    margin: 0 1rem;
+    text-align: center;
+    position: relative
+  }
+  .vuejs-countdown li p {
+    margin: 0
+  }
+  .vuejs-countdown li:first-of-type {
+    margin-left: 0
+  }
+  .vuejs-countdown li:last-of-type {
+    margin-right: 0
+  }
+  .vuejs-countdown li:last-of-type:after {
+    content: ''
+  }
+  .vuejs-countdown .digit {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 .4rem
+  }
+  .vuejs-countdown .text {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 1rem
+  }
+
+  @media (max-width: 768px) {
+    .vuejs-countdown .digit {
+      font-size: 3rem
+    }
+    .vuejs-countdown .text {
+      font-size: .8rem
+    }
+  }
+  @media (max-width: 576px) {
+    .countdown--wrapper {
+      margin: 6rem 0
+    }
+    .vuejs-countdown li {
+      margin: 0
+    }
+    .vuejs-countdown .digit {
+      font-size: 2rem
+    }
+    .vuejs-countdown .text {
+      font-size: .6rem
+    }
+  }
+  @media (max-width: 360px) {
+    .countdown--wrapper {
+      margin: 6rem 0
+    }
+    .vuejs-countdown .digit {
+      font-size: 1.5rem
+    }
+    .vuejs-countdown .text {
+      font-size: .5rem
+    }
+  }
+</style>
+
 <template>
   <ul class="vuejs-countdown">
     <li v-if="days > 0">
@@ -116,72 +187,3 @@ export default {
   }
 }
 </script>
-<style>
-  .vuejs-countdown {
-    padding: 0;
-    margin: 0
-  }
-  .vuejs-countdown li {
-    display: inline-block;
-    margin: 0 1rem;
-    text-align: center;
-    position: relative
-  }
-  .vuejs-countdown li p {
-    margin: 0
-  }
-  .vuejs-countdown li:first-of-type {
-    margin-left: 0
-  }
-  .vuejs-countdown li:last-of-type {
-    margin-right: 0
-  }
-  .vuejs-countdown li:last-of-type:after {
-    content: ''
-  }
-  .vuejs-countdown .digit {
-    font-size: 5rem;
-    font-weight: 600;
-    line-height: 1.4;
-    margin: 0 .4rem
-  }
-  .vuejs-countdown .text {
-    text-transform: uppercase;
-    margin-bottom: 0;
-    font-size: 1rem
-  }
-
-  @media (max-width: 768px) {
-    .vuejs-countdown .digit {
-      font-size: 3rem
-    }
-    .vuejs-countdown .text {
-      font-size: .8rem
-    }
-  }
-  @media (max-width: 560px) {
-    .countdown--wrapper {
-      margin: 6rem 0
-    }
-    .vuejs-countdown li {
-      margin: 0
-    }
-    .vuejs-countdown .digit {
-      font-size: 2rem
-    }
-    .vuejs-countdown .text {
-      font-size: .6rem
-    }
-  }
-  @media (max-width: 360px) {
-    .countdown--wrapper {
-      margin: 6rem 0
-    }
-    .vuejs-countdown .digit {
-      font-size: 1.5rem
-    }
-    .vuejs-countdown .text {
-      font-size: .5rem
-    }
-  }
-</style>

@@ -58,8 +58,8 @@ export default {
     }
   },
   mounted () {
-    this.$parent.$parent.metaHelper.title = 'Free Content for Personal Trainers'
-    this.$parent.$parent.metaHelper.description = 'We offer so much more than just software for fitness trainers and coaches. Access our free content on health and fitness related topics.'
+    this.$parent.$parent.metaHelper.title = 'Our Philosophy'
+    this.$parent.$parent.metaHelper.description = 'Find more about our core values and what we stand for!'
   }
 }
 </script>
@@ -98,14 +98,20 @@ export default {
 
   /* Responsiveness */
   @media (max-width: 992px) {
+    .container--desc-text {
+      padding: 1rem 0
+    }
+    .container--desc-text h1 {
+      font-size: 2.4rem;
+      margin: 1rem 0;
+      text-align: right
+    }
+  }
+  @media (max-width: 768px) {
     .container--2c, .container--2c.subscribe, .container--2c.intro {
       grid-template-columns: 1fr;
       grid-template-areas: 'b' 'a';
       grid-gap: 0
-    }
-    .container--desc-text h1 {
-      font-size: 2rem;
-      margin: 1rem 0
     }
   }
   @media (max-width: 576px) {
