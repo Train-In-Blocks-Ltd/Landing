@@ -118,7 +118,7 @@
 
   /* GLOBAL: Nav */
   .navOpen {
-    transform: rotate(-2deg) translateX(-8rem)
+    transform: translateX(-10rem)
   }
   #logo--home {
     width: 10rem;

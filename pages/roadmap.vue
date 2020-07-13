@@ -46,6 +46,10 @@ import Idea from '../assets/svg/roadmap/Idea.svg'
 import UserTested from '../assets/svg/roadmap/UserTested.svg'
 import Released from '../assets/svg/roadmap/Released.svg'
 import Upgrade from '../assets/svg/roadmap/Upgrade.svg'
+import Nutrition from '../assets/svg/roadmap/salad.svg'
+import CompLib from '../assets/svg/roadmap/books.svg'
+import Report from '../assets/svg/roadmap/report.svg'
+import Payment from '../assets/svg/roadmap/payment.svg'
 
 export default {
   components: {
@@ -57,8 +61,12 @@ export default {
       development: [
         { id: 1, icon: Idea, progress: 'In-Progess', progressIcon: InDev, title: 'Prototyping', desc: 'Mastering and building essential features.' },
         { id: 2, icon: UserTested, progress: 'Planned', progressIcon: Planned, title: 'User Testing', desc: 'Getting some feedback and improving the app from the get-go.' },
-        { id: 3, icon: Released, progress: '01.08.20', progressIcon: Scheduled, title: 'Version 1.0', desc: 'Our big day! Giving you a new way to build programmes, earn more and to expand your business.' },
-        { id: 4, icon: Upgrade, progress: 'Planned', progressIcon: Planned, title: 'Version 1.1', desc: 'Patching it up to give you guys the latest.' }
+        { id: 3, icon: Released, progress: '01.08.20', progressIcon: Scheduled, title: 'Launch', desc: 'Our big day! Giving you a new way to build programmes, earn more and to expand your business.' },
+        { id: 4, icon: Upgrade, progress: 'Planned', progressIcon: Planned, title: 'Post-Launch Patch', desc: 'Patching it up to give you guys the latest.' },
+        { id: 5, icon: Nutrition, progress: 'Planned', progressIcon: Planned, title: 'Nutrition', desc: '' },
+        { id: 6, icon: CompLib, progress: 'Planned', progressIcon: Planned, title: 'Component Library', desc: '' },
+        { id: 7, icon: Report, progress: 'Planned', progressIcon: Planned, title: 'Report Generator', desc: '' },
+        { id: 8, icon: Payment, progress: 'Planned', progressIcon: Planned, title: 'Payment Solutions', desc: '' }
       ]
     }
   },
