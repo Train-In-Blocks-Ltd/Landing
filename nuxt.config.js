@@ -102,8 +102,7 @@ export default async () => {
     plugins: [
       { src: '~/plugins/modal.js', ssr: false },
       { src: '~/plugins/quill.js', ssr: false },
-      { src: '~/plugins/scrollto.js', ssr: false },
-      { src: '~/plugins/stripeCheckout.js', ssr: false }
+      { src: '~/plugins/scrollto.js', ssr: false }
     ],
     /*
     ** Nuxt.js dev-modules

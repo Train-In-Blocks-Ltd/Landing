@@ -79,6 +79,7 @@
   .tib {
     margin: 0 0 2rem 0
   }
+
   /* Other */
   .icon--gif {
     margin: 3rem;
@@ -109,19 +110,13 @@
       background-color: transparent;
       box-shadow: none
     }
-    .title--compare {
-      text-align: left
-    }
-    .container--comparison {
-      grid-template: repeat(3, .2fr) / 1fr
-    }
   }
 </style>
 
 <template>
   <div>
     <h1 class="paper--title">
-      Yes. That's It.
+      {{ title }}
     </h1>
     <div id="pricing">
       <div class="pricing__plans">
@@ -134,21 +129,9 @@
             £10
           </h1>
         </div>
-        <client-only>
-          <stripe-checkout
-            ref="checkoutRef"
-            :pk="publishableKey"
-            :items="monthly"
-            :success-url="successUrl"
-            :cancel-url="cancelUrl"
-          >
-            <template slot="checkout-button">
-              <button @click="checkout">
-                Start Saving!
-              </button>
-            </template>
-          </stripe-checkout>
-        </client-only>
+        <button class="signUp" :disabled="isOpen">
+          {{ btn1 }}
+        </button>
       </div>
       <div class="pricing__plans">
         <div>
@@ -163,21 +146,9 @@
             Save 15% on the annual plan,<br><b>that's £8.50/month</b>
           </p><br><br>
         </div>
-        <client-only>
-          <stripe-checkout
-            ref="checkoutRef"
-            :pk="publishableKey"
-            :items="yearly"
-            :success-url="successUrl"
-            :cancel-url="cancelUrl"
-          >
-            <template slot="checkout-button">
-              <button @click="checkout">
-                Wow! Sign Me Up.
-              </button>
-            </template>
-          </stripe-checkout>
-        </client-only>
+        <button class="signUp" :disabled="isOpen">
+          {{ btn2 }}
+        </button>
       </div>
     </div>
     <div class="spacer" />
@@ -251,22 +222,11 @@ export default {
   },
   data () {
     return {
-      loading: false,
-      publishableKey: 'pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX',
-      monthly: [
-        {
-          plan: 'price_1GtvcPBYbiJubfJM2voqpLIo',
-          quantity: 1
-        }
-      ],
-      yearly: [
-        {
-          plan: 'price_1GtvcPBYbiJubfJM7nWmNywN',
-          quantity: 1
-        }
-      ],
-      successUrl: 'https://traininblocks.com/success',
-      cancelUrl: 'https://traininblocks.com/pricing',
+      title: 'Yes. That\'s It.',
+      btn1: 'We\'re almost there...',
+      btn2: 'It will be out soon...',
+      isOpen: true,
+      tibInfo: 'Train In Blocks',
       overview: [
         { id: 1, name: 'TrueCoach', icon: 'truecoach.jpg', desc: '$99 per month for 50 clients' },
         { id: 2, name: 'My PT Hub', icon: 'mypthub.jpg', desc: '£49 per month for full access' },
@@ -277,11 +237,6 @@ export default {
   mounted () {
     this.$parent.$parent.metaHelper.title = 'Affordable Personal Trainer Software'
     this.$parent.$parent.metaHelper.description = 'You can\'t beat our pricing. All with no restriction on the number of clients and programmes. Get instant access now!'
-  },
-  methods: {
-    checkout () {
-      this.$refs.checkoutRef.redirectToCheckout()
-    }
   }
 }
 </script>
