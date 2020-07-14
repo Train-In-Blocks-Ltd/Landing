@@ -86,7 +86,7 @@
       Learn something new
     </h1>
     <div class="container--blog">
-      <div v-for="post in posts.slice().reverse()" :key="post.attributes.title" class="blog-post">
+      <div v-for="post in posts" :key="post.attributes.title" class="blog-post">
         <div class="blog-post__top-wrapper">
           <div>
             <h2 class="blog-post__title">
@@ -131,11 +131,19 @@ export default {
       prefix: 'blog'
     }
   },
+  created () {
+    this.sortWorkouts()
+  },
   mounted () {
     this.$parent.$parent.metaHelper.title = 'Free Content for Personal Trainers'
     this.$parent.$parent.metaHelper.description = 'Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.'
   },
   methods: {
+    sortWorkouts () {
+      this.posts.sort((a, b) => {
+        return new Date(b.attributes.id) - new Date(a.attributes.id)
+      })
+    },
     getPermalink (post) {
       return this.prefix + '/' + post.attributes.slug
     }

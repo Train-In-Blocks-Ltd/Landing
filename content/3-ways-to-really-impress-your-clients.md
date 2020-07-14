@@ -1,6 +1,7 @@
 ---
+id: 3
 title: 3 ways to really impress your clients
-slug: 3--3-ways-to-really-impress-your-clients
+slug: 3-ways-to-really-impress-your-clients
 img: /03/man-indoor-pose.jpg
 excerpt: Here are some good ways to improve your client retention and satisfaction.
 ---
