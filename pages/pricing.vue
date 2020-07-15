@@ -144,7 +144,7 @@
             :cancel-url="cancelUrl"
           >
             <template slot="checkout-button">
-              <button @click="checkout">
+              <button @click="checkout0">
                 Start Saving!
               </button>
             </template>
@@ -175,7 +175,7 @@
             :cancel-url="cancelUrl"
           >
             <template slot="checkout-button">
-              <button @click="checkout">
+              <button @click="checkout1">
                 Wow! Sign Me Up.
               </button>
             </template>
@@ -282,8 +282,11 @@ export default {
     this.$parent.$parent.metaHelper.description = 'You can\'t beat our pricing. All with no restriction on the number of clients and programmes. Get instant access now!'
   },
   methods: {
-    checkout () {
-      this.$refs.checkoutRef.redirectToCheckout()
+    checkout0 () {
+      this.$refs.checkoutRef0.redirectToCheckout()
+    },
+    checkout1 () {
+      this.$refs.checkoutRef1.redirectToCheckout()
     }
   }
 }
