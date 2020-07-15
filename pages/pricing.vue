@@ -79,6 +79,7 @@
   .tib {
     margin: 0 0 2rem 0
   }
+
   /* Other */
   .icon--gif {
     margin: 3rem;
@@ -130,13 +131,13 @@
           <h2 class="sub-title">
             Basic - Monthly
           </h2>
-          <h1 class="pricing__cost">
+          <h3 class="pricing__cost">
             £10
-          </h1>
+          </h3>
         </div>
         <client-only>
           <stripe-checkout
-            ref="checkoutRef"
+            ref="checkoutRef0"
             :pk="publishableKey"
             :items="monthly"
             :success-url="successUrl"
@@ -153,19 +154,21 @@
       <div class="pricing__plans">
         <div>
           <img class="icon--gif" src="../assets/gif/trophy.gif">
-          <h2 class="sub-title pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">
+          <h2 class="sub-title pro">
             Pro - Yearly
           </h2>
-          <h1 class="pricing__cost">
+          <h3 class="pricing__cost">
             £102
-          </h1>
+          </h3>
           <p>
             Save 15% on the annual plan,<br><b>that's £8.50/month</b>
-          </p><br><br>
+          </p>
+          <br>
+          <br>
         </div>
         <client-only>
           <stripe-checkout
-            ref="checkoutRef"
+            ref="checkoutRef1"
             :pk="publishableKey"
             :items="yearly"
             :success-url="successUrl"

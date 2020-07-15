@@ -90,7 +90,6 @@
     margin: 1rem 0 .5rem 0;
     display: inline-block;
     transition: color .4s, background-color .4s, transform .1s cubic-bezier(.165, .84, .44, 1)
-
   }
   button:not(:disabled):hover, #mc-embedded-subscribe:hover {
     color: white;
