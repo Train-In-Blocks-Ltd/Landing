@@ -222,7 +222,7 @@ export default {
   },
   data () {
     return {
-      title: 'Yes. That\'s It.',
+      title: 'Get a 14-day free trial...',
       btn1: 'We\'re almost there...',
       btn2: 'It will be out soon...',
       isOpen: true,
