@@ -1,19 +1,5 @@
 <style scoped>
   /* Container */
-  .container--2c {
-    display: grid;
-    grid-template-columns: .6fr 1fr;
-    grid-gap: 4rem;
-    margin: 12rem 0
-  }
-  .container--2c > div > h1 {
-    margin: 2rem 0 0 0;
-    background-color: #282828;
-    color: white;
-    width: fit-content;
-    padding: 1rem 2rem;
-    letter-spacing: .3rem
-  }
   .container--progress {
     display: flex;
     align-items: center
@@ -46,12 +32,6 @@
     height: auto;
     margin: 0 .2rem
   }
-  #vote {
-    margin: auto
-  }
-  .text--involved {
-    margin: 2rem 0
-  }
 
   /* Responsive */
   @media (max-width: 992px) {
@@ -61,27 +41,11 @@
     .roadmap--title {
       font-size: 1rem
     }
-    #community {
-      margin: 5rem 0
-    }
   }
   @media (max-width: 576px) {
     #roadmap {
       grid-template-columns: 1fr;
       grid-gap: 1rem
-    }
-    .container--2c {
-      grid-template-columns: 1fr
-    }
-    #community {
-      margin: auto;
-      width: 70%
-    }
-    #vote {
-      height: 16vh
-    }
-    #title--involved {
-      margin: auto
     }
   }
 </style>
@@ -111,22 +75,20 @@
         </p>
       </div>
     </div>
-    <div class="container--2c">
-      <inline-svg id="vote" :src="require('../assets/svg/Vote.svg')" />
-      <div>
-        <h1 id="title--involved">
-          Get Involved
-        </h1>
-        <p class="text--involved">
-          We want every paying member to have a say in the direction of the app and the company. You can<b> vote</b> for features and add-ons and we'll do the rest!
-        </p>
-      </div>
-    </div>
+    <div
+      class="typeform-widget"
+      data-url="https://form.typeform.com/to/PMTb4d"
+      data-transparency="50"
+      data-hide-headers=true
+      data-hide-footer=true
+      style="width: 100%; height: 500px" />
+    <script>(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()</script>
   </div>
 </template>
 
 <script>
 import InlineSvg from 'vue-inline-svg'
+import Done from '../assets/svg/progress/Done.svg'
 import InDev from '../assets/svg/progress/InDev.svg'
 import Planned from '../assets/svg/progress/Planned.svg'
 import Scheduled from '../assets/svg/progress/Scheduled.svg'
@@ -147,7 +109,7 @@ export default {
     return {
       title: 'Our Roadmap...',
       development: [
-        { id: 1, icon: Idea, progress: 'In-Progess', progressIcon: InDev, title: 'Prototyping', desc: 'Mastering and building essential features.' },
+        { id: 1, icon: Idea, progress: '17.07.20', progressIcon: Done, title: 'Prototyping', desc: 'Mastering and building essential features.' },
         { id: 2, icon: UserTested, progress: 'In-Progress', progressIcon: InDev, title: 'User Testing', desc: 'Getting some feedback and improving the app from the get-go.' },
         { id: 3, icon: Released, progress: '01.08.20', progressIcon: Scheduled, title: 'Launch', desc: 'Our big day! Giving you a new way to build programmes, earn more and to expand your business.' },
         { id: 4, icon: Upgrade, progress: 'Planned', progressIcon: Planned, title: 'Post-Launch Patch', desc: 'Patching it up to give you guys the latest.' },
