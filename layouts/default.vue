@@ -436,6 +436,9 @@
     <script data-jsd-embedded data-key="200dadd3-915c-4769-ba8d-ec7792145827" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js" />
     <transition enter-active-class="animated fadeInRight faster" leave-active-class="animated fadeOutRight faster">
       <nav v-show="openNav" id="nav--main">
+        <a class="input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">
+          Log In
+        </a>
         <nuxt-link class="input--option" to="/" @click.native="openNav = false">
           Welcome
         </nuxt-link>
