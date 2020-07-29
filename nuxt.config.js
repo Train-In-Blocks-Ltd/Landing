@@ -17,6 +17,7 @@ function getDynamicPaths (urlFilepathTable) {
 export default async () => {
   return {
     mode: 'universal',
+    __dangerouslyDisableSanitizers: ['script'],
     /*
     ** Headers of the page
     */
@@ -59,7 +60,7 @@ export default async () => {
       ],
       script: [
         {
-          inner: `{ 
+          innerHTML: `{
             "@context": "http://schema.org",
             "@type": "Organization",
             "name": "Train In Blocks",
