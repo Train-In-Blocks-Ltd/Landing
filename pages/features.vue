@@ -173,6 +173,7 @@
             </p>
           </div>
           <quill v-if="currentID === exampleWorkout.id" v-model="exampleWorkout.content" output="html" class="quill" :config="config" />
+          <!--eslint-disable-next-line-->
           <div v-if="currentID !== exampleWorkout.id" class="show-workout" v-html="exampleWorkout.content" />
           <div class="bottom-bar">
             <button v-if="currentID === exampleWorkout.id" class="button--save" @click="scan()">
