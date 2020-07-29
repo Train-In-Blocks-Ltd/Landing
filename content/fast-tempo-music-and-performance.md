@@ -11,7 +11,7 @@ excerpt: Most of us will listen to music whilst we're training, but does it actu
 
 ---
 
-# Unilateral vs. Bilateral Exercises - Improving Sprint and Agility
+# Does listening to music improve performance?
 
 <br>
 
