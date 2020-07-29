@@ -31,6 +31,10 @@
     <p><strong>8. Governing Law</strong></p>
     <p>These terms and conditions are governed by and construed in accordance with the laws of Oxfordshire and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
     <p><strong>9. Marketing Materials and Cookies</strong></p>
-    <p>You will be added to the mailing list for marketing purposes once you sign-up to any services provided by Train In Blocks Ltd. Cookies will also be used to improve your experience. Learn more <router-link to="/cookie-policy">here.</router-link></p>
+    <p>
+      You will be added to the mailing list for marketing purposes once you sign-up to any services provided by Train In Blocks Ltd. Cookies will also be used to improve your experience. Learn more <router-link to="/cookie-policy">
+        here.
+      </router-link>
+    </p>
   </div>
 </template>

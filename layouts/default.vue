@@ -571,7 +571,7 @@ export default {
       metaHelper: {
         title: 'Train In Blocks',
         description: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.',
-        image: 'https://traininblocks.com/android-chrome-192x192.png'
+        image: 'https://traininblocks.com/android-chrome-512x512.png'
       }
     }
   },

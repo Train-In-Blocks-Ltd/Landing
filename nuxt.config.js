@@ -40,14 +40,14 @@ export default async () => {
         { name: 'tiwtter:site', content: '@traininblocks' },
         { hid: 'twitter:title', name: 'twitter:title', template: chunk => `Train In Blocks | ${chunk}` },
         { hid: 'twitter:description', name: 'twitter:description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
-        { hid: 'twitter:image', name: 'twitter:image', content: 'https://traininblocks.com/android-chrome-192x192.png' },
+        { hid: 'twitter:image', name: 'twitter:image', content: 'https://traininblocks.com/android-chrome-512x512.png' },
 
         // Open Graph data
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Train In Blocks' },
         { hid: 'og:description', property: 'og:description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
         { hid: 'og:title', property: 'og:title', template: chunk => `Train In Blocks | ${chunk}` },
-        { hid: 'og:image', property: 'og:image', content: 'https://traininblocks.com/android-chrome-192x192.png' },
+        { hid: 'og:image', property: 'og:image', content: 'https://traininblocks.com/android-chrome-512x512.png' },
         { property: 'og:url', content: 'https://traininblocks.com' }
       ],
       link: [
