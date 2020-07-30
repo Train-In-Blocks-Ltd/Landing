@@ -1,6 +1,7 @@
 ---
+id: 5
 title: 5 ways to boost client retention
-slug: 5--5-ways-to-boost-client-retention
+slug: 5-ways-to-boost-client-retention
 img: /05/barbell-indoor-still.jpg
 excerpt: Get creative and keep your clients for longer with these practical techniques.
 ---

@@ -4,7 +4,7 @@
       Terms & Conditions
     </h1>
     <p><strong>1. Terms</strong></p>
-    <p>By accessing the website at <a href="http://www.traininblocks.com">http://www.traininblocks.com</a> and our other services, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>
+    <p>By accessing the website at <a href="http://www.traininblocks.com">http://www.traininblocks.com</a> and our other services, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws in the United Kingdom. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>
     <p><strong>2. Use Licence</strong></p>
     <p>Permission is granted to temporarily download one copy of the materials (information or software) on Train In Blocks Ltd&#39;s website for personal, non-commercial transitory viewing only. This is the grant of a licence, not a transfer of title, and under this licence, you may not:</p>
     <ul>
@@ -30,5 +30,11 @@
     <p>Train In Blocks Ltd may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>
     <p><strong>8. Governing Law</strong></p>
     <p>These terms and conditions are governed by and construed in accordance with the laws of Oxfordshire and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
+    <p><strong>9. Marketing Materials and Cookies</strong></p>
+    <p>
+      You will be added to the mailing list for marketing purposes once you sign-up to any services provided by Train In Blocks Ltd. Cookies will also be used to improve your experience. Learn more <router-link to="/cookie-policy">
+        here.
+      </router-link>
+    </p>
   </div>
 </template>

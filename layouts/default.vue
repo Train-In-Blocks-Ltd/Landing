@@ -99,6 +99,10 @@
   button:not(:disabled):active, #mc-embedded-subscribe:active {
     transform: scale(.96)
   }
+  button:disabled:hover {
+    background: transparent;
+    cursor: default
+  }
   select {
     cursor: pointer;
     background-color: transparent;
@@ -114,7 +118,7 @@
 
   /* GLOBAL: Nav */
   .navOpen {
-    transform: rotate(-2deg) translateX(-8rem)
+    transform: translateX(-10rem)
   }
   #logo--home {
     width: 10rem;
@@ -432,6 +436,9 @@
     <script data-jsd-embedded data-key="200dadd3-915c-4769-ba8d-ec7792145827" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js" />
     <transition enter-active-class="animated fadeInRight faster" leave-active-class="animated fadeOutRight faster">
       <nav v-show="openNav" id="nav--main">
+        <a class="input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">
+          Log In
+        </a>
         <nuxt-link class="input--option" to="/" @click.native="openNav = false">
           Welcome
         </nuxt-link>
@@ -564,7 +571,7 @@ export default {
       metaHelper: {
         title: 'Train In Blocks',
         description: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.',
-        image: 'https://traininblocks.com/android-chrome-192x192.png'
+        image: 'https://traininblocks.com/android-chrome-512x512.png'
       }
     }
   },
@@ -583,13 +590,13 @@ export default {
     return {
       title: this.metaHelper.title,
       meta: [
-        { hid: 'description', content: this.metaHelper.description },
-        { hid: 'og:title', content: this.metaHelper.title },
-        { hid: 'og:description', content: this.metaHelper.description },
-        { hid: 'og:image', content: this.metaHelper.img },
-        { hid: 'twitter:title', content: this.metaHelper.title },
-        { hid: 'twitter:description', content: this.metaHelper.description },
-        { hid: 'twitter:img', content: this.metaHelper.image }
+        { hid: 'description', name: 'description', content: this.metaHelper.description },
+        { hid: 'og:title', name: 'og:title', content: this.metaHelper.title },
+        { hid: 'og:description', name: 'og:description', content: this.metaHelper.description },
+        { hid: 'og:image', name: 'og:image', content: this.metaHelper.img },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.metaHelper.title },
+        { hid: 'twitter:description', name: 'twitter:description', content: this.metaHelper.description },
+        { hid: 'twitter:img', name: 'twitter:img', content: this.metaHelper.image }
       ]
     }
   }

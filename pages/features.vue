@@ -31,15 +31,14 @@
     display: grid;
     grid-area: a;
     grid-template: 1fr 24px/repeat(5, 300px);
-    grid-gap: 1rem;
+    grid-gap: 1rem 3rem;
     padding: 1rem;
     overflow-x: auto
   }
   .wrapper--workout {
     height: fit-content;
     border-left: 1px solid #E1E1E1;
-    border-bottom: 1px solid #E1E1E1;
-    transition: all 1s cubic-bezier(.165, .84, .44, 1)
+    border-bottom: 1px solid #E1E1E1
   }
   .workouts--workout {
     margin: 0;
@@ -59,9 +58,8 @@
     padding: .4rem 1rem
   }
   .activeWorkout {
-    border-left: 1px solid #F1F1F1;
-    border-bottom: 1px solid #F1F1F1;
-    box-shadow: 0 0 20px 10px #28282815
+    height: 490px;
+    border: 2px solid #282828
   }
 
   /* Chart */
@@ -175,6 +173,7 @@
             </p>
           </div>
           <quill v-if="currentID === exampleWorkout.id" v-model="exampleWorkout.content" output="html" class="quill" :config="config" />
+          <!--eslint-disable-next-line-->
           <div v-if="currentID !== exampleWorkout.id" class="show-workout" v-html="exampleWorkout.content" />
           <div class="bottom-bar">
             <button v-if="currentID === exampleWorkout.id" class="button--save" @click="scan()">
@@ -331,7 +330,6 @@ export default {
             [{ header: 1 }, { header: 2 }],
             ['bold', 'italic', 'underline', { script: 'sub' }, { script: 'super' }],
             [{ list: 'ordered' }, { list: 'bullet' }],
-            [{ indent: '-1' }, { indent: '+1' }],
             ['link'],
             ['clean']
           ]

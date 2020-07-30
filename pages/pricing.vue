@@ -110,19 +110,13 @@
       background-color: transparent;
       box-shadow: none
     }
-    .title--compare {
-      text-align: left
-    }
-    .container--comparison {
-      grid-template: repeat(3, .2fr) / 1fr
-    }
   }
 </style>
 
 <template>
   <div>
     <h1 class="paper--title">
-      Yes. That's It.
+      {{ title }}
     </h1>
     <div id="pricing">
       <div class="pricing__plans">
@@ -254,22 +248,11 @@ export default {
   },
   data () {
     return {
-      loading: false,
-      publishableKey: 'pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX',
-      monthly: [
-        {
-          plan: 'price_1GtvcPBYbiJubfJM2voqpLIo',
-          quantity: 1
-        }
-      ],
-      yearly: [
-        {
-          plan: 'price_1GtvcPBYbiJubfJM7nWmNywN',
-          quantity: 1
-        }
-      ],
-      successUrl: 'https://traininblocks.com/success',
-      cancelUrl: 'https://traininblocks.com/pricing',
+      title: 'Get a 14-day free trial...',
+      btn1: 'We\'re almost there...',
+      btn2: 'It will be out soon...',
+      isOpen: true,
+      tibInfo: 'Train In Blocks',
       overview: [
         { id: 1, name: 'TrueCoach', icon: 'truecoach.jpg', desc: '$99 per month for 50 clients' },
         { id: 2, name: 'My PT Hub', icon: 'mypthub.jpg', desc: '£49 per month for full access' },

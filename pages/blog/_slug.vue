@@ -63,6 +63,7 @@
 
 <template>
   <div class="blog--body">
+    <!--eslint-disable-next-line-->
     <div v-html="html" />
     <div class="container--share">
       <h3>Share on:</h3>
