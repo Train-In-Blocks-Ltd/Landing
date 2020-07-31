@@ -16,6 +16,7 @@ function getDynamicPaths (urlFilepathTable) {
 
 export default async () => {
   return {
+    target: 'static',
     mode: 'universal',
     __dangerouslyDisableSanitizers: ['script'],
     /*
