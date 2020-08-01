@@ -67,17 +67,18 @@ export default async () => {
             "name": "Train In Blocks",
             "legalName" : "Train In Blocks Ltd",
             "foundingDate": "2020",
-            "founders": [
-              {
+            "founder": {
               "@type": "Person",
               "name": "Mikey Lau"
-            }, ],
+            },
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "customer support",
               "email": "hello@traininblocks.com"
             },
-            "url": "https://www.traininblocks.com",
+            "logo": "https://traininblocks.com/android-chrome-512x512.png",
+            "slogan": "Over-delivering doesn't have to cost you.",
+            "url": "https://traininblocks.com",
             "sameAs": [
               "https://www.linkedin.com/company/train-in-blocks",
               "https://www.twitter.com/traininblocks",
