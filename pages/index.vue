@@ -111,6 +111,7 @@
 <template>
   <div>
     <div id="container--1c">
+      <!-- Countdown
       <div class="countdown--wrapper">
         <div class="container--countdown">
           <h2 class="sub-title text--center">
@@ -122,6 +123,7 @@
           </p>
         </div>
       </div>
+      -->
       <div>
         <p><b>Why should you <i>Train In Blocks</i>?</b></p>
         <p>Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.</p>
@@ -150,12 +152,12 @@
 
 <script>
 import InlineSvg from 'vue-inline-svg'
-import Countdown from '../components/Countdown'
+// import Countdown from '../components/Countdown'
 
 export default {
   components: {
-    InlineSvg,
-    Countdown
+    InlineSvg
+    // Countdown
   },
   data () {
     return {
