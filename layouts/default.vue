@@ -27,9 +27,6 @@
     font-size: 2rem;
     margin: 0 0 1.5rem 0
   }
-  h1, h2 {
-    margin: 2rem 0 1rem 0
-  }
   p {
     line-height: 1.4;
     margin: 1rem 0
@@ -167,11 +164,10 @@
 
   /* GLOBAL: Email */
   #mc-embedded-subscribe-form {
-    margin: 4rem 0
+    margin: 1rem 0
   }
   #mc-embedded-subscribe-form label {
-    font-weight: bold;
-    font-size: 2rem
+    font-weight: bold
   }
   #mce-EMAIL {
     opacity: .6;
@@ -477,33 +473,6 @@
           <nuxt />
         </transition>
       </div>
-      <div class="spacer--small" />
-      <form
-        id="mc-embedded-subscribe-form"
-        action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
-        method="post"
-        name="mc-embedded-subscribe-form"
-        class="validate animated fadeInLeft"
-        target="_blank"
-        novalidate
-      >
-        <label for="mce-EMAIL">Get Notified When We Launch!</label><br>
-        <input
-          id="mce-EMAIL"
-          type="email"
-          value=""
-          name="EMAIL"
-          class="email"
-          placeholder="Email"
-          required
-        >
-        <div style="position: absolute; left: -5000px" aria-hidden="true">
-          <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
-        </div>
-        <div class="clear">
-          <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
-        </div>
-      </form>
       <div class="spacer" />
       <footer>
         <div class="nav--footer">
@@ -537,7 +506,33 @@
               Terms & Conditions
             </nuxt-link>
           </div>
-        </div><br>
+        </div><br><br>
+        <form
+          id="mc-embedded-subscribe-form"
+          action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
+          method="post"
+          name="mc-embedded-subscribe-form"
+          class="validate animated fadeInLeft"
+          target="_blank"
+          novalidate
+        >
+          <label for="mce-EMAIL">Get Notified When We Launch!</label><br>
+          <input
+            id="mce-EMAIL"
+            type="email"
+            value=""
+            name="EMAIL"
+            class="email"
+            placeholder="Email"
+            required
+          >
+          <div style="position: absolute; left: -5000px" aria-hidden="true">
+            <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
+          </div>
+          <div class="clear">
+            <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
+          </div>
+        </form><br>
         <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with some icons!</p>
       </footer>
       <a

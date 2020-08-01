@@ -125,30 +125,56 @@
           <h2 class="sub-title">
             Basic - Monthly
           </h2>
-          <h1 class="pricing__cost">
+          <h3 class="pricing__cost">
             £10
-          </h1>
+          </h3>
         </div>
-        <button class="signUp" :disabled="isOpen">
-          {{ btn1 }}
-        </button>
+        <client-only>
+          <stripe-checkout
+            ref="checkoutRef0"
+            :pk="publishableKey"
+            :items="monthly"
+            :success-url="successUrl"
+            :cancel-url="cancelUrl"
+          >
+            <template slot="checkout-button">
+              <button @click="checkout0">
+                Start Saving!
+              </button>
+            </template>
+          </stripe-checkout>
+        </client-only>
       </div>
       <div class="pricing__plans">
         <div>
           <img class="icon--gif" src="../assets/gif/trophy.gif">
-          <h2 class="sub-title pro" href="https://trolley.link/p/" data-trolley="true" data-tpk="">
+          <h2 class="sub-title pro">
             Pro - Yearly
           </h2>
-          <h1 class="pricing__cost">
+          <h3 class="pricing__cost">
             £102
-          </h1>
+          </h3>
           <p>
             Save 15% on the annual plan,<br><b>that's £8.50/month</b>
-          </p><br><br>
+          </p>
+          <br>
+          <br>
         </div>
-        <button class="signUp" :disabled="isOpen">
-          {{ btn2 }}
-        </button>
+        <client-only>
+          <stripe-checkout
+            ref="checkoutRef1"
+            :pk="publishableKey"
+            :items="yearly"
+            :success-url="successUrl"
+            :cancel-url="cancelUrl"
+          >
+            <template slot="checkout-button">
+              <button @click="checkout1">
+                Wow! Sign Me Up.
+              </button>
+            </template>
+          </stripe-checkout>
+        </client-only>
       </div>
     </div>
     <div class="spacer" />
@@ -237,6 +263,14 @@ export default {
   mounted () {
     this.$parent.$parent.metaHelper.title = 'Affordable Personal Trainer Software'
     this.$parent.$parent.metaHelper.description = 'You can\'t beat our pricing. All with no restriction on the number of clients and programmes. Get instant access now!'
+  },
+  methods: {
+    checkout0 () {
+      this.$refs.checkoutRef0.redirectToCheckout()
+    },
+    checkout1 () {
+      this.$refs.checkoutRef1.redirectToCheckout()
+    }
   }
 }
 </script>

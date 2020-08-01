@@ -111,6 +111,7 @@
 <template>
   <div>
     <div id="container--1c">
+      <!-- Countdown
       <div class="countdown--wrapper">
         <div class="container--countdown">
           <h2 class="sub-title text--center">
@@ -122,6 +123,12 @@
           </p>
         </div>
       </div>
+      -->
+      <div>
+        <p><b>Why should you <i>Train In Blocks</i>?</b></p>
+        <p>Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.</p>
+        <p>There's no standard way to use this app. Find your flare a cater it towards your clientele. For example, use it for coaching, tracking treatments, therapy sessions and more.</p>
+      </div><br>
       <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device PC">
     </div>
     <div class="spacer" />
@@ -133,7 +140,7 @@
       <h1 class="text--right main-title" style="grid-area: bT">
         Speed, simplicity and functionality is our philosophy.
       </h1>
-      <img id="img--deviceTablet" style="grid-area: bI" src="../assets/DeviceTablet.png">
+      <img id="img--deviceTablet" style="grid-area: bI" src="../assets/DeviceTablet.png" alt="Device Tablet">
       <h1 class="main-title" style="grid-area: cT">
         Save more time and get more clients.
       </h1>
@@ -145,12 +152,12 @@
 
 <script>
 import InlineSvg from 'vue-inline-svg'
-import Countdown from '../components/Countdown'
+// import Countdown from '../components/Countdown'
 
 export default {
   components: {
-    InlineSvg,
-    Countdown
+    InlineSvg
+    // Countdown
   },
   data () {
     return {
