@@ -57,16 +57,7 @@
     </h1><br>
     <h2 class="sub-title">
       We believe in transparency, check out what we're up to.
-    </h2><br><br>
-    <div
-      class="typeform-widget"
-      data-url="https://form.typeform.com/to/PMTb4d"
-      data-transparency="50"
-      data-hide-headers="true"
-      data-hide-footer="true"
-      style="width: 100%; height: 500px"
-    />
-    <script>(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()</script>
+    </h2>
     <div class="spacer" />
     <div v-for="dev in development" id="roadmap" :key="dev.id">
       <inline-svg class="icon--main" :src="dev.icon" />

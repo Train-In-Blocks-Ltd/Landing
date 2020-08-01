@@ -58,6 +58,33 @@
     margin: auto
   }
 
+  /* Typeform */
+  .typeform-share.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #282828;
+    color: white;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0;
+    height: 40px;
+    padding: 0 26px;
+    border-radius: 0;
+    width: fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+  }
+  .input--option.more {
+    margin: 0
+  }
+
   /* Responsiveness */
   @media (max-width: 992px) {
     .container--2c3r {
@@ -124,11 +151,27 @@
         </div>
       </div>
       -->
+      <script>(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
       <div>
         <p><b>Why should you <i>Train In Blocks</i>?</b></p>
         <p>Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.</p>
-        <p>There's no standard way to use this app. Find your flare a cater it towards your clientele. For example, use it for coaching, tracking treatments, therapy sessions and more.</p>
-      </div><br>
+        <p>There are no standard ways to use this app. Find your flare a cater it towards your clientele. For example, use it for coaching, tracking treatments, therapy sessions and more.</p>
+      </div>
+      <div>
+        <a
+          class="typeform-share button"
+          href="https://form.typeform.com/to/PMTb4d"
+          data-mode="popup"
+          data-hide-headers=true
+          data-hide-footer=true
+          target="_blank"
+        >
+          Vote for upcoming features
+        </a><br><br>
+        <router-link class="input--option more" to="/roadmap">
+          Find out more
+        </router-link>
+      </div>
       <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device PC">
     </div>
     <div class="spacer" />
