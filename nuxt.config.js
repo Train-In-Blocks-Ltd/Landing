@@ -18,7 +18,6 @@ export default async () => {
   return {
     target: 'static',
     mode: 'universal',
-    __dangerouslyDisableSanitizers: ['script'],
     /*
     ** Headers of the page
     */
@@ -59,6 +58,7 @@ export default async () => {
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://traininblocks.com/favicon-16x16.png' },
         { rel: 'mask-icon', href: 'https://traininblocks.com/safari-pinned-tab.svg', color: '#282828' }
       ],
+      __dangerouslyDisableSanitizers: ['script'],
       script: [
         {
           innerHTML: `{
@@ -104,7 +104,8 @@ export default async () => {
     plugins: [
       { src: '~/plugins/modal.js', ssr: false },
       { src: '~/plugins/quill.js', ssr: false },
-      { src: '~/plugins/scrollto.js', ssr: false }
+      { src: '~/plugins/scrollto.js', ssr: false },
+      { src: '~/plugins/stripeCheckout.js', ssr: false }
     ],
     /*
     ** Nuxt.js dev-modules
