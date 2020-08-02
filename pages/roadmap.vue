@@ -103,9 +103,9 @@ export default {
       title: 'Our Roadmap...',
       development: [
         { id: 1, icon: Idea, progress: '17.07.20', progressIcon: Done, title: 'Prototyping', desc: 'Mastering and building essential features.' },
-        { id: 2, icon: UserTested, progress: 'In-Progress', progressIcon: InDev, title: 'User Testing', desc: 'Getting some feedback and improving the app from the get-go.' },
-        { id: 3, icon: Released, progress: '01.08.20', progressIcon: Scheduled, title: 'Launch', desc: 'Our big day! Giving you a new way to build programmes, earn more and to expand your business.' },
-        { id: 4, icon: Upgrade, progress: 'Planned', progressIcon: Planned, title: 'Post-Launch Patch', desc: 'Patching it up to give you guys the latest.' },
+        { id: 2, icon: UserTested, progress: '31.07.20', progressIcon: Done, title: 'User Testing', desc: 'Getting some feedback and improving the app from the get-go.' },
+        { id: 3, icon: Released, progress: '01.08.20', progressIcon: Done, title: 'Launch', desc: 'Our big day! Giving you a new way to build programmes, earn more and to expand your business.' },
+        { id: 4, icon: Upgrade, progress: 'In-Progress', progressIcon: InDev, title: 'Post-Launch Patch', desc: 'Patching it up to give you guys the latest.' },
         { id: 5, icon: Nutrition, progress: 'Planned', progressIcon: Planned, title: 'Nutrition', desc: 'Giving you the tools to help your clients feel stronger and healthier.' },
         { id: 6, icon: CompLib, progress: 'Planned', progressIcon: Planned, title: 'Component Library', desc: 'Build a bespoke exercise programme even faster with shortcuts and more.' },
         { id: 7, icon: Report, progress: 'Planned', progressIcon: Planned, title: 'Report Generator', desc: 'Create a professional report to present your client\'s progress.' },
