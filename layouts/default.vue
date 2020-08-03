@@ -31,6 +31,9 @@
     line-height: 1.4;
     margin: 1rem 0
   }
+  li {
+    margin: 1rem 0
+  }
   .vm--modal {
     padding: 1rem 1.6rem
   }

@@ -82,6 +82,7 @@
     -moz-osx-font-smoothing: grayscale
   }
   .input--option.more {
+    font-size: .8rem;
     margin: 0
   }
 
