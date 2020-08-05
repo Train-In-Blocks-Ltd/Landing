@@ -166,9 +166,6 @@
   }
 
   /* GLOBAL: Email */
-  #mc-embedded-subscribe-form {
-    margin: 1rem 0
-  }
   #mc-embedded-subscribe-form label {
     font-weight: bold
   }
@@ -536,6 +533,12 @@
             <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
           </div>
         </form><br>
+        <p>
+          <b>Train In Blocks Ltd</b><br>
+          12515717<br>
+          21 Sinodun Road, Wallingford, OX10 8AD, United Kingdom<br>
+          Registered in England & Wales
+        </p>
         <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with some icons!</p>
       </footer>
       <a
