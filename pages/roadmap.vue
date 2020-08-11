@@ -108,11 +108,13 @@ export default {
         { id: 1, completed: true, icon: Idea, progress: '17.07.20', progressIcon: Done, title: 'Prototyping', desc: 'Mastering and building essential features.' },
         { id: 2, completed: true, icon: UserTested, progress: '31.07.20', progressIcon: Done, title: 'User Testing', desc: 'Getting some feedback and improving the app from the get-go.' },
         { id: 3, completed: true, icon: Released, progress: '01.08.20', progressIcon: Done, title: 'Launch', desc: 'Our big day! Giving you a new way to build programmes, earn more and to expand your business.' },
-        { id: 4, completed: false, icon: Upgrade, progress: 'In-Progress', progressIcon: InDev, title: 'Post-Launch Patch', desc: 'Patching it up to give you guys the latest.' },
-        { id: 5, completed: false, icon: Nutrition, progress: 'Planned', progressIcon: Planned, title: 'Nutrition', desc: 'Giving you the tools to help your clients feel stronger and healthier.' },
-        { id: 6, completed: false, icon: CompLib, progress: 'Planned', progressIcon: Planned, title: 'Component Library', desc: 'Build a bespoke exercise programme even faster with shortcuts and more.' },
-        { id: 7, completed: false, icon: Report, progress: 'Planned', progressIcon: Planned, title: 'Report Generator', desc: 'Create a professional report to present your client\'s progress.' },
-        { id: 8, completed: false, icon: Payment, progress: 'Planned', progressIcon: Planned, title: 'Payment Solutions', desc: 'Make pricing plans and packages to help you sell your services.' }
+        { id: 4, completed: false, icon: Upgrade, progress: 'In Development', progressIcon: InDev, title: 'Post-Launch Patch', desc: 'Enhancing speed and optimizing the app.' },
+        { id: 5, completed: false, icon: Upgrade, progress: 'Planned', progressIcon: Planned, title: 'Accessibility Update', desc: 'Making the app accessible to all.' },
+        { id: 6, completed: false, icon: Upgrade, progress: 'Planned', progressIcon: Planned, title: 'PWA Enhancements', desc: 'Enhancing the features of the app when running natively.' },
+        { id: 7, completed: false, icon: Nutrition, progress: 'Planned', progressIcon: Planned, title: 'Nutrition', desc: 'Giving you the tools to help your clients feel stronger and healthier.' },
+        { id: 8, completed: false, icon: CompLib, progress: 'Planned', progressIcon: Planned, title: 'Component Library', desc: 'Build a bespoke exercise programme even faster with shortcuts and more.' },
+        { id: 9, completed: false, icon: Report, progress: 'Planned', progressIcon: Planned, title: 'Report Generator', desc: 'Create a professional report to present your client\'s progress.' },
+        { id: 10, completed: false, icon: Payment, progress: 'Planned', progressIcon: Planned, title: 'Payment Solutions', desc: 'Make pricing plans and packages to help you sell your services.' }
       ]
     }
   },
