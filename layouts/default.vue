@@ -505,6 +505,9 @@
             <nuxt-link class="input--option" to="/terms-conditions">
               Terms & Conditions
             </nuxt-link>
+            <a class="input--option" href="https://status.traininblocks.com">
+              Status
+            </a>
           </div>
         </div><br><br>
         <form
