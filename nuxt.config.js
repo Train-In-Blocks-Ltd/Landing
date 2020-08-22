@@ -155,10 +155,11 @@ export default async () => {
           accepted: () => {
             window.dataLayer = window.dataLayer || []
             function gtag () {
-              dataLayer.push(arguments)
+              window.dataLayer.push(arguments)
             }
+            gtag('set', 'anonymizeIp', true)
             gtag('js', new Date())
-            gtag('config', 'UA-167770206-1')
+            gtag('config', 'UA-167770206-1', { anonymize_ip: true })
           },
           declined: () => {
           }
