@@ -144,23 +144,22 @@
       <div>
         <p><b>Why should you <i>Train In Blocks</i>?</b></p>
         <p>Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.</p>
-        <p>There are no standard ways to use this app. Find your flare a cater it towards your clientele. For example, use it for coaching, tracking treatments, therapy sessions and more.</p>
+        <p>There are no standard ways to use this app. Find your flare a cater it towards your clientele. For example, use it for coaching, tracking treatments, therapy sessions and more.</p><br>
+        <p><b>What are we working on next?</b></p>
         <p>You can also take part our features poll to have a say in our development. Let us know which features you would like to see in the next major update. It will only take 30 seconds.</p>
-        <div>
-          <router-link class="input--option more" to="/roadmap">
-            Find out more
-          </router-link><br><br><br>
-          <a
-            class="typeform-share button"
-            href="https://form.typeform.com/to/PMTb4d"
-            data-mode="popup"
-            data-hide-headers=true
-            data-hide-footer=true
-            target="_blank"
-          >
-            Vote for upcoming features
-          </a><br><br>
-        </div>
+        <router-link class="input--option more" to="/roadmap">
+          Find out more
+        </router-link><br><br><br>
+        <a
+          class="typeform-share button"
+          href="https://form.typeform.com/to/PMTb4d"
+          data-mode="popup"
+          data-hide-headers=true
+          data-hide-footer=true
+          target="_blank"
+        >
+          Vote for upcoming features
+        </a><br><br>
       </div>
     </div>
     <div class="spacer" />
