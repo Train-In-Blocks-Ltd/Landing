@@ -138,6 +138,9 @@
 
 <template>
   <div>
+    <h1>Version 1.2 is Now Live</h1>
+    <p>This update focuses on the feedback that we have been given by our users. We have optimised the app to run faster and more efficiently.</p>
+    <div class="spacer" />
     <div id="container--1c">
       <!-- Countdown
       <div class="countdown--wrapper">
@@ -153,27 +156,28 @@
       </div>
       -->
       <script>(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+      <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device PC">
       <div>
         <p><b>Why should you <i>Train In Blocks</i>?</b></p>
         <p>Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.</p>
         <p>There are no standard ways to use this app. Find your flare a cater it towards your clientele. For example, use it for coaching, tracking treatments, therapy sessions and more.</p>
+        <p>You can also take part our features poll to have a say in our development. Let us know which features you would like to see in the next major update. It will only take 30 seconds.</p>
+        <div>
+          <router-link class="input--option more" to="/roadmap">
+            Find out more
+          </router-link><br><br><br>
+          <a
+            class="typeform-share button"
+            href="https://form.typeform.com/to/PMTb4d"
+            data-mode="popup"
+            data-hide-headers=true
+            data-hide-footer=true
+            target="_blank"
+          >
+            Vote for upcoming features
+          </a><br><br>
+        </div>
       </div>
-      <div>
-        <a
-          class="typeform-share button"
-          href="https://form.typeform.com/to/PMTb4d"
-          data-mode="popup"
-          data-hide-headers=true
-          data-hide-footer=true
-          target="_blank"
-        >
-          Vote for upcoming features
-        </a><br><br>
-        <router-link class="input--option more" to="/roadmap">
-          Find out more
-        </router-link>
-      </div>
-      <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device PC">
     </div>
     <div class="spacer" />
     <div id="container--2c3r">
