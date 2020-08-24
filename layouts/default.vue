@@ -67,41 +67,43 @@
     transform: scale(.9)
   }
 
-  /* GLOBAL: Inputs and Buttons */
-  input {
-    background-color: transparent
-  }
-  button, #mc-embedded-subscribe {
-    cursor: pointer;
+  /* GLOBAL: BUTTONS */
+  button, #mc-embedded-subscribe, .typeform-share.button {
+    height: fit-content;
+    width: fit-content;
     user-select: none;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 1;
     text-transform: capitalize;
-    text-align: center;
     outline-width: 0;
-    border: 1px solid #E1E1E1;
-    padding: .5rem 1rem;
-    height: auto;
-    width: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    padding: .6rem 1.6rem;
     font-size: .8rem;
     letter-spacing: .1rem;
     font-weight: bold;
-    color: #282828;
-    background-color: white;
-    margin: 1rem 0 .5rem 0;
-    display: inline-block;
-    transition: color .4s, background-color .4s, transform .1s cubic-bezier(.165, .84, .44, 1)
-  }
-  button:not(:disabled):hover, #mc-embedded-subscribe:hover {
     color: white;
     background-color: #282828;
-    text-decoration: none
+    margin: .6rem 0;
+    transition: opacity .2s, transform .1s cubic-bezier(.165, .84, .44, 1)
   }
-  button:not(:disabled):active, #mc-embedded-subscribe:active {
+  button:hover, #mc-embedded-subscribe:hover, .typeform-share.button:hover {
+    opacity: .6
+  }
+  button:active, #mc-embedded-subscribe:active, .typeform-share.button:active {
     transform: scale(.96)
   }
-  button:disabled:hover {
-    background: transparent;
+  button:focus, #mc-embedded-subscribe:focus, .typeform-share.button:focus {
+    box-shadow: 0 0 0 4px rgba(76, 91, 106, .5)
+  }
+  button:disabled, button[disabled] {
+    opacity: .6;
     cursor: default
+  }
+
+  /* GLOBAL: INPUTS */
+  input {
+    background-color: transparent
   }
   select {
     cursor: pointer;

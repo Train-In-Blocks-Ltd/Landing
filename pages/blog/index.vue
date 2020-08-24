@@ -60,14 +60,18 @@
     .blog-post__title {
       font-size: 1.4rem
     }
+    .blog-post {
+      grid-template-columns: 1fr;
+      margin-top: 2rem
+    }
+    .blog-post__image {
+      height: auto;
+      width: 100%
+    }
   }
   @media (max-width: 769px) {
     .container--blog {
       display: block
-    }
-    .blog-post {
-      grid-template-columns: 1fr;
-      margin-top: 2rem
     }
     .blog-post__image {
       height: auto;

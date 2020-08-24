@@ -60,26 +60,7 @@
 
   /* Typeform */
   .typeform-share.button {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #282828;
-    color: white;
-    cursor: pointer;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 40px;
-    text-align: center;
-    margin: 0;
-    height: 40px;
-    padding: 0 26px;
-    border-radius: 0;
-    width: fit-content;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-weight: bold;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    text-decoration: none
   }
   .input--option.more {
     font-size: .8rem;
@@ -140,6 +121,9 @@
   <div>
     <h1>Version 1.2 is Now Live</h1>
     <p>This update focuses on the feedback that we have been given by our users. We have optimised the app to run faster and more efficiently.</p>
+    <form action="https://mailchi.mp/traininblocks/improve-sprint-performance-and-app-progress-4752742?e=[UNIQID]" target="_blank">
+      <button type="submit">Latest newsletter</button>
+    </form>
     <div class="spacer" />
     <div id="container--1c">
       <!-- Countdown
