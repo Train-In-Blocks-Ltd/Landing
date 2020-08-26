@@ -92,5 +92,3 @@ The small sample size may not reflect the true population.
 ## References
 
 Williams, M. R., Hendricks, D. S., Dannen, M. J., Arnold, A. M., Lawrence, M. A., (2018). Activity of Shoulder Stabilizers and Prime Movers During an Unstable Overhead Press. *Journal of Strength and Conditioning Research*, 34(1). 73-78.
-
----

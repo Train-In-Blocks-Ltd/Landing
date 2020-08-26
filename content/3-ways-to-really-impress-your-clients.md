@@ -66,5 +66,3 @@ It can be as in-depth as you like but keep in mind that your client would still 
 Generally speaking, keep the report image-based and with minimal text. Going over the top can quickly bore your clients rather than impress them. Canva is also a great tool to make creative reports and other documents.
 
 <br>
-
----
