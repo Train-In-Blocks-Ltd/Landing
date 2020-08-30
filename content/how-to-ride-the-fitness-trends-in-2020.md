@@ -73,6 +73,6 @@ Speaking of which, be sure to check out our app that you can use to create a bes
 
 <br>
 
----
+## References
 
 Mintel, (2020). How COVID-19 is boosting our predicted trends for 2030? [online] Available at: <a href="http://www.mintel.com" target="_blank">http://www.mintel.com</a> [Accessed 14 June 2020]

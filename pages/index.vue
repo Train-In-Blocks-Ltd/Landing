@@ -60,26 +60,7 @@
 
   /* Typeform */
   .typeform-share.button {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #282828;
-    color: white;
-    cursor: pointer;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 40px;
-    text-align: center;
-    margin: 0;
-    height: 40px;
-    padding: 0 26px;
-    border-radius: 0;
-    width: fit-content;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-weight: bold;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    text-decoration: none
   }
   .input--option.more {
     font-size: .8rem;
@@ -138,6 +119,12 @@
 
 <template>
   <div>
+    <h1>Version 1.2 is Now Live</h1>
+    <p>This update focuses on the feedback that we have been given by our users. We have optimised the app to run faster and more efficiently.</p>
+    <form action="https://mailchi.mp/traininblocks/improve-sprint-performance-and-app-progress-4752742?e=[UNIQID]" target="_blank">
+      <button type="submit">Latest newsletter</button>
+    </form>
+    <div class="spacer" />
     <div id="container--1c">
       <!-- Countdown
       <div class="countdown--wrapper">
@@ -153,12 +140,16 @@
       </div>
       -->
       <script>(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+      <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device PC">
       <div>
         <p><b>Why should you <i>Train In Blocks</i>?</b></p>
         <p>Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.</p>
-        <p>There are no standard ways to use this app. Find your flare a cater it towards your clientele. For example, use it for coaching, tracking treatments, therapy sessions and more.</p>
-      </div>
-      <div>
+        <p>There are no standard ways to use this app. Find your flare a cater it towards your clientele. For example, use it for coaching, tracking treatments, therapy sessions and more.</p><br>
+        <p><b>What are we working on next?</b></p>
+        <p>You can also take part our features poll to have a say in our development. Let us know which features you would like to see in the next major update. It will only take 30 seconds.</p>
+        <router-link class="input--option more" to="/roadmap">
+          Find out more
+        </router-link><br><br><br>
         <a
           class="typeform-share button"
           href="https://form.typeform.com/to/PMTb4d"
@@ -169,11 +160,7 @@
         >
           Vote for upcoming features
         </a><br><br>
-        <router-link class="input--option more" to="/roadmap">
-          Find out more
-        </router-link>
       </div>
-      <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device PC">
     </div>
     <div class="spacer" />
     <div id="container--2c3r">

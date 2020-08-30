@@ -88,5 +88,3 @@ The tests were performed within an hour session before and after the interventio
 ## References
 
 Dorrell, H. F., Smith, M. F., Gee, T. I., (2019). Comparison of Velocity-Based and Traditional Percentage-Based Loading Methods on Maximal Strength and Power Adaptations. *Journal of Strength and Conditioning Research*, 34(1), 46-53.
-
----

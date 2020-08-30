@@ -89,5 +89,3 @@ The recreationally active population could present a wide variability in perform
 ## References
 
 Stroiney, D. A., Mokris, R. L., Hanna, G. R., Ranney, J. D., (2018). Examination of Self-Myofascial Release vs. Instrument-Assisted Soft-Tissue Mobilization Techniques on Vertical and Horizontal Power in Recreational Athletes. Journal of Strength and Conditioning Research, 34(1), 79-88.
-
----

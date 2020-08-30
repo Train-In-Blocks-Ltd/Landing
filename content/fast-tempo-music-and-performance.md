@@ -71,5 +71,3 @@ The main findings of the investigation indicates that listening to fast-tempo mu
 ## References
 
 Centala, J., Pogorel, C., Pummill, S. W., Malek, M. H. (2019). Listening to Fast-Tempo Music Delays the Onset of Neuromuscular Fatigue. *Journal of Strength and Conditioning Research*, 34(3), 617-622.
-
----

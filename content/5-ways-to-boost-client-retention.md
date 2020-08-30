@@ -56,5 +56,3 @@ Life is fast and dynamic where some may find it difficult to stick to a structur
 We’ve all heard it before. We have 2 ears so that we may listen more than we speak.  You’ll never know what other interests your clients may have. Finding this out and using the information with the previous points could enhance your client retention. Additionally, you can research their interests so that you can have better conversations with them.
 
 <br>
-
----

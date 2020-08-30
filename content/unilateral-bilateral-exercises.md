@@ -106,5 +106,3 @@ Furthermore, there were difficulties in determining loads for BS and SU. It is a
 ## References
 
 Appleby, B. B., Cormack, S. J., Newton, R. U. (2019). Unilateral and Bilateral Lower-Body Resistance Training Does not Transfer Equally to Sprint and Change of Direction Performance. *Journal of Strength and Conditioning Research*, 34(1), 54-64.
-
----

@@ -58,5 +58,3 @@ To achieve this, we'll celebrate the achievements made by trainers and coaches a
 Knowledge is power, it's even better when it's free. Expect great articles on the upcoming trends and research surrounding the health and fitness industry.
 
 <br>
-
----

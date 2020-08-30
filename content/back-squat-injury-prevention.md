@@ -8,7 +8,7 @@ excerpt: An alternative screening method to prevent injuries associated with low
 ---
 
 **Mikey Lau**  
-050820
+200820
 
 ---
 
@@ -73,5 +73,3 @@ It was indicated that higher risk of lower extremity injuries is possible if rel
 ## References
 
 Case, M. J., Knudson, D. V., Downey, D. L., (2020). Barbell Squat Relative Strength as an Identifier for Lower Extremity Injury in Collegiate Athletes. Journal of Strength and Conditioning Research, 34(5), 1249-1253.
-
----
