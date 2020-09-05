@@ -50,7 +50,7 @@ export default {
       return false
     }
   },
-  beforeCreate () {
+  mounted () {
     this.$parent.$parent.metaHelper.title = this.title
     this.$parent.$parent.metaHelper.description = this.excerpt
     this.$parent.$parent.metaHelper.image = this.img
