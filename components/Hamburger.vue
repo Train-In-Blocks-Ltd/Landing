@@ -9,16 +9,16 @@
         <nuxt-link class="input--option" to="/">
           Welcome
         </nuxt-link>
-        <nuxt-link class="input--option" to="/features">
+        <nuxt-link class="input--option" to="/features/">
           Demo
         </nuxt-link>
-        <nuxt-link class="input--option" to="/pricing">
+        <nuxt-link class="input--option" to="/pricing/">
           Pricing
         </nuxt-link>
-        <nuxt-link class="input--option" to="/roadmap">
+        <nuxt-link class="input--option" to="/roadmap/">
           Roadmap
         </nuxt-link>
-        <nuxt-link class="input--option" to="/Explore">
+        <nuxt-link class="input--option" to="/explore/">
           Explore
         </nuxt-link>
         <button class="darkmode" @click="$parent.darkThemeSwitch()">

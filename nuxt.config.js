@@ -169,7 +169,11 @@ export default async () => {
     },
     sitemap: {
       hostname: 'https://traininblocks.com',
-      gzip: true
+      gzip: true,
+      trailingSlash: true,
+      exclude: [
+        '/success'
+      ]
     },
     pwa: {
       manifest: {

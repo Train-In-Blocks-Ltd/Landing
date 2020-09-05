@@ -101,7 +101,7 @@
             </p>
           </div>
           <div class="blog-post__link">
-            <nuxt-link class="blog-post__link-text" :to="getPermalink(post)">
+            <nuxt-link class="blog-post__link-text" :to="'/blog/' + post.attributes.slug + '/'">
               Read more
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/blog/Arrow.svg')" />
@@ -130,13 +130,8 @@ export default {
       posts: imports
     }
   },
-  data () {
-    return {
-      prefix: 'blog'
-    }
-  },
   created () {
-    this.sortWorkouts()
+    this.sortPosts()
   },
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Free Content for Personal Trainers'
@@ -144,13 +139,10 @@ export default {
     this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/blog/'
   },
   methods: {
-    sortWorkouts () {
+    sortPosts () {
       this.posts.sort((a, b) => {
         return new Date(b.attributes.id) - new Date(a.attributes.id)
       })
-    },
-    getPermalink (post) {
-      return this.prefix + '/' + post.attributes.slug
     }
   }
 }
