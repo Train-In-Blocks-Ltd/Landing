@@ -57,9 +57,10 @@ export default {
       ]
     }
   },
-  mounted () {
+  beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Our Philosophy'
     this.$parent.$parent.metaHelper.description = 'Find more about our core values and what we stand for!'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/about/'
   }
 }
 </script>

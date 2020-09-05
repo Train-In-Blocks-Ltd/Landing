@@ -118,9 +118,10 @@ export default {
       ]
     }
   },
-  mounted () {
+  beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Here’s Our Journey, Join Us'
     this.$parent.$parent.metaHelper.description = 'We love for you to get involved in our development. Vote for new features and join our community of health and fitness professionals.'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/roadmap/'
   }
 }
 </script>

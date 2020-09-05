@@ -138,9 +138,10 @@ export default {
   created () {
     this.sortWorkouts()
   },
-  mounted () {
+  beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Free Content for Personal Trainers'
     this.$parent.$parent.metaHelper.description = 'Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/blog/'
   },
   methods: {
     sortWorkouts () {

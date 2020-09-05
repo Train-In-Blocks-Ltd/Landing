@@ -36,7 +36,9 @@
       It can take up to an hour for the email to arrive
     </p>
     <div class="spacer" />
-    <h2 class="sub-title">Guides</h2>
+    <h2 class="sub-title">
+      Guides
+    </h2>
     <div class="container--guide">
       <div v-for="item in guides" :key="item.id" class="guide-item">
         <img class="img--gif" :src="require('../assets/guide/gif/' + item.gif)">
@@ -44,6 +46,7 @@
           <h2>
             {{ item.title }}
           </h2>
+          <!--eslint-disable-next-line-->
           <div v-html="item.text" />
         </div>
       </div>
@@ -66,6 +69,16 @@ export default {
         { id: 8, gif: 'toolkit.gif', title: 'Using the toolkit', text: '<p>Click the <i>Toolkit</i> button and select a calculator to use. Fill out the required information and get an instant result.</p>' },
         { id: 9, gif: 'copy-across.gif', title: 'Progressing the workouts', text: '<p>Press the <i>Copy Across</i> icon above your workouts and specify how many microcycles to copy across. You can also state how many days to separate each workout.</p>' },
         { id: 10, gif: 'colour-code.gif', title: 'Colour coding the calendar', text: '<p>Select a microcycle which you want to colour code. Then press the colour icon above your workouts and choose a colour.</p>' }
+      ]
+    }
+  },
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'Success'
+  },
+  head () {
+    return {
+      meta: [
+        { hid: 'robots', name: 'robots', content: 'noindex' }
       ]
     }
   }

@@ -51,3 +51,13 @@
     <p>However, if you are still looking for more information then you can contact us at: <b>hello@traininblocks.com</b></p>
   </div>
 </template>
+
+<script>
+export default {
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'Cookie Policy'
+    this.$parent.$parent.metaHelper.description = 'Train In Blocks Ltd\'s Cookie Policy'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/cookie-policy/'
+  }
+}
+</script>

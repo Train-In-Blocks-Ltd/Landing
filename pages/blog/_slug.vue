@@ -50,10 +50,11 @@ export default {
       return false
     }
   },
-  mounted () {
+  beforeCreate () {
     this.$parent.$parent.metaHelper.title = this.title
     this.$parent.$parent.metaHelper.description = this.excerpt
     this.$parent.$parent.metaHelper.image = this.img
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/blog/' + this.$route.params.slug + '/'
   }
 }
 </script>

@@ -122,7 +122,9 @@
     <h1>Version 1.2 is Now Live</h1>
     <p>This update focuses on the feedback that we have been given by our users. We have optimised the app to run faster and more efficiently.</p>
     <form action="https://mailchi.mp/traininblocks/improve-sprint-performance-and-app-progress-4752742?e=[UNIQID]" target="_blank">
-      <button type="submit">Latest newsletter</button>
+      <button type="submit">
+        Latest newsletter
+      </button>
     </form>
     <div class="spacer" />
     <div id="container--1c">
@@ -154,8 +156,8 @@
           class="typeform-share button"
           href="https://form.typeform.com/to/PMTb4d"
           data-mode="popup"
-          data-hide-headers=true
-          data-hide-footer=true
+          :data-hide-headers="true"
+          :data-hide-footer="true"
           target="_blank"
         >
           Vote for upcoming features
@@ -195,9 +197,10 @@ export default {
       title: 'Want to train more clients effectively?'
     }
   },
-  mounted () {
+  beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Programming for Personal Trainers'
     this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
   }
 }
 </script>

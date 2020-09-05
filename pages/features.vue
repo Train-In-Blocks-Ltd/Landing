@@ -363,10 +363,13 @@ export default {
       currentID: null
     }
   },
-  mounted () {
-    this.scan()
+  beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Faster Exercise Programming'
     this.$parent.$parent.metaHelper.description = 'Say goodbye to spreadsheets. They\'ve served us well but we\'ve found a better way of tracking client data.'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/features/'
+  },
+  mounted () {
+    this.scan()
   },
   methods: {
     toggleEdit (id) {

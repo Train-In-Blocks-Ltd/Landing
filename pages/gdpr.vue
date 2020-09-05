@@ -41,3 +41,13 @@
     <p>By using our website/services, you hereby consent to our Privacy Policy and agree to its terms.</p>
   </div>
 </template>
+
+<script>
+export default {
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'GDPR'
+    this.$parent.$parent.metaHelper.description = 'Train In Blocks Ltd\'s GDPR Statement'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/gdpr/'
+  }
+}
+</script>

@@ -13,3 +13,13 @@
     <p>This policy is effective as of 1 May 2020.</p>
   </div>
 </template>
+
+<script>
+export default {
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'Privacy Policy'
+    this.$parent.$parent.metaHelper.description = 'Train In Blocks Ltd\'s Privacy Policy'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/privacy-policy/'
+  }
+}
+</script>

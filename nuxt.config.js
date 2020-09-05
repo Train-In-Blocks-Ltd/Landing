@@ -51,6 +51,7 @@ export default async () => {
         { property: 'og:url', content: 'https://traininblocks.com' }
       ],
       link: [
+        { hid: 'canonical', rel: 'canonical' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://traininblocks.com/apple-touch-icon.png' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://traininblocks.com/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '194x194', href: 'https://traininblocks.com/favicon-194x194.png' },

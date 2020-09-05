@@ -271,9 +271,10 @@ export default {
       ]
     }
   },
-  mounted () {
+  beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Affordable Personal Trainer Software'
     this.$parent.$parent.metaHelper.description = 'You can\'t beat our pricing. All with no restriction on the number of clients and programmes. Get instant access now!'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/pricing/'
   },
   methods: {
     checkout0 () {

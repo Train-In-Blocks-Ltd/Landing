@@ -38,3 +38,13 @@
     </p>
   </div>
 </template>
+
+<script>
+export default {
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'Terms and Conditions'
+    this.$parent.$parent.metaHelper.description = 'Train In Blocks Ltd\'s Terms and Conditions'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/terms-conditions/'
+  }
+}
+</script>

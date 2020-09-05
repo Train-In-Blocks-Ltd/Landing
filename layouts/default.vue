@@ -440,19 +440,19 @@
         <nuxt-link class="input--option" to="/" @click.native="openNav = false">
           Welcome
         </nuxt-link>
-        <nuxt-link class="input--option" to="/features" @click.native="openNav = false">
+        <nuxt-link class="input--option" to="/features/" @click.native="openNav = false">
           Features
         </nuxt-link>
-        <nuxt-link class="input--option" to="/pricing" @click.native="openNav = false">
+        <nuxt-link class="input--option" to="/pricing/" @click.native="openNav = false">
           Pricing
         </nuxt-link>
-        <nuxt-link class="input--option" to="/roadmap" @click.native="openNav = false">
+        <nuxt-link class="input--option" to="/roadmap/" @click.native="openNav = false">
           Roadmap
         </nuxt-link>
-        <nuxt-link class="input--option" to="/about" @click.native="openNav = false">
+        <nuxt-link class="input--option" to="/about/" @click.native="openNav = false">
           About
         </nuxt-link>
-        <nuxt-link class="input--option" to="/blog" @click.native="openNav = !openNav">
+        <nuxt-link class="input--option" to="/blog/" @click.native="openNav = !openNav">
           Blog
         </nuxt-link>
         <a class="input--option get-help" href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3" target="_blank" @click="openNav = false">
@@ -482,7 +482,7 @@
             <template v-slot:bar>
               <p>
                 We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
-                <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/cookie-policy">
+                <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/cookie-policy/">
                   <b>Cookies Policy</b>.
                 </nuxt-link>
               </p>
@@ -495,16 +495,16 @@
             <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
           </div>
           <div>
-            <nuxt-link class="input--option" to="/gdpr">
+            <nuxt-link class="input--option" to="/gdpr/">
               GDPR Statement
             </nuxt-link>
-            <nuxt-link class="input--option" to="/privacy-policy">
+            <nuxt-link class="input--option" to="/privacy-policy/">
               Privacy Policy
             </nuxt-link>
-            <nuxt-link class="input--option" to="/cookie-policy">
+            <nuxt-link class="input--option" to="/cookie-policy/">
               Cookie Policy
             </nuxt-link>
-            <nuxt-link class="input--option" to="/terms-conditions">
+            <nuxt-link class="input--option" to="/terms-conditions/">
               Terms & Conditions
             </nuxt-link>
             <a class="input--option" href="https://status.traininblocks.com">
@@ -577,7 +577,8 @@ export default {
       metaHelper: {
         title: 'Train In Blocks',
         description: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.',
-        image: 'https://traininblocks.com/android-chrome-512x512.png'
+        image: 'https://traininblocks.com/android-chrome-512x512.png',
+        url: 'https://traininblocks.com'
       }
     }
   },
@@ -603,6 +604,9 @@ export default {
         { hid: 'twitter:title', name: 'twitter:title', content: this.metaHelper.title },
         { hid: 'twitter:description', name: 'twitter:description', content: this.metaHelper.description },
         { hid: 'twitter:img', name: 'twitter:img', content: this.metaHelper.image }
+      ],
+      link: [
+        { hid: 'canonical', rel: 'canonical', href: this.metaHelper.url }
       ]
     }
   }
