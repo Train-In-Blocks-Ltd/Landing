@@ -1,5 +1,5 @@
 {
-  "name": "@netlify/plugin-sitemap",
+  "name": "sitemap",
   "version": "0.3.4",
   "description": "",
   "main": "index.js",
