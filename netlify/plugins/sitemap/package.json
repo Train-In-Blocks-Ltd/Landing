@@ -1,7 +1,6 @@
 {
   "name": "sitemap",
   "version": "0.3.4",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "pretest": "ava --reset-cache",
@@ -24,12 +23,6 @@
     "package-lock.json",
     "README.md"
   ],
-  "author": "David Wells",
-  "repository": "https://github.com/netlify-labs/netlify-plugin-sitemap",
-  "bugs": {
-    "url": "https://github.com/netlify-labs/netlify-plugin-sitemap/issues"
-  },
-  "license": "MIT",
   "dependencies": {
     "globby": "^10.0.1",
     "mkdirp": "^1.0.4",
