@@ -27,6 +27,7 @@
   package = "@netlify/plugin-sitemap"
   [plugins.inputs]
     buildDir = "dist"
+    prettyURLs = true
     exclude = [
       # By file Path
       # './build-dir/path-to/file.html',
