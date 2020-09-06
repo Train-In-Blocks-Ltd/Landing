@@ -1,4 +1,4 @@
-name: netlify-plugin-sitemap
+name: sitemap
 inputs:
   - name: baseUrl
     # description: Site's home URL. Defaults to Netlify's SITE URL.
