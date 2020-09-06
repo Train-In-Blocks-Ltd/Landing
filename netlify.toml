@@ -24,7 +24,7 @@
     Content-Security-Policy = "upgrade-insecure-requests"
 
 [[plugins]]
-  package = "@netlify/plugin-sitemap"
+  package = "/netlify/plugins/sitemap"
   [plugins.inputs]
     buildDir = "dist"
     prettyURLs = true
@@ -33,5 +33,6 @@
       # './build-dir/path-to/file.html',
       # By Glob pattern
       # '**/**/child-one.html'
-      'success/index.html'
+      'success/index.html',
+      '/200.html'
     ]
