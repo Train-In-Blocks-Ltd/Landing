@@ -123,6 +123,7 @@ export default async () => {
     ** Nuxt.js modules
     */
     modules: [
+      '@nuxtjs/sitemap',
       'vue-social-sharing/nuxt',
       ['nuxt-cookie-control', {
         colors: {
@@ -164,6 +165,14 @@ export default async () => {
           declined: () => {
           }
         }
+      ]
+    },
+    sitemap: {
+      hostname: 'https://traininblocks.com',
+      gzip: true,
+      trailingSlash: true,
+      exclude: [
+        '/success'
       ]
     },
     pwa: {
