@@ -40,23 +40,23 @@ export default async () => {
         { name: 'tiwtter:site', content: '@traininblocks' },
         { hid: 'twitter:title', name: 'twitter:title', template: chunk => `Train In Blocks | ${chunk}` },
         { hid: 'twitter:description', name: 'twitter:description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
-        { hid: 'twitter:image', name: 'twitter:image', content: 'https://traininblocks.com/android-chrome-512x512.png' },
+        { hid: 'twitter:image', name: 'twitter:image', content: 'https://traininblocks.com/android-chrome-512x512.png?v=192' },
 
         // Open Graph data
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Train In Blocks' },
         { hid: 'og:description', property: 'og:description', content: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.' },
         { hid: 'og:title', property: 'og:title', template: chunk => `Train In Blocks | ${chunk}` },
-        { hid: 'og:image', property: 'og:image', content: 'https://traininblocks.com/android-chrome-512x512.png' },
+        { hid: 'og:image', property: 'og:image', content: 'https://traininblocks.com/android-chrome-512x512.png?v=192' },
         { property: 'og:url', content: 'https://traininblocks.com' }
       ],
       link: [
         { hid: 'canonical', rel: 'canonical' },
-        { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://traininblocks.com/apple-touch-icon.png' },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://traininblocks.com/favicon-16x16.png' },
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://traininblocks.com/favicon-32x32.png' },
-        { rel: 'icon', type: 'image/png', sizes: '192x192', href: 'https://traininblocks.com/android-chrome-192x192.png' },
-        { rel: 'mask-icon', href: 'https://traininblocks.com/safari-pinned-tab.svg', color: '#282828' }
+        { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://traininblocks.com/apple-touch-icon.png?v=192' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://traininblocks.com/favicon-16x16.png?v=192' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://traininblocks.com/favicon-32x32.png?v=192' },
+        { rel: 'icon', type: 'image/png', sizes: '192x192', href: 'https://traininblocks.com/android-chrome-192x192.png?v=192' },
+        { rel: 'mask-icon', href: 'https://traininblocks.com/safari-pinned-tab.svg?v=192', color: '#282828' }
       ],
       __dangerouslyDisableSanitizers: ['script'],
       script: [
