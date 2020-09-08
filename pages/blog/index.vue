@@ -6,7 +6,6 @@
   .blog-post {
     display: grid;
     box-shadow: 0 0 20px 10px #28282810;
-    grid-template-columns: 1fr .4fr;
     margin: 4rem 0
   }
   .blog-post__top-wrapper {
@@ -19,9 +18,8 @@
     margin: 0
   }
   .blog-post__image {
-    margin: auto;
-    height: 400px;
-    width: auto
+    height: auto;
+    width: 100%
   }
   .blog-post__link {
     display: grid;
@@ -46,27 +44,13 @@
 
   /* Responsiveness */
   @media (max-width: 1200px) {
-    .container--blog {
-      grid-template-rows: repeat(auto-fill, 300px)
-    }
     .blog-post__top-wrapper {
       padding: 2rem
-    }
-    .blog-post__image {
-      height: 300px
     }
   }
   @media (max-width: 992px) {
     .blog-post__title {
       font-size: 1.4rem
-    }
-    .blog-post {
-      grid-template-columns: 1fr;
-      margin-top: 2rem
-    }
-    .blog-post__image {
-      height: auto;
-      width: 100%
     }
   }
   @media (max-width: 769px) {
@@ -91,6 +75,7 @@
     </h1>
     <div class="container--blog">
       <div v-for="post in posts" :key="post.attributes.title" class="blog-post">
+        <img class="blog-post__image" :src="'/blog-img/' + post.attributes.img" loading="lazy">
         <div class="blog-post__top-wrapper">
           <div>
             <h2 class="blog-post__title">
@@ -107,7 +92,6 @@
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/blog/Arrow.svg')" />
           </div>
         </div>
-        <img class="blog-post__image" :src="'/blog-img/' + post.attributes.img" loading="lazy">
       </div>
     </div>
   </div>
