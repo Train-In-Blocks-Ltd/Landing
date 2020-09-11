@@ -2,18 +2,21 @@
   h2, .container--intro p {
     margin: 1.5rem 0
   }
-  .container--2c {
+  .section--workouts {
     display: grid;
-    grid-template-columns: 1fr .6fr;
-    grid-template-areas: 'a b';
     grid-gap: 2rem
   }
-  #text {
-    grid-area: b;
-    margin: auto 3rem
-  }
-  .container--2c p {
+  .section--workouts p {
     margin: 1.5rem 0
+  }
+  .icon--expand {
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: .2rem;
+    transition: all .6s
+  }
+  .expanded {
+    transform: rotate(180deg)
   }
 
   /* Workout */
@@ -29,22 +32,15 @@
   }
   .container--workouts {
     display: grid;
-    grid-area: a;
-    grid-template: 1fr 24px/repeat(5, 300px);
-    grid-gap: 1rem 3rem;
-    padding: 1rem;
-    overflow-x: auto
+    grid-gap: 2rem
   }
-  .wrapper--workout {
-    height: fit-content;
-    border-left: 1px solid #E1E1E1;
-    border-bottom: 1px solid #E1E1E1
-  }
-  .workouts--workout {
+  .workout--header {
+    display: flex;
+    justify-content: space-between;
     margin: 0;
-    padding: 1rem
+    padding-bottom: 2rem
   }
-  .workouts--workout p {
+  .workout--header p {
     margin: 0
   }
   .text--date {
@@ -52,14 +48,6 @@
   }
   .bottom-bar {
     height: 60px
-  }
-  .button--save {
-    margin: 1rem;
-    padding: .4rem 1rem
-  }
-  .activeWorkout {
-    height: 490px;
-    border: 2px solid #282828
   }
 
   /* Chart */
@@ -116,17 +104,6 @@
   }
 
   @media (max-width: 768px) {
-    .container--2c {
-      grid-template: .4fr 1fr/1fr;
-      grid-template-areas:
-        'b'
-        'a'
-    }
-    .container--demo {
-      grid-template-areas:
-        'a'
-        'b'
-    }
     #chart {
       margin: 0;
       width: 70vw
@@ -144,9 +121,6 @@
     }
   }
   @media (max-width: 360px) {
-    .container--workouts {
-      grid-template-columns: repeat(5, 300px)
-    }
     #editor {
       width: 100%
     }
@@ -163,37 +137,36 @@
     <h1 class="paper--title">
       {{ title }}
     </h1>
-    <div class="container--2c">
-      <div class="container--workouts">
-        <div v-for="exampleWorkout in exampleWorkoutStore" :key="exampleWorkout.id" class="wrapper--workout" :class="{activeWorkout: currentID === exampleWorkout.id}">
-          <div class="workouts--workout">
-            <p><b>Workout {{ exampleWorkout.id }}</b></p>
-            <p class="text--date">
-              {{ exampleWorkout.date }}
-            </p>
-          </div>
-          <quill v-if="currentID === exampleWorkout.id" v-model="exampleWorkout.content" output="html" class="quill" :config="config" />
-          <!--eslint-disable-next-line-->
-          <div v-if="currentID !== exampleWorkout.id" class="show-workout" v-html="exampleWorkout.content" />
-          <div class="bottom-bar">
-            <button v-if="currentID === exampleWorkout.id" class="button--save" @click="scan()">
-              Save
-            </button>
-            <button v-if="currentID !== exampleWorkout.id && currentID === null" class="button--save" @click="toggleEdit(exampleWorkout.id)">
-              Edit
-            </button>
-          </div>
-        </div>
-        <div class="text--scroll">
-          <p>Scroll for more workouts</p>
-          <inline-svg :src="require('../assets/svg/features/doubleArrow.svg')" />
-        </div>
-      </div>
+    <div class="section--workouts">
       <div id="text">
         <p><b>How do we track performance? Spreadsheets right?</b></p>
         <p>No.</p>
         <p><b>Say goodbye to manually tracking data.</b></p>
         <p>Our app will understand the workouts and will do all the math for you. That's right. You build, visualise, adjust and adapt even before the first session.</p>
+      </div>
+      <div class="container--workouts">
+        <div v-for="exampleWorkout in exampleWorkoutStore" :key="exampleWorkout.id" class="wrapper--workout">
+          <div class="workout--header">
+            <div>
+              <p><b>Workout {{ exampleWorkout.id }}</b></p>
+              <p class="text--date">
+                {{ exampleWorkout.date }}
+              </p>
+            </div>
+            <inline-svg @click="toggleExpandedSessions(exampleWorkout.id)" :class="{expanded: expandedSessions.includes(exampleWorkout.id)}" class="icon--expand" :src="require('../assets/svg/expand.svg')" />
+          </div>
+          <quill v-if="currentID === exampleWorkout.id && expandedSessions.includes(exampleWorkout.id)" v-model="exampleWorkout.content" output="html" class="quill" :config="config" />
+          <!--eslint-disable-next-line-->
+          <div v-if="currentID !== exampleWorkout.id && expandedSessions.includes(exampleWorkout.id)" class="show-workout" v-html="exampleWorkout.content" />
+          <div v-if="expandedSessions.includes(exampleWorkout.id)" class="bottom-bar">
+            <button v-if="currentID === exampleWorkout.id" @click="scan()">
+              Save
+            </button>
+            <button v-if="currentID !== exampleWorkout.id && currentID === null" @click="toggleEdit(exampleWorkout.id)">
+              Edit
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <div class="spacer" />
@@ -309,6 +282,7 @@ export default {
   },
   data () {
     return {
+      expandedSessions: [],
       title: 'Try before you buy!',
       featuresTitle: 'What are the benefits?',
       features: [
@@ -326,12 +300,11 @@ export default {
       config: {
         placeholder: 'Get programming...',
         modules: {
+          clipboard: {
+            matchVisual: false
+          },
           toolbar: [
-            [{ header: 1 }, { header: 2 }],
-            ['bold', 'italic', 'underline', { script: 'sub' }, { script: 'super' }],
-            [{ list: 'ordered' }, { list: 'bullet' }],
-            ['link'],
-            ['clean']
+            [{ header: 1 }, { header: 2 }, 'bold', 'italic', 'underline', { script: 'sub' }, { script: 'super' }, { list: 'ordered' }, { list: 'bullet' }, 'link']
           ]
         }
       },
@@ -372,6 +345,16 @@ export default {
     this.scan()
   },
   methods: {
+    toggleExpandedSessions (id) {
+      if (this.expandedSessions.includes(id)) {
+        const index = this.expandedSessions.indexOf(id)
+        if (index > -1) {
+          this.expandedSessions.splice(index, 1)
+        }
+      } else {
+        this.expandedSessions.push(id)
+      }
+    },
     toggleEdit (id) {
       this.currentID = id
     },

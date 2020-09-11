@@ -255,12 +255,10 @@
     stroke: #282828
   }
   div.ql-editor {
-    max-height: 250px;
-    height: 351px;
     color: #282828;
     overflow-y: auto
   }
-  div.ql-editor ul li:not(.ql-direction-rtl) {
+  div.ql-editor ul li:not(.ql-direction-rtl), div.ql-editor, div.ql-snow.ql-toolbar {
     padding: 0
   }
   .ql-snow.ql-toolbar button:hover, .ql-snow .ql-toolbar button:hover, .ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar .ql-picker-label:hover, .ql-snow .ql-toolbar .ql-picker-label:hover, .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-item:hover, .ql-snow .ql-toolbar .ql-picker-item:hover, .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
@@ -291,8 +289,6 @@
   /* Workout state */
   .show-workout {
     overflow-wrap: break-word;
-    padding: 12px 15px;
-    max-height: 338px;
     color: #282828;
     line-height: 1.42;
     overflow-y: auto;
