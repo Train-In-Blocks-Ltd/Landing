@@ -177,7 +177,8 @@ export default async () => {
     generate: {
       routes: await getDynamicPaths({
         '/posts': 'posts/*.md'
-      })
+      }),
+      fallback: true
     },
     /*
     ** Build configuration
