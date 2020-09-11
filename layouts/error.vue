@@ -20,6 +20,11 @@ export default {
       default: null
     }
   },
+  computed: {
+    statusCode () {
+      return (this.error && this.error.statusCode) || 500
+    }
+  },
   mounted () {
     // eslint-disable-next-line
     console.error(this.error)

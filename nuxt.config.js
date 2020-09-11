@@ -166,6 +166,10 @@ export default async () => {
       ]
     },
     pwa: {
+      workbox: {
+        offlineAnalytics: true,
+        offlinePage: '/404.html',
+      },
       manifest: {
         display: 'browser'
       }
