@@ -18,6 +18,9 @@
   .expanded {
     transform: rotate(180deg)
   }
+  .text--error {
+    color: darkred
+  }
 
   /* Workout */
   .text--scroll {
@@ -47,36 +50,33 @@
     font-size: .8rem
   }
   .bottom-bar {
-    height: 60px
+    height: 60px;
+    margin-top: 1rem
   }
 
   /* Chart */
   .container--demo {
-    display: grid;
-    grid-template-areas: 'a b'
+    display: grid
   }
   #chart {
-    grid-area: b;
-    position: relative;
-    margin: auto;
-    width: 40vw
-  }
-  #stats {
-    grid-area: a
+    position: relative
   }
   #stats h2 {
     margin-top: 0
   }
   #dataName, #dataType {
-    font-size: 1.6rem
+    font-size: 1.6rem;
+    margin-top: .6rem
   }
   .container--desc-data {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr;
     margin: 2rem 0
   }
   .container--desc-data p {
     margin: 1rem 0
   }
-  .wrapper--data {
+  .data-select__options {
     display: grid;
     grid-gap: 1rem;
     margin-bottom: 2rem
@@ -104,26 +104,16 @@
   }
 
   @media (max-width: 768px) {
-    #chart {
-      margin: 0;
-      width: 70vw
-    }
     #text {
       margin: 2rem 0
     }
   }
   @media (max-width: 576px) {
-    #dataName, #dataType {
-      width: 100%
-    }
     .container--features {
       margin: 0 0 2rem 0
     }
   }
   @media (max-width: 360px) {
-    #editor {
-      width: 100%
-    }
     .container--features {
       grid-template-columns: 1fr;
       grid-template-rows: .4fr 1fr;
@@ -157,7 +147,7 @@
           </div>
           <quill v-if="currentID === exampleWorkout.id && expandedSessions.includes(exampleWorkout.id)" v-model="exampleWorkout.content" output="html" class="quill" :config="config" />
           <!--eslint-disable-next-line-->
-          <div v-if="currentID !== exampleWorkout.id && expandedSessions.includes(exampleWorkout.id)" class="show-workout" v-html="exampleWorkout.content" />
+          <div v-if="currentID !== exampleWorkout.id && expandedSessions.includes(exampleWorkout.id)" class="show-workout" v-html="exampleWorkout.content.replace(/[[\]]/g, '')" />
           <div v-if="expandedSessions.includes(exampleWorkout.id)" class="bottom-bar">
             <button v-if="currentID === exampleWorkout.id" @click="scan()">
               Save
@@ -171,35 +161,35 @@
     </div>
     <div class="spacer" />
     <div class="container--demo">
-      <line-chart id="chart" :chart-data="dataCollection" :options="options" />
       <div id="stats">
-        <h2 class="sub-title">
-          Statistics
-        </h2>
-        <div class="wrapper--data">
-          <label for="dataName"><b>Measurement:</b></label>
-          <select id="dataName" v-model="selectedDataName" name="dataName" @change="selection()">
-            <option v-for="option in optionsForDataName" :key="option.id" :value="option.value">
-              {{ option.text }}
-            </option>
-          </select>
+        <div>
+          <h2 class="sub-title">
+            Statistics
+          </h2>
+          <p v-if="protocolError.length !== 0" class="text--error">There are some problems with your tracked exercises. Please check that the following measurements/exercises are using the correct format.</p><br>
+          <p v-show="protocolError.length !== 0" class="text--error" v-for="(error, index) in protocolError" :key="index"><b>{{error.prot}} for {{error.exercise}} from {{error.sessionName}}</b></p>
+        </div><br>
+        <div class="data-select__options">
+          <label for="measure">
+            <b>Measurement: </b><br>
+            <select id="dataName" v-model="selectedDataName" @change="scan(), selection()" name="measure">
+              <option v-for="optionName in optionsForDataName" :value="optionName.value" :key="'M' + optionName.id">
+                {{optionName.text}}
+              </option>
+            </select>
+          </label>
         </div>
-        <div v-show="showType" class="wrapper--data">
-          <label for="dataType"><b>Data Type:</b></label>
-          <select id="dataType" v-model="selectedDataType" name="dataType" @change="selection()">
-            <option value="Sets">
-              Sets
-            </option>
-            <option value="Reps">
-              Reps
-            </option>
-            <option value="Load">
-              Load
-            </option>
-            <option value="Volume">
-              Volume
-            </option>
-          </select>
+        <div class="data-select__options" v-show="showType">
+          <label for="measure-type">
+            <b>Data type: </b><br>
+            <select id="dataType" v-model="selectedDataType" @change="scan(), selection()" name="measure-type">
+              <option value="Sets">Sets</option>
+              <option value="Reps">Reps</option>
+              <option v-for="optionData in optionsForDataType" :value="optionData.value" :key="'DT-' + optionData.id">
+                {{optionData.text}}
+              </option>
+            </select>
+          </label>
         </div>
         <div v-show="showType" class="container--desc-data">
           <div class="container--data-desc">
@@ -244,6 +234,7 @@
           </div>
         </div>
       </div>
+      <line-chart id="chart" :chart-data="dataCollection" :options="options" />
     </div>
     <div class="spacer" />
     <h1 class="main-title">
@@ -309,11 +300,11 @@ export default {
         }
       },
       exampleWorkoutStore: [
-        { id: 1, date: 'SAT 01.08.2020', content: '<h1><strong>How to use</strong></h1><p><br></p><p>Anything contained in the <strong>square brackets</strong> are automatically <strong>tracked</strong>!!</p><p><br></p><p><b>Format:</b></p><p>-------------</p><p><em>Exercise Name</em><strong>:</strong> <em>Sets</em> <strong>x</strong> <em>Reps</em> <strong>at</strong> <em>Load</em></p><p><em>Other Measures</em><strong>:</strong> <em>Values</em></p><p><br></p><p><strong>(You must separate the name and the measurement with a colon)</strong></p><p><br></p><p><strong>Example Workout Below</strong></p><p>======================</p><h2><strong>Warm-Up</strong></h2><p><br></p><p>A [Treadmill: 6 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p><br></p><p>B [Rower: 1000m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A [Bench Press: 2x14 at 30/35/40kg]</p><p><br></p><p>B [Incline Dumbbell Press: 2x14/12 at 16/16kg]</p><p><br></p><p>C [Decline Dumbbell Press: 2x10/8 at 12/14kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 6]</p><p>[Weight (kg): 56.2]</p><p>[Hydration (%): 56]</p><p>[CMJ Test (cm): 40]</p>' },
-        { id: 2, date: 'TUE 04.08.2020', content: '<h2><strong>Warm-Up</strong></h2><p><br></p><p>A [Treadmill: 6 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p><br></p><p>B [Rower: 1200m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A [Bench Press: 2x12 at 35/40/42.5kg]</p><p><br></p><p>B [Incline Dumbbell Press: 2x14 at 16/18kg]</p><p><br></p><p>C [Decline Dumbbell Press: 2x10 at 14/14kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 7]</p><p>[Weight (kg): 55.1]</p><p>[Hydration (%): 54]</p><p>[CMJ Test (cm): 41.5]</p>' },
-        { id: 3, date: 'WED 05.08.2020', content: '<h2><strong>Warm-Up</strong></h2><p><br></p><p>A [Treadmill: 8 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p><br></p><p>B [Rower: 1400m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A [Bench Press: 2x10 at 40/42.5/42.5kg]</p><p><br></p><p>B [Incline Dumbbell Press: 2x12 at 18/16kg]</p><p><br></p><p>C [Decline Dumbbell Press: 2x10/12 at 14/16kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 8]</p><p>[Weight (kg): 55.2]</p><p>[Hydration (%): 61]</p><p>[CMJ Test (cm): 43.5]</p>' },
-        { id: 4, date: 'FRI 07.08.2020', content: '<h2><strong>Warm-Up</strong></h2><p><br></p><p>A [Treadmill: 10 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p><br></p><p>B [Rower: 1300m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A [Bench Press: 3x8 at 40/40/45kg]</p><p><br></p><p>B [Incline Dumbbell Press: 2x12 at 16/16kg]</p><p><br></p><p>C [Decline Dumbbell Press: 2x10 at 16/18kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 7]</p><p>[Weight (kg): 56.7]</p><p>[Hydration (%): 59]</p><p>[CMJ Test (cm): 44.2]</p>' },
-        { id: 5, date: 'SUN 08.08.2020', content: '<h2><strong>Warm-Up</strong></h2><p><br></p><p>A [Treadmill: 10 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p><br></p><p>B [Rower: 1500m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p><br></p><h2><strong>Main resistance</strong></h2><p><br></p><p>A [Bench Press: 3x6 at 37.5/40/47.5kg]</p><p><br></p><p>B [Incline Dumbbell Press: 2x12/10 at 18/20kg]</p><p><br></p><p>C [Decline Dumbbell Press: 2x12 at 18/20kg]</p><p><br></p><h2><strong>Cooldown</strong></h2><p><br></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p><br></p><h2><strong>Other Measures</strong></h2><p><br></p><p>[s-RPE (CR10): 8]</p><p>[Weight (kg): 57.3]</p><p>[Hydration (%): 57]</p><p>[CMJ Test (cm): 43.2]</p>' }
+        { id: 1, date: 'SAT 01.08.2020', content: '<h1><strong>How to use</strong></h1><p></p><p>Anything contained in the <strong>square brackets</strong> are automatically <strong>tracked</strong>!!</p><p></p><p><b>Format:</b></p><p>-------------</p><p><em>Exercise Name</em><strong>:</strong> <em>Sets</em> <strong>x</strong> <em>Reps</em> <strong>at</strong> <em>Load</em></p><p><em>Other Measures</em><strong>:</strong> <em>Values</em></p><p></p><p><strong>(You must separate the name and the measurement with a colon)</strong></p><p></p><p><strong>Example Workout Below</strong></p><p>======================</p><h2><strong>Warm-Up</strong></h2><p></p><p>[Treadmill: 6 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p></p><p>[Rower: 1000m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p></p><h2><strong>Main resistance</strong></h2><p></p><p>[Bench Press: 2x14 at 30/35/40kg]</p><p></p><p>[Incline Dumbbell Press: 2x14/12 at 16/16kg]</p><p></p><p>[Decline Dumbbell Press: 2x10/8 at 12/14kg]</p><p></p><h2><strong>Cooldown</strong></h2><p></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p></p><h2><strong>Other Measures</strong></h2><p></p><p>[s-RPE (CR10): 6]</p><p>[Weight (kg): 56.2]</p><p>[Hydration (%): 56]</p><p>[CMJ Test (cm): 40]</p>' },
+        { id: 2, date: 'TUE 04.08.2020', content: '<h2><strong>Warm-Up</strong></h2><p></p><p>[Treadmill: 6 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p></p><p>[Rower: 1200m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p></p><h2><strong>Main resistance</strong></h2><p></p><p>[Bench Press: 2x12 at 35/40/42.5kg]</p><p></p><p>[Incline Dumbbell Press: 2x14 at 16/18kg]</p><p></p><p>[Decline Dumbbell Press: 2x10 at 14/14kg]</p><p></p><h2><strong>Cooldown</strong></h2><p></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p></p><h2><strong>Other Measures</strong></h2><p></p><p>[s-RPE (CR10): 7]</p><p>[Weight (kg): 55.1]</p><p>[Hydration (%): 54]</p><p>[CMJ Test (cm): 41.5]</p>' },
+        { id: 3, date: 'WED 05.08.2020', content: '<h2><strong>Warm-Up</strong></h2><p></p><p>[Treadmill: 8 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p></p><p>[Rower: 1400m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p></p><h2><strong>Main resistance</strong></h2><p></p><p>[Bench Press: 2x10 at 40/42.5/42.5kg]</p><p></p><p>[Incline Dumbbell Press: 2x12 at 18/16kg]</p><p></p><p>[Decline Dumbbell Press: 2x10/12 at 14/16kg]</p><p></p><h2><strong>Cooldown</strong></h2><p></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p></p><h2><strong>Other Measures</strong></h2><p></p><p>[s-RPE (CR10): 8]</p><p>[Weight (kg): 55.2]</p><p>[Hydration (%): 61]</p><p>[CMJ Test (cm): 43.5]</p>' },
+        { id: 4, date: 'FRI 07.08.2020', content: '<h2><strong>Warm-Up</strong></h2><p></p><p>[Treadmill: 10 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p></p><p>[Rower: 1300m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p></p><h2><strong>Main resistance</strong></h2><p></p><p>[Bench Press: 3x8 at 40/40/45kg]</p><p></p><p>[Incline Dumbbell Press: 2x12 at 16/16kg]</p><p></p><p>[Decline Dumbbell Press: 2x10 at 16/18kg]</p><p></p><h2><strong>Cooldown</strong></h2><p></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p></p><h2><strong>Other Measures</strong></h2><p></p><p>[s-RPE (CR10): 7]</p><p>[Weight (kg): 56.7]</p><p>[Hydration (%): 59]</p><p>[CMJ Test (cm): 44.2]</p>' },
+        { id: 5, date: 'SUN 08.08.2020', content: '<h2><strong>Warm-Up</strong></h2><p></p><p>[Treadmill: 10 min]</p><ul><li>Stay light and slowly build up the intensity.</li></ul><p></p><p>[Rower: 1500m]</p><ul><li>Legs, arms, arms then legs</li><li>This is a steady-state exercise</li><li>Remember to warm-up and stretch</li></ul><p></p><h2><strong>Main resistance</strong></h2><p></p><p>[Bench Press: 3x6 at 37.5/40/47.5kg]</p><p></p><p>[Incline Dumbbell Press: 2x12/10 at 18/20kg]</p><p></p><p>[Decline Dumbbell Press: 2x12 at 18/20kg]</p><p></p><h2><strong>Cooldown</strong></h2><p></p><p>A) Foam Roll and Stretch: 10 min</p><ul><li>You\'ve done the work, now relax</li><li>Take your time and make sure you foam roll slowly and belly-breathe.</li></ul><p>B) Walk it off</p><p></p><h2><strong>Other Measures</strong></h2><p></p><p>[s-RPE (CR10): 8]</p><p>[Weight (kg): 57.3]</p><p>[Hydration (%): 57]</p><p>[CMJ Test (cm): 43.2]</p>' }
       ],
       showType: true,
       dataPacketStore: [],
@@ -332,8 +323,10 @@ export default {
       p5: '',
       selectedDataName: 'Block Overview',
       optionsForDataName: [],
+      optionsForDataType: [],
       selectedDataType: 'Sets',
-      currentID: null
+      currentID: null,
+      protocolError: []
     }
   },
   beforeCreate () {
@@ -398,39 +391,49 @@ export default {
       const dataForName = this.selectedDataName
       const dataForType = this.selectedDataType
       let dataForSum = 0
+      this.protocolError.length = 0
       const overviewStore = []
+      this.optionsForDataType.length = 0
+      if (dataForName === 'Block Overview') {
+        this.optionsForDataType.push({ id: 1, text: 'Load', value: 'Load' })
+        this.optionsForDataType.push({ id: 2, text: 'Volume', value: 'Volume' })
+      }
       this.dataPacketStore.forEach((item) => {
         overviewStore.length = 0
         item.forEach((exerciseDataPacket) => {
           const tidyA = dataForName.replace(/\(/g, '\\(')
           const tidyB = tidyA.replace(/\)/g, '\\)')
           const regex = RegExp(tidyB, 'gi')
-          const protocol = exerciseDataPacket[1].replace(/\s/g, '')
-          if (regex.test(exerciseDataPacket[0]) === true) {
-            if ((dataForType === 'Sets' || dataForType === 'Reps') && exerciseDataPacket[1].includes('at') === true) {
-              this.yData.push(this.setsReps(protocol, dataForType))
+          const protocol = exerciseDataPacket[2].replace(/\s/g, '')
+          if (regex.test(exerciseDataPacket[1]) === true) {
+            if (exerciseDataPacket[2].includes('at') && this.optionsForDataType.length !== 2 && this.protocolError.length === 0) {
+              this.optionsForDataType.push({ id: 1, text: 'Load', value: 'Load' })
+              this.optionsForDataType.push({ id: 2, text: 'Volume', value: 'Volume' })
             }
-            if (dataForType === 'Load' && exerciseDataPacket[1].includes('at') === true) {
-              this.yData.push(this.load(protocol))
+            if ((dataForType === 'Sets' || dataForType === 'Reps') && exerciseDataPacket[2].includes('at') === true) {
+              this.yData.push(this.setsReps(exerciseDataPacket, protocol, dataForType))
             }
-            if (dataForType === 'Volume' && exerciseDataPacket[1].includes('at') === true) {
-              const agg = this.setsReps(protocol, 'Reps') * this.load(protocol)
+            if (dataForType === 'Load' && exerciseDataPacket[2].includes('at') === true) {
+              this.yData.push(this.load(exerciseDataPacket, protocol))
+            }
+            if (dataForType === 'Volume' && exerciseDataPacket[2].includes('at') === true) {
+              const agg = this.setsReps(exerciseDataPacket, protocol, 'Reps') * this.load(exerciseDataPacket, protocol)
               this.yData.push(agg)
             }
-            if (exerciseDataPacket[1].includes('at') !== true) {
+            if (exerciseDataPacket[2].includes('at') !== true) {
               this.showType = false
               this.yData.push(this.otherMeasures(protocol))
             }
           }
-          if (dataForName === 'Block Overview' && exerciseDataPacket[1].includes('at') === true) {
+          if (dataForName === 'Block Overview' && exerciseDataPacket[2].includes('at') === true) {
             if (dataForType === 'Sets' || dataForType === 'Reps') {
-              dataForSum = this.setsReps(protocol, dataForType)
+              dataForSum = this.setsReps(exerciseDataPacket, protocol, dataForType)
             }
             if (dataForType === 'Load') {
-              dataForSum = this.load(protocol)
+              dataForSum = this.load(exerciseDataPacket, protocol)
             }
             if (dataForType === 'Volume') {
-              dataForSum = this.setsReps(protocol, 'Reps') * this.load(protocol)
+              dataForSum = this.setsReps(exerciseDataPacket, protocol, 'Reps') * this.load(exerciseDataPacket, protocol)
             }
             overviewStore.push(dataForSum)
           }
@@ -453,7 +456,7 @@ export default {
       // Pulls and creates nested arrays. dataPacketStore > workoutDataPackets > exerciseDataPackets
       this.exampleWorkoutStore.forEach((object) => {
         if (object.content !== null) {
-          const pulledProtocols = this.pullProtocols(object.content)
+          const pulledProtocols = this.pullProtocols(object.name, object.content)
           this.dataPacketStore.push(this.chunkArray(pulledProtocols))
         }
       })
@@ -462,7 +465,7 @@ export default {
       this.selection()
     },
     // Extracts the protocols and measures and stores it all into a temporary array
-    pullProtocols (text) {
+    pullProtocols (workoutName, text) {
       const textNoHTML = text.replace(/<[^>]*>?/gm, '')
       const tempStore = []
       let m
@@ -471,20 +474,25 @@ export default {
           this.regexExtract.lastIndex++
         }
         m.forEach((match, groupIndex) => {
+          if (groupIndex === 0) {
+            tempStore.push(workoutName)
+          }
           if (groupIndex === 1 || groupIndex === 2) {
             tempStore.push(match)
           }
         })
       }
-      return tempStore
+      if (tempStore !== null) {
+        return tempStore
+      }
     },
     // Breaks down the temporary array into data packets of length 2
     // Data Packet: ['NAME', 'PROTOCOL/MEASURE/NUMBERS']
     chunkArray (myArray) {
       let index = 0
       const tempArray = []
-      for (index = 0; index < myArray.length; index += 2) {
-        const dataPacket = myArray.slice(index, index + 2)
+      for (index = 0; index < myArray.length; index += 3) {
+        const dataPacket = myArray.slice(index, index + 3)
         tempArray.push(dataPacket)
       }
       return tempArray
@@ -497,17 +505,17 @@ export default {
       let continueValue = 0
       this.dataPacketStore.forEach((item) => {
         item.forEach((exerciseDataPacket) => {
-          const tidyA = exerciseDataPacket[0].replace(/\(/g, '\\(')
+          const tidyA = exerciseDataPacket[1].replace(/\(/g, '\\(')
           const tidyB = tidyA.replace(/\)/g, '\\)')
           const regexA = RegExp(tidyB, 'gi')
           const regexB = RegExp(/[|\\/)(~^:,;?!&%$@*+]/, 'g')
-          const itemCased = this.properCase(exerciseDataPacket[0])
-          if (regexA.test(tempItemStore) !== true && exerciseDataPacket[1].includes('at') === true) {
+          const itemCased = this.properCase(exerciseDataPacket[1])
+          if (regexA.test(tempItemStore) !== true && exerciseDataPacket[2].includes('at') === true) {
             tempItemStore.push(itemCased)
           }
-          if (regexA.test(tempItemStoreLate) !== true && exerciseDataPacket[1].includes('at') !== true) {
-            if (regexB.test(exerciseDataPacket[0]) === true) {
-              tempItemStoreLate.push(exerciseDataPacket[0])
+          if (regexA.test(tempItemStoreLate) !== true && exerciseDataPacket[2].includes('at') !== true) {
+            if (regexB.test(exerciseDataPacket[1]) === true) {
+              tempItemStoreLate.push(exerciseDataPacket[1])
             } else {
               tempItemStoreLate.push(itemCased)
             }
@@ -532,7 +540,7 @@ export default {
     },
     // REGEX METHODS //
     // Extracts anything for Sets and Reps
-    setsReps (protocol, dataForType) {
+    setsReps (exerciseDataPacket, protocol, dataForType) {
       let setStore = null
       let extractedSetsReps = null
       const tempSetsRepsStore = []
@@ -546,9 +554,15 @@ export default {
             setStore = parseInt(match)
           }
           if (dataForType === 'Sets' && groupIndex === 1) {
+            if (match === '') {
+              this.protocolError.push({ sessionName: exerciseDataPacket[0], exercise: exerciseDataPacket[1], prot: exerciseDataPacket[2] })
+            }
             extractedSetsReps = parseInt(match)
           }
           if (dataForType === 'Reps' && groupIndex === 2) {
+            if (match === '') {
+              this.protocolError.push({ sessionName: exerciseDataPacket[0], exercise: exerciseDataPacket[1], prot: exerciseDataPacket[2] })
+            }
             if (match.includes('/') === true) {
               let n
               while ((n = this.regexNumberBreakdown.exec(match)) !== null) {
@@ -569,17 +583,20 @@ export default {
       return extractedSetsReps
     },
     // Extracts anything for Loads
-    load (protocol) {
+    load (exerciseDataPacket, protocol) {
       const tempLoadStore = []
       let sum = 0
       let isMultiple = false
-      const sets = this.setsReps(protocol, 'Sets')
+      const sets = this.setsReps(exerciseDataPacket, protocol, 'Sets')
       let m
       while ((m = this.regexLoadCapture.exec(protocol)) !== null) {
         if (m.index === this.regexLoadCapture.lastIndex) {
           this.regexLoadCapture.lastIndex++
         }
         m.forEach((loadMatch, groupIndex) => {
+          if (groupIndex === 2 && /\d/g.test(loadMatch) === false) {
+            this.protocolError.push({ sessionName: exerciseDataPacket[0], exercise: exerciseDataPacket[1], prot: exerciseDataPacket[2] })
+          }
           if (groupIndex === 2) {
             let n
             while ((n = this.regexNumberBreakdown.exec(loadMatch)) !== null) {
