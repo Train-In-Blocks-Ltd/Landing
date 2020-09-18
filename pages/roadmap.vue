@@ -95,7 +95,7 @@ import Upgrade from '../assets/svg/roadmap/update.svg'
 import Nutrition from '../assets/svg/roadmap/salad.svg'
 import CompLib from '../assets/svg/roadmap/books.svg'
 import Report from '../assets/svg/roadmap/report.svg'
-import Payment from '../assets/svg/roadmap/payment.svg'
+// import Payment from '../assets/svg/roadmap/payment.svg'
 
 export default {
   components: {
@@ -110,11 +110,11 @@ export default {
         { id: 3, completed: true, icon: Released, progress: '01.08.20', progressIcon: Done, title: 'Launch', desc: 'Our big day! Giving you a new way to build programmes, earn more and to expand your business.' },
         { id: 4, completed: true, icon: Upgrade, progress: '16.08.20', progressIcon: Done, title: 'Post-Launch Patch', desc: 'Enhancing speed and optimizing the app.' },
         { id: 5, completed: true, icon: Upgrade, progress: '23.08.2020', progressIcon: Done, title: 'Accessibility Update', desc: 'Making the app accessible to all.' },
-        { id: 6, completed: false, icon: Upgrade, progress: 'Planned', progressIcon: InDev, title: 'PWA Enhancements', desc: 'Enhancing the features of the app when running natively.' },
-        { id: 7, completed: false, icon: Nutrition, progress: 'Planned', progressIcon: Planned, title: 'Nutrition', desc: 'Giving you the tools to help your clients feel stronger and healthier.' },
+        { id: 6, completed: true, icon: Upgrade, progress: '18.09.2020', progressIcon: Done, title: 'PWA Enhancements', desc: 'Enhancing the features of the app when running natively.' },
+        { id: 7, completed: false, icon: Nutrition, progress: 'Planned', progressIcon: InDev, title: 'Nutrition', desc: 'Giving you the tools to help your clients feel stronger and healthier.' },
         { id: 8, completed: false, icon: CompLib, progress: 'Planned', progressIcon: Planned, title: 'Component Library', desc: 'Build a bespoke exercise programme even faster with shortcuts and more.' },
-        { id: 9, completed: false, icon: Report, progress: 'Planned', progressIcon: Planned, title: 'Report Generator', desc: 'Create a professional report to present your client\'s progress.' },
-        { id: 10, completed: false, icon: Payment, progress: 'Planned', progressIcon: Planned, title: 'Payment Solutions', desc: 'Make pricing plans and packages to help you sell your services.' }
+        { id: 9, completed: false, icon: Report, progress: 'Planned', progressIcon: Planned, title: 'Report Generator', desc: 'Create a professional report to present your client\'s progress.' }//,
+        // { id: 10, completed: false, icon: Payment, progress: 'Planned', progressIcon: Planned, title: 'Payment Solutions', desc: 'Make pricing plans and packages to help you sell your services.' }
       ]
     }
   },

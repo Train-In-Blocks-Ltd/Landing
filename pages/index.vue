@@ -119,7 +119,7 @@
 
 <template>
   <div>
-    <h1>Version 1.2 is Now Live</h1>
+    <h1>Version 1.3 is Now Live</h1>
     <p>This update focuses on the feedback that we have been given by our users. We have optimised the app to run faster and more efficiently.</p>
     <form action="https://mailchi.mp/traininblocks/improve-sprint-performance-and-app-progress-4752742?e=[UNIQID]" target="_blank">
       <button type="submit">
