@@ -15,9 +15,8 @@
   }
   body {
     margin: 0;
-    letter-spacing: .1rem;
-    font-size: 16px;
-    overflow-x: hidden
+    letter-spacing: 1px;
+    font-size: 16px
   }
   .main-title {
     font-size: 3rem;
@@ -38,6 +37,7 @@
     padding: 1rem 1.6rem
   }
   .wrapper--app {
+    overflow-x: hidden;
     background-color: white;
     padding: 0 8%;
     transition: transform .6s cubic-bezier(.165, .84, .44, 1)
@@ -306,34 +306,6 @@
     padding: 0
   }
 
-  /* References */
-  .ref--icons8 {
-    position: relative;
-    font-weight: 700;
-    color: #282828;
-    text-decoration: none;
-    transition: 300ms
-  }
-  .ref--icons8:hover {
-    opacity: .7
-  }
-  .ref--icons8:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #282828;
-    opacity: 0;
-    transform: scaleX(0);
-    transition: all 300ms cubic-bezier(.165, .84, .44, 1)
-  }
-  .ref--icons8:hover:before {
-    transform: scaleX(1);
-    opacity: .7
-  }
-
   /* Animimations */
   @keyframes showIn {
     to {
@@ -365,7 +337,7 @@
   }
   @media (max-width: 768px) {
     .cookieControl__BarContainer {
-      padding: 2rem 4rem
+      padding: 2rem
     }
 
     /* Misc. */
@@ -435,12 +407,6 @@
         </a>
         <nuxt-link class="input--option" to="/" @click.native="openNav = false">
           Welcome
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/features/" @click.native="openNav = false">
-          Features
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/pricing/" @click.native="openNav = false">
-          Pricing
         </nuxt-link>
         <nuxt-link class="input--option" to="/roadmap/" @click.native="openNav = false">
           Roadmap
@@ -540,7 +506,6 @@
           21 Sinodun Road, Wallingford, OX10 8AD, United Kingdom<br>
           Registered in England & Wales
         </p>
-        <p>Our friends at <a class="ref--icons8" target="_blank" href="https://icons8.com">Icons8</a> helped us out with some icons!</p>
       </footer>
       <a
         v-if="scrollpx > 800"
@@ -568,7 +533,7 @@ export default {
   data () {
     return {
       openNav: false,
-      descSub: 'Get Notified When We Launch',
+      descSub: 'Newsletter',
       scrollpx: 0,
       metaHelper: {
         title: 'Train In Blocks',

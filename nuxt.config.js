@@ -122,7 +122,6 @@ export default async () => {
     ** Nuxt.js modules
     */
     modules: [
-      'vue-social-sharing/nuxt',
       ['nuxt-cookie-control', {
         colors: {
           barTextColor: '#282828',
