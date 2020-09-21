@@ -1,8 +1,8 @@
 <style scoped>
   .blog--body {
-    padding: 6rem;
-    background-color: #F6F6F6
+    padding: 6rem
   }
+
   @media (min-width: 1440px) {
     .blog--body {
       padding: 6rem 20rem
@@ -29,7 +29,7 @@
 <template>
   <div class="blog--body">
     <!--eslint-disable-next-line-->
-    <div v-html="html" />
+    <div class="container--content" v-html="html" />
   </div>
 </template>
 

@@ -15,13 +15,6 @@
     font-size: .8rem;
     margin: 0 .4rem 0 0
   }
-  .roadmap__title {
-    font-weight: 700;
-    margin: 1rem 0
-  }
-  .roadmap__desc {
-    margin: 1rem 0
-  }
   .icon--main {
     width: 5rem;
     margin: auto 0
@@ -55,12 +48,12 @@
 
 <template>
   <div>
-    <h1 class="paper--title">
-      {{ title }}
-    </h1><br>
-    <h2 class="sub-title">
+    <p class="text--large">
+      What's the plan?
+    </p>
+    <p class="text--large grey">
       We believe in transparency, check out what we're up to.
-    </h2>
+    </p>
     <div class="spacer" />
     <div v-for="dev in development" id="roadmap" :key="dev.id" :class="{ completed: dev.completed === true }">
       <inline-svg class="icon--main" :src="dev.icon" />
@@ -71,10 +64,10 @@
           </p>
           <inline-svg class="icon--progress" :src="dev.progressIcon" />
         </div>
-        <p class="roadmap__title">
+        <p class="text--small">
           {{ dev.title }}
         </p>
-        <p class="roadmap__desc">
+        <p class="text--small grey">
           {{ dev.desc }}
         </p>
       </div>
@@ -97,7 +90,6 @@ export default {
   },
   data () {
     return {
-      title: 'Our Roadmap...',
       development: [
         { id: 7, completed: false, icon: Nutrition, progress: 'Planned', progressIcon: InDev, title: 'Nutrition', desc: 'Giving you the tools to help your clients feel stronger and healthier.' },
         { id: 8, completed: false, icon: CompLib, progress: 'Planned', progressIcon: InDev, title: 'Component Library', desc: 'Build a bespoke exercise programme even faster with shortcuts and more.' },

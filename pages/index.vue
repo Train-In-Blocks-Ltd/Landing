@@ -1,5 +1,8 @@
 <style scoped>
   /* Containers */
+  #home {
+    padding: 6rem 0
+  }
   .container--features {
     display: grid;
     grid-template-columns: repeat(auto-fill, 280px);
@@ -17,13 +20,28 @@
   }
   .img--tablet {
     position: relative;
-    right: -50%
+    right: -50%;
+    margin-top: 6rem
+  }
+
+  @media (max-width: 768px) {
+    #home {
+      padding: 0
+    }
+    .img--pc, .img--tablet {
+      max-width: 200%;
+      right: 0
+    }
+  }
+  @media (max-width: 567px) {
+    .img--tablet {
+      margin-top: 2rem
+    }
   }
 </style>
 
 <template>
-  <div>
-    <div class="spacer" />
+  <div id="home">
     <p class="text--large">We've taken health and fitness programming to the next level.</p>
     <p class="text--large grey">Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.</p>
     <div class="spacer" />
@@ -38,10 +56,8 @@
       </div>
     </div>
     <div class="spacer" />
-    <img class="img--tablet" src="../assets/images/device-tablet.png" alt="Device Tablet">
-    <div class="spacer" />
-    <p class="text--large">Try it free for 14-days</p>
-    <p>Don't stress, you can cancel anytime</p>
+    <p class="text--large">14-day free trial</p>
+    <p>Don't stress, you can cancel anytime.</p>
     <div class="container--pricing">
       <div>
         <p class="text--large">£10</p>
@@ -82,11 +98,12 @@
         </client-only>
       </div>
     </div>
+    <div class="spacer" />
+    <img class="img--tablet" src="../assets/images/device-tablet.png" alt="Device Tablet">
   </div>
 </template>
 
 <script>
-
 export default {
   data () {
     return {

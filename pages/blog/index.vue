@@ -1,21 +1,14 @@
 <style scoped>
-  .container--blog {
-    display: block;
-    margin: 2rem 0
-  }
   .blog-post {
     display: grid;
     box-shadow: 0 0 20px 10px #28282810;
-    margin: 4rem 0
+    margin: 8rem 0
   }
   .blog-post__top-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 4rem
-  }
-  .blog-post__excerpt {
-    margin: 0
   }
   .blog-post__image {
     height: auto;
@@ -30,7 +23,6 @@
   }
   .blog-post__link-text {
     color: #282828;
-    font-weight: bold;
     margin: auto 0;
     text-decoration: none
   }
@@ -48,15 +40,7 @@
       padding: 2rem
     }
   }
-  @media (max-width: 992px) {
-    .blog-post__title {
-      font-size: 1.4rem
-    }
-  }
-  @media (max-width: 769px) {
-    .container--blog {
-      display: block
-    }
+  @media (max-width: 768px) {
     .blog-post__image {
       height: auto;
       width: 100%
@@ -70,18 +54,21 @@
 
 <template>
   <div>
-    <h1 class="main-title">
-      Learn something new
-    </h1>
+    <p class="text--large">
+      Find power in knowledge
+    </p>
+    <p class="text--large grey">
+      Let's learn something new
+    </p>
     <div class="container--blog">
       <div v-for="post in posts" :key="post.attributes.title" class="blog-post">
         <img class="blog-post__image" :src="'/blog-img/' + post.attributes.img" loading="lazy">
         <div class="blog-post__top-wrapper">
           <div>
-            <h2 class="blog-post__title">
+            <p class="text--small">
               {{ post.attributes.title }}
-            </h2>
-            <p class="blog-post__excerpt">
+            </p>
+            <p class="text--small grey">
               {{ post.attributes.excerpt }}
             </p>
           </div>

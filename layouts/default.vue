@@ -180,9 +180,6 @@
   }
 
   /* GLOBAL: EMAIL */
-  #mc-embedded-subscribe-form label {
-    font-weight: bold
-  }
   #mce-EMAIL {
     opacity: .6;
     padding: .4rem;
@@ -355,6 +352,12 @@
       padding: 2rem
     }
 
+    /* GLOBAL: CONTENT */
+    .text--large {
+      width: 100%;
+      font-size: 2rem
+    }
+
     /* Misc. */
     .paper--title {
       font-size: 3rem
@@ -426,9 +429,6 @@
         <nuxt-link class="input--option" to="/roadmap/" @click.native="openNav = false">
           Roadmap
         </nuxt-link>
-        <nuxt-link class="input--option" to="/about/" @click.native="openNav = false">
-          About
-        </nuxt-link>
         <nuxt-link class="input--option" to="/blog/" @click.native="openNav = !openNav">
           Blog
         </nuxt-link>
@@ -471,24 +471,7 @@
             <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')" /></a>
             <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
           </div>
-          <div>
-            <nuxt-link class="input--option" to="/gdpr/">
-              GDPR Statement
-            </nuxt-link>
-            <nuxt-link class="input--option" to="/privacy-policy/">
-              Privacy Policy
-            </nuxt-link>
-            <nuxt-link class="input--option" to="/cookie-policy/">
-              Cookie Policy
-            </nuxt-link>
-            <nuxt-link class="input--option" to="/terms-conditions/">
-              Terms & Conditions
-            </nuxt-link>
-            <a class="input--option" href="https://status.traininblocks.com">
-              Status
-            </a>
-          </div>
-        </div><br><br>
+        </div>
         <form
           id="mc-embedded-subscribe-form"
           action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
@@ -498,7 +481,7 @@
           target="_blank"
           novalidate
         >
-          <label for="mce-EMAIL">Get Notified When We Launch!</label><br>
+          <label for="mce-EMAIL">Sign up to our newsletter</label><br>
           <input
             id="mce-EMAIL"
             type="email"
@@ -515,6 +498,23 @@
             <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
           </div>
         </form><br>
+        <div>
+          <nuxt-link class="input--option" to="/gdpr/">
+            GDPR Statement
+          </nuxt-link>
+          <nuxt-link class="input--option" to="/privacy-policy/">
+            Privacy Policy
+          </nuxt-link>
+          <nuxt-link class="input--option" to="/cookie-policy/">
+            Cookie Policy
+          </nuxt-link>
+          <nuxt-link class="input--option" to="/terms-conditions/">
+            Terms & Conditions
+          </nuxt-link>
+          <a class="input--option" href="https://status.traininblocks.com">
+            Status
+          </a>
+        </div>
         <p>
           <b>Train In Blocks Ltd</b><br>
           12515717<br>
