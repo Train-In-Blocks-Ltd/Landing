@@ -1,27 +1,4 @@
 <style scoped>
-  /* Countdown */
-  .countdown--wrapper {
-    display: grid;
-    margin: 4rem 0;
-    animation-delay: 600ms
-  }
-  .container--countdown {
-    letter-spacing: .4rem;
-    font-size: 1.5rem
-  }
-  .countdown--desc {
-    margin: 2rem 0
-  }
-
-  /* Typeform */
-  .typeform-share.button {
-    text-decoration: none
-  }
-  .input--option.more {
-    font-size: .8rem;
-    margin: 0
-  }
-
   /* Containers */
   .container--features {
     display: grid;
@@ -34,16 +11,6 @@
   }
 
   /* Content */
-  .text--large {
-    width: 70%;
-    font-size: 2.6rem
-  }
-  .text--small {
-    font-size: 1.6rem
-  }
-  .grey {
-    color: #28282890
-  }
   .img--pc {
     position: relative;
     right: -25%
@@ -51,30 +18,6 @@
   .img--tablet {
     position: relative;
     right: -50%
-  }
-
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    h1 {
-      margin: 0
-    }
-  }
-  @media (max-width: 576px) {
-    /* Countdown */
-    .container--countdown h2 {
-      font-size: 1rem
-    }
-    .container--countdown p {
-      font-size: .8rem;
-      margin: .6rem 0
-    }
-  }
-  @media (max-width: 360px) {
-    /* Containers */
-    .container--countdown p {
-      font-size: .5rem;
-      margin: .4rem 0
-    }
   }
 </style>
 
@@ -97,8 +40,8 @@
     <div class="spacer" />
     <img class="img--tablet" src="../assets/images/device-tablet.png" alt="Device Tablet">
     <div class="spacer" />
-    <p class="text--large">Try for 14-days</p>
-    <p>Free 14-day trial included</p>
+    <p class="text--large">Try it free for 14-days</p>
+    <p>Don't stress, you can cancel anytime</p>
     <div class="container--pricing">
       <div>
         <p class="text--large">£10</p>

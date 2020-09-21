@@ -49,7 +49,7 @@
     outline-width: 0
   }
 
-  /* GLOBAL: To Top */
+  /* GLOBAL: TO TOP */
   .to-top {
     opacity: 0;
     position: fixed;
@@ -65,6 +65,18 @@
   }
   .to-top:active {
     transform: scale(.9)
+  }
+
+  /* GLOBAL: CONTENT */
+  .text--large {
+    width: 70%;
+    font-size: 2.6rem
+  }
+  .text--small {
+    font-size: 1.6rem
+  }
+  .grey {
+    color: #28282890
   }
 
   /* GLOBAL: BUTTONS */
@@ -118,7 +130,7 @@
     margin: 0
   }
 
-  /* GLOBAL: Nav */
+  /* GLOBAL: NAV */
   .navOpen {
     transform: translateX(-10rem)
   }
@@ -167,7 +179,7 @@
     font-weight: bold
   }
 
-  /* GLOBAL: Email */
+  /* GLOBAL: EMAIL */
   #mc-embedded-subscribe-form label {
     font-weight: bold
   }
@@ -187,11 +199,8 @@
     width: 45%;
     opacity: 1
   }
-  #mc-embedded-subscribe {
-    padding: .4rem 1rem
-  }
 
-  /* GLOBAL: Footer Social Icons */
+  /* GLOBAL: FOOTER */
   .social-icon {
     width: 25px;
     height: 25px;
@@ -207,12 +216,18 @@
     transform: scale(.9)
   }
 
-  /* GLOBAL: Footer */
+  /* GLOBAL: FOOTER */
   .cookieControl__BarContainer {
     padding: 2rem 6rem
   }
   .cookieControl__BarContainer p, .cookieControl__BarContainer button {
     font-size: .8rem
+  }
+  .cookieControl__Bar p {
+    margin-top: 0
+  }
+  .cookieControl__Bar.cookieControl__Bar--bottom-full div {
+    margin: auto
   }
   iframe#jsd-widget {
     left: 0

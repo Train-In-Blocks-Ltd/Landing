@@ -84,14 +84,8 @@
 
 <script>
 import InlineSvg from 'vue-inline-svg'
-import Done from '../assets/svg/progress/Done.svg'
 import InDev from '../assets/svg/progress/InDev.svg'
 import Planned from '../assets/svg/progress/Planned.svg'
-// import Scheduled from '../assets/svg/progress/Scheduled.svg'
-import Idea from '../assets/svg/roadmap/build.svg'
-import UserTested from '../assets/svg/roadmap/user-test.svg'
-import Released from '../assets/svg/roadmap/launch.svg'
-import Upgrade from '../assets/svg/roadmap/update.svg'
 import Nutrition from '../assets/svg/roadmap/salad.svg'
 import CompLib from '../assets/svg/roadmap/books.svg'
 import Report from '../assets/svg/roadmap/report.svg'
@@ -105,14 +99,8 @@ export default {
     return {
       title: 'Our Roadmap...',
       development: [
-        { id: 1, completed: true, icon: Idea, progress: '17.07.20', progressIcon: Done, title: 'Prototyping', desc: 'Mastering and building essential features.' },
-        { id: 2, completed: true, icon: UserTested, progress: '31.07.20', progressIcon: Done, title: 'User Testing', desc: 'Getting some feedback and improving the app from the get-go.' },
-        { id: 3, completed: true, icon: Released, progress: '01.08.20', progressIcon: Done, title: 'Launch', desc: 'Our big day! Giving you a new way to build programmes, earn more and to expand your business.' },
-        { id: 4, completed: true, icon: Upgrade, progress: '16.08.20', progressIcon: Done, title: 'Post-Launch Patch', desc: 'Enhancing speed and optimizing the app.' },
-        { id: 5, completed: true, icon: Upgrade, progress: '23.08.2020', progressIcon: Done, title: 'Accessibility Update', desc: 'Making the app accessible to all.' },
-        { id: 6, completed: false, icon: Upgrade, progress: 'Planned', progressIcon: InDev, title: 'PWA Enhancements', desc: 'Enhancing the features of the app when running natively.' },
-        { id: 7, completed: false, icon: Nutrition, progress: 'Planned', progressIcon: Planned, title: 'Nutrition', desc: 'Giving you the tools to help your clients feel stronger and healthier.' },
-        { id: 8, completed: false, icon: CompLib, progress: 'Planned', progressIcon: Planned, title: 'Component Library', desc: 'Build a bespoke exercise programme even faster with shortcuts and more.' },
+        { id: 7, completed: false, icon: Nutrition, progress: 'Planned', progressIcon: InDev, title: 'Nutrition', desc: 'Giving you the tools to help your clients feel stronger and healthier.' },
+        { id: 8, completed: false, icon: CompLib, progress: 'Planned', progressIcon: InDev, title: 'Component Library', desc: 'Build a bespoke exercise programme even faster with shortcuts and more.' },
         { id: 9, completed: false, icon: Report, progress: 'Planned', progressIcon: Planned, title: 'Report Generator', desc: 'Create a professional report to present your client\'s progress.' },
         { id: 10, completed: false, icon: Payment, progress: 'Planned', progressIcon: Planned, title: 'Payment Solutions', desc: 'Make pricing plans and packages to help you sell your services.' }
       ]
