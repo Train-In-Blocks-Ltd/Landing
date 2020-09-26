@@ -357,6 +357,9 @@
       width: 100%;
       font-size: 2rem
     }
+    .text--small {
+      font-size: 1.4rem
+    }
 
     /* Misc. */
     .paper--title {
