@@ -2,7 +2,8 @@
   .blog-post {
     display: grid;
     box-shadow: 0 0 20px 10px #28282810;
-    margin: 8rem 0
+    margin: 8rem auto;
+    max-width: 80%
   }
   .blog-post__top-wrapper {
     display: flex;
@@ -41,6 +42,9 @@
     }
   }
   @media (max-width: 768px) {
+    .blog-post {
+      max-width: 100%
+    }
     .blog-post__image {
       height: auto;
       width: 100%
