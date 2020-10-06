@@ -44,8 +44,12 @@
 
 <template>
   <div id="home">
-    <p class="text--large">We've taken health and fitness programming to the next level.</p>
-    <p class="text--large grey">Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.</p>
+    <p class="text--large">
+      We've taken health and fitness programming to the next level.
+    </p>
+    <p class="text--large grey">
+      Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.
+    </p>
     <div class="spacer" />
     <img class="img--pc" src="../assets/images/device-pc.png" alt="Device PC">
     <div class="spacer" />
@@ -54,16 +58,24 @@
         <p class="text--small">
           {{ feature.subtitle }}
         </p><br>
-        <p class="text--small grey">{{ feature.desc }}</p>
+        <p class="text--small grey">
+          {{ feature.desc }}
+        </p>
       </div>
     </div>
     <div class="spacer" />
-    <p class="text--large">14-day free trial</p>
+    <p class="text--large">
+      14-day free trial
+    </p>
     <p>Cancel anytime and save 15% on our annual plan.</p>
     <div class="container--pricing">
       <div>
-        <p class="text--large">£102</p>
-        <p class="text--large grey">Yearly</p>
+        <p class="text--large">
+          £102
+        </p>
+        <p class="text--large grey">
+          Yearly
+        </p>
         <client-only>
           <stripe-checkout
             ref="checkoutRef1"
@@ -81,8 +93,12 @@
         </client-only>
       </div>
       <div>
-        <p class="text--large">£10</p>
-        <p class="text--large grey">Monthly</p>
+        <p class="text--large">
+          £10
+        </p>
+        <p class="text--large grey">
+          Monthly
+        </p>
         <client-only>
           <stripe-checkout
             ref="checkoutRef0"

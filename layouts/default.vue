@@ -427,26 +427,26 @@
 <template>
   <div id="app">
     <script data-jsd-embedded data-key="200dadd3-915c-4769-ba8d-ec7792145827" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js" />
-      <nav :class="{showNav: openNav}" id="nav--main">
-        <transition enter-active-class="animated fadeIn faster delay-1s">
-          <div v-show="openNav" class="wrapper--nav-items">
-            <inline-svg class="nav-button" :src="require('../assets/svg/close.svg')" @click="openNav = false" />
-            <a class="input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">
-              Log In
-            </a>
-            <nuxt-link class="input--option" to="/" @click.native="openNav = false">
-              Welcome
-            </nuxt-link>
-            <nuxt-link class="input--option" to="/blog/" @click.native="openNav = !openNav">
-              Blog
-            </nuxt-link>
-            <a class="input--option get-help" href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3" target="_blank" @click="openNav = false">
-              Help
-            </a>
-            <br>
-          </div>
-        </transition>
-      </nav>
+    <nav id="nav--main" :class="{showNav: openNav}">
+      <transition enter-active-class="animated fadeIn faster delay-1s">
+        <div v-show="openNav" class="wrapper--nav-items">
+          <inline-svg class="nav-button" :src="require('../assets/svg/close.svg')" @click="openNav = false" />
+          <a class="input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">
+            Log In
+          </a>
+          <nuxt-link class="input--option" to="/" @click.native="openNav = false">
+            Welcome
+          </nuxt-link>
+          <nuxt-link class="input--option" to="/blog/" @click.native="openNav = !openNav">
+            Blog
+          </nuxt-link>
+          <a class="input--option get-help" href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3" target="_blank" @click="openNav = false">
+            Help
+          </a>
+          <br>
+        </div>
+      </transition>
+    </nav>
     <div id="nav--top" class="spacer--small" />
     <div class="container--nav animated bounceInLeft">
       <nuxt-link to="/">
