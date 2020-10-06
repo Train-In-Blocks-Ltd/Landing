@@ -15,10 +15,12 @@
 
   /* Content */
   .img--pc {
+    max-width: 150%;
     position: relative;
     right: -25%
   }
   .img--tablet {
+    max-width: 150%;
     position: relative;
     right: -50%;
     margin-top: 6rem

@@ -10,13 +10,14 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: left;
-    color: #282828;
-    background-color: #F6F6F6
+    color: #282828
   }
   body {
     margin: 0;
     letter-spacing: 1px;
-    font-size: 16px
+    font-size: 16px;
+    padding: 0 8%;
+    overflow-x: hidden
   }
   .main-title {
     font-size: 3rem;
@@ -35,12 +36,6 @@
   }
   .vm--modal {
     padding: 1rem 1.6rem
-  }
-  .wrapper--app {
-    overflow-x: hidden;
-    background-color: white;
-    padding: 0 8%;
-    transition: transform .6s cubic-bezier(.165, .84, .44, 1)
   }
 
   /* IOS Disable Corners */
@@ -93,7 +88,6 @@
     padding: .6rem 1.6rem;
     font-size: .8rem;
     letter-spacing: .1rem;
-    font-weight: bold;
     color: white;
     background-color: #282828;
     margin: .6rem 0;
@@ -124,16 +118,12 @@
     border-radius: 3px;
     padding: .2rem .6rem;
     width: fit-content;
-    font-weight: bold;
     font-size: 1rem;
     letter-spacing: .1rem;
     margin: 0
   }
 
   /* GLOBAL: NAV */
-  .navOpen {
-    transform: translateX(-10rem)
-  }
   #logo--home {
     width: 10rem;
     height: auto
@@ -146,18 +136,33 @@
     animation-delay: 100ms
   }
   #nav--main {
-    display: grid;
-    grid-gap: 2rem;
-    text-align: right;
     position: fixed;
-    right: 2rem;
-    top: 2.8rem
+    right: 0;
+    top: 0;
+    padding: 2.8rem 2rem;
+    opacity: 0;
+    height: 100%;
+    width: 0;
+    background-color: #F4F4F4;
+    box-shadow: 0 0 20px 10px #28282810;
+    transition: all 1s cubic-bezier(.165, .84, .44, 1)
+  }
+  #nav--main.showNav {
+    width: 8rem;
+    opacity: 1
+  }
+  .wrapper--nav-items {
+    display: flex;
+    flex-direction: column;
+    text-align: right
   }
 
   /* Nav Hover Animation */
   .nav-button {
     cursor: pointer;
-    transition: opacity .6s, transform .1s cubic-bezier(.165, .84, .44, 1)
+    transition: opacity .6s, transform .1s cubic-bezier(.165, .84, .44, 1);
+    margin-left: auto;
+    margin-bottom: 2rem
   }
   .nav-button:hover {
     opacity: .6
@@ -167,7 +172,7 @@
   }
   .input--option {
     position: relative;
-    margin: 0 0 0 2rem;
+    margin: 1rem 0;
     text-decoration: none;
     color: #282828;
     transition: 300ms
@@ -421,122 +426,124 @@
 <template>
   <div id="app">
     <script data-jsd-embedded data-key="200dadd3-915c-4769-ba8d-ec7792145827" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js" />
-    <transition enter-active-class="animated fadeInRight faster" leave-active-class="animated fadeOutRight faster">
-      <nav v-show="openNav" id="nav--main">
-        <a class="input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">
-          Log In
-        </a>
-        <nuxt-link class="input--option" to="/" @click.native="openNav = false">
-          Welcome
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/roadmap/" @click.native="openNav = false">
-          Roadmap
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/blog/" @click.native="openNav = !openNav">
-          Blog
-        </nuxt-link>
-        <a class="input--option get-help" href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3" target="_blank" @click="openNav = false">
-          Help
-        </a>
-        <br>
-      </nav>
-    </transition>
-    <div :class="{ navOpen: openNav }" class="wrapper--app">
-      <div id="nav--top" class="spacer--small" />
-      <div class="container--nav animated bounceInLeft">
-        <nuxt-link to="/">
-          <inline-svg id="logo--home" class="nav-button" :src="require('../assets/svg/LogoV12.svg')" />
-        </nuxt-link>
-        <inline-svg v-show="!openNav" class="nav-button" :src="require('../assets/svg/hamburger.svg')" @click="openNav = true" />
-        <inline-svg v-show="openNav" class="nav-button" :src="require('../assets/svg/close.svg')" @click="openNav = false" />
-      </div>
-      <div class="animated fadeIn">
-        <transition enter-active-class="animated fadeIn delay-1s" leave-active-class="animated fadeOut">
-          <nuxt />
+      <nav :class="{showNav: openNav}" id="nav--main">
+        <transition enter-active-class="animated fadeIn faster delay-1s">
+          <div v-show="openNav" class="wrapper--nav-items">
+            <inline-svg class="nav-button" :src="require('../assets/svg/close.svg')" @click="openNav = false" />
+            <a class="input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">
+              Log In
+            </a>
+            <nuxt-link class="input--option" to="/" @click.native="openNav = false">
+              Welcome
+            </nuxt-link>
+            <nuxt-link class="input--option" to="/roadmap/" @click.native="openNav = false">
+              Roadmap
+            </nuxt-link>
+            <nuxt-link class="input--option" to="/blog/" @click.native="openNav = !openNav">
+              Blog
+            </nuxt-link>
+            <a class="input--option get-help" href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3" target="_blank" @click="openNav = false">
+              Help
+            </a>
+            <br>
+          </div>
         </transition>
-      </div>
-      <div class="spacer" />
-      <footer>
-        <div class="nav--footer">
-          <CookieControl>
-            <template v-slot:bar>
-              <p>
-                We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
-                <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/cookie-policy/">
-                  <b>Cookies Policy</b>.
-                </nuxt-link>
-              </p>
-            </template>
-          </CookieControl>
-          <div class="social-bar">
-            <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
-            <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
-            <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')" /></a>
-            <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
-          </div>
-        </div>
-        <form
-          id="mc-embedded-subscribe-form"
-          action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
-          method="post"
-          name="mc-embedded-subscribe-form"
-          class="validate animated fadeInLeft"
-          target="_blank"
-          novalidate
-        >
-          <label for="mce-EMAIL">Sign up to our newsletter</label><br>
-          <input
-            id="mce-EMAIL"
-            type="email"
-            value=""
-            name="EMAIL"
-            class="email"
-            placeholder="Email"
-            required
-          >
-          <div style="position: absolute; left: -5000px" aria-hidden="true">
-            <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
-          </div>
-          <div class="clear">
-            <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
-          </div>
-        </form><br>
-        <div>
-          <nuxt-link class="input--option" to="/gdpr/">
-            GDPR Statement
-          </nuxt-link>
-          <nuxt-link class="input--option" to="/privacy-policy/">
-            Privacy Policy
-          </nuxt-link>
-          <nuxt-link class="input--option" to="/cookie-policy/">
-            Cookie Policy
-          </nuxt-link>
-          <nuxt-link class="input--option" to="/terms-conditions/">
-            Terms & Conditions
-          </nuxt-link>
-          <a class="input--option" href="https://status.traininblocks.com">
-            Status
-          </a>
-        </div>
-        <p>
-          <b>Train In Blocks Ltd</b><br>
-          12515717<br>
-          21 Sinodun Road, Wallingford, OX10 8AD, United Kingdom<br>
-          Registered in England & Wales
-        </p>
-      </footer>
-      <a
-        v-if="scrollpx > 800"
-        v-scroll-to="{
-          el: '#nav--top',
-          duratiob: 1200,
-          easing: 'ease'
-        }"
-        class="to-top"
-      >
-        <inline-svg id="to-top__icon" :src="require('../assets/svg/Top.svg')" />
-      </a>
+      </nav>
+    <div id="nav--top" class="spacer--small" />
+    <div class="container--nav animated bounceInLeft">
+      <nuxt-link to="/">
+        <inline-svg id="logo--home" class="nav-button" :src="require('../assets/svg/LogoV12.svg')" />
+      </nuxt-link>
+      <transition enter-active-class="animated fadeIn faster delay-1s" leave-active-class="animated fadeOut faster">
+        <inline-svg v-show="!openNav" class="nav-button" :src="require('../assets/svg/hamburger.svg')" @click="openNav = true" />
+      </transition>
     </div>
+    <div class="animated fadeIn">
+      <transition enter-active-class="animated fadeIn delay-1s" leave-active-class="animated fadeOut">
+        <nuxt />
+      </transition>
+    </div>
+    <div class="spacer" />
+    <footer>
+      <div class="nav--footer">
+        <CookieControl>
+          <template v-slot:bar>
+            <p>
+              We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
+              <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/cookie-policy/">
+                <b>Cookies Policy</b>.
+              </nuxt-link>
+            </p>
+          </template>
+        </CookieControl>
+        <div class="social-bar">
+          <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
+          <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
+          <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')" /></a>
+          <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
+        </div>
+      </div>
+      <form
+        id="mc-embedded-subscribe-form"
+        action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
+        method="post"
+        name="mc-embedded-subscribe-form"
+        class="validate animated fadeInLeft"
+        target="_blank"
+        novalidate
+      >
+        <label for="mce-EMAIL">Sign up to our newsletter</label><br>
+        <input
+          id="mce-EMAIL"
+          type="email"
+          value=""
+          name="EMAIL"
+          class="email"
+          placeholder="Email"
+          required
+        >
+        <div style="position: absolute; left: -5000px" aria-hidden="true">
+          <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
+        </div>
+        <div class="clear">
+          <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
+        </div>
+      </form><br>
+      <div>
+        <nuxt-link class="input--option" to="/gdpr/">
+          GDPR Statement
+        </nuxt-link>
+        <nuxt-link class="input--option" to="/privacy-policy/">
+          Privacy Policy
+        </nuxt-link>
+        <nuxt-link class="input--option" to="/cookie-policy/">
+          Cookie Policy
+        </nuxt-link>
+        <nuxt-link class="input--option" to="/terms-conditions/">
+          Terms & Conditions
+        </nuxt-link>
+        <a class="input--option" href="https://status.traininblocks.com">
+          Status
+        </a>
+      </div>
+      <p>
+        <b>Train In Blocks Ltd</b><br>
+        12515717<br>
+        21 Sinodun Road, Wallingford, OX10 8AD, United Kingdom<br>
+        Registered in England & Wales
+      </p>
+    </footer>
+    <a
+      v-if="scrollpx > 800"
+      v-scroll-to="{
+        el: '#nav--top',
+        duratiob: 1200,
+        easing: 'ease'
+      }"
+      class="to-top"
+    >
+      <inline-svg id="to-top__icon" :src="require('../assets/svg/Top.svg')" />
+    </a>
   </div>
 </template>
 
