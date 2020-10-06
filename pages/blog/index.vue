@@ -2,7 +2,7 @@
   .blog-post {
     display: grid;
     box-shadow: 0 0 20px 10px #28282810;
-    margin: 8rem auto;
+    margin: 4rem auto;
     max-width: 80%
   }
   .blog-post__top-wrapper {

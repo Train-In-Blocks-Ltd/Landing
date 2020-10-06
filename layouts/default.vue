@@ -137,6 +137,7 @@
   }
   #nav--main {
     position: fixed;
+    z-index: 2;
     right: 0;
     top: 0;
     padding: 2.8rem 2rem;
@@ -435,9 +436,6 @@
             </a>
             <nuxt-link class="input--option" to="/" @click.native="openNav = false">
               Welcome
-            </nuxt-link>
-            <nuxt-link class="input--option" to="/roadmap/" @click.native="openNav = false">
-              Roadmap
             </nuxt-link>
             <nuxt-link class="input--option" to="/blog/" @click.native="openNav = !openNav">
               Blog

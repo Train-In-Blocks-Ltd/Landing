@@ -62,7 +62,7 @@
     <p>Cancel anytime and save 15% on our annual plan.</p>
     <div class="container--pricing">
       <div>
-        <p class="text--large">£8.50/m</p>
+        <p class="text--large">£102</p>
         <p class="text--large grey">Yearly</p>
         <client-only>
           <stripe-checkout
@@ -74,14 +74,14 @@
           >
             <template slot="checkout-button">
               <button @click="checkout1()">
-                Option 1
+                Let's go
               </button>
             </template>
           </stripe-checkout>
         </client-only>
       </div>
       <div>
-        <p class="text--large">£10/m</p>
+        <p class="text--large">£10</p>
         <p class="text--large grey">Monthly</p>
         <client-only>
           <stripe-checkout
@@ -93,7 +93,7 @@
           >
             <template slot="checkout-button">
               <button @click="checkout0()">
-                Option 2
+                Sign me up
               </button>
             </template>
           </stripe-checkout>
