@@ -1,4 +1,3 @@
-
 import * as path from 'path'
 import * as glob from 'glob'
 import Mode from 'frontmatter-markdown-loader/mode'
@@ -17,7 +16,6 @@ function getDynamicPaths (urlFilepathTable) {
 export default async () => {
   return {
     target: 'static',
-    mode: 'universal',
     /*
     ** Headers of the page
     */
@@ -122,7 +120,6 @@ export default async () => {
     ** Nuxt.js modules
     */
     modules: [
-      'vue-social-sharing/nuxt',
       ['nuxt-cookie-control', {
         colors: {
           barTextColor: '#282828',
@@ -194,6 +191,19 @@ export default async () => {
             mode: [Mode.HTML, Mode.META]
           }
         })
+      },
+      html: {
+        minify: {
+          collapseBooleanAttributes: true,
+          decodeEntities: true,
+          minifyCSS: false,
+          minifyJS: false,
+          processConditionalComments: true,
+          removeEmptyAttributes: true,
+          removeRedundantAttributes: true,
+          trimCustomFragments: true,
+          useShortDoctype: true
+        }
       }
     }
   }

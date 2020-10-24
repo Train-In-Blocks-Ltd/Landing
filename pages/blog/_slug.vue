@@ -1,21 +1,17 @@
 <style scoped>
-  .blog--body {
-    padding: 6rem;
-    background-color: #F6F6F6
-  }
   @media (min-width: 1440px) {
     .blog--body {
-      padding: 6rem 20rem
+      padding: 0 20rem
     }
   }
   @media (max-width: 992px) {
     .blog--body {
-      padding: 6rem
+      padding: 0 6rem
     }
   }
   @media (max-width: 768px) {
     .blog--body {
-      padding: 4rem
+      padding: 0 4rem
     }
   }
   @media (max-width: 567px) {
@@ -29,7 +25,7 @@
 <template>
   <div class="blog--body">
     <!--eslint-disable-next-line-->
-    <div v-html="html" />
+    <div class="container--content" v-html="html" />
   </div>
 </template>
 

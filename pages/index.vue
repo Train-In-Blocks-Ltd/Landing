@@ -1,206 +1,170 @@
 <style scoped>
   /* Containers */
-  #container--1c {
+  #home {
+    padding: 6rem 0
+  }
+  .container--features {
     display: grid;
-    grid-gap: 4rem;
-    height: auto;
-    width: 100%
+    grid-template-columns: repeat(auto-fill, 280px);
+    grid-gap: 4rem
   }
-  #container--1c h1 {
-    text-align: center
-  }
-  #container--2c3r {
+  .container--pricing {
     display: grid;
-    grid-template: repeat(3, 1fr) / 1fr 1fr;
-    grid-template-areas:
-      'aI aT'
-      'bT bI'
-      'cI cT';
-    grid-gap: 10rem;
-    height: auto
-  }
-  #container--2c3r > div {
-    margin: 5vh 0
-  }
-  #container--2c3r > h1 {
-    margin: auto
+    grid-template-columns: 1fr 1fr
   }
 
-  /* Countdown */
-  .countdown--wrapper {
-    display: grid;
-    margin: 4rem 0;
-    animation-delay: 600ms
+  /* Content */
+  .img--pc {
+    max-width: 150%;
+    position: relative;
+    right: -25%
   }
-  .container--countdown {
-    letter-spacing: .4rem;
-    font-size: 1.5rem
-  }
-  .countdown--desc {
-    margin: 2rem 0
-  }
-
-  /* Misc. */
-  .text--center {
-    text-align: center
-  }
-  #img--DevicePC {
-    width: 100%
-  }
-  #img--deviceTablet {
-    width: 40vw;
-    margin: auto
-  }
-  .text--right {
-    text-align: right
-  }
-  svg {
-    margin: auto
+  .img--tablet {
+    max-width: 150%;
+    position: relative;
+    right: -50%;
+    margin-top: 6rem
   }
 
-  /* Typeform */
-  .typeform-share.button {
-    text-decoration: none
-  }
-  .input--option.more {
-    font-size: .8rem;
-    margin: 0
-  }
-
-  /* Responsiveness */
-  @media (max-width: 992px) {
-    .container--2c3r {
-      grid-gap: 2rem
-    }
-  }
   @media (max-width: 768px) {
-    h1 {
-      margin: 0
+    #home {
+      padding: 0
     }
-    #container--2c {
-      grid-template-columns: 1fr;
-      grid-gap: 4rem;
-      margin: 0 0 4rem 0
-    }
-    #container--2c3r {
-      grid-template: repeat(3, .4fr 1fr) / 1fr;
-      grid-template-areas: 'aT' 'aI' 'bT' 'bI' 'cT' 'cI'
-    }
-    #svg--3 {
-      width: auto
-    }
-    #img--deviceTablet {
-      width: 90vw
+    .img--pc, .img--tablet {
+      max-width: 200%;
+      right: 0
     }
   }
-  @media (max-width: 576px) {
-    /* Countdown */
-    .container--countdown h2 {
-      font-size: 1rem
-    }
-    .container--countdown p {
-      font-size: .8rem;
-      margin: .6rem 0
-    }
-  }
-  @media (max-width: 360px) {
-    /* Containers */
-    .container--countdown p {
-      font-size: .5rem;
-      margin: .4rem 0
-    }
-
-    /* Misc */
-    svg {
-      width: 80%
+  @media (max-width: 567px) {
+    .img--tablet {
+      margin-top: 2rem
     }
   }
 </style>
 
 <template>
-  <div>
-    <h1>Version 1.3 is Now Live</h1>
-    <p>This update focuses on the feedback that we have been given by our users. We have optimised the app to run faster and more efficiently.</p>
-    <form action="https://mailchi.mp/traininblocks/improve-sprint-performance-and-app-progress-4752742?e=[UNIQID]" target="_blank">
-      <button type="submit">
-        Latest newsletter
-      </button>
-    </form>
+  <div id="home">
+    <p class="text--large">
+      We've taken health and fitness programming to the next level.
+    </p>
+    <p class="text--large grey">
+      Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.
+    </p>
     <div class="spacer" />
-    <div id="container--1c">
-      <!-- Countdown
-      <div class="countdown--wrapper">
-        <div class="container--countdown">
-          <h2 class="sub-title text--center">
-            01.08.20
-          </h2>
-          <Countdown end="August 1, 2020" />
-          <p class="countdown--desc text--center">
-            <b>BETA RELEASE</b>
-          </p>
-        </div>
+    <img class="img--pc" src="../assets/images/device-pc.png" alt="Device PC">
+    <div class="spacer" />
+    <div class="container--features">
+      <div v-for="feature in features" :key="feature.id">
+        <p class="text--small">
+          {{ feature.subtitle }}
+        </p><br>
+        <p class="text--small grey">
+          {{ feature.desc }}
+        </p>
       </div>
-      -->
-      <script>(function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-      <img id="img--DevicePC" src="../assets/DevicePC.png" alt="Device PC">
+    </div>
+    <div class="spacer" />
+    <p class="text--large">
+      14-day free trial
+    </p>
+    <p>Cancel anytime and save 15% on our annual plan.</p>
+    <div class="container--pricing">
       <div>
-        <p><b>Why should you <i>Train In Blocks</i>?</b></p>
-        <p>Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.</p>
-        <p>There are no standard ways to use this app. Find your flare a cater it towards your clientele. For example, use it for coaching, tracking treatments, therapy sessions and more.</p><br>
-        <p><b>What are we working on next?</b></p>
-        <p>You can also take part our features poll to have a say in our development. Let us know which features you would like to see in the next major update. It will only take 30 seconds.</p>
-        <router-link class="input--option more" to="/roadmap">
-          Find out more
-        </router-link><br><br><br>
-        <a
-          class="typeform-share button"
-          href="https://form.typeform.com/to/PMTb4d"
-          data-mode="popup"
-          :data-hide-headers="true"
-          :data-hide-footer="true"
-          target="_blank"
-        >
-          Vote for upcoming features
-        </a><br><br>
+        <p class="text--large">
+          £102
+        </p>
+        <p class="text--large grey">
+          Yearly
+        </p>
+        <client-only>
+          <stripe-checkout
+            ref="checkoutRef1"
+            :pk="publishableKey"
+            :items="yearly"
+            :success-url="successUrl"
+            :cancel-url="cancelUrl"
+          >
+            <template slot="checkout-button">
+              <button @click="checkout1()">
+                Let's go
+              </button>
+            </template>
+          </stripe-checkout>
+        </client-only>
+      </div>
+      <div>
+        <p class="text--large">
+          £10
+        </p>
+        <p class="text--large grey">
+          Monthly
+        </p>
+        <client-only>
+          <stripe-checkout
+            ref="checkoutRef0"
+            :pk="publishableKey"
+            :items="monthly"
+            :success-url="successUrl"
+            :cancel-url="cancelUrl"
+          >
+            <template slot="checkout-button">
+              <button @click="checkout0()">
+                Sign me up
+              </button>
+            </template>
+          </stripe-checkout>
+        </client-only>
       </div>
     </div>
     <div class="spacer" />
-    <div id="container--2c3r">
-      <h1 class="main-title" style="grid-area: aT">
-        We've taken exercise programming to the next level.
-      </h1>
-      <inline-svg style="grid-area: aI" :src="require('../assets/svg/Arrow.svg')" />
-      <h1 class="text--right main-title" style="grid-area: bT">
-        Speed, simplicity and functionality is our philosophy.
-      </h1>
-      <img id="img--deviceTablet" style="grid-area: bI" src="../assets/DeviceTablet.png" alt="Device Tablet">
-      <h1 class="main-title" style="grid-area: cT">
-        Save more time and get more clients.
-      </h1>
-      <inline-svg style="grid-area: cI" :src="require('../assets/svg/FlyArrow.svg')" />
-    </div>
-    <div class="spacer" />
+    <img class="img--tablet" src="../assets/images/device-tablet.png" alt="Device Tablet">
   </div>
 </template>
 
 <script>
-import InlineSvg from 'vue-inline-svg'
-// import Countdown from '../components/Countdown'
-
 export default {
-  components: {
-    InlineSvg
-    // Countdown
-  },
   data () {
     return {
-      title: 'Want to train more clients effectively?'
+      title: 'Want to train more clients effectively?',
+      features: [
+        { id: 1, subtitle: 'Save Time', desc: 'Create a new long-term bespoke programme in less than 15 minutes.' },
+        { id: 2, subtitle: 'Workout Builder', desc: 'A powerful workout design tool using free-form text editors. Write anything you want.' },
+        { id: 3, subtitle: 'Visuals', desc: 'Analyse and visualise the programme without spending your day entering numbers into boxes. We\'ll handle that.' },
+        { id: 4, subtitle: 'Cloud', desc: 'It\'s all on the internet. Access anytime and anywhere.' },
+        { id: 5, subtitle: 'Easy Planning', desc: 'Copy the workouts across a set time-frame with one-click. Then make any changes required for progression.' },
+        { id: 6, subtitle: 'Sleek and Minimal UI', desc: 'Minimal and easy to understand. Simplicity goes a long way.' },
+        { id: 7, subtitle: 'Super Affordable', desc: 'No complicated pricing plans with different restrictions. Just pay and get instant access.' },
+        { id: 8, subtitle: 'Unlimited Clients', desc: 'There is no limit on the number of clients you can have. Go out there and get more.' }
+      ],
+      publishableKey: 'pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX',
+      monthly: [
+        {
+          plan: 'price_1GtvcPBYbiJubfJM2voqpLIo',
+          quantity: 1
+        }
+      ],
+      yearly: [
+        {
+          plan: 'price_1GtvcPBYbiJubfJM7nWmNywN',
+          quantity: 1
+        }
+      ],
+      successUrl: 'https://traininblocks.com/success',
+      cancelUrl: 'https://traininblocks.com/pricing'
     }
   },
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Programming for Personal Trainers'
     this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
     this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
+  },
+  methods: {
+    checkout0 () {
+      this.$refs.checkoutRef0.redirectToCheckout()
+    },
+    checkout1 () {
+      this.$refs.checkoutRef1.redirectToCheckout()
+    }
   }
 }
 </script>

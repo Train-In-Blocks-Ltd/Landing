@@ -1,5 +1,5 @@
 [build]
-  command = "npm run generate"
+  command = "npm run generate --no-optional"
   publish = "dist"
 
 [[redirects]]
@@ -23,16 +23,29 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Content-Security-Policy = "upgrade-insecure-requests"
 
+[[headers]]
+  for = "/_nuxt/*"
+  [headers.values]
+    Cache-Control = "max-age=365000000, immutable"
+
 [[plugins]]
   package = "@netlify/plugin-sitemap"
   [plugins.inputs]
-    buildDir = "dist"
+    buildDir = "./dist"
     prettyURLs = true
+    # Append missing trailing slash to pretty URL
+    trailingSlash = true
     exclude = [
       # By file Path
       # './build-dir/path-to/file.html',
       # By Glob pattern
       # '**/**/child-one.html'
       './dist/success/index.html',
-      './dist/200.html'
+      './dist/404.html'
     ]
+
+[[plugins]]
+  package = "netlify-plugin-cache-nuxt"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
