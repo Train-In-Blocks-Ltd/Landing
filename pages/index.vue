@@ -142,7 +142,7 @@ export default {
         }
       ],
       successUrl: 'https://traininblocks.com/success',
-      cancelUrl: 'https://traininblocks.com/pricing'
+      cancelUrl: 'https://traininblocks.com'
     }
   },
   beforeCreate () {
