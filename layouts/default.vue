@@ -16,8 +16,7 @@
     margin: 0;
     letter-spacing: 1px;
     font-size: 16px;
-    padding: 0 8%;
-    overflow-x: hidden
+    padding: 0 8%
   }
   .main-title {
     font-size: 3rem;

@@ -15,24 +15,16 @@
 
   /* Content */
   .img--pc {
-    max-width: 150%;
-    position: relative;
-    right: -25%
+    max-width: 100%
   }
   .img--tablet {
-    max-width: 150%;
-    position: relative;
-    right: -50%;
+    max-width: 100%;
     margin-top: 6rem
   }
 
   @media (max-width: 768px) {
     #home {
       padding: 0
-    }
-    .img--pc, .img--tablet {
-      max-width: 200%;
-      right: 0
     }
   }
   @media (max-width: 567px) {
