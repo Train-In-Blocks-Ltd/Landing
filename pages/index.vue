@@ -73,6 +73,7 @@
             ref="checkoutRef1"
             :pk="publishableKey"
             :items="yearly"
+            :allow_promotion_codes="true"
             :success-url="successUrl"
             :cancel-url="cancelUrl"
           >
@@ -96,6 +97,7 @@
             ref="checkoutRef0"
             :pk="publishableKey"
             :items="monthly"
+            :allow_promotion_codes="true"
             :success-url="successUrl"
             :cancel-url="cancelUrl"
           >
