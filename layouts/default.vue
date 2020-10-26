@@ -45,6 +45,7 @@
 
   /* GLOBAL: TO TOP */
   .to-top {
+    z-index: 99;
     opacity: 0;
     position: fixed;
     right: 20px;
@@ -145,7 +146,7 @@
     width: 0;
     background-color: #F4F4F4;
     box-shadow: 0 0 20px 10px #28282810;
-    transition: all 1s cubic-bezier(.165, .84, .44, 1)
+    transition: all .4s cubic-bezier(.165, .84, .44, 1)
   }
   #nav--main.showNav {
     width: 8rem;
@@ -427,7 +428,7 @@
   <div id="app">
     <script data-jsd-embedded data-key="200dadd3-915c-4769-ba8d-ec7792145827" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js" />
     <nav id="nav--main" :class="{showNav: openNav}">
-      <transition enter-active-class="animated fadeIn faster delay-1s">
+      <transition enter-active-class="animated fadeIn faster">
         <div v-show="openNav" class="wrapper--nav-items">
           <inline-svg class="nav-button" :src="require('../assets/svg/close.svg')" @click="openNav = false" />
           <a class="input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">

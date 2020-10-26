@@ -11,8 +11,10 @@
     justify-content: space-between;
     padding: 4rem
   }
-  .blog-post__image {
-    height: auto;
+  .blog-post__img {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
     width: 100%
   }
   .blog-post__link {
@@ -66,7 +68,7 @@
     </p>
     <div class="container--blog">
       <div v-for="post in posts" :key="post.attributes.title" class="blog-post">
-        <img class="blog-post__image" :src="'/blog-img/' + post.attributes.img" loading="lazy">
+        <div class="blog-post__img" :style="{ backgroundImage: `url(/blog-img/${post.attributes.img})` }" />
         <div class="blog-post__top-wrapper">
           <div>
             <p class="text--small">
