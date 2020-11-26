@@ -22,9 +22,29 @@
     margin-top: 6rem
   }
 
+  /* Embeded YT */
+  .embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: auto;
+    overflow: hidden;
+    max-width: 80%
+  }
+  .embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%
+  }
+
   @media (max-width: 768px) {
     #home {
       padding: 0
+    }
+    .embed-container {
+      max-width: 100%
     }
   }
   @media (max-width: 567px) {
@@ -44,6 +64,10 @@
     </p>
     <div class="spacer" />
     <img class="img--pc" src="../assets/images/device-pc.png" alt="Device PC">
+    <div class="spacer" />
+    <div class='embed-container'>
+      <iframe src='https://www.youtube.com/embed/00UPzOCD2Y0' frameborder='0' allowfullscreen />
+    </div>
     <div class="spacer" />
     <div class="container--features">
       <div v-for="feature in features" :key="feature.id">
