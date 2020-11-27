@@ -66,7 +66,7 @@
     <img class="img--pc" src="../assets/images/device-pc.png" alt="Device PC">
     <div class="spacer" />
     <div class='embed-container'>
-      <iframe src='https://www.youtube.com/embed/00UPzOCD2Y0' frameborder='0' allowfullscreen />
+      <iframe src='https://www.youtube.com/embed/6jZx7NShtgk' frameborder='0' allowfullscreen />
     </div>
     <div class="spacer" />
     <div class="container--features">
