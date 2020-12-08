@@ -23,6 +23,10 @@
   }
 
   /* Embeded YT */
+  .video_controls {
+    max-width: 80%;
+    margin: auto
+  }
   .embed-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -65,8 +69,33 @@
     <div class="spacer" />
     <img class="img--pc" src="../assets/images/device-pc.png" alt="Device PC">
     <div class="spacer" />
+    <div v-if="videos.length > 1" class="video_controls">
+      <button
+        v-for="(video_button, index) in videos"
+        v-show="current_video - 1 === index"
+        :key="'video_button-back-' + index"
+        @click="current_video--"
+      >
+        Back: {{ video_button.name }}
+      </button>
+      <button
+        v-for="(video_button, index) in videos"
+        v-show="current_video + 1 === index"
+        :key="'video_button-forward-' + index"
+        @click="current_video++"
+      >
+        Next: {{ video_button.name }}
+      </button>
+    </div>
     <div class="embed-container">
-      <iframe src="https://www.youtube.com/embed/6jZx7NShtgk" frameborder="0" allowfullscreen />
+      <iframe
+        v-for="(video, index) in videos"
+        v-show="current_video === index"
+        :key="'video-' + index"
+        :src="video.url"
+        frameborder="0"
+        allowfullscreen
+      />
     </div>
     <div class="spacer" />
     <div class="container--features">
@@ -142,6 +171,10 @@ export default {
   data () {
     return {
       title: 'Want to train more clients effectively?',
+      current_video: 0,
+      videos: [
+        { name: 'Draco 2.0 Demo', url: 'https://www.youtube.com/embed/6jZx7NShtgk' }
+      ],
       features: [
         { id: 1, subtitle: 'Save Time', desc: 'Create a new long-term bespoke programme in less than 15 minutes.' },
         { id: 2, subtitle: 'Workout Builder', desc: 'A powerful workout design tool using free-form text editors. Write anything you want.' },
