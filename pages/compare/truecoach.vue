@@ -12,6 +12,7 @@ export default {
     return {
       info: {
         name: 'TrueCoach',
+        slug: 'truecoach',
         price: '$19-$99 per month',
         price_desc: 'Only 5 clients with the cheaper plan.'
       }
