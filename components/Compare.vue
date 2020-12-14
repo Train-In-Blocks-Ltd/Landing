@@ -114,7 +114,10 @@
 <script>
 export default {
   props: {
-    details: Object
+    details: {
+      type: Object,
+      default: null
+    }
   },
   data () {
     return {

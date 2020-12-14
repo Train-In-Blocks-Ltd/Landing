@@ -17,6 +17,11 @@ export default {
         price_desc: 'Only 5 clients with the cheaper plan.'
       }
     }
+  },
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'TrueCoach'
+    this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
   }
 }
 </script>
