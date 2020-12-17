@@ -109,65 +109,19 @@
       </div>
     </div>
     <div class="spacer" />
-    <p class="text--large">
-      14-day free trial
-    </p>
-    <p>Cancel anytime and save 15% on our annual plan.</p>
-    <div class="container--pricing">
-      <div>
-        <p class="text--large">
-          £102
-        </p>
-        <p class="text--large grey">
-          Yearly
-        </p>
-        <client-only>
-          <stripe-checkout
-            ref="checkoutRef1"
-            :pk="publishableKey"
-            :items="yearly"
-            :success-url="successUrl"
-            :cancel-url="cancelUrl"
-          >
-            <template slot="checkout-button">
-              <button @click="checkout1()">
-                Let's go
-              </button>
-            </template>
-          </stripe-checkout>
-        </client-only>
-      </div>
-      <div>
-        <p class="text--large">
-          £10
-        </p>
-        <p class="text--large grey">
-          Monthly
-        </p>
-        <client-only>
-          <stripe-checkout
-            ref="checkoutRef0"
-            :pk="publishableKey"
-            :items="monthly"
-            :success-url="successUrl"
-            :cancel-url="cancelUrl"
-          >
-            <template slot="checkout-button">
-              <button @click="checkout0()">
-                Sign me up
-              </button>
-            </template>
-          </stripe-checkout>
-        </client-only>
-      </div>
-    </div>
+    <payment />
     <div class="spacer" />
     <img class="img--tablet" src="../assets/images/device-tablet.png" alt="Device Tablet">
   </div>
 </template>
 
 <script>
+import Payment from '../components/Payment'
+
 export default {
+  components: {
+    Payment
+  },
   data () {
     return {
       title: 'Want to train more clients effectively?',
@@ -184,36 +138,13 @@ export default {
         { id: 6, subtitle: 'Sleek and Minimal UI', desc: 'Minimal and easy to understand. Simplicity goes a long way.' },
         { id: 7, subtitle: 'Super Affordable', desc: 'No complicated pricing plans with different restrictions. Just pay and get instant access.' },
         { id: 8, subtitle: 'Unlimited Clients', desc: 'There is no limit on the number of clients you can have. Go out there and get more.' }
-      ],
-      publishableKey: 'pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX',
-      monthly: [
-        {
-          plan: 'price_1GtvcPBYbiJubfJM2voqpLIo',
-          quantity: 1
-        }
-      ],
-      yearly: [
-        {
-          plan: 'price_1GtvcPBYbiJubfJM7nWmNywN',
-          quantity: 1
-        }
-      ],
-      successUrl: 'https://traininblocks.com/success',
-      cancelUrl: 'https://traininblocks.com'
+      ]
     }
   },
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Programming for Personal Trainers'
     this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
     this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
-  },
-  methods: {
-    checkout0 () {
-      this.$refs.checkoutRef0.redirectToCheckout()
-    },
-    checkout1 () {
-      this.$refs.checkoutRef1.redirectToCheckout()
-    }
   }
 }
 </script>
