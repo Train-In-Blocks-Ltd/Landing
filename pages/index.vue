@@ -60,10 +60,10 @@
 
 <template>
   <div id="home">
-    <p class="text--large">
+    <p class="text--large tapered">
       We've taken health and fitness programming to the next level.
     </p>
-    <p class="text--large grey">
+    <p class="text--large tapered grey">
       Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.
     </p>
     <div class="spacer" />

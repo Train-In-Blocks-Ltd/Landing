@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Cookie Policy for Train In Blocks</h1>
+    <p class="text--large">Cookie Policy for Train In Blocks</p>
     <p>This is the Cookie Policy for Train In Blocks, accessible from http://www.traininblocks.com</p>
     <p><strong>What Are Cookies</strong></p>
     <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>

@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-    <h1 v-if="error.statusCode === 404">
+    <p class="text--large" v-if="error.statusCode === 404">
       Page not found
-    </h1>
-    <h1 v-else>
+    </p>
+    <p class="text--large" v-else>
       An error occurred
-    </h1>
+    </p>
     <nuxt-link to="/">
       Home page
     </nuxt-link>
