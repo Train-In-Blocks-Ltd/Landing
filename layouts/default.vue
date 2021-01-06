@@ -66,6 +66,9 @@
   .tapered {
     width: 70%
   }
+  .no-margin {
+    margin: 0
+  }
 
   /* GLOBAL: BUTTONS */
   button, #mc-embedded-subscribe, .typeform-share.button {
