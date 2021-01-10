@@ -14,17 +14,8 @@
   }
   body {
     margin: 0;
-    letter-spacing: 1px;
     font-size: 16px;
     padding: 0 8%
-  }
-  .main-title {
-    font-size: 3rem;
-    margin: 0 0 2rem 0
-  }
-  .sub-title {
-    font-size: 2rem;
-    margin: 0 0 1.5rem 0
   }
   p {
     line-height: 1.4;
@@ -64,7 +55,6 @@
 
   /* GLOBAL: CONTENT */
   .text--large {
-    width: 70%;
     font-size: 2.6rem
   }
   .text--small {
@@ -72,6 +62,12 @@
   }
   .grey {
     color: #28282890
+  }
+  .tapered {
+    width: 70%
+  }
+  .no-margin {
+    margin: 0
   }
 
   /* GLOBAL: BUTTONS */
@@ -135,27 +131,23 @@
     height: 8vh;
     animation-delay: 100ms
   }
-  #nav--main {
-    position: fixed;
-    z-index: 2;
-    right: 0;
-    top: 0;
-    padding: 2.8rem 2rem;
-    opacity: 0;
-    height: 100%;
-    width: 0;
-    background-color: #F4F4F4;
-    box-shadow: 0 0 20px 10px #28282810;
-    transition: all .4s cubic-bezier(.165, .84, .44, 1)
-  }
-  #nav--main.showNav {
-    width: 8rem;
-    opacity: 1
-  }
   .wrapper--nav-items {
-    display: flex;
-    flex-direction: column;
-    text-align: right
+    display: grid;
+    text-align: right;
+    position: fixed;
+    top: 6vh;
+    right: 8%;
+    width: 100%;
+    z-index: 2
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF99;
+    z-index: 1
   }
 
   /* Nav Hover Animation */
@@ -427,28 +419,28 @@
 <template>
   <div id="app">
     <script data-jsd-embedded data-key="200dadd3-915c-4769-ba8d-ec7792145827" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js" />
-    <nav id="nav--main" :class="{showNav: openNav}">
+    <div v-if="openNav" class="overlay" />
+    <nav>
       <transition enter-active-class="animated fadeIn faster">
         <div v-show="openNav" class="wrapper--nav-items">
           <inline-svg class="nav-button" :src="require('../assets/svg/close.svg')" @click="openNav = false" />
-          <a class="input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">
+          <a class="text--large input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">
             Log In
           </a>
-          <nuxt-link class="input--option" to="/" @click.native="openNav = false">
+          <nuxt-link class="text--large input--option" to="/" @click.native="openNav = false">
             Welcome
           </nuxt-link>
-          <nuxt-link class="input--option" to="/blog/" @click.native="openNav = !openNav">
+          <nuxt-link class="text--large input--option" to="/blog/" @click.native="openNav = !openNav">
             Blog
           </nuxt-link>
-          <a class="input--option get-help" href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3" target="_blank" @click="openNav = false">
+          <a class="text--large input--option get-help" href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3" target="_blank" @click="openNav = false">
             Help
           </a>
-          <br>
         </div>
       </transition>
     </nav>
     <div id="nav--top" class="spacer--small" />
-    <div class="container--nav animated bounceInLeft">
+    <div class="container--nav animated fadeIn">
       <nuxt-link to="/">
         <inline-svg id="logo--home" class="nav-button" :src="require('../assets/svg/LogoV12.svg')" />
       </nuxt-link>

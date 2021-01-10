@@ -1,21 +1,23 @@
 <style scoped>
-  .blog-post {
+  .container--blog {
     display: grid;
-    box-shadow: 0 0 20px 10px #28282810;
-    margin: 4rem auto;
-    max-width: 80%
+    grid-gap: 8rem;
+    margin: 4rem 0
+  }
+  .blog-post {
+    display: flex
   }
   .blog-post__top-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 4rem
+    padding: 0 2rem
   }
   .blog-post__img {
     background-size: cover;
     background-position: center;
-    height: 300px;
-    width: 100%
+    width: auto;
+    height: 25vw
   }
   .blog-post__link {
     display: grid;
@@ -38,16 +40,15 @@
   }
 
   /* Responsiveness */
-  @media (max-width: 1200px) {
-    .blog-post__top-wrapper {
-      padding: 2rem
-    }
-  }
   @media (max-width: 768px) {
     .blog-post {
-      max-width: 100%
+      display: grid;
+      grid-gap: 2rem
     }
-    .blog-post__image {
+    .blog-post__top-wrapper {
+      padding: 0
+    }
+    .blog-post__img {
       height: auto;
       width: 100%
     }
@@ -68,10 +69,10 @@
     </p>
     <div class="container--blog">
       <div v-for="post in posts" :key="post.attributes.title" class="blog-post">
-        <div class="blog-post__img" :style="{ backgroundImage: `url(/blog-img/${post.attributes.img})` }" />
+        <img class="blog-post__img" :src="require(`../../static/blog-img${post.attributes.img}`)">
         <div class="blog-post__top-wrapper">
           <div>
-            <p class="text--small">
+            <p class="text--small no-margin">
               {{ post.attributes.title }}
             </p>
             <p class="text--small grey">

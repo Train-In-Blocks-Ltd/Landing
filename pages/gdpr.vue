@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Our General Data Protection Regulation (GDPR)</h1>
+    <p class="text--large">Our General Data Protection Regulation (GDPR)</p>
     <p>We are a Data Controller of your information.</p>
     <p>Train In Blocks Ltd's legal basis for collecting and using the personal information described in this Privacy Policy depends on the Personal Information we collect and the specific context in which we collect the information:</p>
     <ul>
