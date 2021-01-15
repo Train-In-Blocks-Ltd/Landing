@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <p class="text--large" v-if="error.statusCode === 404">
+    <p v-if="error.statusCode === 404" class="text--large">
       Page not found
     </p>
-    <p class="text--large" v-else>
+    <p v-else class="text--large">
       An error occurred
     </p>
     <nuxt-link to="/">

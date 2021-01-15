@@ -3,9 +3,9 @@
     <inline-svg id="logo--home" class="animated bounceInLeft" :src="require('../assets/svg/LogoV12.svg')" />
     <div class="countdown--wrapper animated fadeIn">
       <div class="container--countdown">
-        <h2 class="sub-title">
+        <p class="sub-title">
           01.08.20
-        </h2>
+        </p>
         <Countdown end="August 1, 2020" />
         <p>
           <b>BETA RELEASE</b>
