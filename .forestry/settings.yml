@@ -5,7 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: content
+  path: content/help
+  label: Help Articles
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+- type: directory
+  path: content/blog
   label: Blog Posts
   create: documents
   match: "**/*"
