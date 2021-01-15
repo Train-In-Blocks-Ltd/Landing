@@ -1,10 +1,8 @@
 ---
-id: "1"
+id: 1
 title: Create an account for your clients
 slug: creating-account-for-clients
-img: "/10/man-indoor-squatting.jpg"
 excerpt: Give access to your clients so that they can see their sessions and plans.
-
 ---
 # Create an account for your clients
 

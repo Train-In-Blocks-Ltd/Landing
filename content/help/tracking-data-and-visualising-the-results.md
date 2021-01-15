@@ -1,11 +1,8 @@
 ---
-id: "3"
+id: 3
 title: Tracking data and visualising the results
 slug: tracking-data
-img: ''
-excerpt: A quick guide on how to track and visualise your client's performance and
-  progress data
-
+excerpt: A quick guide on how to track and visualise your client's performance and progress data
 ---
 # Tracking data and visualising the results
 

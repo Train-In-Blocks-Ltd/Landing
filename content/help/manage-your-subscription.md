@@ -1,10 +1,8 @@
 ---
-id: "2"
+id: 2
 title: Manage your subscription
 slug: manage-subscription
-img: ''
 excerpt: Make changes to your Train In Blocks subscription (edit, cancel).
-
 ---
 # Manage your subscription
 

@@ -37,8 +37,7 @@ export default {
       return {
         html: post.html,
         excerpt: post.attributes.excerpt,
-        title: post.attributes.title,
-        img: post.attributes.img
+        title: post.attributes.title
       }
     } catch (err) {
       // eslint-disable-next-line
@@ -49,7 +48,6 @@ export default {
   mounted () {
     this.$parent.$parent.metaHelper.title = this.title
     this.$parent.$parent.metaHelper.description = this.excerpt
-    this.$parent.$parent.metaHelper.image = this.img
     this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/help/' + this.$route.params.slug + '/'
   }
 }

@@ -1,8 +1,35 @@
 <style scoped>
+  /* Contact form */
+  .contact_form {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 4rem 0;
+    max-width: 768px
+  }
+  .contact_form input {
+    padding: .6rem;
+    border: 1px solid #28282840;
+    border-radius: 5px
+  }
+  .click_here {
+    cursor: pointer;
+    transition: .6s all cubic-bezier(.165, .84, .44, 1)
+  }
+  .click_here:hover {
+    opacity: .6
+  }
+  .incomplete_form {
+    color: red
+  }
+
+  /* Articles */
   .container--help {
     display: grid;
     grid-gap: 8rem;
     margin: 4rem 0
+  }
+  .number_text {
+    line-height: 1
   }
   .help-post {
     display: flex
@@ -12,12 +39,6 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 0 2rem
-  }
-  .help-post__img {
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    height: 25vw
   }
   .help-post__link {
     display: grid;
@@ -48,10 +69,6 @@
     .help-post__top-wrapper {
       padding: 0
     }
-    .help-post__img {
-      height: auto;
-      width: 100%
-    }
     .help-post__link:hover {
       grid-gap: .4rem;
       opacity: 1
@@ -65,11 +82,23 @@
       Need help with something?
     </p>
     <p class="text--large grey">
-      We are here for you
+      <u
+        v-scroll-to="{
+          el: '#contact',
+          duration: 600,
+          easing: 'ease'
+        }"
+        class="click_here"
+      > Click here</u>
+      to get in touch or browse out guides
     </p>
     <div class="container--help">
       <div v-for="post in posts" :key="post.attributes.title" class="help-post">
-        <img class="help-post__img" :src="require(`../../static/help-img${post.attributes.img}`)">
+        <div>
+          <p class="text--xlarge no-margin number_text">
+            {{ post.attributes.id }}
+          </p>
+        </div>
         <div class="help-post__top-wrapper">
           <div>
             <p class="text--small no-margin">
@@ -88,6 +117,59 @@
         </div>
       </div>
     </div>
+    <form id="contact" class="contact_form" @submit.prevent="send_message()">
+      <div>
+        <p class="text--large">
+          Get in touch about something more specific
+        </p>
+        <p class="text--large grey">
+          We'll get back to you as soon as possible
+        </p>
+      </div>
+      <input
+        v-model="contactForm.name"
+        name="name"
+        type="text"
+        placeholder="Name"
+        class="text--small"
+        required
+      >
+      <input
+        v-model="contactForm.email"
+        name="email"
+        type="email"
+        placeholder="Email"
+        class="text--small"
+        required
+      >
+      <input
+        v-model="contactForm.confirm"
+        name="confirm_email"
+        type="email"
+        placeholder="Verify email"
+        class="text--small"
+        required
+      >
+      <input
+        v-model="contactForm.message"
+        name="message"
+        type="text"
+        placeholder="Message"
+        class="text--small"
+        required
+      >
+      <div>
+        <button
+          :disabled="contactForm.email !== contactForm.confirm || contactForm.name === '' || contactForm.email === '' || contactForm.message === ''"
+          type="submit"
+        >
+          Send
+        </button>
+        <p v-if="contactForm.email !== contactForm.confirm" class="incomplete_form">
+          Email does not match
+        </p>
+      </div>
+    </form>
   </div>
 </template>
 
@@ -108,6 +190,16 @@ export default {
       posts: imports
     }
   },
+  data () {
+    return {
+      contactForm: {
+        name: '',
+        email: '',
+        confirm: '',
+        message: ''
+      }
+    }
+  },
   created () {
     this.sortPosts()
   },
@@ -119,8 +211,11 @@ export default {
   methods: {
     sortPosts () {
       this.posts.sort((a, b) => {
-        return new Date(b.attributes.id) - new Date(a.attributes.id)
+        return new Date(a.attributes.id) - new Date(b.attributes.id)
       })
+    },
+    send_message () {
+      console.log('Sent')
     }
   }
 }

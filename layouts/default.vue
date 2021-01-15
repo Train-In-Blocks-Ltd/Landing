@@ -54,6 +54,9 @@
   }
 
   /* GLOBAL: CONTENT */
+  .text--xlarge {
+    font-size: 4rem
+  }
   .text--large {
     font-size: 2.6rem
   }
@@ -86,7 +89,6 @@
     letter-spacing: .1rem;
     color: white;
     background-color: #282828;
-    margin: .6rem 0;
     transition: opacity .2s, transform .1s cubic-bezier(.165, .84, .44, 1)
   }
   button:hover, #mc-embedded-subscribe:hover, .typeform-share.button:hover {
@@ -527,7 +529,7 @@
       v-if="scrollpx > 800"
       v-scroll-to="{
         el: '#nav--top',
-        duratiob: 1200,
+        duration: 600,
         easing: 'ease'
       }"
       class="to-top"
