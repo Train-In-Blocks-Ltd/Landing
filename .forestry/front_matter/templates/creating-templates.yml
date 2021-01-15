@@ -17,11 +17,6 @@ fields:
   config:
     required: false
   label: SLUG
-- name: img
-  type: text
-  config:
-    required: false
-  label: IMG
 - name: excerpt
   type: text
   config:
