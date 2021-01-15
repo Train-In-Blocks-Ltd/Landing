@@ -15,7 +15,7 @@ sections:
   label: Blog Posts
   create: documents
   match: "**/*"
-  new_doc_ext: md
+  new_doc_ext: ".md"
 upload_dir: static/blog-img
 public_path: "/_nuxt/img"
 front_matter_path: ''
