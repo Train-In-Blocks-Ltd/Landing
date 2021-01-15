@@ -1,18 +1,29 @@
 ---
-label: Creating templates
-hide_body: true
+label: Article
+hide_body: false
 fields:
+- name: id
+  type: text
+  config:
+    required: false
+  label: id
 - name: title
   type: text
   config:
     required: false
-  label: Title
-- name: main_body
-  type: textarea
-  default: ''
+  label: title
+- name: slug
+  type: text
   config:
     required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Main body
+  label: slug
+- name: img
+  type: text
+  config:
+    required: false
+  label: img
+- name: excerpt
+  type: text
+  config:
+    required: false
+  label: excerpt
