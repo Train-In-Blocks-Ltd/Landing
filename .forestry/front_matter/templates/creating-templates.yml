@@ -6,24 +6,24 @@ fields:
   type: text
   config:
     required: false
-  label: id
+  label: ID
 - name: title
   type: text
   config:
     required: false
-  label: title
+  label: TITLE
 - name: slug
   type: text
   config:
     required: false
-  label: slug
+  label: SLUG
 - name: img
   type: text
   config:
     required: false
-  label: img
+  label: IMG
 - name: excerpt
   type: text
   config:
     required: false
-  label: excerpt
+  label: EXCERPT
