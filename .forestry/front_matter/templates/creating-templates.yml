@@ -3,10 +3,15 @@ label: Article
 hide_body: false
 fields:
 - name: id
-  type: text
-  config:
-    required: false
+  type: number
   label: ID
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
 - name: title
   type: text
   config:
