@@ -27,3 +27,5 @@ fields:
   config:
     required: false
   label: EXCERPT
+pages:
+- content/help/creating-templates.md
