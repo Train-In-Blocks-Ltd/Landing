@@ -1,9 +1,16 @@
 ---
 id: "1"
-title: Creating templates
-slug: creating-templates
+title: Create an account for your clients
+slug: creating-account-for-clients
 img: "/10/man-indoor-squatting.jpg"
-excerpt: A quick guide on how to improve your workflow by using templates
+excerpt: Give access to your clients so that they can see their sessions and plans.
 
 ---
-# Creating templates
+# Create an account for your clients
+
+## Instructions
+
+1. Go to your chosen client
+2. Click on the Give Access button
+3. Ask your client to check their inbox to activate their account
+4. Get them to install the app with the **Install App** button when they are logged in
