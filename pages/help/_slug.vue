@@ -25,7 +25,7 @@
 <template>
   <div class="help--body">
     <!--eslint-disable-next-line-->
-    <a href="http://localhost:3000/help" class="text--small grey back_text">Back</a>
+    <a href="http://localhost:3000/help" class="back_text">Back</a>
     <br><br>
     <div class="container--content" v-html="html" />
   </div>

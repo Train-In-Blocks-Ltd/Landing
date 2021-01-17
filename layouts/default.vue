@@ -73,6 +73,7 @@
     margin: 0
   }
   .back_text {
+    color: #282828;
     transition: .6s all cubic-bezier(.165, .84, .44, 1)
   }
   .back_text:hover {
