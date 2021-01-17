@@ -72,6 +72,12 @@
   .no-margin {
     margin: 0
   }
+  .back_text {
+    transition: .6s all cubic-bezier(.165, .84, .44, 1)
+  }
+  .back_text:hover {
+    opacity: .6
+  }
 
   /* GLOBAL: BUTTONS */
   button, #mc-embedded-subscribe, .typeform-share.button {

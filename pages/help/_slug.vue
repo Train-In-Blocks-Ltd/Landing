@@ -1,5 +1,5 @@
 <style scoped>
-  @media (min-width: 1440px) {
+  @media (min-width: 2560px) {
     .help--body {
       padding: 0 20rem
     }
@@ -25,6 +25,8 @@
 <template>
   <div class="help--body">
     <!--eslint-disable-next-line-->
+    <a href="http://localhost:3000/help" class="text--small grey back_text">Back</a>
+    <br><br>
     <div class="container--content" v-html="html" />
   </div>
 </template>
