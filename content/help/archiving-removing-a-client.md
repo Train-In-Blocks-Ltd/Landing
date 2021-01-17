@@ -1,7 +1,7 @@
 ---
 id: 4
 title: Archiving/removing a client
-slug: remove-client
+slug: archiving-removing-a-client
 excerpt: We'll show you how you can temporarily and permanently remove a client.
 ---
 # Archiving/removing a client
