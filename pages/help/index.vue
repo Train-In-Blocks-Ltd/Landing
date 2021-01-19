@@ -6,14 +6,17 @@
     margin: 8rem 0;
     max-width: 768px
   }
-  .contact_form input {
+  .contact_form textarea {
+    resize: vertical
+  }
+  .contact_form input, .contact_form textarea {
     padding: .6rem;
     opacity: .6;
     border: 1px solid #28282840;
     border-radius: 8px;
     transition: .6s all cubic-bezier(.165, .84, .44, 1)
   }
-  .contact_form input:focus {
+  .contact_form input:focus, .contact_form textarea:focus {
     border: 1px solid #282828;
     opacity: 1
   }
@@ -156,14 +159,14 @@
         class="text--small"
         required
       >
-      <input
+      <textarea
         v-model="contactForm.message"
         name="message"
-        type="text"
+        rows="5"
         placeholder="Message"
         class="text--small"
         required
-      >
+      />
       <div>
         <button
           :disabled="contactForm.email !== contactForm.confirm || contactForm.name === '' || contactForm.email === '' || contactForm.message === ''"
