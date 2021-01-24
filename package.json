@@ -13,6 +13,7 @@
     "@netlify/plugin-sitemap": "^0.5.2",
     "@nuxtjs/pwa": "^3.3.2",
     "animate.css": "^3.7.2",
+    "axios": "^0.21.1",
     "chart.js": "^2.9.4",
     "frontmatter-markdown-loader": "^3.6.2",
     "netlify-plugin-cache-nuxt": "^0.0.1",

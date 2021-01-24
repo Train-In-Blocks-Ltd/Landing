@@ -14,7 +14,12 @@
     opacity: .6;
     border: 1px solid #28282840;
     border-radius: 8px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
     transition: .6s all cubic-bezier(.165, .84, .44, 1)
+  }
+  .contact_form input::placeholder, .contact_form textarea::placeholder {
+    color: #282828C0
   }
   .contact_form input:focus, .contact_form textarea:focus {
     border: 1px solid #282828;
@@ -126,7 +131,14 @@
         </div>
       </div>
     </div>
-    <form id="contact" class="contact_form" @submit.prevent="send_message()">
+    <form
+      id="contact"
+      class="contact_form"
+      method="post"
+      name="contact_form"
+      netlify
+      @submit.prevent="send_message"
+    >
       <div>
         <p class="text--large">
           Need something more specific?
@@ -179,11 +191,17 @@
         </p>
       </div>
     </form>
+    <div v-if="submitted">
+      <p>
+        {{ submitted }}
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
 import InlineSvg from 'vue-inline-svg'
+import axios from 'axios'
 
 export default {
   components: {
@@ -206,7 +224,8 @@ export default {
         email: '',
         confirm: '',
         message: ''
-      }
+      },
+      submitted: null
     }
   },
   created () {
@@ -224,7 +243,25 @@ export default {
       })
     },
     send_message () {
-      console.log('Sent')
+      const self = this
+      try {
+        axios.post(
+          '/',
+          self.encode({
+            'form-name': 'contact_form',
+            ...self.form
+          }),
+          { header: { 'Content-Type': 'application/x-www-form-urlencoded' } }
+        )
+        this.form = {
+          name: '',
+          email: '',
+          message: ''
+        }
+        this.submitted = 'Message sent successfully!'
+      } catch (e) {
+        this.submitted = e.toString() + ' Please try again.'
+      }
     }
   }
 }
