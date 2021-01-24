@@ -256,11 +256,11 @@ export default {
           '/',
           self.encode({
             'form-name': 'contact_form',
-            ...self.form
+            ...self.contactForm
           }),
           { header: { 'Content-Type': 'application/x-www-form-urlencoded' } }
         )
-        this.form = {
+        this.contactForm = {
           name: '',
           email: '',
           message: ''
