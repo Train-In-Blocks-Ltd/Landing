@@ -189,13 +189,13 @@
         <p v-if="contactForm.email !== contactForm.confirm" class="incomplete_form">
           Email does not match
         </p>
+        <div v-if="submitted">
+          <p>
+            {{ submitted }}
+          </p>
+        </div>
       </div>
     </form>
-    <div v-if="submitted">
-      <p>
-        {{ submitted }}
-      </p>
-    </div>
   </div>
 </template>
 
@@ -263,6 +263,7 @@ export default {
         this.contactForm = {
           name: '',
           email: '',
+          confirm: '',
           message: ''
         }
         this.submitted = 'Message sent successfully!'
