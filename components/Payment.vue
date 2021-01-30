@@ -113,7 +113,7 @@
         <div>
           <p class="text--small">Supporter</p>
           <p class="text--small grey">
-            Show some love and help us deliver an outstanding service to you. It's the same as the montly plan, but with an added bonus of good karma.
+            Show some love and help us deliver an outstanding service to you. It's the same as the monthly plan, but with an added bonus of good karma.
           </p>
         </div>
       </div>
