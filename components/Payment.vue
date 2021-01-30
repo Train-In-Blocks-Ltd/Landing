@@ -1,7 +1,26 @@
 <style scoped>
 .container--pricing {
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-gap: 4rem;
+  margin-top: 4rem
+}
+.product_container {
+  display: grid;
+  grid-template-columns: .2fr 1fr;
+  grid-gap: 2rem
+}
+
+@media (max-width: 567px) {
+  .product_container {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem
+  }
+  .product_container div:first-child {
+    display: flex
+  }
+  .product_container div:first-child div {
+    margin: auto
+  }
 }
 </style>
 
@@ -10,53 +29,93 @@
     <p class="text--large">
       14-day free trial
     </p>
-    <p>Cancel anytime and save 15% on our annual plan.</p>
+    <p class="text--large grey">
+      Give it a try
+    </p>
     <div class="container--pricing">
-      <div>
-        <p class="text--large">
-          £102
-        </p>
-        <p class="text--large grey">
-          Yearly
-        </p>
-        <client-only>
-          <stripe-checkout
-            ref="checkoutRef1"
-            :pk="publishableKey"
-            :items="yearly"
-            :success-url="successUrl"
-            :cancel-url="cancelUrl"
-          >
-            <template slot="checkout-button">
-              <button @click="checkout1()">
-                Let's go
-              </button>
-            </template>
-          </stripe-checkout>
-        </client-only>
+      <div class="product_container">
+        <div>
+          <p class="text--large">
+            £102
+          </p>
+          <client-only>
+            <stripe-checkout
+              ref="checkoutRef1"
+              :pk="publishableKey"
+              :items="yearly"
+              :success-url="successUrl"
+              :cancel-url="cancelUrl"
+            >
+              <template slot="checkout-button">
+                <button @click="checkout1()">
+                  Select
+                </button>
+              </template>
+            </stripe-checkout>
+          </client-only>
+        </div>
+        <div>
+          <p class="text--small">Yearly</p>
+          <p class="text--small grey">
+            Save 15% when you sign up to our annual plan.
+          </p>
+        </div>
       </div>
-      <div>
-        <p class="text--large">
-          £10
-        </p>
-        <p class="text--large grey">
-          Monthly
-        </p>
-        <client-only>
-          <stripe-checkout
-            ref="checkoutRef0"
-            :pk="publishableKey"
-            :items="monthly"
-            :success-url="successUrl"
-            :cancel-url="cancelUrl"
-          >
-            <template slot="checkout-button">
-              <button @click="checkout0()">
-                Sign me up
-              </button>
-            </template>
-          </stripe-checkout>
-        </client-only>
+      <div class="product_container">
+        <div>
+          <p class="text--large">
+            £10
+          </p>
+          <client-only>
+            <stripe-checkout
+              ref="checkoutRef0"
+              :pk="publishableKey"
+              :items="monthly"
+              :success-url="successUrl"
+              :cancel-url="cancelUrl"
+            >
+              <template slot="checkout-button">
+                <button @click="checkout0()">
+                  Select
+                </button>
+              </template>
+            </stripe-checkout>
+          </client-only>
+        </div>
+        <div>
+          <p class="text--small">Monthly</p>
+          <p class="text--small grey">
+            Gets you full access to the app for a amazing price on a recurring payment.
+          </p>
+        </div>
+      </div>
+      <div class="product_container">
+        <div>
+          <p class="text--large">
+            £15
+          </p>
+          <client-only>
+            <stripe-checkout
+              ref="checkoutRef0"
+              :pk="publishableKey"
+              :items="supporter"
+              :success-url="successUrl"
+              :cancel-url="cancelUrl"
+            >
+              <template slot="checkout-button">
+                <button @click="checkout0()">
+                  Select
+                </button>
+              </template>
+            </stripe-checkout>
+          </client-only>
+        </div>
+        <div>
+          <p class="text--small">Supporter</p>
+          <p class="text--small grey">
+            Show some love and help us deliver an outstanding service to you. It's the same as the montly plan, but with an added bonus of good karma.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -76,6 +135,12 @@ export default {
       yearly: [
         {
           plan: 'price_1GtvcPBYbiJubfJM7nWmNywN',
+          quantity: 1
+        }
+      ],
+      supporter: [
+        {
+          plan: 'price_1IFGHBBYbiJubfJMNHoR9viV',
           quantity: 1
         }
       ],
