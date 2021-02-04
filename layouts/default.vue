@@ -442,9 +442,9 @@
           <nuxt-link class="text--large input--option" to="/blog/" @click.native="openNav = !openNav">
             Blog
           </nuxt-link>
-          <a class="text--large input--option get-help" href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3" target="_blank" @click="openNav = false">
+          <nuxt-link class="text--large input--option" to="/help/" @click.native="openNav = !openNav">
             Help
-          </a>
+          </nuxt-link>
         </div>
       </transition>
     </nav>
