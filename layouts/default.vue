@@ -15,7 +15,8 @@
   body {
     margin: 0;
     font-size: 16px;
-    padding: 0 8%
+    padding: 0 8%;
+    background-color: #F9F9F9
   }
   p {
     line-height: 1.4;

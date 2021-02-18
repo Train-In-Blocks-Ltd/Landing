@@ -5,8 +5,14 @@
   }
   .container--features {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 280px);
+    grid-template-columns: repeat(auto-fill, 300px);
     grid-gap: 4rem
+  }
+  .feature {
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px #28282808
   }
   .container--pricing {
     display: grid;
@@ -40,7 +46,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 80%
+    height: 80%;
+    box-shadow: 0 0 20px 10px #28282810;
+    border-radius: 10px
   }
 
   @media (max-width: 768px) {
@@ -99,10 +107,10 @@
     </div>
     <div class="spacer" />
     <div class="container--features">
-      <div v-for="feature in features" :key="feature.id">
+      <div class="feature" v-for="feature in features" :key="feature.id">
         <p class="text--small">
           {{ feature.subtitle }}
-        </p><br>
+        </p>
         <p class="text--small grey">
           {{ feature.desc }}
         </p>

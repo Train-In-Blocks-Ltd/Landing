@@ -6,17 +6,39 @@
 }
 .product_container {
   display: grid;
+  max-width: 60%;
   grid-template-columns: .2fr 1fr;
-  grid-gap: 2rem
+  grid-gap: 2rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 10px #28282808
+}
+.product_container > div:first-child {
+  display: flex;
+  flex-direction: column
+}
+.product_container > div:first-child * {
+  text-align: center
 }
 
+@media (max-width: 768px) {
+  .product_container {
+    max-width: 100%
+  }
+}
 @media (max-width: 567px) {
   .product_container {
     grid-template-columns: 1fr;
+    max-width: 100%;
     grid-gap: 1rem
   }
   .product_container div:first-child {
-    display: flex
+    display: flex;
+    flex-direction: row
+  }
+  .product_container > div:first-child * {
+    text-align: left
   }
   .product_container div:first-child div {
     margin: auto
@@ -55,9 +77,11 @@
           </client-only>
         </div>
         <div>
-          <p class="text--small">Yearly</p>
+          <p class="text--small">
+            Yearly
+          </p>
           <p class="text--small grey">
-            Save 15% when you sign up to our annual plan.
+            Save 15% when you sign up to our annual plan — an even better deal.
           </p>
         </div>
       </div>
@@ -83,7 +107,9 @@
           </client-only>
         </div>
         <div>
-          <p class="text--small">Monthly</p>
+          <p class="text--small">
+            Monthly
+          </p>
           <p class="text--small grey">
             Gets you full access to the app for a amazing price on a recurring payment.
           </p>
@@ -111,7 +137,9 @@
           </client-only>
         </div>
         <div>
-          <p class="text--small">Supporter</p>
+          <p class="text--small">
+            Supporter
+          </p>
           <p class="text--small grey">
             Show some love and help us deliver an outstanding service to you. It's the same as the monthly plan, but with an added bonus of good karma.
           </p>
