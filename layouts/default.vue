@@ -239,7 +239,6 @@
   }
   footer {
     padding: 2rem 0;
-    background-color: white;
     border-top: 1px solid #28282820
   }
   footer p {
@@ -259,6 +258,9 @@
   }
   .spacer {
     height: 10vh
+  }
+  .spacer--large {
+    height: 20vh
   }
 
   /* Quill */

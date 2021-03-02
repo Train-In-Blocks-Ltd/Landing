@@ -17,7 +17,9 @@
     background-size: cover;
     background-position: center;
     width: auto;
-    height: 25vw
+    height: 25vw;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px #28282810
   }
   .blog-post__link {
     display: grid;

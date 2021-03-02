@@ -76,7 +76,7 @@
     </p>
     <div class="spacer" />
     <img class="img--pc" src="../assets/images/device-pc.png" alt="Device PC">
-    <div class="spacer" />
+    <div class="spacer--large" />
     <div v-if="videos.length > 1" class="video_controls">
       <button
         v-for="(video_button, index) in videos"
@@ -94,7 +94,7 @@
       >
         Next: {{ video_button.name }}
       </button>
-    </div>
+    </div><br>
     <div class="embed-container">
       <iframe
         v-for="(video, index) in videos"
@@ -118,8 +118,6 @@
     </div>
     <div class="spacer" />
     <payment />
-    <div class="spacer" />
-    <img class="img--tablet" src="../assets/images/device-tablet.png" alt="Device Tablet">
   </div>
 </template>
 
