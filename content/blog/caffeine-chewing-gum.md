@@ -6,19 +6,11 @@ img: /12.png
 excerpt: Caffeine is a natural performance enhancement substance used by many in their day-to-day lives. However, can it improve rugby performance by delivering it during half-time?
 ---
 
-# Does caffeine chewing gum increase performance?
-
-<br>
-
 ## What are *Quick Articles*?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
 ## The study and its purpose
-
-<br>
-
-### Russell, et al. (2020)
 
 The authors presented an interest in the effects of caffeine chewing gum on rugby performance. Rugby is an intermittent, high-intensity collision sport, optimising performance through the use of ergogenic aids such as caffeine (CAF) seems feasible.
 
@@ -26,9 +18,7 @@ CAF is absorbed in the gastrointestinal tract and can affect many mechanisms thr
 
 Caffeine chewing gum has become more commercially available and little research has been conducted regarding its effects on performance. Therefore, this study aimed to discover such differences in rugby union players. The implication of the findings could help coaches better enhance performance during half-time.
 
-## The Method
-
-### Key points:
+## Method
 
 - A randomised, placebo-controlled, counterbalanced, crossover study design.
 - Fourteen professional male academy rugby players took part in the study.
@@ -39,7 +29,7 @@ Caffeine chewing gum has become more commercially available and little research 
 - Tests were conducted before and after each sprint protocol and were named; pre-RSSA1, post-RSSA1, pre-RSSA2 and post-RSSA2, in their respective order.
 - Measurements for blood lactate, saliva hormones and cognitive function were taken.
 
-## The Results
+## Results
 
 The findings suggested half-time CAF ingestion did not affect performance. Opening sprints were slower after half-time when compared to the start of the trial. It was notable that lactate concentrations at pre-RSSA2 were still above the baseline. Additionally, CAF did not affect blood lactate concentration after half-time. However, half-time CAF did increase the salivary testosterone responses to exercise but cognitive function was not affected by CAF.
 
@@ -51,8 +41,6 @@ Caffeine chewing gum could prove to be a viable method of increasing salivary te
 
 Although the authors attempted to simulate a rugby match to the best of their abilities, it may still lack in transferability. Due to the inherently unpredictable and intense nature of the sport, a structured sprint protocol may not prove viable to replicate the sport.
 
-<br>
-
 ## References
 
-RUSSELL, M., REYNOLDS, N., CREWTHER, B., COOK, C., KILDUFF, L., (2020). Physiological and Performance Effects of Caffeine Gum Consumed During a Simulated Half-Time by Professional Academy Rugby Union Players. *Journal of Strength and Conditioning Research*, 34(1), 145-151.
+Russell, M., Reynolds, N., Crewther, B., Cook, C., and Kilduff, L. (2020). Physiological and Performance Effects of Caffeine Gum Consumed During a Simulated Half-Time by Professional Academy Rugby Union Players. *Journal of Strength and Conditioning Research*, 34(1), pp. 145-151.

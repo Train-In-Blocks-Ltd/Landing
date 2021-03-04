@@ -6,8 +6,6 @@ img: /1.png
 excerpt: Take less than two minutes to find out how this blog will benefit you greatly.
 ---
 
-# How can this blog benefit you?
-
 ## 1. We're keeping it simple
 
 Following our core values and philosophy, we love cutting-to-the-chase and simplifying ideas. Reading is important but action is key. We want you to take action and put our content to good use.
@@ -31,5 +29,3 @@ To achieve this, we'll celebrate the achievements made by trainers and coaches a
 ## 5. It's free
 
 Knowledge is power, it's even better when it's free. Expect great articles on the upcoming trends and research surrounding the health and fitness industry.
-
-<br>

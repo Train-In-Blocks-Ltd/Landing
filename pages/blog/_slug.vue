@@ -51,11 +51,12 @@
 <template>
   <div class="blog_body">
     <!--eslint-disable-next-line-->
-    <a href="http://www.traininblocks.com/blog" class="back_text">Back</a>
+    <nuxt-link to="/blog/" class="back_text">
+      Back
+    </nuxt-link>
     <img :src="require(`../../static/blog-img${img}`)">
     <br><br>
     <h1>{{ title }}</h1>
-    <br><br>
     <div class="blog_html" v-html="html" />
   </div>
 </template>

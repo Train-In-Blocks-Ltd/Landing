@@ -6,17 +6,9 @@ img: /8.png
 excerpt: A recent study on an alternative method of training which could increase adaptations with less training volume.
 ---
 
-# More adaptations with less volume using velocity-based training
-
-<br>
-
 ## What are *Quick Articles*?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
-
-## The study and its purpose
-
-<br>
 
 ### Dorrell, Smith & Gee (2019)
 
@@ -26,9 +18,7 @@ Velocity-based training (VBT) involves the measurement of maximal concentric vel
 
 The authors of this paper intended to discover the effects of VBT on strength and power adaptations with trained males against traditional PBT. The rationale of such research will give practitioners a further insight into this area where they could implement such findings to assist their decision to use VBT.
 
-## The Method
-
-### Key points:
+## Method
 
 - A 6-week intervention with 2 sessions-a-week.
 - Pre and post-measurements are taken prior to and after the intervention.
@@ -44,7 +34,7 @@ The authors of this paper intended to discover the effects of VBT on strength an
 - Both groups received the same base programme but the protocols differed.
 - The VBT implemented velocity zones and stops. The subjects were instructed to perform their MCV throughout the exercises. If the measured velocity of the movement fell within the zone, the subject preceded as prescribed. Otherwise, adjustments were made accordingly, e.g. if velocity was lower, then the load was reduced. Velocity stops were introduced at 20% below the target velocity where the set would be terminated.
 
-## The Results
+## Results
 
 Both groups experienced significant improvement in strength for BS, BP, OP and CD. However, there was no significant group x time interaction effect observed for the BS, OP and CD. VBT significantly improved BP and CMJ than PBT. Interestingly, VBT performed significantly less volume than PBT for the BS, BP and OP.
 
@@ -58,8 +48,6 @@ The use of velocity-based training in a trained male population with the use of 
 
 The tests were performed within an hour session before and after the intervention. This can produce inaccurate results as sequential maximal testing could alter subsequent performance in each RM protocol.
 
-<br>
-
 ## References
 
-Dorrell, H. F., Smith, M. F., Gee, T. I., (2019). Comparison of Velocity-Based and Traditional Percentage-Based Loading Methods on Maximal Strength and Power Adaptations. *Journal of Strength and Conditioning Research*, 34(1), 46-53.
+Dorrell, H., Smith, M., and Gee, T. (2019). Comparison of Velocity-Based and Traditional Percentage-Based Loading Methods on Maximal Strength and Power Adaptations. *Journal of Strength and Conditioning Research*, 34(1), pp. 46-53.

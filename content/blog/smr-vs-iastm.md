@@ -6,19 +6,11 @@ img: /9.png
 excerpt: A recent stance on a comparison between the use of equipment such as foam rollers and instrument-assisted manual recipe.
 ---
 
-# Improving performance through self-myofascial release or instrument-assisted soft-tissue mobilisation
-
-<br>
-
 ## What are *Quick Articles*?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
-## The study and its purpose
-
-<br>
-
-### Stroiney, et al. (2018)
+## Stroiney, et al. (2018)
 
 Fascia is the connective tissue that surrounds the muscles, which mainly consists of water, blood vessels and nerves. These fascias can affect an individual's flexibility and performance if they are injured. Common techniques to alleviate such stress are self-myofascial release (SMR) and instrument-assisted soft-tissue mobilisation (IASTM). Studies have shown that both of these techniques could improve the range of motion (ROM) and post-exercise recovery of athletes.
 
@@ -27,9 +19,7 @@ With the recent interest in improving athletic performance, the question now pos
 Regarding IASTM, the practitioner utilises an instrument to assist in the release, as to using their hands. There are no standard time recommendations but positive effects could be generated anywhere between 40 seconds to 18 minutes.
 It's clear that there's a lack of research comparing SMR and IASTM. Therefore, the aim of this study was to determine if such differences exist for SMR and IASTM between each other and sexes.
 
-## The Method
-
-### Key points:
+## Method
 
 - Participants were designated into two groups where they will receive either the SMR or IASTM treatment.
 - SMR used a piece of equipment called ‘The Stick’ which is a hand-held massage tool.
@@ -44,7 +34,7 @@ It's clear that there's a lack of research comparing SMR and IASTM. Therefore, t
 - In the first session, the subjects warmed-up on the Monark cycle ergometer for 5 minutes at 50W before performing the vertical jump test. They rested for 5 minutes before the 40-yard test,
 - The second session followed the same warm-up procedure; on completion, the subjects received their randomised intervention. Immediately after the SMR or IASTM, they rated the pain experienced. The same testing procedures were followed after the intervention.
 
-## The Results
+## Results
 
 The findings suggested a medium to large effect size for the vertical jump on all participants. In addition, there was little/no effect for the 40-yard sprint across all groups.
 
@@ -58,8 +48,6 @@ Self-myofascial release used before exercise could improve vertical jump in the 
 
 The recreationally active population could present a wide variability in performance and experience with training. This could affect the results gathered.
 
-<br>
-
 ## References
 
-Stroiney, D. A., Mokris, R. L., Hanna, G. R., Ranney, J. D., (2018). Examination of Self-Myofascial Release vs. Instrument-Assisted Soft-Tissue Mobilization Techniques on Vertical and Horizontal Power in Recreational Athletes. Journal of Strength and Conditioning Research, 34(1), 79-88.
+Stroiney, D., Mokris, R., Hanna, G., and Ranney, J. (2018). Examination of Self-Myofascial Release vs. Instrument-Assisted Soft-Tissue Mobilization Techniques on Vertical and Horizontal Power in Recreational Athletes. *Journal of Strength and Conditioning Research*, 34(1), pp. 79-88.

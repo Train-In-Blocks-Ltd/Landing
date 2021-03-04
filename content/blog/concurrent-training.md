@@ -18,7 +18,6 @@ Current literature supports the use of concurrent training but with some implica
 
 As established, the focus of this study was to determine the impact of concurrent training on performance. However, with little research into the effects at different intensities of concurrent training, the authors have opened a new discussion within this field. Additionally, the literature behind the repercussions of detraining following a concurrent model is lacking. Collating all of the above, the purpose of this study was now to determine the impacts of concurrent training at different AT intensities, followed by an assessment of performance after a detraining period.
 
-
 ## Method
 
 - Thirty-nine physically active male sport science students took part in the study.
@@ -50,4 +49,4 @@ The exercises and focus of this study have revolved around the lower-body muscul
 
 ## References
 
-Sousa, A.C., Neiva, H.P., Gil, M.H., Izquierdo, M., Rodríguez-Rosell, D., Marques, M. C., Marinho, D.A., (2019). Concurrent Training and Detraining. *Journal of Strength and Conditioning Research*, 34(9), 2565-2574. 
+Sousa, A., Neiva, H., Gil, M., Izquierdo, M., Rodríguez-Rosell, D., Marques, M., and Marinho, D. (2019). Concurrent Training and Detraining. *Journal of Strength and Conditioning Research*, 34(9), pp. 2565-2574. 

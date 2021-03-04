@@ -6,19 +6,11 @@ img: /6.png
 excerpt: An insight into the effects of unilateral and bilateral exercises on sprint and agility performance.
 ---
 
-# Unilateral vs. Bilateral Exercises - Improving Sprint and Agility
-
-<br>
-
 ## What are *Quick Articles*?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
-## The study and its purpose
-
-<br>
-
-### Appleby, Cormack & Newton (2019)
+## Appleby, Cormack & Newton (2019)
 
 This paper initially defined the differences between unilateral and bilateral exercises. Examples of unilateral exercises are any that distributes the load unevenly to generate instability. It is also important to mention that unilateral and asymmetrical exercises differ based on stability and support. The step-up exercise used in this study is a true unilateral exercise as it has a single point of contact. Asymmetrical exercises such as split squats and lunges are performed with 2-points of contact where the focus is on one side. It was also suggested that the athlete could attain more neuromuscular adaptations from unilateral exercises than bilateral or asymmetrical.
 
@@ -28,9 +20,7 @@ The key exercises utilised in this paper are the bilateral back squat (BS) and t
 
 This paper aimed to discover any differences in COD and sprints depending on the specificity of the exercises (unilateral vs. bilateral). The authors hypothesised that unilateral exercises will be better for COD. The rationale is to provide an insight into whether movement specificity for lower-body exercises can improve athletic performance.
 
-## The Method
-
-### Key points:
+## Method
 
 - A randomised controlled design with a 6-week familiarisation period, an 8-week intervention and a 3-week maintenance.
 - Three groups: Back Squat (BS), Step-Up (SU) and a control group (CON).
@@ -41,9 +31,6 @@ This paper aimed to discover any differences in COD and sprints depending on the
 - Standardised 20-minute warm-up with lower-body mobility and countermovement jump.
 - Subjects performed either the sprint or COD test before the maximal strength test for BS or SU. There was a 30-minute rest before the strength testing and participants were randomly assigned to either sprint or COD and BS or SU.
 - Box-height for SU was measured and recorded to allow for accurate placement each visit.
-
-### Testing Procedures:
-
 - Lower-body 1-repetition max (1RM) was conducted for BS and SU.
 - Subjects gradually increased the load to their 1RM for BS and SU. A no-repetition was given if the desired squat depth and extension were not achieved.
 - Subjects were tested for 20-m sprints and COD.
@@ -58,7 +45,7 @@ This paper aimed to discover any differences in COD and sprints depending on the
 - The COD test consisted of 3 trials on each leg and a 2-minute rest between each one.
 - The sprint test consisted of a 20-m sprint starting in a self-selected starting posture.
 
-## The Results
+## Results
 
 The BS and SU group both significantly improved 1RM. However, differences between groups were unclear, with a small difference in 1RM favouring SU. There was a meaningful difference in sprint acceleration between SU and BS, though the contrast is also unclear. BS showed moderate improvements for COD compared to SU.
 
@@ -76,8 +63,6 @@ The sample used in this study consisted of training athletes during pre-season. 
 
 Furthermore, there were difficulties in determining loads for BS and SU. It is a recognised issue in other studies and this could result in unequal training stimuli between groups.
 
-<br>
-
 ## References
 
-Appleby, B. B., Cormack, S. J., Newton, R. U. (2019). Unilateral and Bilateral Lower-Body Resistance Training Does not Transfer Equally to Sprint and Change of Direction Performance. *Journal of Strength and Conditioning Research*, 34(1), 54-64.
+Appleby, B., Cormack, S., and Newton, R. (2019). Unilateral and Bilateral Lower-Body Resistance Training Does not Transfer Equally to Sprint and Change of Direction Performance. *Journal of Strength and Conditioning Research*, 34(1), pp. 54-64.

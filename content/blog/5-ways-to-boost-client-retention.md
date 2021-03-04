@@ -6,8 +6,6 @@ img: /5.png
 excerpt: Get creative and keep your clients for longer with these practical techniques.
 ---
 
-# 5 ways to boost client retention
-
 ## 1. Make your rewards progressive
 
 Nothing beats a good incentive to encourage health-promoting behaviours. A simple way to reward and keep your client is to use a point or milestone-based system. For example, for every 5 SMART goals completed, they are rewarded. You can add different tiers of rewards, just be creative! However, be sure to budget for any expenses to keep your spending in check.
@@ -29,5 +27,3 @@ Life is fast and dynamic where some may find it difficult to stick to a structur
 ## 5. Listen to their other interests
 
 We’ve all heard it before. We have 2 ears so that we may listen more than we speak.  You’ll never know what other interests your clients may have. Finding this out and using the information with the previous points could enhance your client retention. Additionally, you can research their interests so that you can have better conversations with them.
-
-<br>

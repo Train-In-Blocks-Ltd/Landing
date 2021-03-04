@@ -6,8 +6,6 @@ img: /2.png
 excerpt: Learn how to take advantage of current trends and grow your business.
 ---
 
-# How to ride the fitness trends in 2020
-
 ## It’s not all doom and gloom
 
 Currently, the fitness industry is not very much on pause. New developments in remote training and home workout solutions could pave the way to a new era of how personal training could be conducted. By understanding the fitness ‘eco-system’ post-lockdown could help you boost your business in the right direction. Here are some ways for you to make the most of your time and productivity!
@@ -50,8 +48,6 @@ Look. The industry is now packed full of apps and ready-made online programmes t
 
 Speaking of which, be sure to check out our app that you can use to create a bespoke programme in a matter of minutes - not hours. Not to forget that it’s only **£10 a month (save 15% on an annual plan)** with amazing up and coming features. Give one of our main features a try [here](http://www.traininblocks.com/features).
 
-<br>
-
 ## References
 
-Mintel, (2020). How COVID-19 is boosting our predicted trends for 2030? [online] Available at: <a href="http://www.mintel.com" target="_blank">http://www.mintel.com</a> [Accessed 14 June 2020]
+Mintel, (2020). How COVID-19 is boosting our predicted trends for 2030? [online] Available at: http://www.mintel.com [Accessed 14 June 2020].

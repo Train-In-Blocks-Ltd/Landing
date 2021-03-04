@@ -10,7 +10,7 @@ Here are some quick tips and advice on the different ways that you can really im
 
 It’s also important to keep some of this quiet and use it to surprise them. It resonates more when they’ve realised how you have gone above and beyond.
 
-# 1. Send them a message - right now
+## 1. Send them a message - right now
 
 You should be keeping in contact with your clients throughout the entire personal training experience. From start to finish. This will build great rapport and it will feel like a real friendship that they would hate to have less of.
 
@@ -18,7 +18,7 @@ You can use the information that you have gathered to show how much you care by 
 
 “Hey \[client\], I’ve taken the time to look around for some running shoes for you as you’ve asked earlier. These are quite nice and I’ve picked them from different price ranges so you can find one that suits your budget. Get back to me with what you think, would love to hear which one you’ve picked and to answer any questions.”
 
-# 2. Buy them something but keep it quiet
+## 2. Buy them something but keep it quiet
 
 Imagine how it feels to receive a surprise gift from anyone. Most people would agree that they’ll feel thankful, excited and appreciative. This can be a very powerful tool if used correctly and subtly. Remember, you’re not just a personal trainer. You’re self-employed, a manager, a marketer, and most importantly you work in customer service.
 
@@ -26,7 +26,7 @@ If my mobile service provider called me to give me a better deal or free-stuff, 
 
 In short, understand what your clients could benefit from a small gift like equipment, access to apps, or even tickets to fitness events. Then surprise them but make sure you budget for this so that you don’t diminish your returns.
 
-# 3. Use your creativity to make a progress report
+## 3. Use your creativity to make a progress report
 
 This is something that you can make a template for and reuse multiple times. By giving your clients a monthly report on their progress, not only makes you look professional and consistent, but it will be extremely useful to plan future sessions and reflect on your own performance.
 
