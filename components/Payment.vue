@@ -49,10 +49,7 @@
 <template>
   <div>
     <p class="text--large">
-      14-day free trial
-    </p>
-    <p class="text--large grey">
-      Give it a try
+      Try it with our 14-day free trial
     </p>
     <div class="container--pricing">
       <div class="product_container">

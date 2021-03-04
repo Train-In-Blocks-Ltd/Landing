@@ -266,10 +266,11 @@
     background: transparent
   }
   ::-webkit-scrollbar-thumb {
-    background: #00000020
+    border-radius: 3px;
+    background: #28282899
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #00000030
+    background: #28282880
   }
 
   /* Animimations */
@@ -374,7 +375,6 @@
 
 <template>
   <div id="app">
-    <script data-jsd-embedded data-key="200dadd3-915c-4769-ba8d-ec7792145827" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js" />
     <div v-if="openNav" class="overlay" />
     <nav>
       <transition enter-active-class="animated fadeIn faster">

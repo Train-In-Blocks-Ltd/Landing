@@ -5,9 +5,6 @@
 </style>
 
 <style scoped>
-  .blog_body {
-    padding: 0 6rem
-  }
   .blog_body > img {
     display: flex;
     margin: auto;
@@ -28,14 +25,11 @@
     .blog_body > img {
       width: 100%
     }
-    .blog_body {
-      padding: 0 2.4rem
+    .back_text {
+      left: .8rem
     }
   }
   @media (max-width: 567px) {
-    .blog_body {
-      padding: 0
-    }
     .blog_body > img {
       margin-top: 2rem
     }
