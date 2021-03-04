@@ -2,28 +2,13 @@
 id: 3
 title: 3 ways to really impress your clients
 slug: 3-ways-to-really-impress-your-clients
-img: /03/man-indoor-pose.jpg
+img: /3.png
 excerpt: Here are some good ways to improve your client retention and satisfaction.
 ---
-
-**Mikey Lau**  
-220620
-
----
-
-# 3 ways to really impress your clients
-
-<br><br>
-
-## Put this into practice but don’t say anything
 
 Here are some quick tips and advice on the different ways that you can really impress your clients and improve retention. In general, pay very close attention to what they are saying every session. You can even make notes on your phone or journal to keep track of all this information and use it in conjunction with the tips below.
 
 It’s also important to keep some of this quiet and use it to surprise them. It resonates more when they’ve realised how you have gone above and beyond.
-
-<br><br>
-
-![Message](/blog-img/03/message.svg)
 
 # 1. Send them a message - right now
 
@@ -33,11 +18,7 @@ You can use the information that you have gathered to show how much you care by 
 
 “Hey \[client\], I’ve taken the time to look around for some running shoes for you as you’ve asked earlier. These are quite nice and I’ve picked them from different price ranges so you can find one that suits your budget. Get back to me with what you think, would love to hear which one you’ve picked and to answer any questions.”
 
-<br><br>
-
-![Gift](/blog-img/03/gift.svg)
-
-## 2. Buy them something but keep it quiet
+# 2. Buy them something but keep it quiet
 
 Imagine how it feels to receive a surprise gift from anyone. Most people would agree that they’ll feel thankful, excited and appreciative. This can be a very powerful tool if used correctly and subtly. Remember, you’re not just a personal trainer. You’re self-employed, a manager, a marketer, and most importantly you work in customer service.
 
@@ -45,11 +26,7 @@ If my mobile service provider called me to give me a better deal or free-stuff, 
 
 In short, understand what your clients could benefit from a small gift like equipment, access to apps, or even tickets to fitness events. Then surprise them but make sure you budget for this so that you don’t diminish your returns.
 
-<br><br>
-
-![Report](/blog-img/03/report.svg)
-
-## 3. Use your creativity to make a progress report
+# 3. Use your creativity to make a progress report
 
 This is something that you can make a template for and reuse multiple times. By giving your clients a monthly report on their progress, not only makes you look professional and consistent, but it will be extremely useful to plan future sessions and reflect on your own performance.
 
@@ -64,5 +41,3 @@ It can be as in-depth as you like but keep in mind that your client would still 
 - Your eating habits this month
 
 Generally speaking, keep the report image-based and with minimal text. Going over the top can quickly bore your clients rather than impress them. Canva is also a great tool to make creative reports and other documents.
-
-<br>

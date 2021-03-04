@@ -2,13 +2,8 @@
 id: 7
 title: Does listening to music improve performance?
 slug: fast-tempo-music-and-performance
-img: /07/person-indoor-music.jpg
+img: /7.png
 excerpt: Most of us will listen to music whilst we're training, but does it actually improve performance and reduce the perception of fatigue.
----
-
-**Mikey Lau**  
-270720
-
 ---
 
 # Does listening to music improve performance?
@@ -18,10 +13,6 @@ excerpt: Most of us will listen to music whilst we're training, but does it actu
 ## What are *Quick Articles*?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
-
-<br><br>
-
-![Paper](/blog-img/quick-articles/purpose.svg)
 
 ## The study and its purpose
 
@@ -35,10 +26,6 @@ One way to measure such performance attributes can be in the form of muscle acti
 
 With previous studies in mind, the authors developed this research to determine any relationship between high-tempo music and performance. They’ve hypothesised an increase in EMG-FT and power output from the high-tempo group.
 
-<br><br>
-
-![Science](/blog-img/quick-articles/methods.svg)
-
 ## The Method
 
 - A cross-over study design was adopted with 2 sessions conducted over 7 days.
@@ -50,17 +37,9 @@ With previous studies in mind, the authors developed this research to determine 
 - The compilation of music was played to the subjects via an over-ear headphone with the order of the songs shuffled for each person. The music ranged from 137-160BPM.
 - sEMG electrodes were placed on a standardised point on the longitudinal axes of the rectus femoris muscle. This site was marked by the researcher for accurate placement on the second testing session.
 
-<br><br>
-
-![Ruler](/blog-img/quick-articles/results.svg)
-
 ## The Results
 
 No significant interaction or main effect of the exercise condition were observed and there were no significant mean differences for relative maximal heart rate. Motivation was not statistically different between the 2 conditions but there were significant mean differences for maximal power output between the 2 exercise conditions. Additionally, the music increased the subject’s neuromuscular threshold (EMG-FT) relative to the no-music condition.
-
-<br><br>
-
-![Apply](/blog-img/quick-articles/application.svg)
 
 ## Practical applications
 

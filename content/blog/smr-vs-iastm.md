@@ -2,14 +2,8 @@
 id: 9
 title: Improving performance through self-myofascial release or instrument-assisted soft-tissue mobilisation
 slug: smr-vs-iastm
-img: /09/woman-indoor-smr.jpg
+img: /9.png
 excerpt: A recent stance on a comparison between the use of equipment such as foam rollers and instrument-assisted manual recipe.
-
----
-
-**Mikey Lau**  
-050820
-
 ---
 
 # Improving performance through self-myofascial release or instrument-assisted soft-tissue mobilisation
@@ -19,10 +13,6 @@ excerpt: A recent stance on a comparison between the use of equipment such as fo
 ## What are *Quick Articles*?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
-
-<br><br>
-
-![Paper](/blog-img/quick-articles/purpose.svg)
 
 ## The study and its purpose
 
@@ -36,10 +26,6 @@ With the recent interest in improving athletic performance, the question now pos
 
 Regarding IASTM, the practitioner utilises an instrument to assist in the release, as to using their hands. There are no standard time recommendations but positive effects could be generated anywhere between 40 seconds to 18 minutes.
 It's clear that there's a lack of research comparing SMR and IASTM. Therefore, the aim of this study was to determine if such differences exist for SMR and IASTM between each other and sexes.
-
-<br><br>
-
-![Science](/blog-img/quick-articles/methods.svg)
 
 ## The Method
 
@@ -58,27 +44,15 @@ It's clear that there's a lack of research comparing SMR and IASTM. Therefore, t
 - In the first session, the subjects warmed-up on the Monark cycle ergometer for 5 minutes at 50W before performing the vertical jump test. They rested for 5 minutes before the 40-yard test,
 - The second session followed the same warm-up procedure; on completion, the subjects received their randomised intervention. Immediately after the SMR or IASTM, they rated the pain experienced. The same testing procedures were followed after the intervention.
 
-<br><br>
-
-![Ruler](/blog-img/quick-articles/results.svg)
-
 ## The Results
 
 The findings suggested a medium to large effect size for the vertical jump on all participants. In addition, there was little/no effect for the 40-yard sprint across all groups.
 
 Comparing the baseline vertical jumps with the intervention groups, SMR significantly improved the score compared to IASTM. There was also no significant difference between intervention groups and sexes. It was noted that men performed significantly better than women in both vertical jump and 40-yard sprint. Finally, there was no significant difference between pain scores and the different treatments prescribed.
 
-<br><br>
-
-![Apply](/blog-img/quick-articles/application.svg)
-
 ## Practical applications
 
 Self-myofascial release used before exercise could improve vertical jump in the recreationally active population. However, instrument-assisted soft-tissue mobilisation did not improve or deteriorate performance. Furthermore, practitioners can utilise self-myofascial release to act as a warm-up due to the increases in tissue temperature and blood flow even if performance would not improve.
-
-<br><br>
-
-![Alert](/blog-img/quick-articles/limitations.svg)
 
 ## Limitations
 

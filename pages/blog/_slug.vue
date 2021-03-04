@@ -1,33 +1,62 @@
+<style>
+  .blog_html h2 {
+    margin-top: 3rem
+  }
+</style>
+
 <style scoped>
-  @media (min-width: 1440px) {
-    .blog--body {
-      padding: 0 20rem
-    }
+  .blog_body {
+    padding: 0 6rem
   }
-  @media (max-width: 992px) {
-    .blog--body {
-      padding: 0 6rem
-    }
+  .blog_body > img {
+    display: flex;
+    margin: auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px #28282810
   }
+  .back_text {
+    position: fixed;
+    top: 50vh;
+    left: 2rem;
+    transform: rotate(-90deg);
+    text-decoration: none
+  }
+
+  /* Responsiveness */
   @media (max-width: 768px) {
-    .blog--body {
-      padding: 0 4rem
+    .blog_body > img {
+      width: 100%
+    }
+    .blog_body {
+      padding: 0 2.4rem
     }
   }
   @media (max-width: 567px) {
-    .blog--body {
-      padding: 0;
-      background-color: white
+    .blog_body {
+      padding: 0
+    }
+    .blog_body > img {
+      margin-top: 2rem
+    }
+    .back_text {
+      top: 0;
+      left: 0;
+      font-size: 1.6rem;
+      position: static
     }
   }
 </style>
 
 <template>
-  <div class="blog--body">
+  <div class="blog_body">
     <!--eslint-disable-next-line-->
     <a href="http://www.traininblocks.com/blog" class="back_text">Back</a>
+    <img :src="require(`../../static/blog-img${img}`)">
     <br><br>
-    <div class="container--content" v-html="html" />
+    <h1>{{ title }}</h1>
+    <br><br>
+    <div class="blog_html" v-html="html" />
   </div>
 </template>
 

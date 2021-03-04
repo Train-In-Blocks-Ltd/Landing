@@ -2,14 +2,8 @@
 id: 10
 title: Using the Back Squat to Predict Lower Extremity Injuries
 slug: back-squat-injury-prevention
-img: /10/man-indoor-squatting.jpg
+img: /10.png
 excerpt: An alternative screening method to prevent injuries associated with lower body movements.
-
----
-
-**Mikey Lau**  
-200820
-
 ---
 
 # Using the Back Squat to Predict Lower Extremity Injuries
@@ -19,10 +13,6 @@ excerpt: An alternative screening method to prevent injuries associated with low
 ## What are *Quick Articles*?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
-
-<br><br>
-
-![Paper](/blog-img/quick-articles/purpose.svg)
 
 ## The study and its purpose
 
@@ -36,10 +26,6 @@ Strength and conditioning coaches have an arsenal of assessment tools and techni
 
 Shifting the focus onto a more specific area, the authors suggested the use of the barbell back squat (BS) exercise with relative strength measures to predict injuries. It was indicated that a 1-repetition maximum (1RM) BS has shown high reliability and accurate measures of strength for the LE musculature with an intraclass correlation coefficient of 0.91–0.99. The authors included this protocol in their study with the hopes of determining any significant relationships between injury rates and BS relative strength (RS). They hypothesised that lower RS will increase the likelihood of sustaining an injury.
 
-<br><br>
-
-![Science](/blog-img/quick-articles/methods.svg)
-
 ## The Method
 
 ### Key points:
@@ -50,17 +36,9 @@ Shifting the focus onto a more specific area, the authors suggested the use of t
 - Pre-season: absolute 1RM was collected by certified strength and conditioning coaches.
 - In-season: all LE injuries sustained during this period was recorded. It was discovered that 78% of the American football players had an LE injury with the women's sports reported an LE injury rate of 52%.
 
-<br><br>
-
-![Ruler](/blog-img/quick-articles/results.svg)
-
 ## The Results
 
 Relative BS strength was significantly higher in athletes with no LE injuries during the competitive season.
-
-<br><br>
-
-![Apply](/blog-img/quick-articles/application.svg)
 
 ## Practical applications
 

@@ -2,13 +2,8 @@
 id: 6
 title: Unilateral vs. Bilateral Exercises - Improving Sprint and Agility
 slug: unilateral-bilateral-exercises
-img: /06/woman-indoor-kneeling.jpg
+img: /6.png
 excerpt: An insight into the effects of unilateral and bilateral exercises on sprint and agility performance.
----
-
-**Mikey Lau**  
-290620
-
 ---
 
 # Unilateral vs. Bilateral Exercises - Improving Sprint and Agility
@@ -18,10 +13,6 @@ excerpt: An insight into the effects of unilateral and bilateral exercises on sp
 ## What are *Quick Articles*?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
-
-<br><br>
-
-![Paper](/blog-img/quick-articles/purpose.svg)
 
 ## The study and its purpose
 
@@ -36,10 +27,6 @@ The authors indicated that bilateral exercises are shown to improve strength and
 The key exercises utilised in this paper are the bilateral back squat (BS) and the barbell step-up (SU). Although it appears that the SU presents more sport specificity, little research has been conducted regarding COD and sprints.
 
 This paper aimed to discover any differences in COD and sprints depending on the specificity of the exercises (unilateral vs. bilateral). The authors hypothesised that unilateral exercises will be better for COD. The rationale is to provide an insight into whether movement specificity for lower-body exercises can improve athletic performance.
-
-<br><br>
-
-![Science](/blog-img/quick-articles/methods.svg)
 
 ## The Method
 
@@ -71,10 +58,6 @@ This paper aimed to discover any differences in COD and sprints depending on the
 - The COD test consisted of 3 trials on each leg and a 2-minute rest between each one.
 - The sprint test consisted of a 20-m sprint starting in a self-selected starting posture.
 
-<br><br>
-
-![Ruler](/blog-img/quick-articles/results.svg)
-
 ## The Results
 
 The BS and SU group both significantly improved 1RM. However, differences between groups were unclear, with a small difference in 1RM favouring SU. There was a meaningful difference in sprint acceleration between SU and BS, though the contrast is also unclear. BS showed moderate improvements for COD compared to SU.
@@ -83,17 +66,9 @@ These findings are interesting as it implies that exercise specificity may not p
 
 Relating this to the study, the SU is a concentric-dominant exercise compared to the BS. Therefore, this could indicate that the neuromuscular physiology of contraction type must be taken into account when designing an effective programme for improving athletic performance.
 
-<br><br>
-
-![Apply](/blog-img/quick-articles/application.svg)
-
 ## Practical applications
 
 Maximal force developed from training with unilateral or bilateral exercises can be transferred into sprint acceleration. However, for COD, trainers must consider the underlying neuromuscular physiology of contraction types. They should not design a programme based on similarity in movements.
-
-<br><br>
-
-![Alert](/blog-img/quick-articles/limitations.svg)
 
 ## Limitations
 

@@ -2,13 +2,8 @@
 id: 11
 title: Effects of supersets on barbell bench press performance
 slug: supersets-and-bench-press
-img: /11/men-indoor-bench-press.jpg
+img: /11.png
 excerpt: Supersets may help you improve your bench press performance depending on which outcome you desire. It will affect peak force and velocity differently.
----
-
-**Mikey Lau**  
-260820
-
 ---
 
 # Effects of supersets on barbell bench press performance
@@ -18,10 +13,6 @@ excerpt: Supersets may help you improve your bench press performance depending o
 ## What are *Quick Articles*?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
-
-<br><br>
-
-![Paper](/blog-img/quick-articles/purpose.svg)
 
 ## The study and its purpose
 
@@ -36,10 +27,6 @@ A possible solution could take the form of a superset where two exercises are co
 It was implicated that other research has implied that SS could deteriorate neuromuscular function when compared to traditional training. Weakley, et al. (2017) has shown that high kinetics and kinematics are important for muscular size, strength, and power development. In their study, SS has generated a greater loss in lower-body power due to metabolic perturbation. It was also discovered that the rate of perceived exertion (RPE), shared a strong relationship with metabolic responses.
 
 This study aimed to determine possible differences in strength, power, and perceived exertion by utilising the different configurations of a superset (SS)
-
-<br><br>
-
-![Science](/blog-img/quick-articles/methods.svg)
 
 ## The Method
 
@@ -64,10 +51,6 @@ This study aimed to determine possible differences in strength, power, and perce
 - Subjects were instructed to not train within 48 hours of the testing session.
 - They were also instructed to maintain normal eating habits and to avoid caffeine 24 hours before the testing.
 
-<br><br>
-
-![Ruler](/blog-img/quick-articles/results.svg)
-
 ## The Results
 
 All 3 protocols have almost certainly greater levels of perceived exertion compared to the control group. AP had a higher RPE than AA, whilst SB had certainly the highest RPE amongst the groups.
@@ -76,17 +59,9 @@ SB exhibited the greatest loss in velocity and power when compared to AA and AP.
 
 A possible explanation of the reduction in power and velocity of SB could be influenced by the utilisation of the substrates within the same musculature. This metabolic accumulation caused the slower contraction speed which reduced velocity. However, it was observed that changes in peak force production was much smaller. This indicated that SS may not affect force as much as velocity.
 
-<br><br>
-
-![Apply](/blog-img/quick-articles/application.svg)
-
 ## Practical applications
 
 It is plausible to utilise supersets to reduce time spent training. However, considerations must be made regarding which performance outcome is more desirable. As mentioned, supersets are shown to reduce velocity more than peak force whilst increasing the rate of perceived exertion as compared to traditional training.
-
-<br><br>
-
-![Alert](/blog-img/quick-articles/limitations.svg)
 
 ## Limitations
 

@@ -2,13 +2,8 @@
 id: 8
 title: More adaptations with less volume using velocity-based training
 slug: velocity-based-training
-img: /08/barbell-indoor-velocity.jpg
+img: /8.png
 excerpt: A recent study on an alternative method of training which could increase adaptations with less training volume.
----
-
-**Mikey Lau**  
-050820
-
 ---
 
 # More adaptations with less volume using velocity-based training
@@ -18,10 +13,6 @@ excerpt: A recent study on an alternative method of training which could increas
 ## What are *Quick Articles*?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
-
-<br><br>
-
-![Paper](/blog-img/quick-articles/purpose.svg)
 
 ## The study and its purpose
 
@@ -34,10 +25,6 @@ This paper began with the introduction of various training methods. With percent
 Velocity-based training (VBT) involves the measurement of maximal concentric velocity (MCV) and its relationship with the loads prescribed. Typically, it involves the placement of a device on the equipment that the individual is performing the exercise. The load-velocity profile (LVP) is based on the movement velocity, load and intent to move it, which can be utilised to predict a client's absolute and relative 1RM. LVPs are reliable across repeated visits and measures with trained athletes; however, limited research has been conducted with regards to its use for adjusting training loads in a periodised programme.
 
 The authors of this paper intended to discover the effects of VBT on strength and power adaptations with trained males against traditional PBT. The rationale of such research will give practitioners a further insight into this area where they could implement such findings to assist their decision to use VBT.
-
-<br><br>
-
-![Science](/blog-img/quick-articles/methods.svg)
 
 ## The Method
 
@@ -57,27 +44,15 @@ The authors of this paper intended to discover the effects of VBT on strength an
 - Both groups received the same base programme but the protocols differed.
 - The VBT implemented velocity zones and stops. The subjects were instructed to perform their MCV throughout the exercises. If the measured velocity of the movement fell within the zone, the subject preceded as prescribed. Otherwise, adjustments were made accordingly, e.g. if velocity was lower, then the load was reduced. Velocity stops were introduced at 20% below the target velocity where the set would be terminated.
 
-<br><br>
-
-![Ruler](/blog-img/quick-articles/results.svg)
-
 ## The Results
 
 Both groups experienced significant improvement in strength for BS, BP, OP and CD. However, there was no significant group x time interaction effect observed for the BS, OP and CD. VBT significantly improved BP and CMJ than PBT. Interestingly, VBT performed significantly less volume than PBT for the BS, BP and OP.
 
 In short, this study indicated that both VBT and PBT can improve performance over a 6-week intervention for trained males. However, VBT performed less volume than PBT. Implications can be made that VBT is more effective and efficient than PBT - requiring less time and possibly inducing less fatigue. VBT also improved power and other exercises that PBT did not.
 
-<br><br>
-
-![Apply](/blog-img/quick-articles/application.svg)
-
 ## Practical applications
 
 The use of velocity-based training in a trained male population with the use of MCV, velocity zones and stops to alter the training load can induce better performance and efficiency. Using MCV provides greater control over the prescribed loads and the level of fatigue experienced without the need for multiple RM protocols.
-
-<br><br>
-
-![Alert](/blog-img/quick-articles/limitations.svg)
 
 ## Limitations
 

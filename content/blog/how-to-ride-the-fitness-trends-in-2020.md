@@ -2,13 +2,8 @@
 id: 2
 title: How to ride the fitness trends in 2020
 slug: how-to-ride-the-fitness-trends-in-2020
-img: /02/woman-indoor-working.jpg
+img: /2.png
 excerpt: Learn how to take advantage of current trends and grow your business.
----
-
-**Mikey Lau**  
-150620
-
 ---
 
 # How to ride the fitness trends in 2020
@@ -17,10 +12,6 @@ excerpt: Learn how to take advantage of current trends and grow your business.
 
 Currently, the fitness industry is not very much on pause. New developments in remote training and home workout solutions could pave the way to a new era of how personal training could be conducted. By understanding the fitness ‘eco-system’ post-lockdown could help you boost your business in the right direction. Here are some ways for you to make the most of your time and productivity!
 
-<br><br>
-
-![Leaf](/blog-img/02/leaf.svg)
-
 ## 1. Get on board with your nutritional knowledge.
 
 Here are some statistics for you. People are looking to improve their diet! More specifically, **37% of UK consumers and 55% of Italian** consumers said that COVID-19 has caused them to eat healthier to support their immune systems. It was also reported that the majority of people that are eating healthier are between the ages of 16-34.
@@ -28,10 +19,6 @@ Here are some statistics for you. People are looking to improve their diet! More
 By providing nutritional advice and plans could add that **extra value** to your services. It is important to note that you should always act within your scope of practice. I’m sure that you are well-aware of how poor advice could affect your reputation as a trainer; therefore, be safe and be honest.
 
 If you feel that you are lacking in knowledge, don’t be afraid to seek out a nutritional CPD, diploma or a degree pathway. An example of this could be a course such as the one provided by *Precision Nutrition*.
-
-<br><br>
-
-![Laptop](/blog-img/02/laptop.svg)
 
 ## 2. It’s going digital. No surprise.
 
@@ -49,10 +36,6 @@ Here’s a quick overview of some techniques you could implement:
 
 4. What about quantity? No. It’s about consistency. Being consistent sends out a message to your audience that you are reliable and capable of delivering on your promises.
 
-<br><br>
-
-![Run](/blog-img/02/run.svg)
-
 ## 3. You better get moving, it’s going mobile.
 
 Recently, gyms in Dubai have reopened with a limited capacity of about **50%**. It’s also speculated and mentioned that gyms in the UK may introduce a booking system for members. All of this means that there will be less space and availability for members to access the fitness facilities.
@@ -60,10 +43,6 @@ Recently, gyms in Dubai have reopened with a limited capacity of about **50%**. 
 A solution is to move outside and start training your clients in public spaces. Of course, make sure you get permission from your local council/government if you are seeking to host fitness events. Not only these spaces are free, but they are open and is generally safer than being indoors.
 
 Disadvantages of this type of business are the need for equipment and transport. It’s more suitable for a client that does not need heavy resistance to get the desired stimulus or to reach their goals.
-
-<br><br>
-
-![Bonus](/blog-img/02/bonus.svg)
 
 ## Bonus: Out with the cookie-cutters and in with the bespoke programmes.
 

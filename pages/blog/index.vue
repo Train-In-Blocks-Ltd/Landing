@@ -1,62 +1,68 @@
 <style scoped>
-  .container--blog {
+  .blog_container {
     display: grid;
     grid-gap: 8rem;
     margin: 4rem 0
   }
-  .blog-post {
-    display: flex
+  .blog_post {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-gap: 2rem
   }
-  .blog-post__top-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 2rem
-  }
-  .blog-post__img {
-    background-size: cover;
-    background-position: center;
-    width: auto;
-    height: 25vw;
+  .blog_post > img {
+    width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 20px 10px #28282810
+    box-shadow: 0 0 20px 10px #28282810;
+    filter: grayscale(100%);
+    transition: .6s all cubic-bezier(.165, .84, .44, 1)
   }
-  .blog-post__link {
+  .blog_post:hover > img {
+    filter: grayscale(0)
+  }
+  .blog_post__content {
+    display: flex;
+    flex-direction: column
+  }
+  .blog_post__link {
     display: grid;
     grid-template-columns: 100px 24px;
     grid-gap: .4rem;
     margin: 2rem 0 0 0;
     transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
   }
-  .blog-post__link-text {
+  .blog_post__link_text {
     color: #282828;
     margin: auto 0;
     text-decoration: none
   }
-  .blog-post__link:hover {
+  .blog_post__link:hover {
     grid-gap: 1rem;
     opacity: .8
   }
-  .blog-post__link:active {
+  .blog_post__link:active {
     opacity: .4
   }
 
   /* Responsiveness */
-  @media (max-width: 768px) {
-    .blog-post {
-      display: grid;
-      grid-gap: 2rem
+  @media (max-width: 992px) {
+    .blog_post {
+      grid-template-columns: .8fr 1fr
     }
-    .blog-post__top-wrapper {
+    .blog_post > img {
+      filter: grayscale(0)
+    }
+    .blog_post__content {
       padding: 0
     }
-    .blog-post__img {
-      height: auto;
-      width: 100%
-    }
-    .blog-post__link:hover {
+    .blog_post__link:hover {
       grid-gap: .4rem;
       opacity: 1
+    }
+  }
+  @media (max-width: 768px) {
+    .blog_post {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem
     }
   }
 </style>
@@ -69,10 +75,10 @@
     <p class="text--large grey">
       Let's learn something new
     </p>
-    <div class="container--blog">
-      <div v-for="post in posts" :key="post.attributes.title" class="blog-post">
-        <img class="blog-post__img" :src="require(`../../static/blog-img${post.attributes.img}`)">
-        <div class="blog-post__top-wrapper">
+    <div class="blog_container">
+      <div v-for="post in posts" :key="post.attributes.title" class="blog_post">
+        <img :src="require(`../../static/blog-img${post.attributes.img}`)">
+        <div class="blog_post__content">
           <div>
             <p class="text--small no-margin">
               {{ post.attributes.title }}
@@ -81,8 +87,8 @@
               {{ post.attributes.excerpt }}
             </p>
           </div>
-          <div class="blog-post__link">
-            <nuxt-link class="blog-post__link-text" :to="'/blog/' + post.attributes.slug + '/'">
+          <div class="blog_post__link">
+            <nuxt-link class="blog_post__link_text" :to="'/blog/' + post.attributes.slug + '/'">
               Read more
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/blog/Arrow.svg')" />
