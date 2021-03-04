@@ -133,7 +133,7 @@ export default {
       title: 'Want to train more clients effectively?',
       current_video: 0,
       videos: [
-        { name: 'Pegasis 3.0 Demo', url: 'https://www.youtube.com/embed/DyabSrZJLVQ' }
+        { name: 'Pegasis 3.0 Demo', url: 'https://www.youtube.com/embed/2vwnB1fnxqI' }
       ],
       features: [
         { id: 1, subtitle: 'Save Time', desc: 'Create a new long-term bespoke programme in less than 15 minutes.' },
