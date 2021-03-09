@@ -5,10 +5,6 @@
   margin-top: 4rem
 }
 .product_container {
-  display: grid;
-  max-width: 60%;
-  grid-template-columns: .2fr 1fr;
-  grid-gap: 2rem;
   padding: 2rem;
   background-color: white;
   border-radius: 10px;
@@ -16,10 +12,10 @@
 }
 .product_container > div:first-child {
   display: flex;
-  flex-direction: column
+  justify-content: space-between
 }
 .product_container > div:first-child * {
-  text-align: center
+  margin: auto 0
 }
 
 @media (max-width: 768px) {
