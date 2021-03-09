@@ -156,7 +156,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #FFFFFF99;
+    background-color: rgba(255, 255, 255, .95);
     z-index: 1
   }
 

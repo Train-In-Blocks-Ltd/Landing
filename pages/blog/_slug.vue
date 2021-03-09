@@ -1,6 +1,7 @@
 <style>
   .blog_html h2 {
-    margin-top: 3rem
+    margin-top: 3rem;
+    font-weight: lighter
   }
 </style>
 
@@ -50,7 +51,7 @@
     </nuxt-link>
     <img :src="require(`../../static/blog-img${img}`)">
     <br><br>
-    <h1>{{ title }}</h1>
+    <p class="text--large">{{ title }}</p>
     <div class="blog_html" v-html="html" />
   </div>
 </template>
