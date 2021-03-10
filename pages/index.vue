@@ -107,7 +107,7 @@
     </div>
     <div class="spacer" />
     <div class="container--features">
-      <div class="feature" v-for="feature in features" :key="feature.id">
+      <div v-for="feature in features" :key="feature.id" class="feature">
         <p class="text--small">
           {{ feature.subtitle }}
         </p>

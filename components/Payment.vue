@@ -108,7 +108,6 @@
           </p>
         </div>
       </div>
-      <!--
       <div class="product_container">
         <div>
           <p class="text--large">
@@ -116,14 +115,14 @@
           </p>
           <client-only>
             <stripe-checkout
-              ref="checkoutRef0"
+              ref="checkoutRef2"
               :pk="publishableKey"
               :items="supporter"
               :success-url="successUrl"
               :cancel-url="cancelUrl"
             >
               <template slot="checkout-button">
-                <button @click="checkout0()">
+                <button @click="checkout2()">
                   Select
                 </button>
               </template>
@@ -139,7 +138,6 @@
           </p>
         </div>
       </div>
-      -->
     </div>
   </div>
 </template>
@@ -161,14 +159,12 @@ export default {
           quantity: 1
         }
       ],
-      /*
       supporter: [
         {
           plan: 'price_1IFGHBBYbiJubfJMNHoR9viV',
           quantity: 1
         }
       ],
-      */
       successUrl: 'https://traininblocks.com/success',
       cancelUrl: 'https://traininblocks.com'
     }
@@ -179,6 +175,9 @@ export default {
     },
     checkout1 () {
       this.$refs.checkoutRef1.redirectToCheckout()
+    },
+    checkout2 () {
+      this.$refs.checkoutRef2.redirectToCheckout()
     }
   }
 }
