@@ -108,6 +108,7 @@
           </p>
         </div>
       </div>
+      <!--
       <div class="product_container">
         <div>
           <p class="text--large">
@@ -138,6 +139,7 @@
           </p>
         </div>
       </div>
+      -->
     </div>
   </div>
 </template>
@@ -159,12 +161,14 @@ export default {
           quantity: 1
         }
       ],
+      /*
       supporter: [
         {
           plan: 'price_1IFGHBBYbiJubfJMNHoR9viV',
           quantity: 1
         }
       ],
+      */
       successUrl: 'https://traininblocks.com/success',
       cancelUrl: 'https://traininblocks.com'
     }
