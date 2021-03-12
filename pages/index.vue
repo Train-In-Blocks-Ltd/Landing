@@ -4,6 +4,10 @@
     margin: 0 auto;
     width: 70%
   }
+  iframe {
+    display: flex;
+    margin: auto
+  }
 
   /* Images */
   .container_images {
@@ -47,7 +51,14 @@
         We've taken health and fitness programming to the next level.
       </h1>
       <div class="spacer" />
-      <video src="../assets/video/Pegasus 3.0.mp4" controls />
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/2vwnB1fnxqI"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
     </div>
     <div class="spacer--large" />
     <div class="container_images">

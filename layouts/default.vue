@@ -25,7 +25,7 @@
   svg path {
     fill: var(--base_dark)
   }
-  img, video {
+  img, video, iframe {
     user-select: none;
     outline: none;
     border-radius: var(--border_rad_large);
@@ -277,14 +277,14 @@
     height: 10px
   }
   ::-webkit-scrollbar-track {
-    background: transparent
+    background: #181E2520
   }
   ::-webkit-scrollbar-thumb {
     border-radius: 3px;
-    background: #28282899
+    background: var(--base_dark)
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #28282880
+    background: var(--base_light)
   }
 
   /* Animimations */
