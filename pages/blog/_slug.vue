@@ -51,9 +51,9 @@
     </nuxt-link>
     <img :src="require(`../../static/blog-img${img}`)">
     <br><br>
-    <p class="text--large">
+    <h1>
       {{ title }}
-    </p>
+    </h1>
     <div class="blog_html" v-html="html" />
   </div>
 </template>

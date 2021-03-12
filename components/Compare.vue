@@ -20,35 +20,35 @@
 
 <template>
   <div>
-    <p class="text--large">
+    <h1>
       How do we compare against <b>{{ details.name }}?</b>
-    </p>
-    <p class="text--large grey">
+    </h1>
+    <h1 class="accent_text">
       Here's a breakdown...
-    </p>
+    </h1>
     <div class="spacer" />
     <div class="container--compare">
       <div class="compare_item">
-        <p class="text--small">
+        <h2>
           Train In Blocks
-        </p>
-        <p class="text--small grey">
+        </h2>
+        <h2 class="accent_text">
           £10 per month. Simple right?
-        </p>
-        <p class="text--small grey">
+        </h2>
+        <h2 class="accent_text">
           No limits on clients or programmes
-        </p>
+        </h2>
       </div>
       <div class="compare_item">
-        <p class="text--small">
+        <h2>
           {{ details.name }}
-        </p>
-        <p class="text--small grey">
+        </h2>
+        <h2 class="accent_text">
           {{ details.price }}
-        </p>
-        <p class="text--small grey">
+        </h2>
+        <h2 class="accent_text">
           {{ details.price_desc }}
-        </p>
+        </h2>
       </div>
     </div>
     <div class="spacer" />

@@ -1,7 +1,8 @@
 <style scoped>
 .container--pricing {
   display: grid;
-  grid-gap: 4rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
   margin-top: 4rem
 }
 .product_container {
@@ -18,41 +19,24 @@
   margin: auto 0
 }
 
-@media (max-width: 768px) {
-  .product_container {
-    max-width: 100%
-  }
-}
-@media (max-width: 567px) {
-  .product_container {
-    grid-template-columns: 1fr;
-    max-width: 100%;
-    grid-gap: 1rem
-  }
-  .product_container div:first-child {
-    display: flex;
-    flex-direction: row
-  }
-  .product_container > div:first-child * {
-    text-align: left
-  }
-  .product_container div:first-child div {
-    margin: auto
+@media (max-width: 992px) {
+  .container--pricing {
+    grid-template-columns: 1fr
   }
 }
 </style>
 
 <template>
   <div>
-    <p class="text--large">
+    <h1>
       Try it with our 14-day free trial
-    </p>
+    </h1>
     <div class="container--pricing">
       <div class="product_container">
         <div>
-          <p class="text--large">
+          <h1>
             £102
-          </p>
+          </h1>
           <client-only>
             <stripe-checkout
               ref="checkoutRef1"
@@ -70,19 +54,19 @@
           </client-only>
         </div>
         <div>
-          <p class="text--small">
+          <h2>
             Yearly
-          </p>
-          <p class="text--small grey">
+          </h2>
+          <p>
             Save 15% when you sign up to our annual plan — an even better deal.
           </p>
         </div>
       </div>
       <div class="product_container">
         <div>
-          <p class="text--large">
+          <h1>
             £10
-          </p>
+          </h1>
           <client-only>
             <stripe-checkout
               ref="checkoutRef0"
@@ -100,19 +84,19 @@
           </client-only>
         </div>
         <div>
-          <p class="text--small">
+          <h2>
             Monthly
-          </p>
-          <p class="text--small grey">
+          </h2>
+          <p>
             Gets you full access to the app for a amazing price on a recurring payment.
           </p>
         </div>
       </div>
       <div class="product_container">
         <div>
-          <p class="text--large">
+          <h1>
             £15
-          </p>
+          </h1>
           <client-only>
             <stripe-checkout
               ref="checkoutRef2"
@@ -130,10 +114,10 @@
           </client-only>
         </div>
         <div>
-          <p class="text--small">
+          <h2>
             Supporter
-          </p>
-          <p class="text--small grey">
+          </h2>
+          <p>
             Show some love and help us deliver an outstanding service to you. It's the same as the monthly plan, but with an added bonus of good karma.
           </p>
         </div>

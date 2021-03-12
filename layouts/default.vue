@@ -2,21 +2,39 @@
   @import '../node_modules/animate.css';
 
   /* GLOBAL */
-  html {
-    scroll-behavior: smooth
+  :root {
+    --low_shadow: 0 0 20px 10px #181E2510;
+    --border_rad_large: 10px;
+    --back: #F9F9F9;
+    --fore: white;
+    --base_dark: #181E25;
+    --base_light: #63676C;
+    --base_accent: white
   }
-  #app {
+  body {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: left;
-    color: #282828
-  }
-  body {
-    margin: 0;
+    color: var(--base_light);
     font-size: 16px;
+    margin: 0;
     padding: 0 8%;
-    background-color: #F9F9F9
+    background-color: var(--back);
+    scroll-behavior: smooth
+  }
+  svg path {
+    fill: var(--base_dark)
+  }
+  img {
+    max-width: 100%
+  }
+  h1 {
+    font-size: 2rem;
+    color: var(--base_dark)
+  }
+  h2 {
+    font-size: 1.4rem;
+    color: var(--base_dark)
   }
   p {
     line-height: 1.4;
@@ -25,33 +43,58 @@
   li {
     margin: 1rem 0
   }
-  .vm--modal {
-    padding: 1rem 1.6rem
-  }
 
-  /* IOS Disable Corners */
-  textarea, input.text, input[type='text'], input[type='button'], input[type='button']:hover, input[type='button']:active, input[type='submit'], .input-checkbox, #mce-EMAIL, input:active, input:focus {
+  /* Inputs */
+  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]),
+  select,
+  textarea {
+    outline: none;
+    -moz-appearance: none;
     -webkit-appearance: none;
-    outline-width: 0
-  }
-
-  /* GLOBAL: TO TOP */
-  .to-top {
-    z-index: 99;
-    opacity: 0;
-    position: fixed;
-    right: 20px;
-    bottom: 5rem;
-    background-color: #28282815;
-    border-radius: 5px;
-    width: fit-content;
+    width: 100%;
     padding: .6rem;
-    cursor: pointer;
-    transition: all .2s cubic-bezier(.165, .84, .44, 1);
-    animation: showIn 1.2s cubic-bezier(.165, .84, .44, 1) forwards
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border: 1px solid #28282840;
+    border-radius: 8px;
+    background-color: transparent;
+    box-shadow: none;
+    transition: all .6s cubic-bezier(.165, .84, .44, 1)
   }
-  .to-top:active {
-    transform: scale(.9)
+  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):not(:focus):hover,
+  select:hover,
+  textarea:hover {
+    opacity: .6
+  }
+  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):disabled {
+    cursor: not-allowed;
+    opacity: .6
+  }
+  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):focus,
+  textarea:focus {
+    border: 1px solid #282828
+  }
+  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).small_border_radius,
+  select.small_border_radius,
+  textarea.small_border_radius {
+    border-radius: 5px
+  }
+  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).width_300,
+  select.width_300 {
+    width: 300px
+  }
+  input[type=color] {
+    margin: 0 .4rem;
+    background-color: transparent;
+    padding: 0 .14rem;
+    outline-width: 0;
+    cursor: pointer;
+    transition: all .4s cubic-bezier(.165, .84, .44, 1)
+  }
+  ::placeholder {
+    color: #28282899;
+    opacity: 1; /* Firefox */
   }
 
   /* GLOBAL: CONTENT */
@@ -64,11 +107,8 @@
   .text--small {
     font-size: 1.6rem
   }
-  .grey {
-    color: #28282890
-  }
-  .tapered {
-    width: 70%
+  .accent_text {
+    color: var(--base_light)
   }
   .no-margin {
     margin: 0
@@ -81,57 +121,45 @@
     opacity: .6
   }
 
-  /* GLOBAL: BUTTONS */
-  button, #mc-embedded-subscribe, .typeform-share.button {
-    height: fit-content;
-    width: fit-content;
+  /* Box buttons */
+  button, #mc-embedded-subscribe {
+    height: auto;
+    width: auto;
+    max-height: 35px;
     user-select: none;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 5px;
     opacity: 1;
     text-transform: capitalize;
     outline-width: 0;
     border: none;
-    padding: .6rem 1.6rem;
+    /* stylelint-disable-next-line */
+    padding: .6rem 1.6rem !important;
     font-size: .8rem;
-    letter-spacing: .1rem;
-    color: white;
-    background-color: #282828;
-    transition: opacity .2s, transform .1s cubic-bezier(.165, .84, .44, 1)
+    /* stylelint-disable-next-line */
+    color: var(--base_accent) !important;
+    /* stylelint-disable-next-line */
+    background-color: var(--base_dark) !important;
+    transition: color .6s, background-color .6s, opacity .2s, transform .1s cubic-bezier(.165, .84, .44, 1)
   }
-  button:hover, #mc-embedded-subscribe:hover, .typeform-share.button:hover {
+  button:hover:not(:disabled), #mc-embedded-subscribe:hover {
     opacity: .6
   }
-  button:active, #mc-embedded-subscribe:active, .typeform-share.button:active {
+  button:active:not(:disabled), #mc-embedded-subscribe:active {
     transform: scale(.96)
   }
-  button:focus, #mc-embedded-subscribe:focus, .typeform-share.button:focus {
+  button:focus, #mc-embedded-subscribe:focus {
     box-shadow: 0 0 0 4px rgba(76, 91, 106, .5)
   }
-  button:disabled, button[disabled] {
-    opacity: .6;
-    cursor: default
-  }
-
-  /* GLOBAL: INPUTS */
-  input {
-    background-color: transparent
-  }
-  select {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    border-radius: 3px;
-    padding: .2rem .6rem;
-    width: fit-content;
-    font-size: 1rem;
-    letter-spacing: .1rem;
-    margin: 0
+  button:disabled,
+  button[disabled] {
+    cursor: not-allowed;
+    opacity: .6
   }
 
   /* GLOBAL: NAV */
   #logo--home {
-    width: 10rem;
+    width: 6rem;
     height: auto
   }
   .container--nav {
@@ -187,24 +215,6 @@
     font-weight: bold
   }
 
-  /* GLOBAL: EMAIL */
-  #mce-EMAIL {
-    opacity: .6;
-    padding: .4rem;
-    font-size: 1rem;
-    width: 40%;
-    margin: 1rem 0;
-    outline-width: 0;
-    border: none;
-    border-bottom: 1px solid #282828;
-    border-radius: 0;
-    transition: all .6s cubic-bezier(.165, .84, .44, 1)
-  }
-  #mce-EMAIL:hover, #mce-EMAIL:focus {
-    width: 45%;
-    opacity: 1
-  }
-
   /* GLOBAL: FOOTER */
   .social-icon {
     width: 25px;
@@ -223,6 +233,9 @@
 
   /* GLOBAL: FOOTER */
   .cookieControl__BarContainer {
+    display: grid;
+    grid-gap: 1rem;
+    margin: auto;
     padding: 2rem 6rem
   }
   .cookieControl__BarContainer p, .cookieControl__BarContainer button {
@@ -230,9 +243,6 @@
   }
   .cookieControl__Bar p {
     margin-top: 0
-  }
-  .cookieControl__Bar.cookieControl__Bar--bottom-full div {
-    margin: auto
   }
   footer {
     padding: 2rem 0;
@@ -287,12 +297,6 @@
     }
   }
   @media (max-width: 992px) {
-    #mce-EMAIL {
-      width: 60%
-    }
-    #mce-EMAIL:hover, #mce-EMAIL:focus {
-      width: 65%
-    }
     button:hover {
       background-color: transparent;
       color: #282828
@@ -329,18 +333,6 @@
     }
     .social-icon:hover {
       opacity: 1
-    }
-    #mce-EMAIL {
-      width: 80%
-    }
-    #mce-EMAIL:hover {
-      width: 80%
-    }
-    #mce-EMAIL:focus {
-      width: 85%
-    }
-    div.ql-editor {
-      width: 400px
     }
     button:disabled:hover {
       color: rgba(16, 16, 16, .3)
@@ -425,36 +417,8 @@
         <div class="social-bar">
           <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
           <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
-          <a target="_blank" href="https://www.twitter.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Twitter.svg')" /></a>
-          <a target="_blank" href="https://www.linkedin.com/company/train-in-blocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/LinkedIn.svg')" /></a>
         </div>
       </div>
-      <form
-        id="mc-embedded-subscribe-form"
-        action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
-        method="post"
-        name="mc-embedded-subscribe-form"
-        class="validate animated fadeInLeft"
-        target="_blank"
-        novalidate
-      >
-        <label for="mce-EMAIL">Sign up to our newsletter</label><br>
-        <input
-          id="mce-EMAIL"
-          type="email"
-          value=""
-          name="EMAIL"
-          class="email"
-          placeholder="Email"
-          required
-        >
-        <div style="position: absolute; left: -5000px" aria-hidden="true">
-          <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
-        </div>
-        <div class="clear">
-          <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
-        </div>
-      </form><br>
       <div>
         <nuxt-link class="input--option" to="/gdpr/">
           GDPR Statement
@@ -479,17 +443,6 @@
         Registered in England & Wales
       </p>
     </footer>
-    <a
-      v-if="scrollpx > 800"
-      v-scroll-to="{
-        el: '#nav--top',
-        duration: 600,
-        easing: 'ease'
-      }"
-      class="to-top"
-    >
-      <inline-svg id="to-top__icon" :src="require('../assets/svg/Top.svg')" />
-    </a>
   </div>
 </template>
 

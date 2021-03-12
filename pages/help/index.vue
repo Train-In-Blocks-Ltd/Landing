@@ -9,22 +9,6 @@
   .contact_form textarea {
     resize: vertical
   }
-  .contact_form input, .contact_form textarea {
-    padding: .6rem;
-    opacity: .6;
-    border: 1px solid #28282840;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: .6s all cubic-bezier(.165, .84, .44, 1)
-  }
-  .contact_form input::placeholder, .contact_form textarea::placeholder {
-    color: #282828C0
-  }
-  .contact_form input:focus, .contact_form textarea:focus {
-    border: 1px solid #282828;
-    opacity: 1
-  }
   .click_here {
     cursor: pointer;
     transition: .6s all cubic-bezier(.165, .84, .44, 1)
@@ -92,10 +76,10 @@
 
 <template>
   <div>
-    <p class="text--large">
+    <h1>
       Need help with something?
-    </p>
-    <p class="text--large grey">
+    </h1>
+    <h1 class="accent_text">
       <u
         v-scroll-to="{
           el: '#contact',
@@ -105,20 +89,20 @@
         class="click_here"
       > Click here</u>
       to get in touch or browse our guides
-    </p>
+    </h1>
     <div class="container--help">
       <div v-for="post in posts" :key="post.attributes.title" class="help-post">
         <div>
-          <p class="text--xlarge no-margin number_text">
+          <h1 class="text--xlarge no-margin number_text">
             {{ post.attributes.id }}
-          </p>
+          </h1>
         </div>
         <div class="help-post__top-wrapper">
           <div>
-            <p class="text--small no-margin">
+            <h2 class="no-margin">
               {{ post.attributes.title }}
-            </p>
-            <p class="text--small grey">
+            </h2>
+            <p>
               {{ post.attributes.excerpt }}
             </p>
           </div>
@@ -139,20 +123,15 @@
       netlify
       @submit.prevent="send_message"
     >
-      <div>
-        <p class="text--large">
-          Need something more specific?
-        </p>
-        <p class="text--large grey">
-          We'll get back to you as soon as possible
-        </p>
-      </div>
+      <h1>
+        Need something more specific?
+      </h1>
       <input
         v-model="contactForm.name"
         name="name"
         type="text"
         placeholder="Name"
-        class="text--small"
+        class="small_border_radius"
         required
       >
       <input
@@ -160,7 +139,7 @@
         name="email"
         type="email"
         placeholder="Email"
-        class="text--small"
+        class="small_border_radius"
         required
       >
       <input
@@ -168,7 +147,7 @@
         name="confirm_email"
         type="email"
         placeholder="Verify email"
-        class="text--small"
+        class="small_border_radius"
         required
       >
       <textarea
@@ -176,7 +155,7 @@
         name="message"
         rows="5"
         placeholder="Message"
-        class="text--small"
+        class="small_border_radius"
         required
       />
       <div>

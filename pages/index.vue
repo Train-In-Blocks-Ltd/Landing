@@ -1,7 +1,7 @@
 <style scoped>
-  /* Containers */
-  #home {
-    padding: 6rem 0
+  /* Home Intro */
+  .home_intro {
+    width: 70%
   }
   .container--features {
     display: grid;
@@ -17,15 +17,6 @@
   .container--pricing {
     display: grid;
     grid-template-columns: 1fr 1fr
-  }
-
-  /* Content */
-  .img--pc {
-    max-width: 100%
-  }
-  .img--tablet {
-    max-width: 100%;
-    margin-top: 6rem
   }
 
   /* Embeded YT */
@@ -68,14 +59,11 @@
 
 <template>
   <div id="home">
-    <p class="text--large tapered">
-      We've taken health and fitness programming to the next level.
-    </p>
-    <p class="text--large tapered grey">
-      Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.
-    </p>
-    <div class="spacer" />
-    <img class="img--pc" src="../assets/images/device-pc.png" alt="Device PC">
+    <div class="home_intro">
+      <h1>
+        We've taken health and fitness programming to the next level.
+      </h1>
+    </div>
     <div class="spacer--large" />
     <div v-if="videos.length > 1" class="video_controls">
       <button
@@ -108,10 +96,10 @@
     <div class="spacer" />
     <div class="container--features">
       <div v-for="feature in features" :key="feature.id" class="feature">
-        <p class="text--small">
+        <h2>
           {{ feature.subtitle }}
-        </p>
-        <p class="text--small grey">
+        </h2>
+        <p>
           {{ feature.desc }}
         </p>
       </div>

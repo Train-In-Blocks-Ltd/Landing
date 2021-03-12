@@ -7,19 +7,19 @@
 
 <template>
   <div>
-    <p class="text--large">
+    <h1>
       Thank you!
-    </p>
-    <p class="text--large grey">
+    </h1>
+    <h1 class="accent_text">
       You will receive an email to finish your sign-up
-    </p>
+    </h1>
     <div class="spacer" />
-    <p class="text--small">
+    <h2>
       It can take up to an hour for the email to arrive. Be sure to check your inbox and spam mail.
-    </p>
-    <p class="text--small grey">
+    </h2>
+    <h2 class="accent_text">
       Meanwhile, click <a href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3/topic/479be3f0-30e6-49ed-aa9c-c944d2f6b0a9">here</a> to learn how to use the app.
-    </p>
+    </h2>
     <div class="spacer" />
   </div>
 </template>

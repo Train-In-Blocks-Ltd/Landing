@@ -21,7 +21,8 @@
   }
   .blog_post__content {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    padding-top: 2rem
   }
   .blog_post__link {
     display: grid;
@@ -69,21 +70,18 @@
 
 <template>
   <div>
-    <p class="text--large">
+    <h1>
       Find power in knowledge
-    </p>
-    <p class="text--large grey">
-      Let's learn something new
-    </p>
+    </h1>
     <div class="blog_container">
       <div v-for="post in posts" :key="post.attributes.title" class="blog_post">
         <img :src="require(`../../static/blog-img${post.attributes.img}`)">
         <div class="blog_post__content">
           <div>
-            <p class="text--small no-margin">
+            <h2 class="no-margin">
               {{ post.attributes.title }}
-            </p>
-            <p class="text--small grey">
+            </h2>
+            <p>
               {{ post.attributes.excerpt }}
             </p>
           </div>
