@@ -1,6 +1,7 @@
 <style scoped>
   /* Home Intro */
   .home_intro {
+    margin: 0 auto;
     width: 70%
   }
 
@@ -25,6 +26,9 @@
   }
 
   @media (max-width: 992px) {
+    .home_intro {
+      width: 100%
+    }
     .image_item img:hover {
       transform: scale(1)
     }
@@ -42,9 +46,9 @@
       <h1>
         We've taken health and fitness programming to the next level.
       </h1>
+      <div class="spacer" />
+      <video src="../assets/video/Pegasus 3.0.mp4" controls />
     </div>
-    <div class="spacer" />
-    <video src="../assets/video/Pegasus 3.0.mp4" controls />
     <div class="spacer--large" />
     <div class="container_images">
       <div

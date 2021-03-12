@@ -12,12 +12,12 @@
   }
 
   @media (max-width: 992px) {
-    .container--features {
+    .container--benefits {
       grid-template-columns: 1fr 1fr
     }
   }
   @media (max-width: 576px) {
-    .container--features {
+    .container--benefits {
       grid-template-columns: 1fr
     }
   }
