@@ -12,7 +12,7 @@
   .blog_post > img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 20px 10px #28282810;
+    box-shadow: var(--low_shadow);
     filter: grayscale(100%);
     transition: .6s all cubic-bezier(.165, .84, .44, 1)
   }
@@ -75,10 +75,10 @@
     </h1>
     <div class="blog_container">
       <div v-for="post in posts" :key="post.attributes.title" class="blog_post">
-        <img :src="require(`../../static/blog-img${post.attributes.img}`)">
+        <img :src="require(`../../static/blog-img/${post.attributes.img}`)">
         <div class="blog_post__content">
           <div>
-            <h2 class="no-margin">
+            <h2 class="no_margin">
               {{ post.attributes.title }}
             </h2>
             <p>
@@ -86,10 +86,10 @@
             </p>
           </div>
           <div class="blog_post__link">
-            <nuxt-link class="blog_post__link_text" :to="'/blog/' + post.attributes.slug + '/'">
+            <nuxt-link class="blog_post__link_text" :to="`/blog/${post.attributes.slug}/`">
               Read more
             </nuxt-link>
-            <inline-svg class="svg--read-more" :src="require('../../assets/svg/blog/Arrow.svg')" />
+            <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
           </div>
         </div>
       </div>

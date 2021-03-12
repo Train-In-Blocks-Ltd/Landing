@@ -8,7 +8,7 @@ excerpt: Give access to your clients so that they can see their sessions and pla
 
 <br>
 
-![Give client access](/help-img/1/create-client-account.gif)
+![Give client access](/help-img/1.gif)
 
 <br>
 

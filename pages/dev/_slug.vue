@@ -1,17 +1,17 @@
 <style>
-  .blog_html h2 {
+  .dev_html h2 {
     margin-top: 3rem;
     font-weight: lighter
   }
 </style>
 
 <style scoped>
-  .blog_body > img {
+  .dev_body > img {
     display: flex;
     margin: auto;
     width: 60%;
     border-radius: 10px;
-    box-shadow: 0 0 20px 10px #28282810
+    box-shadow: var(--low_shadow)
   }
   .back_text {
     position: fixed;
@@ -23,7 +23,7 @@
 
   /* Responsiveness */
   @media (max-width: 768px) {
-    .blog_body > img {
+    .dev_body > img {
       width: 100%
     }
     .back_text {
@@ -31,7 +31,7 @@
     }
   }
   @media (max-width: 567px) {
-    .blog_body > img {
+    .dev_body > img {
       margin-top: 2rem
     }
     .back_text {
@@ -44,17 +44,15 @@
 </style>
 
 <template>
-  <div class="blog_body">
+  <div class="dev_body">
     <!--eslint-disable-next-line-->
-    <nuxt-link to="/blog/" class="back_text">
+    <nuxt-link to="/dev/" class="back_text">
       Back
     </nuxt-link>
-    <img :src="require(`../../static/blog-img${img}`)">
-    <br><br>
     <h1>
       {{ title }}
     </h1>
-    <div class="blog_html" v-html="html" />
+    <div class="dev_html" v-html="html" />
   </div>
 </template>
 
@@ -62,7 +60,7 @@
 export default {
   async asyncData ({ params }) {
     try {
-      const post = await require(`~/content/blog/${params.slug}.md`)
+      const post = await require(`~/content/dev/${params.slug}.md`)
       return {
         html: post.html,
         excerpt: post.attributes.excerpt,
@@ -79,7 +77,7 @@ export default {
     this.$parent.$parent.metaHelper.title = this.title
     this.$parent.$parent.metaHelper.description = this.excerpt
     this.$parent.$parent.metaHelper.image = this.img
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/blog/' + this.$route.params.slug + '/'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/dev/' + this.$route.params.slug + '/'
   }
 }
 </script>

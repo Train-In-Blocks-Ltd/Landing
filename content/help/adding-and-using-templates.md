@@ -8,7 +8,7 @@ excerpt: A guide on how to speed up your workflow and save more time using templ
 
 <br>
 
-![Add template](/help-img/5/add-template.gif)
+![Add template](/help-img/5a.gif)
 
 <br>
 
@@ -18,7 +18,7 @@ Go to the _Templates_ page and press the **New** **Template** button. Edit and s
 
 <br>
 
-![Using template](/help-img/5/insert-template.gif)
+![Using template](/help-img/5b.gif)
 
 <br>
 

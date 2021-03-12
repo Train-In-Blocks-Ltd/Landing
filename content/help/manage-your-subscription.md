@@ -8,7 +8,7 @@ excerpt: Make changes to your Train In Blocks subscription (edit, cancel).
 
 <br>
 
-![Manage subscription](/help-img/2/manage-subscription.gif)
+![Manage subscription](/help-img/2.gif)
 
 <br>
 

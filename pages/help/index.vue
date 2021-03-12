@@ -93,13 +93,13 @@
     <div class="container--help">
       <div v-for="post in posts" :key="post.attributes.title" class="help-post">
         <div>
-          <h1 class="text--xlarge no-margin number_text">
+          <h1 class="text--xlarge no_margin number_text">
             {{ post.attributes.id }}
           </h1>
         </div>
         <div class="help-post__top-wrapper">
           <div>
-            <h2 class="no-margin">
+            <h2 class="no_margin">
               {{ post.attributes.title }}
             </h2>
             <p>
@@ -107,10 +107,10 @@
             </p>
           </div>
           <div class="help-post__link">
-            <nuxt-link class="help-post__link-text" :to="'/help/' + post.attributes.slug + '/'">
+            <nuxt-link class="help-post__link-text" :to="`/help/${+ post.attributes.slug}/`">
               Read more
             </nuxt-link>
-            <inline-svg class="svg--read-more" :src="require('../../assets/svg/blog/Arrow.svg')" />
+            <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
           </div>
         </div>
       </div>

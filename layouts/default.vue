@@ -114,7 +114,7 @@
   .accent_text {
     color: var(--base_light)
   }
-  .no-margin {
+  .no_margin {
     margin: 0
   }
   .back_text {
@@ -384,6 +384,9 @@
           </nuxt-link>
           <nuxt-link class="text--large input--option" to="/blog/" @click.native="openNav = !openNav">
             Blog
+          </nuxt-link>
+          <nuxt-link class="text--large input--option" to="/dev/" @click.native="openNav = !openNav">
+            News
           </nuxt-link>
           <nuxt-link class="text--large input--option" to="/help/" @click.native="openNav = !openNav">
             Help

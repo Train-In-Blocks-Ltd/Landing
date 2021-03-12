@@ -8,7 +8,7 @@ excerpt: We'll show you how you can temporarily and permanently remove a client.
 
 <br>
 
-![Archive client](/help-img/4/archive-client.gif)
+![Archive client](/help-img/4.gif)
 
 <br>
 

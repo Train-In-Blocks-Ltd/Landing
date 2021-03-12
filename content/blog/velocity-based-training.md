@@ -2,7 +2,7 @@
 id: 8
 title: More adaptations with less volume using velocity-based training
 slug: velocity-based-training
-img: /8.png
+img: 8.png
 excerpt: A recent study on an alternative method of training which could increase adaptations with less training volume.
 ---
 

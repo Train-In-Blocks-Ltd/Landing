@@ -64,7 +64,7 @@ You can use this format to track any single measurement. This could be for nutri
 
 <br>
 
-![Visualise data](/help-img/3/visualise.gif)
+![Visualise data](/help-img/3.gif)
 
 <br>
 

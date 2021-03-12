@@ -10,7 +10,7 @@
     margin: auto;
     width: 60%;
     border-radius: 10px;
-    box-shadow: 0 0 20px 10px #28282810
+    box-shadow: var(--low_shadow)
   }
   .back_text {
     position: fixed;
@@ -48,7 +48,7 @@
     <nuxt-link to="/blog/" class="back_text">
       Back
     </nuxt-link>
-    <img :src="require(`../../static/blog-img${img}`)">
+    <img :src="require(`../../static/blog-img/${img}`)">
     <br><br>
     <h1>
       {{ title }}
