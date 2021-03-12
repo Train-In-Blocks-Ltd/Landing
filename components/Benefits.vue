@@ -50,11 +50,12 @@ export default {
         { subtitle: 'Workout Builder', desc: 'A powerful workout design tool using free-form text editors. Write anything you want.' },
         { subtitle: 'Visuals', desc: 'Analyse and visualise the programme without spending your day entering numbers into boxes. We\'ll handle that.' },
         { subtitle: 'Cloud', desc: 'It\'s all on the internet. Access anytime and anywhere.' },
-        { subtitle: 'Easy Planning', desc: 'Copy the workouts across a set time-frame with one-click. Then make any changes required for progression.' },
+        { subtitle: 'Quick Progression', desc: 'Copy the sessions across a set time-frame with your changes in just a few clicks' },
         { subtitle: 'Sleek and Minimal UI', desc: 'Minimal and easy to understand. Simplicity goes a long way.' },
         { subtitle: 'Super Affordable', desc: 'No complicated pricing plans with different restrictions. Just pay and get instant access.' },
         { subtitle: 'Unlimited Clients', desc: 'There is no limit on the number of clients you can have. Go out there and get more.' },
-        { subtitle: 'Portfolio', desc: 'Edit your portfolio to share important information with your clients.' }
+        { subtitle: 'Portfolio', desc: 'Edit your portfolio to share important information with your clients.' },
+        { subtitle: 'Templates', desc: 'Create your own pre-made templates to help your programme faster.' }
       ]
     }
   }

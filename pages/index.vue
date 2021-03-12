@@ -98,7 +98,8 @@ export default {
       images: [
         { desc: 'Write in-depth plans for your clients', img: 'editor.png', alt: 'Powerful editor' },
         { desc: 'Track and visualise data without spreadsheets', img: 'stats.png', alt: 'Statistics' },
-        { desc: 'Progress sessions quickly with your changes', img: 'progress.png', alt: 'Progress easily' }
+        { desc: 'Progress sessions quickly with your changes', img: 'progress.png', alt: 'Progress easily' },
+        { desc: 'Add important information like \'how to pay\' into your portfolio for your clients', img: 'portfolio.png', alt: 'Portfolio' }
       ]
     }
   },
