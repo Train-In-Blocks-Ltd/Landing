@@ -1,7 +1,6 @@
 <style>
   .blog_html h2 {
-    margin-top: 3rem;
-    font-weight: lighter
+    margin-top: 3rem
   }
 </style>
 

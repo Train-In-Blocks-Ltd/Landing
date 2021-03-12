@@ -4,6 +4,11 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem
 }
+.container--compare > div {
+  padding: 2rem;
+  box-shadow: var(--low_shadow);
+  border-radius: var(--border_rad_large)
+}
 .container--features {
   display: grid;
   grid-template-columns: repeat(auto-fill, 280px);
@@ -32,36 +37,40 @@
         <h2>
           Train In Blocks
         </h2>
-        <h2 class="accent_text">
+        <p>
           £10 per month. Simple right?
-        </h2>
-        <h2 class="accent_text">
+        </p>
+        <p>
           No limits on clients or programmes
-        </h2>
+        </p>
       </div>
       <div class="compare_item">
         <h2>
           {{ details.name }}
         </h2>
-        <h2 class="accent_text">
+        <p>
           {{ details.price }}
-        </h2>
-        <h2 class="accent_text">
+        </p>
+        <p>
           {{ details.price_desc }}
-        </h2>
+        </p>
       </div>
     </div>
+    <div class="spacer" />
+    <benefits />
     <div class="spacer" />
     <payment />
   </div>
 </template>
 
 <script>
+import Benefits from './Benefits.vue'
 import Payment from './Payment.vue'
 
 export default {
   components: {
-    Payment
+    Payment,
+    Benefits
   },
   props: {
     details: {

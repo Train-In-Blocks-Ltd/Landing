@@ -3,56 +3,35 @@
   .home_intro {
     width: 70%
   }
-  .container--features {
+
+  /* Images */
+  .container_images {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 6rem
+  }
+  .image_item {
+    display: grid;
+    grid-template-columns: .6fr 1fr;
     grid-gap: 4rem
   }
-  .feature {
-    padding: 1rem 2rem;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 20px 10px #28282808
-  }
-  .container--pricing {
-    display: grid;
-    grid-template-columns: 1fr 1fr
-  }
-
-  /* Embeded YT */
-  .video_controls {
-    max-width: 80%;
+  .image_item h1 {
     margin: auto
   }
-  .embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    margin: auto;
-    overflow: hidden;
-    max-width: 80%
+  .image_item img {
+    transition: .6s all cubic-bezier(.165, .84, .44, 1)
   }
-  .embed-container iframe, .embed-container object, .embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    box-shadow: 0 0 20px 10px #28282810;
-    border-radius: 10px
+  .image_item img:hover {
+    transform: scale(1.05)
   }
 
-  @media (max-width: 768px) {
-    #home {
-      padding: 0
-    }
-    .embed-container {
-      max-width: 100%
+  @media (max-width: 992px) {
+    .image_item img:hover {
+      transform: scale(1)
     }
   }
-  @media (max-width: 567px) {
-    .img--tablet {
-      margin-top: 2rem
+  @media (max-width: 768px) {
+    .image_item {
+      grid-template-columns: 1fr
     }
   }
 </style>
@@ -64,74 +43,47 @@
         We've taken health and fitness programming to the next level.
       </h1>
     </div>
-    <div class="spacer--large" />
-    <div v-if="videos.length > 1" class="video_controls">
-      <button
-        v-for="(video_button, index) in videos"
-        v-show="current_video - 1 === index"
-        :key="'video_button-back-' + index"
-        @click="current_video--"
-      >
-        Back: {{ video_button.name }}
-      </button>
-      <button
-        v-for="(video_button, index) in videos"
-        v-show="current_video + 1 === index"
-        :key="'video_button-forward-' + index"
-        @click="current_video++"
-      >
-        Next: {{ video_button.name }}
-      </button>
-    </div><br>
-    <div class="embed-container">
-      <iframe
-        v-for="(video, index) in videos"
-        v-show="current_video === index"
-        :key="'video-' + index"
-        :src="video.url"
-        frameborder="0"
-        allowfullscreen
-      />
-    </div>
     <div class="spacer" />
-    <div class="container--features">
-      <div v-for="feature in features" :key="feature.id" class="feature">
-        <h2>
-          {{ feature.subtitle }}
-        </h2>
-        <p>
-          {{ feature.desc }}
-        </p>
+    <video src="../assets/video/Pegasus 3.0.mp4" controls />
+    <div class="spacer--large" />
+    <div class="container_images">
+      <div
+        v-for="(item, index) in images"
+        :key="`img_${index}`"
+      >
+        <div class="image_item">
+          <h1>
+            {{ item.desc }}
+          </h1>
+          <img :src="require(`../assets/images/home/${item.img}`)" :alt="item.alt">
+        </div>
+        <div class="spacer" />
       </div>
     </div>
     <div class="spacer" />
+    <benefits />
+    <div class="spacer--large" />
     <payment />
+    <div class="spacer" />
   </div>
 </template>
 
 <script>
 import Payment from '../components/Payment'
+import Benefits from '../components/Benefits'
 
 export default {
   components: {
-    Payment
+    Payment,
+    Benefits
   },
   data () {
     return {
       title: 'Want to train more clients effectively?',
-      current_video: 0,
-      videos: [
-        { name: 'Pegasis 3.0 Demo', url: 'https://www.youtube.com/embed/2vwnB1fnxqI' }
-      ],
-      features: [
-        { id: 1, subtitle: 'Save Time', desc: 'Create a new long-term bespoke programme in less than 15 minutes.' },
-        { id: 2, subtitle: 'Workout Builder', desc: 'A powerful workout design tool using free-form text editors. Write anything you want.' },
-        { id: 3, subtitle: 'Visuals', desc: 'Analyse and visualise the programme without spending your day entering numbers into boxes. We\'ll handle that.' },
-        { id: 4, subtitle: 'Cloud', desc: 'It\'s all on the internet. Access anytime and anywhere.' },
-        { id: 5, subtitle: 'Easy Planning', desc: 'Copy the workouts across a set time-frame with one-click. Then make any changes required for progression.' },
-        { id: 6, subtitle: 'Sleek and Minimal UI', desc: 'Minimal and easy to understand. Simplicity goes a long way.' },
-        { id: 7, subtitle: 'Super Affordable', desc: 'No complicated pricing plans with different restrictions. Just pay and get instant access.' },
-        { id: 8, subtitle: 'Unlimited Clients', desc: 'There is no limit on the number of clients you can have. Go out there and get more.' }
+      images: [
+        { desc: 'Write in-depth plans for your clients', img: 'editor.png', alt: 'Powerful editor' },
+        { desc: 'Track and visualise data without spreadsheets', img: 'stats.png', alt: 'Statistics' },
+        { desc: 'Progress sessions quickly with your changes', img: 'progress.png', alt: 'Progress easily' }
       ]
     }
   },

@@ -25,7 +25,11 @@
   svg path {
     fill: var(--base_dark)
   }
-  img {
+  img, video {
+    user-select: none;
+    outline: none;
+    border-radius: var(--border_rad_large);
+    box-shadow: var(--low_shadow);
     max-width: 100%
   }
   h1 {
@@ -159,7 +163,7 @@
 
   /* GLOBAL: NAV */
   #logo--home {
-    width: 6rem;
+    width: 8rem;
     height: auto
   }
   .container--nav {
@@ -439,7 +443,7 @@
       <p>
         <b>Train In Blocks Ltd</b><br>
         12515717<br>
-        21 Sinodun Road, Wallingford, OX10 8AD, United Kingdom<br>
+        Wallingford, OX10 8AD, United Kingdom<br>
         Registered in England & Wales
       </p>
     </footer>
