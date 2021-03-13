@@ -37,21 +37,9 @@
           <h1>
             £102
           </h1>
-          <client-only>
-            <stripe-checkout
-              ref="checkoutRef1"
-              :pk="publishableKey"
-              :items="yearly"
-              :success-url="successUrl"
-              :cancel-url="cancelUrl"
-            >
-              <template slot="checkout-button">
-                <button @click="checkout1()">
-                  Select
-                </button>
-              </template>
-            </stripe-checkout>
-          </client-only>
+          <button @click="checkout(yearly)">
+            Select
+          </button>
         </div>
         <div>
           <h2>
@@ -67,21 +55,9 @@
           <h1>
             £10
           </h1>
-          <client-only>
-            <stripe-checkout
-              ref="checkoutRef0"
-              :pk="publishableKey"
-              :items="monthly"
-              :success-url="successUrl"
-              :cancel-url="cancelUrl"
-            >
-              <template slot="checkout-button">
-                <button @click="checkout0()">
-                  Select
-                </button>
-              </template>
-            </stripe-checkout>
-          </client-only>
+          <button @click="checkout(monthly)">
+            Select
+          </button>
         </div>
         <div>
           <h2>
@@ -97,21 +73,9 @@
           <h1>
             £15
           </h1>
-          <client-only>
-            <stripe-checkout
-              ref="checkoutRef2"
-              :pk="publishableKey"
-              :items="supporter"
-              :success-url="successUrl"
-              :cancel-url="cancelUrl"
-            >
-              <template slot="checkout-button">
-                <button @click="checkout2()">
-                  Select
-                </button>
-              </template>
-            </stripe-checkout>
-          </client-only>
+          <button @click="checkout(supporter)">
+            Select
+          </button>
         </div>
         <div>
           <h2>
@@ -127,41 +91,39 @@
 </template>
 
 <script>
+import axios from 'axios'
+import { loadStripe } from '@stripe/stripe-js'
+
 export default {
   data () {
     return {
-      publishableKey: 'pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX',
       monthly: [
         {
-          plan: 'price_1GtvcPBYbiJubfJM2voqpLIo',
+          price: 'price_1GtvcPBYbiJubfJM2voqpLIo',
           quantity: 1
         }
       ],
       yearly: [
         {
-          plan: 'price_1GtvcPBYbiJubfJM7nWmNywN',
+          price: 'price_1GtvcPBYbiJubfJM7nWmNywN',
           quantity: 1
         }
       ],
       supporter: [
         {
-          plan: 'price_1IFGHBBYbiJubfJMNHoR9viV',
+          price: 'price_1IFGHBBYbiJubfJMNHoR9viV',
           quantity: 1
         }
-      ],
-      successUrl: 'https://traininblocks.com/success',
-      cancelUrl: 'https://traininblocks.com'
+      ]
     }
   },
   methods: {
-    checkout0 () {
-      this.$refs.checkoutRef0.redirectToCheckout()
-    },
-    checkout1 () {
-      this.$refs.checkoutRef1.redirectToCheckout()
-    },
-    checkout2 () {
-      this.$refs.checkoutRef2.redirectToCheckout()
+    async checkout (item) {
+      const response = await axios.post('/.netlify/functions/checkout', {
+        line_items: item
+      })
+      const stripe = await loadStripe('pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX')
+      stripe.redirectToCheckout({ sessionId: response.data })
     }
   }
 }

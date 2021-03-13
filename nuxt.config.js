@@ -100,12 +100,7 @@ export default async () => {
     /*
     ** Plugins to load before mounting the App
     */
-    plugins: [
-      { src: '~/plugins/modal.js', ssr: false },
-      { src: '~/plugins/quill.js', ssr: false },
-      { src: '~/plugins/scrollto.js', ssr: false },
-      { src: '~/plugins/stripeCheckout.js', ssr: false }
-    ],
+    plugins: [],
     /*
     ** Nuxt.js dev-modules
     */
