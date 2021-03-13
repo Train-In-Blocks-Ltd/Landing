@@ -9,7 +9,7 @@ sections:
   label: dev
   create: all
   match: "**/*"
-  new_doc_ext: ''
+  new_doc_ext: app
 - type: directory
   path: content/help
   label: Help Articles
