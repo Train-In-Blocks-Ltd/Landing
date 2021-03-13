@@ -8,11 +8,15 @@ fields:
 - type: text
   name: title
   label: title
-- type: datetime
-  name: date
+- name: date
+  type: text
+  config:
+    required: false
   label: date
-- type: file
-  name: img
+- name: img
+  type: text
+  config:
+    required: false
   label: img
 - type: text
   name: slug
