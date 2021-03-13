@@ -27,6 +27,9 @@ fields:
   config:
     required: false
   label: excerpt
+- name: show
+  type: boolean
+  label: show
 pages:
 - content/help/adding-and-using-templates.md
 - content/help/archiving-removing-a-client.md
