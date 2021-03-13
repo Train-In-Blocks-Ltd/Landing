@@ -4,7 +4,6 @@ hide_body: false
 fields:
 - name: id
   type: number
-  label: ID
   description: ''
   default: 0
   required: true
@@ -12,21 +11,22 @@ fields:
     min: 
     max: 
     step: 
+  label: id
 - name: title
   type: text
   config:
     required: false
-  label: TITLE
+  label: title
 - name: slug
   type: text
   config:
     required: false
-  label: SLUG
+  label: slug
 - name: excerpt
   type: text
   config:
     required: false
-  label: EXCERPT
+  label: excerpt
 pages:
 - content/help/adding-and-using-templates.md
 - content/help/archiving-removing-a-client.md
