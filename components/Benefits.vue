@@ -55,7 +55,7 @@ export default {
         { subtitle: 'Super Affordable', desc: 'No complicated pricing plans with different restrictions. Just pay and get instant access.' },
         { subtitle: 'Unlimited Clients', desc: 'There is no limit on the number of clients you can have. Go out there and get more.' },
         { subtitle: 'Portfolio', desc: 'Edit your portfolio to share important information with your clients.' },
-        { subtitle: 'Templates', desc: 'Create your own pre-made templates to help your programme faster.' }
+        { subtitle: 'Templates', desc: 'Create your own pre-made templates to help you programme faster.' }
       ]
     }
   }
