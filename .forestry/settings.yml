@@ -5,6 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: content/dev
+  label: dev
+  create: all
+  match: "**/*"
+  new_doc_ext: ''
+- type: directory
   path: content/help
   label: Help Articles
   create: documents
