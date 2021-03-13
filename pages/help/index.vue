@@ -107,7 +107,7 @@
             </p>
           </div>
           <div class="help-post__link">
-            <nuxt-link class="help-post__link-text" :to="`/help/${+ post.attributes.slug}/`">
+            <nuxt-link class="help-post__link-text" :to="`/help/${post.attributes.slug}/`">
               Read more
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
