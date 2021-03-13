@@ -1,0 +1,25 @@
+---
+label: Dev log
+hide_body: false
+fields:
+- type: number
+  name: id
+  label: id
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: img
+  label: img
+- type: text
+  name: slug
+  label: slug
+- type: text
+  name: excerpt
+  label: excerpt
+- type: boolean
+  name: show
+  label: show
