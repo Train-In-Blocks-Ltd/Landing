@@ -126,7 +126,7 @@
   }
 
   /* Box buttons */
-  button, #mc-embedded-subscribe {
+  button:not(.cookieControl__ControlButton), #mc-embedded-subscribe {
     height: auto;
     width: auto;
     max-height: 35px;
@@ -146,7 +146,7 @@
     background-color: var(--base_dark) !important;
     transition: color .6s, background-color .6s, opacity .2s, transform .1s cubic-bezier(.165, .84, .44, 1)
   }
-  button:hover:not(:disabled), #mc-embedded-subscribe:hover {
+  button:hover:not(:disabled):not(.cookieControl__ControlButton), #mc-embedded-subscribe:hover {
     opacity: .6
   }
   button:active:not(:disabled), #mc-embedded-subscribe:active {
@@ -236,6 +236,9 @@
   }
 
   /* GLOBAL: FOOTER */
+  .cookieControl__ControlButton:hover svg path {
+    fill: white
+  }
   .cookieControl__BarContainer {
     display: grid;
     grid-gap: 1rem;
