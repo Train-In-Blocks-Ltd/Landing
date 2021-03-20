@@ -81,12 +81,8 @@
     </h1>
     <h1 class="accent_text">
       <u
-        v-scroll-to="{
-          el: '#contact',
-          duration: 600,
-          easing: 'ease'
-        }"
         class="click_here"
+        @click="scroll()"
       > Click here</u>
       to get in touch or browse our guides
     </h1>
@@ -216,6 +212,9 @@ export default {
     this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/help/'
   },
   methods: {
+    scroll () {
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+    },
     sortPosts () {
       this.posts.sort((a, b) => {
         return new Date(a.attributes.id) - new Date(b.attributes.id)

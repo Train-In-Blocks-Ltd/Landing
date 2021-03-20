@@ -126,7 +126,8 @@
   }
 
   /* Box buttons */
-  button:not(.cookieControl__ControlButton), #mc-embedded-subscribe {
+  button:not(.cookieControl__ControlButton),
+  #mc_embed_signup #mc-embedded-subscribe {
     height: auto;
     width: auto;
     max-height: 35px;
@@ -418,7 +419,7 @@
           <template v-slot:bar>
             <p>
               We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
-              <nuxt-link v-scroll-to="{ el: '#nav--top', duratiob: 1200, easing: 'ease' }" class="input--option" to="/cookie-policy/">
+              <nuxt-link class="input--option" to="/cookie-policy/">
                 <b>Cookies Policy</b>.
               </nuxt-link>
             </p>
@@ -467,25 +468,12 @@ export default {
   data () {
     return {
       openNav: false,
-      descSub: 'Newsletter',
-      scrollpx: 0,
       metaHelper: {
         title: 'Train In Blocks',
         description: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.',
         image: 'https://traininblocks.com/android-chrome-512x512.png',
         url: 'https://traininblocks.com'
       }
-    }
-  },
-  mounted () {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  beforeDestroy () {
-    window.removeEventListener('scroll', this.handleScroll)
-  },
-  methods: {
-    handleScroll () {
-      this.scrollpx = window.scrollY
     }
   },
   head () {
