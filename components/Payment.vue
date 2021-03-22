@@ -29,7 +29,7 @@
 <template>
   <div>
     <h1>
-      Pricing
+      Use the code TRIAL to get 14 days free
     </h1>
     <div class="container--pricing">
       <div class="product_container">
