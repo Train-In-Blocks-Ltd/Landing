@@ -29,7 +29,7 @@
 <template>
   <div>
     <h1>
-      Try it with our 14-day free trial
+      Pricing
     </h1>
     <div class="container--pricing">
       <div class="product_container">
