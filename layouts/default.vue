@@ -48,10 +48,16 @@
     margin: 1rem 0
   }
 
+  /* MCE */
+  #mc-embedded-subscribe-form label {
+    font-weight: bold
+  }
+
   /* Inputs */
   input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]),
   select,
-  textarea {
+  textarea,
+  #mce-EMAIL {
     outline: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -68,7 +74,8 @@
   }
   input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):not(:focus):hover,
   select:hover,
-  textarea:hover {
+  textarea:hover,
+  #mce-EMAIL:hover {
     opacity: .6
   }
   input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):disabled {
@@ -76,16 +83,19 @@
     opacity: .6
   }
   input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):focus,
-  textarea:focus {
+  textarea:focus,
+  #mce-EMAIL:focus {
     border: 1px solid #282828
   }
   input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).small_border_radius,
   select.small_border_radius,
-  textarea.small_border_radius {
+  textarea.small_border_radius,
+  #mce-EMAIL.small_border_radius {
     border-radius: 5px
   }
   input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).width_300,
-  select.width_300 {
+  select.width_300,
+  #mce-EMAIL.width_300 {
     width: 300px
   }
   input[type=color] {
@@ -127,7 +137,7 @@
 
   /* Box buttons */
   button:not(.cookieControl__ControlButton),
-  #mc_embed_signup #mc-embedded-subscribe {
+  #mc-embedded-subscribe {
     height: auto;
     width: auto;
     max-height: 35px;
@@ -147,13 +157,16 @@
     background-color: var(--base_dark) !important;
     transition: color .6s, background-color .6s, opacity .2s, transform .1s cubic-bezier(.165, .84, .44, 1)
   }
-  button:hover:not(:disabled):not(.cookieControl__ControlButton), #mc-embedded-subscribe:hover {
+  button:hover:not(:disabled):not(.cookieControl__ControlButton),
+  #mc-embedded-subscribe:hover {
     opacity: .6
   }
-  button:active:not(:disabled), #mc-embedded-subscribe:active {
+  button:active:not(:disabled),
+  #mc-embedded-subscribe:active {
     transform: scale(.96)
   }
-  button:focus, #mc-embedded-subscribe:focus {
+  button:focus,
+  #mc-embedded-subscribe:focus {
     box-shadow: 0 0 0 4px rgba(76, 91, 106, .5)
   }
   button:disabled,
@@ -386,13 +399,20 @@
           <nuxt-link class="text--large input--option" to="/" @click.native="openNav = false">
             Welcome
           </nuxt-link>
-          <nuxt-link class="text--large input--option" to="/blog/" @click.native="openNav = !openNav">
+          <nuxt-link class="text--large input--option" to="/blog/" @click.native="openNav = false">
             Blog
           </nuxt-link>
-          <nuxt-link class="text--large input--option" to="/dev/" @click.native="openNav = !openNav">
+          <nuxt-link class="text--large input--option" to="/dev/" @click.native="openNav = false">
             News
           </nuxt-link>
-          <nuxt-link class="text--large input--option" to="/help/" @click.native="openNav = !openNav">
+          <a
+            href="javascript:void(0)"
+            class="text--large input--option"
+            @click="openNav = false, scroll()"
+          >
+            Subscribe
+          </a>
+          <nuxt-link class="text--large input--option" to="/help/" @click.native="openNav = false">
             Help
           </nuxt-link>
         </div>
@@ -426,10 +446,46 @@
           </template>
         </CookieControl>
         <div class="social-bar">
-          <a target="_blank" href="https://www.facebook.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" /></a>
-          <a target="_blank" href="https://www.instagram.com/traininblocks"><inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" /></a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/traininblocks"
+          >
+            <inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/traininblocks"
+          >
+            <inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" />
+          </a>
         </div>
       </div>
+      <form
+        id="mc-embedded-subscribe-form"
+        action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
+        method="post"
+        name="mc-embedded-subscribe-form"
+        class="validate animated fadeInLeft"
+        target="_blank"
+        novalidate
+      >
+        <label for="mce-EMAIL">Sign up to our newsletter</label><br><br>
+        <input
+          id="mce-EMAIL"
+          type="email"
+          value=""
+          name="EMAIL"
+          class="email small_border_radius width_300"
+          placeholder="Email"
+          required
+        ><br><br>
+        <div style="position: absolute; left: -5000px" aria-hidden="true">
+          <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
+        </div>
+        <div class="clear">
+          <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
+        </div>
+      </form><br>
       <div>
         <nuxt-link class="input--option" to="/gdpr/">
           GDPR Statement
@@ -474,6 +530,11 @@ export default {
         image: 'https://traininblocks.com/android-chrome-512x512.png',
         url: 'https://traininblocks.com'
       }
+    }
+  },
+  methods: {
+    scroll () {
+      document.getElementById('mc-embedded-subscribe-form').scrollIntoView({ behavior: 'smooth' })
     }
   },
   head () {
