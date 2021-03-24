@@ -7,8 +7,8 @@
     --border_rad_large: 10px;
     --back: #F9F9F9;
     --fore: white;
-    --base_dark: #181E25;
-    --base_light: #63676C;
+    --base_dark: #282828;
+    --base_light: #484848;
     --base_accent: white
   }
   body {
@@ -487,16 +487,16 @@
         </div>
       </form><br>
       <div>
-        <nuxt-link class="input--option" to="/gdpr/">
+        <nuxt-link class="input--option" to="/legal/gdpr/">
           GDPR Statement
         </nuxt-link>
-        <nuxt-link class="input--option" to="/privacy-policy/">
+        <nuxt-link class="input--option" to="/legal/privacy-policy/">
           Privacy Policy
         </nuxt-link>
-        <nuxt-link class="input--option" to="/cookie-policy/">
+        <nuxt-link class="input--option" to="/legal/cookie-policy/">
           Cookie Policy
         </nuxt-link>
-        <nuxt-link class="input--option" to="/terms-conditions/">
+        <nuxt-link class="input--option" to="/legal/terms-and-conditions/">
           Terms & Conditions
         </nuxt-link>
         <a class="input--option" href="https://status.traininblocks.com">
