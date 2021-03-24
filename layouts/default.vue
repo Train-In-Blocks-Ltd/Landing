@@ -174,6 +174,10 @@
     cursor: not-allowed;
     opacity: .6
   }
+  button.cancel:hover {
+    /* stylelint-disable-next-line */
+    background-color: darkred !important
+  }
 
   /* GLOBAL: NAV */
   #logo--home {

@@ -19,6 +19,13 @@
   margin: auto 0
 }
 
+/* Checkout */
+.checkout {
+  display: grid;
+  grid-gap: 2rem;
+  margin-top: 4rem
+}
+
 @media (max-width: 992px) {
   .container--pricing {
     grid-template-columns: 1fr
@@ -29,64 +36,73 @@
 <template>
   <div>
     <h1>
-      Pricing
+      {{ !checkingOut ? 'Pricing' : `Checkout` }}
     </h1>
-    <div class="container--pricing">
-      <div class="product_container">
+    <div v-if="!checkingOut" class="container--pricing">
+      <div
+        v-for="(product, index) in products"
+        :key="`product_${index}`"
+        class="product_container"
+      >
         <div>
           <h1>
-            £102
+            {{ product.price }}
           </h1>
-          <button @click="checkout(yearly)">
+          <button @click="checkingOut = true, selectedProduct = product">
             Select
           </button>
         </div>
         <div>
           <h2>
-            Yearly
+            {{ product.name }}
           </h2>
           <p>
-            Save 15% when you sign up to our annual plan — an even better deal.
-          </p>
-        </div>
-      </div>
-      <div class="product_container">
-        <div>
-          <h1>
-            £10
-          </h1>
-          <button @click="checkout(monthly)">
-            Select
-          </button>
-        </div>
-        <div>
-          <h2>
-            Monthly
-          </h2>
-          <p>
-            Gets you full access to the app for a amazing price on a recurring payment.
-          </p>
-        </div>
-      </div>
-      <div class="product_container">
-        <div>
-          <h1>
-            £15
-          </h1>
-          <button @click="checkout(supporter)">
-            Select
-          </button>
-        </div>
-        <div>
-          <h2>
-            Supporter
-          </h2>
-          <p>
-            Show some love and help us deliver an outstanding service to you. It's the same as the monthly plan, but with an added bonus of good karma.
+            {{ product.desc }}
           </p>
         </div>
       </div>
     </div>
+    <form v-else class="checkout">
+      <input
+        v-model="checkout_form.email"
+        class="small_border_radius width_300"
+        type="email"
+        placeholder="Email"
+        aria-label="Email"
+        required
+      >
+      <input
+        v-model="checkout_form.password"
+        class="small_border_radius width_300"
+        type="password"
+        placeholder="Password"
+        aria-label="Password"
+        required
+      >
+      <input
+        v-model="checkout_form.confirmPassword"
+        class="small_border_radius width_300"
+        type="password"
+        placeholder="Confirm password"
+        aria-label="Confirm password"
+        required
+      >
+      <div>
+        <button
+          :disabled="checkout_form.password !== checkout_form.confirmPassword || checkout_form.password === ''"
+          type="submit"
+        >
+          Submit
+        </button>
+        <button
+          type="button"
+          class="cancel"
+          @click.prevent="checkingOut = false, selectedProduct = null, checkout_form.email = '', checkout_form.password = '', checkout_form.confirmPassword = ''"
+        >
+          Cancel
+        </button>
+      </div>
+    </form>
   </div>
 </template>
 
@@ -97,6 +113,21 @@ import { loadStripe } from '@stripe/stripe-js'
 export default {
   data () {
     return {
+      checkout_form: {
+        email: '',
+        password: '',
+        confirmPassword: ''
+      },
+      checkingOut: false,
+      selectedProduct: null,
+      products: [
+        { name: 'Yearly', price: '£102', desc: 'Save 15% when you sign up to our annual plan — an even better deal.' },
+        { name: 'Monthly', price: '£10', desc: 'Gets you full access to the app for a amazing price on a recurring payment.' },
+        { name: 'Supporter', price: '£15', desc: 'Show some love and help us deliver an outstanding service to you. It\'s the same as the monthly plan, but with an added bonus of good karma.' }
+      ],
+
+      // OLD DATA
+
       monthly: [
         {
           price: 'price_1GtvcPBYbiJubfJM2voqpLIo',
