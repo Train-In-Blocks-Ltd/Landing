@@ -308,13 +308,6 @@
     background: var(--base_light)
   }
 
-  /* Animimations */
-  @keyframes showIn {
-    to {
-      opacity: 1
-    }
-  }
-
   /* Responsiveness */
   @media (min-width: 1440px) {
     .paper--title {

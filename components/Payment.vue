@@ -35,9 +35,17 @@
 
 <template>
   <div>
-    <h1>
-      {{ !checkingOut ? 'Pricing' : `Checkout` }}
-    </h1>
+    <div>
+      <h1 v-if="!checkingOut">
+        Pricing
+      </h1>
+      <h1 v-else>
+        You've chosen a <u>{{ selectedProduct.name.toLowerCase() }}</u> subscripton for <u>{{ selectedProduct.price }}</u>
+      </h1>
+      <p v-if="checkingOut">
+        You will be charged <u>{{ selectedProduct.timeframe }}</u> on the date that you have signed up with our platform
+      </p>
+    </div>
     <div v-if="!checkingOut" class="container--pricing">
       <div
         v-for="(product, index) in products"
@@ -121,9 +129,9 @@ export default {
       checkingOut: false,
       selectedProduct: null,
       products: [
-        { name: 'Yearly', price: '£102', desc: 'Save 15% when you sign up to our annual plan — an even better deal.' },
-        { name: 'Monthly', price: '£10', desc: 'Gets you full access to the app for a amazing price on a recurring payment.' },
-        { name: 'Supporter', price: '£15', desc: 'Show some love and help us deliver an outstanding service to you. It\'s the same as the monthly plan, but with an added bonus of good karma.' }
+        { name: 'Yearly', price: '£102', timeframe: 'per year', desc: 'Save 15% when you sign up to our annual plan — an even better deal.' },
+        { name: 'Monthly', price: '£10', timeframe: 'per month', desc: 'Gets you full access to the app for a amazing price on a recurring payment.' },
+        { name: 'Supporter', price: '£15', timeframe: 'per month', desc: 'Show some love and help us deliver an outstanding service to you. It\'s the same as the monthly plan, but with an added bonus of good karma.' }
       ],
 
       // OLD DATA
