@@ -2,6 +2,9 @@
   .legal_html h2 {
     margin-top: 3rem
   }
+  .legal_html h3 {
+    margin-top: 2rem
+  }
   .legal_html li {
     list-style-type: lower-roman
   }

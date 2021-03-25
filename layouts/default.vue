@@ -40,6 +40,9 @@
     font-size: 1.4rem;
     color: var(--base_dark)
   }
+  h3 {
+    color: var(--base_dark)
+  }
   p {
     line-height: 1.4;
     margin: 1rem 0
@@ -484,16 +487,13 @@
         </div>
       </form><br>
       <div>
-        <nuxt-link class="input--option" to="/legal/gdpr/">
-          GDPR Statement
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/legal/privacy-policy/">
+        <nuxt-link class="input--option" to="/legal/privacy-and-data-policy/">
           Privacy Policy
         </nuxt-link>
-        <nuxt-link class="input--option" to="/legal/cookie-policy/">
+        <nuxt-link class="input--option" to="/legal/cookies-policy/">
           Cookie Policy
         </nuxt-link>
-        <nuxt-link class="input--option" to="/legal/terms-and-conditions/">
+        <nuxt-link class="input--option" to="/legal/terms-of-use/">
           Terms & Conditions
         </nuxt-link>
         <a class="input--option" href="https://status.traininblocks.com">
