@@ -52,6 +52,9 @@
   }
 
   /* MCE */
+  #mc-embedded-subscribe-form {
+    margin-bottom: 2rem
+  }
   #mc-embedded-subscribe-form label {
     font-weight: bold
   }
