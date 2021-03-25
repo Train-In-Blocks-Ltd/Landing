@@ -445,7 +445,7 @@
           <template v-slot:bar>
             <p>
               We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
-              <nuxt-link class="input--option" to="/cookie-policy/">
+              <nuxt-link class="input--option" to="/legal/cookies-policy/">
                 <b>Cookies Policy</b>.
               </nuxt-link>
             </p>
@@ -494,13 +494,13 @@
       </form><br>
       <div>
         <nuxt-link class="input--option" to="/legal/privacy-and-data-policy/">
-          Privacy Policy
+          Privacy and Data Policy
         </nuxt-link>
         <nuxt-link class="input--option" to="/legal/cookies-policy/">
-          Cookie Policy
+          Cookies Policy
         </nuxt-link>
         <nuxt-link class="input--option" to="/legal/terms-of-use/">
-          Terms & Conditions
+          Terms of Use
         </nuxt-link>
         <a class="input--option" href="https://status.traininblocks.com">
           Status
