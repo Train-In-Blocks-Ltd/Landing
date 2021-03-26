@@ -402,19 +402,19 @@
           <nuxt-link class="text--large input--option" to="/" @click.native="openNav = false">
             Welcome
           </nuxt-link>
+          <a
+            href="javascript:void(0)"
+            class="text--large input--option"
+            @click="openNav = false, scroll()"
+          >
+            Pricing
+          </a>
           <nuxt-link class="text--large input--option" to="/blog/" @click.native="openNav = false">
             Blog
           </nuxt-link>
           <nuxt-link class="text--large input--option" to="/dev/" @click.native="openNav = false">
             News
           </nuxt-link>
-          <a
-            href="javascript:void(0)"
-            class="text--large input--option"
-            @click="openNav = false, scroll()"
-          >
-            Subscribe
-          </a>
           <nuxt-link class="text--large input--option" to="/help/" @click.native="openNav = false">
             Help
           </nuxt-link>
@@ -534,7 +534,7 @@ export default {
   },
   methods: {
     scroll () {
-      document.getElementById('mc-embedded-subscribe-form').scrollIntoView({ behavior: 'smooth' })
+      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
     }
   },
   head () {

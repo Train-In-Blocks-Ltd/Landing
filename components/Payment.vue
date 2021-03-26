@@ -34,7 +34,7 @@
 </style>
 
 <template>
-  <div>
+  <div id="pricing">
     <div>
       <h1 v-if="!checkingOut">
         Pricing
