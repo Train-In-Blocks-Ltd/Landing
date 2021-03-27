@@ -1,7 +1,7 @@
 <style scoped>
   a {
     text-decoration: none;
-    color: #282828
+    color: var(--base_dark)
   }
 </style>
 

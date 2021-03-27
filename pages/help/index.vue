@@ -46,7 +46,7 @@
     transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
   }
   .help-post__link-text {
-    color: #282828;
+    color: var(--base_dark);
     margin: auto 0;
     text-decoration: none
   }

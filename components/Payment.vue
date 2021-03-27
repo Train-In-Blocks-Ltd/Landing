@@ -7,9 +7,9 @@
 }
 .product_container {
   padding: 2rem;
-  background-color: white;
+  background-color: var(--fore);
   border-radius: 10px;
-  box-shadow: 0 0 20px 10px #28282808
+  box-shadow: var(--low_shadow)
 }
 .product_container > div:first-child {
   display: flex;
@@ -43,7 +43,7 @@
         You've chosen a <u>{{ selectedProduct.name.toLowerCase() }}</u> subscripton for <u>{{ selectedProduct.price }}</u>
       </h1>
       <p v-if="checkingOut">
-        You will be charged <u>{{ selectedProduct.timeframe }}</u> on the date that you have signed up with our platform
+        You will be charged <u>{{ selectedProduct.timeframe }}</u> on the date that you've signed up on our platform
       </p>
     </div>
     <div v-if="!checkingOut" class="container--pricing">

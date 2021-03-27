@@ -3,13 +3,14 @@
 
   /* GLOBAL */
   :root {
-    --low_shadow: 0 0 20px 10px #181E2510;
+    --low_shadow: 0 0 20px 10px #28282808;
     --border_rad_large: 10px;
     --back: #F9F9F9;
     --fore: white;
     --base_dark: #282828;
-    --base_light: #484848;
-    --base_accent: white
+    --base_light: #585858;
+    --base_accent: white;
+    --overlay: rgba(255, 255, 255, .95)
   }
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -50,6 +51,9 @@
   li {
     margin: 1rem 0
   }
+  a, b {
+    color: var(--base_dark)
+  }
 
   /* MCE */
   #mc-embedded-subscribe-form {
@@ -67,12 +71,13 @@
     outline: none;
     -moz-appearance: none;
     -webkit-appearance: none;
+    color: var(--base_dark);
     width: 100%;
     padding: .6rem;
     resize: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    border: 1px solid #28282840;
+    border: 1px solid var(--base_light);
     border-radius: 8px;
     background-color: transparent;
     box-shadow: none;
@@ -91,7 +96,7 @@
   input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):focus,
   textarea:focus,
   #mce-EMAIL:focus {
-    border: 1px solid #282828
+    border: 1px solid var(--base_dark)
   }
   input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).small_border_radius,
   select.small_border_radius,
@@ -113,7 +118,7 @@
     transition: all .4s cubic-bezier(.165, .84, .44, 1)
   }
   ::placeholder {
-    color: #28282899;
+    color: var(--base_light);
     opacity: 1; /* Firefox */
   }
 
@@ -134,7 +139,7 @@
     margin: 0
   }
   .back_text {
-    color: #282828;
+    color: var(--base_dark);
     transition: .6s all cubic-bezier(.165, .84, .44, 1)
   }
   .back_text:hover {
@@ -173,7 +178,7 @@
   }
   button:focus,
   #mc-embedded-subscribe:focus {
-    box-shadow: 0 0 0 4px rgba(76, 91, 106, .5)
+    box-shadow: var(--low_shadow)
   }
   button:disabled,
   button[disabled] {
@@ -197,6 +202,12 @@
     height: 8vh;
     animation-delay: 100ms
   }
+  .container--nav > div {
+    display: flex
+  }
+  .container--nav > div > button {
+    margin-right: 1rem
+  }
   .wrapper--nav-items {
     display: grid;
     text-align: right;
@@ -206,22 +217,23 @@
     width: 100%;
     z-index: 2
   }
+  .wrapper--nav-items > svg {
+    margin-left: auto
+  }
   .overlay {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, .95);
+    background-color: var(--overlay);
     z-index: 1
   }
 
   /* Nav Hover Animation */
   .nav-button {
     cursor: pointer;
-    transition: opacity .6s, transform .1s cubic-bezier(.165, .84, .44, 1);
-    margin-left: auto;
-    margin-bottom: 2rem
+    transition: opacity .6s, transform .1s cubic-bezier(.165, .84, .44, 1)
   }
   .nav-button:hover {
     opacity: .6
@@ -233,7 +245,7 @@
     position: relative;
     margin: 1rem 0;
     text-decoration: none;
-    color: #282828;
+    color: var(--base_dark);
     transition: 300ms
   }
   .input--option:hover {
@@ -260,6 +272,12 @@
   }
 
   /* GLOBAL: FOOTER */
+  .cookieControl__ModalContent {
+    background-color: var(--fore)
+  }
+  div.cookieControl__ModalContent *:not(button) {
+    color: var(--base_dark)
+  }
   .cookieControl__ControlButton:hover svg path {
     fill: white
   }
@@ -272,12 +290,19 @@
   .cookieControl__BarContainer p, .cookieControl__BarContainer button {
     font-size: .8rem
   }
+  div.cookieControl__Bar {
+    background-color: var(--fore)
+  }
   .cookieControl__Bar p {
+    color: var(--base_dark);
     margin-top: 0
+  }
+  .cookieControl button {
+    background-color: var(--fore)
   }
   footer {
     padding: 2rem 0;
-    border-top: 1px solid #28282820
+    border-top: 1px solid var(--base_light)
   }
   footer p {
     font-size: .8rem
@@ -323,7 +348,7 @@
   @media (max-width: 992px) {
     button:hover {
       background-color: transparent;
-      color: #282828
+      color: var(--base_dark)
     }
     .input--option.nuxt-link-exact-active:before {
       transform: scaleX(1);
@@ -348,10 +373,6 @@
     .paper--title {
       font-size: 3rem
     }
-    footer a.input--option {
-      display: grid;
-      margin: 1rem 0
-    }
     .input--option:hover {
       opacity: 1
     }
@@ -364,14 +385,14 @@
   }
   @media (max-width: 576px) {
     /* Containers */
+    .container--nav > div > button {
+      display: none
+    }
     .container--features {
       grid-gap: 2rem
     }
 
     /* Misc. */
-    #logo--home {
-      width: 8rem
-    }
     div.ql-editor {
       width: 300px
     }
@@ -426,9 +447,14 @@
       <nuxt-link to="/">
         <inline-svg id="logo--home" class="nav-button" :src="require('../assets/svg/LogoV12.svg')" />
       </nuxt-link>
-      <transition enter-active-class="animated fadeIn faster delay-1s" leave-active-class="animated fadeOut faster">
-        <inline-svg v-show="!openNav" class="nav-button" :src="require('../assets/svg/hamburger.svg')" @click="openNav = true" />
-      </transition>
+      <div>
+        <button @click="darkmode()">
+          {{ theme === 'Dark' ? 'Light' : 'Dark' }} mode
+        </button>
+        <transition enter-active-class="animated fadeIn faster delay-1s" leave-active-class="animated fadeOut faster">
+          <inline-svg v-show="!openNav" class="nav-button" :src="require('../assets/svg/hamburger.svg')" @click="openNav = true" />
+        </transition>
+      </div>
     </div>
     <div class="animated fadeIn">
       <transition enter-active-class="animated fadeIn delay-1s" leave-active-class="animated fadeOut">
@@ -523,6 +549,7 @@ export default {
   },
   data () {
     return {
+      theme: 'Light',
       openNav: false,
       metaHelper: {
         title: 'Train In Blocks',
@@ -533,6 +560,27 @@ export default {
     }
   },
   methods: {
+    darkmode () {
+      if (this.theme === 'Light') {
+        this.theme = 'Dark'
+        document.documentElement.style.setProperty('--low_shadow', '0 0 2px 0 #FFFFFF60')
+        document.documentElement.style.setProperty('--back', '#282828')
+        document.documentElement.style.setProperty('--fore', '#383838')
+        document.documentElement.style.setProperty('--base_dark', 'white')
+        document.documentElement.style.setProperty('--base_light', 'white')
+        document.documentElement.style.setProperty('--base_accent', '#282828')
+        document.documentElement.style.setProperty('--overlay', '#383838')
+      } else {
+        this.theme = 'Light'
+        document.documentElement.style.setProperty('--low_shadow', '0 0 20px 10px #28282808')
+        document.documentElement.style.setProperty('--back', '#F9F9F9')
+        document.documentElement.style.setProperty('--fore', 'white')
+        document.documentElement.style.setProperty('--base_dark', '#282828')
+        document.documentElement.style.setProperty('--base_light', '#585858')
+        document.documentElement.style.setProperty('--base_accent', 'white')
+        document.documentElement.style.setProperty('--overlay', 'rgba(255, 255, 255, .95)')
+      }
+    },
     scroll () {
       document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
     }
