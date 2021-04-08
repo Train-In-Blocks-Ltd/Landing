@@ -1,15 +1,15 @@
 <style scoped>
 .container--pricing {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template: 1fr 1fr / 1fr 1fr;
   grid-gap: 2rem;
   margin-top: 4rem
 }
 .product_container {
   padding: 2rem;
-  background-color: white;
+  background-color: var(--fore);
   border-radius: 10px;
-  box-shadow: 0 0 20px 10px #28282808
+  box-shadow: var(--low_shadow)
 }
 .product_container > div:first-child {
   display: flex;
@@ -27,62 +27,50 @@
 </style>
 
 <template>
-  <div>
-    <h1>
+  <div id="pricing">
+    <h2>
       Pricing
-    </h1>
+    </h2>
     <div class="container--pricing">
       <div class="product_container">
         <div>
-          <h1>
-            £102
-          </h1>
-          <button @click="checkout(yearly)">
-            Select
-          </button>
+          <h2>
+            Free
+          </h2>
+          <form action="https://app.traininblocks.com">
+            <button>
+              Try it now
+            </button>
+          </form>
         </div>
         <div>
-          <h2>
-            Yearly
-          </h2>
+          <h3>
+            Demo
+          </h3>
           <p>
-            Save 15% when you sign up to our annual plan — an even better deal.
+            Sign in to our demo account to see how our services can benefit you. You can find the details on the log-in page.
           </p>
         </div>
       </div>
-      <div class="product_container">
+      <div
+        v-for="(product, index) in products"
+        :key="`product_${index}`"
+        class="product_container"
+      >
         <div>
-          <h1>
-            £10
-          </h1>
-          <button @click="checkout(monthly)">
+          <h2>
+            {{ product.price }}
+          </h2>
+          <button @click="checkout(product.data)">
             Select
           </button>
         </div>
         <div>
-          <h2>
-            Monthly
-          </h2>
+          <h3>
+            {{ product.name }}
+          </h3>
           <p>
-            Gets you full access to the app for a amazing price on a recurring payment.
-          </p>
-        </div>
-      </div>
-      <div class="product_container">
-        <div>
-          <h1>
-            £15
-          </h1>
-          <button @click="checkout(supporter)">
-            Select
-          </button>
-        </div>
-        <div>
-          <h2>
-            Supporter
-          </h2>
-          <p>
-            Show some love and help us deliver an outstanding service to you. It's the same as the monthly plan, but with an added bonus of good karma.
+            {{ product.desc }}
           </p>
         </div>
       </div>
@@ -97,6 +85,31 @@ import { loadStripe } from '@stripe/stripe-js'
 export default {
   data () {
     return {
+      products: [
+        {
+          name: 'Yearly',
+          price: '£102',
+          timeframe: 'per year',
+          desc: 'Save 15% when you sign up to our annual plan — an even better deal.',
+          data: this.yearly
+        },
+        {
+          name: 'Monthly',
+          price: '£10',
+          timeframe: 'per month',
+          desc: 'Gets you full access to the app for a amazing price on a recurring payment.',
+          data: this.monthly
+        },
+        {
+          name: 'Supporter',
+          price: '£15',
+          timeframe: 'per month',
+          desc: 'Show some love and help us deliver an outstanding service to you. It\'s the same as the monthly plan, but with an added bonus of good karma.',
+          data: this.supporter
+        }
+      ],
+
+      // Checkout
       monthly: [
         {
           price: 'price_1GtvcPBYbiJubfJM2voqpLIo',

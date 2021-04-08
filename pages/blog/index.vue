@@ -32,7 +32,7 @@
     transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
   }
   .blog_post__link_text {
-    color: #282828;
+    color: var(--base_dark);
     margin: auto 0;
     text-decoration: none
   }
@@ -78,9 +78,9 @@
         <img :src="require(`../../static/blog-img/${post.attributes.img}`)">
         <div class="blog_post__content">
           <div>
-            <h2 class="no_margin">
+            <h3 class="no_margin">
               {{ post.attributes.title }}
-            </h2>
+            </h3>
             <p>
               {{ post.attributes.excerpt }}
             </p>

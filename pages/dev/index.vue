@@ -24,7 +24,7 @@
     transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
   }
   .dev_post__link_text {
-    color: #282828;
+    color: var(--base_dark);
     margin: auto 0;
     text-decoration: none
   }
@@ -67,14 +67,14 @@
     </h1>
     <div class="dev_container">
       <div v-for="(post, index) in posts" :key="`dev_${index}`" class="dev_post">
-        <h2 class="no_margin">
+        <h3 class="no_margin">
           {{ post.attributes.show ? post.attributes.date : 'Update currently in the making' }}
-        </h2>
+        </h3>
         <div v-if="post.attributes.show" class="dev_post__content">
           <div>
-            <h2 class="no_margin">
+            <h3 class="no_margin">
               {{ post.attributes.title }}
-            </h2>
+            </h3>
             <p>
               {{ post.attributes.excerpt }}
             </p>
@@ -86,9 +86,9 @@
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
           </div>
         </div>
-        <h2 v-else class="accent_text no_margin">
+        <h3 v-else class="accent_text no_margin">
           Check again soon...
-        </h2>
+        </h3>
       </div>
     </div>
   </div>

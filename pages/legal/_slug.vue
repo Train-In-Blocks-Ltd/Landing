@@ -1,13 +1,15 @@
 <style>
-  .legal_html h2 {
-    margin-top: 3rem
-  }
-  .legal_html h3 {
-    margin-top: 2rem
-  }
-  .legal_html li {
-    list-style-type: lower-roman
-  }
+.legal_html h2 {
+  font-size: 1.4rem;
+  margin-top: 3rem
+}
+.legal_html h3 {
+  font-size: 1rem;
+  margin-top: 2rem
+}
+.legal_html li {
+  list-style-type: lower-roman
+}
 </style>
 
 <style scoped>

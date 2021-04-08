@@ -28,15 +28,15 @@
     <h1>
       How do we compare against <b>{{ details.name }}?</b>
     </h1>
-    <h1 class="accent_text">
+    <h2 class="accent_text">
       Here's a breakdown...
-    </h1>
+    </h2>
     <div class="spacer" />
     <div class="container--compare">
       <div class="compare_item">
-        <h2>
+        <h3>
           Train In Blocks
-        </h2>
+        </h3>
         <p>
           £10 per month. Simple right?
         </p>
@@ -45,9 +45,9 @@
         </p>
       </div>
       <div class="compare_item">
-        <h2>
+        <h3>
           {{ details.name }}
-        </h2>
+        </h3>
         <p>
           {{ details.price }}
         </p>
