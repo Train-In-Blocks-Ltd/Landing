@@ -79,25 +79,25 @@
     <h1>
       Need help with something?
     </h1>
-    <h1 class="accent_text">
+    <h2 class="accent_text">
       <u
         class="click_here"
         @click="scroll()"
       > Click here</u>
       to get in touch or browse our guides
-    </h1>
+    </h2>
     <div class="container--help">
       <div v-for="post in posts" :key="post.attributes.title" class="help-post">
         <div>
-          <h1 class="text--xlarge no_margin number_text">
+          <h2 class="text--xlarge no_margin number_text">
             {{ post.attributes.id }}
-          </h1>
+          </h2>
         </div>
         <div class="help-post__top-wrapper">
           <div>
-            <h2 class="no_margin">
+            <h3 class="no_margin">
               {{ post.attributes.title }}
-            </h2>
+            </h3>
             <p>
               {{ post.attributes.excerpt }}
             </p>
@@ -119,9 +119,9 @@
       netlify
       @submit.prevent="send_message"
     >
-      <h1>
+      <h2>
         Need something more specific?
-      </h1>
+      </h2>
       <input
         v-model="contactForm.name"
         name="name"

@@ -19,7 +19,7 @@
     grid-template-columns: .6fr 1fr;
     grid-gap: 4rem
   }
-  .image_item h1 {
+  .image_item h2 {
     margin: auto
   }
   .image_item img {
@@ -67,9 +67,9 @@
         :key="`img_${index}`"
       >
         <div class="image_item">
-          <h1>
+          <h2>
             {{ item.desc }}
-          </h1>
+          </h2>
           <img :src="require(`../assets/images/home/${item.img}`)" :alt="item.alt">
         </div>
         <div class="spacer" />

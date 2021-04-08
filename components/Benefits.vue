@@ -31,9 +31,9 @@
     <div class="spacer--small" />
     <div class="container--benefits">
       <div v-for="(item, index) in benefits" :key="`benefit_${index}`" class="benefits">
-        <h2>
+        <h3>
           {{ item.subtitle }}
-        </h2>
+        </h3>
         <p>
           {{ item.desc }}
         </p>

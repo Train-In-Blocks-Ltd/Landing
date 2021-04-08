@@ -1,46 +1,50 @@
 <style>
-  .dev_html h2 {
-    margin-top: 3rem;
-    font-weight: lighter
-  }
+.dev_html h2 {
+  font-size: 1.4rem;
+  margin-top: 3rem
+}
+.dev_html h3 {
+  font-size: 1rem;
+  margin-top: 2rem
+}
 </style>
 
 <style scoped>
+.dev_body > img {
+  display: flex;
+  margin: auto;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: var(--low_shadow)
+}
+.back_text {
+  position: fixed;
+  top: 50vh;
+  left: 2rem;
+  transform: rotate(-90deg);
+  text-decoration: none
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
   .dev_body > img {
-    display: flex;
-    margin: auto;
-    width: 60%;
-    border-radius: 10px;
-    box-shadow: var(--low_shadow)
+    width: 100%
   }
   .back_text {
-    position: fixed;
-    top: 50vh;
-    left: 2rem;
-    transform: rotate(-90deg);
-    text-decoration: none
+    left: .8rem
   }
-
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    .dev_body > img {
-      width: 100%
-    }
-    .back_text {
-      left: .8rem
-    }
+}
+@media (max-width: 567px) {
+  .dev_body > img {
+    margin-top: 2rem
   }
-  @media (max-width: 567px) {
-    .dev_body > img {
-      margin-top: 2rem
-    }
-    .back_text {
-      top: 0;
-      left: 0;
-      font-size: 1.6rem;
-      position: static
-    }
+  .back_text {
+    top: 0;
+    left: 0;
+    font-size: 1.6rem;
+    position: static
   }
+}
 </style>
 
 <template>

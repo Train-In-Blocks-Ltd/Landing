@@ -78,9 +78,9 @@
         <img :src="require(`../../static/blog-img/${post.attributes.img}`)">
         <div class="blog_post__content">
           <div>
-            <h2 class="no_margin">
+            <h3 class="no_margin">
               {{ post.attributes.title }}
-            </h2>
+            </h3>
             <p>
               {{ post.attributes.excerpt }}
             </p>

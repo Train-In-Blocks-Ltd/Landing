@@ -1,31 +1,36 @@
 <style>
-  .help_html h2 {
-    margin-top: 3rem
-  }
+.help_html h2 {
+  font-size: 1.4rem;
+  margin-top: 3rem
+}
+.help_html h3 {
+  font-size: 1rem;
+  margin-top: 2rem
+}
 </style>
 
 <style scoped>
-  @media (min-width: 2560px) {
-    .help--body {
-      padding: 0 20rem
-    }
+@media (min-width: 2560px) {
+  .help--body {
+    padding: 0 20rem
   }
-  @media (max-width: 992px) {
-    .help--body {
-      padding: 0 6rem
-    }
+}
+@media (max-width: 992px) {
+  .help--body {
+    padding: 0 6rem
   }
-  @media (max-width: 768px) {
-    .help--body {
-      padding: 0 4rem
-    }
+}
+@media (max-width: 768px) {
+  .help--body {
+    padding: 0 4rem
   }
-  @media (max-width: 567px) {
-    .help--body {
-      padding: 0;
-      background-color: white
-    }
+}
+@media (max-width: 567px) {
+  .help--body {
+    padding: 0;
+    background-color: white
   }
+}
 </style>
 
 <template>

@@ -1,7 +1,12 @@
 <style>
-  .blog_html h2 {
-    margin-top: 3rem
-  }
+.blog_html h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem
+}
+.blog_html h3 {
+  font-size: 1rem;
+  margin-top: 3rem
+}
 </style>
 
 <style scoped>

@@ -33,15 +33,12 @@
     box-shadow: var(--low_shadow);
     max-width: 100%
   }
-  h1 {
+  h1, h2 {
     font-size: 2rem;
     color: var(--base_dark)
   }
-  h2 {
-    font-size: 1.4rem;
-    color: var(--base_dark)
-  }
   h3 {
+    font-size: 1.4rem;
     color: var(--base_dark)
   }
   p {
