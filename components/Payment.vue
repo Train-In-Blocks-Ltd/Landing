@@ -91,41 +91,21 @@ export default {
           price: '£102',
           timeframe: 'per year',
           desc: 'Save 15% when you sign up to our annual plan — an even better deal.',
-          data: this.yearly
+          data: [{ price: 'price_1GtvcPBYbiJubfJM7nWmNywN', quantity: 1 }]
         },
         {
           name: 'Monthly',
           price: '£10',
           timeframe: 'per month',
           desc: 'Gets you full access to the app for a amazing price on a recurring payment.',
-          data: this.monthly
+          data: [{ price: 'price_1GtvcPBYbiJubfJM2voqpLIo', quantity: 1 }]
         },
         {
           name: 'Supporter',
           price: '£15',
           timeframe: 'per month',
           desc: 'Show some love and help us deliver an outstanding service to you. It\'s the same as the monthly plan, but with an added bonus of good karma.',
-          data: this.supporter
-        }
-      ],
-
-      // Checkout
-      monthly: [
-        {
-          price: 'price_1GtvcPBYbiJubfJM2voqpLIo',
-          quantity: 1
-        }
-      ],
-      yearly: [
-        {
-          price: 'price_1GtvcPBYbiJubfJM7nWmNywN',
-          quantity: 1
-        }
-      ],
-      supporter: [
-        {
-          price: 'price_1IFGHBBYbiJubfJMNHoR9viV',
-          quantity: 1
+          data: [{ price: 'price_1IFGHBBYbiJubfJMNHoR9viV', quantity: 1 }]
         }
       ]
     }
