@@ -1,7 +1,7 @@
 <style scoped>
 .container--pricing {
   display: grid;
-  grid-template: 1fr / 1fr 1fr 1fr;
+  grid-template: 1fr 1fr / 1fr 1fr;
   grid-gap: 2rem;
   margin-top: 4rem
 }
@@ -32,7 +32,6 @@
       Pricing
     </h2>
     <div class="container--pricing">
-      <!-- Release on 3.2.3
       <div class="product_container">
         <div>
           <h2>
@@ -53,7 +52,6 @@
           </p>
         </div>
       </div>
-      -->
       <div
         v-for="(product, index) in products"
         :key="`product_${index}`"
