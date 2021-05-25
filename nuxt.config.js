@@ -157,6 +157,26 @@ export default async () => {
         }
       ]
     },
+    optimizedImages: {
+      optimizeImages: true,
+      optimizeImagesInDev: true,
+      mozjpeg: {
+        quality: 70
+      },
+      pngquant: {
+        stripe: true
+      },
+      webp: {
+        quality: 70
+      },
+      svgo: {
+        plugins: [
+          { reusePaths: true },
+          { removeOffCanvasPaths: true },
+          { removeScriptElement: true }
+        ]
+      }
+    },
     pwa: {
       workbox: {
         offlineAnalytics: true,
