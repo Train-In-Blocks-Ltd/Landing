@@ -109,6 +109,7 @@ export default async () => {
       '@nuxtjs/eslint-module',
       // Doc: https://github.com/nuxt-community/stylelint-module
       '@nuxtjs/stylelint-module',
+      '@aceforth/nuxt-optimized-images',
       '@nuxtjs/pwa'
     ],
     /*
