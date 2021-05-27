@@ -171,8 +171,6 @@ export default async () => {
       },
       svgo: {
         plugins: [
-          { reusePaths: true },
-          { removeOffCanvasPaths: true },
           { removeScriptElement: true }
         ]
       }
