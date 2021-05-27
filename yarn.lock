@@ -1180,10 +1180,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@netlify/plugin-sitemap@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-sitemap/-/plugin-sitemap-0.7.0.tgz#ab83ae37262efa8487c3d776ca7da9227ed8caf2"
-  integrity sha512-AgxlxDLOvuOI9TnVH9H0rXZuqm9yZMIcmOMXy1uSF1Jx/bosX2smWWHwiuZlu2ifZVjoyN+q9nT/TmwLB0J6jw==
+"@netlify/plugin-sitemap@^0.8.1":
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-sitemap/-/plugin-sitemap-0.8.1.tgz#f1c40beb05e5f6775598e91c969535a6061cf5b7"
+  integrity sha512-mn8QU6sXejnUufYklkjitkNx4MCyPi+sosG8it57MP46o41FK5UQ1zleA3innTvpXAzUbwjXtSaBqtRmfzLl6Q==
   dependencies:
     globby "^10.0.1"
     mkdirp "^1.0.4"
