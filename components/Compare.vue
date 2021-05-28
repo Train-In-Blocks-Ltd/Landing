@@ -14,6 +14,11 @@
   grid-template-columns: repeat(auto-fill, 280px);
   grid-gap: 4rem
 }
+.app_name,
+.app_price:not(.grey) {
+  font-weight: bold;
+  color: var(--base_dark)
+}
 
 /* Repsonsive */
 @media (max-width: 992px) {
@@ -34,26 +39,36 @@
     <div class="spacer" />
     <div class="container--compare">
       <div class="compare_item">
-        <h3>
+        <p class="app_name">
           Train In Blocks
-        </h3>
-        <p>
-          £10 per month. Simple right?
         </p>
-        <p>
-          No limits on clients or programmes
+        <p class="text--small app_price">
+          £10 per month
         </p>
+        <ul>
+          <li>No limits on clients or programmes</li>
+          <li>Cancel anytime and with ease</li>
+          <li>No complicated pricing structure</li>
+          <li>Instant access</li>
+          <li>Client can access their programmes easily</li>
+          <li>Minimal and easy to use with features that are relevant</li>
+        </ul>
       </div>
       <div class="compare_item">
-        <h3>
+        <p class="app_name">
           {{ details.name }}
-        </h3>
-        <p>
+        </p>
+        <p class="text--small app_price grey">
           {{ details.price }}
         </p>
-        <p>
-          {{ details.price_desc }}
-        </p>
+        <ul>
+          <li
+            v-for="(desc, descIndex) in details.price_desc"
+            :key="`desc_${descIndex}`"
+          >
+            {{ desc }}
+          </li>
+        </ul>
       </div>
     </div>
     <div class="spacer" />

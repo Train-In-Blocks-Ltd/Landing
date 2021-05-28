@@ -11,17 +11,19 @@ export default {
   data () {
     return {
       info: {
-        name: 'My PT Hub',
-        slug: 'pthub',
-        price: '£20-£49 per month',
+        name: 'PTDistinction',
+        slug: 'ptdistinction',
+        price: '$19–$80 per month',
         price_desc: [
-          'Only 5 clients with the cheaper plan.'
+          'Limits on the number of clients, e.g. you can only have 3 clients on the cheapest plan',
+          'Complicated pricing',
+          'Hard to use and little flexibility'
         ]
       }
     }
   },
   beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'PTHub'
+    this.$parent.$parent.metaHelper.title = 'PTDistinction'
     this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
     this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
   }
