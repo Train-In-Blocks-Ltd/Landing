@@ -155,6 +155,14 @@
         required
       />
       <div>
+        <!--
+        <vue-hcaptcha
+          sitekey="94084b90-bad0-4412-a797-9791d72f80dc"
+          @verify="onVerify()"
+          @expired="onExpire()"
+          @error="onError()"
+        />
+        -->
         <button
           :disabled="contactForm.email !== contactForm.confirm || contactForm.name === '' || contactForm.email === '' || contactForm.message === ''"
           type="submit"
@@ -164,6 +172,21 @@
         <p v-if="contactForm.email !== contactForm.confirm" class="incomplete_form">
           Email does not match
         </p>
+        <!-- hCaptcha
+        <div v-if="verified" id="verified">
+          <h1>Successfully Verified!</h1>
+          <p>token: {{ token }}</p>
+          <p>eKey: {{ eKey }}</p>
+        </div>
+        <div v-if="expired" id="expired">
+          <h1>Challenge expired!</h1>
+        </div>
+
+        <div v-if="error" id="error">
+          <h1>Error:</h1>
+          <p>{{ error }}</p>
+        </div>
+        -->
         <div v-if="submitted">
           <p>
             {{ submitted }}
@@ -175,12 +198,14 @@
 </template>
 
 <script>
+// import VueHcaptcha from '@hcaptcha/vue-hcaptcha'
 import InlineSvg from 'vue-inline-svg'
 import axios from 'axios'
 
 export default {
   components: {
     InlineSvg
+    // VueHcaptcha
   },
   asyncData () {
     const resolve = require.context('~/content/help/', true, /\.md$/)
@@ -200,7 +225,15 @@ export default {
         confirm: '',
         message: ''
       },
-      submitted: null
+      submitted: null,
+
+      // hCaptcha
+
+      verified: false,
+      expired: false,
+      token: null,
+      eKey: null,
+      error: null
     }
   },
   created () {
@@ -212,6 +245,28 @@ export default {
     this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/help/'
   },
   methods: {
+
+    // hCaptcha
+
+    onVerify (token, ekey) {
+      this.verified = true
+      this.token = token
+      this.eKey = ekey
+    },
+    onExpire () {
+      this.verified = false
+      this.token = null
+      this.eKey = null
+      this.expired = true
+    },
+    onError (err) {
+      this.token = null
+      this.eKey = null
+      this.error = err
+    },
+
+    // Other
+
     scroll () {
       document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
     },
