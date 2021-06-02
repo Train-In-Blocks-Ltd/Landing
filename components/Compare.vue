@@ -6,7 +6,7 @@
 }
 .container--compare > div {
   padding: 2rem;
-  box-shadow: var(--low_shadow);
+  border: 3px solid var(--base_dark);
   border-radius: var(--border_rad_large)
 }
 .container--features {

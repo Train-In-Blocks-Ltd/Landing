@@ -6,9 +6,8 @@
   }
   .benefits {
     padding: 1rem 2rem;
-    background-color: var(--fore);
-    border-radius: var(--border_rad_large);
-    box-shadow: var(--low_shadow)
+    border: 3px solid var(--base_dark);
+    border-radius: var(--border_rad_large)
   }
 
   @media (max-width: 992px) {

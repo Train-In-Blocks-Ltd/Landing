@@ -7,8 +7,7 @@
   .dev_post {
     display: grid;
     grid-gap: 1rem;
-    background: var(--fore);
-    box-shadow: var(--low_shadow);
+    border: 3px solid var(--base_dark);
     border-radius: var(--border_rad_large);
     padding: 2rem
   }

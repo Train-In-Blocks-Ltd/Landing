@@ -16,17 +16,20 @@
   }
   .image_item {
     display: grid;
+    grid-template-areas: 'a b';
     grid-template-columns: .6fr 1fr;
     grid-gap: 4rem
   }
   .image_item h2 {
-    margin: auto
+    margin: auto;
+    text-align: right
   }
-  .image_item img {
-    transition: .6s all cubic-bezier(.165, .84, .44, 1)
+  .alt_image_item {
+    grid-template-areas: 'b a';
+    grid-template-columns: 1fr .6fr
   }
-  .image_item img:hover {
-    transform: scale(1.05)
+  .alt_image_item h2 {
+    text-align: left
   }
 
   @media (max-width: 992px) {
@@ -40,6 +43,9 @@
   @media (max-width: 768px) {
     .image_item {
       grid-template-columns: 1fr
+    }
+    .image_item h2 {
+      text-align: left
     }
   }
 </style>
@@ -66,11 +72,18 @@
         v-for="(item, index) in images"
         :key="`img_${index}`"
       >
-        <div class="image_item">
-          <h2>
+        <div
+          class="image_item"
+          :class="{ alt_image_item: (index + 1) % 2 == 0 }"
+        >
+          <h2 style="grid-area: a">
             {{ item.desc }}
           </h2>
-          <img :src="require(`../assets/images/home/${item.img}`)" :alt="item.alt">
+          <img
+            :src="require(`../assets/images/home/${item.img}`)"
+            :alt="item.alt"
+            style="grid-area: b"
+          >
         </div>
         <div class="spacer" />
       </div>

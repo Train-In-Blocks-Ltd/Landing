@@ -57,6 +57,7 @@
     margin-bottom: 2rem
   }
   #mc-embedded-subscribe-form label {
+    color: var(--base_dark);
     font-weight: bold
   }
 
@@ -495,7 +496,9 @@
         target="_blank"
         novalidate
       >
-        <label for="mce-EMAIL">Sign up to our newsletter</label><br><br>
+        <label for="mce-EMAIL">
+          Sign up to our newsletter
+        </label><br><br>
         <input
           id="mce-EMAIL"
           type="email"

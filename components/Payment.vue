@@ -7,9 +7,8 @@
 }
 .product_container {
   padding: 2rem;
-  background-color: var(--fore);
-  border-radius: 10px;
-  box-shadow: var(--low_shadow)
+  border: 3px solid var(--base_dark);
+  border-radius: 10px
 }
 .product_container > div:first-child {
   display: flex;
