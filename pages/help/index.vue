@@ -16,9 +16,6 @@
   .click_here:hover {
     opacity: .6
   }
-  .incomplete_form {
-    color: red
-  }
 
   /* Articles */
   .container--help {
@@ -144,14 +141,6 @@
         class="small_border_radius"
         required
       >
-      <input
-        v-model="contactForm.confirm"
-        name="confirm_email"
-        type="email"
-        placeholder="Verify email"
-        class="small_border_radius"
-        required
-      >
       <textarea
         v-model="contactForm.message"
         name="message"
@@ -162,14 +151,11 @@
       />
       <div>
         <button
-          :disabled="contactForm.email !== contactForm.confirm || contactForm.name === '' || contactForm.email === '' || contactForm.message === ''"
+          :disabled="contactForm.name === '' || contactForm.email === '' || contactForm.message === ''"
           type="submit"
         >
           Send
         </button>
-        <p v-if="contactForm.email !== contactForm.confirm" class="incomplete_form">
-          Email does not match
-        </p>
         <div v-if="submitted">
           <p>
             {{ submitted }}
