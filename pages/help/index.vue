@@ -229,10 +229,10 @@ export default {
         )
         .join('&')
     },
-    send_message () {
+    async send_message () {
       const self = this
       try {
-        axios.post(
+        await axios.post(
           '/',
           self.encode({
             'form-name': 'contact_form',
