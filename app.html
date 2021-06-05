@@ -5,22 +5,5 @@
   </head>
   <body {{ BODY_ATTRS }}>
     {{ APP }}
-    <form
-      method="post"
-      name="contact_form"
-      netlify
-      hidden
-    >
-        <input
-          name="name"
-        >
-        <input
-          name="email"
-        >
-        <textarea
-          name="message"
-        ></textarea>
-        <div data-netlify-recaptcha="true" />
-    </form>
   </body>
 </html>

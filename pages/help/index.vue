@@ -111,18 +111,23 @@
         </div>
       </div>
     </div>
+    <h2>
+      Need something more specific?
+    </h2>
     <form
       id="contact"
       class="contact_form"
       method="post"
       name="contact_form"
       netlify
-      data-netlify-recaptcha="true"
+      data-netlify-honeypot
       @submit.prevent="send_message"
     >
-      <h2>
-        Need something more specific?
-      </h2>
+      <input
+        type="hidden"
+        name="form-name"
+        value="contact_form"
+      >
       <input
         v-model="contactForm.name"
         name="name"
@@ -156,7 +161,6 @@
         required
       />
       <div>
-        <div data-netlify-recaptcha="true" />
         <button
           :disabled="contactForm.email !== contactForm.confirm || contactForm.name === '' || contactForm.email === '' || contactForm.message === ''"
           type="submit"
