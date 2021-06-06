@@ -1,53 +1,110 @@
-<style scoped>
-  /* Home Intro */
-  .home_intro {
-    margin: 0 auto;
-    width: 70%
+<style>
+/* Editing session anim */
+#editing-session .preview {
+  opacity: 1
+}
+#editing-session .editing {
+  opacity: 0
+}
+#editing-session.animate path.cursor {
+  animation: 1.4s cursorControl ease-in-out forwards
+}
+#editing-session.animate .preview {
+  animation: .1s hidePreview linear forwards;
+  animation-delay: 1.4s
+}
+#editing-session.animate .editing {
+  animation: .1s showEditing linear forwards;
+  animation-delay: 1.4s
+}
+@keyframes cursorControl {
+  0% {
+    transform: translate(0, 0)
   }
-  iframe {
-    display: flex;
-    margin: auto
+  95% {
+    transform: translate(-40%, 30%)
   }
+  90% {
+    transform: translate(-40%, 30%);
+    opacity: 1
+  }
+  95% {
+    transform: translate(-40%, 30%);
+    opacity: .4
+  }
+  100% {
+    transform: translate(-40%, 30%);
+    opacity: 1
+  }
+}
+@keyframes hidePreview {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0
+  }
+}
+@keyframes showEditing {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
+</style>
 
-  /* Images */
-  .container_images {
-    display: grid;
-    grid-gap: 6rem
+<style scoped>
+/* Home Intro */
+.home_intro {
+  margin: 0 auto;
+  width: 70%
+}
+iframe {
+  display: flex;
+  margin: auto
+}
+
+/* Svgs */
+.container_svg {
+  display: grid;
+  grid-gap: 6rem
+}
+.svg_item {
+  display: grid;
+  grid-template-areas: 'a b';
+  grid-template-columns: .6fr 1fr;
+  grid-gap: 4rem
+}
+.svg_item h2 {
+  margin: auto;
+  text-align: right
+}
+.alt_svg_item {
+  grid-template-areas: 'b a';
+  grid-template-columns: 1fr .6fr
+}
+.alt_svg_item h2 {
+  text-align: left
+}
+
+@media (max-width: 992px) {
+  .home_intro {
+    width: 100%
   }
-  .image_item {
-    display: grid;
-    grid-template-areas: 'a b';
-    grid-template-columns: .6fr 1fr;
-    grid-gap: 4rem
+  .svg_item img:hover {
+    transform: scale(1)
   }
-  .image_item h2 {
-    margin: auto;
-    text-align: right
+}
+@media (max-width: 768px) {
+  .svg_item {
+    grid-template-columns: 1fr
   }
-  .alt_image_item {
-    grid-template-areas: 'b a';
-    grid-template-columns: 1fr .6fr
-  }
-  .alt_image_item h2 {
+  .svg_item h2 {
     text-align: left
   }
-
-  @media (max-width: 992px) {
-    .home_intro {
-      width: 100%
-    }
-    .image_item img:hover {
-      transform: scale(1)
-    }
-  }
-  @media (max-width: 768px) {
-    .image_item {
-      grid-template-columns: 1fr
-    }
-    .image_item h2 {
-      text-align: left
-    }
-  }
+}
 </style>
 
 <template>
@@ -67,23 +124,25 @@
       />
     </div>
     <div class="spacer--large" />
-    <div class="container_images">
+    <div class="container_svg">
       <div
-        v-for="(item, index) in images"
-        :key="`img_${index}`"
+        v-for="(item, index) in svgs"
+        :key="`svg_${index}`"
+        @mouseenter="animateSvg(item.id, true)"
+        @mouseleave="animateSvg(item.id, false)"
       >
         <div
-          class="image_item"
-          :class="{ alt_image_item: (index + 1) % 2 == 0 }"
+          class="svg_item"
+          :class="{ alt_svg_item: (index + 1) % 2 == 0 }"
         >
           <h2 style="grid-area: a">
             {{ item.desc }}
           </h2>
-          <img
-            :src="require(`../assets/images/home/${item.img}`)"
-            :alt="item.alt"
+          <inline-svg
+            :id="item.id"
+            :src="require(`../assets/anim-elements/${item.id}.svg`)"
             style="grid-area: b"
-          >
+          />
         </div>
         <div class="spacer" />
       </div>
@@ -97,22 +156,21 @@
 </template>
 
 <script>
+import InlineSvg from 'vue-inline-svg'
 import Payment from '../components/Payment'
 import Benefits from '../components/Benefits'
 
 export default {
   components: {
+    InlineSvg,
     Payment,
     Benefits
   },
   data () {
     return {
       title: 'Want to train more clients effectively?',
-      images: [
-        { desc: 'Write in-depth plans for your clients', img: 'editor.png', alt: 'Powerful editor' },
-        { desc: 'Track and visualise data without spreadsheets', img: 'stats.png', alt: 'Statistics' },
-        { desc: 'Progress sessions quickly with your changes', img: 'progress.png', alt: 'Progress easily' },
-        { desc: 'Add important information like \'how to pay\' into your portfolio for your clients', img: 'portfolio.png', alt: 'Portfolio' }
+      svgs: [
+        { id: 'editing-session', desc: 'Write in-depth session plans quickly and with great tools' }
       ]
     }
   },
@@ -120,6 +178,11 @@ export default {
     this.$parent.$parent.metaHelper.title = 'Affordable Personal Training Software'
     this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
     this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
+  },
+  methods: {
+    animateSvg (id, animate) {
+      document.getElementById(id).setAttribute('class', animate ? 'animate' : '')
+    }
   }
 }
 </script>
