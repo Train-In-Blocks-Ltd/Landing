@@ -19,7 +19,7 @@ iframe {
 <template>
   <div id="home">
     <div class="home_intro">
-      <h1>
+      <h1 class="center_text">
         We've taken health and fitness programming to the next level.
       </h1>
       <div class="spacer" />
