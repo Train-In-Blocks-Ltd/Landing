@@ -1,13 +1,17 @@
 <style>
-/* Editing session anim */
-#editing-session .preview {
+/* Shared anim */
+#editing-session .preview,
+#client-user .placeholder {
   opacity: 1
 }
-#editing-session .editing {
+#editing-session .editing,
+#client-user .profile {
   opacity: 0
 }
+
+/* Editing-session */
 #editing-session.animate path.cursor {
-  animation: 1.4s cursorControl ease-in-out forwards
+  animation: 1.4s editingSessionCursor ease-in-out forwards
 }
 #editing-session.animate .preview {
   animation: .1s hidePreview linear forwards;
@@ -17,12 +21,23 @@
   animation: .1s showEditing linear forwards;
   animation-delay: 1.4s
 }
-@keyframes cursorControl {
+
+/* Editing-session */
+#client-user.animate path.cursor {
+  animation: 1.4s clientUserCursor ease-in-out forwards
+}
+#client-user.animate .placeholder {
+  animation: .1s hidePreview linear forwards;
+  animation-delay: 1.4s
+}
+#client-user.animate .profile {
+  animation: .1s showEditing linear forwards;
+  animation-delay: 1.4s
+}
+
+@keyframes editingSessionCursor {
   0% {
     transform: translate(0, 0)
-  }
-  95% {
-    transform: translate(-40%, 30%)
   }
   90% {
     transform: translate(-40%, 30%);
@@ -34,6 +49,23 @@
   }
   100% {
     transform: translate(-40%, 30%);
+    opacity: 1
+  }
+}
+@keyframes clientUserCursor {
+  0% {
+    transform: translate(0, 0)
+  }
+  90% {
+    transform: translate(-30%, -10%);
+    opacity: 1
+  }
+  95% {
+    transform: translate(-30%, -10%);
+    opacity: .4
+  }
+  100% {
+    transform: translate(-30%, -10%);
     opacity: 1
   }
 }
@@ -170,7 +202,8 @@ export default {
     return {
       title: 'Want to train more clients effectively?',
       svgs: [
-        { id: 'editing-session', desc: 'Write in-depth session plans quickly and with great tools' }
+        { id: 'editing-session', desc: 'Write in-depth session plans quickly and with great tools' },
+        { id: 'client-user', desc: 'Give access to your clients and recieve feedback' }
       ]
     }
   },

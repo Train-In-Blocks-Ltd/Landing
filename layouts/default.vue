@@ -23,7 +23,7 @@
     background-color: var(--back);
     scroll-behavior: smooth
   }
-  svg path {
+  svg path:not(.transparent) {
     fill: var(--base_dark)
   }
   img, video, iframe {
