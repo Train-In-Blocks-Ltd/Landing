@@ -71,6 +71,8 @@
         </ul>
       </div>
     </div>
+    <div class="spacer--large" />
+    <showcase />
     <div class="spacer" />
     <benefits />
     <div class="spacer" />
@@ -79,11 +81,13 @@
 </template>
 
 <script>
+import Showcase from '../components/Showcase'
 import Benefits from './Benefits.vue'
 import Payment from './Payment.vue'
 
 export default {
   components: {
+    Showcase,
     Payment,
     Benefits
   },
