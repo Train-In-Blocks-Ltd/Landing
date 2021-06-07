@@ -3,12 +3,17 @@
 .svg_item > svg .stroke_color {
   stroke: var(--base_dark)
 }
+.svg_item > svg .fill_color {
+  fill: var(--fore)
+}
 #editing-session .preview,
-#client-user .placeholder {
+#client-user .placeholder,
+#stats :is(.reps_data, .reps_desc, .regression_1) {
   opacity: 1
 }
 #editing-session .editing,
-#client-user .profile {
+#client-user .profile,
+#stats :is(.load_data, .load_desc, .dropdown, .regression_2) {
   opacity: 0
 }
 
@@ -17,25 +22,73 @@
   animation: 1.4s editingSessionCursor ease-in-out forwards
 }
 #editing-session.animate .preview {
-  animation: .1s hidePreview linear forwards;
+  animation: .1s hideEl linear forwards;
   animation-delay: 1.4s
 }
 #editing-session.animate .editing {
-  animation: .1s showEditing linear forwards;
+  animation: .1s showEl linear forwards;
   animation-delay: 1.4s
 }
 
-/* Editing-session */
+/* Client-user */
 #client-user.animate path.cursor {
   animation: 1.4s clientUserCursor ease-in-out forwards
 }
 #client-user.animate .placeholder {
-  animation: .1s hidePreview linear forwards;
+  animation: .1s hideEl linear forwards;
   animation-delay: 1.4s
 }
 #client-user.animate .profile {
-  animation: .1s showEditing linear forwards;
+  animation: .1s showEl linear forwards;
   animation-delay: 1.4s
+}
+
+/* Stats */
+#stats.animate path.cursor {
+  animation: 2.4s statsCursor ease-in-out forwards
+}
+#stats.animate .dropdown {
+  animation: 1.4s showHideDropdown linear forwards;
+  animation-delay: 1s
+}
+#stats.animate :is(.reps_data, .reps_desc) {
+  animation: .1s hideEl linear forwards;
+  animation-delay: 2.4s
+}
+#stats.animate :is(.load_data, .load_desc) {
+  animation: .1s showEl linear forwards;
+  animation-delay: 2.4s
+}
+#stats.animate :is(.point_1, .point_2,.point_3, .point_4, .point_5, .point_6, .point_7, .regression_1, .regression_2) {
+  transition: 1s transform, .1s opacity cubic-bezier(.165, .84, .44, 1);
+  transition-delay: 2.4s
+}
+#stats.animate .point_1 {
+  transform: translateY(5rem)
+}
+#stats.animate .point_2 {
+  transform: translateY(3rem)
+}
+#stats.animate .point_3 {
+  transform: translateY(0)
+}
+#stats.animate .point_4 {
+  transform: translateY(-2rem)
+}
+#stats.animate .point_5 {
+  transform: translateY(-6rem)
+}
+#stats.animate .point_6 {
+  transform: translateY(-10rem)
+}
+#stats.animate .point_7 {
+  transform: translateY(-15rem)
+}
+#stats.animate .regression_1 {
+  opacity: 0
+}
+#stats.animate .regression_2 {
+  opacity: 1
 }
 
 @keyframes editingSessionCursor {
@@ -72,7 +125,36 @@
     opacity: 1
   }
 }
-@keyframes hidePreview {
+@keyframes statsCursor {
+  0% {
+    transform: translate(0, 0)
+  }
+  40% {
+    transform: translate(-40%, 0%);
+    opacity: 1
+  }
+  45% {
+    transform: translate(-40%, 0%);
+    opacity: .4
+  }
+  50% {
+    transform: translate(-40%, 0%);
+    opacity: 1
+  }
+  90% {
+    transform: translate(-40%, 10%);
+    opacity: 1
+  }
+  95% {
+    transform: translate(-40%, 10%);
+    opacity: .4
+  }
+  100% {
+    transform: translate(-40%, 10%);
+    opacity: 1
+  }
+}
+@keyframes hideEl {
   from {
     opacity: 1
   }
@@ -80,12 +162,23 @@
     opacity: 0
   }
 }
-@keyframes showEditing {
+@keyframes showEl {
   from {
     opacity: 0
   }
   to {
     opacity: 1
+  }
+}
+@keyframes showHideDropdown {
+  0% {
+    opacity: 1
+  }
+  99% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0
   }
 }
 </style>
@@ -206,7 +299,8 @@ export default {
       title: 'Want to train more clients effectively?',
       svgs: [
         { id: 'editing-session', desc: 'Write in-depth session plans quickly and with great tools' },
-        { id: 'client-user', desc: 'Give access to your clients and recieve feedback' }
+        { id: 'client-user', desc: 'Give access to your clients and recieve feedback' },
+        { id: 'stats', desc: 'Track data without spreadsheets and visualise instantly' }
       ]
     }
   },
