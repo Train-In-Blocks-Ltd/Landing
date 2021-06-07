@@ -45,6 +45,20 @@ iframe {
   opacity: .6
 }
 
+/* Comparisons */
+.comparison_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem
+}
+.compare_link {
+  font-weight: bold;
+  transition: .6s all cubic-bezier(.165, .84, .44, 1)
+}
+.compare_link:hover {
+  opacity: .6
+}
+
 /* Responsiveness */
 @media (max-width: 992px) {
   .home_intro {
@@ -65,6 +79,9 @@ iframe {
   .latest_post_container {
     grid-template-columns: 1fr;
     grid-gap: 4rem
+  }
+  .comparison_container {
+    grid-template-columns: 1fr
   }
 }
 </style>
@@ -91,6 +108,20 @@ iframe {
     <benefits />
     <div class="spacer--large" />
     <payment />
+    <div class="spacer" />
+    <h2>
+      See how we compare against...
+    </h2>
+    <div class="comparison_container">
+      <nuxt-link
+        v-for="(compare, compareIndex) in comparisons"
+        :key="`compare_${compareIndex}`"
+        class="compare_link text--large"
+        :to="`/compare/${compare.slug}`"
+      >
+        {{ compare.name }}
+      </nuxt-link>
+    </div>
     <div class="spacer--large" />
     <h2>
       Recent blog posts
@@ -109,7 +140,7 @@ iframe {
           {{ blogPost.postDesc }}
         </p>
         <div class="blog_post__link">
-          <nuxt-link class="blog_post__link_text" :to="`/blog/${blogPost.slug}/`">
+          <nuxt-link class="blog_post__link_text" :to="`/blog/${blogPost.slug}`">
             Read more
           </nuxt-link>
           <inline-svg class="svg--read-more" :src="require('../assets/svg/Arrow.svg')" />
@@ -145,7 +176,14 @@ export default {
   },
   data () {
     return {
-      title: 'Want to train more clients effectively?'
+      title: 'Want to train more clients effectively?',
+      comparisons: [
+        { name: 'TrueCoach', slug: 'truecoach' },
+        { name: 'MyPTHub', slug: 'pthub' },
+        { name: 'PTminder', slug: 'ptminder' },
+        { name: 'PTDistinction', slug: 'ptdistinction' },
+        { name: 'Trainerize', slug: 'trainerize' }
+      ]
     }
   },
   beforeCreate () {
