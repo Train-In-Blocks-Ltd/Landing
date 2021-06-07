@@ -203,8 +203,11 @@
   .container--nav > div {
     display: flex
   }
-  .container--nav > div > button {
-    margin-right: 1rem
+  .container--nav > div > * {
+    margin: auto
+  }
+  .container--nav > div > *:last-child {
+    margin-left: 1.6rem
   }
   .wrapper--nav-items {
     display: grid;
@@ -431,9 +434,11 @@
           <nuxt-link class="text--large input--option" to="/blog/" @click.native="openNav = false">
             Blog
           </nuxt-link>
+          <!-- News
           <nuxt-link class="text--large input--option" to="/dev/" @click.native="openNav = false">
             News
           </nuxt-link>
+          -->
           <nuxt-link class="text--large input--option" to="/help/" @click.native="openNav = false">
             Help
           </nuxt-link>
@@ -446,9 +451,7 @@
         <inline-svg id="logo--home" class="nav-button" :src="require('../assets/svg/LogoV12.svg')" />
       </nuxt-link>
       <div>
-        <button @click="darkmode()">
-          {{ theme === 'Dark' ? 'Light' : 'Dark' }} mode
-        </button>
+        <darkmode-toggle />
         <transition enter-active-class="animated fadeIn faster delay-1s" leave-active-class="animated fadeOut faster">
           <inline-svg v-show="!openNav" class="nav-button" :src="require('../assets/svg/hamburger.svg')" @click="openNav = true" />
         </transition>
@@ -541,11 +544,13 @@
 
 <script>
 import InlineSvg from 'vue-inline-svg'
+import DarkmodeToggle from '../components/DarkmodeToggle.vue'
 
 export default {
   name: 'App',
   components: {
-    InlineSvg
+    InlineSvg,
+    DarkmodeToggle
   },
   data () {
     return {
@@ -560,27 +565,6 @@ export default {
     }
   },
   methods: {
-    darkmode () {
-      if (this.theme === 'Light') {
-        this.theme = 'Dark'
-        document.documentElement.style.setProperty('--low_shadow', '0 0 2px 0 #FFFFFF60')
-        document.documentElement.style.setProperty('--back', '#282828')
-        document.documentElement.style.setProperty('--fore', '#383838')
-        document.documentElement.style.setProperty('--base_dark', 'white')
-        document.documentElement.style.setProperty('--base_light', 'white')
-        document.documentElement.style.setProperty('--base_accent', '#282828')
-        document.documentElement.style.setProperty('--overlay', '#383838')
-      } else {
-        this.theme = 'Light'
-        document.documentElement.style.setProperty('--low_shadow', '0 0 20px 10px #28282808')
-        document.documentElement.style.setProperty('--back', '#F9F9F9')
-        document.documentElement.style.setProperty('--fore', 'white')
-        document.documentElement.style.setProperty('--base_dark', '#282828')
-        document.documentElement.style.setProperty('--base_light', '#585858')
-        document.documentElement.style.setProperty('--base_accent', 'white')
-        document.documentElement.style.setProperty('--overlay', 'rgba(255, 255, 255, .95)')
-      }
-    },
     scroll () {
       document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
     }
