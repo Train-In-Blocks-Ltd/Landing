@@ -380,11 +380,6 @@ footer a.input--option {
 }
 
 /* Responsiveness */
-@media (min-width: 1440px) {
-  .paper--title {
-    font-size: 3.5rem
-  }
-}
 @media (max-width: 992px) {
   button:hover {
     background-color: transparent;
@@ -401,6 +396,9 @@ footer a.input--option {
   }
 
   /* GLOBAL: CONTENT */
+  .text--xlarge {
+    font-size: 2.4rem
+  }
   .text--large {
     width: 100%;
     font-size: 2rem
@@ -410,9 +408,6 @@ footer a.input--option {
   }
 
   /* Misc. */
-  .paper--title {
-    font-size: 3rem
-  }
   .input--option:hover {
     opacity: 1
   }
@@ -498,9 +493,11 @@ footer a.input--option {
       </nuxt-link>
       <div>
         <darkmode-toggle />
-        <transition enter-active-class="animated fadeIn faster delay-1s" leave-active-class="animated fadeOut faster">
-          <inline-svg v-show="!openNav" class="nav-button" :src="require('../assets/svg/hamburger.svg')" @click="openNav = true" />
-        </transition>
+        <inline-svg
+          class="nav-button"
+          :src="require('../assets/svg/hamburger.svg')"
+          @click="openNav = true"
+        />
       </div>
     </div>
     <div class="animated fadeIn">

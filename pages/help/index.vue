@@ -58,7 +58,6 @@
   /* Responsiveness */
   @media (max-width: 768px) {
     .help-post {
-      display: grid;
       grid-gap: 2rem
     }
     .help-post__top-wrapper {

@@ -269,7 +269,7 @@ export default {
       entries.forEach((entry) => {
         entry.target.lastChild.setAttribute('class', entry.isIntersecting ? 'animate' : '')
       })
-    }, { threshold: 0.8 })
+    }, { threshold: 0.5 })
     document.querySelectorAll('.svg_item').forEach((svgItem) => {
       OBSERVER.observe(svgItem)
     })
