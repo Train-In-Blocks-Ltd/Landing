@@ -106,16 +106,15 @@ iframe {
 .svg_item {
   display: grid;
   grid-template-areas: 'a b';
-  grid-template-columns: .6fr 1fr;
-  grid-gap: 4rem
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 6rem
 }
 .svg_item h2 {
   margin: auto;
   text-align: right
 }
 .alt_svg_item {
-  grid-template-areas: 'b a';
-  grid-template-columns: 1fr .6fr
+  grid-template-areas: 'b a'
 }
 .alt_svg_item h2 {
   text-align: left
@@ -131,7 +130,10 @@ iframe {
 }
 @media (max-width: 768px) {
   .svg_item {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'a'
+      'b'
   }
   .svg_item h2 {
     text-align: left
@@ -160,8 +162,6 @@ iframe {
       <div
         v-for="(item, index) in svgs"
         :key="`svg_${index}`"
-        @mouseenter="animateSvg(item.id, true)"
-        @mouseleave="animateSvg(item.id, false)"
       >
         <div
           class="svg_item"
@@ -211,6 +211,16 @@ export default {
     this.$parent.$parent.metaHelper.title = 'Affordable Personal Training Software'
     this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
     this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
+  },
+  mounted () {
+    const OBSERVER = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        entry.target.lastChild.setAttribute('class', entry.isIntersecting ? 'animate' : '')
+      })
+    }, { threshold: 0.8 })
+    document.querySelectorAll('.svg_item').forEach((svgItem) => {
+      OBSERVER.observe(svgItem)
+    })
   },
   methods: {
     animateSvg (id, animate) {
