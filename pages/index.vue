@@ -1,5 +1,8 @@
 <style>
 /* Shared anim */
+.svg_item > svg .stroke_color {
+  stroke: var(--base_dark)
+}
 #editing-session .preview,
 #client-user .placeholder {
   opacity: 1
