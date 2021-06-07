@@ -265,19 +265,16 @@ export default {
     }
   },
   mounted () {
-    const OBSERVER = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        entry.target.lastChild.setAttribute('class', entry.isIntersecting ? 'animate' : '')
+    setTimeout(() => {
+      const OBSERVER = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          entry.target.lastChild.setAttribute('class', entry.isIntersecting ? 'animate' : '')
+        })
+      }, { threshold: 0.5 })
+      document.querySelectorAll('.svg_item').forEach((svgItem) => {
+        OBSERVER.observe(svgItem)
       })
-    }, { threshold: 0.5 })
-    document.querySelectorAll('.svg_item').forEach((svgItem) => {
-      OBSERVER.observe(svgItem)
-    })
-  },
-  methods: {
-    animateSvg (id, animate) {
-      document.getElementById(id).setAttribute('class', animate ? 'animate' : '')
-    }
+    }, 1000)
   }
 }
 </script>

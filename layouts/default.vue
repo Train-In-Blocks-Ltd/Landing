@@ -163,6 +163,7 @@ button:not(.cookieControl__ControlButton),
   /* stylelint-disable-next-line */
   padding: .6rem 1.6rem !important;
   font-size: .8rem;
+  font-weight: bold;
   /* stylelint-disable-next-line */
   color: var(--base_accent) !important;
   /* stylelint-disable-next-line */
