@@ -50,40 +50,29 @@
 <template>
   <div class="blog_body">
     <!--eslint-disable-next-line-->
-    <nuxt-link to="/blog/" class="back_text">
+    <nuxt-link to="/blog" class="back_text">
       Back
     </nuxt-link>
-    <img :src="require(`../../static/blog-img/${img}`)">
+    <img :src="require(`../../static/blog-img/${post.img}`)">
     <br><br>
     <h1>
-      {{ title }}
+      {{ post.title }}
     </h1>
-    <div class="blog_html" v-html="html" />
+    <nuxt-content class="blog_html" :document="post" />
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData ({ params }) {
-    try {
-      const post = await require(`~/content/blog/${params.slug}.md`)
-      return {
-        html: post.html,
-        excerpt: post.attributes.excerpt,
-        title: post.attributes.title,
-        img: post.attributes.img
-      }
-    } catch (err) {
-      // eslint-disable-next-line
-      console.debug(err)
-      return false
-    }
+  async asyncData ({ $content, params }) {
+    const post = await $content('blog', params.slug).fetch()
+    return { post }
   },
   mounted () {
-    this.$parent.$parent.metaHelper.title = this.title
-    this.$parent.$parent.metaHelper.description = this.excerpt
-    this.$parent.$parent.metaHelper.image = this.img
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/blog/' + this.$route.params.slug + '/'
+    this.$parent.$parent.metaHelper.title = this.post.title
+    this.$parent.$parent.metaHelper.description = this.post.postDesc
+    this.$parent.$parent.metaHelper.image = this.post.img
+    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/blog/${this.$route.params.slug}`
   }
 }
 </script>

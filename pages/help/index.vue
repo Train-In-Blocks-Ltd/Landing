@@ -83,23 +83,23 @@
       to get in touch or browse our guides
     </h2>
     <div class="container--help">
-      <div v-for="post in posts" :key="post.attributes.title" class="help-post">
+      <div v-for="post in posts" :key="post.title" class="help-post">
         <div>
           <h2 class="text--xlarge no_margin number_text">
-            {{ post.attributes.id }}
+            {{ post.id }}
           </h2>
         </div>
         <div class="help-post__top-wrapper">
           <div>
             <h3 class="no_margin">
-              {{ post.attributes.title }}
+              {{ post.title }}
             </h3>
             <p>
-              {{ post.attributes.excerpt }}
+              {{ post.postDesc }}
             </p>
           </div>
           <div class="help-post__link">
-            <nuxt-link class="help-post__link-text" :to="`/help/${post.attributes.slug}/`">
+            <nuxt-link class="help-post__link-text" :to="`/help/${post.slug}`">
               Read more
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
@@ -173,15 +173,12 @@ export default {
   components: {
     InlineSvg
   },
-  asyncData () {
-    const resolve = require.context('~/content/help/', true, /\.md$/)
-    const imports = resolve.keys().map((key) => {
-      key.match(/\/(.+)\.md$/)
-      return resolve(key)
+  async asyncData ({ $content }) {
+    const posts = await $content('help').fetch()
+    posts.sort((b, a) => {
+      return b.id - a.id
     })
-    return {
-      posts: imports
-    }
+    return { posts }
   },
   data () {
     return {
@@ -194,22 +191,14 @@ export default {
       submitted: null
     }
   },
-  created () {
-    this.sortPosts()
-  },
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Support Desk'
     this.$parent.$parent.metaHelper.description = 'Need help with something? We are happy to help with anything.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/help/'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/help'
   },
   methods: {
     scroll () {
       document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
-    },
-    sortPosts () {
-      this.posts.sort((a, b) => {
-        return new Date(a.attributes.id) - new Date(b.attributes.id)
-      })
     },
     encode (data) {
       return Object.keys(data)

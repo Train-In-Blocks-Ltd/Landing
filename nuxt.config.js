@@ -127,7 +127,8 @@ export default async () => {
           checkboxDisabledBackground: '#282828',
           checkboxActiveCircleBackground: '#FFFFFF'
         }
-      }]
+      }],
+      '@nuxt/content'
     ],
     cookies: {
       necessary: [

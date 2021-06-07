@@ -37,30 +37,20 @@
   <div class="help--body">
     <!--eslint-disable-next-line-->
     <a href="http://www.traininblocks.com/help" class="back_text">Back</a>
-    <div class="help_html" v-html="html" />
+    <nuxt-content class="help_html" :document="post" />
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData ({ params }) {
-    try {
-      const post = await require(`~/content/help/${params.slug}.md`)
-      return {
-        html: post.html,
-        excerpt: post.attributes.excerpt,
-        title: post.attributes.title
-      }
-    } catch (err) {
-      // eslint-disable-next-line
-      console.debug(err)
-      return false
-    }
+  async asyncData ({ $content, params }) {
+    const post = await $content('help', params.slug).fetch()
+    return { post }
   },
   mounted () {
-    this.$parent.$parent.metaHelper.title = this.title
-    this.$parent.$parent.metaHelper.description = this.excerpt
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/help/' + this.$route.params.slug + '/'
+    this.$parent.$parent.metaHelper.title = this.post.title
+    this.$parent.$parent.metaHelper.description = this.post.postDesc
+    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/help/${this.$route.params.slug}`
   }
 }
 </script>

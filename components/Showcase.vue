@@ -265,7 +265,7 @@ export default {
     }
   },
   mounted () {
-    const OBSERVER = new IntersectionObserver((entries, observer) => {
+    const OBSERVER = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         entry.target.lastChild.setAttribute('class', entry.isIntersecting ? 'animate' : '')
       })

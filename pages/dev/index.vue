@@ -67,19 +67,19 @@
     <div class="dev_container">
       <div v-for="(post, index) in posts" :key="`dev_${index}`" class="dev_post">
         <h3 class="no_margin">
-          {{ post.attributes.show ? post.attributes.date : 'Update currently in the making' }}
+          {{ post.show ? post.date : 'Update currently in the making' }}
         </h3>
-        <div v-if="post.attributes.show" class="dev_post__content">
+        <div v-if="post.show" class="dev_post__content">
           <div>
             <h3 class="no_margin">
-              {{ post.attributes.title }}
+              {{ post.title }}
             </h3>
             <p>
-              {{ post.attributes.excerpt }}
+              {{ post.postDesc }}
             </p>
           </div>
           <div class="dev_post__link">
-            <nuxt-link class="dev_post__link_text" :to="`/dev/${post.attributes.slug}/`">
+            <nuxt-link class="dev_post__link_text" :to="`/dev/${post.slug}`">
               Read more
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
@@ -100,30 +100,17 @@ export default {
   components: {
     InlineSvg
   },
-  asyncData () {
-    const resolve = require.context('~/content/dev/', true, /\.md$/)
-    const imports = resolve.keys().map((key) => {
-      key.match(/\/(.+)\.md$/)
-      return resolve(key)
+  async asyncData ({ $content }) {
+    const posts = await $content('dev').fetch()
+    posts.sort((b, a) => {
+      return a.id - b.id
     })
-    return {
-      posts: imports
-    }
-  },
-  created () {
-    this.sortPosts()
+    return { posts }
   },
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Development Log'
     this.$parent.$parent.metaHelper.description = 'We are extremely active and always developing the most elegant solution for you. Follow our journey here.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/dev/'
-  },
-  methods: {
-    sortPosts () {
-      this.posts.sort((a, b) => {
-        return new Date(b.attributes.id) - new Date(a.attributes.id)
-      })
-    }
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/dev'
   }
 }
 </script>

@@ -2,7 +2,7 @@
 id: 2
 title: Manage your subscription
 slug: manage-your-subscription
-excerpt: Make changes to your Train In Blocks subscription (edit, cancel).
+postDesc: Make changes to your Train In Blocks subscription (edit, cancel).
 ---
 # Manage your subscription
 

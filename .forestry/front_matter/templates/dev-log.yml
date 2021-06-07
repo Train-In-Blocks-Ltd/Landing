@@ -22,8 +22,8 @@ fields:
   name: slug
   label: slug
 - type: text
-  name: excerpt
-  label: excerpt
+  name: postDesc
+  label: postDesc
 - type: boolean
   name: show
   label: show
