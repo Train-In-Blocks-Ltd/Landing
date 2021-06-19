@@ -24,6 +24,17 @@
     transform: rotate(-90deg);
     text-decoration: none
   }
+  .blog_footer {
+    display: grid;
+    grid-gap: 1rem;
+    margin-top: 4rem;
+    border: 3px solid var(--base_dark);
+    border-radius: 10px;
+    padding: 2rem
+  }
+  .blog_footer > * {
+    margin: 0
+  }
 
   /* Responsiveness */
   @media (max-width: 768px) {
@@ -59,6 +70,21 @@
       {{ post.title }}
     </h1>
     <nuxt-content class="blog_html" :document="post" />
+    <div class="blog_footer">
+      <h3>
+        Let's save you time and money so you can focus on what matters!
+      </h3>
+      <ol>
+        <li>Select <b>demo account details</b></li>
+        <li>Fill out the log in form</li>
+        <li>Start exploring</li>
+      </ol>
+      <form action="https://app.traininblocks.com">
+        <button>
+          Check out our demo
+        </button>
+      </form>
+    </div>
   </div>
 </template>
 

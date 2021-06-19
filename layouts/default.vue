@@ -14,10 +14,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--base_light);
+  color: var(--base_dark);
   font-size: 16px;
   margin: 0;
-  padding: 0 8%;
+  padding: 0 10%;
   background-color: var(--back);
   scroll-behavior: smooth
 }
@@ -87,7 +87,7 @@ textarea,
   resize: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  border: 1px solid var(--base_light);
+  border: 3px solid var(--base_light);
   border-radius: 8px;
   background-color: transparent;
   box-shadow: none;
@@ -358,7 +358,7 @@ div.cookieControl__ModalContent *:not(button) {
 /* Footer */
 footer {
   padding: 2rem 0;
-  border-top: 1px solid var(--base_light)
+  border-top: 3px solid var(--base_dark)
 }
 footer p {
   font-size: .8rem
