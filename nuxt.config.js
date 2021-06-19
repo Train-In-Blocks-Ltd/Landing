@@ -1,6 +1,5 @@
 import * as path from 'path'
 import * as glob from 'glob'
-import Mode from 'frontmatter-markdown-loader/mode'
 
 function getDynamicPaths (urlFilepathTable) {
   return [].concat(
@@ -196,17 +195,6 @@ export default async () => {
     ** Build configuration
     */
     build: {
-      extend (config, ctx) {
-        // add frontmatter-markdown-loader
-        config.module.rules.push({
-          test: /\.md$/,
-          include: path.resolve(__dirname, 'content'),
-          loader: 'frontmatter-markdown-loader',
-          options: {
-            mode: [Mode.HTML, Mode.META]
-          }
-        })
-      },
       html: {
         minify: {
           collapseBooleanAttributes: true,
