@@ -36,11 +36,11 @@
           <h2>
             Free
           </h2>
-          <form action="https://app.traininblocks.com">
+          <a href="https://app.traininblocks.com?utm=landingPricing">
             <button>
               Try it now
             </button>
-          </form>
+          </a>
         </div>
         <div>
           <h3>

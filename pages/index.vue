@@ -92,6 +92,11 @@ iframe {
       <h1 class="center_text">
         We've taken exercise programming to the next level.
       </h1>
+      <a href="http://app.traininblocks.com/?utm=landingHeader" style="margin: auto; display: inherit" class="center_text">
+        <button>
+          Check out our demo
+        </button>
+      </a>
       <div class="spacer" />
       <iframe
         width="560"
