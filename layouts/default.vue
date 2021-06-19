@@ -1,6 +1,4 @@
 <style>
-@import '../node_modules/animate.css';
-
 /* GLOBAL */
 :root {
   --low_shadow: 0 0 20px 10px #28282808;
@@ -50,6 +48,20 @@ li {
 }
 a, b {
   color: var(--base_dark)
+}
+
+/* Animations */
+.fadeIn {
+  animation: .6s fadeIn
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
 }
 
 /* MCE */
@@ -453,14 +465,14 @@ footer a.input--option {
   <div id="app">
     <nuxt-link
       v-if="$route.name !== 'help'"
-      class="floating_help fadeIn"
+      class="floating_help"
       to="/help"
     >
       I need help
     </nuxt-link>
     <div v-if="openNav" class="overlay" />
     <nav>
-      <transition enter-active-class="animated fadeIn faster">
+      <transition enter-active-class="fadeIn">
         <div v-show="openNav" class="wrapper--nav-items">
           <inline-svg class="nav-button" :src="require('../assets/svg/close.svg')" @click="openNav = false" />
           <a class="text--large input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">
@@ -491,7 +503,7 @@ footer a.input--option {
       </transition>
     </nav>
     <div id="nav--top" class="spacer--small" />
-    <div class="container--nav animated fadeIn">
+    <div class="container--nav">
       <nuxt-link to="/">
         <inline-svg id="logo--home" class="nav-button" :src="require('../assets/svg/LogoV12.svg')" />
       </nuxt-link>
@@ -504,10 +516,8 @@ footer a.input--option {
         />
       </div>
     </div>
-    <div class="animated fadeIn">
-      <transition enter-active-class="animated fadeIn delay-1s" leave-active-class="animated fadeOut">
-        <nuxt />
-      </transition>
+    <div>
+      <nuxt />
     </div>
     <div class="spacer" />
     <footer>
@@ -542,7 +552,7 @@ footer a.input--option {
         action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
         method="post"
         name="mc-embedded-subscribe-form"
-        class="validate animated fadeInLeft"
+        class="validate"
         target="_blank"
         novalidate
       >
