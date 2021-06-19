@@ -207,7 +207,7 @@ button.cancel:hover {
 /* Floating help */
 .floating_help {
   position: fixed;
-  left: 2rem;
+  right: 5rem;
   bottom: 2rem;
   padding: .6rem 1rem;
   border-radius: 50px;
@@ -463,13 +463,6 @@ footer a.input--option {
 
 <template>
   <div id="app">
-    <nuxt-link
-      v-if="$route.name !== 'help'"
-      class="floating_help"
-      to="/help"
-    >
-      I need help
-    </nuxt-link>
     <div v-if="openNav" class="overlay" />
     <nav>
       <transition enter-active-class="fadeIn">
@@ -520,18 +513,25 @@ footer a.input--option {
       <nuxt />
     </div>
     <div class="spacer" />
+    <nuxt-link
+      v-if="$route.name !== 'help'"
+      class="floating_help"
+      to="/help"
+    >
+      I need help
+    </nuxt-link>
     <footer>
+      <CookieControl>
+        <template v-slot:bar>
+          <p>
+            We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
+            <nuxt-link class="input--option" to="/legal/cookies-policy">
+              <b>Cookies Policy</b>.
+            </nuxt-link>
+          </p>
+        </template>
+      </CookieControl>
       <div class="nav--footer">
-        <CookieControl>
-          <template v-slot:bar>
-            <p>
-              We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
-              <nuxt-link class="input--option" to="/legal/cookies-policy">
-                <b>Cookies Policy</b>.
-              </nuxt-link>
-            </p>
-          </template>
-        </CookieControl>
         <div class="social-bar">
           <a
             target="_blank"
