@@ -481,15 +481,15 @@ footer a.input--option {
           >
             Pricing
           </a>
-          <nuxt-link class="text--large input--option" to="/blog" @click.native="openNav = false">
+          <nuxt-link class="text--large input--option" to="/blog/" @click.native="openNav = false">
             Blog
           </nuxt-link>
           <!-- News
-          <nuxt-link class="text--large input--option" to="/dev" @click.native="openNav = false">
+          <nuxt-link class="text--large input--option" to="/dev/" @click.native="openNav = false">
             News
           </nuxt-link>
           -->
-          <nuxt-link class="text--large input--option" to="/help" @click.native="openNav = false">
+          <nuxt-link class="text--large input--option" to="/help/" @click.native="openNav = false">
             Help
           </nuxt-link>
         </div>
@@ -516,16 +516,16 @@ footer a.input--option {
     <nuxt-link
       v-if="$route.name !== 'help'"
       class="floating_help"
-      to="/help"
+      to="/help/"
     >
       I need help
     </nuxt-link>
     <footer>
       <CookieControl>
-        <template v-slot:bar>
+        <template #bar>
           <p>
             We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
-            <nuxt-link class="input--option" to="/legal/cookies-policy">
+            <nuxt-link class="input--option" to="/legal/cookies-policy/">
               <b>Cookies Policy</b>.
             </nuxt-link>
           </p>
@@ -576,13 +576,13 @@ footer a.input--option {
         </div>
       </form><br>
       <div>
-        <nuxt-link class="input--option" to="/legal/privacy-and-data-policy">
+        <nuxt-link class="input--option" to="/legal/privacy-and-data-policy/">
           Privacy and Data Policy
         </nuxt-link>
-        <nuxt-link class="input--option" to="/legal/cookies-policy">
+        <nuxt-link class="input--option" to="/legal/cookies-policy/">
           Cookies Policy
         </nuxt-link>
-        <nuxt-link class="input--option" to="/legal/terms-of-use">
+        <nuxt-link class="input--option" to="/legal/terms-of-use/">
           Terms of Use
         </nuxt-link>
         <a class="input--option" href="https://status.traininblocks.com">
@@ -621,11 +621,6 @@ export default {
       }
     }
   },
-  methods: {
-    scroll () {
-      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
-    }
-  },
   head () {
     return {
       title: this.metaHelper.title,
@@ -641,6 +636,11 @@ export default {
       link: [
         { hid: 'canonical', rel: 'canonical', href: this.metaHelper.url }
       ]
+    }
+  },
+  methods: {
+    scroll () {
+      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
     }
   }
 }

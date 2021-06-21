@@ -49,7 +49,6 @@
 
 <template>
   <div class="dev_body">
-    <!--eslint-disable-next-line-->
     <nuxt-link to="/dev/" class="back_text">
       Back
     </nuxt-link>
@@ -66,11 +65,31 @@ export default {
     const post = await $content('dev', params.slug).fetch()
     return { post }
   },
+  head () {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 3,
+              "name": "${this.post.title}",
+              "item": "https://traininblocks.com/legal/${this.$route.params.slug}/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
+    }
+  },
   mounted () {
     this.$parent.$parent.metaHelper.title = this.post.title
     this.$parent.$parent.metaHelper.description = this.post.postDesc
     this.$parent.$parent.metaHelper.image = this.post.img
-    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/dev/${this.$route.params.slug}`
+    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/dev/${this.$route.params.slug}/`
   }
 }
 </script>

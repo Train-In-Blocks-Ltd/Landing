@@ -122,7 +122,7 @@ iframe {
         v-for="(compare, compareIndex) in comparisons"
         :key="`compare_${compareIndex}`"
         class="compare_link text--large"
-        :to="`/compare/${compare.slug}`"
+        :to="`/compare/${compare.slug}/`"
       >
         {{ compare.name }}
       </nuxt-link>
@@ -145,7 +145,7 @@ iframe {
           {{ blogPost.postDesc }}
         </p>
         <div class="blog_post__link">
-          <nuxt-link class="blog_post__link_text" :to="`/blog/${blogPost.slug}`">
+          <nuxt-link class="blog_post__link_text" :to="`/blog/${blogPost.slug}/`">
             Read more
           </nuxt-link>
           <inline-svg class="svg--read-more" :src="require('../assets/svg/Arrow.svg')" />
@@ -153,7 +153,7 @@ iframe {
       </div>
     </div>
     <div class="spacer" />
-    <nuxt-link class="see_all_blogs text--small" to="/blog">
+    <nuxt-link class="see_all_blogs text--small" to="/blog/">
       See all blog posts
     </nuxt-link>
   </div>

@@ -79,7 +79,7 @@
             </p>
           </div>
           <div class="dev_post__link">
-            <nuxt-link class="dev_post__link_text" :to="`/dev/${post.slug}`">
+            <nuxt-link class="dev_post__link_text" :to="`/dev/${post.slug}/`">
               Read more
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
@@ -107,10 +107,30 @@ export default {
     })
     return { posts }
   },
+  head () {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Dev Blog",
+              "item": "https://traininblocks.com/dev/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
+    }
+  },
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Development Log'
     this.$parent.$parent.metaHelper.description = 'We are extremely active and always developing the most elegant solution for you. Follow our journey here.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/dev'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/dev/'
   }
 }
 </script>

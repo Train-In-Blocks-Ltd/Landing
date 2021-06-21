@@ -83,7 +83,7 @@
             </p>
           </div>
           <div class="blog_post__link">
-            <nuxt-link class="blog_post__link_text" :to="`/blog/${post.slug}`">
+            <nuxt-link class="blog_post__link_text" :to="`/blog/${post.slug}/`">
               Read more
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
@@ -108,10 +108,30 @@ export default {
     })
     return { posts }
   },
+  head () {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://traininblocks.com/blog/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
+    }
+  },
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Free Content for Personal Trainers'
     this.$parent.$parent.metaHelper.description = 'Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/blog'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/blog/'
   },
   mounted () {
     const OBSERVER = new IntersectionObserver((entries) => {

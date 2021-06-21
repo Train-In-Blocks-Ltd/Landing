@@ -15,6 +15,9 @@ function getDynamicPaths (urlFilepathTable) {
 export default async () => {
   return {
     target: 'static',
+    router: {
+      trailingSlash: true
+    },
     /*
     ** Headers of the page
     */
@@ -82,6 +85,19 @@ export default async () => {
               "https://www.instagram.com/traininblocks",
               "https://www.facebook.com/traininblocks"
             ]
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://traininblocks.com"
+            }]
           }`,
           type: 'application/ld+json'
         }

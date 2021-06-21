@@ -99,7 +99,7 @@
             </p>
           </div>
           <div class="help-post__link">
-            <nuxt-link class="help-post__link-text" :to="`/help/${post.slug}`">
+            <nuxt-link class="help-post__link-text" :to="`/help/${post.slug}/`">
               Read more
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
@@ -191,10 +191,30 @@ export default {
       submitted: null
     }
   },
+  head () {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Help",
+              "item": "https://traininblocks.com/help/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
+    }
+  },
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Support Desk'
     this.$parent.$parent.metaHelper.description = 'Need help with something? We are happy to help with anything.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/help'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/help/'
   },
   methods: {
     scroll () {
