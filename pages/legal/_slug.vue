@@ -58,6 +58,19 @@ export default {
             "@type": "BreadcrumbList",
             "itemListElement": [{
               "@type": "ListItem",
+              "position": 2,
+              "name": "Legal",
+              "item": "https://traininblocks.com/legal/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
               "position": 3,
               "name": "${this.post.title}",
               "item": "https://traininblocks.com/legal/${this.$route.params.slug}/"

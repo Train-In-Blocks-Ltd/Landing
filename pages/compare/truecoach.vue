@@ -30,6 +30,19 @@ export default {
             "@type": "BreadcrumbList",
             "itemListElement": [{
               "@type": "ListItem",
+              "position": 2,
+              "name": "Compare",
+              "item": "https://traininblocks.com/compare/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
               "position": 3,
               "name": "TrueCoach",
               "item": "https://traininblocks.com/compare/truecoach/"
