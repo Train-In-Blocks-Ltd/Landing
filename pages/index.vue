@@ -191,6 +191,73 @@ export default {
       ]
     }
   },
+  head () {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Monthly",
+            "description": "Gets you full access to the app for a amazing price on a recurring payment.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Train In Blocks"
+            },
+            "offers": {
+              "@type": "Offer",
+              "url": "https://traininblocks.com/",
+              "priceCurrency": "GBP",
+              "price": "10",
+              "availability": "https://schema.org/OnlineOnly"
+            }
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Supporter",
+            "description": "Show some love and help us deliver an outstanding service to you. It's the same as the monthly plan, but with an added bonus of good karma.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Train In Blocks"
+            },
+            "offers": {
+              "@type": "Offer",
+              "url": "https://traininblocks.com/",
+              "priceCurrency": "GBP",
+              "price": "15",
+              "availability": "https://schema.org/OnlineOnly"
+            }
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Yearly",
+            "description": "Save 15% when you sign up to our annual plan — an even better deal.",
+            "brand": {
+              "@type": "Brand",
+              "name": "Train In Blocks"
+            },
+            "offers": {
+              "@type": "Offer",
+              "url": "https://traininblocks.com/",
+              "priceCurrency": "GBP",
+              "price": "102",
+              "availability": "https://schema.org/OnlineOnly"
+            }
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
+    }
+  },
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Affordable Personal Training Software'
     this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
