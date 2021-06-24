@@ -96,10 +96,10 @@ textarea,
   box-shadow: none;
   transition: all .6s cubic-bezier(.165, .84, .44, 1)
 }
-input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):not(:focus):hover,
-select:hover,
-textarea:hover,
-#mce-EMAIL:hover {
+input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):not(:focus):hover:not(:focus),
+select:hover:not(:focus),
+textarea:hover:not(:focus),
+#mce-EMAIL:hover:not(:focus) {
   opacity: .6
 }
 input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):disabled {
@@ -109,7 +109,7 @@ input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]
 input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):focus,
 textarea:focus,
 #mce-EMAIL:focus {
-  border: 1px solid var(--base_dark)
+  border: 3px solid var(--base_dark)
 }
 input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).small_border_radius,
 select.small_border_radius,
