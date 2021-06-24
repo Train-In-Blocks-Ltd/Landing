@@ -26,14 +26,19 @@ iframe {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem
 }
+.latest_post {
+  display: flex;
+  flex-direction: column
+}
 .latest_post > h3 {
-  margin: 1rem 0
+  margin: 1rem 0 0 0
 }
 .blog_post__link {
   display: grid;
   grid-template-columns: 100px 24px;
   grid-gap: .4rem;
-  margin: 2rem 0 0 0;
+  margin-top: auto;
+  font-weight: bold;
   transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
 }
 .blog_post__link_text {
@@ -155,10 +160,10 @@ iframe {
         class="latest_post"
       >
         <img :src="require(`../static/blog-img/${blogPost.img}`)">
-        <h3 class="no_margin">
+        <h3>
           {{ blogPost.title }}
         </h3>
-        <p class="no_margin">
+        <p>
           {{ blogPost.postDesc }}
         </p>
         <div class="blog_post__link">

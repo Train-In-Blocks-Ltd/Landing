@@ -26,6 +26,7 @@
   grid-template-columns: 100px 24px;
   grid-gap: .4rem;
   margin: 2rem 0 0 0;
+  font-weight: bold;
   transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
 }
 .blog_post__link_text {
