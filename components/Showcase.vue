@@ -249,12 +249,7 @@
 </template>
 
 <script>
-import InlineSvg from 'vue-inline-svg'
-
 export default {
-  components: {
-    InlineSvg
-  },
   data () {
     return {
       svgs: [

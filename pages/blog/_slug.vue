@@ -93,6 +93,12 @@ export default {
     const post = await $content('blog', params.slug).fetch()
     return { post }
   },
+  mounted () {
+    this.$parent.$parent.metaHelper.title = this.post.title
+    this.$parent.$parent.metaHelper.description = this.post.postDesc
+    this.$parent.$parent.metaHelper.image = this.post.img
+    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/blog/${this.$route.params.slug}/`
+  },
   head () {
     return {
       __dangerouslyDisableSanitizers: ['script'],
@@ -125,12 +131,6 @@ export default {
         }
       ]
     }
-  },
-  mounted () {
-    this.$parent.$parent.metaHelper.title = this.post.title
-    this.$parent.$parent.metaHelper.description = this.post.postDesc
-    this.$parent.$parent.metaHelper.image = this.post.img
-    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/blog/${this.$route.params.slug}/`
   }
 }
 </script>

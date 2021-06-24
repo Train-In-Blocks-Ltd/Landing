@@ -23,6 +23,11 @@
 
 <script>
 export default {
+  mounted () {
+    this.$parent.$parent.metaHelper.title = 'Legal'
+    this.$parent.$parent.metaHelper.description = 'Index of legal documents for Train In Blocks'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/legal/'
+  },
   head () {
     return {
       __dangerouslyDisableSanitizers: ['script'],
@@ -42,11 +47,6 @@ export default {
         }
       ]
     }
-  },
-  mounted () {
-    this.$parent.$parent.metaHelper.title = 'Legal'
-    this.$parent.$parent.metaHelper.description = 'Index of legal documents for Train In Blocks'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/legal/'
   }
 }
 </script>

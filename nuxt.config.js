@@ -115,7 +115,9 @@ export default async () => {
     /*
     ** Plugins to load before mounting the App
     */
-    plugins: [],
+    plugins: [
+      '~/plugins/vue-inline-svg.js'
+    ],
     /*
     ** Nuxt.js dev-modules
     */

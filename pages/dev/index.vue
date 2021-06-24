@@ -94,18 +94,18 @@
 </template>
 
 <script>
-import InlineSvg from 'vue-inline-svg'
-
 export default {
-  components: {
-    InlineSvg
-  },
   async asyncData ({ $content }) {
     const posts = await $content('dev').fetch()
     posts.sort((b, a) => {
       return a.id - b.id
     })
     return { posts }
+  },
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'Development Log'
+    this.$parent.$parent.metaHelper.description = 'We are extremely active and always developing the most elegant solution for you. Follow our journey here.'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/dev/'
   },
   head () {
     return {
@@ -126,11 +126,6 @@ export default {
         }
       ]
     }
-  },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'Development Log'
-    this.$parent.$parent.metaHelper.description = 'We are extremely active and always developing the most elegant solution for you. Follow our journey here.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/dev/'
   }
 }
 </script>

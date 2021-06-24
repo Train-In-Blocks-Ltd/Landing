@@ -166,13 +166,9 @@
 </template>
 
 <script>
-import InlineSvg from 'vue-inline-svg'
 import axios from 'axios'
 
 export default {
-  components: {
-    InlineSvg
-  },
   async asyncData ({ $content }) {
     const posts = await $content('help').fetch()
     posts.sort((b, a) => {
@@ -189,26 +185,6 @@ export default {
         message: ''
       },
       submitted: null
-    }
-  },
-  head () {
-    return {
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          innerHTML: `{
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [{
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Help",
-              "item": "https://traininblocks.com/help/"
-            }]
-          }`,
-          type: 'application/ld+json'
-        }
-      ]
     }
   },
   beforeCreate () {
@@ -248,6 +224,26 @@ export default {
       } catch (e) {
         this.submitted = e.toString() + ' Please try again.'
       }
+    }
+  },
+  head () {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Help",
+              "item": "https://traininblocks.com/help/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
     }
   }
 }

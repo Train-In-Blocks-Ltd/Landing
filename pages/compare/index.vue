@@ -18,6 +18,11 @@
 
 <script>
 export default {
+  mounted () {
+    this.$parent.$parent.metaHelper.title = 'Compare'
+    this.$parent.$parent.metaHelper.description = 'Index of comparisons for Train In Blocks'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/compare/'
+  },
   head () {
     return {
       __dangerouslyDisableSanitizers: ['script'],
@@ -37,11 +42,6 @@ export default {
         }
       ]
     }
-  },
-  mounted () {
-    this.$parent.$parent.metaHelper.title = 'Compare'
-    this.$parent.$parent.metaHelper.description = 'Index of comparisons for Train In Blocks'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/compare/'
   }
 }
 </script>

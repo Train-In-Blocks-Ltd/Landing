@@ -21,6 +21,9 @@ body {
   background-color: var(--back);
   scroll-behavior: smooth
 }
+svg path.transparent {
+  stroke: var(--base_dark)
+}
 svg path:not(.transparent) {
   fill: var(--base_dark)
 }
@@ -600,13 +603,11 @@ footer a.input--option {
 </template>
 
 <script>
-import InlineSvg from 'vue-inline-svg'
 import DarkmodeToggle from '../components/DarkmodeToggle.vue'
 
 export default {
   name: 'App',
   components: {
-    InlineSvg,
     DarkmodeToggle
   },
   data () {
@@ -619,6 +620,11 @@ export default {
         image: 'https://traininblocks.com/android-chrome-512x512.png',
         url: 'https://traininblocks.com'
       }
+    }
+  },
+  methods: {
+    scroll () {
+      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
     }
   },
   head () {
@@ -636,11 +642,6 @@ export default {
       link: [
         { hid: 'canonical', rel: 'canonical', href: this.metaHelper.url }
       ]
-    }
-  },
-  methods: {
-    scroll () {
-      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
     }
   }
 }

@@ -4,6 +4,17 @@
   margin: 0 auto;
   width: 70%
 }
+.home_intro > h1 {
+  font-size: 3rem
+}
+.home_intro > a {
+  font-size: 2rem;
+  font-weight: bold;
+  transition: .6s all cubic-bezier(.165, .84, .44, 1)
+}
+.home_intro > a:hover {
+  opacity: .6
+}
 iframe {
   display: flex;
   margin: auto
@@ -76,6 +87,9 @@ iframe {
   }
 }
 @media (max-width: 576px) {
+  .home_intro > h1 {
+    font-size: 2rem
+  }
   .latest_post_container {
     grid-template-columns: 1fr;
     grid-gap: 4rem
@@ -92,10 +106,13 @@ iframe {
       <h1 class="center_text">
         We've taken exercise programming to the next level.
       </h1>
-      <a href="http://app.traininblocks.com/?utm=landingHeader" style="margin: auto; display: inherit" class="center_text">
-        <button>
-          Check out our demo
-        </button>
+      <a
+        href="http://app.traininblocks.com/?utm=landingHeader"
+        target="_blank"
+        style="margin: auto; display: inherit"
+        class="center_text"
+      >
+        Check out our demo
       </a>
       <div class="spacer" />
       <iframe
@@ -160,14 +177,12 @@ iframe {
 </template>
 
 <script>
-import InlineSvg from 'vue-inline-svg'
 import Payment from '../components/Payment'
 import Benefits from '../components/Benefits'
 import Showcase from '../components/Showcase'
 
 export default {
   components: {
-    InlineSvg,
     Payment,
     Benefits,
     Showcase
@@ -190,6 +205,11 @@ export default {
         { name: 'Trainerize', slug: 'trainerize' }
       ]
     }
+  },
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'Affordable Personal Training Software'
+    this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
   },
   head () {
     return {
@@ -257,11 +277,6 @@ export default {
         }
       ]
     }
-  },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'Affordable Personal Training Software'
-    this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
   }
 }
 </script>
