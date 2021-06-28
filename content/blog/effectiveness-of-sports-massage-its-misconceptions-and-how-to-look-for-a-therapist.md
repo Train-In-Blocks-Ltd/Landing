@@ -1,19 +1,10 @@
 ---
-title: Effectiveness of sports massage, its misconceptions, and how to look for a
-  therapist
-description: If you have taken part in sports or am an avid gym member, you may be
-  familiar with the sports massage therapist. Here we will discuss what to look for
-  and to expect from a treatment.
-img: 4.png
-video: none
-alt: Sports massage
-id: 4
-created: 18 03 2021
-show: true
-
+id: 14
+title: Effectiveness of sports massage, its misconceptions, and how to look for a therapist
+slug: effectiveness-of-sports-massage-its-misconceptions-and-how-to-look-for-a-therapist
+img: 14.png
+postDesc: If you have taken part in sports or am an avid gym member, you may be familiar with the sports massage therapist. Here we will discuss what to look for and to expect from a treatment.
 ---
-# **Effectiveness of sports massage, its misconceptions, and how to look for a therapist**
-
 ## **Introduction and common misconceptions**
 
 If you have taken part in sports or am an avid gym member, you may be familiar with the sports massage therapist. These are qualified professionals who can handle a range of clients ranging from athletes to the general population. They also have a diverse skill-set where treatments could take place within a clinical setting or right before a sporting event. Their responsibility is to administer massage to help recovery, assist in the correction of dysfunctional movements, and other musculoskeletal issues.

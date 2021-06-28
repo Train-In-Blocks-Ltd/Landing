@@ -9,7 +9,7 @@
   margin-right: .6rem
 }
 .mode_icon :is(.sun, .moon) {
-  transition: .6s all cubic-bezier(.165, .84, .44, 1)
+  transition: var(--transition-standard)
 }
 .mode_icon .moon {
   opacity: 0

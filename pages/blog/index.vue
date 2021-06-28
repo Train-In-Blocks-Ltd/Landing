@@ -14,7 +14,7 @@
   border-radius: 10px;
   box-shadow: var(--low_shadow);
   filter: grayscale(100%);
-  transition: .6s all cubic-bezier(.165, .84, .44, 1)
+  transition: var(--transition-standard)
 }
 .blog_post__content {
   display: flex;

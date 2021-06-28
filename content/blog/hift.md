@@ -1,16 +1,10 @@
 ---
+id: 15
 title: High-intensity functional training (HIFT) on health and performance
-description: What does the research suggest about CrossFit or military-style training
-  and how it can benefit you?
-img: hift.png
-video: none
-alt: High-intensity functional training
-id: "2"
-created: 15 02 2021
-show: true
-
+slug: hift
+img: 15.png
+postDesc: What does the research suggest about CrossFit or military-style training and how it can benefit you?
 ---
-# High-intensity functional training (HIFT) on health and performance
 
 ## The rise of HIFT
 

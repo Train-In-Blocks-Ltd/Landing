@@ -11,7 +11,7 @@
   }
   .click_here {
     cursor: pointer;
-    transition: .6s all cubic-bezier(.165, .84, .44, 1)
+    transition: var(--transition-standard)
   }
   .click_here:hover {
     opacity: .6

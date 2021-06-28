@@ -10,7 +10,7 @@
 .home_intro > a {
   font-size: 2rem;
   font-weight: bold;
-  transition: .6s all cubic-bezier(.165, .84, .44, 1)
+  transition: var(--transition-standard)
 }
 .home_intro > a:hover {
   opacity: .6
@@ -55,7 +55,7 @@ iframe {
 }
 .see_all_blogs {
   font-weight: bold;
-  transition: .6s all cubic-bezier(.165, .84, .44, 1)
+  transition: var(--transition-standard)
 }
 .see_all_blogs:hover {
   opacity: .6
@@ -69,7 +69,7 @@ iframe {
 }
 .compare_link {
   font-weight: bold;
-  transition: .6s all cubic-bezier(.165, .84, .44, 1)
+  transition: var(--transition-standard)
 }
 .compare_link:hover {
   opacity: .6

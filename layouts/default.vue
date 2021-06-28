@@ -8,7 +8,8 @@
   --base_dark: #282828;
   --base_light: #585858;
   --base_accent: white;
-  --overlay: rgba(255, 255, 255, .95)
+  --overlay: rgba(255, 255, 255, .95);
+  --transition-standard: 1s all cubic-bezier(.165, .84, .44, 1)
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -156,7 +157,7 @@ input[type=color] {
 }
 .back_text {
   color: var(--base_dark);
-  transition: .6s all cubic-bezier(.165, .84, .44, 1)
+  transition: var(--transition-standard)
 }
 .back_text:hover {
   opacity: .6
@@ -219,7 +220,7 @@ button.cancel:hover {
   font-weight: bold;
   text-decoration: none;
   z-index: 99;
-  transition: .6s all cubic-bezier(.165, .84, .44, 1)
+  transition: var(--transition-standard)
 }
 .floating_help:hover {
   opacity: .6
@@ -271,13 +272,10 @@ button.cancel:hover {
 /* Nav Hover Animation */
 .nav-button {
   cursor: pointer;
-  transition: opacity .6s, transform .1s cubic-bezier(.165, .84, .44, 1)
+  transition: var(--transition-standard)
 }
 .nav-button:hover {
   opacity: .6
-}
-.nav-button:active {
-  transform: scale(.9)
 }
 .input--option {
   position: relative;
@@ -341,7 +339,7 @@ div.cookieControl__Bar {
   bottom: 2rem;
   background-color: var(--base_dark);
   /* stylelint-disable-next-line */
-  transition: .6s all cubic-bezier(.165, .84, .44, 1) !important
+  transition: var(--transition-standard) !important
 }
 .cookieControl__ControlButton:hover {
   opacity: .6
@@ -487,11 +485,9 @@ footer a.input--option {
           <nuxt-link class="text--large input--option" to="/blog/" @click.native="openNav = false">
             Blog
           </nuxt-link>
-          <!-- News
           <nuxt-link class="text--large input--option" to="/dev/" @click.native="openNav = false">
             News
           </nuxt-link>
-          -->
           <nuxt-link class="text--large input--option" to="/help/" @click.native="openNav = false">
             Help
           </nuxt-link>
@@ -499,7 +495,7 @@ footer a.input--option {
       </transition>
     </nav>
     <div id="nav--top" class="spacer--small" />
-    <div class="container--nav">
+    <div class="container--nav fadeIn">
       <nuxt-link to="/">
         <inline-svg id="logo--home" class="nav-button" :src="require('../assets/svg/LogoV12.svg')" />
       </nuxt-link>
@@ -513,7 +509,7 @@ footer a.input--option {
       </div>
     </div>
     <div>
-      <nuxt />
+      <nuxt class="fadeIn" />
     </div>
     <div class="spacer" />
     <nuxt-link
