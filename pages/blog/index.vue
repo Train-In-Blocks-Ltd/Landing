@@ -11,6 +11,7 @@
 }
 .blog_post > img {
   width: 100%;
+  max-width: 300px;
   border-radius: 10px;
   box-shadow: var(--low_shadow);
   filter: grayscale(100%);
@@ -21,25 +22,14 @@
   flex-direction: column;
   padding-top: 2rem
 }
-.blog_post__link {
-  display: grid;
-  grid-template-columns: 100px 24px;
-  grid-gap: .4rem;
-  margin: 2rem 0 0 0;
-  font-weight: bold;
-  transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
-}
-.blog_post__link_text {
+.blog_post__content > a {
+  text-decoration: none;
   color: var(--base_dark);
-  margin: auto 0;
-  text-decoration: none
+  font-weight: bold;
+  transition: var(--transition-standard)
 }
-.blog_post__link:hover {
-  grid-gap: 1rem;
-  opacity: .8
-}
-.blog_post__link:active {
-  opacity: .4
+.blog_post__content > a:hover {
+  opacity: .6
 }
 .focused_post img {
   filter: grayscale(0)
@@ -75,20 +65,12 @@
       <div v-for="post in posts" :key="post.title" class="blog_post">
         <img :src="require(`../../static/blog-img/${post.img}`)">
         <div class="blog_post__content">
-          <div>
-            <h3 class="no_margin">
-              {{ post.title }}
-            </h3>
-            <p>
-              {{ post.postDesc }}
-            </p>
-          </div>
-          <div class="blog_post__link">
-            <nuxt-link class="blog_post__link_text" :to="`/blog/${post.slug}/`">
-              Read more
-            </nuxt-link>
-            <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
-          </div>
+          <nuxt-link class="text--small" :to="`/blog/${post.slug}/`">
+            {{ post.title }}
+          </nuxt-link>
+          <p>
+            {{ post.postDesc }}
+          </p>
         </div>
       </div>
     </div>

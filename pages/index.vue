@@ -30,28 +30,14 @@ iframe {
   display: flex;
   flex-direction: column
 }
-.latest_post > h3 {
-  margin: 1rem 0 0 0
-}
-.blog_post__link {
-  display: grid;
-  grid-template-columns: 100px 24px;
-  grid-gap: .4rem;
-  margin-top: auto;
+.latest_post > a {
+  text-decoration: none;
   font-weight: bold;
-  transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
+  margin: 2rem 0 0 0;
+  transition: var(--transition-standard)
 }
-.blog_post__link_text {
-  color: var(--base_dark);
-  margin: auto 0;
-  text-decoration: none
-}
-.blog_post__link:hover {
-  grid-gap: 1rem;
-  opacity: .8
-}
-.blog_post__link:active {
-  opacity: .4
+.latest_post > a:hover {
+  opacity: .6
 }
 .see_all_blogs {
   font-weight: bold;
@@ -160,18 +146,12 @@ iframe {
         class="latest_post"
       >
         <img :src="require(`../static/blog-img/${blogPost.img}`)">
-        <h3>
+        <nuxt-link class="text--small" :to="`/blog/${blogPost.slug}/`">
           {{ blogPost.title }}
-        </h3>
+        </nuxt-link>
         <p>
           {{ blogPost.postDesc }}
         </p>
-        <div class="blog_post__link">
-          <nuxt-link class="blog_post__link_text" :to="`/blog/${blogPost.slug}/`">
-            Read more
-          </nuxt-link>
-          <inline-svg class="svg--read-more" :src="require('../assets/svg/Arrow.svg')" />
-        </div>
       </div>
     </div>
     <div class="spacer" />
