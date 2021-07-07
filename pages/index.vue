@@ -30,28 +30,33 @@ iframe {
   display: flex;
   flex-direction: column
 }
-.latest_post > h3 {
-  margin: 1rem 0 0 0
+.latest_post a {
+  text-decoration: none;
+  font-weight: bold;
+  transition: var(--transition-standard)
+}
+.latest_post a:hover {
+  opacity: .6
+}
+.latest_post a:active {
+  opacity: .4
+}
+.latest_post > a {
+  margin-top: 2rem
 }
 .blog_post__link {
   display: grid;
   grid-template-columns: 100px 24px;
   grid-gap: .4rem;
   margin-top: auto;
-  font-weight: bold;
-  transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
+  transition: grid-gap .4s cubic-bezier(.165, .84, .44, 1)
 }
 .blog_post__link_text {
   color: var(--base_dark);
-  margin: auto 0;
-  text-decoration: none
+  margin: auto 0
 }
 .blog_post__link:hover {
-  grid-gap: 1rem;
-  opacity: .8
-}
-.blog_post__link:active {
-  opacity: .4
+  grid-gap: 1rem
 }
 .see_all_blogs {
   font-weight: bold;
@@ -160,9 +165,9 @@ iframe {
         class="latest_post"
       >
         <img :src="require(`../static/blog-img/${blogPost.img}`)">
-        <h3>
+        <nuxt-link class="text--small" :to="`/blog/${blogPost.slug}/`">
           {{ blogPost.title }}
-        </h3>
+        </nuxt-link>
         <p>
           {{ blogPost.postDesc }}
         </p>

@@ -35,17 +35,21 @@ img, video, iframe {
   box-shadow: var(--low_shadow);
   max-width: 100%
 }
-h1, h2 {
-  font-size: 2rem;
+h1, h2, .text--large {
+  font-size: calc(30px + (36 - 30) * ((100vw - 300px) / (1600 - 300)));
   color: var(--base_dark)
 }
-h3 {
-  font-size: 1.4rem;
+h3, .text--small {
+  font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
   color: var(--base_dark)
 }
 p {
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.4;
   margin: 1rem 0
+}
+a {
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)))
 }
 li {
   margin: 1rem 0
@@ -138,13 +142,7 @@ input[type=color] {
 
 /* GLOBAL: CONTENT */
 .text--xlarge {
-  font-size: 4rem
-}
-.text--large {
-  font-size: 2.6rem
-}
-.text--small {
-  font-size: 1.6rem
+  font-size: calc(40px + (46 - 40) * ((100vw - 300px) / (1600 - 300)))
 }
 .center_text {
   text-align: center
@@ -410,18 +408,6 @@ footer a.input--option {
 @media (max-width: 768px) {
   .cookieControl__BarContainer {
     padding: 2rem
-  }
-
-  /* GLOBAL: CONTENT */
-  .text--xlarge {
-    font-size: 2.4rem
-  }
-  .text--large {
-    width: 100%;
-    font-size: 2rem
-  }
-  .text--small {
-    font-size: 1.4rem
   }
 
   /* Misc. */
