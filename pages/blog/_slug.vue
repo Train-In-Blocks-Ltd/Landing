@@ -14,7 +14,6 @@
     display: flex;
     margin: auto;
     width: 60%;
-    max-width: 500px;
     border-radius: 10px;
     box-shadow: var(--low_shadow)
   }
