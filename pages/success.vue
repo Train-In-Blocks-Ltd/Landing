@@ -1,10 +1,3 @@
-<style scoped>
-  a {
-    text-decoration: none;
-    color: var(--base_dark)
-  }
-</style>
-
 <template>
   <div>
     <h1>
@@ -18,7 +11,7 @@
       It can take up to an hour for the email to arrive. Be sure to check your inbox and spam mail.
     </h3>
     <h3 class="accent_text">
-      Meanwhile, click <a href="https://traininblocks.atlassian.net/servicedesk/customer/portal/3/topic/479be3f0-30e6-49ed-aa9c-c944d2f6b0a9">here</a> to learn how to use the app.
+      Meanwhile, click <nuxt-link to="/help/" class="text--small">here</nuxt-link> to learn how to use the app.
     </h3>
     <div class="spacer" />
   </div>
