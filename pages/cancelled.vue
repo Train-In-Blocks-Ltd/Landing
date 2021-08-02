@@ -8,7 +8,7 @@
 <template>
   <div>
     <h1>
-      The checkout was cancelled...
+      Want to select a different plan?
     </h1>
     <h2 class="accent_text">
       Save big and spend less time managing your business and programmes.
@@ -30,15 +30,15 @@ export default {
     Payment,
     Benefits
   },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'Cancelled'
-  },
   head () {
     return {
       meta: [
         { hid: 'robots', name: 'robots', content: 'noindex' }
       ]
     }
+  },
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'Cancelled'
   }
 }
 </script>

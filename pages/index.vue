@@ -164,7 +164,7 @@ iframe {
         :key="`post_${blogPostIndex}`"
         class="latest_post"
       >
-        <img :src="require(`../static/blog-img/${blogPost.img}`)">
+        <img :src="require(`../static/blog-img/${blogPost.img}`)" loading="lazy">
         <nuxt-link class="text--small" :to="`/blog/${blogPost.slug}/`">
           {{ blogPost.title }}
         </nuxt-link>
@@ -215,11 +215,6 @@ export default {
         { name: 'Trainerize', slug: 'trainerize' }
       ]
     }
-  },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'Affordable Personal Training Software'
-    this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
   },
   head () {
     return {
@@ -287,6 +282,11 @@ export default {
         }
       ]
     }
+  },
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'Affordable Personal Training Software'
+    this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
   }
 }
 </script>
