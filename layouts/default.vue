@@ -482,7 +482,7 @@ footer a.input--option {
     </nav>
     <div id="nav--top" class="spacer--small" />
     <div class="container--nav fadeIn">
-      <nuxt-link to="/">
+      <nuxt-link to="/" title="Home">
         <inline-svg id="logo--home" class="nav-button" :src="require('../assets/svg/LogoV12.svg')" />
       </nuxt-link>
       <div>
@@ -521,12 +521,14 @@ footer a.input--option {
           <a
             target="_blank"
             href="https://www.facebook.com/traininblocks"
+            title="Facebook"
           >
             <inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" />
           </a>
           <a
             target="_blank"
             href="https://www.instagram.com/traininblocks"
+            title="Instagram"
           >
             <inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" />
           </a>
@@ -604,11 +606,6 @@ export default {
       }
     }
   },
-  methods: {
-    scroll () {
-      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
-    }
-  },
   head () {
     return {
       title: this.metaHelper.title,
@@ -624,6 +621,11 @@ export default {
       link: [
         { hid: 'canonical', rel: 'canonical', href: this.metaHelper.url }
       ]
+    }
+  },
+  methods: {
+    scroll () {
+      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
     }
   }
 }

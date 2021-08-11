@@ -126,6 +126,7 @@ iframe {
       </a>
       <div class="spacer" />
       <iframe
+        title="Pegasus 3.0"
         width="560"
         height="315"
         src="https://www.youtube.com/embed/2vwnB1fnxqI"
@@ -164,7 +165,11 @@ iframe {
         :key="`post_${blogPostIndex}`"
         class="latest_post"
       >
-        <img :src="require(`../static/blog-img/${blogPost.img}`)" loading="lazy">
+        <img
+          :src="require(`../static/blog-img/${blogPost.img}`)"
+          loading="lazy"
+          :alt="blogPost.title"
+        >
         <nuxt-link class="text--small" :to="`/blog/${blogPost.slug}/`">
           {{ blogPost.title }}
         </nuxt-link>
@@ -173,7 +178,7 @@ iframe {
         </p>
         <div class="blog_post__link">
           <nuxt-link class="blog_post__link_text" :to="`/blog/${blogPost.slug}/`">
-            Read more
+            Continue reading
           </nuxt-link>
           <inline-svg class="svg--read-more" :src="require('../assets/svg/Arrow.svg')" />
         </div>

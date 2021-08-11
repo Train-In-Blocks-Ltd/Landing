@@ -70,10 +70,21 @@ input:checked + .slider:before {
 
 <template>
   <div class="toggle_wrapper">
-    <inline-svg :src="require('../assets/svg/darkmode.svg')" :class="{ darkmode: darkmodeOn }" class="mode_icon" />
+    <inline-svg
+      :src="require('../assets/svg/darkmode.svg')"
+      :class="{ darkmode: darkmodeOn }"
+      class="mode_icon"
+    />
     <label class="switch">
-      <input v-model="darkmodeOn" type="checkbox">
-      <span :class="{ darkmode: darkmodeOn }" class="slider" />
+      <input
+        v-model="darkmodeOn"
+        type="checkbox"
+        aria-label="Darkmode"
+      >
+      <span
+        :class="{ darkmode: darkmodeOn }"
+        class="slider"
+      />
     </label>
   </div>
 </template>
