@@ -37,9 +37,11 @@
     <div class="container--benefits">
       <div v-for="(item, index) in benefits" :key="`benefit_${index}`" class="benefits">
         <inline-svg :src="require(`../assets/svg/features/${item.svg}.svg`)" />
-        <h3>
-          {{ item.subtitle }}
-        </h3>
+        <p class="text--small">
+          <b>
+            {{ item.subtitle }}
+          </b>
+        </p>
         <p>
           {{ item.desc }}
         </p>
