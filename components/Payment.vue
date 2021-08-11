@@ -113,6 +113,7 @@ export default {
       const response = await axios.post('/.netlify/functions/checkout', {
         line_items: item
       })
+      // eslint-disable-next-line no-undef
       const stripe = await Stripe('pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX')
       stripe.redirectToCheckout({ sessionId: response.data })
     }
