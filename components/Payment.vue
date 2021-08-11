@@ -79,7 +79,6 @@
 
 <script>
 import axios from 'axios'
-import { loadStripe } from '@stripe/stripe-js'
 
 export default {
   data () {
@@ -114,7 +113,7 @@ export default {
       const response = await axios.post('/.netlify/functions/checkout', {
         line_items: item
       })
-      const stripe = await loadStripe('pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX')
+      const stripe = await Stripe('pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX')
       stripe.redirectToCheckout({ sessionId: response.data })
     }
   }

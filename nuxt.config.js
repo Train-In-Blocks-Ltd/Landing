@@ -61,6 +61,10 @@ export default async () => {
       __dangerouslyDisableSanitizers: ['script'],
       script: [
         {
+          src: 'https://js.stripe.com/v3/',
+          async: true
+        },
+        {
           innerHTML: `{
             "@context": "http://schema.org",
             "@type": "Organization",
