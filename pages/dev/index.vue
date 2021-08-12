@@ -17,7 +17,7 @@
   }
   .dev_post__link {
     display: grid;
-    grid-template-columns: 100px 24px;
+    grid-template-columns: 130px 24px;
     grid-gap: .4rem;
     margin-top: 1rem;
     transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
@@ -80,7 +80,7 @@
           </div>
           <div class="dev_post__link">
             <nuxt-link class="dev_post__link_text" :to="`/dev/${post.slug}/`">
-              Read more
+              Continue reading
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
           </div>
@@ -102,11 +102,6 @@ export default {
     })
     return { posts }
   },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'Development Log'
-    this.$parent.$parent.metaHelper.description = 'We are extremely active and always developing the most elegant solution for you. Follow our journey here.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/dev/'
-  },
   head () {
     return {
       __dangerouslyDisableSanitizers: ['script'],
@@ -126,6 +121,11 @@ export default {
         }
       ]
     }
+  },
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'Development Log'
+    this.$parent.$parent.metaHelper.description = 'We are extremely active and always developing the most elegant solution for you. Follow our journey here.'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/dev/'
   }
 }
 </script>

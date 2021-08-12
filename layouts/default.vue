@@ -245,7 +245,8 @@ button.cancel:hover {
   background-color: white;
   padding: .6rem 1rem;
   border-radius: 10px;
-  box-shadow: var(--low_shadow)
+  box-shadow: var(--low_shadow);
+  z-index: 1
 }
 .container--nav > div > * {
   margin: auto

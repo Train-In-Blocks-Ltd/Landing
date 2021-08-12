@@ -37,7 +37,7 @@
   }
   .help-post__link {
     display: grid;
-    grid-template-columns: 100px 24px;
+    grid-template-columns: 130px 24px;
     grid-gap: .4rem;
     margin: 2rem 0 0 0;
     transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
@@ -100,7 +100,7 @@
           </div>
           <div class="help-post__link">
             <nuxt-link class="help-post__link-text" :to="`/help/${post.slug}/`">
-              Read more
+              Continue reading
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
           </div>
@@ -187,6 +187,26 @@ export default {
       submitted: null
     }
   },
+  head () {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Help",
+              "item": "https://traininblocks.com/help/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
+    }
+  },
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Support Desk'
     this.$parent.$parent.metaHelper.description = 'Need help with something? We are happy to help with anything.'
@@ -224,26 +244,6 @@ export default {
       } catch (e) {
         this.submitted = e.toString() + ' Please try again.'
       }
-    }
-  },
-  head () {
-    return {
-      __dangerouslyDisableSanitizers: ['script'],
-      script: [
-        {
-          innerHTML: `{
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [{
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Help",
-              "item": "https://traininblocks.com/help/"
-            }]
-          }`,
-          type: 'application/ld+json'
-        }
-      ]
     }
   }
 }

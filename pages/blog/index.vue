@@ -35,7 +35,7 @@
 }
 .blog_post__link {
   display: grid;
-  grid-template-columns: 100px 24px;
+  grid-template-columns: 130px 24px;
   grid-gap: .4rem;
   margin: 2rem 0 0 0;
   transition: grid-gap .4s cubic-bezier(.165, .84, .44, 1)
@@ -91,7 +91,7 @@
           </div>
           <div class="blog_post__link">
             <nuxt-link class="blog_post__link_text" :to="`/blog/${post.slug}/`">
-              Read more
+              Continue reading
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
           </div>
@@ -109,21 +109,6 @@ export default {
       return a.id - b.id
     })
     return { posts }
-  },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'Free Content for Personal Trainers'
-    this.$parent.$parent.metaHelper.description = 'Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/blog/'
-  },
-  mounted () {
-    const OBSERVER = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        entry.target.setAttribute('class', entry.isIntersecting ? 'blog_post focused_post' : 'blog_post')
-      })
-    }, { threshold: 1 })
-    document.querySelectorAll('.blog_post').forEach((svgItem) => {
-      OBSERVER.observe(svgItem)
-    })
   },
   head () {
     return {
@@ -144,6 +129,21 @@ export default {
         }
       ]
     }
+  },
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'Free Content for Personal Trainers'
+    this.$parent.$parent.metaHelper.description = 'Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/blog/'
+  },
+  mounted () {
+    const OBSERVER = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.setAttribute('class', entry.isIntersecting ? 'blog_post focused_post' : 'blog_post')
+      })
+    }, { threshold: 1 })
+    document.querySelectorAll('.blog_post').forEach((svgItem) => {
+      OBSERVER.observe(svgItem)
+    })
   }
 }
 </script>

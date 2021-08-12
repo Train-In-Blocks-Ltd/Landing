@@ -46,7 +46,7 @@ iframe {
 }
 .blog_post__link {
   display: grid;
-  grid-template-columns: 100px 24px;
+  grid-template-columns: 130px 24px;
   grid-gap: .4rem;
   margin-top: auto;
   transition: grid-gap .4s cubic-bezier(.165, .84, .44, 1)
