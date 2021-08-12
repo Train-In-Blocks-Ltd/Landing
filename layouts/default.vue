@@ -415,7 +415,12 @@ footer a.input--option {
   }
 }
 @media (max-width: 768px) {
-  .cookieControl__BarContainer {
+  .cookieControl__ModalContent {
+    padding: 0;
+    overflow-y: auto
+  }
+  .cookieControl__BarContainer,
+  .cookieControl__ModalContent > div {
     padding: 2rem
   }
 
