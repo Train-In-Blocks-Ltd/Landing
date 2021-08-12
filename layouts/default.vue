@@ -1,7 +1,7 @@
 <style>
 /* GLOBAL */
 :root {
-  --low_shadow: 0 0 20px 10px #28282808;
+  --low_shadow: 0 0 20px 10px #28282810;
   --border_rad_large: 10px;
   --back: #F9F9F9;
   --fore: white;
@@ -240,8 +240,12 @@ button.cancel:hover {
 .container--nav > div:last-child {
   display: flex;
   position: fixed;
-  top: 3rem;
-  right: var(--side-padding)
+  top: 2.8rem;
+  right: var(--side-padding);
+  background-color: white;
+  padding: .6rem 1rem;
+  border-radius: 10px;
+  box-shadow: var(--low_shadow)
 }
 .container--nav > div > * {
   margin: auto
@@ -360,7 +364,7 @@ div.cookieControl__ModalContent *:not(button) {
 
 /* Footer */
 footer {
-  padding: 2rem 0;
+  padding: 2rem 0 5rem 0;
   border-top: 3px solid var(--base_dark)
 }
 footer p {
