@@ -238,15 +238,7 @@ button.cancel:hover {
   animation-delay: 100ms
 }
 .container--nav > div:last-child {
-  display: flex;
-  position: fixed;
-  top: 2.8rem;
-  right: var(--side-padding);
-  background-color: white;
-  padding: .6rem 1rem;
-  border-radius: 10px;
-  box-shadow: var(--low_shadow);
-  z-index: 1
+  display: flex
 }
 .container--nav > div > * {
   margin: auto
@@ -365,7 +357,7 @@ div.cookieControl__ModalContent *:not(button) {
 
 /* Footer */
 footer {
-  padding: 2rem 0 5rem 0;
+  padding: 2rem 0;
   border-top: 3px solid var(--base_dark)
 }
 footer p {
@@ -415,6 +407,9 @@ footer a.input--option {
   }
 }
 @media (max-width: 768px) {
+  footer {
+    padding: 2rem 0 5rem 0
+  }
   .cookieControl__ModalContent {
     padding: 0;
     overflow-y: auto
@@ -422,6 +417,16 @@ footer a.input--option {
   .cookieControl__BarContainer,
   .cookieControl__ModalContent > div {
     padding: 2rem
+  }
+  .container--nav > div:last-child {
+    position: fixed;
+    top: 2.8rem;
+    right: var(--side-padding);
+    background-color: var(--fore);
+    padding: .6rem 1rem;
+    border-radius: 10px;
+    box-shadow: var(--low_shadow);
+    z-index: 1
   }
 
   /* Misc. */
