@@ -265,7 +265,7 @@ button.cancel:hover {
   height: 100%;
   width: 100%;
   background-color: var(--overlay);
-  z-index: 1
+  z-index: 2
 }
 
 /* Nav Hover Animation */
