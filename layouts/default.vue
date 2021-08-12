@@ -9,6 +9,7 @@
   --base_light: #585858;
   --base_accent: white;
   --overlay: rgba(255, 255, 255, .95);
+  --side-padding: 10vw;
   --transition-standard: 1s all cubic-bezier(.165, .84, .44, 1)
 }
 body {
@@ -18,7 +19,7 @@ body {
   color: var(--base_dark);
   font-size: 16px;
   margin: 0;
-  padding: 0 10%;
+  padding: 0 var(--side-padding);
   background-color: var(--back);
   scroll-behavior: smooth
 }
@@ -236,8 +237,11 @@ button.cancel:hover {
   height: 8vh;
   animation-delay: 100ms
 }
-.container--nav > div {
-  display: flex
+.container--nav > div:last-child {
+  display: flex;
+  position: fixed;
+  top: 3rem;
+  right: var(--side-padding)
 }
 .container--nav > div > * {
   margin: auto
@@ -422,7 +426,12 @@ footer a.input--option {
   }
 }
 @media (max-width: 576px) {
-  /* Containers */
+  :root {
+    --side-padding: 5vw
+  }
+  #logo--home {
+    width: 6rem
+  }
   .container--nav > div > button {
     display: none
   }
