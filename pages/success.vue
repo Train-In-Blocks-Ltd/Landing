@@ -19,15 +19,15 @@
 
 <script>
 export default {
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'Success'
-  },
   head () {
     return {
       meta: [
         { hid: 'robots', name: 'robots', content: 'noindex' }
       ]
     }
+  },
+  beforeCreate () {
+    this.$parent.$parent.metaHelper.title = 'Success'
   }
 }
 </script>
