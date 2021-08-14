@@ -35,7 +35,7 @@
 }
 .blog_post__link {
   display: grid;
-  grid-template-columns: 130px 24px;
+  grid-template-columns: 160px 24px;
   grid-gap: .4rem;
   margin: 2rem 0 0 0;
   transition: grid-gap .4s cubic-bezier(.165, .84, .44, 1)

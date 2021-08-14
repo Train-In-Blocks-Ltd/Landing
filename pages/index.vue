@@ -46,7 +46,7 @@ iframe {
 }
 .blog_post__link {
   display: grid;
-  grid-template-columns: 130px 24px;
+  grid-template-columns: 160px 24px;
   grid-gap: .4rem;
   margin-top: auto;
   transition: grid-gap .4s cubic-bezier(.165, .84, .44, 1)
@@ -124,16 +124,6 @@ iframe {
       >
         Check out our demo
       </a>
-      <div class="spacer" />
-      <iframe
-        title="Pegasus 3.0"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/2vwnB1fnxqI"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      />
     </div>
     <div class="spacer--large" />
     <showcase />

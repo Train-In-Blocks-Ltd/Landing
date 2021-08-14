@@ -91,8 +91,8 @@ export default {
           svg: 'infinity'
         },
         {
-          subtitle: 'Portfolio',
-          desc: 'Edit your portfolio to share important information with your clients.',
+          subtitle: 'Portfolio and Payments',
+          desc: 'Edit your portfolio to share important information with your clients and collect payments.',
           svg: 'payment'
         },
         {
