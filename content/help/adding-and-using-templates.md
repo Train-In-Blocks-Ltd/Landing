@@ -2,7 +2,7 @@
 id: 5
 title: Adding and using templates
 slug: adding-and-using-templates
-excerpt: A guide on how to speed up your workflow and save more time using templates.
+postDesc: A guide on how to speed up your workflow and save more time using templates.
 ---
 # Adding and using templates
 

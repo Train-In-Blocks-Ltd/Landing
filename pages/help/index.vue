@@ -11,7 +11,7 @@
   }
   .click_here {
     cursor: pointer;
-    transition: .6s all cubic-bezier(.165, .84, .44, 1)
+    transition: var(--transition-standard)
   }
   .click_here:hover {
     opacity: .6
@@ -37,7 +37,7 @@
   }
   .help-post__link {
     display: grid;
-    grid-template-columns: 100px 24px;
+    grid-template-columns: 160px 24px;
     grid-gap: .4rem;
     margin: 2rem 0 0 0;
     transition: grid-gap .4s, opacity .1s cubic-bezier(.165, .84, .44, 1)
@@ -58,7 +58,6 @@
   /* Responsiveness */
   @media (max-width: 768px) {
     .help-post {
-      display: grid;
       grid-gap: 2rem
     }
     .help-post__top-wrapper {
@@ -84,24 +83,24 @@
       to get in touch or browse our guides
     </h2>
     <div class="container--help">
-      <div v-for="post in posts" :key="post.attributes.title" class="help-post">
+      <div v-for="post in posts" :key="post.title" class="help-post">
         <div>
           <h2 class="text--xlarge no_margin number_text">
-            {{ post.attributes.id }}
+            {{ post.id }}
           </h2>
         </div>
         <div class="help-post__top-wrapper">
           <div>
             <h3 class="no_margin">
-              {{ post.attributes.title }}
+              {{ post.title }}
             </h3>
             <p>
-              {{ post.attributes.excerpt }}
+              {{ post.postDesc }}
             </p>
           </div>
           <div class="help-post__link">
-            <nuxt-link class="help-post__link-text" :to="`/help/${post.attributes.slug}/`">
-              Read more
+            <nuxt-link class="help-post__link-text" :to="`/help/${post.slug}/`">
+              Continue reading
             </nuxt-link>
             <inline-svg class="svg--read-more" :src="require('../../assets/svg/Arrow.svg')" />
           </div>
@@ -167,22 +166,15 @@
 </template>
 
 <script>
-import InlineSvg from 'vue-inline-svg'
 import axios from 'axios'
 
 export default {
-  components: {
-    InlineSvg
-  },
-  asyncData () {
-    const resolve = require.context('~/content/help/', true, /\.md$/)
-    const imports = resolve.keys().map((key) => {
-      key.match(/\/(.+)\.md$/)
-      return resolve(key)
+  async asyncData ({ $content }) {
+    const posts = await $content('help').fetch()
+    posts.sort((b, a) => {
+      return b.id - a.id
     })
-    return {
-      posts: imports
-    }
+    return { posts }
   },
   data () {
     return {
@@ -195,8 +187,25 @@ export default {
       submitted: null
     }
   },
-  created () {
-    this.sortPosts()
+  head () {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Help",
+              "item": "https://traininblocks.com/help/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
+    }
   },
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'Support Desk'
@@ -206,11 +215,6 @@ export default {
   methods: {
     scroll () {
       document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
-    },
-    sortPosts () {
-      this.posts.sort((a, b) => {
-        return new Date(a.attributes.id) - new Date(b.attributes.id)
-      })
     },
     encode (data) {
       return Object.keys(data)

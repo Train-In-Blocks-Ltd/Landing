@@ -1,425 +1,489 @@
 <style>
-  @import '../node_modules/animate.css';
+/* GLOBAL */
+:root {
+  --low_shadow: 0 0 20px 10px #28282810;
+  --border_rad_large: 10px;
+  --back: #F9F9F9;
+  --fore: white;
+  --base_dark: #282828;
+  --base_light: #585858;
+  --base_accent: white;
+  --overlay: rgba(255, 255, 255, .95);
+  --side-padding: 10vw;
+  --transition-standard: 1s all cubic-bezier(.165, .84, .44, 1)
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--base_dark);
+  font-size: 16px;
+  margin: 0;
+  padding: 0 var(--side-padding);
+  background-color: var(--back);
+  scroll-behavior: smooth
+}
+svg path.transparent {
+  stroke: var(--base_dark)
+}
+svg path:not(.transparent) {
+  fill: var(--base_dark)
+}
+img, video, iframe {
+  user-select: none;
+  outline: none;
+  border-radius: var(--border_rad_large);
+  box-shadow: var(--low_shadow);
+  max-width: 100%
+}
+h1, h2, .text--large {
+  font-size: calc(30px + (36 - 30) * ((100vw - 300px) / (1600 - 300)));
+  color: var(--base_dark)
+}
+h3, .text--small {
+  font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
+  color: var(--base_dark)
+}
+p {
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 1.4;
+  margin: 1rem 0
+}
+a {
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)))
+}
+li {
+  margin: 1rem 0
+}
+a, b {
+  color: var(--base_dark)
+}
 
-  /* GLOBAL */
-  :root {
-    --low_shadow: 0 0 20px 10px #28282808;
-    --border_rad_large: 10px;
-    --back: #F9F9F9;
-    --fore: white;
-    --base_dark: #282828;
-    --base_light: #585858;
-    --base_accent: white;
-    --overlay: rgba(255, 255, 255, .95)
+/* Animations */
+.fadeIn {
+  animation: .6s fadeIn
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
   }
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: var(--base_light);
-    font-size: 16px;
-    margin: 0;
-    padding: 0 8%;
-    background-color: var(--back);
-    scroll-behavior: smooth
+  to {
+    opacity: 1
   }
-  svg path {
-    fill: var(--base_dark)
+}
+
+/* MCE */
+#mc-embedded-subscribe-form {
+  margin-bottom: 2rem
+}
+#mc-embedded-subscribe-form label {
+  color: var(--base_dark);
+  font-weight: bold
+}
+
+/* Inputs */
+input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]),
+select,
+textarea,
+#mce-EMAIL {
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: var(--base_dark);
+  width: 100%;
+  padding: .6rem;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  border: 3px solid var(--base_light);
+  border-radius: 8px;
+  background-color: transparent;
+  box-shadow: none;
+  transition: all .6s cubic-bezier(.165, .84, .44, 1)
+}
+input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):not(:focus):hover:not(:focus),
+select:hover:not(:focus),
+textarea:hover:not(:focus),
+#mce-EMAIL:hover:not(:focus) {
+  opacity: .6
+}
+input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):disabled {
+  cursor: not-allowed;
+  opacity: .6
+}
+input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):focus,
+textarea:focus,
+#mce-EMAIL:focus {
+  border: 3px solid var(--base_dark)
+}
+input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).small_border_radius,
+select.small_border_radius,
+textarea.small_border_radius,
+#mce-EMAIL.small_border_radius {
+  border-radius: 5px
+}
+input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).width_300,
+select.width_300,
+#mce-EMAIL.width_300 {
+  width: 300px
+}
+input[type=color] {
+  margin: 0 .4rem;
+  background-color: transparent;
+  padding: 0 .14rem;
+  outline-width: 0;
+  cursor: pointer;
+  transition: all .4s cubic-bezier(.165, .84, .44, 1)
+}
+::placeholder {
+  color: var(--base_light);
+  opacity: 1; /* Firefox */
+}
+
+/* GLOBAL: CONTENT */
+.text--xlarge {
+  font-size: calc(40px + (46 - 40) * ((100vw - 300px) / (1600 - 300)))
+}
+.center_text {
+  text-align: center
+}
+.accent_text {
+  color: var(--base_light)
+}
+.no_margin {
+  margin: 0
+}
+.back_text {
+  color: var(--base_dark);
+  transition: var(--transition-standard)
+}
+.back_text:hover {
+  opacity: .6
+}
+
+/* Box buttons */
+button:not(.cookieControl__ControlButton),
+#mc-embedded-subscribe {
+  height: auto;
+  width: auto;
+  max-height: 35px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 5px;
+  opacity: 1;
+  text-transform: capitalize;
+  outline-width: 0;
+  border: none;
+  /* stylelint-disable-next-line */
+  padding: .6rem 1.6rem !important;
+  font-size: .8rem;
+  font-weight: bold;
+  /* stylelint-disable-next-line */
+  color: var(--base_accent) !important;
+  /* stylelint-disable-next-line */
+  background-color: var(--base_dark) !important;
+  transition: color .6s, background-color .6s, opacity .2s, transform .1s cubic-bezier(.165, .84, .44, 1)
+}
+button:hover:not(:disabled):not(.cookieControl__ControlButton),
+#mc-embedded-subscribe:hover {
+  opacity: .6
+}
+button:active:not(:disabled),
+#mc-embedded-subscribe:active {
+  transform: scale(.96)
+}
+button:focus,
+#mc-embedded-subscribe:focus {
+  box-shadow: var(--low_shadow)
+}
+button:disabled,
+button[disabled] {
+  cursor: not-allowed;
+  opacity: .6
+}
+button.cancel:hover {
+  /* stylelint-disable-next-line */
+  background-color: darkred !important
+}
+
+/* Floating help */
+.floating_help {
+  position: fixed;
+  right: 5rem;
+  bottom: 2rem;
+  padding: .6rem 1rem;
+  border-radius: 50px;
+  background-color: var(--base_dark);
+  color: var(--fore);
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 99;
+  transition: var(--transition-standard)
+}
+.floating_help:hover {
+  opacity: .6
+}
+
+/* GLOBAL: NAV */
+#logo--home {
+  width: 8rem;
+  height: auto
+}
+.container--nav {
+  display: flex;
+  margin: 0 0 6rem 0;
+  justify-content: space-between;
+  height: 8vh;
+  animation-delay: 100ms
+}
+.container--nav > div:last-child {
+  display: flex
+}
+.container--nav > div > * {
+  margin: auto
+}
+.container--nav > div > *:last-child {
+  margin-left: 1.6rem
+}
+.wrapper--nav-items {
+  display: grid;
+  text-align: right;
+  position: fixed;
+  top: 6vh;
+  right: 8%;
+  width: 100%;
+  z-index: 2
+}
+.wrapper--nav-items > svg {
+  margin-left: auto
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--overlay);
+  z-index: 2
+}
+
+/* Nav Hover Animation */
+.nav-button {
+  cursor: pointer;
+  transition: var(--transition-standard)
+}
+.nav-button:hover {
+  opacity: .6
+}
+.input--option {
+  position: relative;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: var(--base_dark);
+  transition: 300ms
+}
+.input--option:hover {
+  opacity: .4
+}
+nav a.nuxt-link-exact-active {
+  font-weight: bold
+}
+
+/* GLOBAL: FOOTER */
+.social-icon {
+  width: 25px;
+  height: 25px;
+  margin: 0 1rem 2rem 0;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity .4s, transform .1s cubic-bezier(.165, .84, .44, 1)
+}
+.social-icon:hover {
+  opacity: .6
+}
+.social-icon:active {
+  transform: scale(.9)
+}
+
+/* Cookie bar */
+.cookieControl__BarContainer {
+  display: grid;
+  grid-gap: 1rem;
+  margin: auto;
+  padding: 2rem 6rem
+}
+.cookieControl__BarContainer :is(p, button) {
+  font-size: .8rem
+}
+div.cookieControl__Bar {
+  background-color: var(--base_dark)
+}
+.cookieControl__Bar p {
+  color: var(--fore);
+  margin-top: 0
+}
+.cookieControl__Bar a.input--option b {
+  color: var(--fore)
+}
+.cookieControl__BarButtons > button {
+  /* stylelint-disable-next-line */
+  background-color: var(--fore) !important;
+  /* stylelint-disable-next-line */
+  color: var(--base_dark) !important
+}
+
+/* Cookie button */
+.cookieControl__ControlButton {
+  bottom: 2rem;
+  background-color: var(--base_dark);
+  /* stylelint-disable-next-line */
+  transition: var(--transition-standard) !important
+}
+.cookieControl__ControlButton:hover {
+  opacity: .6
+}
+.cookieControl__ControlButton svg > path:not(.transparent) {
+  fill: var(--fore)
+}
+
+/* Cookie modal */
+.cookieControl__ModalContent {
+  background-color: var(--fore)
+}
+div.cookieControl__ModalContent *:not(button) {
+  color: var(--base_dark)
+}
+
+/* Footer */
+footer {
+  padding: 2rem 0;
+  border-top: 3px solid var(--base_dark)
+}
+footer p {
+  font-size: .8rem
+}
+footer a.input--option {
+  font-size: .8rem;
+  margin: 0 1rem 0 0
+}
+
+/* Misc. */
+.spacer--small {
+  height: 6vh
+}
+.spacer {
+  height: 10vh
+}
+.spacer--large {
+  height: 20vh
+}
+
+/* Scroll-bar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px
+}
+::-webkit-scrollbar-track {
+  background: #181E2520
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: var(--base_dark)
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--base_light)
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+  button:hover {
+    background-color: transparent;
+    color: var(--base_dark)
   }
-  img, video, iframe {
-    user-select: none;
-    outline: none;
-    border-radius: var(--border_rad_large);
+  .input--option.nuxt-link-exact-active:before {
+    transform: scaleX(1);
+    opacity: 1
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    padding: 2rem 0 5rem 0
+  }
+  .cookieControl__ModalContent {
+    padding: 0;
+    overflow-y: auto
+  }
+  .cookieControl__BarContainer,
+  .cookieControl__ModalContent > div {
+    padding: 2rem
+  }
+  .container--nav > div:last-child {
+    position: fixed;
+    top: 2.8rem;
+    right: var(--side-padding);
+    background-color: var(--fore);
+    padding: .6rem 1rem;
+    border-radius: 10px;
     box-shadow: var(--low_shadow);
-    max-width: 100%
-  }
-  h1, h2 {
-    font-size: 2rem;
-    color: var(--base_dark)
-  }
-  h3 {
-    font-size: 1.4rem;
-    color: var(--base_dark)
-  }
-  p {
-    line-height: 1.4;
-    margin: 1rem 0
-  }
-  li {
-    margin: 1rem 0
-  }
-  a, b {
-    color: var(--base_dark)
-  }
-
-  /* MCE */
-  #mc-embedded-subscribe-form {
-    margin-bottom: 2rem
-  }
-  #mc-embedded-subscribe-form label {
-    color: var(--base_dark);
-    font-weight: bold
-  }
-
-  /* Inputs */
-  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]),
-  select,
-  textarea,
-  #mce-EMAIL {
-    outline: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    color: var(--base_dark);
-    width: 100%;
-    padding: .6rem;
-    resize: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    border: 1px solid var(--base_light);
-    border-radius: 8px;
-    background-color: transparent;
-    box-shadow: none;
-    transition: all .6s cubic-bezier(.165, .84, .44, 1)
-  }
-  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):not(:focus):hover,
-  select:hover,
-  textarea:hover,
-  #mce-EMAIL:hover {
-    opacity: .6
-  }
-  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):disabled {
-    cursor: not-allowed;
-    opacity: .6
-  }
-  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):focus,
-  textarea:focus,
-  #mce-EMAIL:focus {
-    border: 1px solid var(--base_dark)
-  }
-  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).small_border_radius,
-  select.small_border_radius,
-  textarea.small_border_radius,
-  #mce-EMAIL.small_border_radius {
-    border-radius: 5px
-  }
-  input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).width_300,
-  select.width_300,
-  #mce-EMAIL.width_300 {
-    width: 300px
-  }
-  input[type=color] {
-    margin: 0 .4rem;
-    background-color: transparent;
-    padding: 0 .14rem;
-    outline-width: 0;
-    cursor: pointer;
-    transition: all .4s cubic-bezier(.165, .84, .44, 1)
-  }
-  ::placeholder {
-    color: var(--base_light);
-    opacity: 1; /* Firefox */
-  }
-
-  /* GLOBAL: CONTENT */
-  .text--xlarge {
-    font-size: 4rem
-  }
-  .text--large {
-    font-size: 2.6rem
-  }
-  .text--small {
-    font-size: 1.6rem
-  }
-  .accent_text {
-    color: var(--base_light)
-  }
-  .no_margin {
-    margin: 0
-  }
-  .back_text {
-    color: var(--base_dark);
-    transition: .6s all cubic-bezier(.165, .84, .44, 1)
-  }
-  .back_text:hover {
-    opacity: .6
-  }
-
-  /* Box buttons */
-  button:not(.cookieControl__ControlButton),
-  #mc-embedded-subscribe {
-    height: auto;
-    width: auto;
-    max-height: 35px;
-    user-select: none;
-    cursor: pointer;
-    border-radius: 5px;
-    opacity: 1;
-    text-transform: capitalize;
-    outline-width: 0;
-    border: none;
-    /* stylelint-disable-next-line */
-    padding: .6rem 1.6rem !important;
-    font-size: .8rem;
-    /* stylelint-disable-next-line */
-    color: var(--base_accent) !important;
-    /* stylelint-disable-next-line */
-    background-color: var(--base_dark) !important;
-    transition: color .6s, background-color .6s, opacity .2s, transform .1s cubic-bezier(.165, .84, .44, 1)
-  }
-  button:hover:not(:disabled):not(.cookieControl__ControlButton),
-  #mc-embedded-subscribe:hover {
-    opacity: .6
-  }
-  button:active:not(:disabled),
-  #mc-embedded-subscribe:active {
-    transform: scale(.96)
-  }
-  button:focus,
-  #mc-embedded-subscribe:focus {
-    box-shadow: var(--low_shadow)
-  }
-  button:disabled,
-  button[disabled] {
-    cursor: not-allowed;
-    opacity: .6
-  }
-  button.cancel:hover {
-    /* stylelint-disable-next-line */
-    background-color: darkred !important
-  }
-
-  /* GLOBAL: NAV */
-  #logo--home {
-    width: 8rem;
-    height: auto
-  }
-  .container--nav {
-    display: flex;
-    margin: 0 0 6rem 0;
-    justify-content: space-between;
-    height: 8vh;
-    animation-delay: 100ms
-  }
-  .container--nav > div {
-    display: flex
-  }
-  .container--nav > div > button {
-    margin-right: 1rem
-  }
-  .wrapper--nav-items {
-    display: grid;
-    text-align: right;
-    position: fixed;
-    top: 6vh;
-    right: 8%;
-    width: 100%;
-    z-index: 2
-  }
-  .wrapper--nav-items > svg {
-    margin-left: auto
-  }
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--overlay);
     z-index: 1
   }
 
-  /* Nav Hover Animation */
-  .nav-button {
-    cursor: pointer;
-    transition: opacity .6s, transform .1s cubic-bezier(.165, .84, .44, 1)
-  }
-  .nav-button:hover {
-    opacity: .6
-  }
-  .nav-button:active {
-    transform: scale(.9)
-  }
-  .input--option {
-    position: relative;
-    margin: 1rem 0;
-    text-decoration: none;
-    color: var(--base_dark);
-    transition: 300ms
-  }
+  /* Misc. */
   .input--option:hover {
-    opacity: .4
-  }
-  nav a.nuxt-link-exact-active {
-    font-weight: bold
-  }
-
-  /* GLOBAL: FOOTER */
-  .social-icon {
-    width: 25px;
-    height: 25px;
-    margin: 0 1rem 2rem 0;
-    cursor: pointer;
-    opacity: 1;
-    transition: opacity .4s, transform .1s cubic-bezier(.165, .84, .44, 1)
+    opacity: 1
   }
   .social-icon:hover {
-    opacity: .6
+    opacity: 1
   }
-  .social-icon:active {
-    transform: scale(.9)
+  button:disabled:hover {
+    color: rgba(16, 16, 16, .3)
   }
-
-  /* GLOBAL: FOOTER */
-  .cookieControl__ModalContent {
-    background-color: var(--fore)
+}
+@media (max-width: 576px) {
+  :root {
+    --side-padding: 5vw
   }
-  div.cookieControl__ModalContent *:not(button) {
-    color: var(--base_dark)
+  #logo--home {
+    width: 6rem
   }
-  .cookieControl__ControlButton:hover svg path {
-    fill: white
+  .container--nav > div > button {
+    display: none
   }
-  .cookieControl__BarContainer {
-    display: grid;
-    grid-gap: 1rem;
-    margin: auto;
-    padding: 2rem 6rem
-  }
-  .cookieControl__BarContainer p, .cookieControl__BarContainer button {
-    font-size: .8rem
-  }
-  div.cookieControl__Bar {
-    background-color: var(--fore)
-  }
-  .cookieControl__Bar p {
-    color: var(--base_dark);
-    margin-top: 0
-  }
-  .cookieControl button {
-    background-color: var(--fore)
-  }
-  footer {
-    padding: 2rem 0;
-    border-top: 1px solid var(--base_light)
-  }
-  footer p {
-    font-size: .8rem
-  }
-  footer a.input--option {
-    font-size: .8rem;
-    margin: 0 1rem 0 0
+  .container--features {
+    grid-gap: 2rem
   }
 
   /* Misc. */
-  .spacer--small {
-    height: 6vh
+  div.ql-editor {
+    width: 300px
   }
-  .spacer {
-    height: 10vh
+  button {
+    font-size: .8rem
   }
-  .spacer--large {
-    height: 20vh
+}
+@media (max-width: 360px) {
+  body {
+    font-size: 14px
   }
-
-  /* Scroll-bar */
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px
+  .main-title {
+    font-size: 1.5rem
   }
-  ::-webkit-scrollbar-track {
-    background: #181E2520
-  }
-  ::-webkit-scrollbar-thumb {
-    border-radius: 3px;
-    background: var(--base_dark)
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--base_light)
-  }
-
-  /* Responsiveness */
-  @media (min-width: 1440px) {
-    .paper--title {
-      font-size: 3.5rem
-    }
-  }
-  @media (max-width: 992px) {
-    button:hover {
-      background-color: transparent;
-      color: var(--base_dark)
-    }
-    .input--option.nuxt-link-exact-active:before {
-      transform: scaleX(1);
-      opacity: 1
-    }
-  }
-  @media (max-width: 768px) {
-    .cookieControl__BarContainer {
-      padding: 2rem
-    }
-
-    /* GLOBAL: CONTENT */
-    .text--large {
-      width: 100%;
-      font-size: 2rem
-    }
-    .text--small {
-      font-size: 1.4rem
-    }
-
-    /* Misc. */
-    .paper--title {
-      font-size: 3rem
-    }
-    .input--option:hover {
-      opacity: 1
-    }
-    .social-icon:hover {
-      opacity: 1
-    }
-    button:disabled:hover {
-      color: rgba(16, 16, 16, .3)
-    }
-  }
-  @media (max-width: 576px) {
-    /* Containers */
-    .container--nav > div > button {
-      display: none
-    }
-    .container--features {
-      grid-gap: 2rem
-    }
-
-    /* Misc. */
-    div.ql-editor {
-      width: 300px
-    }
-    button {
-      font-size: .8rem
-    }
-  }
-  @media (max-width: 360px) {
-    body {
-      font-size: 14px
-    }
-    .main-title {
-      font-size: 1.5rem
-    }
-  }
+}
 </style>
 
 <template>
   <div id="app">
     <div v-if="openNav" class="overlay" />
     <nav>
-      <transition enter-active-class="animated fadeIn faster">
+      <transition enter-active-class="fadeIn">
         <div v-show="openNav" class="wrapper--nav-items">
           <inline-svg class="nav-button" :src="require('../assets/svg/close.svg')" @click="openNav = false" />
           <a class="text--large input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">
             Log In
           </a>
           <nuxt-link class="text--large input--option" to="/" @click.native="openNav = false">
-            Welcome
+            Home
           </nuxt-link>
           <a
             href="javascript:void(0)"
@@ -441,47 +505,54 @@
       </transition>
     </nav>
     <div id="nav--top" class="spacer--small" />
-    <div class="container--nav animated fadeIn">
-      <nuxt-link to="/">
+    <div class="container--nav fadeIn">
+      <nuxt-link to="/" title="Home">
         <inline-svg id="logo--home" class="nav-button" :src="require('../assets/svg/LogoV12.svg')" />
       </nuxt-link>
       <div>
-        <button @click="darkmode()">
-          {{ theme === 'Dark' ? 'Light' : 'Dark' }} mode
-        </button>
-        <transition enter-active-class="animated fadeIn faster delay-1s" leave-active-class="animated fadeOut faster">
-          <inline-svg v-show="!openNav" class="nav-button" :src="require('../assets/svg/hamburger.svg')" @click="openNav = true" />
-        </transition>
+        <darkmode-toggle />
+        <inline-svg
+          class="nav-button"
+          :src="require('../assets/svg/hamburger.svg')"
+          @click="openNav = true"
+        />
       </div>
     </div>
-    <div class="animated fadeIn">
-      <transition enter-active-class="animated fadeIn delay-1s" leave-active-class="animated fadeOut">
-        <nuxt />
-      </transition>
+    <div>
+      <nuxt class="fadeIn" />
     </div>
     <div class="spacer" />
+    <nuxt-link
+      v-if="$route.name !== 'help'"
+      class="floating_help"
+      to="/help/"
+    >
+      I need help
+    </nuxt-link>
     <footer>
+      <CookieControl>
+        <template #bar>
+          <p>
+            We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
+            <nuxt-link class="input--option" to="/legal/cookies-policy/">
+              <b>Cookies Policy</b>.
+            </nuxt-link>
+          </p>
+        </template>
+      </CookieControl>
       <div class="nav--footer">
-        <CookieControl>
-          <template v-slot:bar>
-            <p>
-              We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
-              <nuxt-link class="input--option" to="/legal/cookies-policy/">
-                <b>Cookies Policy</b>.
-              </nuxt-link>
-            </p>
-          </template>
-        </CookieControl>
         <div class="social-bar">
           <a
             target="_blank"
             href="https://www.facebook.com/traininblocks"
+            title="Facebook"
           >
             <inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" />
           </a>
           <a
             target="_blank"
             href="https://www.instagram.com/traininblocks"
+            title="Instagram"
           >
             <inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" />
           </a>
@@ -492,7 +563,7 @@
         action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
         method="post"
         name="mc-embedded-subscribe-form"
-        class="validate animated fadeInLeft"
+        class="validate"
         target="_blank"
         novalidate
       >
@@ -540,12 +611,12 @@
 </template>
 
 <script>
-import InlineSvg from 'vue-inline-svg'
+import DarkmodeToggle from '../components/DarkmodeToggle.vue'
 
 export default {
   name: 'App',
   components: {
-    InlineSvg
+    DarkmodeToggle
   },
   data () {
     return {
@@ -557,32 +628,6 @@ export default {
         image: 'https://traininblocks.com/android-chrome-512x512.png',
         url: 'https://traininblocks.com'
       }
-    }
-  },
-  methods: {
-    darkmode () {
-      if (this.theme === 'Light') {
-        this.theme = 'Dark'
-        document.documentElement.style.setProperty('--low_shadow', '0 0 2px 0 #FFFFFF60')
-        document.documentElement.style.setProperty('--back', '#282828')
-        document.documentElement.style.setProperty('--fore', '#383838')
-        document.documentElement.style.setProperty('--base_dark', 'white')
-        document.documentElement.style.setProperty('--base_light', 'white')
-        document.documentElement.style.setProperty('--base_accent', '#282828')
-        document.documentElement.style.setProperty('--overlay', '#383838')
-      } else {
-        this.theme = 'Light'
-        document.documentElement.style.setProperty('--low_shadow', '0 0 20px 10px #28282808')
-        document.documentElement.style.setProperty('--back', '#F9F9F9')
-        document.documentElement.style.setProperty('--fore', 'white')
-        document.documentElement.style.setProperty('--base_dark', '#282828')
-        document.documentElement.style.setProperty('--base_light', '#585858')
-        document.documentElement.style.setProperty('--base_accent', 'white')
-        document.documentElement.style.setProperty('--overlay', 'rgba(255, 255, 255, .95)')
-      }
-    },
-    scroll () {
-      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
     }
   },
   head () {
@@ -600,6 +645,11 @@ export default {
       link: [
         { hid: 'canonical', rel: 'canonical', href: this.metaHelper.url }
       ]
+    }
+  },
+  methods: {
+    scroll () {
+      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
     }
   }
 }

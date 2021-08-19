@@ -3,7 +3,7 @@ id: 13
 title: Strength and aerobic exercises together can improve performance
 slug: concurrent-training
 img: 13.png
-excerpt: How much is too much cardio in one resistance session? This recent paper explores the use of aerobic exercises at different intensities to improve performance. A further insight into the effects of concurrent training during a detraining period demonstrated some interesting results.
+postDesc: How much is too much cardio in one resistance session? This recent paper explores the use of aerobic exercises at different intensities to improve performance. A further insight into the effects of concurrent training during a detraining period demonstrated some interesting results.
 ---
 
 ## What are *Quick Articles*?

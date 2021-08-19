@@ -22,11 +22,11 @@ fields:
   config:
     required: false
   label: slug
-- name: excerpt
+- name: postDesc
   type: text
   config:
     required: false
-  label: excerpt
+  label: postDesc
 - name: show
   type: boolean
   label: show

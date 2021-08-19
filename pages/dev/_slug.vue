@@ -49,39 +49,60 @@
 
 <template>
   <div class="dev_body">
-    <!--eslint-disable-next-line-->
     <nuxt-link to="/dev/" class="back_text">
       Back
     </nuxt-link>
     <h1>
-      {{ title }}
+      {{ post.title }}
     </h1>
-    <div class="dev_html" v-html="html" />
+    <nuxt-content class="dev_html" :document="post" />
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData ({ params }) {
-    try {
-      const post = await require(`~/content/dev/${params.slug}.md`)
-      return {
-        html: post.html,
-        excerpt: post.attributes.excerpt,
-        title: post.attributes.title,
-        img: post.attributes.img
-      }
-    } catch (err) {
-      // eslint-disable-next-line
-      console.debug(err)
-      return false
-    }
+  async asyncData ({ $content, params }) {
+    const post = await $content('dev', params.slug).fetch()
+    return { post }
   },
   mounted () {
-    this.$parent.$parent.metaHelper.title = this.title
-    this.$parent.$parent.metaHelper.description = this.excerpt
-    this.$parent.$parent.metaHelper.image = this.img
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/dev/' + this.$route.params.slug + '/'
+    this.$parent.$parent.metaHelper.title = this.post.title
+    this.$parent.$parent.metaHelper.description = this.post.postDesc
+    this.$parent.$parent.metaHelper.image = this.post.img
+    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/dev/${this.$route.params.slug}/`
+  },
+  head () {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Dev Blog",
+              "item": "https://traininblocks.com/dev/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 3,
+              "name": "${this.post.title}",
+              "item": "https://traininblocks.com/legal/${this.$route.params.slug}/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
+    }
   }
 }
 </script>

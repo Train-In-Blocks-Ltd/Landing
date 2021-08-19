@@ -3,7 +3,7 @@ id: 1
 title: 5 ways this blog will benefit you
 slug: 5-ways-this-blog-will-benefit-you
 img: 1.png
-excerpt: Take less than two minutes to find out how this blog will benefit you greatly.
+postDesc: Take less than two minutes to find out how this blog will benefit you greatly.
 ---
 
 ## 1. We're keeping it simple

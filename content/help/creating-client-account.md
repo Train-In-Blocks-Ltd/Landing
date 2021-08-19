@@ -2,7 +2,7 @@
 id: 1
 title: Create an account for your clients
 slug: creating-client-account
-excerpt: Give access to your clients so that they can see their sessions and plans.
+postDesc: Give access to your clients so that they can see their sessions and plans.
 ---
 # Create an account for your clients
 

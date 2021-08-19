@@ -38,24 +38,52 @@
 
 <template>
   <div class="legal--body">
-    <div class="legal_html" v-html="html" />
+    <nuxt-content class="legal_html" :document="post" />
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData ({ params }) {
-    try {
-      const post = await require(`~/content/legal/${params.slug}.md`)
-      return {
-        html: post.html,
-        excerpt: post.attributes.excerpt,
-        title: post.attributes.title
-      }
-    } catch (err) {
-      // eslint-disable-next-line
-      console.debug(err)
-      return false
+  async asyncData ({ $content, params }) {
+    const post = await $content('legal', params.slug).fetch()
+    return { post }
+  },
+  mounted () {
+    this.$parent.$parent.metaHelper.title = this.post.title
+    this.$parent.$parent.metaHelper.description = this.post.postDesc
+    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/legal/${this.$route.params.slug}/`
+  },
+  head () {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Legal",
+              "item": "https://traininblocks.com/legal/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 3,
+              "name": "${this.post.title}",
+              "item": "https://traininblocks.com/legal/${this.$route.params.slug}/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
     }
   }
 }

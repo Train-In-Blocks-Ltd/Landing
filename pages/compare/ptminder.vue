@@ -24,7 +24,40 @@ export default {
   beforeCreate () {
     this.$parent.$parent.metaHelper.title = 'PTminder'
     this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
+    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/compare/ptminder/'
+  },
+  head () {
+    return {
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Compare",
+              "item": "https://traininblocks.com/compare/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 3,
+              "name": "PTMinder",
+              "item": "https://traininblocks.com/compare/ptminder/"
+            }]
+          }`,
+          type: 'application/ld+json'
+        }
+      ]
+    }
   }
 }
 </script>

@@ -3,7 +3,7 @@ id: 5
 title: 5 ways to boost client retention
 slug: 5-ways-to-boost-client-retention
 img: 5.png
-excerpt: Get creative and keep your clients for longer with these practical techniques.
+postDesc: Get creative and keep your clients for longer with these practical techniques.
 ---
 
 ## 1. Make your rewards progressive

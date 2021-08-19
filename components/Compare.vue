@@ -71,7 +71,7 @@
         </ul>
       </div>
     </div>
-    <div class="spacer" />
+    <div class="spacer--large" />
     <benefits />
     <div class="spacer" />
     <payment />

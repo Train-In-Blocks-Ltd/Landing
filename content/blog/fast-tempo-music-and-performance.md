@@ -3,7 +3,7 @@ id: 7
 title: Does listening to music improve performance?
 slug: fast-tempo-music-and-performance
 img: 7.png
-excerpt: Most of us will listen to music whilst we're training, but does it actually improve performance and reduce the perception of fatigue.
+postDesc: Most of us will listen to music whilst we're training, but does it actually improve performance and reduce the perception of fatigue.
 ---
 
 ## What are *Quick Articles*?

@@ -1,6 +1,5 @@
 import * as path from 'path'
 import * as glob from 'glob'
-import Mode from 'frontmatter-markdown-loader/mode'
 
 function getDynamicPaths (urlFilepathTable) {
   return [].concat(
@@ -16,6 +15,9 @@ function getDynamicPaths (urlFilepathTable) {
 export default async () => {
   return {
     target: 'static',
+    router: {
+      trailingSlash: true
+    },
     /*
     ** Headers of the page
     */
@@ -59,6 +61,10 @@ export default async () => {
       __dangerouslyDisableSanitizers: ['script'],
       script: [
         {
+          src: 'https://js.stripe.com/v3/',
+          async: true
+        },
+        {
           innerHTML: `{
             "@context": "http://schema.org",
             "@type": "Organization",
@@ -85,6 +91,19 @@ export default async () => {
             ]
           }`,
           type: 'application/ld+json'
+        },
+        {
+          innerHTML: `{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://traininblocks.com"
+            }]
+          }`,
+          type: 'application/ld+json'
         }
       ]
     },
@@ -96,11 +115,14 @@ export default async () => {
     ** Global CSS
     */
     css: [
+      '~/assets/main.css'
     ],
     /*
     ** Plugins to load before mounting the App
     */
-    plugins: [],
+    plugins: [
+      '~/plugins/vue-inline-svg.js'
+    ],
     /*
     ** Nuxt.js dev-modules
     */
@@ -127,7 +149,8 @@ export default async () => {
           checkboxDisabledBackground: '#282828',
           checkboxActiveCircleBackground: '#FFFFFF'
         }
-      }]
+      }],
+      '@nuxt/content'
     ],
     cookies: {
       necessary: [
@@ -195,17 +218,6 @@ export default async () => {
     ** Build configuration
     */
     build: {
-      extend (config, ctx) {
-        // add frontmatter-markdown-loader
-        config.module.rules.push({
-          test: /\.md$/,
-          include: path.resolve(__dirname, 'content'),
-          loader: 'frontmatter-markdown-loader',
-          options: {
-            mode: [Mode.HTML, Mode.META]
-          }
-        })
-      },
       html: {
         minify: {
           collapseBooleanAttributes: true,
