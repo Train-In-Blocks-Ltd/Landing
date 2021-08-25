@@ -42,6 +42,7 @@
       # By Glob pattern
       # '**/**/child-one.html'
       './dist/success/index.html',
+      './dist/cancelled/index.html',
       './dist/404.html'
     ]
 
