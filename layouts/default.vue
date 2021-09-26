@@ -26,7 +26,7 @@ body {
 svg path.transparent {
   stroke: var(--base_dark)
 }
-svg path:not(.transparent) {
+svg path:not(.transparent, .no-fill) {
   fill: var(--base_dark)
 }
 img, video, iframe {
