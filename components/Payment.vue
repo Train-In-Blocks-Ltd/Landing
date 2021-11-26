@@ -89,7 +89,7 @@ export default {
           price: '£102',
           timeframe: 'per year',
           desc: 'Save 15% when you sign up to our annual plan — an even better deal.',
-          data: [{ price: 'price_1IhbA6BYbiJubfJMIWBucMqr', quantity: 1 }]
+          data: [{ price: 'price_1GtvcPBYbiJubfJM7nWmNywN', quantity: 1 }]
         },
         {
           name: 'Monthly',
