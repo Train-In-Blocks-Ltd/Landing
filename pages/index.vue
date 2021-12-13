@@ -4,9 +4,6 @@
   margin: 0 auto;
   width: 70%;
 }
-.home_intro > h1 {
-  font-size: 3rem;
-}
 .home_intro > a {
   font-size: 2rem;
   font-weight: bold;
@@ -97,9 +94,6 @@ iframe {
   }
 }
 @media (max-width: 576px) {
-  .home_intro > h1 {
-    font-size: 2rem;
-  }
   .latest_post_container {
     grid-template-columns: 1fr;
     grid-gap: 4rem;
@@ -113,7 +107,7 @@ iframe {
 <template>
   <div id="home">
     <div class="home_intro">
-      <h1 class="center_text">
+      <h1 class="">
         We've taken exercise programming to the next level.
       </h1>
       <h2>

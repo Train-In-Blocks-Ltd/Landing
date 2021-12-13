@@ -38,7 +38,6 @@ iframe {
   box-shadow: var(--low_shadow);
   max-width: 100%;
 }
-h1,
 h2,
 .text--large {
   font-size: calc(30px + (36 - 30) * ((100vw - 300px) / (1600 - 300)));
