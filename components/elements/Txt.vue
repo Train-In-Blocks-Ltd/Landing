@@ -1,47 +1,40 @@
-<style lang="scss" scoped>
-h1,
-h2 {
-  font-size: 2.6rem;
-}
-h3,
-.large_body {
-  font-size: 1.6rem;
-}
-.body {
-  font-size: 1rem;
-}
-.tiny {
-  font-size: 0.8rem;
-}
-.grey {
-  color: var(--base_light);
-}
-.bold {
-  font-weight: bold;
-}
-</style>
-
 <template>
-  <h1 v-if="type === 'title' && isMain" :class="{ grey }">
+  <h1
+    v-if="type === 'title' && isMain"
+    :class="{ 'text-gray-600': grey }"
+    class="text-4xl font-bold"
+  >
     <slot />
   </h1>
-  <h2 v-else-if="type === 'title'" :class="{ grey }">
+  <h2
+    v-else-if="type === 'title'"
+    :class="{ 'text-gray-600': grey }"
+    class="text-3xl font-bold"
+  >
     <slot />
   </h2>
-  <h3 v-else-if="type === 'subtitle'" :class="{ grey }">
+  <h3
+    v-else-if="type === 'subtitle'"
+    :class="{ 'text-gray-600': grey }"
+    class="text-2xl"
+  >
     <slot />
   </h3>
-  <p v-else-if="type === 'tiny'" class="tiny" :class="{ grey, bold }">
+  <p
+    v-else-if="type === 'tiny'"
+    class="text-sm"
+    :class="{ 'text-gray-600': grey, 'font-bold': bold }"
+  >
     <slot />
   </p>
   <p
     v-else-if="type === 'large-body'"
-    class="large_body"
-    :class="{ grey, bold }"
+    class="text-2xl"
+    :class="{ 'text-gray-600': grey, 'font-bold': bold }"
   >
     <slot />
   </p>
-  <p v-else class="body" :class="{ grey, bold }">
+  <p v-else class="body" :class="{ 'text-gray-800': grey, 'font-bold': bold }">
     <slot />
   </p>
 </template>
@@ -49,10 +42,13 @@ h3,
 <script>
 export default {
   props: {
-    type: String,
+    type: {
+      type: String,
+      default: 'body'
+    },
     isMain: Boolean,
-    bold: Boolean,
     grey: Boolean,
+    bold: Boolean
   },
 };
 </script>

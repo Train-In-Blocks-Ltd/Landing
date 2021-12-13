@@ -1,17 +1,5 @@
 <style scoped>
 /* Home Intro */
-.home_intro {
-  margin: 0 auto;
-  width: 70%;
-}
-.home_intro > a {
-  font-size: 2rem;
-  font-weight: bold;
-  transition: var(--transition-standard);
-}
-.home_intro > a:hover {
-  opacity: 0.6;
-}
 iframe {
   display: flex;
   margin: auto;
@@ -79,9 +67,6 @@ iframe {
 
 /* Responsiveness */
 @media (max-width: 992px) {
-  .home_intro {
-    width: 100%;
-  }
   .latest_post_container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -106,23 +91,7 @@ iframe {
 
 <template>
   <div id="home">
-    <div class="home_intro">
-      <h1 class="">
-        We've taken exercise programming to the next level.
-      </h1>
-      <h2>
-        A personal training software to fuel your growth and build deeper
-        relationships with your clients — from the first hello and beyond.
-      </h2>
-      <a
-        href="http://app.traininblocks.com/?utm=landingHeader"
-        target="_blank"
-        style="margin: auto; display: inherit;"
-        class="center_text"
-      >
-        Check out our demo
-      </a>
-    </div>
+    <home-top-section />
     <div class="spacer--large" />
     <showcase />
     <div class="spacer" />
@@ -185,12 +154,14 @@ iframe {
 import Payment from "../components/Payment";
 import Benefits from "../components/Benefits";
 import Showcase from "../components/Showcase";
+import HomeTopSection from '../components/pages/HomeTopSection'
 
 export default {
   components: {
     Payment,
     Benefits,
     Showcase,
+    HomeTopSection
   },
   async asyncData({ $content }) {
     const latestBlogPosts = await $content("blog").fetch();

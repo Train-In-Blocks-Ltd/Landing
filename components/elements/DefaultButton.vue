@@ -1,43 +1,6 @@
-<style lang="scss" scoped>
-button {
-  user-select: none;
-  cursor: pointer;
-  align-self: center;
-  border-radius: 5px;
-  text-transform: capitalize;
-  outline-width: 0;
-  border: none;
-  padding: 0.6rem 1.6rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: var(--back);
-  background-color: var(--base);
-  transition: color 0.4s, background-color 0.4s, opacity 0.2s,
-    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
-  &:hover:not(:disabled) {
-    opacity: var(--light_opacity);
-  }
-  &:active:not(:disabled) {
-    transform: var(--active_state);
-  }
-  &:focus {
-    box-shadow: 0 0 0 4px var(--base_light);
-  }
-  &:disabled,
-  &[disabled] {
-    cursor: not-allowed;
-    opacity: var(--light_opacity);
-  }
-  &.green,
-  &.red {
-    color: white;
-  }
-  &.green {
-    background-color: green;
-  }
-  &.red {
-    background-color: #b80000;
-  }
+<style scoped>
+.default-button {
+  @apply select-none cursor-pointer self-center rounded border-none px-6 py-3 font-bold text-white bg-gray-800 transition-all hover:opacity-75 active:scale-95;
 }
 </style>
 
@@ -45,24 +8,26 @@ button {
   <button
     v-if="onClickPrevent"
     :class="theme"
+    :disabled="isDisabled"
+    class="default-button"
     @click.prevent="
       () => {
         if (onClickPrevent) onClickPrevent();
       }
     "
-    :disabled="isDisabled"
   >
     <slot />
   </button>
   <button
     v-else
     :class="theme"
+    :disabled="isDisabled"
+    class="default-button"
     @click="
       () => {
         if (onClick) onClick();
       }
     "
-    :disabled="isDisabled"
   >
     <slot />
   </button>
@@ -71,9 +36,18 @@ button {
 <script>
 export default {
   props: {
-    theme: String,
-    onClick: Function,
-    onClickPrevent: Function,
+    theme: {
+      type: String,
+      default: "normal"
+    },
+    onClick: {
+      type: Function,
+      default: () => {}
+    },
+    onClickPrevent: {
+      type: Function,
+      default: () => {}
+    },
     isDisabled: Boolean,
   },
 };

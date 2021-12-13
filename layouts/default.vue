@@ -9,7 +9,6 @@
   --base_light: #585858;
   --base_accent: white;
   --overlay: rgba(255, 255, 255, 0.95);
-  --side-padding: 10vw;
   --transition-standard: 1s all cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 body {
@@ -19,7 +18,6 @@ body {
   color: var(--base_dark);
   font-size: 16px;
   margin: 0;
-  padding: 0 var(--side-padding);
   background-color: var(--back);
   scroll-behavior: smooth;
 }
@@ -165,48 +163,6 @@ input[type="color"] {
 }
 .back_text:hover {
   opacity: 0.6;
-}
-
-/* Box buttons */
-button:not(.cookieControl__ControlButton),
-#mc-embedded-subscribe {
-  height: auto;
-  width: auto;
-  max-height: 35px;
-  user-select: none;
-  cursor: pointer;
-  border-radius: 5px;
-  opacity: 1;
-  text-transform: capitalize;
-  outline-width: 0;
-  border: none;
-  padding: 0.6rem 1.6rem !important;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: var(--base_accent) !important;
-  background-color: var(--base_dark) !important;
-  transition: color 0.6s, background-color 0.6s, opacity 0.2s,
-    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-button:hover:not(:disabled):not(.cookieControl__ControlButton),
-#mc-embedded-subscribe:hover {
-  opacity: 0.6;
-}
-button:active:not(:disabled),
-#mc-embedded-subscribe:active {
-  transform: scale(0.96);
-}
-button:focus,
-#mc-embedded-subscribe:focus {
-  box-shadow: var(--low_shadow);
-}
-button:disabled,
-button[disabled] {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-button.cancel:hover {
-  background-color: darkred !important;
 }
 
 /* Floating help */
@@ -420,7 +376,6 @@ footer a.input--option {
   .container--nav > div:last-child {
     position: fixed;
     top: 2.8rem;
-    right: var(--side-padding);
     background-color: var(--fore);
     padding: 0.6rem 1rem;
     border-radius: 10px;
@@ -440,9 +395,6 @@ footer a.input--option {
   }
 }
 @media (max-width: 576px) {
-  :root {
-    --side-padding: 5vw;
-  }
   #logo--home {
     width: 6rem;
   }
@@ -472,7 +424,7 @@ footer a.input--option {
 </style>
 
 <template>
-  <div id="app">
+  <div id="app" class="px-8">
     <div v-if="openNav" class="overlay" />
     <nav>
       <transition enter-active-class="fadeIn">
