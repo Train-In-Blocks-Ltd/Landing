@@ -181,6 +181,7 @@ export default async () => {
       "@nuxtjs/eslint-module",
       "@aceforth/nuxt-optimized-images",
       "@nuxtjs/pwa",
+      '@nuxt/postcss8',
     ],
     /*
      ** Nuxt.js modules
@@ -278,6 +279,12 @@ export default async () => {
           removeRedundantAttributes: true,
           trimCustomFragments: true,
           useShortDoctype: true,
+        },
+      },
+      postcss: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
         },
       },
     },
