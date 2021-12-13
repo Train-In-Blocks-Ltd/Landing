@@ -74,7 +74,7 @@
 
 <script>
 import Benefits from "./pages/Benefits";
-import Payment from "./Payment";
+import Payment from "./pages/Payment";
 
 export default {
   components: {

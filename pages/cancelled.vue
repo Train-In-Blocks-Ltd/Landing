@@ -20,7 +20,7 @@ a {
 </template>
 
 <script>
-import Payment from "~/components/Payment";
+import Payment from "~/components/pages/Payment";
 import Benefits from "~/components/pages/Benefits";
 
 export default {

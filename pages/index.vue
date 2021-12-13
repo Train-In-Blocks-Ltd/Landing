@@ -94,8 +94,7 @@ iframe {
     <home-top-section class="mb-32" />
     <showcase class="mb-32" />
     <benefits class="mb-32" />
-    <payment />
-    <div class="spacer" />
+    <payment class="mb-32" />
     <h2>See how we compare against...</h2>
     <div class="comparison_container">
       <nuxt-link
@@ -148,7 +147,7 @@ iframe {
 </template>
 
 <script>
-import Payment from "../components/Payment";
+import Payment from "../components/pages/Payment";
 import Benefits from "../components/pages/Benefits";
 import Showcase from "../components/pages/Showcase";
 import HomeTopSection from '../components/pages/HomeTopSection'
