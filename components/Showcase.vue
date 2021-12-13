@@ -184,67 +184,37 @@
 }
 </style>
 
-<style scoped>
-/* Svgs */
-.container_svg {
-  display: grid;
-  grid-gap: 6rem;
-}
-.svg_item {
-  display: grid;
-  grid-template-areas: "a b";
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 6rem;
-}
-.svg_item h2 {
-  margin: auto;
-  text-align: right;
-}
-.alt_svg_item {
-  grid-template-areas: "b a";
-}
-.alt_svg_item h2 {
-  text-align: left;
-}
-
-@media (max-width: 992px) {
-  .svg_item img:hover {
-    transform: scale(1);
-  }
-}
-@media (max-width: 768px) {
-  .svg_item {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "a"
-      "b";
-  }
-  .svg_item h2 {
-    text-align: left;
-  }
-}
-</style>
-
 <template>
-  <div class="container_svg">
+  <div>
     <div v-for="(item, index) in svgs" :key="`svg_${index}`">
-      <div class="svg_item" :class="{ alt_svg_item: (index + 1) % 2 == 0 }">
-        <h2 style="grid-area: a">
+      <div
+        class="flex mb-16 svg_item"
+        :class="{'flex-row-reverse': index % 2 === 0}"
+      >
+        <txt
+          type="title"
+          class="w-7/12 my-auto"
+          :class="index % 2 === 0 ? 'ml-12' : 'mr-12'"
+        >
           {{ item.desc }}
-        </h2>
+        </txt>
         <inline-svg
           :id="item.id"
           :src="require(`../assets/anim-elements/${item.id}.svg`)"
-          style="grid-area: b"
+          class="w-5/12"
         />
       </div>
-      <div class="spacer" />
     </div>
   </div>
 </template>
 
 <script>
+import Txt from '../components/elements/Txt'
+
 export default {
+  components: {
+    Txt
+  },
   data() {
     return {
       svgs: [
@@ -270,7 +240,7 @@ export default {
           entries.forEach((entry) => {
             entry.target.lastChild.setAttribute(
               "class",
-              entry.isIntersecting ? "animate" : ""
+              entry.isIntersecting ? "animate w-5/12" : "w-5/12"
             );
           });
         },

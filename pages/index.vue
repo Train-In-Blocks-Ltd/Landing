@@ -91,10 +91,8 @@ iframe {
 
 <template>
   <div id="home">
-    <home-top-section />
-    <div class="spacer--large" />
-    <showcase />
-    <div class="spacer" />
+    <home-top-section class="mb-32" />
+    <showcase class="mb-32" />
     <benefits />
     <div class="spacer--large" />
     <payment />
