@@ -93,7 +93,7 @@ iframe {
   <div id="home">
     <home-top-section class="mb-32" />
     <showcase class="mb-32" />
-    <benefits class="mb-32" />
+    <benefits class="mb-24" />
     <payment class="mb-32" />
     <h2>See how we compare against...</h2>
     <div class="comparison_container">

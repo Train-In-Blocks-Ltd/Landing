@@ -13,8 +13,8 @@
 </style>
 
 <template>
-  <div>
-    <txt type="title" class="mb-16">Pricing</txt>
+  <div id="pricing">
+    <txt type="title" class="mb-16 pt-8">Pricing</txt>
     <div class="pricing-container">
       <card-wrapper class="p-4" no-shadow no-hover>
         <div class="flex justify-between">
