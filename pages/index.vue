@@ -2,110 +2,110 @@
 /* Home Intro */
 .home_intro {
   margin: 0 auto;
-  width: 70%
+  width: 70%;
 }
 .home_intro > h1 {
-  font-size: 3rem
+  font-size: 3rem;
 }
 .home_intro > a {
   font-size: 2rem;
   font-weight: bold;
-  transition: var(--transition-standard)
+  transition: var(--transition-standard);
 }
 .home_intro > a:hover {
-  opacity: .6
+  opacity: 0.6;
 }
 iframe {
   display: flex;
-  margin: auto
+  margin: auto;
 }
 
 /* Latest posts */
 .latest_post_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem
+  grid-gap: 2rem;
 }
 .latest_post {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 .latest_post a {
   text-decoration: none;
   font-weight: bold;
-  transition: var(--transition-standard)
+  transition: var(--transition-standard);
 }
 .latest_post a:hover {
-  opacity: .6
+  opacity: 0.6;
 }
 .latest_post a:active {
-  opacity: .4
+  opacity: 0.4;
 }
 .latest_post > a {
-  margin-top: 2rem
+  margin-top: 2rem;
 }
 .blog_post__link {
   display: grid;
   grid-template-columns: 160px 24px;
-  grid-gap: .4rem;
+  grid-gap: 0.4rem;
   margin-top: auto;
-  transition: grid-gap .4s cubic-bezier(.165, .84, .44, 1)
+  transition: grid-gap 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .blog_post__link_text {
   color: var(--base_dark);
-  margin: auto 0
+  margin: auto 0;
 }
 .blog_post__link:hover {
-  grid-gap: 1rem
+  grid-gap: 1rem;
 }
 .see_all_blogs {
   font-weight: bold;
-  transition: var(--transition-standard)
+  transition: var(--transition-standard);
 }
 .see_all_blogs:hover {
-  opacity: .6
+  opacity: 0.6;
 }
 
 /* Comparisons */
 .comparison_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem
+  grid-gap: 2rem;
 }
 .compare_link {
   font-weight: bold;
-  transition: var(--transition-standard)
+  transition: var(--transition-standard);
 }
 .compare_link:hover {
-  opacity: .6
+  opacity: 0.6;
 }
 
 /* Responsiveness */
 @media (max-width: 992px) {
   .home_intro {
-    width: 100%
+    width: 100%;
   }
   .latest_post_container {
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
   .latest_post:last-child {
-    display: none
+    display: none;
   }
   .blog_post__link:hover {
-    grid-gap: .4rem;
-    opacity: 1
+    grid-gap: 0.4rem;
+    opacity: 1;
   }
 }
 @media (max-width: 576px) {
   .home_intro > h1 {
-    font-size: 2rem
+    font-size: 2rem;
   }
   .latest_post_container {
     grid-template-columns: 1fr;
-    grid-gap: 4rem
+    grid-gap: 4rem;
   }
   .comparison_container {
-    grid-template-columns: 1fr
+    grid-template-columns: 1fr;
   }
 }
 </style>
@@ -116,10 +116,14 @@ iframe {
       <h1 class="center_text">
         We've taken exercise programming to the next level.
       </h1>
+      <h2>
+        A personal training software to fuel your growth and build deeper
+        relationships with your clients — from the first hello and beyond.
+      </h2>
       <a
         href="http://app.traininblocks.com/?utm=landingHeader"
         target="_blank"
-        style="margin: auto; display: inherit"
+        style="margin: auto; display: inherit;"
         class="center_text"
       >
         Check out our demo
@@ -132,9 +136,7 @@ iframe {
     <div class="spacer--large" />
     <payment />
     <div class="spacer" />
-    <h2>
-      See how we compare against...
-    </h2>
+    <h2>See how we compare against...</h2>
     <div class="comparison_container">
       <nuxt-link
         v-for="(compare, compareIndex) in comparisons"
@@ -146,9 +148,7 @@ iframe {
       </nuxt-link>
     </div>
     <div class="spacer--large" />
-    <h2>
-      Recent blog posts
-    </h2>
+    <h2>Recent blog posts</h2>
     <div class="latest_post_container">
       <div
         v-for="(blogPost, blogPostIndex) in latestBlogPosts.slice(-3)"
@@ -159,7 +159,7 @@ iframe {
           :src="require(`../static/blog-img/${blogPost.img}`)"
           loading="lazy"
           :alt="blogPost.title"
-        >
+        />
         <nuxt-link class="text--small" :to="`/blog/${blogPost.slug}/`">
           {{ blogPost.title }}
         </nuxt-link>
@@ -167,10 +167,16 @@ iframe {
           {{ blogPost.postDesc }}
         </p>
         <div class="blog_post__link">
-          <nuxt-link class="blog_post__link_text" :to="`/blog/${blogPost.slug}/`">
+          <nuxt-link
+            class="blog_post__link_text"
+            :to="`/blog/${blogPost.slug}/`"
+          >
             Continue reading
           </nuxt-link>
-          <inline-svg class="svg--read-more" :src="require('../assets/svg/Arrow.svg')" />
+          <inline-svg
+            class="svg--read-more"
+            :src="require('../assets/svg/Arrow.svg')"
+          />
         </div>
       </div>
     </div>
@@ -182,38 +188,38 @@ iframe {
 </template>
 
 <script>
-import Payment from '../components/Payment'
-import Benefits from '../components/Benefits'
-import Showcase from '../components/Showcase'
+import Payment from "../components/Payment";
+import Benefits from "../components/Benefits";
+import Showcase from "../components/Showcase";
 
 export default {
   components: {
     Payment,
     Benefits,
-    Showcase
+    Showcase,
   },
-  async asyncData ({ $content }) {
-    const latestBlogPosts = await $content('blog').fetch()
+  async asyncData({ $content }) {
+    const latestBlogPosts = await $content("blog").fetch();
     latestBlogPosts.sort((b, a) => {
-      return b.id - a.id
-    })
-    return { latestBlogPosts }
+      return b.id - a.id;
+    });
+    return { latestBlogPosts };
   },
-  data () {
+  data() {
     return {
-      title: 'Want to train more clients effectively?',
+      title: "Want to train more clients effectively?",
       comparisons: [
-        { name: 'TrueCoach', slug: 'truecoach' },
-        { name: 'MyPTHub', slug: 'pthub' },
-        { name: 'PTminder', slug: 'ptminder' },
-        { name: 'PTDistinction', slug: 'ptdistinction' },
-        { name: 'Trainerize', slug: 'trainerize' }
-      ]
-    }
+        { name: "TrueCoach", slug: "truecoach" },
+        { name: "MyPTHub", slug: "pthub" },
+        { name: "PTminder", slug: "ptminder" },
+        { name: "PTDistinction", slug: "ptdistinction" },
+        { name: "Trainerize", slug: "trainerize" },
+      ],
+    };
   },
-  head () {
+  head() {
     return {
-      __dangerouslyDisableSanitizers: ['script'],
+      __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
           innerHTML: `{
@@ -233,7 +239,7 @@ export default {
               "availability": "https://schema.org/OnlineOnly"
             }
           }`,
-          type: 'application/ld+json'
+          type: "application/ld+json",
         },
         {
           innerHTML: `{
@@ -253,7 +259,7 @@ export default {
               "availability": "https://schema.org/OnlineOnly"
             }
           }`,
-          type: 'application/ld+json'
+          type: "application/ld+json",
         },
         {
           innerHTML: `{
@@ -273,15 +279,17 @@ export default {
               "availability": "https://schema.org/OnlineOnly"
             }
           }`,
-          type: 'application/ld+json'
-        }
-      ]
-    }
+          type: "application/ld+json",
+        },
+      ],
+    };
   },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'Affordable Personal Training Software'
-    this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/'
-  }
-}
+  beforeCreate() {
+    this.$parent.$parent.metaHelper.title =
+      "Affordable Personal Training Software";
+    this.$parent.$parent.metaHelper.description =
+      "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.";
+    this.$parent.$parent.metaHelper.url = "https://traininblocks.com/";
+  },
+};
 </script>

@@ -1,15 +1,13 @@
 <style scoped>
-  a {
-    text-decoration: none;
-    color: var(--base_dark)
-  }
+a {
+  text-decoration: none;
+  color: var(--base_dark);
+}
 </style>
 
 <template>
   <div>
-    <h1>
-      Want to select a different plan?
-    </h1>
+    <h1>Want to select a different plan?</h1>
     <h2 class="accent_text">
       Save big and spend less time managing your business and programmes.
     </h2>
@@ -22,23 +20,21 @@
 </template>
 
 <script>
-import Payment from '~/components/Payment'
-import Benefits from '~/components/Benefits'
+import Payment from "~/components/Payment";
+import Benefits from "~/components/Benefits";
 
 export default {
   components: {
     Payment,
-    Benefits
+    Benefits,
   },
-  head () {
+  head() {
     return {
-      meta: [
-        { hid: 'robots', name: 'robots', content: 'noindex' }
-      ]
-    }
+      meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+    };
   },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'Cancelled'
-  }
-}
+  beforeCreate() {
+    this.$parent.$parent.metaHelper.title = "Cancelled";
+  },
+};
 </script>

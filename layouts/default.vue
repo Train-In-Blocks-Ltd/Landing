@@ -3,14 +3,14 @@
 :root {
   --low_shadow: 0 0 20px 10px #28282810;
   --border_rad_large: 10px;
-  --back: #F9F9F9;
+  --back: #f9f9f9;
   --fore: white;
   --base_dark: #282828;
   --base_light: #585858;
   --base_accent: white;
-  --overlay: rgba(255, 255, 255, .95);
+  --overlay: rgba(255, 255, 255, 0.95);
   --side-padding: 10vw;
-  --transition-standard: 1s all cubic-bezier(.165, .84, .44, 1)
+  --transition-standard: 1s all cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -21,69 +21,75 @@ body {
   margin: 0;
   padding: 0 var(--side-padding);
   background-color: var(--back);
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 }
 svg path.transparent {
-  stroke: var(--base_dark)
+  stroke: var(--base_dark);
 }
 svg path:not(.transparent, .no-fill) {
-  fill: var(--base_dark)
+  fill: var(--base_dark);
 }
-img, video, iframe {
+img,
+video,
+iframe {
   user-select: none;
   outline: none;
   border-radius: var(--border_rad_large);
   box-shadow: var(--low_shadow);
-  max-width: 100%
+  max-width: 100%;
 }
-h1, h2, .text--large {
+h1,
+h2,
+.text--large {
   font-size: calc(30px + (36 - 30) * ((100vw - 300px) / (1600 - 300)));
-  color: var(--base_dark)
+  color: var(--base_dark);
 }
-h3, .text--small {
+h3,
+.text--small {
   font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
-  color: var(--base_dark)
+  color: var(--base_dark);
 }
 p {
   font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: 1.4;
-  margin: 1rem 0
+  margin: 1rem 0;
 }
 a {
-  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)))
+  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 li {
-  margin: 1rem 0
+  margin: 1rem 0;
 }
-a, b {
-  color: var(--base_dark)
+a,
+b {
+  color: var(--base_dark);
 }
 
 /* Animations */
 .fadeIn {
-  animation: .6s fadeIn
+  animation: 0.6s fadeIn;
 }
 
 @keyframes fadeIn {
   from {
-    opacity: 0
+    opacity: 0;
   }
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 /* MCE */
 #mc-embedded-subscribe-form {
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 #mc-embedded-subscribe-form label {
   color: var(--base_dark);
-  font-weight: bold
+  font-weight: bold;
 }
 
 /* Inputs */
-input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]),
+input:not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="button"]):not([type="submit"]),
 select,
 textarea,
 #mce-EMAIL {
@@ -92,7 +98,7 @@ textarea,
   -webkit-appearance: none;
   color: var(--base_dark);
   width: 100%;
-  padding: .6rem;
+  padding: 0.6rem;
   resize: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
@@ -100,41 +106,41 @@ textarea,
   border-radius: 8px;
   background-color: transparent;
   box-shadow: none;
-  transition: all .6s cubic-bezier(.165, .84, .44, 1)
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):not(:focus):hover:not(:focus),
+input:not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="button"]):not([type="submit"]):not(:focus):hover:not(:focus),
 select:hover:not(:focus),
 textarea:hover:not(:focus),
 #mce-EMAIL:hover:not(:focus) {
-  opacity: .6
+  opacity: 0.6;
 }
-input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):disabled {
+input:not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="button"]):not([type="submit"]):disabled {
   cursor: not-allowed;
-  opacity: .6
+  opacity: 0.6;
 }
-input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]):focus,
+input:not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="button"]):not([type="submit"]):focus,
 textarea:focus,
 #mce-EMAIL:focus {
-  border: 3px solid var(--base_dark)
+  border: 3px solid var(--base_dark);
 }
-input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).small_border_radius,
+input:not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="button"]):not([type="submit"]).small_border_radius,
 select.small_border_radius,
 textarea.small_border_radius,
 #mce-EMAIL.small_border_radius {
-  border-radius: 5px
+  border-radius: 5px;
 }
-input:not([type=checkbox]):not([type=radio]):not([type=color]):not([type=button]):not([type=submit]).width_300,
+input:not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="button"]):not([type="submit"]).width_300,
 select.width_300,
 #mce-EMAIL.width_300 {
-  width: 300px
+  width: 300px;
 }
-input[type=color] {
-  margin: 0 .4rem;
+input[type="color"] {
+  margin: 0 0.4rem;
   background-color: transparent;
-  padding: 0 .14rem;
+  padding: 0 0.14rem;
   outline-width: 0;
   cursor: pointer;
-  transition: all .4s cubic-bezier(.165, .84, .44, 1)
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 ::placeholder {
   color: var(--base_light);
@@ -143,23 +149,23 @@ input[type=color] {
 
 /* GLOBAL: CONTENT */
 .text--xlarge {
-  font-size: calc(40px + (46 - 40) * ((100vw - 300px) / (1600 - 300)))
+  font-size: calc(40px + (46 - 40) * ((100vw - 300px) / (1600 - 300)));
 }
 .center_text {
-  text-align: center
+  text-align: center;
 }
 .accent_text {
-  color: var(--base_light)
+  color: var(--base_light);
 }
 .no_margin {
-  margin: 0
+  margin: 0;
 }
 .back_text {
   color: var(--base_dark);
-  transition: var(--transition-standard)
+  transition: var(--transition-standard);
 }
 .back_text:hover {
-  opacity: .6
+  opacity: 0.6;
 }
 
 /* Box buttons */
@@ -175,36 +181,33 @@ button:not(.cookieControl__ControlButton),
   text-transform: capitalize;
   outline-width: 0;
   border: none;
-  /* stylelint-disable-next-line */
-  padding: .6rem 1.6rem !important;
-  font-size: .8rem;
+  padding: 0.6rem 1.6rem !important;
+  font-size: 0.8rem;
   font-weight: bold;
-  /* stylelint-disable-next-line */
   color: var(--base_accent) !important;
-  /* stylelint-disable-next-line */
   background-color: var(--base_dark) !important;
-  transition: color .6s, background-color .6s, opacity .2s, transform .1s cubic-bezier(.165, .84, .44, 1)
+  transition: color 0.6s, background-color 0.6s, opacity 0.2s,
+    transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 button:hover:not(:disabled):not(.cookieControl__ControlButton),
 #mc-embedded-subscribe:hover {
-  opacity: .6
+  opacity: 0.6;
 }
 button:active:not(:disabled),
 #mc-embedded-subscribe:active {
-  transform: scale(.96)
+  transform: scale(0.96);
 }
 button:focus,
 #mc-embedded-subscribe:focus {
-  box-shadow: var(--low_shadow)
+  box-shadow: var(--low_shadow);
 }
 button:disabled,
 button[disabled] {
   cursor: not-allowed;
-  opacity: .6
+  opacity: 0.6;
 }
 button.cancel:hover {
-  /* stylelint-disable-next-line */
-  background-color: darkred !important
+  background-color: darkred !important;
 }
 
 /* Floating help */
@@ -212,39 +215,39 @@ button.cancel:hover {
   position: fixed;
   right: 5rem;
   bottom: 2rem;
-  padding: .6rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 50px;
   background-color: var(--base_dark);
   color: var(--fore);
   font-weight: bold;
   text-decoration: none;
   z-index: 99;
-  transition: var(--transition-standard)
+  transition: var(--transition-standard);
 }
 .floating_help:hover {
-  opacity: .6
+  opacity: 0.6;
 }
 
 /* GLOBAL: NAV */
 #logo--home {
   width: 8rem;
-  height: auto
+  height: auto;
 }
 .container--nav {
   display: flex;
   margin: 0 0 6rem 0;
   justify-content: space-between;
   height: 8vh;
-  animation-delay: 100ms
+  animation-delay: 100ms;
 }
 .container--nav > div:last-child {
-  display: flex
+  display: flex;
 }
 .container--nav > div > * {
-  margin: auto
+  margin: auto;
 }
 .container--nav > div > *:last-child {
-  margin-left: 1.6rem
+  margin-left: 1.6rem;
 }
 .wrapper--nav-items {
   display: grid;
@@ -253,10 +256,10 @@ button.cancel:hover {
   top: 6vh;
   right: 8%;
   width: 100%;
-  z-index: 2
+  z-index: 2;
 }
 .wrapper--nav-items > svg {
-  margin-left: auto
+  margin-left: auto;
 }
 .overlay {
   position: fixed;
@@ -265,29 +268,29 @@ button.cancel:hover {
   height: 100%;
   width: 100%;
   background-color: var(--overlay);
-  z-index: 2
+  z-index: 2;
 }
 
 /* Nav Hover Animation */
 .nav-button {
   cursor: pointer;
-  transition: var(--transition-standard)
+  transition: var(--transition-standard);
 }
 .nav-button:hover {
-  opacity: .6
+  opacity: 0.6;
 }
 .input--option {
   position: relative;
   margin: 1rem 0;
   text-decoration: none;
   color: var(--base_dark);
-  transition: 300ms
+  transition: 300ms;
 }
 .input--option:hover {
-  opacity: .4
+  opacity: 0.4;
 }
 nav a.nuxt-link-exact-active {
-  font-weight: bold
+  font-weight: bold;
 }
 
 /* GLOBAL: FOOTER */
@@ -297,13 +300,13 @@ nav a.nuxt-link-exact-active {
   margin: 0 1rem 2rem 0;
   cursor: pointer;
   opacity: 1;
-  transition: opacity .4s, transform .1s cubic-bezier(.165, .84, .44, 1)
+  transition: opacity 0.4s, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .social-icon:hover {
-  opacity: .6
+  opacity: 0.6;
 }
 .social-icon:active {
-  transform: scale(.9)
+  transform: scale(0.9);
 }
 
 /* Cookie bar */
@@ -311,163 +314,160 @@ nav a.nuxt-link-exact-active {
   display: grid;
   grid-gap: 1rem;
   margin: auto;
-  padding: 2rem 6rem
+  padding: 2rem 6rem;
 }
 .cookieControl__BarContainer :is(p, button) {
-  font-size: .8rem
+  font-size: 0.8rem;
 }
 div.cookieControl__Bar {
-  background-color: var(--base_dark)
+  background-color: var(--base_dark);
 }
 .cookieControl__Bar p {
   color: var(--fore);
-  margin-top: 0
+  margin-top: 0;
 }
 .cookieControl__Bar a.input--option b {
-  color: var(--fore)
+  color: var(--fore);
 }
 .cookieControl__BarButtons > button {
-  /* stylelint-disable-next-line */
   background-color: var(--fore) !important;
-  /* stylelint-disable-next-line */
-  color: var(--base_dark) !important
+  color: var(--base_dark) !important;
 }
 
 /* Cookie button */
 .cookieControl__ControlButton {
   bottom: 2rem;
   background-color: var(--base_dark);
-  /* stylelint-disable-next-line */
-  transition: var(--transition-standard) !important
+  transition: var(--transition-standard) !important;
 }
 .cookieControl__ControlButton:hover {
-  opacity: .6
+  opacity: 0.6;
 }
 .cookieControl__ControlButton svg > path:not(.transparent) {
-  fill: var(--fore)
+  fill: var(--fore);
 }
 
 /* Cookie modal */
 .cookieControl__ModalContent {
-  background-color: var(--fore)
+  background-color: var(--fore);
 }
 div.cookieControl__ModalContent *:not(button) {
-  color: var(--base_dark)
+  color: var(--base_dark);
 }
 
 /* Footer */
 footer {
   padding: 2rem 0;
-  border-top: 3px solid var(--base_dark)
+  border-top: 3px solid var(--base_dark);
 }
 footer p {
-  font-size: .8rem
+  font-size: 0.8rem;
 }
 footer a.input--option {
-  font-size: .8rem;
-  margin: 0 1rem 0 0
+  font-size: 0.8rem;
+  margin: 0 1rem 0 0;
 }
 
 /* Misc. */
 .spacer--small {
-  height: 6vh
+  height: 6vh;
 }
 .spacer {
-  height: 10vh
+  height: 10vh;
 }
 .spacer--large {
-  height: 20vh
+  height: 20vh;
 }
 
 /* Scroll-bar */
 ::-webkit-scrollbar {
   width: 10px;
-  height: 10px
+  height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #181E2520
+  background: #181e2520;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 3px;
-  background: var(--base_dark)
+  background: var(--base_dark);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--base_light)
+  background: var(--base_light);
 }
 
 /* Responsiveness */
 @media (max-width: 992px) {
   button:hover {
     background-color: transparent;
-    color: var(--base_dark)
+    color: var(--base_dark);
   }
   .input--option.nuxt-link-exact-active:before {
     transform: scaleX(1);
-    opacity: 1
+    opacity: 1;
   }
 }
 @media (max-width: 768px) {
   footer {
-    padding: 2rem 0 5rem 0
+    padding: 2rem 0 5rem 0;
   }
   .cookieControl__ModalContent {
     padding: 0;
-    overflow-y: auto
+    overflow-y: auto;
   }
   .cookieControl__BarContainer,
   .cookieControl__ModalContent > div {
-    padding: 2rem
+    padding: 2rem;
   }
   .container--nav > div:last-child {
     position: fixed;
     top: 2.8rem;
     right: var(--side-padding);
     background-color: var(--fore);
-    padding: .6rem 1rem;
+    padding: 0.6rem 1rem;
     border-radius: 10px;
     box-shadow: var(--low_shadow);
-    z-index: 1
+    z-index: 1;
   }
 
   /* Misc. */
   .input--option:hover {
-    opacity: 1
+    opacity: 1;
   }
   .social-icon:hover {
-    opacity: 1
+    opacity: 1;
   }
   button:disabled:hover {
-    color: rgba(16, 16, 16, .3)
+    color: rgba(16, 16, 16, 0.3);
   }
 }
 @media (max-width: 576px) {
   :root {
-    --side-padding: 5vw
+    --side-padding: 5vw;
   }
   #logo--home {
-    width: 6rem
+    width: 6rem;
   }
   .container--nav > div > button {
-    display: none
+    display: none;
   }
   .container--features {
-    grid-gap: 2rem
+    grid-gap: 2rem;
   }
 
   /* Misc. */
   div.ql-editor {
-    width: 300px
+    width: 300px;
   }
   button {
-    font-size: .8rem
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 360px) {
   body {
-    font-size: 14px
+    font-size: 14px;
   }
   .main-title {
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
 }
 </style>
@@ -478,27 +478,51 @@ footer a.input--option {
     <nav>
       <transition enter-active-class="fadeIn">
         <div v-show="openNav" class="wrapper--nav-items">
-          <inline-svg class="nav-button" :src="require('../assets/svg/close.svg')" @click="openNav = false" />
-          <a class="text--large input--option log-in" href="https://app.traininblocks.com" @click="openNav = false">
+          <inline-svg
+            class="nav-button"
+            :src="require('../assets/svg/close.svg')"
+            @click="openNav = false"
+          />
+          <a
+            class="text--large input--option log-in"
+            href="https://app.traininblocks.com"
+            @click="openNav = false"
+          >
             Log In
           </a>
-          <nuxt-link class="text--large input--option" to="/" @click.native="openNav = false">
+          <nuxt-link
+            class="text--large input--option"
+            to="/"
+            @click.native="openNav = false"
+          >
             Home
           </nuxt-link>
           <a
             href="javascript:void(0)"
             class="text--large input--option"
-            @click="openNav = false, scroll()"
+            @click="(openNav = false), scroll()"
           >
             Pricing
           </a>
-          <nuxt-link class="text--large input--option" to="/blog/" @click.native="openNav = false">
+          <nuxt-link
+            class="text--large input--option"
+            to="/blog/"
+            @click.native="openNav = false"
+          >
             Blog
           </nuxt-link>
-          <nuxt-link class="text--large input--option" to="/dev/" @click.native="openNav = false">
+          <nuxt-link
+            class="text--large input--option"
+            to="/dev/"
+            @click.native="openNav = false"
+          >
             News
           </nuxt-link>
-          <nuxt-link class="text--large input--option" to="/help/" @click.native="openNav = false">
+          <nuxt-link
+            class="text--large input--option"
+            to="/help/"
+            @click.native="openNav = false"
+          >
             Help
           </nuxt-link>
         </div>
@@ -507,7 +531,11 @@ footer a.input--option {
     <div id="nav--top" class="spacer--small" />
     <div class="container--nav fadeIn">
       <nuxt-link to="/" title="Home">
-        <inline-svg id="logo--home" class="nav-button" :src="require('../assets/svg/LogoV12.svg')" />
+        <inline-svg
+          id="logo--home"
+          class="nav-button"
+          :src="require('../assets/svg/LogoV12.svg')"
+        />
       </nuxt-link>
       <div>
         <darkmode-toggle />
@@ -522,18 +550,17 @@ footer a.input--option {
       <nuxt class="fadeIn" />
     </div>
     <div class="spacer" />
-    <nuxt-link
-      v-if="$route.name !== 'help'"
-      class="floating_help"
-      to="/help/"
-    >
+    <nuxt-link v-if="$route.name !== 'help'" class="floating_help" to="/help/">
       I need help
     </nuxt-link>
     <footer>
       <CookieControl>
         <template #bar>
           <p>
-            We use cookies and other tracking technologies to improve your browsing experience on our site, analyze site traffic, and understand where our audience is coming from. To find out more, please read our
+            We use cookies and other tracking technologies to improve your
+            browsing experience on our site, analyze site traffic, and
+            understand where our audience is coming from. To find out more,
+            please read our
             <nuxt-link class="input--option" to="/legal/cookies-policy/">
               <b>Cookies Policy</b>.
             </nuxt-link>
@@ -547,14 +574,20 @@ footer a.input--option {
             href="https://www.facebook.com/traininblocks"
             title="Facebook"
           >
-            <inline-svg class="social-icon" :src="require('../assets/svg/socials/Facebook.svg')" />
+            <inline-svg
+              class="social-icon"
+              :src="require('../assets/svg/socials/Facebook.svg')"
+            />
           </a>
           <a
             target="_blank"
             href="https://www.instagram.com/traininblocks"
             title="Instagram"
           >
-            <inline-svg class="social-icon" :src="require('../assets/svg/socials/Instagram.svg')" />
+            <inline-svg
+              class="social-icon"
+              :src="require('../assets/svg/socials/Instagram.svg')"
+            />
           </a>
         </div>
       </div>
@@ -567,9 +600,7 @@ footer a.input--option {
         target="_blank"
         novalidate
       >
-        <label for="mce-EMAIL">
-          Sign up to our newsletter
-        </label><br><br>
+        <label for="mce-EMAIL"> Sign up to our newsletter </label><br /><br />
         <input
           id="mce-EMAIL"
           type="email"
@@ -578,14 +609,26 @@ footer a.input--option {
           class="email small_border_radius width_300"
           placeholder="Email"
           required
-        ><br><br>
-        <div style="position: absolute; left: -5000px" aria-hidden="true">
-          <input type="text" name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0" tabindex="-1" value="">
+        /><br /><br />
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <input
+            type="text"
+            name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0"
+            tabindex="-1"
+            value=""
+          />
         </div>
         <div class="clear">
-          <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="button">
+          <input
+            id="mc-embedded-subscribe"
+            type="submit"
+            value="Subscribe"
+            name="subscribe"
+            class="button"
+          />
         </div>
-      </form><br>
+      </form>
+      <br />
       <div>
         <nuxt-link class="input--option" to="/legal/privacy-and-data-policy/">
           Privacy and Data Policy
@@ -601,9 +644,9 @@ footer a.input--option {
         </a>
       </div>
       <p>
-        <b>Train In Blocks Ltd</b><br>
-        12515717<br>
-        Wallingford, OX10 8AD, United Kingdom<br>
+        <b>Train In Blocks Ltd</b><br />
+        12515717<br />
+        Wallingford, OX10 8AD, United Kingdom<br />
         Registered in England & Wales
       </p>
     </footer>
@@ -611,46 +654,65 @@ footer a.input--option {
 </template>
 
 <script>
-import DarkmodeToggle from '../components/DarkmodeToggle.vue'
+import DarkmodeToggle from "../components/DarkmodeToggle.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    DarkmodeToggle
+    DarkmodeToggle,
   },
-  data () {
+  data() {
     return {
-      theme: 'Light',
+      theme: "Light",
       openNav: false,
       metaHelper: {
-        title: 'Train In Blocks',
-        description: 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.',
-        image: 'https://traininblocks.com/android-chrome-512x512.png',
-        url: 'https://traininblocks.com'
-      }
-    }
+        title: "Train In Blocks",
+        description:
+          "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.",
+        image: "https://traininblocks.com/android-chrome-512x512.png",
+        url: "https://traininblocks.com",
+      },
+    };
   },
-  head () {
+  head() {
     return {
       title: this.metaHelper.title,
       meta: [
-        { hid: 'description', name: 'description', content: this.metaHelper.description },
-        { hid: 'og:title', name: 'og:title', content: this.metaHelper.title },
-        { hid: 'og:description', name: 'og:description', content: this.metaHelper.description },
-        { hid: 'og:image', name: 'og:image', content: this.metaHelper.img },
-        { hid: 'twitter:title', name: 'twitter:title', content: this.metaHelper.title },
-        { hid: 'twitter:description', name: 'twitter:description', content: this.metaHelper.description },
-        { hid: 'twitter:img', name: 'twitter:img', content: this.metaHelper.image }
+        {
+          hid: "description",
+          name: "description",
+          content: this.metaHelper.description,
+        },
+        { hid: "og:title", name: "og:title", content: this.metaHelper.title },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: this.metaHelper.description,
+        },
+        { hid: "og:image", name: "og:image", content: this.metaHelper.img },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.metaHelper.title,
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.metaHelper.description,
+        },
+        {
+          hid: "twitter:img",
+          name: "twitter:img",
+          content: this.metaHelper.image,
+        },
       ],
-      link: [
-        { hid: 'canonical', rel: 'canonical', href: this.metaHelper.url }
-      ]
-    }
+      link: [{ hid: "canonical", rel: "canonical", href: this.metaHelper.url }],
+    };
   },
   methods: {
-    scroll () {
-      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-}
+    scroll() {
+      document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+    },
+  },
+};
 </script>

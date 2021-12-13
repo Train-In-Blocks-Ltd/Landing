@@ -3,32 +3,34 @@
 </template>
 
 <script>
-import Compare from '../../components/Compare'
+import Compare from "../../components/Compare";
 export default {
   components: {
-    Compare
+    Compare,
   },
-  data () {
+  data() {
     return {
       info: {
-        name: 'Trainerize',
-        slug: 'trainerize',
-        price: '$300 per month',
+        name: "Trainerize",
+        slug: "trainerize",
+        price: "$300 per month",
         price_desc: [
-          'Crazy price for unlimited clients',
-          'Complicated pricing'
-        ]
-      }
-    }
+          "Crazy price for unlimited clients",
+          "Complicated pricing",
+        ],
+      },
+    };
   },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'Trainerize'
-    this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/compare/trainerize/'
+  beforeCreate() {
+    this.$parent.$parent.metaHelper.title = "Trainerize";
+    this.$parent.$parent.metaHelper.description =
+      "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.";
+    this.$parent.$parent.metaHelper.url =
+      "https://traininblocks.com/compare/trainerize/";
   },
-  head () {
+  head() {
     return {
-      __dangerouslyDisableSanitizers: ['script'],
+      __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
           innerHTML: `{
@@ -41,7 +43,7 @@ export default {
               "item": "https://traininblocks.com/compare/"
             }]
           }`,
-          type: 'application/ld+json'
+          type: "application/ld+json",
         },
         {
           innerHTML: `{
@@ -54,10 +56,10 @@ export default {
               "item": "https://traininblocks.com/compare/trainerize/"
             }]
           }`,
-          type: 'application/ld+json'
-        }
-      ]
-    }
-  }
-}
+          type: "application/ld+json",
+        },
+      ],
+    };
+  },
+};
 </script>

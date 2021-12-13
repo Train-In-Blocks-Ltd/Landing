@@ -3,31 +3,31 @@
 </template>
 
 <script>
-import Compare from '../../components/Compare'
+import Compare from "../../components/Compare";
 export default {
   components: {
-    Compare
+    Compare,
   },
-  data () {
+  data() {
     return {
       info: {
-        name: 'TrueCoach',
-        slug: 'truecoach',
-        price: '$19-$99 per month',
-        price_desc: [
-          'Only 5 clients with the cheaper plan.'
-        ]
-      }
-    }
+        name: "TrueCoach",
+        slug: "truecoach",
+        price: "$19-$99 per month",
+        price_desc: ["Only 5 clients with the cheaper plan."],
+      },
+    };
   },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'TrueCoach'
-    this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/compare/truecoach/'
+  beforeCreate() {
+    this.$parent.$parent.metaHelper.title = "TrueCoach";
+    this.$parent.$parent.metaHelper.description =
+      "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.";
+    this.$parent.$parent.metaHelper.url =
+      "https://traininblocks.com/compare/truecoach/";
   },
-  head () {
+  head() {
     return {
-      __dangerouslyDisableSanitizers: ['script'],
+      __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
           innerHTML: `{
@@ -40,7 +40,7 @@ export default {
               "item": "https://traininblocks.com/compare/"
             }]
           }`,
-          type: 'application/ld+json'
+          type: "application/ld+json",
         },
         {
           innerHTML: `{
@@ -53,10 +53,10 @@ export default {
               "item": "https://traininblocks.com/compare/truecoach/"
             }]
           }`,
-          type: 'application/ld+json'
-        }
-      ]
-    }
-  }
-}
+          type: "application/ld+json",
+        },
+      ],
+    };
+  },
+};
 </script>

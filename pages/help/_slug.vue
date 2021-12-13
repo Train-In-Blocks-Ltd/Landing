@@ -1,34 +1,34 @@
 <style>
 .help_html h2 {
   font-size: 1.4rem;
-  margin-top: 3rem
+  margin-top: 3rem;
 }
 .help_html h3 {
   font-size: 1rem;
-  margin-top: 2rem
+  margin-top: 2rem;
 }
 </style>
 
 <style scoped>
 @media (min-width: 2560px) {
   .help--body {
-    padding: 0 20rem
+    padding: 0 20rem;
   }
 }
 @media (max-width: 992px) {
   .help--body {
-    padding: 0 6rem
+    padding: 0 6rem;
   }
 }
 @media (max-width: 768px) {
   .help--body {
-    padding: 0 4rem
+    padding: 0 4rem;
   }
 }
 @media (max-width: 567px) {
   .help--body {
     padding: 0;
-    background-color: white
+    background-color: white;
   }
 }
 </style>
@@ -42,18 +42,18 @@
 
 <script>
 export default {
-  async asyncData ({ $content, params }) {
-    const post = await $content('help', params.slug).fetch()
-    return { post }
+  async asyncData({ $content, params }) {
+    const post = await $content("help", params.slug).fetch();
+    return { post };
   },
-  mounted () {
-    this.$parent.$parent.metaHelper.title = this.post.title
-    this.$parent.$parent.metaHelper.description = this.post.postDesc
-    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/help/${this.$route.params.slug}/`
+  mounted() {
+    this.$parent.$parent.metaHelper.title = this.post.title;
+    this.$parent.$parent.metaHelper.description = this.post.postDesc;
+    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/help/${this.$route.params.slug}/`;
   },
-  head () {
+  head() {
     return {
-      __dangerouslyDisableSanitizers: ['script'],
+      __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
           innerHTML: `{
@@ -66,7 +66,7 @@ export default {
               "item": "https://traininblocks.com/help/"
             }]
           }`,
-          type: 'application/ld+json'
+          type: "application/ld+json",
         },
         {
           innerHTML: `{
@@ -79,10 +79,10 @@ export default {
               "item": "https://traininblocks.com/legal/${this.$route.params.slug}/"
             }]
           }`,
-          type: 'application/ld+json'
-        }
-      ]
-    }
-  }
-}
+          type: "application/ld+json",
+        },
+      ],
+    };
+  },
+};
 </script>

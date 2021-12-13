@@ -1,14 +1,12 @@
 <style scoped>
-  a {
-    display: block
-  }
+a {
+  display: block;
+}
 </style>
 
 <template>
   <div>
-    <h1>
-      Legal
-    </h1>
+    <h1>Legal</h1>
     <nuxt-link class="input--option" to="/legal/privacy-and-data-policy/">
       Privacy and Data Policy
     </nuxt-link>
@@ -23,14 +21,15 @@
 
 <script>
 export default {
-  mounted () {
-    this.$parent.$parent.metaHelper.title = 'Legal'
-    this.$parent.$parent.metaHelper.description = 'Index of legal documents for Train In Blocks'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/legal/'
+  mounted() {
+    this.$parent.$parent.metaHelper.title = "Legal";
+    this.$parent.$parent.metaHelper.description =
+      "Index of legal documents for Train In Blocks";
+    this.$parent.$parent.metaHelper.url = "https://traininblocks.com/legal/";
   },
-  head () {
+  head() {
     return {
-      __dangerouslyDisableSanitizers: ['script'],
+      __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
           innerHTML: `{
@@ -43,10 +42,10 @@ export default {
               "item": "https://traininblocks.com/legal/"
             }]
           }`,
-          type: 'application/ld+json'
-        }
-      ]
-    }
-  }
-}
+          type: "application/ld+json",
+        },
+      ],
+    };
+  },
+};
 </script>
