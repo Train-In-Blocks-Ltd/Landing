@@ -21,7 +21,7 @@ a {
 
 <script>
 import Payment from "~/components/Payment";
-import Benefits from "~/components/Benefits";
+import Benefits from "~/components/pages/Benefits";
 
 export default {
   components: {

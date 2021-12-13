@@ -4,7 +4,7 @@
       <txt type="title" is-main>
         We've taken exercise programming to the next level.
       </txt>
-      <txt type="large-body" class="py-2">
+      <txt type="large-body" class="my-6">
         A personal training software to fuel your growth and build deeper
         relationships with your clients.
       </txt>

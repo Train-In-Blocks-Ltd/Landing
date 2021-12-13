@@ -73,8 +73,8 @@
 </template>
 
 <script>
-import Benefits from "./Benefits.vue";
-import Payment from "./Payment.vue";
+import Benefits from "./pages/Benefits";
+import Payment from "./Payment";
 
 export default {
   components: {

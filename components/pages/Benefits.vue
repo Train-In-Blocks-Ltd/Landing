@@ -4,16 +4,6 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4rem;
 }
-.benefits {
-  padding: 1rem 2rem;
-  border: 3px solid var(--base_dark);
-  border-radius: var(--border_rad_large);
-}
-.benefits > svg {
-  display: flex;
-  margin: auto;
-  height: 70px;
-}
 
 @media (max-width: 992px) {
   .container--benefits {
@@ -30,30 +20,39 @@
 
 <template>
   <div>
-    <h1>Benefits and features</h1>
-    <div class="spacer--small" />
+    <txt type="title" class="mb-16">Benefits and features</txt>
     <div class="container--benefits">
-      <div
+      <card-wrapper
         v-for="(item, index) in benefits"
         :key="`benefit_${index}`"
-        class="benefits"
+        class="p-4"
+        no-hover
+        no-shadow
       >
-        <inline-svg :src="require(`../assets/svg/features/${item.svg}.svg`)" />
-        <p class="text--small">
-          <b>
-            {{ item.subtitle }}
-          </b>
-        </p>
-        <p>
+        <inline-svg
+          :src="require(`../../assets/svg/features/${item.svg}.svg`)"
+          class="h-16 mb-4 mx-auto"
+        />
+        <txt type="large-body" class="mb-2" bold>
+          {{ item.subtitle }}
+        </txt>
+        <txt>
           {{ item.desc }}
-        </p>
-      </div>
+        </txt>
+      </card-wrapper>
     </div>
   </div>
 </template>
 
 <script>
+import Txt from '../elements/Txt'
+import CardWrapper from '../generic/CardWrapper';
+
 export default {
+  components: {
+    Txt,
+    CardWrapper
+  },
   data() {
     return {
       benefits: [

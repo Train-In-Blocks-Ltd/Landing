@@ -9,14 +9,14 @@
   <h2
     v-else-if="type === 'title'"
     :class="{ 'text-gray-600': grey }"
-    class="text-3xl font-bold"
+    class="text-4xl font-bold"
   >
     <slot />
   </h2>
   <h3
     v-else-if="type === 'subtitle'"
     :class="{ 'text-gray-600': grey }"
-    class="text-2xl"
+    class="text-3xl font-bold"
   >
     <slot />
   </h3>

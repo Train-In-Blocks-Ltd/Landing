@@ -93,8 +93,7 @@ iframe {
   <div id="home">
     <home-top-section class="mb-32" />
     <showcase class="mb-32" />
-    <benefits />
-    <div class="spacer--large" />
+    <benefits class="mb-32" />
     <payment />
     <div class="spacer" />
     <h2>See how we compare against...</h2>
@@ -150,8 +149,8 @@ iframe {
 
 <script>
 import Payment from "../components/Payment";
-import Benefits from "../components/Benefits";
-import Showcase from "../components/Showcase";
+import Benefits from "../components/pages/Benefits";
+import Showcase from "../components/pages/Showcase";
 import HomeTopSection from '../components/pages/HomeTopSection'
 
 export default {

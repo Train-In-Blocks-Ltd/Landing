@@ -192,7 +192,7 @@
         :class="{'flex-row-reverse': index % 2 === 0}"
       >
         <txt
-          type="title"
+          type="subtitle"
           class="w-7/12 my-auto"
           :class="index % 2 === 0 ? 'ml-12' : 'mr-12'"
         >
@@ -200,7 +200,7 @@
         </txt>
         <inline-svg
           :id="item.id"
-          :src="require(`../assets/anim-elements/${item.id}.svg`)"
+          :src="require(`../../assets/anim-elements/${item.id}.svg`)"
           class="w-5/12"
         />
       </div>
@@ -209,7 +209,7 @@
 </template>
 
 <script>
-import Txt from '../components/elements/Txt'
+import Txt from '../../components/elements/Txt'
 
 export default {
   components: {

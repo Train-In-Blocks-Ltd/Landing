@@ -36,24 +36,6 @@ iframe {
   box-shadow: var(--low_shadow);
   max-width: 100%;
 }
-h2,
-.text--large {
-  font-size: calc(30px + (36 - 30) * ((100vw - 300px) / (1600 - 300)));
-  color: var(--base_dark);
-}
-h3,
-.text--small {
-  font-size: calc(20px + (26 - 20) * ((100vw - 300px) / (1600 - 300)));
-  color: var(--base_dark);
-}
-p {
-  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
-  line-height: 1.4;
-  margin: 1rem 0;
-}
-a {
-  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
 li {
   margin: 1rem 0;
 }
