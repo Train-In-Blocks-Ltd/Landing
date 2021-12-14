@@ -41,11 +41,11 @@ export default {
       default: "normal"
     },
     onClick: {
-      type: Function,
+      type: [Function, Promise],
       default: () => {}
     },
     onClickPrevent: {
-      type: Function,
+      type: [Function, Promise],
       default: () => {}
     },
     isDisabled: Boolean,
