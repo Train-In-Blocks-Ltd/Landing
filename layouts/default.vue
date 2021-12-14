@@ -58,6 +58,9 @@ li {
 a, b {
   color: var(--base_dark)
 }
+.nuxt-content li, .nuxt-content ol {
+  padding-left: 1.2em
+}
 
 /* Animations */
 .fadeIn {
