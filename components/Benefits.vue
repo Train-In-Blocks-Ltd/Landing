@@ -30,9 +30,9 @@
 
 <template>
   <div>
-    <h1>
+    <h2>
       Benefits and features
-    </h1>
+    </h2>
     <div class="spacer--small" />
     <div class="container--benefits">
       <div v-for="(item, index) in benefits" :key="`benefit_${index}`" class="benefits">
