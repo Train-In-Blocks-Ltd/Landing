@@ -2,7 +2,8 @@
 id: 18
 title: 3 Steps to Create the Perfect Holiday Training and Fitness Offer
 slug: 3-steps-create-perfect-fitness-offer
-postDesc: ''
+postDesc: How can businesses get maximum potential for the festive season, to up the
+  ante and drum up the clients ahead of the new year.
 show: false
 
 ---
