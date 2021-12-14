@@ -22,6 +22,6 @@ $ npm run generate
 ## Blog
 
 To create a blog post; create a new MarkDown file in the ```content``` folder
-To use an image; upload it in the ```static/blog-img``` folder
+To use an image; upload it in the ```assets/blog-img``` folder
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

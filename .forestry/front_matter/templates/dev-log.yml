@@ -27,5 +27,3 @@ fields:
 - type: boolean
   name: show
   label: show
-pages:
-- content/dev/pegasus-30.md

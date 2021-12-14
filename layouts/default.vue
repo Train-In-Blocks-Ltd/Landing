@@ -43,6 +43,9 @@ a,
 b {
   color: var(--base_dark);
 }
+.nuxt-content ul, .nuxt-content ol {
+  padding-left: 1.2em
+}
 
 /* Animations */
 .fadeIn {
