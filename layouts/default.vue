@@ -514,10 +514,5 @@ export default {
       link: [{ hid: "canonical", rel: "canonical", href: this.metaHelper.url }],
     };
   },
-  methods: {
-    scroll() {
-      document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
-    },
-  },
 };
 </script>

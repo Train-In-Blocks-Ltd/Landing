@@ -13,7 +13,10 @@
   >
     <txt type="title">{{ name }}</txt>
   </nuxt-link>
-  <a v-else :href="linkTo" target="_blank" class="nav-link" @click="onClick">
+  <a v-else-if="newTab" :href="linkTo" class="nav-link" target="_blank">
+    <txt type="title">{{ name }}</txt>
+  </a>
+  <a v-else :href="linkTo" class="nav-link" @click.prevent="onClick">
     <txt type="title">{{ name }}</txt>
   </a>
 </template>
@@ -38,6 +41,7 @@ export default {
       type: Function,
       default: () => null,
     },
+    newTab: Boolean,
     aElement: Boolean,
   },
 };

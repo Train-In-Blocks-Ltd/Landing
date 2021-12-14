@@ -16,6 +16,7 @@
             link-to="https://app.traininblocks.com"
             name="Log In"
             :on-click="() => ($parent.openNav = false)"
+            new-tab
             a-element
           />
           <nav-menu-link
@@ -39,11 +40,11 @@
             name="Blog"
             :on-click="() => ($parent.openNav = false)"
           />
-          <nav-menu-link
+          <!-- <nav-menu-link
             link-to="/dev/"
             name="News"
             :on-click="() => ($parent.openNav = false)"
-          />
+          /> -->
           <nav-menu-link
             link-to="/help/"
             name="Help"
@@ -61,6 +62,11 @@ import NavMenuLink from "./components/NavMenuLink.vue";
 export default {
   components: {
     NavMenuLink,
+  },
+  methods: {
+    scroll() {
+      document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+    },
   },
 };
 </script>
