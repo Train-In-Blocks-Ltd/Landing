@@ -13,7 +13,7 @@
         :key="`compare_${compareIndex}`"
         :to="`/compare/${compare.slug}/`"
       >
-        <txt type="subtitle" class="hover:opacity-75 transition-all">
+        <txt type="subtitle" class="hover:opacity-60 transition-all">
           {{ compare.name }}
         </txt>
       </nuxt-link>
@@ -23,12 +23,12 @@
 </template>
 
 <script>
-import Txt from '../components/elements/Txt'
+import Txt from "../components/elements/Txt";
 import Payment from "../components/pages/Payment";
 import Benefits from "../components/pages/Benefits";
 import Showcase from "../components/pages/Showcase";
-import HomeTopSection from '../components/pages/HomeTopSection'
-import RecentBlogPosts from '../components/pages/RecentBlogPosts'
+import HomeTopSection from "../components/pages/HomeTopSection";
+import RecentBlogPosts from "../components/pages/RecentBlogPosts";
 
 export default {
   components: {
@@ -37,7 +37,7 @@ export default {
     Benefits,
     Showcase,
     HomeTopSection,
-    RecentBlogPosts
+    RecentBlogPosts,
   },
   async asyncData({ $content }) {
     const latestBlogPosts = await $content("blog").fetch();

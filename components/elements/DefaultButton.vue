@@ -1,6 +1,6 @@
 <style scoped>
 .default-button {
-  @apply select-none cursor-pointer self-center rounded border-none px-6 py-3 font-bold text-white bg-gray-800 transition-all hover:opacity-75 active:scale-95;
+  @apply select-none cursor-pointer self-center rounded border-none px-6 py-3 font-bold text-white bg-gray-800 transition-all hover:opacity-60 active:scale-95;
 }
 </style>
 
@@ -38,15 +38,15 @@ export default {
   props: {
     theme: {
       type: String,
-      default: "normal"
+      default: "normal",
     },
     onClick: {
       type: [Function, Promise],
-      default: () => {}
+      default: () => {},
     },
     onClickPrevent: {
       type: [Function, Promise],
-      default: () => {}
+      default: () => {},
     },
     isDisabled: Boolean,
   },

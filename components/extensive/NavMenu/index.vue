@@ -1,0 +1,66 @@
+<template>
+  <div>
+    <div
+      v-if="$parent.openNav"
+      class="fixed top-0 left-0 bg-white h-full w-full z-10"
+    />
+    <nav class="fixed right-12 top-8 z-20">
+      <transition enter-active-class="fadeIn">
+        <div v-show="$parent.openNav" class="flex flex-col items-end">
+          <inline-svg
+            :src="require('../../../assets/svg/close.svg')"
+            class="mb-6 cursor-pointer hover:opacity-60 transition-all"
+            @click="$parent.openNav = false"
+          />
+          <nav-menu-link
+            link-to="https://app.traininblocks.com"
+            name="Log In"
+            :on-click="() => ($parent.openNav = false)"
+            a-element
+          />
+          <nav-menu-link
+            link-to="/"
+            name="Home"
+            :on-click="() => ($parent.openNav = false)"
+          />
+          <nav-menu-link
+            link-to="javascript:void(0)"
+            name="Pricing"
+            :on-click="
+              () => {
+                $parent.openNav = false;
+                scroll();
+              }
+            "
+            a-element
+          />
+          <nav-menu-link
+            link-to="/blog/"
+            name="Blog"
+            :on-click="() => ($parent.openNav = false)"
+          />
+          <nav-menu-link
+            link-to="/dev/"
+            name="News"
+            :on-click="() => ($parent.openNav = false)"
+          />
+          <nav-menu-link
+            link-to="/help/"
+            name="Help"
+            :on-click="() => ($parent.openNav = false)"
+          />
+        </div>
+      </transition>
+    </nav>
+  </div>
+</template>
+
+<script>
+import NavMenuLink from "./components/NavMenuLink.vue";
+
+export default {
+  components: {
+    NavMenuLink,
+  },
+};
+</script>

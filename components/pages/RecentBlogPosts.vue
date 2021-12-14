@@ -17,7 +17,7 @@
         <nuxt-link :to="`/blog/${blogPost.slug}/`">
           <txt
             type="large-body"
-            class="my-6 hover:opacity-75 transition-all"
+            class="my-6 hover:opacity-60 transition-all"
             bold
           >
             {{ blogPost.title }}
@@ -28,11 +28,9 @@
         </txt>
         <nuxt-link
           :to="`/blog/${blogPost.slug}/`"
-          class="flex items-center hover:opacity-75 transition-all"
+          class="flex items-center hover:opacity-60 transition-all"
         >
-          <txt class="mr-4" bold>
-            Continue reading
-          </txt>
+          <txt class="mr-4" bold> Continue reading </txt>
           <inline-svg
             class="svg--read-more"
             :src="require('../../assets/svg/Arrow.svg')"
@@ -41,7 +39,7 @@
       </div>
     </div>
     <nuxt-link to="/blog/">
-      <txt type="large-body" class="hover:opacity-75 transition-all" bold>
+      <txt type="large-body" class="hover:opacity-60 transition-all" bold>
         See all blog posts
       </txt>
     </nuxt-link>
@@ -49,17 +47,17 @@
 </template>
 
 <script>
-import Txt from '../elements/Txt'
+import Txt from "../elements/Txt";
 
 export default {
   components: {
-      Txt
+    Txt,
   },
   props: {
     latestBlogPosts: {
       type: Array,
-      default: Array
-    }
-  }
-}
+      default: Array,
+    },
+  },
+};
 </script>

@@ -407,60 +407,7 @@ footer a.input--option {
 
 <template>
   <div id="app" class="px-8">
-    <div v-if="openNav" class="overlay" />
-    <nav>
-      <transition enter-active-class="fadeIn">
-        <div v-show="openNav" class="wrapper--nav-items">
-          <inline-svg
-            class="nav-button"
-            :src="require('../assets/svg/close.svg')"
-            @click="openNav = false"
-          />
-          <a
-            class="text--large input--option log-in"
-            href="https://app.traininblocks.com"
-            @click="openNav = false"
-          >
-            Log In
-          </a>
-          <nuxt-link
-            class="text--large input--option"
-            to="/"
-            @click.native="openNav = false"
-          >
-            Home
-          </nuxt-link>
-          <a
-            href="javascript:void(0)"
-            class="text--large input--option"
-            @click="(openNav = false), scroll()"
-          >
-            Pricing
-          </a>
-          <nuxt-link
-            class="text--large input--option"
-            to="/blog/"
-            @click.native="openNav = false"
-          >
-            Blog
-          </nuxt-link>
-          <nuxt-link
-            class="text--large input--option"
-            to="/dev/"
-            @click.native="openNav = false"
-          >
-            News
-          </nuxt-link>
-          <nuxt-link
-            class="text--large input--option"
-            to="/help/"
-            @click.native="openNav = false"
-          >
-            Help
-          </nuxt-link>
-        </div>
-      </transition>
-    </nav>
+    <nav-menu />
     <div id="nav--top" class="spacer--small" />
     <div class="container--nav fadeIn">
       <nuxt-link to="/" title="Home">
@@ -543,7 +490,7 @@ footer a.input--option {
           placeholder="Email"
           required
         /><br /><br />
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <div style="position: absolute; left: -5000px" aria-hidden="true">
           <input
             type="text"
             name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0"
@@ -587,12 +534,14 @@ footer a.input--option {
 </template>
 
 <script>
-import DarkmodeToggle from "../components/DarkmodeToggle.vue";
+import DarkmodeToggle from "../components/DarkmodeToggle";
+import NavMenu from "../components/extensive/NavMenu";
 
 export default {
   name: "App",
   components: {
     DarkmodeToggle,
+    NavMenu,
   },
   data() {
     return {
