@@ -58,7 +58,7 @@ li {
 a, b {
   color: var(--base_dark)
 }
-.nuxt-content li, .nuxt-content ol {
+.nuxt-content ul, .nuxt-content ol {
   padding-left: 1.2em
 }
 
