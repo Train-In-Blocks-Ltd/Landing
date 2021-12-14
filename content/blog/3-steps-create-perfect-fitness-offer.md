@@ -3,7 +3,7 @@ id: 18
 title: 3 Steps to Create the Perfect Holiday Training and Fitness Offer
 slug: 3-steps-create-perfect-fitness-offer
 img: 18.png
-postDesc: How can businesses get maximum potential for the festive season?
+postDesc: How can businesses get maximum potential from the festive season and drum up the clients ahead of the new year?
 ---
 
 1. [Research](#research)

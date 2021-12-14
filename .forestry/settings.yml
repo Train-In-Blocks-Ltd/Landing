@@ -9,7 +9,7 @@ sections:
   label: dev
   create: all
   match: "**/*"
-  new_doc_ext: app
+  new_doc_ext: md
 - type: directory
   path: content/help
   label: Help Articles
@@ -22,7 +22,7 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: md
-upload_dir: static/blog-img
+upload_dir: assets/blog-img
 public_path: "/_nuxt/img"
 front_matter_path: ''
 use_front_matter_path: false

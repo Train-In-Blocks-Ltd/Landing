@@ -156,7 +156,7 @@ iframe {
         class="latest_post"
       >
         <img
-          :src="require(`../static/blog-img/${blogPost.img}`)"
+          :src="require(`../assets/blog-img/${blogPost.img}`)"
           loading="lazy"
           :alt="blogPost.title"
         >

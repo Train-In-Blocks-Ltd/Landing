@@ -79,7 +79,7 @@
     </h1>
     <div class="blog_container">
       <div v-for="post in posts" :key="post.title" class="blog_post">
-        <img :src="require(`../../static/blog-img/${post.img}`)">
+        <img :src="require(`../../assets/blog-img/${post.img}`)">
         <div class="blog_post__content">
           <div>
             <nuxt-link class="text--small" :to="`/blog/${post.slug}/`">

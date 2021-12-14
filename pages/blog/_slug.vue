@@ -64,7 +64,7 @@
     <nuxt-link to="/blog/" class="back_text">
       Back
     </nuxt-link>
-    <img :src="require(`../../static/blog-img/${post.img}`)">
+    <img :src="require(`../../assets/blog-img/${post.img}`)">
     <br><br>
     <h1>
       {{ post.title }}
