@@ -1,7 +1,4 @@
 <style>
-.toggle_wrapper {
-  display: flex;
-}
 .mode_icon {
   width: 20px;
   height: 20px;
@@ -69,9 +66,9 @@ input:checked + .slider:before {
 </style>
 
 <template>
-  <div class="toggle_wrapper">
+  <div class="flex items-center mr-6">
     <inline-svg
-      :src="require('../assets/svg/darkmode.svg')"
+      :src="require('../../assets/svg/darkmode.svg')"
       :class="{ darkmode: darkmodeOn }"
       class="mode_icon"
     />

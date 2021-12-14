@@ -12,19 +12,19 @@
     </div>
     <img
       :src="require('../../assets/images/home/trainer.jpg')"
-      class="grayscale ml-auto md:w-8/12 mt-16 xl:mt-0 xl:w-5/12 xl:ml-0 h-auto"
+      class="grayscale ml-auto md:w-8/12 mt-16 xl:mt-0 xl:w-5/12 xl:ml-0 h-auto z-0"
     />
   </div>
 </template>
 
 <script>
-import Txt from '../elements/Txt'
-import LinkButton from '../elements/LinkButton'
+import Txt from "../elements/Txt";
+import LinkButton from "../elements/LinkButton";
 
 export default {
-    components: {
-        Txt,
-        LinkButton
-    }
-}
+  components: {
+    Txt,
+    LinkButton,
+  },
+};
 </script>

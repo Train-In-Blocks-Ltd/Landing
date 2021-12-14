@@ -43,8 +43,9 @@ a,
 b {
   color: var(--base_dark);
 }
-.nuxt-content ul, .nuxt-content ol {
-  padding-left: 1.2em
+.nuxt-content ul,
+.nuxt-content ol {
+  padding-left: 1.2em;
 }
 
 /* Animations */
@@ -166,71 +167,6 @@ input[type="color"] {
 }
 .floating_help:hover {
   opacity: 0.6;
-}
-
-/* GLOBAL: NAV */
-#logo--home {
-  width: 8rem;
-  height: auto;
-}
-.container--nav {
-  display: flex;
-  margin: 0 0 6rem 0;
-  justify-content: space-between;
-  height: 8vh;
-  animation-delay: 100ms;
-}
-.container--nav > div:last-child {
-  display: flex;
-}
-.container--nav > div > * {
-  margin: auto;
-}
-.container--nav > div > *:last-child {
-  margin-left: 1.6rem;
-}
-.wrapper--nav-items {
-  display: grid;
-  text-align: right;
-  position: fixed;
-  top: 6vh;
-  right: 8%;
-  width: 100%;
-  z-index: 2;
-}
-.wrapper--nav-items > svg {
-  margin-left: auto;
-}
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--overlay);
-  z-index: 2;
-}
-
-/* Nav Hover Animation */
-.nav-button {
-  cursor: pointer;
-  transition: var(--transition-standard);
-}
-.nav-button:hover {
-  opacity: 0.6;
-}
-.input--option {
-  position: relative;
-  margin: 1rem 0;
-  text-decoration: none;
-  color: var(--base_dark);
-  transition: 300ms;
-}
-.input--option:hover {
-  opacity: 0.4;
-}
-nav a.nuxt-link-exact-active {
-  font-weight: bold;
 }
 
 /* GLOBAL: FOOTER */
@@ -412,23 +348,7 @@ footer a.input--option {
   <div id="app" class="px-8">
     <nav-menu />
     <div id="nav--top" class="spacer--small" />
-    <div class="container--nav fadeIn">
-      <nuxt-link to="/" title="Home">
-        <inline-svg
-          id="logo--home"
-          class="nav-button"
-          :src="require('../assets/svg/LogoV12.svg')"
-        />
-      </nuxt-link>
-      <div>
-        <darkmode-toggle />
-        <inline-svg
-          class="nav-button"
-          :src="require('../assets/svg/hamburger.svg')"
-          @click="openNav = true"
-        />
-      </div>
-    </div>
+    <nav-bar />
     <div>
       <nuxt class="fadeIn" />
     </div>
@@ -537,14 +457,14 @@ footer a.input--option {
 </template>
 
 <script>
-import DarkmodeToggle from "../components/DarkmodeToggle";
 import NavMenu from "../components/extensive/NavMenu";
+import NavBar from "../components/extensive/NavBar";
 
 export default {
   name: "App",
   components: {
-    DarkmodeToggle,
     NavMenu,
+    NavBar,
   },
   data() {
     return {
