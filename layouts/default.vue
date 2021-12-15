@@ -62,15 +62,6 @@ b {
   }
 }
 
-/* MCE */
-#mc-embedded-subscribe-form {
-  margin-bottom: 2rem;
-}
-#mc-embedded-subscribe-form label {
-  color: var(--base_dark);
-  font-weight: bold;
-}
-
 /* Inputs */
 input:not([type="checkbox"]):not([type="radio"]):not([type="color"]):not([type="button"]):not([type="submit"]),
 select,
@@ -231,19 +222,6 @@ div.cookieControl__ModalContent *:not(button) {
   color: var(--base_dark);
 }
 
-/* Footer */
-footer {
-  padding: 2rem 0;
-  border-top: 3px solid var(--base_dark);
-}
-footer p {
-  font-size: 0.8rem;
-}
-footer a.input--option {
-  font-size: 0.8rem;
-  margin: 0 1rem 0 0;
-}
-
 /* Misc. */
 .spacer--small {
   height: 6vh;
@@ -283,9 +261,6 @@ footer a.input--option {
   }
 }
 @media (max-width: 768px) {
-  footer {
-    padding: 2rem 0 5rem 0;
-  }
   .cookieControl__ModalContent {
     padding: 0;
     overflow-y: auto;
@@ -347,124 +322,27 @@ footer a.input--option {
 <template>
   <div id="app" class="px-8">
     <nav-menu />
-    <div id="nav--top" class="spacer--small" />
-    <nav-bar />
-    <div>
-      <nuxt class="fadeIn" />
-    </div>
+    <nav-bar class="my-16" />
+    <nuxt class="fadeIn" />
     <div class="spacer" />
     <nuxt-link v-if="$route.name !== 'help'" class="floating_help" to="/help/">
       I need help
     </nuxt-link>
-    <footer>
-      <CookieControl>
-        <template #bar>
-          <p>
-            We use cookies and other tracking technologies to improve your
-            browsing experience on our site, analyze site traffic, and
-            understand where our audience is coming from. To find out more,
-            please read our
-            <nuxt-link class="input--option" to="/legal/cookies-policy/">
-              <b>Cookies Policy</b>.
-            </nuxt-link>
-          </p>
-        </template>
-      </CookieControl>
-      <div class="nav--footer">
-        <div class="social-bar">
-          <a
-            target="_blank"
-            href="https://www.facebook.com/traininblocks"
-            title="Facebook"
-          >
-            <inline-svg
-              class="social-icon"
-              :src="require('../assets/svg/socials/Facebook.svg')"
-            />
-          </a>
-          <a
-            target="_blank"
-            href="https://www.instagram.com/traininblocks"
-            title="Instagram"
-          >
-            <inline-svg
-              class="social-icon"
-              :src="require('../assets/svg/socials/Instagram.svg')"
-            />
-          </a>
-        </div>
-      </div>
-      <form
-        id="mc-embedded-subscribe-form"
-        action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
-        method="post"
-        name="mc-embedded-subscribe-form"
-        class="validate"
-        target="_blank"
-        novalidate
-      >
-        <label for="mce-EMAIL"> Sign up to our newsletter </label><br /><br />
-        <input
-          id="mce-EMAIL"
-          type="email"
-          value=""
-          name="EMAIL"
-          class="email small_border_radius width_300"
-          placeholder="Email"
-          required
-        /><br /><br />
-        <div style="position: absolute; left: -5000px" aria-hidden="true">
-          <input
-            type="text"
-            name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0"
-            tabindex="-1"
-            value=""
-          />
-        </div>
-        <div class="clear">
-          <input
-            id="mc-embedded-subscribe"
-            type="submit"
-            value="Subscribe"
-            name="subscribe"
-            class="button"
-          />
-        </div>
-      </form>
-      <br />
-      <div>
-        <nuxt-link class="input--option" to="/legal/privacy-and-data-policy/">
-          Privacy and Data Policy
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/legal/cookies-policy/">
-          Cookies Policy
-        </nuxt-link>
-        <nuxt-link class="input--option" to="/legal/terms-of-use/">
-          Terms of Use
-        </nuxt-link>
-        <a class="input--option" href="https://status.traininblocks.com">
-          Status
-        </a>
-      </div>
-      <p>
-        <b>Train In Blocks Ltd</b><br />
-        12515717<br />
-        Wallingford, OX10 8AD, United Kingdom<br />
-        Registered in England & Wales
-      </p>
-    </footer>
+    <footer-section />
   </div>
 </template>
 
 <script>
 import NavMenu from "../components/extensive/NavMenu";
 import NavBar from "../components/extensive/NavBar";
+import FooterSection from "../components/extensive/FooterSection";
 
 export default {
   name: "App",
   components: {
     NavMenu,
     NavBar,
+    FooterSection,
   },
   data() {
     return {
