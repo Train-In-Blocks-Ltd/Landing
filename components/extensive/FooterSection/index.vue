@@ -10,6 +10,9 @@
 #mc-embedded-subscribe {
   @apply select-none cursor-pointer self-center rounded border-none px-6 py-2 font-bold text-white text-sm bg-gray-800 transition-all hover:opacity-60 active:scale-95;
 }
+#mce-EMAIL {
+  @apply w-full px-2 py-3 font-sans outline-none text-base bg-transparent text-gray-800 border-2 border-gray-400 rounded-lg hover:border-gray-800 focus:border-gray-800 transition-all;
+}
 </style>
 
 <template>

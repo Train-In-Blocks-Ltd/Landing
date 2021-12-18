@@ -1,9 +1,16 @@
+<style scoped>
+.txt-input {
+  @apply w-full px-2 py-3 font-sans outline-none text-base bg-transparent text-gray-800 border-2 border-gray-400 rounded-lg hover:border-gray-800 focus:border-gray-800 transition-all;
+}
+</style>
+
 <template>
   <div class="h-fit w-auto cursor-pointer self-center">
     <label v-if="label" :for="name" :class="labelClass">
       {{ label }}
     </label>
     <input
+      :id="inputId"
       :name="name"
       :value="value"
       :class="inputClass"
@@ -14,7 +21,7 @@
       :aria-label="ariaLabel"
       :pattern="pattern"
       :required="required"
-      class="w-full px-2 py-3 font-sans outline-none text-base bg-transparent text-gray-800 border-2 border-gray-400 rounded-lg hover:border-gray-800 focus:border-gray-800 transition-all"
+      class="txt-input"
       @input="handleInput"
     />
     <txt v-if="error" type="tiny" class="text-red mt-1" :class="errorClass">{{
@@ -34,6 +41,7 @@ export default {
     Txt,
   },
   props: {
+    inputId: String,
     inputRef: String,
     name: String,
     label: String,
