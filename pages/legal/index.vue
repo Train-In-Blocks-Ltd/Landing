@@ -1,31 +1,24 @@
-<style scoped>
-a {
-  display: block;
-}
-</style>
-
 <template>
   <div>
-    <h1>Legal</h1>
-    <nuxt-link class="input--option" to="/legal/privacy-and-data-policy/">
-      Privacy and Data Policy
+    <txt type="title" is-main>Legal</txt>
+    <nuxt-link to="/legal/privacy-and-data-policy/">
+      <txt>Privacy and Data Policy</txt>
     </nuxt-link>
-    <nuxt-link class="input--option" to="/legal/cookies-policy/">
-      Cookies Policy
+    <nuxt-link to="/legal/cookies-policy/">
+      <txt>Cookies Policy</txt>
     </nuxt-link>
-    <nuxt-link class="input--option" to="/legal/terms-of-use/">
-      Terms of Use
+    <nuxt-link to="/legal/terms-of-use/">
+      <txt>Terms of Use</txt>
     </nuxt-link>
   </div>
 </template>
 
 <script>
+import Txt from "../../components/elements/Txt";
+
 export default {
-  mounted() {
-    this.$parent.$parent.metaHelper.title = "Legal";
-    this.$parent.$parent.metaHelper.description =
-      "Index of legal documents for Train In Blocks";
-    this.$parent.$parent.metaHelper.url = "https://traininblocks.com/legal/";
+  components: {
+    Txt,
   },
   head() {
     return {
@@ -46,6 +39,12 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    this.$parent.$parent.metaHelper.title = "Legal";
+    this.$parent.$parent.metaHelper.description =
+      "Index of legal documents for Train In Blocks";
+    this.$parent.$parent.metaHelper.url = "https://traininblocks.com/legal/";
   },
 };
 </script>
