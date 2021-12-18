@@ -43,9 +43,26 @@ a,
 b {
   color: var(--base_dark);
 }
+
+/* Blog */
+.nuxt-content h2 {
+  @apply text-2xl font-bold mt-8 mb-4;
+}
+.nuxt-content h3 {
+  @apply text-xl font-bold mb-4;
+}
+.nuxt-content p {
+  @apply mb-4;
+}
 .nuxt-content ul,
 .nuxt-content ol {
   padding-left: 1.2em;
+}
+.nuxt-content ul {
+  list-style-type: disc;
+}
+.nuxt-content ol {
+  list-style-type: decimal;
 }
 
 /* Animations */
