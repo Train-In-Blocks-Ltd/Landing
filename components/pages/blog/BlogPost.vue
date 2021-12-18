@@ -32,15 +32,7 @@ export default {
     Txt,
   },
   props: {
-    post: {
-      type: {
-        title: String,
-        img: String,
-        postDesc: String,
-        slug: String,
-      },
-      default: {},
-    },
+    post: Object,
   },
 };
 </script>

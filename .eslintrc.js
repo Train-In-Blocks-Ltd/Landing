@@ -7,11 +7,7 @@ module.exports = {
   parserOptions: {
     parser: "babel-eslint",
   },
-  extends: [
-    "@nuxtjs",
-    "plugin:nuxt/recommended",
-    "prettier",
-  ],
+  extends: ["@nuxtjs", "plugin:nuxt/recommended", "prettier"],
   // add your custom rules here
   rules: {
     // allow async-await
@@ -27,5 +23,6 @@ module.exports = {
       },
     ],
     "vue/script-setup-uses-vars": "off",
+    "vue/require-default-prop": "off",
   },
 };

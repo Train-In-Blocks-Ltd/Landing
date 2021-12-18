@@ -3,7 +3,7 @@
     <label v-if="label" :for="name" :class="labelClass">
       {{ label }}
     </label>
-    <input
+    <textarea
       :name="name"
       :value="value"
       :class="inputClass"
@@ -14,6 +14,7 @@
       :aria-label="ariaLabel"
       :pattern="pattern"
       :required="required"
+      rows="5"
       class="w-full px-2 py-3 font-sans outline-none text-base bg-transparent text-gray-800 border-2 border-gray-400 rounded-lg hover:border-gray-800 focus:border-gray-800 transition-all"
       @input="handleInput"
     />
