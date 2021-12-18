@@ -1,13 +1,26 @@
 <template>
   <div class="container">
-    <p v-if="error.statusCode === 404" class="text--large">Page not found</p>
-    <p v-else class="text--large">An error occurred</p>
-    <nuxt-link to="/"> Home page </nuxt-link>
+    <div class="mb-8">
+      <txt v-if="error.statusCode === 404" type="title" is-main
+        >Page not found</txt
+      >
+      <txt v-else type="title" grey>An error occurred</txt>
+    </div>
+    <nuxt-link to="/">
+      <txt type="large-body" class="hover:opacity-60 transition-opacity"
+        >Return to home page</txt
+      >
+    </nuxt-link>
   </div>
 </template>
 
 <script>
+import Txt from "../components/elements/Txt";
+
 export default {
+  components: {
+    Txt,
+  },
   props: {
     error: {
       type: Object,
