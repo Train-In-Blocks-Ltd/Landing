@@ -45,6 +45,9 @@ b {
 }
 
 /* Blog */
+.nuxt-content h1 {
+  @apply text-4xl font-bold mt-8 mb-4;
+}
 .nuxt-content h2 {
   @apply text-2xl font-bold mt-8 mb-4;
 }
