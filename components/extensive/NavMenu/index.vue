@@ -2,9 +2,10 @@
   <div>
     <div
       v-if="$parent.openNav"
-      class="fixed top-0 left-0 bg-white h-full w-full z-10"
+      style="z-index: 70"
+      class="fixed top-0 left-0 bg-white h-full w-full"
     />
-    <nav class="fixed right-12 top-8 z-20">
+    <nav style="z-index: 80" class="fixed right-12 top-8 z-20">
       <transition enter-active-class="fadeIn">
         <div v-show="$parent.openNav" class="flex flex-col items-end">
           <inline-svg
@@ -65,7 +66,12 @@ export default {
   },
   methods: {
     scroll() {
-      document.getElementById("pricing").scrollIntoView({ behavior: "smooth" });
+      this.$router.push("/");
+      setTimeout(() => {
+        document
+          .getElementById("pricing")
+          .scrollIntoView({ behavior: "smooth" });
+      }, 1000);
     },
   },
 };
