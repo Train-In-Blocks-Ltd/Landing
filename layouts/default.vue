@@ -12,36 +12,26 @@
   --transition-standard: 1s all cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: var(--base_dark);
-  font-size: 16px;
-  margin: 0;
-  background-color: var(--back);
-  scroll-behavior: smooth;
+  @apply m-0 text-base text-gray-800 dark:text-white bg-gray-100 dark:bg-gray-800 scroll-smooth;
 }
 svg path.transparent {
-  stroke: var(--base_dark);
+  @apply stroke-gray-800 dark:stroke-white;
 }
 svg path:not(.transparent, .no-fill) {
-  fill: var(--base_dark);
+  @apply fill-gray-800 dark:fill-white;
 }
+
 img,
 video,
 iframe {
-  user-select: none;
-  outline: none;
-  border-radius: var(--border_rad_large);
-  box-shadow: var(--low_shadow);
-  max-width: 100%;
+  @apply select-none outline-none rounded-lg shadow-lg max-w-full;
 }
 li {
-  margin: 1rem 0;
+  @apply my-1;
 }
 a,
 b {
-  color: var(--base_dark);
+  @apply text-gray-800 dark:text-white;
 }
 
 /* Blog */
@@ -59,20 +49,19 @@ b {
 }
 .nuxt-content ul,
 .nuxt-content ol {
-  padding-left: 1.2em;
+  @apply pl-1.5;
 }
 .nuxt-content ul {
-  list-style-type: disc;
+  @apply list-disc;
 }
 .nuxt-content ol {
-  list-style-type: decimal;
+  @apply list-decimal;
 }
 
 /* Animations */
 .fadeIn {
   animation: 0.6s fadeIn;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -80,27 +69,6 @@ b {
   to {
     opacity: 1;
   }
-}
-
-/* GLOBAL: CONTENT */
-.text--xlarge {
-  font-size: calc(40px + (46 - 40) * ((100vw - 300px) / (1600 - 300)));
-}
-.center_text {
-  text-align: center;
-}
-.accent_text {
-  color: var(--base_light);
-}
-.no_margin {
-  margin: 0;
-}
-.back_text {
-  color: var(--base_dark);
-  transition: var(--transition-standard);
-}
-.back_text:hover {
-  opacity: 0.6;
 }
 
 /* Floating help */
@@ -119,22 +87,6 @@ b {
 }
 .floating_help:hover {
   opacity: 0.6;
-}
-
-/* GLOBAL: FOOTER */
-.social-icon {
-  width: 25px;
-  height: 25px;
-  margin: 0 1rem 2rem 0;
-  cursor: pointer;
-  opacity: 1;
-  transition: opacity 0.4s, transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.social-icon:hover {
-  opacity: 0.6;
-}
-.social-icon:active {
-  transform: scale(0.9);
 }
 
 /* Cookie bar */

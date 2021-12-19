@@ -104,30 +104,32 @@ export default {
   methods: {
     darkmode() {
       if (this.darkmodeOn) {
-        document.documentElement.style.setProperty(
-          "--low_shadow",
-          "0 0 2px 0 #FFFFFF60"
-        );
-        document.documentElement.style.setProperty("--back", "#282828");
-        document.documentElement.style.setProperty("--fore", "#383838");
-        document.documentElement.style.setProperty("--base_dark", "white");
-        document.documentElement.style.setProperty("--base_light", "white");
-        document.documentElement.style.setProperty("--base_accent", "#282828");
-        document.documentElement.style.setProperty("--overlay", "#383838");
+        document.documentElement.setAttribute("class", "dark");
+        // document.documentElement.style.setProperty(
+        //   "--low_shadow",
+        //   "0 0 2px 0 #FFFFFF60"
+        // );
+        // document.documentElement.style.setProperty("--back", "#282828");
+        // document.documentElement.style.setProperty("--fore", "#383838");
+        // document.documentElement.style.setProperty("--base_dark", "white");
+        // document.documentElement.style.setProperty("--base_light", "white");
+        // document.documentElement.style.setProperty("--base_accent", "#282828");
+        // document.documentElement.style.setProperty("--overlay", "#383838");
       } else {
-        document.documentElement.style.setProperty(
-          "--low_shadow",
-          "0 0 20px 10px #28282808"
-        );
-        document.documentElement.style.setProperty("--back", "#F9F9F9");
-        document.documentElement.style.setProperty("--fore", "white");
-        document.documentElement.style.setProperty("--base_dark", "#282828");
-        document.documentElement.style.setProperty("--base_light", "#585858");
-        document.documentElement.style.setProperty("--base_accent", "white");
-        document.documentElement.style.setProperty(
-          "--overlay",
-          "rgba(255, 255, 255, .95)"
-        );
+        document.documentElement.removeAttribute("class");
+        // document.documentElement.style.setProperty(
+        //   "--low_shadow",
+        //   "0 0 20px 10px #28282808"
+        // );
+        // document.documentElement.style.setProperty("--back", "#F9F9F9");
+        // document.documentElement.style.setProperty("--fore", "white");
+        // document.documentElement.style.setProperty("--base_dark", "#282828");
+        // document.documentElement.style.setProperty("--base_light", "#585858");
+        // document.documentElement.style.setProperty("--base_accent", "white");
+        // document.documentElement.style.setProperty(
+        //   "--overlay",
+        //   "rgba(255, 255, 255, .95)"
+        // );
       }
     },
   },
