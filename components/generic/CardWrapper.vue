@@ -3,11 +3,11 @@
     :class="[
       {
         'hover:shadow-lg': !noHover,
-        'shadow': hasShadow,
-        'border-4 border-gray-800': !noBorder,
+        shadow: hasShadow,
+        'border-4 border-gray-800 dark:border-white': !noBorder,
       },
     ]"
-    class="rounded-lg text-gray-800 bg-white transition-all"
+    class="rounded-lg text-gray-800 dark:text-white bg-white dark:bg-gray-800 transition-all"
   >
     <slot />
   </div>
