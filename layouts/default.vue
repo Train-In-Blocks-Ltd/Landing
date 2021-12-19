@@ -71,108 +71,63 @@ b {
   }
 }
 
-/* Floating help */
-.floating_help {
-  position: fixed;
-  right: 5rem;
-  bottom: 2rem;
-  padding: 0.6rem 1rem;
-  border-radius: 50px;
-  background-color: var(--base_dark);
-  color: var(--fore);
-  font-weight: bold;
-  text-decoration: none;
-  z-index: 99;
-  transition: var(--transition-standard);
-}
-.floating_help:hover {
-  opacity: 0.6;
-}
-
 /* Cookie bar */
-.cookieControl__BarContainer {
-  display: grid;
-  grid-gap: 1rem;
-  margin: auto;
-  padding: 2rem 6rem;
+.cookieControl__BarButtons > button,
+div.cookieControl__ModalContent button {
+  @apply select-none cursor-pointer self-center rounded border-none px-6 py-3 font-bold transition-all hover:opacity-60 active:scale-95 disabled:opacity-60 disabled:cursor-default;
 }
-.cookieControl__BarContainer :is(p, button) {
-  font-size: 0.8rem;
+.cookieControl__BarContainer {
+  @apply grid gap-4 m-auto px-8 py-10;
 }
 div.cookieControl__Bar {
-  background-color: var(--base_dark);
+  @apply bg-gray-800 dark:bg-white;
 }
-.cookieControl__Bar p {
-  color: var(--fore);
-  margin-top: 0;
-}
-.cookieControl__Bar a.input--option b {
-  color: var(--fore);
-}
-.cookieControl__BarButtons > button {
-  background-color: var(--fore) !important;
-  color: var(--base_dark) !important;
+div.cookieControl__Bar p {
+  @apply text-white dark:text-gray-800;
 }
 
 /* Cookie button */
 .cookieControl__ControlButton {
-  bottom: 2rem;
-  background-color: var(--base_dark);
-  transition: var(--transition-standard) !important;
-}
-.cookieControl__ControlButton:hover {
-  opacity: 0.6;
+  @apply bottom-8 bg-gray-800 dark:bg-white hover:opacity-60 transition-opacity;
 }
 .cookieControl__ControlButton svg > path:not(.transparent) {
-  fill: var(--fore);
+  @apply fill-white dark:fill-gray-800;
+}
+.cookieControl__BarButtons > button {
+  @apply dark:text-white text-gray-800 dark:bg-gray-800 bg-white;
 }
 
 /* Cookie modal */
 .cookieControl__ModalContent {
-  background-color: var(--fore);
+  @apply bg-white dark:bg-gray-800;
 }
 div.cookieControl__ModalContent *:not(button) {
-  color: var(--base_dark);
+  @apply text-gray-800 dark:text-white;
 }
-
-/* Misc. */
-.spacer--small {
-  height: 6vh;
+div.cookieControl__ModalContent button {
+  @apply text-white dark:text-gray-800 bg-gray-800 dark:bg-white;
 }
-.spacer {
-  height: 10vh;
+div.cookieControl__ModalContent input:checked:disabled + label,
+div.cookieControl__ModalContent input:checked + label {
+  @apply bg-gray-800 dark:bg-white;
 }
-.spacer--large {
-  height: 20vh;
+div.cookieControl__ModalContent input:checked:disabled + label:before,
+div.cookieControl__ModalContent label:before {
+  @apply dark:bg-gray-800 bg-white;
 }
 
 /* Scroll-bar */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  @apply w-3;
 }
 ::-webkit-scrollbar-track {
-  background: #181e2520;
+  @apply bg-gray-300 dark:bg-gray-700;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  background: var(--base_dark);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--base_light);
+  @apply rounded-sm bg-gray-800 dark:bg-white hover:opacity-60 transition-opacity;
 }
 
 /* Responsiveness */
-@media (max-width: 992px) {
-  button:hover {
-    background-color: transparent;
-    color: var(--base_dark);
-  }
-  .input--option.nuxt-link-exact-active:before {
-    transform: scaleX(1);
-    opacity: 1;
-  }
-}
 @media (max-width: 768px) {
   .cookieControl__ModalContent {
     padding: 0;
@@ -182,52 +137,10 @@ div.cookieControl__ModalContent *:not(button) {
   .cookieControl__ModalContent > div {
     padding: 2rem;
   }
-  .container--nav > div:last-child {
-    position: fixed;
-    top: 2.8rem;
-    background-color: var(--fore);
-    padding: 0.6rem 1rem;
-    border-radius: 10px;
-    box-shadow: var(--low_shadow);
-    z-index: 1;
-  }
-
-  /* Misc. */
-  .input--option:hover {
-    opacity: 1;
-  }
-  .social-icon:hover {
-    opacity: 1;
-  }
-  button:disabled:hover {
-    color: rgba(16, 16, 16, 0.3);
-  }
-}
-@media (max-width: 576px) {
-  #logo--home {
-    width: 6rem;
-  }
-  .container--nav > div > button {
-    display: none;
-  }
-  .container--features {
-    grid-gap: 2rem;
-  }
-
-  /* Misc. */
-  div.ql-editor {
-    width: 300px;
-  }
-  button {
-    font-size: 0.8rem;
-  }
 }
 @media (max-width: 360px) {
   body {
     font-size: 14px;
-  }
-  .main-title {
-    font-size: 1.5rem;
   }
 }
 </style>
@@ -236,16 +149,21 @@ div.cookieControl__ModalContent *:not(button) {
   <div id="app" class="px-8">
     <nav-menu />
     <nav-bar class="my-16" />
-    <nuxt class="fadeIn" />
-    <div class="spacer" />
-    <nuxt-link v-if="$route.name !== 'help'" class="floating_help" to="/help/">
-      I need help
+    <nuxt class="fadeIn mb-16" />
+    <nuxt-link
+      v-if="$route.name !== 'help'"
+      style="z-index: 99"
+      class="fixed right-20 bottom-8 px-6 py-2 rounded-full bg-gray-800 dark:bg-white text-white dark:text-gray-800 font-bold hover:opacity-60 transition-opacity"
+      to="/help/"
+    >
+      <txt>I need help</txt>
     </nuxt-link>
     <footer-section />
   </div>
 </template>
 
 <script>
+import Txt from "../components/elements/Txt";
 import NavMenu from "../components/extensive/NavMenu";
 import NavBar from "../components/extensive/NavBar";
 import FooterSection from "../components/extensive/FooterSection";
@@ -253,6 +171,7 @@ import FooterSection from "../components/extensive/FooterSection";
 export default {
   name: "App",
   components: {
+    Txt,
     NavMenu,
     NavBar,
     FooterSection,

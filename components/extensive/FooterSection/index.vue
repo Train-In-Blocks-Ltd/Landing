@@ -19,12 +19,12 @@
   <footer class="flex flex-col items-center border-t-4 border-gray-800 py-12">
     <CookieControl>
       <template #bar>
-        <txt>
+        <txt type="tiny">
           We use cookies and other tracking technologies to improve your
           browsing experience on our site, analyze site traffic, and understand
           where our audience is coming from. To find out more, please read our
           <nuxt-link to="/legal/cookies-policy/">
-            <txt bold>Cookies Policy</txt>.
+            <txt type="tiny" bold>Cookies Policy</txt>.
           </nuxt-link>
         </txt>
       </template>
