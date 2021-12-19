@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import NavMenuLink from "./components/NavMenuLink.vue";
+import NavMenuLink from "./components/NavMenuLink";
 
 export default {
   components: {

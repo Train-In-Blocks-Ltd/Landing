@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Compare from "../../components/Compare";
+import Compare from "../../components/pages/compare/Compare";
 export default {
   components: {
     Compare,
@@ -17,13 +17,6 @@ export default {
         price_desc: ["Only 5 clients with the cheaper plan."],
       },
     };
-  },
-  beforeCreate() {
-    this.$parent.$parent.metaHelper.title = "PTHub";
-    this.$parent.$parent.metaHelper.description =
-      "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.";
-    this.$parent.$parent.metaHelper.url =
-      "https://traininblocks.com/compare/pthub/";
   },
   head() {
     return {
@@ -57,6 +50,13 @@ export default {
         },
       ],
     };
+  },
+  beforeCreate() {
+    this.$parent.$parent.metaHelper.title = "PTHub";
+    this.$parent.$parent.metaHelper.description =
+      "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.";
+    this.$parent.$parent.metaHelper.url =
+      "https://traininblocks.com/compare/pthub/";
   },
 };
 </script>
