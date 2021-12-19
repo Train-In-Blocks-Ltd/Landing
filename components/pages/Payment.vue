@@ -33,9 +33,14 @@
         <txt type="large-body" class="my-2" bold>
           {{ product.name }}
         </txt>
-        <txt>
-          {{ product.desc }}
-        </txt>
+        <ul>
+          <li
+            v-for="(point, pointIndex) in product.points"
+            :key="`point_${pointIndex}`"
+          >
+            {{ point }}
+          </li>
+        </ul>
       </card-wrapper>
     </div>
   </div>
@@ -62,7 +67,15 @@ export default {
           name: "Yearly",
           price: "£102",
           timeframe: "per year",
-          desc: "Save 15% when you sign up to our annual plan — an even better deal.",
+          points: [
+            "Save 15% when you sign up on this plan",
+            "Unlimited clients",
+            "Unlimited plans",
+            "Unlimited sessions",
+            "Create session templates",
+            "Client-access",
+            "Session bookings",
+          ],
           func: this.checkout([
             { price: "price_1GtvcPBYbiJubfJM7nWmNywN", quantity: 1 },
           ]),
@@ -71,7 +84,14 @@ export default {
           name: "Monthly",
           price: "£10",
           timeframe: "per month",
-          desc: "Gets you full access to the app for a amazing price on a recurring payment.",
+          points: [
+            "Unlimited clients",
+            "Unlimited plans",
+            "Unlimited sessions",
+            "Create session templates",
+            "Client-access",
+            "Session bookings",
+          ],
           func: this.checkout([
             { price: "price_1GtvcPBYbiJubfJM2voqpLIo", quantity: 1 },
           ]),
@@ -80,7 +100,15 @@ export default {
           name: "Supporter",
           price: "£15",
           timeframe: "per month",
-          desc: "Show some love and help us deliver an outstanding service to you. It's the same as the monthly plan, but with an added bonus of good karma.",
+          points: [
+            "Extra karma for helping us out",
+            "Unlimited clients",
+            "Unlimited plans",
+            "Unlimited sessions",
+            "Create session templates",
+            "Client-access",
+            "Session bookings",
+          ],
           func: this.checkout([
             { price: "price_1IFGHBBYbiJubfJMNHoR9viV", quantity: 1 },
           ]),

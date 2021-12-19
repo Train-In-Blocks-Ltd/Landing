@@ -47,14 +47,14 @@ b {
 .nuxt-content p {
   @apply mb-4;
 }
-.nuxt-content ul,
-.nuxt-content ol {
-  @apply pl-4;
+ul,
+ol {
+  @apply pl-5;
 }
-.nuxt-content ul {
+ul {
   @apply list-disc;
 }
-.nuxt-content ol {
+ol {
   @apply list-decimal;
 }
 
