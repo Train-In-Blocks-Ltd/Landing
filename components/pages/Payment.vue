@@ -1,35 +1,17 @@
-<style scoped>
-.pricing-container {
-  display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
-  grid-gap: 2rem;
-}
-
-@media (max-width: 992px) {
-  .pricing-container {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
-
 <template>
   <div id="pricing">
     <txt type="title" class="mb-16 pt-8">Pricing</txt>
-    <div class="pricing-container">
+    <div class="grid lg:grid-cols-2 gap-8">
       <card-wrapper class="p-4" no-shadow no-hover>
         <div class="flex justify-between">
-          <txt type="title">
-            Free
-          </txt>
+          <txt type="title"> Free </txt>
           <link-button
             link="https://app.traininblocks.com?utm=landingPricing"
             new-tab
             >Select</link-button
           >
         </div>
-        <txt type="large-body" class="my-2" bold>
-          Demo
-        </txt>
+        <txt type="large-body" class="my-2" bold> Demo </txt>
         <txt>
           Sign in to our demo account to see how our services can benefit you.
           You can find the details on the log-in page.
@@ -61,17 +43,17 @@
 
 <script>
 import axios from "axios";
-import Txt from '../elements/Txt'
-import LinkButton from '../elements/LinkButton'
-import DefaultButton from '../elements/DefaultButton'
-import CardWrapper from '../generic/CardWrapper';
+import Txt from "../elements/Txt";
+import LinkButton from "../elements/LinkButton";
+import DefaultButton from "../elements/DefaultButton";
+import CardWrapper from "../generic/CardWrapper";
 
 export default {
   components: {
     Txt,
     LinkButton,
     DefaultButton,
-    CardWrapper
+    CardWrapper,
   },
   data() {
     return {
@@ -81,21 +63,27 @@ export default {
           price: "£102",
           timeframe: "per year",
           desc: "Save 15% when you sign up to our annual plan — an even better deal.",
-          func: this.checkout([{ price: "price_1GtvcPBYbiJubfJM7nWmNywN", quantity: 1 }]),
+          func: this.checkout([
+            { price: "price_1GtvcPBYbiJubfJM7nWmNywN", quantity: 1 },
+          ]),
         },
         {
           name: "Monthly",
           price: "£10",
           timeframe: "per month",
           desc: "Gets you full access to the app for a amazing price on a recurring payment.",
-          func: this.checkout([{ price: "price_1GtvcPBYbiJubfJM2voqpLIo", quantity: 1 }]),
+          func: this.checkout([
+            { price: "price_1GtvcPBYbiJubfJM2voqpLIo", quantity: 1 },
+          ]),
         },
         {
           name: "Supporter",
           price: "£15",
           timeframe: "per month",
           desc: "Show some love and help us deliver an outstanding service to you. It's the same as the monthly plan, but with an added bonus of good karma.",
-          func: this.checkout([{ price: "price_1IFGHBBYbiJubfJMNHoR9viV", quantity: 1 }]),
+          func: this.checkout([
+            { price: "price_1IFGHBBYbiJubfJMNHoR9viV", quantity: 1 },
+          ]),
         },
       ],
     };

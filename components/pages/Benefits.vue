@@ -1,27 +1,7 @@
-<style scoped>
-.container--benefits {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 4rem;
-}
-
-@media (max-width: 992px) {
-  .container--benefits {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-  }
-}
-@media (max-width: 576px) {
-  .container--benefits {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
-
 <template>
   <div>
     <txt type="title" class="mb-16">Benefits and features</txt>
-    <div class="container--benefits">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-12">
       <card-wrapper
         v-for="(item, index) in benefits"
         :key="`benefit_${index}`"
@@ -45,13 +25,13 @@
 </template>
 
 <script>
-import Txt from '../elements/Txt'
-import CardWrapper from '../generic/CardWrapper';
+import Txt from "../elements/Txt";
+import CardWrapper from "../generic/CardWrapper";
 
 export default {
   components: {
     Txt,
-    CardWrapper
+    CardWrapper,
   },
   data() {
     return {

@@ -1,10 +1,10 @@
 <style>
 /* Shared anim */
 .svg_item > svg .stroke_color {
-  stroke: var(--base_dark);
+  @apply stroke-gray-800 dark:stroke-white;
 }
 .svg_item > svg .fill_color {
-  fill: var(--fore);
+  @apply fill-white dark:fill-gray-800;
 }
 #editing-session .preview,
 #client-user .placeholder,
@@ -189,7 +189,7 @@
     <div v-for="(item, index) in svgs" :key="`svg_${index}`">
       <div
         class="flex mb-16 svg_item"
-        :class="{'flex-row-reverse': index % 2 === 0}"
+        :class="{ 'flex-row-reverse': index % 2 === 0 }"
       >
         <txt
           type="subtitle"
@@ -209,11 +209,11 @@
 </template>
 
 <script>
-import Txt from '../../components/elements/Txt'
+import Txt from "../../components/elements/Txt";
 
 export default {
   components: {
-    Txt
+    Txt,
   },
   data() {
     return {
