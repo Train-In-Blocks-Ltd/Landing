@@ -188,20 +188,20 @@
   <div>
     <div v-for="(item, index) in svgs" :key="`svg_${index}`">
       <div
-        class="flex mb-16 svg_item"
-        :class="{ 'flex-row-reverse': index % 2 === 0 }"
+        class="flex flex-col sm:flex-row mb-16 svg_item"
+        :class="{ 'sm:flex-row-reverse': index % 2 === 0 }"
       >
         <txt
           type="subtitle"
-          class="w-7/12 my-auto"
-          :class="index % 2 === 0 ? 'ml-12' : 'mr-12'"
+          class="mb-12 sm:mb-auto w-full sm:w-7/12 my-auto"
+          :class="index % 2 === 0 ? 'sm:ml-12' : 'sm:mr-12'"
         >
           {{ item.desc }}
         </txt>
         <inline-svg
           :id="item.id"
           :src="require(`../../assets/anim-elements/${item.id}.svg`)"
-          class="w-5/12"
+          class="w-full sm:w-5/12"
         />
       </div>
     </div>
@@ -240,7 +240,7 @@ export default {
           entries.forEach((entry) => {
             entry.target.lastChild.setAttribute(
               "class",
-              entry.isIntersecting ? "animate w-5/12" : "w-5/12"
+              entry.isIntersecting ? "animate sm:w-5/12" : "sm:w-5/12"
             );
           });
         },
