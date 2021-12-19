@@ -1,67 +1,36 @@
 <style>
 .mode_icon {
-  width: 20px;
-  height: 20px;
-  margin: auto;
-  margin-right: 0.6rem;
+  @apply w-5 h-5 m-auto mr-4;
 }
 .mode_icon :is(.sun, .moon) {
-  transition: var(--transition-standard);
+  @apply transition-all;
 }
-.mode_icon .moon {
-  opacity: 0;
-}
+.mode_icon .moon,
 .darkmode .sun {
-  opacity: 0;
+  @apply opacity-0;
 }
 .darkmode .moon {
-  opacity: 1;
+  @apply opacity-100;
 }
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 26px;
+  @apply relative inline-block w-12 h-7;
 }
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  @apply opacity-0 w-0 h-0;
 }
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--base_dark);
-  -webkit-transition: 0.4s;
-  border-radius: 34px;
-  transition: 0.4s;
+  @apply absolute cursor-pointer inset-0 bg-gray-800 dark:bg-white rounded-full transition-all;
 }
 .slider:before {
-  position: absolute;
   content: "";
-  height: 18px;
-  width: 18px;
-  left: 4px;
-  bottom: 4px;
-  background-color: var(--fore);
-  -webkit-transition: 0.4s;
-  border-radius: 50%;
-  transition: 0.4s;
+  @apply absolute h-5 w-5 left-1 bottom-1 bg-white dark:bg-gray-800 rounded-full transition-all;
 }
 input:checked + .slider {
   background-color: var(--base_dark);
-}
-input:focus + .slider {
-  box-shadow: 0 0 1px var(--base_dark);
+  @apply bg-gray-800 dark:bg-white;
 }
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  @apply translate-x-5;
 }
 </style>
 
@@ -88,49 +57,19 @@ export default {
   },
   watch: {
     darkmodeOn(state) {
-      if (state) {
-        localStorage.setItem("darkmode", true);
-      } else {
-        localStorage.removeItem("darkmode");
-      }
+      if (state) localStorage.setItem("darkmode", true);
+      else localStorage.removeItem("darkmode");
       this.darkmode();
     },
   },
   mounted() {
-    if (localStorage.getItem("darkmode")) {
-      this.darkmodeOn = true;
-    }
+    if (localStorage.getItem("darkmode")) this.darkmodeOn = true;
   },
   methods: {
     darkmode() {
-      if (this.darkmodeOn) {
+      if (this.darkmodeOn)
         document.documentElement.setAttribute("class", "dark");
-        // document.documentElement.style.setProperty(
-        //   "--low_shadow",
-        //   "0 0 2px 0 #FFFFFF60"
-        // );
-        // document.documentElement.style.setProperty("--back", "#282828");
-        // document.documentElement.style.setProperty("--fore", "#383838");
-        // document.documentElement.style.setProperty("--base_dark", "white");
-        // document.documentElement.style.setProperty("--base_light", "white");
-        // document.documentElement.style.setProperty("--base_accent", "#282828");
-        // document.documentElement.style.setProperty("--overlay", "#383838");
-      } else {
-        document.documentElement.removeAttribute("class");
-        // document.documentElement.style.setProperty(
-        //   "--low_shadow",
-        //   "0 0 20px 10px #28282808"
-        // );
-        // document.documentElement.style.setProperty("--back", "#F9F9F9");
-        // document.documentElement.style.setProperty("--fore", "white");
-        // document.documentElement.style.setProperty("--base_dark", "#282828");
-        // document.documentElement.style.setProperty("--base_light", "#585858");
-        // document.documentElement.style.setProperty("--base_accent", "white");
-        // document.documentElement.style.setProperty(
-        //   "--overlay",
-        //   "rgba(255, 255, 255, .95)"
-        // );
-      }
+      else document.documentElement.removeAttribute("class");
     },
   },
 };
