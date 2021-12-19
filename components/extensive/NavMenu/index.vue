@@ -27,11 +27,22 @@
           />
           <nav-menu-link
             link-to="javascript:void(0)"
+            name="Features"
+            :on-click="
+              () => {
+                $parent.openNav = false;
+                scroll('features');
+              }
+            "
+            a-element
+          />
+          <nav-menu-link
+            link-to="javascript:void(0)"
             name="Pricing"
             :on-click="
               () => {
                 $parent.openNav = false;
-                scroll();
+                scroll('pricing');
               }
             "
             a-element
@@ -65,13 +76,11 @@ export default {
     NavMenuLink,
   },
   methods: {
-    scroll() {
+    scroll(link) {
       this.$router.push("/");
       setTimeout(
         () => {
-          document
-            .getElementById("pricing")
-            .scrollIntoView({ behavior: "smooth" });
+          document.getElementById(link).scrollIntoView({ behavior: "smooth" });
         },
         this.$nuxt.$route.path === "/" ? 0 : 1000
       );
