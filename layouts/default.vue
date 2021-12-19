@@ -49,7 +49,7 @@ b {
 }
 .nuxt-content ul,
 .nuxt-content ol {
-  @apply pl-1.5;
+  @apply pl-4;
 }
 .nuxt-content ul {
   @apply list-disc;
