@@ -9,7 +9,7 @@
     </nuxt-link>
     <div
       style="z-index: 60"
-      class="flex bg-white fixed top-8 right-6 p-4 rounded-lg shadow-lg sm:bg-transparent sm:relative sm:top-0 sm:right-0 sm:shadow-none"
+      class="flex bg-white dark:bg-gray-800 fixed top-8 right-6 p-4 rounded-lg shadow-lg sm:bg-transparent sm:relative sm:top-0 sm:right-0 sm:shadow-none"
     >
       <darkmode-toggle />
       <inline-svg

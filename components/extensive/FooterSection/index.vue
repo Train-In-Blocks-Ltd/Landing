@@ -1,22 +1,22 @@
 <style scoped>
-/* MCE */
 #mc-embedded-subscribe-form {
-  margin-bottom: 2rem;
+  @apply mb-8;
 }
 #mc-embedded-subscribe-form label {
-  color: var(--base_dark);
-  font-weight: bold;
+  @apply font-bold text-gray-800 dark:text-white;
 }
 #mc-embedded-subscribe {
-  @apply select-none cursor-pointer self-center rounded border-none px-6 py-2 font-bold text-white text-sm bg-gray-800 transition-all hover:opacity-60 active:scale-95;
+  @apply select-none cursor-pointer self-center rounded border-none px-6 py-2 font-bold text-white dark:text-gray-800 text-sm bg-gray-800 dark:bg-white transition-all hover:opacity-60 active:scale-95;
 }
 #mce-EMAIL {
-  @apply w-full px-2 py-3 font-sans outline-none text-base bg-transparent text-gray-800 border-2 border-gray-400 rounded-lg hover:border-gray-800 focus:border-gray-800 transition-all;
+  @apply w-full px-2 py-3 font-sans outline-none text-base bg-transparent text-gray-800 dark:text-white border-2 border-gray-400 dark:border-gray-200 rounded-lg hover:border-gray-800 focus:border-gray-800 dark:hover:border-white dark:focus:border-white transition-all;
 }
 </style>
 
 <template>
-  <footer class="flex flex-col items-center border-t-4 border-gray-800 py-12">
+  <footer
+    class="flex flex-col items-center border-t-4 border-gray-800 dark:border-white py-12"
+  >
     <CookieControl>
       <template #bar>
         <txt type="tiny">
