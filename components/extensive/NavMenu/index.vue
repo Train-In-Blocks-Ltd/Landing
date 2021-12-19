@@ -67,11 +67,14 @@ export default {
   methods: {
     scroll() {
       this.$router.push("/");
-      setTimeout(() => {
-        document
-          .getElementById("pricing")
-          .scrollIntoView({ behavior: "smooth" });
-      }, 1000);
+      setTimeout(
+        () => {
+          document
+            .getElementById("pricing")
+            .scrollIntoView({ behavior: "smooth" });
+        },
+        this.$nuxt.$route.path === "/" ? 0 : 1000
+      );
     },
   },
 };
