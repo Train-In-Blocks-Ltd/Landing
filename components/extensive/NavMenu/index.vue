@@ -57,11 +57,11 @@
             name="News"
             :on-click="() => ($parent.openNav = false)"
           /> -->
-          <nav-menu-link
+          <!-- <nav-menu-link
             link-to="/help/"
             name="Help"
             :on-click="() => ($parent.openNav = false)"
-          />
+          /> -->
         </div>
       </transition>
     </nav>
