@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <page-wrapper id="home">
     <home-top-section class="mb-32" />
     <showcase class="mb-32" />
     <benefits class="mb-24" />
@@ -19,10 +19,11 @@
       </nuxt-link>
     </div>
     <recent-blog-posts :latest-blog-posts="latestBlogPosts" />
-  </div>
+  </page-wrapper>
 </template>
 
 <script>
+import PageWrapper from "../components/generic/PageWrapper";
 import Txt from "../components/elements/Txt";
 import Payment from "../components/pages/Payment";
 import Benefits from "../components/pages/Benefits";
@@ -32,6 +33,7 @@ import RecentBlogPosts from "../components/pages/RecentBlogPosts";
 
 export default {
   components: {
+    PageWrapper,
     Txt,
     Payment,
     Benefits,
