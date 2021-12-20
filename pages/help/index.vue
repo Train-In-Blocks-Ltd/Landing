@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <page-wrapper>
     <txt type="title" is-main>Need help with something?</txt>
     <txt type="title" class="mt-4 mb-16">
       <u
@@ -15,16 +15,18 @@
     </div>
     <txt type="title" class="mb-8">Need something more specific?</txt>
     <more-help-form />
-  </div>
+  </page-wrapper>
 </template>
 
 <script>
+import PageWrapper from "../../components/generic/PageWrapper";
 import Txt from "../../components/elements/Txt";
 import HelpPost from "~/components/pages/help/HelpPost";
 import MoreHelpForm from "~/components/pages/help/MoreHelpForm";
 
 export default {
   components: {
+    PageWrapper,
     Txt,
     HelpPost,
     MoreHelpForm,

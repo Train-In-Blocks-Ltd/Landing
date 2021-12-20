@@ -1,18 +1,20 @@
 <template>
-  <div>
+  <page-wrapper>
     <txt type="title" is-main class="mb-16">Find power in knowledge</txt>
     <div class="grid xl:grid-cols-2 gap-8 xl:gap-12 mb-8">
       <blog-post v-for="post in posts" :key="post.title" :post="post" />
     </div>
-  </div>
+  </page-wrapper>
 </template>
 
 <script>
+import PageWrapper from "../../components/generic/PageWrapper";
 import Txt from "../../components/elements/Txt";
 import BlogPost from "../../components/pages/blog/BlogPost";
 
 export default {
   components: {
+    PageWrapper,
     Txt,
     BlogPost,
   },
