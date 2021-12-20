@@ -14,9 +14,7 @@
 </style>
 
 <template>
-  <footer
-    class="flex flex-col items-center border-t-4 border-gray-800 dark:border-white py-12"
-  >
+  <footer class="grid gap-4 border-t-4 border-gray-800 dark:border-white py-12">
     <CookieControl>
       <template #bar>
         <txt type="tiny">
@@ -57,7 +55,7 @@
       action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
       method="post"
       name="mc-embedded-subscribe-form"
-      class="validate flex flex-col items-center w-full sm:w-1/2 lg:w-1/3 my-12"
+      class="validate grid gap-2 w-full sm:w-1/2 lg:w-1/3 my-12"
       target="_blank"
       novalidate
     >
@@ -89,22 +87,32 @@
         />
       </div>
     </form>
-    <txt type="tiny" class="mt-4" bold>Train In Blocks Ltd</txt>
-    <txt type="tiny">12515717</txt>
-    <txt type="tiny">Wallingford, OX10 8AD, United Kingdom</txt>
-    <txt type="tiny">Registered in England & Wales</txt>
-    <div class="flex mt-6">
-      <nuxt-link class="mr-4" to="/legal/privacy-and-data-policy/">
-        <txt type="tiny">Privacy and Data Policy</txt>
+    <div>
+      <txt type="tiny" class="mt-4" bold>Train In Blocks Ltd</txt>
+      <txt type="tiny">12515717</txt>
+      <txt type="tiny">Wallingford, OX10 8AD, United Kingdom</txt>
+      <txt type="tiny">Registered in England & Wales</txt>
+    </div>
+    <div class="sm:flex mt-6">
+      <nuxt-link class="sm:mr-4" to="/legal/privacy-and-data-policy/">
+        <txt type="tiny" class="hover:opacity-60 transition-opacity"
+          >Privacy and Data Policy</txt
+        >
       </nuxt-link>
-      <nuxt-link class="mr-4" to="/legal/cookies-policy/">
-        <txt type="tiny">Cookies Policy</txt>
+      <nuxt-link class="sm:mr-4" to="/legal/cookies-policy/">
+        <txt type="tiny" class="hover:opacity-60 transition-opacity"
+          >Cookies Policy</txt
+        >
       </nuxt-link>
-      <nuxt-link class="mr-4" to="/legal/terms-of-use/">
-        <txt type="tiny">Terms of Use</txt>
+      <nuxt-link class="sm:mr-4" to="/legal/terms-of-use/">
+        <txt type="tiny" class="hover:opacity-60 transition-opacity"
+          >Terms of Use</txt
+        >
       </nuxt-link>
       <a href="https://status.traininblocks.com">
-        <txt type="tiny">Status</txt>
+        <txt type="tiny" class="hover:opacity-60 transition-opacity"
+          >Status</txt
+        >
       </a>
     </div>
   </footer>
