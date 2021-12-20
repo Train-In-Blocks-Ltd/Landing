@@ -5,7 +5,7 @@
       class="grid gap-12 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mb-16"
     >
       <div
-        v-for="(blogPost, blogPostIndex) in latestBlogPosts.slice(-3)"
+        v-for="(blogPost, blogPostIndex) in latestBlogPosts.slice(-3).reverse()"
         :key="`post_${blogPostIndex}`"
         class="latest_post"
       >
