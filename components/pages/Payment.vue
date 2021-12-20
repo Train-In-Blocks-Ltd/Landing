@@ -28,7 +28,9 @@
           <txt type="title">
             {{ product.price }}
           </txt>
-          <default-button :on-click="product.func">Select</default-button>
+          <default-button :on-click="() => checkout(product.stripe)"
+            >Select</default-button
+          >
         </div>
         <txt type="large-body" class="my-2" bold>
           {{ product.name }}
@@ -76,9 +78,7 @@ export default {
             "Client-access",
             "Session bookings",
           ],
-          func: this.checkout([
-            { price: "price_1GtvcPBYbiJubfJM7nWmNywN", quantity: 1 },
-          ]),
+          stripe: { price: "price_1GtvcPBYbiJubfJM7nWmNywN", quantity: 1 },
         },
         {
           name: "Monthly",
@@ -92,9 +92,7 @@ export default {
             "Client-access",
             "Session bookings",
           ],
-          func: this.checkout([
-            { price: "price_1GtvcPBYbiJubfJM2voqpLIo", quantity: 1 },
-          ]),
+          stripe: { price: "price_1GtvcPBYbiJubfJM2voqpLIo", quantity: 1 },
         },
         {
           name: "Supporter",
@@ -109,9 +107,7 @@ export default {
             "Client-access",
             "Session bookings",
           ],
-          func: this.checkout([
-            { price: "price_1IFGHBBYbiJubfJMNHoR9viV", quantity: 1 },
-          ]),
+          stripe: { price: "price_1IFGHBBYbiJubfJMNHoR9viV", quantity: 1 },
         },
       ],
     };
@@ -119,7 +115,7 @@ export default {
   methods: {
     async checkout(item) {
       const response = await axios.post("/.netlify/functions/checkout", {
-        line_items: item,
+        line_items: [item],
       });
       // eslint-disable-next-line no-undef
       const stripe = await Stripe("pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX");
