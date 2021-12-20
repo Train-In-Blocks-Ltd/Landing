@@ -1,10 +1,10 @@
 <template>
-  <div class="mb-8 md:mb-0 md:flex">
+  <div class="mb-8 sm:mb-0 sm:flex">
     <img
       :src="require(`../../../assets/blog-img/${post.img}`)"
-      class="w-full mb-6 md:mb-0 md:w-1/3 md:mr-8 max-w-4xl"
+      class="w-full h-auto sm:w-64 sm:h-64 mb-8 sm:mb-0 sm:mr-8 max-w-4xl"
     />
-    <div class="w-full md:w-2/3 max-w-4xl">
+    <div class="w-full sm:w-2/3 max-w-4xl">
       <nuxt-link :to="`/blog/${post.slug}/`">
         <txt type="subtitle" class="hover:opacity-60 transition-all">
           {{ post.title }}

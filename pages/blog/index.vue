@@ -1,7 +1,7 @@
 <template>
   <div>
     <txt type="title" is-main class="mb-16">Find power in knowledge</txt>
-    <div class="grid gap-8 mb-8">
+    <div class="grid xl:grid-cols-2 gap-8 xl:gap-12 mb-8">
       <blog-post v-for="post in posts" :key="post.title" :post="post" />
     </div>
   </div>
