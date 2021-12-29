@@ -24,7 +24,7 @@ svg path:not(.transparent, .no-fill) {
 img,
 video,
 iframe {
-  @apply select-none outline-none rounded-lg shadow-lg max-w-full;
+  @apply select-none outline-none rounded-lg max-w-full;
 }
 li {
   @apply my-1;

@@ -3,6 +3,7 @@
     <home-top-section class="mb-32" />
     <showcase class="mb-32" />
     <benefits class="mb-24" />
+    <email-intake class="mb-24" />
     <payment class="mb-32" />
 
     <!-- Comparison section -->
@@ -30,6 +31,7 @@ import Benefits from "../components/pages/Benefits";
 import Showcase from "../components/pages/Showcase";
 import HomeTopSection from "../components/pages/HomeTopSection";
 import RecentBlogPosts from "../components/pages/RecentBlogPosts";
+import EmailIntake from "../components/generic/EmailIntake";
 
 export default {
   components: {
@@ -40,6 +42,7 @@ export default {
     Showcase,
     HomeTopSection,
     RecentBlogPosts,
+    EmailIntake,
   },
   async asyncData({ $content }) {
     const latestBlogPosts = await $content("blog").fetch();
