@@ -1,18 +1,3 @@
-<style scoped>
-#mc-embedded-subscribe-form {
-  @apply mb-8;
-}
-#mc-embedded-subscribe-form label {
-  @apply font-bold text-gray-800 dark:text-white;
-}
-#mc-embedded-subscribe {
-  @apply select-none cursor-pointer self-center rounded border-none px-6 py-2 font-bold text-white dark:text-gray-800 text-sm bg-gray-800 dark:bg-white transition-all hover:opacity-60 active:scale-95;
-}
-#mce-EMAIL {
-  @apply w-full px-2 py-3 font-sans outline-none text-base bg-transparent text-gray-800 dark:text-white border-2 border-gray-400 dark:border-gray-200 rounded-lg hover:border-gray-800 focus:border-gray-800 dark:hover:border-white dark:focus:border-white transition-all;
-}
-</style>
-
 <template>
   <footer class="grid gap-4 border-t-4 border-gray-800 dark:border-white py-12">
     <CookieControl>
@@ -50,43 +35,6 @@
         />
       </a>
     </div>
-    <form
-      id="mc-embedded-subscribe-form"
-      action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
-      method="post"
-      name="mc-embedded-subscribe-form"
-      class="validate grid gap-2 w-full sm:w-1/2 lg:w-1/3 my-12"
-      target="_blank"
-      novalidate
-    >
-      <label for="mce-EMAIL" class="mb-4">Sign up to our newsletter</label>
-      <input
-        id="mce-EMAIL"
-        type="email"
-        value=""
-        name="EMAIL"
-        class="email"
-        placeholder="Email"
-        required
-      />
-      <div style="position: absolute; left: -5000px" aria-hidden="true">
-        <input
-          type="text"
-          name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0"
-          tabindex="-1"
-          value=""
-        />
-      </div>
-      <div class="clear mt-4">
-        <input
-          id="mc-embedded-subscribe"
-          type="submit"
-          value="Subscribe"
-          name="subscribe"
-          class="button"
-        />
-      </div>
-    </form>
     <div>
       <txt type="tiny" class="mt-4" bold>Train In Blocks Ltd</txt>
       <txt type="tiny">12515717</txt>
