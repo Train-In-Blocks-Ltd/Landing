@@ -13,6 +13,8 @@ author: Jamie Spoor
 2. [Build](#build)
 3. [Promote](#promote)
 
+## Introduction
+
 The festive season is now upon us and 2022 will be here before we know it. It’s a time of year when our usual routines, our regular way of life, falls by the wayside amidst the frantic last-minute dash to the shops in the run-up to Christmas.
 
 Spare a thought for the personal trainers and fitness instructors out there when it comes to the festivities. At a time of year when everyone eats and drinks roughly their own body weight in calories, the holiday season unsurprisingly brings with it a lull in gym attendance and fitness regimes.
