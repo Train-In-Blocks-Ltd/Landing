@@ -3,7 +3,7 @@
     <txt type="title" is-main>Need help with something?</txt>
     <txt type="title" class="mt-4 mb-16">
       <u
-        class="hover:opacity-60 transition-opacity text-gray-200"
+        class="hover:opacity-60 transition-opacity text-gray-200 cursor-pointer"
         @click="scroll()"
       >
         Click here</u
