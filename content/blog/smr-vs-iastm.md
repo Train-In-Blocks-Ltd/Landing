@@ -4,9 +4,10 @@ title: Improving performance through self-myofascial release or instrument-assis
 slug: smr-vs-iastm
 img: 9.png
 postDesc: A recent stance on a comparison between the use of equipment such as foam rollers and instrument-assisted manual recipe.
+author: Mikey Lau
 ---
 
-## What are *Quick Articles*?
+## What are _Quick Articles_?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
@@ -50,4 +51,4 @@ The recreationally active population could present a wide variability in perform
 
 ## References
 
-Stroiney, D., Mokris, R., Hanna, G., and Ranney, J. (2018). Examination of Self-Myofascial Release vs. Instrument-Assisted Soft-Tissue Mobilization Techniques on Vertical and Horizontal Power in Recreational Athletes. *Journal of Strength and Conditioning Research*, 34(1), pp. 79-88.
+Stroiney, D., Mokris, R., Hanna, G., and Ranney, J. (2018). Examination of Self-Myofascial Release vs. Instrument-Assisted Soft-Tissue Mobilization Techniques on Vertical and Horizontal Power in Recreational Athletes. _Journal of Strength and Conditioning Research_, 34(1), pp. 79-88.

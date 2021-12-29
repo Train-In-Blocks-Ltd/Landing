@@ -4,6 +4,7 @@ title: 5 ways to boost client retention
 slug: 5-ways-to-boost-client-retention
 img: 5.png
 postDesc: Get creative and keep your clients for longer with these practical techniques.
+author: Mikey Lau
 ---
 
 ## 1. Make your rewards progressive
@@ -26,4 +27,4 @@ Life is fast and dynamic where some may find it difficult to stick to a structur
 
 ## 5. Listen to their other interests
 
-We’ve all heard it before. We have 2 ears so that we may listen more than we speak.  You’ll never know what other interests your clients may have. Finding this out and using the information with the previous points could enhance your client retention. Additionally, you can research their interests so that you can have better conversations with them.
+We’ve all heard it before. We have 2 ears so that we may listen more than we speak. You’ll never know what other interests your clients may have. Finding this out and using the information with the previous points could enhance your client retention. Additionally, you can research their interests so that you can have better conversations with them.

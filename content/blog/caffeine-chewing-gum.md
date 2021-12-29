@@ -4,9 +4,10 @@ title: Does caffeine chewing gum increase performance?
 slug: caffeine-chewing-gum
 img: 12.png
 postDesc: Caffeine is a natural performance enhancement substance used by many in their day-to-day lives. However, can it improve rugby performance by delivering it during half-time?
+author: Mikey Lau
 ---
 
-## What are *Quick Articles*?
+## What are _Quick Articles_?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
@@ -43,4 +44,4 @@ Although the authors attempted to simulate a rugby match to the best of their ab
 
 ## References
 
-Russell, M., Reynolds, N., Crewther, B., Cook, C., and Kilduff, L. (2020). Physiological and Performance Effects of Caffeine Gum Consumed During a Simulated Half-Time by Professional Academy Rugby Union Players. *Journal of Strength and Conditioning Research*, 34(1), pp. 145-151.
+Russell, M., Reynolds, N., Crewther, B., Cook, C., and Kilduff, L. (2020). Physiological and Performance Effects of Caffeine Gum Consumed During a Simulated Half-Time by Professional Academy Rugby Union Players. _Journal of Strength and Conditioning Research_, 34(1), pp. 145-151.

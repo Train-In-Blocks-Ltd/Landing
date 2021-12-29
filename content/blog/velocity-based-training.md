@@ -4,9 +4,10 @@ title: More adaptations with less volume using velocity-based training
 slug: velocity-based-training
 img: 8.png
 postDesc: A recent study on an alternative method of training which could increase adaptations with less training volume.
+author: Mikey Lau
 ---
 
-## What are *Quick Articles*?
+## What are _Quick Articles_?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
@@ -50,4 +51,4 @@ The tests were performed within an hour session before and after the interventio
 
 ## References
 
-Dorrell, H., Smith, M., and Gee, T. (2019). Comparison of Velocity-Based and Traditional Percentage-Based Loading Methods on Maximal Strength and Power Adaptations. *Journal of Strength and Conditioning Research*, 34(1), pp. 46-53.
+Dorrell, H., Smith, M., and Gee, T. (2019). Comparison of Velocity-Based and Traditional Percentage-Based Loading Methods on Maximal Strength and Power Adaptations. _Journal of Strength and Conditioning Research_, 34(1), pp. 46-53.

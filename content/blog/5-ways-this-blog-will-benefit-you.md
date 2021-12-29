@@ -4,6 +4,7 @@ title: 5 ways this blog will benefit you
 slug: 5-ways-this-blog-will-benefit-you
 img: 1.png
 postDesc: Take less than two minutes to find out how this blog will benefit you greatly.
+author: Mikey Lau
 ---
 
 ## 1. We're keeping it simple
@@ -22,7 +23,7 @@ We've made it pain-free to access your email preferences to make any adjustments
 
 ## 4. A chance to connect
 
-You're not alone in your journey. Find other similar minded individuals to collaborate and share ideas with. You never know what type of professional network you'll be able to build.  
+You're not alone in your journey. Find other similar minded individuals to collaborate and share ideas with. You never know what type of professional network you'll be able to build.
 
 To achieve this, we'll celebrate the achievements made by trainers and coaches alike and share their social platforms with you. Let's build a community.
 
