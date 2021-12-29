@@ -5,9 +5,10 @@
       :src="require(`../../assets/blog-img/${post.img}`)"
       class="w-full max-w-lg m-auto"
     />
-    <txt type="title" class="my-8" is-main>
+    <txt type="title" class="mt-8 mb-4" is-main>
       {{ post.title }}
     </txt>
+    <txt type="large-body" class="mb-16" grey>Created by {{ post.author }}</txt>
     <nuxt-content :document="post" />
     <blog-footer class="mt-16" />
   </div>

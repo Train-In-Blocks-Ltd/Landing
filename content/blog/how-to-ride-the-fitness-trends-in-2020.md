@@ -4,6 +4,7 @@ title: How to ride the fitness trends in 2020
 slug: how-to-ride-the-fitness-trends-in-2020
 img: 2.png
 postDesc: Learn how to take advantage of current trends and grow your business.
+author: Mikey Lau
 ---
 
 ## It’s not all doom and gloom
@@ -16,7 +17,7 @@ Here are some statistics for you. People are looking to improve their diet! More
 
 By providing nutritional advice and plans could add that **extra value** to your services. It is important to note that you should always act within your scope of practice. I’m sure that you are well-aware of how poor advice could affect your reputation as a trainer; therefore, be safe and be honest.
 
-If you feel that you are lacking in knowledge, don’t be afraid to seek out a nutritional CPD, diploma or a degree pathway. An example of this could be a course such as the one provided by *Precision Nutrition*.
+If you feel that you are lacking in knowledge, don’t be afraid to seek out a nutritional CPD, diploma or a degree pathway. An example of this could be a course such as the one provided by _Precision Nutrition_.
 
 ## 2. It’s going digital. No surprise.
 

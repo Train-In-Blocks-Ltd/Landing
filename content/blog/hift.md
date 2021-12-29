@@ -4,6 +4,7 @@ title: High-intensity functional training (HIFT) on health and performance
 slug: hift
 img: 15.png
 postDesc: What does the research suggest about CrossFit or military-style training and how it can benefit you?
+author: Mikey Lau
 ---
 
 ## The rise of HIFT
@@ -26,13 +27,13 @@ In short, if you are thinking about CrossFit or adding HIFT to your training, yo
 
 ## References
 
- 1. Thompson W. Worldwide survey of fitness trends for 2020. _ACSMʼs Health & Fitness Journal_. 2021; 25(1): 10–19. Available from: https://doi.org/10.1249/FIT.0000000000000526.
- 2. Feito Y, Heinrich K, Butcher S, Poston W. High-Intensity Functional Training (HIFT): Definition and Research Implications for Improved Fitness. _Sports_. 2018; 6(3): 76. Available from: https://doi.org/10.3390/sports6030076.
- 3. WODwell, (2016). _Nancy_. \[online\] Available at: https://wodwell.com/wod/nancy/ \[Accessed 7 Feb. 2021\].
- 4. Haddock C., Poston W, Heinrich K, Jahnke S, Jitnarin N. The Benefits of High-Intensity Functional Training Fitness Programs for Military Personnel. _Military Medicine_. 2016; 181(11): e1508–e1514. Available from: https://doi.org/10.7205/milmed-d-15-00503.
- 5. McWeeny D, Boule N, Neto J, Kennedy M. Effect of high intensity functional training and traditional resistance training on aerobic, anaerobic, and musculoskeletal fitness improvement. _Journal of Physical Education and Sport._ 2020; 20(4): 1791–1802. Available from: https://doi.org/10.7752/jpes.2020.04243.
- 6. Sobrero G, Arnett S, Schafer M, Stone W, Tolbert T, Salyer-Funk A, Crandall J, Farley L, Brown J, Lyons S, Esslinger T, Esslinger K, Maples J. A Comparison of High Intensity Functional Training and Circuit Training on Health and Performance Variables in Women: A Pilot Study. _Women in Sport & Physical Activity Journal._ 2017; 25(1): 1–10. Available from: https://doi.org/10.1123/wspaj.2015-0035.
- 7. Heinrich K, Patel P, O’Neal J, Heinrich B. High-intensity compared to moderate-intensity training for exercise initiation, enjoyment, adherence, and intentions: an intervention study. _BMC Public Health_. 2014; 14(1): 789. Available from: https://doi.org/10.1186/1471-2458-14-789.
- 8. Fisher J, Sales A, Carlson L, Steele J. A comparison of the motivational factors between CrossFit participants and other resistance exercise modalities: a pilot study. _Journal of Sports Medicine and Physical Fitness_. 2016; 11(9): 1227–34. Available from: https://doi.org/10.23736/S0022-4707.16.06434-3.
- 9. Hak P, Hodzovic E, Hickey B. The nature and prevalence of injury during CrossFit training. _Journal of Strength and Conditioning Research_. 2013. Available from: https://doi.org/10.1519/jsc.0000000000000318.
+1.  Thompson W. Worldwide survey of fitness trends for 2020. _ACSMʼs Health & Fitness Journal_. 2021; 25(1): 10–19. Available from: https://doi.org/10.1249/FIT.0000000000000526.
+2.  Feito Y, Heinrich K, Butcher S, Poston W. High-Intensity Functional Training (HIFT): Definition and Research Implications for Improved Fitness. _Sports_. 2018; 6(3): 76. Available from: https://doi.org/10.3390/sports6030076.
+3.  WODwell, (2016). _Nancy_. \[online\] Available at: https://wodwell.com/wod/nancy/ \[Accessed 7 Feb. 2021\].
+4.  Haddock C., Poston W, Heinrich K, Jahnke S, Jitnarin N. The Benefits of High-Intensity Functional Training Fitness Programs for Military Personnel. _Military Medicine_. 2016; 181(11): e1508–e1514. Available from: https://doi.org/10.7205/milmed-d-15-00503.
+5.  McWeeny D, Boule N, Neto J, Kennedy M. Effect of high intensity functional training and traditional resistance training on aerobic, anaerobic, and musculoskeletal fitness improvement. _Journal of Physical Education and Sport._ 2020; 20(4): 1791–1802. Available from: https://doi.org/10.7752/jpes.2020.04243.
+6.  Sobrero G, Arnett S, Schafer M, Stone W, Tolbert T, Salyer-Funk A, Crandall J, Farley L, Brown J, Lyons S, Esslinger T, Esslinger K, Maples J. A Comparison of High Intensity Functional Training and Circuit Training on Health and Performance Variables in Women: A Pilot Study. _Women in Sport & Physical Activity Journal._ 2017; 25(1): 1–10. Available from: https://doi.org/10.1123/wspaj.2015-0035.
+7.  Heinrich K, Patel P, O’Neal J, Heinrich B. High-intensity compared to moderate-intensity training for exercise initiation, enjoyment, adherence, and intentions: an intervention study. _BMC Public Health_. 2014; 14(1): 789. Available from: https://doi.org/10.1186/1471-2458-14-789.
+8.  Fisher J, Sales A, Carlson L, Steele J. A comparison of the motivational factors between CrossFit participants and other resistance exercise modalities: a pilot study. _Journal of Sports Medicine and Physical Fitness_. 2016; 11(9): 1227–34. Available from: https://doi.org/10.23736/S0022-4707.16.06434-3.
+9.  Hak P, Hodzovic E, Hickey B. The nature and prevalence of injury during CrossFit training. _Journal of Strength and Conditioning Research_. 2013. Available from: https://doi.org/10.1519/jsc.0000000000000318.
 10. Teixeira R, Dantas M, Motas D, Gantois P, Aidar F, Dantas P, Queiros V, Cesário T, Cabral B. Retrospective Study of Risk Factors and the Prevalence of Injuries in HIFT. _International Journal of Sports Medicine_. 2020; 41(3): 168–174. Available from: https://doi.org/10.1055/a-1062-6551.

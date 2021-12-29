@@ -4,9 +4,10 @@ title: Effects of supersets on barbell bench press performance
 slug: supersets-and-bench-press
 img: 11.png
 postDesc: Supersets may help you improve your bench press performance depending on which outcome you desire. It will affect peak force and velocity differently.
+author: Mikey Lau
 ---
 
-## What are *Quick Articles*?
+## What are _Quick Articles_?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
@@ -56,6 +57,6 @@ This study used a small sample and lacked transferability to a wider audience as
 
 ## References
 
-Weakley, J., Till, K., Read, D., Roe, G., Darrall-Jones, J., Phibbs, P., and Jones, B. (2017). The effects of traditional, superset, and tri-set resistance training structures on perceived intensity and physiological responses. *European Journal of Applied Physiology*, 117(9), pp. 1877–1889.
+Weakley, J., Till, K., Read, D., Roe, G., Darrall-Jones, J., Phibbs, P., and Jones, B. (2017). The effects of traditional, superset, and tri-set resistance training structures on perceived intensity and physiological responses. _European Journal of Applied Physiology_, 117(9), pp. 1877–1889.
 
-Weakley, J., Till, K., Read, D., Phibbs, P., Roe, G., Darrall-Jones, J., and Jones, B. (2017). The effects of superset configuration on kinetic, kinematic, and perceived exertion in the barbell bench press. *Journal of Strength and Conditioning Research*, 34(1), pp. 65-72.
+Weakley, J., Till, K., Read, D., Phibbs, P., Roe, G., Darrall-Jones, J., and Jones, B. (2017). The effects of superset configuration on kinetic, kinematic, and perceived exertion in the barbell bench press. _Journal of Strength and Conditioning Research_, 34(1), pp. 65-72.

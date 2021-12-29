@@ -4,9 +4,10 @@ title: Does listening to music improve performance?
 slug: fast-tempo-music-and-performance
 img: 7.png
 postDesc: Most of us will listen to music whilst we're training, but does it actually improve performance and reduce the perception of fatigue.
+author: Mikey Lau
 ---
 
-## What are *Quick Articles*?
+## What are _Quick Articles_?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
@@ -39,4 +40,4 @@ The main findings of the investigation indicates that listening to fast-tempo mu
 
 ## References
 
-Centala, J., Pogorel, C., Pummill, S., and Malek, M. (2019). Listening to Fast-Tempo Music Delays the Onset of Neuromuscular Fatigue. *Journal of Strength and Conditioning Research*, 34(3), pp. 617-622.
+Centala, J., Pogorel, C., Pummill, S., and Malek, M. (2019). Listening to Fast-Tempo Music Delays the Onset of Neuromuscular Fatigue. _Journal of Strength and Conditioning Research_, 34(3), pp. 617-622.

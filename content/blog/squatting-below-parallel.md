@@ -4,6 +4,7 @@ title: Squatting below parallel — should we do it?
 slug: squatting-below-parallel
 img: 17.png
 postDesc: How deep should we squat? This is a common topic of debate amongst fitness professionals. Here's my take on the matter.
+author: Mikey Lau
 ---
 
 ## Why is there a debate?

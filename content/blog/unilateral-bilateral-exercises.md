@@ -4,9 +4,10 @@ title: Unilateral vs. Bilateral Exercises - Improving Sprint and Agility
 slug: unilateral-bilateral-exercises
 img: 6.png
 postDesc: An insight into the effects of unilateral and bilateral exercises on sprint and agility performance.
+author: Mikey Lau
 ---
 
-## What are *Quick Articles*?
+## What are _Quick Articles_?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
@@ -65,4 +66,4 @@ Furthermore, there were difficulties in determining loads for BS and SU. It is a
 
 ## References
 
-Appleby, B., Cormack, S., and Newton, R. (2019). Unilateral and Bilateral Lower-Body Resistance Training Does not Transfer Equally to Sprint and Change of Direction Performance. *Journal of Strength and Conditioning Research*, 34(1), pp. 54-64.
+Appleby, B., Cormack, S., and Newton, R. (2019). Unilateral and Bilateral Lower-Body Resistance Training Does not Transfer Equally to Sprint and Change of Direction Performance. _Journal of Strength and Conditioning Research_, 34(1), pp. 54-64.
