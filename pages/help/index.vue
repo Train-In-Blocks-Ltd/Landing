@@ -14,7 +14,8 @@
       <help-post v-for="post in posts" :key="post.title" :post="post" />
     </div>
     <txt type="title" class="mb-8">Need something more specific?</txt>
-    <more-help-form />
+    <more-help-form class="mb-32" />
+    <team-section />
   </page-wrapper>
 </template>
 
@@ -23,6 +24,7 @@ import PageWrapper from "../../components/generic/PageWrapper";
 import Txt from "../../components/elements/Txt";
 import HelpPost from "~/components/pages/help/HelpPost";
 import MoreHelpForm from "~/components/pages/help/MoreHelpForm";
+import TeamSection from "~/components/pages/help/TeamSection.vue";
 
 export default {
   components: {
@@ -30,6 +32,7 @@ export default {
     Txt,
     HelpPost,
     MoreHelpForm,
+    TeamSection,
   },
   async asyncData({ $content }) {
     const posts = await $content("help").fetch();
