@@ -15,12 +15,12 @@
 
 <template>
   <card-wrapper
-    class="flex justify-center items-center mx-auto w-full lg:w-2/3 xl:1/3 px-8 pt-4"
+    class="md:flex relative justify-center items-center mx-auto w-full lg:w-2/3 xl:1/3 px-8 pt-4"
     no-hover
   >
     <img
       :src="require('../../assets/images/trainer-facing.png')"
-      class="grayscale h-64 mr-12"
+      class="z-0 absolute top-0 right-0 grayscale opacity-20 h-64 md:mr-12 md:relative md:opacity-100"
     />
     <form
       id="mc-embedded-subscribe-form"
@@ -39,7 +39,8 @@
         type="email"
         value=""
         name="EMAIL"
-        class="email"
+        class="email z-10"
+        style="background-color: white"
         placeholder="Email"
         required
       />
