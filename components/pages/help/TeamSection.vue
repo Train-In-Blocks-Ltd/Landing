@@ -43,8 +43,8 @@ export default {
         },
         {
           name: "Hannah Goodman",
-          role: "Digital Marketer",
-          bio: "Some bio",
+          role: "Marketing Coordinator",
+          bio: "I help Train In Blocks make great marketing decisions. I love working on small business strategy. And helping business owners find uncomplicated ways to grow their own businesses.",
         },
         {
           name: "Jamie Spoor",
