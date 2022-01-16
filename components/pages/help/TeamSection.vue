@@ -39,12 +39,12 @@ export default {
         {
           name: "Joe Bailey",
           role: "Director",
-          bio: "I'm an advocate for a free, open web and is happy pushing the limits of current technologies. I now manages the operations side of the company along with making sure the application is running smoothly.",
+          bio: "I'm an advocate for a free and open web with a passion for pushing the limits of current technologies. I now manage the operations side of the company along with making sure the application is running smoothly.",
         },
         {
           name: "Hannah Goodman",
           role: "Marketing Coordinator",
-          bio: "I help Train In Blocks make great marketing decisions. I love working on small business strategy. And helping business owners find uncomplicated ways to grow their own businesses.",
+          bio: "I help Train In Blocks make great marketing decisions. I love working on small business strategies and help entrepreneurs find uncomplicated ways to grow their businesses.",
         },
         {
           name: "Jamie Spoor",
