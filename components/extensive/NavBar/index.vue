@@ -3,7 +3,7 @@
     <nuxt-link to="/" title="Home">
       <inline-svg
         id="logo--home"
-        class="h-12 w-auto hover:opacity-60 transition-opacity"
+        class="h-12 w-auto hover:opacity-60 transition-opacity duration-300"
         :src="require('../../../assets/svg/LogoV12.svg')"
       />
     </nuxt-link>

@@ -72,10 +72,15 @@ export default {
           svg: "infinity",
         },
         {
-          subtitle: "Portfolio and Payments",
-          desc: "Edit your portfolio to share important information with your clients and collect payments.",
+          subtitle: "Portfolio",
+          desc: "Edit your portfolio to share important information with your clients.",
           svg: "payment",
         },
+        // {
+        //   subtitle: "Portfolio and Payments",
+        //   desc: "Edit your portfolio to share important information with your clients and collect payments.",
+        //   svg: "payment",
+        // },
         {
           subtitle: "Templates",
           desc: "Create your own pre-made templates to help you programme faster.",

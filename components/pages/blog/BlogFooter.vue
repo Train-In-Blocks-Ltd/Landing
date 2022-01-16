@@ -6,7 +6,10 @@
     <txt>1. Select <b>demo account details</b></txt>
     <txt>2. Enter the details into the log-in form</txt>
     <txt>3. Start exploring</txt>
-    <link-button link="https://app.traininblocks.com" class="mt-8" new-tab
+    <link-button
+      link="https://app.traininblocks.com"
+      :button-class="'mt-4'"
+      new-tab
       >Check out our demo</link-button
     >
   </card-wrapper>
