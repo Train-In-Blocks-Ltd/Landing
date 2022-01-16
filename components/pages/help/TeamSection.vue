@@ -39,7 +39,7 @@ export default {
         {
           name: "Joe Bailey",
           role: "Director",
-          bio: "Some bio",
+          bio: "I'm an advocate for a free, open web and is happy pushing the limits of current technologies. I now manages the operations side of the company along with making sure the application is running smoothly.",
         },
         {
           name: "Hannah Goodman",
@@ -49,7 +49,7 @@ export default {
         {
           name: "Jamie Spoor",
           role: "Copywriter",
-          bio: "Some bio",
+          bio: "After graduating in 2019 with a degree in Sports Journalism. I have vast experiences across all platforms of the journalism industry but specialises in print. A self-proclaimed blogger, writer, and freelancer who is happy to try his hand at anything. In my free time, I'm love to play football, go to the gym, walks and read a good book",
         },
       ],
     };
