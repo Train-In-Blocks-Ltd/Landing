@@ -1,11 +1,5 @@
-<style scoped>
-.page-wrapper {
-  max-width: 1440px;
-}
-</style>
-
 <template>
-  <div class="page-wrapper mx-auto">
+  <div class="max-w-screen-2xl mx-auto">
     <slot />
   </div>
 </template>

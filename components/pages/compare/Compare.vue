@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <page-wrapper>
     <txt type="title" is-main>
       How do we compare against {{ details.name }}?
     </txt>
@@ -36,7 +36,7 @@
     </div>
     <benefits class="mb-16" />
     <payment />
-  </div>
+  </page-wrapper>
 </template>
 
 <script>
@@ -44,6 +44,7 @@ import Txt from "../../elements/Txt";
 import CardWrapper from "../../generic/CardWrapper";
 import Benefits from "../Benefits";
 import Payment from "../Payment";
+import PageWrapper from "~/components/generic/PageWrapper.vue";
 
 export default {
   components: {
@@ -51,6 +52,7 @@ export default {
     Payment,
     Benefits,
     CardWrapper,
+    PageWrapper,
   },
   props: {
     details: {
