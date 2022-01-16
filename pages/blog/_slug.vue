@@ -1,5 +1,5 @@
 <template>
-  <div class="px:4 sm:px-16">
+  <article-wrapper>
     <v-back-button link="/blog/" />
     <img
       :src="require(`../../assets/blog-img/${post.img}`)"
@@ -11,19 +11,21 @@
     <txt type="large-body" class="mb-16" grey>Created by {{ post.author }}</txt>
     <nuxt-content :document="post" />
     <blog-footer class="mt-16" />
-  </div>
+  </article-wrapper>
 </template>
 
 <script>
 import Txt from "../../components/elements/Txt";
 import BlogFooter from "../../components/pages/blog/BlogFooter";
-import VBackButton from "~/components/generic/VBackButton.vue";
+import VBackButton from "~/components/generic/VBackButton";
+import ArticleWrapper from "~/components/generic/ArticleWrapper";
 
 export default {
   components: {
     Txt,
     BlogFooter,
     VBackButton,
+    ArticleWrapper,
   },
   async asyncData({ $content, params }) {
     const post = await $content("blog", params.slug).fetch();
