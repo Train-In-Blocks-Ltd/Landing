@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        3: "3px",
+      },
       colors: {
         gray: {
           100: "#F9F9F9",
