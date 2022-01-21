@@ -1,6 +1,6 @@
 <style scoped>
 .nav-link {
-  @apply mb-6 hover:opacity-60 transition-all;
+  @apply mb-6 text-4xl font-bold hover:opacity-60 transition-all;
 }
 </style>
 
@@ -11,23 +11,18 @@
     class="nav-link"
     @click.native="onClick"
   >
-    <txt type="title">{{ name }}</txt>
+    {{ name }}
   </nuxt-link>
   <a v-else-if="newTab" :href="linkTo" class="nav-link" target="_blank">
-    <txt type="title">{{ name }}</txt>
+    {{ name }}
   </a>
   <a v-else :href="linkTo" class="nav-link" @click.prevent="onClick">
-    <txt type="title">{{ name }}</txt>
+    {{ name }}
   </a>
 </template>
 
 <script>
-import Txt from "../../../elements/Txt";
-
 export default {
-  components: {
-    Txt,
-  },
   props: {
     linkTo: {
       type: String,

@@ -57,10 +57,11 @@
           >Terms of Use</txt
         >
       </nuxt-link>
-      <a href="https://status.traininblocks.com">
-        <txt type="tiny" class="hover:opacity-60 transition-opacity"
-          >Status</txt
-        >
+      <a
+        href="https://status.traininblocks.com"
+        class="hover:opacity-60 transition-opacity text-sm"
+      >
+        Status
       </a>
     </div>
   </footer>
