@@ -1,8 +1,6 @@
 <template>
   <div>
-    <h1>
-      See how we compare against...
-    </h1>
+    <txt type="title" is-main>See how we compare against...</txt>
     <div class="comparison_container">
       <nuxt-link
         v-for="(compare, compareIndex) in comparisons"
@@ -17,15 +15,14 @@
 </template>
 
 <script>
+import Txt from "../../components/elements/Txt";
 export default {
-  mounted () {
-    this.$parent.$parent.metaHelper.title = 'Compare'
-    this.$parent.$parent.metaHelper.description = 'Index of comparisons for Train In Blocks'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/compare/'
+  components: {
+    Txt,
   },
-  head () {
+  head() {
     return {
-      __dangerouslyDisableSanitizers: ['script'],
+      __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
           innerHTML: `{
@@ -38,10 +35,16 @@ export default {
               "item": "https://traininblocks.com/compare/"
             }]
           }`,
-          type: 'application/ld+json'
-        }
-      ]
-    }
-  }
-}
+          type: "application/ld+json",
+        },
+      ],
+    };
+  },
+  mounted() {
+    this.$parent.$parent.metaHelper.title = "Compare";
+    this.$parent.$parent.metaHelper.description =
+      "Index of comparisons for Train In Blocks";
+    this.$parent.$parent.metaHelper.url = "https://traininblocks.com/compare/";
+  },
+};
 </script>

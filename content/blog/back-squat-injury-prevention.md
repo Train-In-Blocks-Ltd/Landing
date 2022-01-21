@@ -4,9 +4,10 @@ title: Using the Back Squat to Predict Lower Extremity Injuries
 slug: back-squat-injury-prevention
 img: 10.png
 postDesc: An alternative screening method to prevent injuries associated with lower body movements.
+author: Mikey Lau
 ---
 
-## What are *Quick Articles*?
+## What are _Quick Articles_?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
@@ -38,4 +39,4 @@ It was indicated that higher risk of lower extremity injuries is possible if rel
 
 ## References
 
-Case, M., Knudson, D., and Downey, D. (2020). Barbell Squat Relative Strength as an Identifier for Lower Extremity Injury in Collegiate Athletes. *Journal of Strength and Conditioning Research*, 34(5), pp. 1249-1253.
+Case, M., Knudson, D., and Downey, D. (2020). Barbell Squat Relative Strength as an Identifier for Lower Extremity Injury in Collegiate Athletes. _Journal of Strength and Conditioning Research_, 34(5), pp. 1249-1253.

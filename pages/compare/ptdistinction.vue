@@ -3,33 +3,28 @@
 </template>
 
 <script>
-import Compare from '../../components/Compare'
+import Compare from "../../components/pages/compare/Compare";
 export default {
   components: {
-    Compare
+    Compare,
   },
-  data () {
+  data() {
     return {
       info: {
-        name: 'PTDistinction',
-        slug: 'ptdistinction',
-        price: '$19–$80 per month',
+        name: "PTDistinction",
+        slug: "ptdistinction",
+        price: "$19–$80 per month",
         price_desc: [
-          'Limits on the number of clients, e.g. you can only have 3 clients on the cheapest plan',
-          'Complicated pricing',
-          'Hard to use and little flexibility'
-        ]
-      }
-    }
+          "Limits on the number of clients, e.g. you can only have 3 clients on the cheapest plan",
+          "Complicated pricing",
+          "Hard to use and little flexibility",
+        ],
+      },
+    };
   },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'PTDistinction'
-    this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/compare/ptdistinction/'
-  },
-  head () {
+  head() {
     return {
-      __dangerouslyDisableSanitizers: ['script'],
+      __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
           innerHTML: `{
@@ -42,7 +37,7 @@ export default {
               "item": "https://traininblocks.com/compare/"
             }]
           }`,
-          type: 'application/ld+json'
+          type: "application/ld+json",
         },
         {
           innerHTML: `{
@@ -55,10 +50,17 @@ export default {
               "item": "https://traininblocks.com/compare/ptdistinction/"
             }]
           }`,
-          type: 'application/ld+json'
-        }
-      ]
-    }
-  }
-}
+          type: "application/ld+json",
+        },
+      ],
+    };
+  },
+  beforeCreate() {
+    this.$parent.$parent.metaHelper.title = "PTDistinction";
+    this.$parent.$parent.metaHelper.description =
+      "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.";
+    this.$parent.$parent.metaHelper.url =
+      "https://traininblocks.com/compare/ptdistinction/";
+  },
+};
 </script>

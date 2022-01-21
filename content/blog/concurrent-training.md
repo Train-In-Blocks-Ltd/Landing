@@ -4,9 +4,10 @@ title: Strength and aerobic exercises together can improve performance
 slug: concurrent-training
 img: 13.png
 postDesc: How much is too much cardio in one resistance session? This recent paper explores the use of aerobic exercises at different intensities to improve performance. A further insight into the effects of concurrent training during a detraining period demonstrated some interesting results.
+author: Mikey Lau
 ---
 
-## What are *Quick Articles*?
+## What are _Quick Articles_?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
@@ -49,4 +50,4 @@ The exercises and focus of this study have revolved around the lower-body muscul
 
 ## References
 
-Sousa, A., Neiva, H., Gil, M., Izquierdo, M., Rodríguez-Rosell, D., Marques, M., and Marinho, D. (2019). Concurrent Training and Detraining. *Journal of Strength and Conditioning Research*, 34(9), pp. 2565-2574. 
+Sousa, A., Neiva, H., Gil, M., Izquierdo, M., Rodríguez-Rosell, D., Marques, M., and Marinho, D. (2019). Concurrent Training and Detraining. _Journal of Strength and Conditioning Research_, 34(9), pp. 2565-2574.

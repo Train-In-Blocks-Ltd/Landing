@@ -4,9 +4,10 @@ title: How to improve overhead stability using unstable loads
 slug: unstable-load-training
 img: 4.png
 postDesc: A comparison between different training conditions by hanging weights at the ends of a barbell using resistance bands.
+author: Mikey Lau
 ---
 
-## What are *Quick Articles*?
+## What are _Quick Articles_?
 
 This blog post is a part of a series where we summarise the current literature on anything health, fitness and well-being related. These are research articles that can give you a better insight into different ways that you can train your clients to get better results - faster. Be sure to sign up to our weekly newsletter to get the latest exclusive contents and offers.
 
@@ -51,4 +52,4 @@ The small sample size may not reflect the true population.
 
 ## References
 
-Williams, M., Hendricks, D., Dannen, M., Arnold, A., and Lawrence, M. (2018). Activity of Shoulder Stabilizers and Prime Movers During an Unstable Overhead Press. *Journal of Strength and Conditioning Research*, 34(1). pp. 73-78.
+Williams, M., Hendricks, D., Dannen, M., Arnold, A., and Lawrence, M. (2018). Activity of Shoulder Stabilizers and Prime Movers During an Unstable Overhead Press. _Journal of Strength and Conditioning Research_, 34(1). pp. 73-78.

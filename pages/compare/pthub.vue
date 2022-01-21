@@ -3,31 +3,24 @@
 </template>
 
 <script>
-import Compare from '../../components/Compare'
+import Compare from "../../components/pages/compare/Compare";
 export default {
   components: {
-    Compare
+    Compare,
   },
-  data () {
+  data() {
     return {
       info: {
-        name: 'My PT Hub',
-        slug: 'pthub',
-        price: '£20-£49 per month',
-        price_desc: [
-          'Only 5 clients with the cheaper plan.'
-        ]
-      }
-    }
+        name: "My PT Hub",
+        slug: "pthub",
+        price: "£20-£49 per month",
+        price_desc: ["Only 5 clients with the cheaper plan."],
+      },
+    };
   },
-  beforeCreate () {
-    this.$parent.$parent.metaHelper.title = 'PTHub'
-    this.$parent.$parent.metaHelper.description = 'Over-delivering doesn\'t have to cost you. Impress your clients and help them reach their health and fitness goals.'
-    this.$parent.$parent.metaHelper.url = 'https://traininblocks.com/compare/pthub/'
-  },
-  head () {
+  head() {
     return {
-      __dangerouslyDisableSanitizers: ['script'],
+      __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
           innerHTML: `{
@@ -40,7 +33,7 @@ export default {
               "item": "https://traininblocks.com/compare/"
             }]
           }`,
-          type: 'application/ld+json'
+          type: "application/ld+json",
         },
         {
           innerHTML: `{
@@ -53,10 +46,17 @@ export default {
               "item": "https://traininblocks.com/compare/pthub/"
             }]
           }`,
-          type: 'application/ld+json'
-        }
-      ]
-    }
-  }
-}
+          type: "application/ld+json",
+        },
+      ],
+    };
+  },
+  beforeCreate() {
+    this.$parent.$parent.metaHelper.title = "PTHub";
+    this.$parent.$parent.metaHelper.description =
+      "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.";
+    this.$parent.$parent.metaHelper.url =
+      "https://traininblocks.com/compare/pthub/";
+  },
+};
 </script>

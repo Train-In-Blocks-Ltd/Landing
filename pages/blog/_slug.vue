@@ -1,108 +1,39 @@
-<style>
-.blog_html h2 {
-  font-size: 1.4rem;
-  margin-top: 2rem
-}
-.blog_html h3 {
-  font-size: 1rem;
-  margin-top: 3rem
-}
-</style>
-
-<style scoped>
-  .blog_body > img {
-    display: flex;
-    margin: auto;
-    width: 60%;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: var(--low_shadow)
-  }
-  .back_text {
-    position: fixed;
-    top: 50vh;
-    left: 2rem;
-    transform: rotate(-90deg);
-    text-decoration: none
-  }
-  .blog_footer {
-    display: grid;
-    grid-gap: 1rem;
-    margin-top: 4rem;
-    border: 3px solid var(--base_dark);
-    border-radius: 10px;
-    padding: 2rem
-  }
-  .blog_footer > * {
-    margin: 0
-  }
-
-  /* Responsiveness */
-  @media (max-width: 768px) {
-    .blog_body > img {
-      width: 100%
-    }
-    .back_text {
-      left: .8rem
-    }
-  }
-  @media (max-width: 567px) {
-    .blog_body > img {
-      margin-top: 2rem
-    }
-    .back_text {
-      top: 0;
-      left: 0;
-      font-size: 1.6rem;
-      position: static
-    }
-  }
-</style>
-
 <template>
-  <div class="blog_body">
-    <nuxt-link to="/blog/" class="back_text">
-      Back
-    </nuxt-link>
-    <img :src="require(`../../assets/blog-img/${post.img}`)">
-    <br><br>
-    <h1>
+  <article-wrapper>
+    <v-back-button link="/blog/" />
+    <img
+      :src="require(`../../assets/blog-img/${post.img}`)"
+      class="w-full max-w-lg m-auto"
+    />
+    <txt type="title" class="mt-8 mb-4" is-main>
       {{ post.title }}
-    </h1>
-    <nuxt-content class="blog_html" :document="post" />
-    <div class="blog_footer">
-      <h3>
-        Let's save you time and money so you can focus on what matters!
-      </h3>
-      <ol>
-        <li>Select <b>demo account details</b></li>
-        <li>Fill out the log in form</li>
-        <li>Start exploring</li>
-      </ol>
-      <form action="https://app.traininblocks.com">
-        <button>
-          Check out our demo
-        </button>
-      </form>
-    </div>
-  </div>
+    </txt>
+    <txt type="large-body" class="mb-16" grey>Created by {{ post.author }}</txt>
+    <nuxt-content :document="post" />
+    <blog-footer class="mt-16" />
+  </article-wrapper>
 </template>
 
 <script>
+import Txt from "../../components/elements/Txt";
+import BlogFooter from "../../components/pages/blog/BlogFooter";
+import VBackButton from "~/components/generic/VBackButton";
+import ArticleWrapper from "~/components/generic/ArticleWrapper";
+
 export default {
-  async asyncData ({ $content, params }) {
-    const post = await $content('blog', params.slug).fetch()
-    return { post }
+  components: {
+    Txt,
+    BlogFooter,
+    VBackButton,
+    ArticleWrapper,
   },
-  mounted () {
-    this.$parent.$parent.metaHelper.title = this.post.title
-    this.$parent.$parent.metaHelper.description = this.post.postDesc
-    this.$parent.$parent.metaHelper.image = this.post.img
-    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/blog/${this.$route.params.slug}/`
+  async asyncData({ $content, params }) {
+    const post = await $content("blog", params.slug).fetch();
+    return { post };
   },
-  head () {
+  head() {
     return {
-      __dangerouslyDisableSanitizers: ['script'],
+      __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
           innerHTML: `{
@@ -115,7 +46,7 @@ export default {
               "item": "https://traininblocks.com/blog/"
             }]
           }`,
-          type: 'application/ld+json'
+          type: "application/ld+json",
         },
         {
           innerHTML: `{
@@ -128,10 +59,16 @@ export default {
               "item": "https://traininblocks.com/legal/${this.$route.params.slug}/"
             }]
           }`,
-          type: 'application/ld+json'
-        }
-      ]
-    }
-  }
-}
+          type: "application/ld+json",
+        },
+      ],
+    };
+  },
+  mounted() {
+    this.$parent.$parent.metaHelper.title = this.post.title;
+    this.$parent.$parent.metaHelper.description = this.post.postDesc;
+    this.$parent.$parent.metaHelper.image = this.post.img;
+    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/blog/${this.$route.params.slug}/`;
+  },
+};
 </script>

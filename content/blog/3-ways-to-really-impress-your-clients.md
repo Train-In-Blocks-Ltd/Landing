@@ -4,6 +4,7 @@ title: 3 ways to really impress your clients
 slug: 3-ways-to-really-impress-your-clients
 img: 3.png
 postDesc: Here are some good ways to improve your client retention and satisfaction.
+author: Mikey Lau
 ---
 
 Here are some quick tips and advice on the different ways that you can really impress your clients and improve retention. In general, pay very close attention to what they are saying every session. You can even make notes on your phone or journal to keep track of all this information and use it in conjunction with the tips below.
