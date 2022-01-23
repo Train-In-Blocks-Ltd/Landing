@@ -37,12 +37,10 @@ Whatever your motive, an online competition is a great way to dangle the carrot 
 
 ## Why you should create a fitness competition and what should it be?
 
-Once you’ve decided on <strong>why</strong> you’ve decided to undertake your challenge, it’s then time decide <strong>what </strong>to do. Your members, of course, should be at the heart of any decision making process - after all, you want them to get the best out of whatever you’re planning to put together - so make you you work with them directly to ensure your competition provides a workout routine to tick all the boxes.
+Once you’ve decided on <strong>why</strong> you’ve decided to undertake your challenge, it’s then time decide <strong>what </strong>to do. Your members, of course, should be at the heart of any decision making process - after all, you want them to get the best out of whatever you’re planning to put together - so make you work with them directly to ensure your competition provides a workout routine to tick all the boxes.
 
 Liase with your members - most will have an idea of what they want to achieve and which area they want to work on - whether that be upper body strength, abs, glutes or tummy. When doing a challenge like ours, your clients will probably already have a target in mind so talk through how you intend to help them achieve it and remember - sometimes the journey is more important than the destination.
 
 It’s also worth bearing in mind how you plan to communicate with your members <em>during</em> the challenge - it’s not going to work if you turn up on day one but have disappeared into the background by the end - whether its social media, texts, video calls, face to face catch ups or all of the above - you’re “keeping them accountable” and staying invested by going along for the ride, side by side, step by step.
 
 Train in Blocks will create our own hashtag with our fitness competition specifically in mind which you can use to share your photo or video before, during and at the end of the challenge. As your content is shared on social media, make sure to comment, share and show your support and provide details of how to involve others.
-
-![Fitness Competition Poster](/fitness-comp.png)
