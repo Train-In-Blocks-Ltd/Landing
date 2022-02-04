@@ -7,7 +7,7 @@ postDesc: We'll show you how you can temporarily and permanently remove a client
 
 # Archiving/removing a client
 
-![Archive client](/help-img/4.gif)
+![Archive client](/media-uploads/archive.gif)
 
 ## Instructions
 

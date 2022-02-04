@@ -7,7 +7,7 @@ postDesc: Make changes to your Train In Blocks subscription (edit, cancel).
 
 # Manage your subscription
 
-![Manage subscription](/help-img/2.gif)
+![Manage subscription](/media-uploads/manage.gif)
 
 ## Instructions
 

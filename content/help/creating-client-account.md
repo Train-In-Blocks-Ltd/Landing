@@ -7,7 +7,7 @@ postDesc: Give access to your clients so that they can see their sessions and pl
 
 # Create an account for your clients
 
-![Give client access](/help-img/1.gif)
+![Give client access](/media-uploads/client.gif)
 
 ## Instructions
 

@@ -10,7 +10,7 @@
         class="latest_post"
       >
         <img
-          :src="require(`../../assets/blog-img/${blogPost.img}`)"
+          :src="require(`../../assets/media-uploads/${blogPost.img}`)"
           loading="lazy"
           :alt="blogPost.title"
         />
