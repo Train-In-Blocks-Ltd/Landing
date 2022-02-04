@@ -1,5 +1,4 @@
 ---
-id: 16
 title: Preventing lower back pain caused by physical activity
 slug: preventing-lower-back-pain-caused-by-physical-activity
 img: 16.png

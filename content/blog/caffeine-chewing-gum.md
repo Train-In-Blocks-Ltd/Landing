@@ -1,5 +1,4 @@
 ---
-id: 12
 title: Does caffeine chewing gum increase performance?
 slug: caffeine-chewing-gum
 img: 12.png

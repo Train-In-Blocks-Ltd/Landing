@@ -1,5 +1,4 @@
 ---
-id: 19
 title: Start 2022 with a bang in our fitness competition
 slug: start-2022-with-a-bang-in-our-fitness-competition
 img: 19.png

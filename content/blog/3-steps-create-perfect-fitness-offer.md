@@ -1,5 +1,4 @@
 ---
-id: 18
 title: 3 Steps to Create the Perfect Holiday Training and Fitness Offer
 slug: 3-steps-create-perfect-fitness-offer
 img: 18.png

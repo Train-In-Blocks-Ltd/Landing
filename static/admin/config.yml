@@ -14,7 +14,6 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "ID", name: "id", widget: "number" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Image", name: "img", widget: "image" }
@@ -30,7 +29,6 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "ID", name: "id", widget: "number" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Description", name: "postDesc", widget: "string" }

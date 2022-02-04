@@ -1,5 +1,4 @@
 ---
-id: 1
 title: Create an account for your clients
 slug: creating-client-account
 postDesc: Give access to your clients so that they can see their sessions and plans.

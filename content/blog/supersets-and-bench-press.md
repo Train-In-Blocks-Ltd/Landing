@@ -1,5 +1,4 @@
 ---
-id: 11
 title: Effects of supersets on barbell bench press performance
 slug: supersets-and-bench-press
 img: 11.png

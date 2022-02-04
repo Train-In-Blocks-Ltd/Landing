@@ -1,5 +1,4 @@
 ---
-id: 13
 title: Strength and aerobic exercises together can improve performance
 slug: concurrent-training
 img: 13.png

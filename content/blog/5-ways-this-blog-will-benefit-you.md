@@ -1,5 +1,4 @@
 ---
-id: 1
 title: 5 ways this blog will benefit you
 slug: 5-ways-this-blog-will-benefit-you
 img: 1.png

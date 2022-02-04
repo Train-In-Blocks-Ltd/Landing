@@ -1,5 +1,4 @@
 ---
-id: 7
 title: Does listening to music improve performance?
 slug: fast-tempo-music-and-performance
 img: 7.png
