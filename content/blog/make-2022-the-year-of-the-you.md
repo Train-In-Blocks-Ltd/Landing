@@ -7,6 +7,8 @@ postDesc: When working towards your New Year's resolution, try to apply consiste
 author: Jamie Spoor
 ---
 
+Photos by [Chelsea Gibson](https://blossomtreephoto.co.uk)
+
 2022 is almost a month old so that means your New Year’s Resolution is in full swing (we hope). Invariably, there will be an influx of goals when it comes to fitness, nutrition, performance and physical well being and here at Train in Blocks, we can help you to consistently maintain your newfound health regime.
 
 The biggest secret? Not really a secret at all but an unwritten rule with one simple buzzword: consistency. Try to apply this in four key areas - Strength Training, Conditioning, Recovery and Consumption.
