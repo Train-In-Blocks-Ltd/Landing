@@ -67,6 +67,7 @@ export default {
     return {
       __dangerouslyDisableSanitizers: ["script"],
       script: [
+        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
         {
           innerHTML: `{
             "@context": "https://schema.org/",

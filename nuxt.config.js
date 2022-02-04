@@ -181,7 +181,7 @@ export default async () => {
       "@nuxtjs/eslint-module",
       "@aceforth/nuxt-optimized-images",
       "@nuxtjs/pwa",
-      '@nuxt/postcss8',
+      "@nuxt/postcss8",
     ],
     /*
      ** Nuxt.js modules
