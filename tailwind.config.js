@@ -1,13 +1,15 @@
 module.exports = {
   darkMode: "class",
-  content: [
-    "components/**/*.vue",
-    "layouts/**/*.vue",
-    "pages/**/*.vue",
-    "templates/**/*.vue",
-    "plugins/**/*.js",
-    "nuxt.config.js",
-  ],
+  purge: {
+    content: [
+      "components/**/*.vue",
+      "layouts/**/*.vue",
+      "pages/**/*.vue",
+      "templates/**/*.vue",
+      "plugins/**/*.js",
+      "nuxt.config.js",
+    ],
+  },
   theme: {
     extend: {
       borderWidth: {
