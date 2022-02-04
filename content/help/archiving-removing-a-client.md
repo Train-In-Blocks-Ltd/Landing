@@ -1,5 +1,4 @@
 ---
-id: 4
 title: Archiving/removing a client
 slug: archiving-removing-a-client
 postDesc: We'll show you how you can temporarily and permanently remove a client.
@@ -7,7 +6,7 @@ postDesc: We'll show you how you can temporarily and permanently remove a client
 
 # Archiving/removing a client
 
-![Archive client](/help-img/4.gif)
+![Archive client](/media-uploads/archive.gif)
 
 ## Instructions
 

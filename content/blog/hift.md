@@ -1,5 +1,4 @@
 ---
-id: 15
 title: High-intensity functional training (HIFT) on health and performance
 slug: hift
 img: 15.png

@@ -36,10 +36,11 @@ export default {
   },
   async asyncData({ $content }) {
     const posts = await $content("help").fetch();
-    posts.sort((b, a) => {
-      return b.id - a.id;
-    });
-    return { posts };
+    return {
+      posts: posts.map((post, index) => {
+        return { ...post, id: index };
+      }),
+    };
   },
   head() {
     return {

@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <txt type="title" class="mr-8">
-      {{ post.id }}
+      {{ post.id + 1 }}
     </txt>
     <div>
       <txt type="large-body" bold>

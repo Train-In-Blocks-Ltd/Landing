@@ -1,5 +1,4 @@
 ---
-id: 9
 title: Improving performance through self-myofascial release or instrument-assisted soft-tissue mobilisation
 slug: smr-vs-iastm
 img: 9.png

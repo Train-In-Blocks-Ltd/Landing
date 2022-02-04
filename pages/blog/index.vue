@@ -20,10 +20,11 @@ export default {
   },
   async asyncData({ $content }) {
     const posts = await $content("blog").fetch();
-    posts.sort((b, a) => {
-      return a.id - b.id;
-    });
-    return { posts };
+    return {
+      posts: posts.map((post, index) => {
+        return { ...post, id: index };
+      }),
+    };
   },
   head() {
     return {

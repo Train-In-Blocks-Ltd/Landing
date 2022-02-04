@@ -1,12 +1,10 @@
 ---
-id: 1
 title: What did we do in Pegasus 3.2.4?
 date: 2021 03 12
 img: 1.svg
 slug: pegasus-3-2-4
 postDesc: A quick overview on the changes made in this update so far.
 show: true
-
 ---
 
 ## Dark mode

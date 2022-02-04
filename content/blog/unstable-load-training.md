@@ -1,5 +1,4 @@
 ---
-id: 4
 title: How to improve overhead stability using unstable loads
 slug: unstable-load-training
 img: 4.png

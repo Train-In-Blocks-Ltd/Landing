@@ -1,5 +1,4 @@
 ---
-id: 6
 title: Unilateral vs. Bilateral Exercises - Improving Sprint and Agility
 slug: unilateral-bilateral-exercises
 img: 6.png

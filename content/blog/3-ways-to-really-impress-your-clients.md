@@ -1,5 +1,4 @@
 ---
-id: 3
 title: 3 ways to really impress your clients
 slug: 3-ways-to-really-impress-your-clients
 img: 3.png

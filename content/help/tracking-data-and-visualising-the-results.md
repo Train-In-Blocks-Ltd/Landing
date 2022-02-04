@@ -1,5 +1,4 @@
 ---
-id: 3
 title: Tracking data and visualising the results
 slug: tracking-data-and-visualising-the-results
 postDesc: A quick guide on how to track and visualise your client's performance and progress data
@@ -51,6 +50,6 @@ You can use this format to track any single measurement. This could be for nutri
 
 ## See the results
 
-![Visualise data](/help-img/3.gif)
+![Visualise data](/media-uploads/stats.gif)
 
 Once you have some tracked data, you can visualise it using the _statistics_ tab on the top-right of the plan page.

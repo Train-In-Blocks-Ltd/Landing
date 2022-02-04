@@ -1,5 +1,4 @@
 ---
-id: 10
 title: Using the Back Squat to Predict Lower Extremity Injuries
 slug: back-squat-injury-prevention
 img: 10.png

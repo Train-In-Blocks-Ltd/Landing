@@ -46,10 +46,15 @@ export default {
   },
   async asyncData({ $content }) {
     const latestBlogPosts = await $content("blog").fetch();
-    latestBlogPosts.sort((b, a) => {
-      return b.id - a.id;
-    });
-    return { latestBlogPosts };
+    return {
+      latestBlogPosts: latestBlogPosts
+        .map((post, index) => {
+          return { ...post, id: index };
+        })
+        .sort((b, a) => {
+          return a.id - b.id;
+        }),
+    };
   },
   data() {
     return {
@@ -67,6 +72,7 @@ export default {
     return {
       __dangerouslyDisableSanitizers: ["script"],
       script: [
+        { src: "https://identity.netlify.com/v1/netlify-identity-widget.js" },
         {
           innerHTML: `{
             "@context": "https://schema.org/",
@@ -136,6 +142,17 @@ export default {
     this.$parent.$parent.metaHelper.description =
       "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.";
     this.$parent.$parent.metaHelper.url = "https://traininblocks.com/";
+  },
+  mounted() {
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
   },
 };
 </script>

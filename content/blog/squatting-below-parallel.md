@@ -1,5 +1,4 @@
 ---
-id: 17
 title: Squatting below parallel — should we do it?
 slug: squatting-below-parallel
 img: 17.png

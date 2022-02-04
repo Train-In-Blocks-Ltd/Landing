@@ -1,5 +1,4 @@
 ---
-id: 8
 title: More adaptations with less volume using velocity-based training
 slug: velocity-based-training
 img: 8.png

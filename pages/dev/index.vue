@@ -100,10 +100,15 @@
 export default {
   async asyncData({ $content }) {
     const posts = await $content("dev").fetch();
-    posts.sort((b, a) => {
-      return a.id - b.id;
-    });
-    return { posts };
+    return {
+      posts: posts
+        .map((post, index) => {
+          return { ...post, id: index };
+        })
+        .sort((b, a) => {
+          return b.id - a.id;
+        }),
+    };
   },
   head() {
     return {

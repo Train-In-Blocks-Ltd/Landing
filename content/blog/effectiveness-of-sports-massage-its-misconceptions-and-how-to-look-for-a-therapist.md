@@ -1,5 +1,4 @@
 ---
-id: 14
 title: Effectiveness of sports massage, its misconceptions, and how to look for a therapist
 slug: effectiveness-of-sports-massage-its-misconceptions-and-how-to-look-for-a-therapist
 img: 14.png
