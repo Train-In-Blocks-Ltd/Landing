@@ -21,17 +21,39 @@
       >
         <inline-svg
           class="w-8"
-          :src="require('../../../assets/svg/socials/Facebook.svg')"
+          :src="require('../../../assets/svg/socials/facebook.svg')"
         />
       </a>
       <a
         target="_blank"
         href="https://www.instagram.com/traininblocks"
         title="Instagram"
+        class="mr-4"
       >
         <inline-svg
           class="w-8"
-          :src="require('../../../assets/svg/socials/Instagram.svg')"
+          :src="require('../../../assets/svg/socials/instagram.svg')"
+        />
+      </a>
+      <a
+        target="_blank"
+        href="https://www.twitter.com/traininblocks"
+        title="Twitter"
+        class="mr-4"
+      >
+        <inline-svg
+          class="w-8"
+          :src="require('../../../assets/svg/socials/twitter.svg')"
+        />
+      </a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/company/53423409"
+        title="Twitter"
+      >
+        <inline-svg
+          class="w-8"
+          :src="require('../../../assets/svg/socials/linkedin.svg')"
         />
       </a>
     </div>
