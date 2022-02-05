@@ -11,8 +11,12 @@
       <link-button link="#pricing">Try it now</link-button>
     </div>
     <img
+      height="auto"
+      width="auto"
       :src="require('../../assets/images/home/trainer.jpg')"
       class="gray ml-auto md:w-8/12 mt-16 xl:mt-0 xl:w-5/12 xl:ml-0 h-auto z-0"
+      alt="Training people"
+      loading="lazy"
     />
   </div>
 </template>

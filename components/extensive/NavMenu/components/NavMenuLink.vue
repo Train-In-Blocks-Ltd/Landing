@@ -13,10 +13,22 @@
   >
     {{ name }}
   </nuxt-link>
-  <a v-else-if="newTab" :href="linkTo" class="nav-link" target="_blank">
+  <a
+    v-else-if="newTab"
+    :href="linkTo"
+    class="nav-link"
+    target="_blank"
+    rel="noreferrer"
+  >
     {{ name }}
   </a>
-  <a v-else :href="linkTo" class="nav-link" @click.prevent="onClick">
+  <a
+    v-else
+    :href="linkTo"
+    class="nav-link"
+    rel="noreferrer"
+    @click.prevent="onClick"
+  >
     {{ name }}
   </a>
 </template>

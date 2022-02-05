@@ -18,6 +18,7 @@
         href="https://www.facebook.com/traininblocks"
         title="Facebook"
         class="mr-4"
+        rel="noreferrer"
       >
         <inline-svg
           class="w-8"
@@ -29,6 +30,7 @@
         href="https://www.instagram.com/traininblocks"
         title="Instagram"
         class="mr-4"
+        rel="noreferrer"
       >
         <inline-svg
           class="w-8"
@@ -40,6 +42,7 @@
         href="https://www.twitter.com/traininblocks"
         title="Twitter"
         class="mr-4"
+        rel="noreferrer"
       >
         <inline-svg
           class="w-8"
@@ -50,6 +53,7 @@
         target="_blank"
         href="https://www.linkedin.com/company/53423409"
         title="LinkedIn"
+        rel="noreferrer"
       >
         <inline-svg
           class="w-8"
@@ -82,6 +86,7 @@
       <a
         href="https://status.traininblocks.com"
         class="hover:opacity-60 transition-opacity text-sm"
+        rel="noreferrer"
       >
         Status
       </a>
