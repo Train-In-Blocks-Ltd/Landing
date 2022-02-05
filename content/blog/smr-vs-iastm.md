@@ -4,6 +4,7 @@ slug: smr-vs-iastm
 img: 9.png
 postDesc: A recent stance on a comparison between the use of equipment such as foam rollers and instrument-assisted manual recipe.
 author: Mikey Lau
+date: "2021-01-03"
 ---
 
 ## What are _Quick Articles_?

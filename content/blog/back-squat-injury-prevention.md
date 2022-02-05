@@ -4,6 +4,7 @@ slug: back-squat-injury-prevention
 img: 10.png
 postDesc: An alternative screening method to prevent injuries associated with lower body movements.
 author: Mikey Lau
+date: "2021-02-01"
 ---
 
 ## What are _Quick Articles_?

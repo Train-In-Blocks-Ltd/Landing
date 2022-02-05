@@ -4,6 +4,7 @@ slug: concurrent-training
 img: 13.png
 postDesc: How much is too much cardio in one resistance session? This recent paper explores the use of aerobic exercises at different intensities to improve performance. A further insight into the effects of concurrent training during a detraining period demonstrated some interesting results.
 author: Mikey Lau
+date: "2021-04-15"
 ---
 
 ## What are _Quick Articles_?

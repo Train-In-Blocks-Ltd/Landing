@@ -21,8 +21,8 @@ export default {
   async asyncData({ $content }) {
     const posts = await $content("blog").fetch();
     return {
-      posts: posts.map((post, index) => {
-        return { ...post, id: index };
+      posts: posts.sort((a, b) => {
+        return new Date(b.date) - new Date(a.date);
       }),
     };
   },

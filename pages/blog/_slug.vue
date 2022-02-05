@@ -8,7 +8,8 @@
     <txt type="title" class="mt-8 mb-4" is-main>
       {{ post.title }}
     </txt>
-    <txt type="large-body" class="mb-16" grey>Created by {{ post.author }}</txt>
+    <txt type="large-body" grey>Created by {{ post.author }}</txt>
+    <txt type="large-body" class="mb-16" grey>{{ post.date }}</txt>
     <nuxt-content :document="post" />
     <blog-footer class="mt-16" />
   </article-wrapper>
