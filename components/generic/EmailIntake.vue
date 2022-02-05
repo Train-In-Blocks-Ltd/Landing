@@ -20,7 +20,7 @@
   >
     <img
       :src="require('../../assets/images/trainer-facing.png')"
-      class="z-0 absolute top-0 right-0 grayscale opacity-20 h-64 md:mr-12 md:relative md:opacity-100"
+      class="z-0 absolute top-0 right-0 gray opacity-20 h-64 md:mr-12 md:relative md:opacity-100"
     />
     <form
       id="mc-embedded-subscribe-form"

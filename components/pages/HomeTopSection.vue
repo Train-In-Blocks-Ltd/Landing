@@ -12,7 +12,7 @@
     </div>
     <img
       :src="require('../../assets/images/home/trainer.jpg')"
-      class="grayscale ml-auto md:w-8/12 mt-16 xl:mt-0 xl:w-5/12 xl:ml-0 h-auto z-0"
+      class="gray ml-auto md:w-8/12 mt-16 xl:mt-0 xl:w-5/12 xl:ml-0 h-auto z-0"
     />
   </div>
 </template>
