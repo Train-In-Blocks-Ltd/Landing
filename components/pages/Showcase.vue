@@ -192,9 +192,10 @@
         :class="{ 'sm:flex-row-reverse': index % 2 === 0 }"
       >
         <txt
-          type="subtitle"
+          type="title"
           class="mb-12 sm:mb-auto w-full sm:w-7/12 my-auto"
           :class="index % 2 === 0 ? 'sm:ml-12' : 'sm:mr-12'"
+          bold
         >
           {{ item.desc }}
         </txt>
