@@ -4,6 +4,7 @@ slug: hift
 img: 15.png
 postDesc: What does the research suggest about CrossFit or military-style training and how it can benefit you?
 author: Mikey Lau
+date: "2021-06-11"
 ---
 
 ## The rise of HIFT

@@ -47,13 +47,9 @@ export default {
   async asyncData({ $content }) {
     const latestBlogPosts = await $content("blog").fetch();
     return {
-      latestBlogPosts: latestBlogPosts
-        .map((post, index) => {
-          return { ...post, id: index };
-        })
-        .sort((b, a) => {
-          return a.id - b.id;
-        }),
+      latestBlogPosts: latestBlogPosts.sort((b, a) => {
+        return new Date(b.date) - new Date(a.date);
+      }),
     };
   },
   data() {

@@ -1,10 +1,10 @@
 ---
-id: 20
 title: Make 2022 the year of the "you"
 slug: make-2022-the-year-of-the-you
 img: 20.png
-postDesc: When working towards your New Year's resolution, try to apply consistency in four key areas - Strength Training, Conditioning, Recovery and Consumption. 
+postDesc: When working towards your New Year's resolution, try to apply consistency in four key areas - Strength Training, Conditioning, Recovery and Consumption.
 author: Jamie Spoor
+date: "2022-02-10"
 ---
 
 Photos by [Chelsea Gibson](https://blossomtreephoto.co.uk)
