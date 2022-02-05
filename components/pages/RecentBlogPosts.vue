@@ -7,7 +7,7 @@
       <div
         v-for="(blogPost, blogPostIndex) in latestBlogPosts.slice(-3).reverse()"
         :key="`post_${blogPostIndex}`"
-        class="latest_post"
+        class="flex flex-col"
       >
         <img
           :src="require(`../../assets/media-uploads/${blogPost.img}`)"
@@ -28,13 +28,10 @@
         </txt>
         <nuxt-link
           :to="`/blog/${blogPost.slug}/`"
-          class="flex items-center hover:opacity-60 transition-all"
+          class="flex mt-auto items-center hover:opacity-60 transition-all"
         >
           <txt class="mr-4" bold> Continue reading </txt>
-          <inline-svg
-            class="svg--read-more"
-            :src="require('../../assets/svg/Arrow.svg')"
-          />
+          <inline-svg :src="require('../../assets/svg/Arrow.svg')" />
         </nuxt-link>
       </div>
     </div>
