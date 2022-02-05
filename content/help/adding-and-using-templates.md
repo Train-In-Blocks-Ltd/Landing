@@ -6,13 +6,13 @@ postDesc: A guide on how to speed up your workflow and save more time using temp
 
 # Adding and using templates
 
-![Add template](/media-uploads/template-1.gif)
+<markdown-image src="template-1.gif" alt="Add template"></markdown-image>
 
 ## Creating templates
 
 Go to the _Templates_ page and press the **New** **Template** button. Edit and save it to make it available.
 
-![Using template](/media-uploads/template-2.gif)
+<markdown-image src="template-2.gif" alt="Using template"></markdown-image>
 
 ## Using templates
 
