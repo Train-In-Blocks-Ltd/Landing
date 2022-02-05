@@ -1,7 +1,7 @@
 ---
 title: 5 ways to boost client retention
 slug: 5-ways-to-boost-client-retention
-img: 5.webp
+img: 5.png
 postDesc: Get creative and keep your clients for longer with these practical techniques.
 author: Mikey Lau
 date: "2020-10-22"
