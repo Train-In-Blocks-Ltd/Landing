@@ -13,8 +13,9 @@
           height="auto"
           width="auto"
           :src="require(`../../assets/media-uploads/${blogPost.img}`)"
-          loading="lazy"
           :alt="blogPost.title"
+          class="gray"
+          loading="lazy"
         />
         <nuxt-link :to="`/blog/${blogPost.slug}/`">
           <txt
