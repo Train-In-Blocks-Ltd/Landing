@@ -10,6 +10,8 @@
         class="flex flex-col"
       >
         <img
+          height="auto"
+          width="auto"
           :src="require(`../../assets/media-uploads/${blogPost.img}`)"
           loading="lazy"
           :alt="blogPost.title"

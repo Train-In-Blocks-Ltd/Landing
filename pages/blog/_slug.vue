@@ -2,6 +2,8 @@
   <article-wrapper>
     <v-back-button link="/blog/" />
     <img
+      height="auto"
+      width="auto"
       :src="require(`../../assets/media-uploads/${post.img}`)"
       class="w-full max-w-lg m-auto"
     />
