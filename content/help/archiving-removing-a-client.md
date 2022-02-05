@@ -5,6 +5,8 @@ postDesc: We'll show you how you can temporarily and permanently remove a client
 ---
 # Archiving/removing a client
 
+![Archive](/assets/media-uploads/archive.gif)
+
 ## Instructions
 
 1. Head over to the client’s page that you wish to archive.
