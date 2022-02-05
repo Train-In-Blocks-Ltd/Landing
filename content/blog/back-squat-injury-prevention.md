@@ -1,7 +1,7 @@
 ---
 title: Using the Back Squat to Predict Lower Extremity Injuries
 slug: back-squat-injury-prevention
-img: 10.png
+img: 10.webp
 postDesc: An alternative screening method to prevent injuries associated with lower body movements.
 author: Mikey Lau
 date: "2021-02-01"

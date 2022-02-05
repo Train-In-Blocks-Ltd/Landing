@@ -1,7 +1,7 @@
 ---
 title: 3 ways to really impress your clients
 slug: 3-ways-to-really-impress-your-clients
-img: 3.png
+img: 3.webp
 postDesc: Here are some good ways to improve your client retention and satisfaction.
 author: Mikey Lau
 date: "2020-10-03"

@@ -1,7 +1,7 @@
 ---
 title: Start 2022 with a bang in our fitness competition
 slug: start-2022-with-a-bang-in-our-fitness-competition
-img: 19.png
+img: 19.webp
 postDesc: Train in Blocks will run an online, social-media based fitness competition each day for the rest of the month.
 author: Jamie Spoor
 date: "2022-01-15"
