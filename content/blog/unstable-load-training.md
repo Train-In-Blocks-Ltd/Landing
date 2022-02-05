@@ -1,7 +1,7 @@
 ---
 title: How to improve overhead stability using unstable loads
 slug: unstable-load-training
-img: 4.webp
+img: 4.png
 postDesc: A comparison between different training conditions by hanging weights at the ends of a barbell using resistance bands.
 author: Mikey Lau
 date: "2020-10-12"
