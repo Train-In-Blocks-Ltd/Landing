@@ -288,5 +288,6 @@ export default async () => {
         },
       },
     },
+    serverMiddleware: ["~/middleware/headers.js"],
   };
 };
