@@ -1,21 +1,29 @@
 <template>
   <page-wrapper>
-    <txt type="title" is-main>Need help with something?</txt>
-    <txt type="title" class="mt-4 mb-16">
-      <a
-        class="underline hover:opacity-60 transition-opacity text-gray-200 cursor-pointer"
-        @click="scroll()"
-      >
-        Click here</a
-      >
-      to get in touch or browse our guides
-    </txt>
-    <div class="grid gap-8 mb-16">
-      <help-post v-for="post in posts" :key="post.title" :post="post" />
+    <div class="grid gap-12 lg:grid-cols-2">
+      <div>
+        <txt type="title" is-main class="lg:mb-8"
+          >Need help with something?</txt
+        >
+        <txt type="title" class="block lg:hidden mt-4 mb-16">
+          <a
+            class="underline hover:opacity-60 transition-opacity text-gray-200 cursor-pointer"
+            @click="scroll()"
+          >
+            Click here</a
+          >
+          to get in touch or browse our guides
+        </txt>
+        <div class="grid gap-8">
+          <help-post v-for="post in posts" :key="post.title" :post="post" />
+        </div>
+      </div>
+      <div>
+        <txt type="title" class="mb-8">Need something more specific?</txt>
+        <more-help-form />
+      </div>
     </div>
-    <txt type="title" class="mb-8">Need something more specific?</txt>
-    <more-help-form class="mb-32" />
-    <team-section />
+    <team-section class="mt-32" />
   </page-wrapper>
 </template>
 
