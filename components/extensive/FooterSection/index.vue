@@ -21,7 +21,7 @@
       >
         <inline-svg
           class="w-8"
-          :src="require('../../../assets/svg/socials/facebook.svg')"
+          :src="require('../../../assets/svg/socials/fb.svg')"
         />
       </a>
       <a
@@ -32,7 +32,7 @@
       >
         <inline-svg
           class="w-8"
-          :src="require('../../../assets/svg/socials/instagram.svg')"
+          :src="require('../../../assets/svg/socials/ig.svg')"
         />
       </a>
       <a
@@ -43,17 +43,17 @@
       >
         <inline-svg
           class="w-8"
-          :src="require('../../../assets/svg/socials/twitter.svg')"
+          :src="require('../../../assets/svg/socials/tw.svg')"
         />
       </a>
       <a
         target="_blank"
         href="https://www.linkedin.com/company/53423409"
-        title="Twitter"
+        title="LinkedIn"
       >
         <inline-svg
           class="w-8"
-          :src="require('../../../assets/svg/socials/linkedin.svg')"
+          :src="require('../../../assets/svg/socials/lk.svg')"
         />
       </a>
     </div>
