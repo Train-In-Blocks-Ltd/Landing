@@ -1,6 +1,12 @@
 # Landing Site
 
+**Production**
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2e57bd0c-af95-4ec5-a96d-b008fbdac402/deploy-status)](https://app.netlify.com/sites/train-in-blocks/deploys)
+
+**Staging**
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/14d2518b-2819-4ae4-89eb-663d65db3e65/deploy-status)](https://app.netlify.com/sites/staging-web/deploys)
 
 ## Build Setup
 
