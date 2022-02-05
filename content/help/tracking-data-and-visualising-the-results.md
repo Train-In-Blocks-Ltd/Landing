@@ -50,6 +50,6 @@ You can use this format to track any single measurement. This could be for nutri
 
 ## See the results
 
-![Visualise data](/media-uploads/stats.gif)
+<markdown-image src="stats.gif" alt="Visualise data"></markdown-image>
 
 Once you have some tracked data, you can visualise it using the _statistics_ tab on the top-right of the plan page.

@@ -14,6 +14,7 @@ function getDynamicPaths(urlFilepathTable) {
 
 export default async () => {
   return {
+    components: true,
     target: "static",
     router: {
       trailingSlash: true,
