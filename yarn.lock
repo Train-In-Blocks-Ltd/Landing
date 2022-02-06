@@ -14789,7 +14789,7 @@ webidl-conversions@^4.0.2:
 
 webp-loader@^0.6.0:
   version "0.6.0"
-  resolved "http://registry.chelsea-apps.com:4873/webp-loader/-/webp-loader-0.6.0.tgz"
+  resolved "http://registry.chelsea-apps.com:4873/webp-loader/-/webp-loader-0.6.0.tgz#f9086777bb02ec653d046634014e95212e627032"
   integrity sha512-+3k/ojbdh6U74G8nKFB4syaXxjx294xOt+WAVlN84w/7ew6jJCS6DCoGzK8P/giRR4FiSVisKWIydGlb6EXOFQ==
   dependencies:
     imagemin "7.0.1"
