@@ -1,6 +1,6 @@
 ---
 title: Safer Internet Day 2022
-slug: "safer- internet- day-2022 "
+slug: "safer- internet-day-2022 "
 img: https://media.istockphoto.com/photos/woman-using-her-laptop-picture-id643897728?k=20&m=643897728&s=612x612&w=0&h=PQ-kP6bZ5xSR_D9fkapdAiErXZwUNQCBsDmJ1AvyXaQ=
 author: Jamie Spoor
 date: 2022-02-07T15:47:57.644Z
