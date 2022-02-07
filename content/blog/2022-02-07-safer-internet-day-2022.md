@@ -1,30 +1,30 @@
 ---
 title: Safer Internet Day 2022
-slug: "safer- internet-day-2022 "
-img: /assets/media-uploads/photo-1484807352052-23338990c6c6.jpg
+slug: "safer-internet-day-2022"
+img: photo-1484807352052-23338990c6c6.jpg
 author: Jamie Spoor
 date: 2022-02-07T15:47:57.644Z
 postDesc: How to stay safe online in 2022
 ---
-The 8th February 2022 marks the 19th "Safer Internet Day" and it is our belief everyone should play their part in making life safer online, including us here at TIB. So whilst we are a personal training company by trade, we're also part of the safe, secure and strong online community we should all be part of. 
+The 8th February 2022 marks the 19th "Safer Internet Day" and it is our belief everyone should play their part in making life safer online, including us here at TIB. So whilst we are a personal training company by trade, we're also part of the safe, secure and strong online community we should all be part of.
 
 ## What is it?
 
-Celebrated annually on the first Tuesday in February, the aim of Safer Internet Day is to promote the safe and positive use of digital technology for children and young people. Our generation is lucky, growing up as we have in an "online world" but we are all too aware of the perils and the pitfalls that come with the territory. 
+Celebrated annually on the first Tuesday in February, the aim of Safer Internet Day is to promote the safe and positive use of digital technology for children and young people. Our generation is lucky, growing up as we have in an "online world" but we are all too aware of the perils and the pitfalls that come with the territory.
 
-Launched in 2004 with EU-funded network *[Safer Internet Centres](https://digital-strategy.ec.europa.eu/en/policies/safer-internet-centres)* at the forefront, the day is now marked by over 200 countries with some of those outside the traditional geographic stronghold. 
+Launched in 2004 with EU-funded network *[Safer Internet Centres](https://digital-strategy.ec.europa.eu/en/policies/safer-internet-centres)* at the forefront, the day is now marked by over 200 countries with some of those outside the traditional geographic stronghold.
 
-None of us could live without the Internet - we all use it every day of our lives and it's an essential commodity we take for granted when it comes to modern, everyday life. But it carries a risk of exposing some of society's most vulnerable to an entire plethora of problems from cyber security to bullying and trolls. 
+None of us could live without the Internet - we all use it every day of our lives and it's an essential commodity we take for granted when it comes to modern, everyday life. But it carries a risk of exposing some of society's most vulnerable to an entire plethora of problems from cyber security to bullying and trolls.
 
-The internet is brilliant and a vital educational tool if deployed correctly, but with opportunity comes risks. The murky depths of the online stratosphere can be toxic and, all too often, what happens behind a headset doesn't stay there. If things go drastically wrong, it can affect who we are and how we behave - even putting lives in danger in some (extreme) cases. 
+The internet is brilliant and a vital educational tool if deployed correctly, but with opportunity comes risks. The murky depths of the online stratosphere can be toxic and, all too often, what happens behind a headset doesn't stay there. If things go drastically wrong, it can affect who we are and how we behave - even putting lives in danger in some (extreme) cases.
 
-Safer Internet Day is an event - the biggest in the online calendar - in which almost 2,000 local and national organisations come together from across the globe to raise awareness of online behaviour, emerging issues and current concerns. 
+Safer Internet Day is an event - the biggest in the online calendar - in which almost 2,000 local and national organisations come together from across the globe to raise awareness of online behaviour, emerging issues and current concerns.
 
-Topics can be anything from consent, ownership, cyberbullying, data, privacy, social networking and digital identity. Of course, the Internet will never be 100% foolproof, but by working together in tandem with children, teens, workplace staff and employers, the ambition is to promote and propose how to be safe when online. 
+Topics can be anything from consent, ownership, cyberbullying, data, privacy, social networking and digital identity. Of course, the Internet will never be 100% foolproof, but by working together in tandem with children, teens, workplace staff and employers, the ambition is to promote and propose how to be safe when online.
 
-In 2022, the theme is: ["All fun and games: Exploring respect and relationships online"](https://saferinternet.org.uk/safer-internet-day/safer-internet-day-2022) - as the name suggests, it focuses on online gaming, streaming, videos and chat rooms. A number of events will be taking place across the UK including films, workshops, online conferences and social media campaigns. 
+In 2022, the theme is: ["All fun and games: Exploring respect and relationships online"](https://saferinternet.org.uk/safer-internet-day/safer-internet-day-2022) - as the name suggests, it focuses on online gaming, streaming, videos and chat rooms. A number of events will be taking place across the UK including films, workshops, online conferences and social media campaigns.
 
-From sports clubs and gyms to banks and businesses, people and companies have pledged support across the country. 
+From sports clubs and gyms to banks and businesses, people and companies have pledged support across the country.
 
 ## How you can help
 
