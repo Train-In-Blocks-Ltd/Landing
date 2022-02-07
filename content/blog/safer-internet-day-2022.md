@@ -1,11 +1,12 @@
 ---
 title: Safer Internet Day 2022
 slug: "safer-internet-day-2022"
-img: photo-1484807352052-23338990c6c6.jpg
+img: 21.png
 author: Jamie Spoor
-date: 2022-02-07T15:47:57.644Z
-postDesc: How to stay safe online in 2022
+date: "2022-02-10"
+postDesc: The 8th February 2022 marks the 19th "Safer Internet Day" and it is our belief everyone should play their part in making life safer online, including us here at TIB.
 ---
+
 The 8th February 2022 marks the 19th "Safer Internet Day" and it is our belief everyone should play their part in making life safer online, including us here at TIB. So whilst we are a personal training company by trade, we're also part of the safe, secure and strong online community we should all be part of.
 
 ## What is it?
