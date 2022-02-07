@@ -3,7 +3,7 @@ title: Safer Internet Day 2022
 slug: "safer- internet- day-2022 "
 img: https://media.istockphoto.com/photos/woman-using-her-laptop-picture-id643897728?k=20&m=643897728&s=612x612&w=0&h=PQ-kP6bZ5xSR_D9fkapdAiErXZwUNQCBsDmJ1AvyXaQ=
 author: Jamie Spoor
-date: 2022-02-07T15:30:12.515Z
+date: 2022-02-07T15:35:26.451Z
 postDesc: How to stay online in 2022
 ---
 You may wonder what a post such as this is doing right here on Train in Blocks.
