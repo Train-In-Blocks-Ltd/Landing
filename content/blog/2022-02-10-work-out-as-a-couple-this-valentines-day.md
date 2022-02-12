@@ -1,5 +1,5 @@
 ---
-title: Power up your Valentine's Day with our Couples Workouts
+title: "Spice up Valentine's Day with our couples workouts "
 slug: work-out-this-valentines-day
 img: https://images.unsplash.com/photo-1616279969096-54b228f5f103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80
 author: Jamie Spoor
@@ -17,20 +17,14 @@ So why not make the best of both worlds this February 14th with these Valentine�
 All you will need here is the two of you and a couple of towels. Both of you will start in the ‘plank’ position, with your shoulders directly above your wrists, arms straight and your core tight. Each partner will then use their right hand to hold opposite ends of the towel, whilst staying in your starting position.\
 Then pull the towel towards yourself and away from your partner, with them to do the same and therefore creating resistance. Do this two or three times with your right hand, then switch to your left hand and do the same. 
 
-
-
-![Woman in Black Tank Top and Black Leggings Doing Yoga](https://images.pexels.com/photos/3823063/pexels-photo-3823063.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260)
-
-
+![Woman in Black Tank Top and Black Leggings Doing Yoga](https://images.unsplash.com/photo-1514512364185-4c2b0985be01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80)
 
 ## **Wheelbarrow Squats**
 
 \
 For this one, one of you will begin in a regulation push-up position. The other partner will then stand behind you behind the other’s legs, holding your ankles. The partner in the push up position will then kick their core into action and unleash a push up. At the same time, the person holding the other’s ankles will then lower into a squat. Make sure you keep your back straight and arms out during the process. Perhaps aim for between 20 - 25 repetitions and then switch positions.
 
-![Wheelbarrow push-up squats are fun additions to your partner workouts](https://cdn-uploads.doctoranywhere.com/wp-content/uploads/2021/07/img_5ed22498d1d00.jpg)
-
-
+![Wheelbarrow push-up squats](https://cdn-uploads.doctoranywhere.com/wp-content/uploads/2021/07/img_5ed22498d1d00.jpg)
 
 ## **Leg push**
 
@@ -39,19 +33,11 @@ One partner will start on the ground with the other on their feet next to their 
 
 ![Leg Push](https://www.healthwebmagazine.com/wp-content/uploads/2022/02/leg-push.jpg)
 
-
-
-
-
 ## **Plank and sit ups**
 
 For this one, partner one lays on their back with their feet planted firmly on the ground. The other person will then grab their plus one’s feet to hold them in place and do a plank exercise with their arms straight. Partner one comes into a sit up and in keeping with the romantic, intimate theme, throw a kiss in at the apex of the routine. Then rotate and switch over, again after 30 seconds or so. 
 
-
-
 ![Plank and Sit-up](https://www.healthwebmagazine.com/wp-content/uploads/2022/02/plank-and-sit-up.jpg)
-
-
 
 ## **Wall squat and tricep dip**
 
@@ -67,8 +53,7 @@ You can learn more on how to properly execute a good squat here:
 
 https://traininblocks.com/blog/squatting-below-parallel/. 
 
-\
-If you and your significant other have put fitness to the forefront of your Valentine’s Day plans, then why not give these couples exercises a go. Or alternately if these don’t take your fancy (pun intended), you could consider doing a fitness class together like pilates, HIIT or strength and conditioning.
+![men's black leggings](https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80)If you and your significant other have put fitness to the forefront of your Valentine’s Day plans, then why not give these couples exercises a go. Or alternately if these don’t take your fancy (pun intended), you could consider doing a fitness class together like pilates, HIIT or strength and conditioning.
 
 \
 Either way, whatever your workout goals or ambitious, Train in Blocks is here to help put the fun back into fitness so grab your partner and pump some iron this Valentine's Day.
