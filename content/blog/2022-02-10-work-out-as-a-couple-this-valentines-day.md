@@ -71,4 +71,4 @@ https://traininblocks.com/blog/squatting-below-parallel/.
 If you and your significant other have put fitness to the forefront of your Valentine’s Day plans, then why not give these couples exercises a go. Or alternately if these don’t take your fancy (pun intended), you could consider doing a fitness class together like pilates, HIIT or strength and conditioning.
 
 \
-Either way, whatever your workout goals or ambitious, Train in Blocks is here to help with all your fitness needs.
+Either way, whatever your workout goals or ambitious, Train in Blocks is here to help put the fun back into fitness so grab your partner and pump some iron this Valentine's Day.
