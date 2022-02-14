@@ -1,6 +1,6 @@
 ---
-title: Six ideas for your fitness challenge
-slug: six-ideas-fitness-challenge
+title: "Six ideas for your fitness challenge"
+slug: six-ideas-for-your-fitness-challenge
 img: 23.jpeg
 author: Jamie Spoor
 date: 2022-02-09T14:08:44.300Z
