@@ -1,7 +1,7 @@
 ---
 title: Effectiveness of sports massage, its misconceptions, and how to look for a therapist
 slug: effectiveness-of-sports-massage-its-misconceptions-and-how-to-look-for-a-therapist
-img: /assets/media-uploads/14.png
+img: 14.png
 postDesc: If you have taken part in sports or am an avid gym member, you may be familiar with the sports massage therapist. Here we will discuss what to look for and to expect from a treatment.
 author: Mikey Lau
 date: "2021-05-12"
