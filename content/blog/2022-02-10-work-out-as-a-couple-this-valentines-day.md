@@ -1,7 +1,7 @@
 ---
 title: "Spice up Valentine's Day with our couples workouts "
 slug: work-out-this-valentines-day
-img: https://images.unsplash.com/photo-1616279969096-54b228f5f103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80
+img: /assets/media-uploads/22.png
 author: Jamie Spoor
 date: 2022-02-10T17:05:34.756Z
 postDesc: Work out as a couple this Valentine's Day
