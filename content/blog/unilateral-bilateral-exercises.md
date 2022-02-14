@@ -1,7 +1,7 @@
 ---
 title: Unilateral vs. Bilateral Exercises - Improving Sprint and Agility
 slug: unilateral-bilateral-exercises
-img: 6.png
+img: /assets/media-uploads/6.png
 postDesc: An insight into the effects of unilateral and bilateral exercises on sprint and agility performance.
 author: Mikey Lau
 date: "2020-10-28"

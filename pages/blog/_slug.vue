@@ -4,7 +4,7 @@
     <img
       height="auto"
       width="auto"
-      :src="require(`../../assets/media-uploads/${post.img}`)"
+      :src="require(`/../..${post.img}`)"
       class="w-full max-w-lg m-auto gray"
       loading="lazy"
     />

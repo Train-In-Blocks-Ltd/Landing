@@ -3,7 +3,7 @@
     <img
       height="auto"
       width="auto"
-      :src="require(`../../../assets/media-uploads/${post.img}`)"
+      :src="require(`/../../..${post.img}`)"
       class="w-full h-auto gray sm:w-64 sm:h-64 mb-8 sm:mb-0 sm:mr-8 max-w-4xl"
       loading="lazy"
     />

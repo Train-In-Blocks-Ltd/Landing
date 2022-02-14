@@ -1,7 +1,7 @@
 ---
 title: Improving performance through self-myofascial release or instrument-assisted soft-tissue mobilisation
 slug: smr-vs-iastm
-img: 9.png
+img: /assets/media-uploads/9.png
 postDesc: A recent stance on a comparison between the use of equipment such as foam rollers and instrument-assisted manual recipe.
 author: Mikey Lau
 date: "2021-01-03"

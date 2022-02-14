@@ -1,7 +1,7 @@
 ---
 title: How to ride the fitness trends in 2020
 slug: how-to-ride-the-fitness-trends-in-2020
-img: 2.png
+img: /assets/media-uploads/2.png
 postDesc: Learn how to take advantage of current trends and grow your business.
 author: Mikey Lau
 date: "2020-09-23"
