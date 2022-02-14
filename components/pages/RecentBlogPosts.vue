@@ -7,14 +7,14 @@
       <div
         v-for="(blogPost, blogPostIndex) in latestBlogPosts.slice(-3).reverse()"
         :key="`post_${blogPostIndex}`"
-        class="flex flex-col"
+        class="flex flex-col pr-4"
       >
         <img
           height="auto"
           width="auto"
           :src="require(`../../assets/media-uploads/${blogPost.img}`)"
           :alt="blogPost.title"
-          class="gray"
+          class="gray h-64 w-64"
           loading="lazy"
         />
         <nuxt-link :to="`/blog/${blogPost.slug}/`">
