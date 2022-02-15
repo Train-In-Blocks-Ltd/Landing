@@ -54,7 +54,9 @@ You can learn more on how to properly execute a good squat here:
 
 https://traininblocks.com/blog/squatting-below-parallel/.
 
-![men's black leggings](https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80)If you and your significant other have put fitness to the forefront of your Valentine’s Day plans, then why not give these couples exercises a go. Or alternately if these don’t take your fancy (pun intended), you could consider doing a fitness class together like pilates, HIIT or strength and conditioning.
+![men's black leggings](https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80)
+
+If you and your significant other have put fitness to the forefront of your Valentine’s Day plans, then why not give these couples exercises a go. Or alternately if these don’t take your fancy (pun intended), you could consider doing a fitness class together like pilates, HIIT or strength and conditioning.
 
 \
 Either way, whatever your workout goals or ambitious, Train in Blocks is here to help put the fun back into fitness so grab your partner and pump some iron this Valentine's Day.
