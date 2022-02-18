@@ -3,7 +3,7 @@ title: "Six ideas for your fitness challenge"
 slug: six-ideas-for-your-fitness-challenge
 img: 23.png
 author: Jamie Spoor
-date: 2022-02-09T14:08:44.300Z
+date: 2022-02-09
 postDesc: Six ideas for your fitness challenge
 ---
 
