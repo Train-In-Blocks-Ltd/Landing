@@ -2,7 +2,7 @@
   <div class="container">
     <div class="mb-8">
       <txt v-if="error.statusCode === 404" type="title" is-main
-        >Page not found</txt
+        >404 Page not found</txt
       >
       <txt v-else type="title" grey>An error occurred</txt>
     </div>
