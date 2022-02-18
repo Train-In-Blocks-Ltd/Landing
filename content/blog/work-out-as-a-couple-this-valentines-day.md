@@ -6,6 +6,7 @@ author: Jamie Spoor
 date: 2022-02-10T17:05:34.756Z
 postDesc: Work out as a couple this Valentine's Day
 ---
+
 The most romantic day of the year is here again! The fabled Valentine’s Day is synonymous with chocolate, extravagant meals and calorific overindulgence, but there are other ways you and yours can celebrate lover’s day.
 
 At the outset of 2022, you may both have made a New Year’s pledge to work out more, eat better and watch your weight. So why not combine the two with a Valentine’s Day workout you can both enjoy - after all, as the old adage says - couples that workout together, stay together.
@@ -37,7 +38,7 @@ For this one, partner one lays on their back with their feet planted firmly on t
 
 <markdown-image src="sit-up.jpg" alt="Plan and sit-up"></markdown-image>
 
-*(Source:* [](https://www.flickr.com/photos/30478819@N08/50017876526)*[Tyler Read](www.ptpioneer.com))*
+_(Source:_ [](https://www.flickr.com/photos/30478819@N08/50017876526)_[Tyler Read](www.ptpioneer.com))_
 
 ## Wall squat and tricep dip
 
@@ -45,7 +46,7 @@ This one involves person one in a wall squat with their legs bent at 90 degrees 
 
 <markdown-image src="wall-squat.jpg" alt="Wall squats"></markdown-image>
 
-*(Source: [Marco Verch](https://www.flickr.com/photos/30478819@N08/50017876526))*
+_(Source: [Marco Verch](https://www.flickr.com/photos/30478819@N08/50017876526))_
 
 ## Squat press
 
