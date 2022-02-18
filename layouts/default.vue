@@ -47,6 +47,9 @@ b {
 .nuxt-content p {
   @apply mb-4;
 }
+.nuxt-content img {
+  @apply w-full sm:w-1/2 my-4 grayscale;
+}
 ul,
 ol {
   @apply pl-5;
