@@ -14,7 +14,7 @@
           width="auto"
           :src="require(`../../assets/media-uploads/${blogPost.img}`)"
           :alt="blogPost.title"
-          class="gray h-64 w-64"
+          class="gray aspect-square"
           loading="lazy"
         />
         <nuxt-link :to="`/blog/${blogPost.slug}/`">

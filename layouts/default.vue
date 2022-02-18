@@ -47,8 +47,11 @@ b {
 .nuxt-content p {
   @apply mb-4;
 }
+.nuxt-content a {
+  @apply underline text-blue-700;
+}
 .nuxt-content img {
-  @apply w-full sm:w-1/2 my-4 grayscale;
+  @apply w-full md:w-1/2 sm:max-w-lg my-4 grayscale;
 }
 ul,
 ol {
