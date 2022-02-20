@@ -3,7 +3,7 @@
     <v-back-button link="/blog/" />
     <img
       :src="require(`../../assets/media-uploads/${post.img}`)"
-      class="w-full aspect-square max-w-lg m-auto gray"
+      class="w-full aspect-square object-cover max-w-lg m-auto gray"
       loading="lazy"
     />
     <txt type="title" class="mt-8 mb-4" is-main>
