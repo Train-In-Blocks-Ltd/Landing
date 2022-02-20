@@ -4,7 +4,7 @@
       height="auto"
       width="auto"
       :src="require(`../../../assets/media-uploads/${post.img}`)"
-      class="w-full aspect-square gray sm:w-64 mb-8 sm:mb-0 sm:mr-8 max-w-4xl"
+      class="w-full aspect-square object-cover gray sm:w-64 mb-8 sm:mb-0 sm:mr-8 max-w-4xl"
       loading="lazy"
     />
     <div class="flex flex-col w-full sm:w-2/3 max-w-4xl">
