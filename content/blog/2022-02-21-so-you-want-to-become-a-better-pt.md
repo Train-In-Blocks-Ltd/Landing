@@ -8465,10 +8465,6 @@ It’s always important to approach fitness with a positive, strong, “can do�
 
 You will both get the best results by maintaining a strong connection with each other - pushing each other on, being comfortable with one another. Be careful not to sacrifice your work by spending time with each other outside your sessions - the personal trainer’s good habits, discipline and healthy lifestyle will have a greater chance of rubbing off on the client too!
 
-
-
-
-
 ![](/assets/media-uploads/photo-1519311965067-36d3e5f33d39.jpeg)
 
 ## **Be brand aware**
@@ -8483,6 +8479,10 @@ As a trainer, you should remain consistent in pushing your brand to the masses.
 When you meet your personal trainer, they will want to get you know (and you them). It is of course, well, personal and so it figures they need to be able to connect, understand, listen and get to grips when it comes to laying down what your goals, ambitions and challenges are. Be sure to make this clear from the first consultation: listening to your clients and a constantly evolving dialogue is crucial 
 
 Outline a plan together - you want to be challenged, but the outcomes also need to be achievable and realistic too whilst keeping your clients accountable. It’s a two way street - you set the goals, the client carries them out. This should always happen during the initial consultation process. This will help to develop confidence, build a rapport between you and create a strong first impression. Consider human factors such as medical and physical history, lifestyle, fitness levels, nutritional habits and daily activities. Most clients should fill in a questionnaire to help give you the best idea of their individual needs. 
+
+
+
+![](/assets/media-uploads/gym-2.jpeg)
 
 ## **Gifts are fine but make sure it’s appropriate** 
 
