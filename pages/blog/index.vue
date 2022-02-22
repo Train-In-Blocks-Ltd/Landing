@@ -19,7 +19,7 @@ export default {
     BlogPost,
   },
   async asyncData({ $content }) {
-    const posts = await $content("blog").fetch();
+    const posts = await $content("blog", {text: true}).fetch();
     return {
       posts: posts.sort((a, b) => {
         return new Date(b.date) - new Date(a.date);
