@@ -38,7 +38,7 @@ Yoga doesn’t only have huge physical benefits, but is scientifically proven to
 
 
 
-<markdown-image src="image21.jpeg" alt="image21></markdown-image>
+<markdown-image src="yoga.jpeg" alt="yoga></markdown-image>
 
 ## Couch to 5k
 
@@ -46,7 +46,7 @@ Essentially, this one is a running challenge, aimed at new or first time clients
 
 
 
-<markdown-image src="image22.jpeg" alt="image22></markdown-image>
+<markdown-image src="challenge.jpeg" alt="challenge></markdown-image>
 
 ## 30-day Plank Challenge
 
@@ -54,7 +54,7 @@ Again, run across 30 days, your members and clients should look to push out a se
 
 Ideally start off with something fairly easy, then look to up the difficulty and the intensity as you get nearer your goal. A challenge like this will help to maintain your client’s posture, strength and muscle.
 
-<markdown-image src="image23.jpeg" alt="image23></markdown-image>
+<markdown-image src="plankjpeg" alt="plank></markdown-image>
 
 ## Charity
 
@@ -66,9 +66,9 @@ You could consider pairing with a local or national charity - one close to their
 
 This would not only support a good cause and help your client to build fitness, in turn maintaining that all important motivation, but charity challenges help to promote your company and service as a brand. In short, everyone’s a winner
 
+<markdown-image src="racejpeg" alt="race></markdown-image>
 
 
-<markdown-image src="image24.jpeg" alt="image24></markdown-image>
 
 ## 60-day Balanced Plate Challenge
 
@@ -76,7 +76,7 @@ Not all challenges have to be overtly physical. Wellness is an ever growing tren
 
 
 
-<markdown-image src="image25.jpeg" alt="image25></markdown-image>
+<markdown-image src="27 alt="27></markdown-image>
 
 ## Walking & Running
 
