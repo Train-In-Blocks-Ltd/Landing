@@ -39,6 +39,10 @@ When you meet your personal trainer, they will want to get you know (and you the
 
 Outline a plan together - you want to be challenged, but the outcomes also need to be achievable and realistic too whilst keeping your clients accountable. It’s a two way street - you set the goals, the client carries them out. This should always happen during the initial consultation process. This will help to develop confidence, build a rapport between you and create a strong first impression. Consider human factors such as medical and physical history, lifestyle, fitness levels, nutritional habits and daily activities. Most clients should fill in a questionnaire to help give you the best idea of their individual needs. 
 
+
+
+<markdown-image src="17jpeg" alt="17></markdown-image>
+
 ## **Gifts are fine but make sure it’s appropriate** 
 
 It’s the old-age question: can I give a trusted colleague, a confidant or a client a gift for Christmas, their birthday or perhaps even just a special occasion? There’s no right or wrong answer here - just use your discretion and keep it simple. This is a tricky one - whist you want to show your gratitude to your clients - and vice versa - you need to make sure it’s something suitable and doesn’t come across as too ‘creepy.” If you want to give a little something for a job well done then that’s fine and appropriate but be sure not to cross the line between professionalism and intimacy. Think about what your motivation is to give such a gift. Also consider exactly WHAT to get. A voucher or a small token of appreciation such as a key ring, a stopwatch or health food products are ideal. A small amount of cash will never go amiss but make sure you don’t go over the top - keep it appropriate. 
