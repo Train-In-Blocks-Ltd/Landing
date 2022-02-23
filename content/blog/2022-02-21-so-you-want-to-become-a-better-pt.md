@@ -39,8 +39,6 @@ When you meet your personal trainer, they will want to get you know (and you the
 
 Outline a plan together - you want to be challenged, but the outcomes also need to be achievable and realistic too whilst keeping your clients accountable. It’s a two way street - you set the goals, the client carries them out. This should always happen during the initial consultation process. This will help to develop confidence, build a rapport between you and create a strong first impression. Consider human factors such as medical and physical history, lifestyle, fitness levels, nutritional habits and daily activities. Most clients should fill in a questionnaire to help give you the best idea of their individual needs. 
 
-
-
 <markdown-image src="17jpeg" alt="17></markdown-image>
 
 ## **Gifts are fine but make sure it’s appropriate** 
@@ -53,6 +51,10 @@ It’s the old-age question: can I give a trusted colleague, a confidant or a cl
 The best personal trainers are those whom adapt and make a workout fun but also productive. You will, of course, all have your own specialist niche, but your approach and repertoire should be tailored to meet a client’s individual needs. If the personal trainer specialises in boxing and the client wants boxing training then go for it, but if a client wants to lose weight or improve stamina then you’ll need to be able to implement the change. 
 
 Remember, not all clients are the same so you don’t want a one-size-fits-all identikit: a programme that may work superbly for one client may be terrible for the next - remember, you’re there to help your clients, not torture them! You don’t want to set your clients up to fail so having the ability to adapt and respond is a vital aspect of your raison d’être as a personal trainer. 
+
+
+
+<markdown-image src="20webp" alt="20webp></markdown-image>
 
 \
 So there you have it: our five ‘fail safe’ Train in Blocks tips to ensure you can become an even better personal trainer, to make a difference and to help make everything fitness has to offer enjoyable for both you and your clients. Good luck!
