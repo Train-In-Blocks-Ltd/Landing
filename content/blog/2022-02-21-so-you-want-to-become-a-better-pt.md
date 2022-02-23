@@ -31,9 +31,7 @@ If you’re more group based, you might want to organise team or group events wi
 
 As a trainer, you should remain consistent in pushing your brand to the masses.
 
-
-
-<markdown-image src="image15.jpeg" alt="image15></markdown-image>
+<markdown-image src="image18.jpeg" alt="image18></markdown-image>
 
 ## **Set expectations from the off** 
 
