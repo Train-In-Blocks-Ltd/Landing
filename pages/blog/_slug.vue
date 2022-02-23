@@ -10,7 +10,8 @@
       {{ post.title }}
     </txt>
     <txt type="large-body" grey>Created by {{ post.author }}</txt>
-    <txt type="large-body" class="mb-16" grey>{{ post.date }}</txt>
+    <txt type="large-body" grey>{{ post.date }}</txt>
+    <txt type="large-body" class="mb-16" grey>{{readingTime(post.text)}} minute read</txt>
     <nuxt-content :document="post" />
     <blog-footer class="mt-16" />
   </article-wrapper>
@@ -30,7 +31,7 @@ export default {
     ArticleWrapper,
   },
   async asyncData({ $content, params }) {
-    const post = await $content("blog", params.slug).fetch();
+    const post = await $content("blog", {text: true}, params.slug).fetch();
     return { post };
   },
   head() {
@@ -71,6 +72,13 @@ export default {
     this.$parent.$parent.metaHelper.description = this.post.postDesc;
     this.$parent.$parent.metaHelper.image = this.post.img;
     this.$parent.$parent.metaHelper.url = `https://traininblocks.com/blog/${this.$route.params.slug}/`;
+  },
+  methods: {
+    readingTime (post) {
+      const avgWordsPerMin = 200;
+      const count = post.match(/\w+/g).length;
+      return Math.ceil(count / avgWordsPerMin);
+    }
   },
 };
 </script>
