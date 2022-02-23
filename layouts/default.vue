@@ -165,6 +165,41 @@ div.cookieControl__ModalContent label:before {
       <txt>I need help</txt>
     </nuxt-link>
     <footer-section />
+    <div v-show="exitIntent" id="my-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" @click="exit">
+      <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+        <div class="mt-3 text-center">
+          <h3 class="text-lg leading-6 font-medium text-gray-900">
+            Before you go...
+          </h3>
+          <h4 class="text-lg leading-6 font-medium text-gray-900">
+            Let's stay connected!
+          </h4>
+          <div class="mt-2 px-7 py-3">
+            <p class="text-sm text-gray-500">
+              Learn everything that personal trainers need to know to profit and grow!
+            </p>
+          </div>
+          <input
+            id="mce-EMAIL"
+            type="email"
+            value=""
+            name="EMAIL"
+            class="email z-10"
+            style="background-color: white"
+            placeholder="Email"
+            required
+          />
+          <div class="items-center px-4 py-3">
+            <button
+              id="ok-btn"
+              class="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
+            >
+              Sign me up
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -193,6 +228,7 @@ export default {
         image: "https://traininblocks.com/android-chrome-512x512.png",
         url: "https://traininblocks.com",
       },
+      exitIntent: false
     };
   },
   head() {
@@ -230,5 +266,65 @@ export default {
       link: [{ hid: "canonical", rel: "canonical", href: this.metaHelper.url }],
     };
   },
+  mounted () {
+    const mouseEvent = e => {
+      // Check that we are exiting the window at the top and not from the sides or bottom of the screen
+      const shouldShowExitIntent = 
+        !e.toElement && 
+        !e.relatedTarget &&
+        e.clientY < 10;
+
+      if (shouldShowExitIntent) {
+        // Remove the mouseout event listener so we don't get into a loop
+        document.removeEventListener('mouseout', mouseEvent);
+        // Show the popup
+        this.exitIntent = true
+          
+        // Set the cookie when the popup is shown to the user - so we don't show the popup again for 30 days
+        this.setCookie('exitIntentShown', true, 30);
+      }
+    };
+    // Wrap the setTimeout into an if statement
+    if (!this.getCookie('exitIntentShown')) {
+        // Set timeout so exitintent isn't show on page load - wait 10 seconds
+        setTimeout(() => {
+          // Add event listener for when user leaves page
+          document.addEventListener('mouseout', mouseEvent);
+          // Add event listener for when user presses a key - which we listen to the escape key
+          document.addEventListener('keydown', this.exit);
+        }, 10000);
+    }
+  },
+  methods: {
+    // Close the modal
+    exit(e) {
+      const shouldExit =
+        e.target.id === 'my-modal' || // user clicks on mask, not inside modal
+        e.target.className === 'close' || // user clicks on the close icon, not inside modal
+        e.keyCode === 27; // user hits escape
+      if (shouldExit) {
+        this.exitIntent = false
+      }
+    },
+    setCookie(name, value, days) {
+      let expires = '';
+      if (days) {
+          const date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = '; expires=' + date.toUTCString();
+      }
+      document.cookie = name + '=' + (value || '')  + expires + ';';
+    },
+    getCookie(name) {
+      const cookies = document.cookie.split(';');
+      for (const cookie of cookies) {
+        // eslint-disable-next-line
+        if (cookie.indexOf(name + '=') > -1) {
+            return cookie.split('=')[1];
+        }
+      }
+      return null;
+    }
+  }
 };
 </script>
