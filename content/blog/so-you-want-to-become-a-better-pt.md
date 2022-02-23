@@ -1,7 +1,7 @@
 ---
 title: So you want to become a better PT?
-slug: so-you-want-to-become-a-better-PT
-img: 16.jpeg
+slug: so-you-want-to-become-a-better-pt
+img: two-battle-rope.jpeg
 author: Jamie Spoor
 date: 2022-02-21T10:05:05.550Z
 postDesc: So you want to become a better PT?
@@ -23,7 +23,7 @@ It’s always important to approach fitness with a positive, strong, “can do�
 
 You will both get the best results by maintaining a strong connection with each other - pushing each other on, being comfortable with one another. Be careful not to sacrifice your work by spending time with each other outside your sessions - the personal trainer’s good habits, discipline and healthy lifestyle will have a greater chance of rubbing off on the client too!
 
-<markdown-image src="image15.jpeg" alt="image15></markdown-image>
+<markdown-image src="fist-bump.jpg" alt="fist bump"></markdown-image>
 
 ## **Be brand aware**
 
@@ -33,7 +33,7 @@ If you’re more group based, you might want to organise team or group events wi
 
 As a trainer, you should remain consistent in pushing your brand to the masses.
 
-<markdown-image src="image18.jpeg" alt="image18></markdown-image>
+<markdown-image src="yoga-handstand.jpeg" alt="yoga handstand"></markdown-image>
 
 ## **Set expectations from the off**
 
@@ -41,7 +41,7 @@ When you meet your personal trainer, they will want to get you know (and you the
 
 Outline a plan together - you want to be challenged, but the outcomes also need to be achievable and realistic too whilst keeping your clients accountable. It’s a two way street - you set the goals, the client carries them out. This should always happen during the initial consultation process. This will help to develop confidence, build a rapport between you and create a strong first impression. Consider human factors such as medical and physical history, lifestyle, fitness levels, nutritional habits and daily activities. Most clients should fill in a questionnaire to help give you the best idea of their individual needs.
 
-<markdown-image src="17jpeg" alt="17></markdown-image>
+<markdown-image src="old-man-barbell.jpeg" alt="Old man barbell"></markdown-image>
 
 ## **Gifts are fine but make sure it’s appropriate**
 
@@ -53,6 +53,6 @@ The best personal trainers are those whom adapt and make a workout fun but also 
 
 Remember, not all clients are the same so you don’t want a one-size-fits-all identikit: a programme that may work superbly for one client may be terrible for the next - remember, you’re there to help your clients, not torture them! You don’t want to set your clients up to fail so having the ability to adapt and respond is a vital aspect of your raison d’être as a personal trainer.
 
-<markdown-image src="20.webp" alt="Good time"></markdown-image>
+<markdown-image src="equipment.webp" alt="equipment"></markdown-image>
 
 So there you have it: our five ‘fail safe’ Train in Blocks tips to ensure you can become an even better personal trainer, to make a difference and to help make everything fitness has to offer enjoyable for both you and your clients. Good luck!
