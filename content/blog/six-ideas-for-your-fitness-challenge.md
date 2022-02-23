@@ -1,12 +1,11 @@
 ---
-title: "Six ideas for your fitness challenge"
+title: Six ideas for your fitness challenge
 slug: six-ideas-for-your-fitness-challenge
 img: 23.png
 author: Jamie Spoor
 date: 2022-02-09
 postDesc: Six ideas for your fitness challenge
 ---
-
 Fitness challenges have long been a “go to” tool for clients, personal trainers and mentors alike when it comes to boosting motivation, participation and to maintain retention for members both old and new.
 
 Challenges such as these can keep the fire burning and keep the intensity up as your clients push harder, faster and stronger towards their goals.
@@ -37,15 +36,25 @@ So there’s HOW to do it - now let’s look at WHAT you can do
 
 Yoga doesn’t only have huge physical benefits, but is scientifically proven to improve mental health and stress relief too - perhaps your tagline could be “Be more mindful.” Yoga gives you the best of both worlds when it comes to physical and mental wellbeing, and is great for beginners finding their feet. The basic idea is simple: 30 days, 30 yoga session. Exactly what the challenge would entail is up to you - there’s plenty out there to hep you get started, or you could come up with your own routine.
 
+
+
+<markdown-image src="image21.jpeg" alt="image21></markdown-image>
+
 ## Couch to 5k
 
 Essentially, this one is a running challenge, aimed at new or first time clients. The idea is to gradually build up both distance, endurance and stamina over a period time (a month, for example, but again up to you) culminating in a 5k. If you want to incorporate the old adage of “little and often” into you daily routine then this is a good one to start with.
+
+
+
+<markdown-image src="image22.jpeg" alt="image22></markdown-image>
 
 ## 30-day Plank Challenge
 
 Again, run across 30 days, your members and clients should look to push out a set of ‘planks’ each day of this challenge. You can change the concept by throwing in some variety - perhaps some push ups, squats, lunges, crunches or burpees to avoid repetition.
 
 Ideally start off with something fairly easy, then look to up the difficulty and the intensity as you get nearer your goal. A challenge like this will help to maintain your client’s posture, strength and muscle.
+
+<markdown-image src="image23.jpeg" alt="image23></markdown-image>
 
 ## Charity
 
@@ -57,9 +66,17 @@ You could consider pairing with a local or national charity - one close to their
 
 This would not only support a good cause and help your client to build fitness, in turn maintaining that all important motivation, but charity challenges help to promote your company and service as a brand. In short, everyone’s a winner
 
+
+
+<markdown-image src="image24.jpeg" alt="image24></markdown-image>
+
 ## 60-day Balanced Plate Challenge
 
 Not all challenges have to be overtly physical. Wellness is an ever growing trend, so to stand out and for something a little different, why not try to tap into the nutritional element of healthy living? This will help to implement a healthier and more sustainable diet whilst increasing outreach and accountability - there’s so much you can do with calories, portion sizes, meat free diets and so on. You can customise it to whatever suits clients best and be sure to log your progress and keep a food diary as you go.
+
+
+
+<markdown-image src="image25.jpeg" alt="image25></markdown-image>
 
 ## Walking & Running
 
