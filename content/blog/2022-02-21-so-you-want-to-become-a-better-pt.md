@@ -8465,6 +8465,8 @@ It’s always important to approach fitness with a positive, strong, “can do�
 
 You will both get the best results by maintaining a strong connection with each other - pushing each other on, being comfortable with one another. Be careful not to sacrifice your work by spending time with each other outside your sessions - the personal trainer’s good habits, discipline and healthy lifestyle will have a greater chance of rubbing off on the client too!
 
+<markdown-image src="image15.jpeg" alt="Plan pull"></markdown-image>
+
 ## **Be brand aware**
 
 It depends on what you want your brand to be - or the brand image of your gym or company - but continual growth, development and improvement is a pivotal part of any personal trainer’s repertoire. Start off on an individual footing, then you can always adapt your approach to meet your branding needs.\
