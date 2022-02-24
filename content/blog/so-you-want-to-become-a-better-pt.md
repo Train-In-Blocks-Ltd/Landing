@@ -4,7 +4,7 @@ slug: so-you-want-to-become-a-better-pt
 img: two-battle-rope.jpeg
 author: Jamie Spoor
 date: 2022-02-21T10:05:05.550Z
-postDesc: So you want to become a better PT?
+postDesc: Our top tips to up your game
 ---
 
 ## **So you want to become a better personal trainer?**
