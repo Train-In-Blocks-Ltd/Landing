@@ -10,7 +10,28 @@ collections:
     folder: "content/blog"
     format: "frontmatter"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Image", name: "img", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          date_format: "YYYY-MM-DD",
+        }
+      - { label: "Description", name: "postDesc", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "dev"
+    label: "Dev"
+    folder: "content/dev"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
@@ -31,7 +52,7 @@ collections:
     folder: "content/help"
     format: "frontmatter"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
