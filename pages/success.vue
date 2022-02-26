@@ -16,15 +16,26 @@
     <nuxt-link to="/">
       <txt type="large-body" class="underline mt-16" bold>Return Home</txt>
     </nuxt-link>
+    <recent-blog-posts class="my-32" :latest-blog-posts="latestBlogPosts" />
   </div>
 </template>
 
 <script>
 import Txt from "~/components/elements/Txt.vue";
+import RecentBlogPosts from "~/components/pages/RecentBlogPosts";
 
 export default {
   components: {
     Txt,
+    RecentBlogPosts,
+  },
+  async asyncData({ $content }) {
+    const latestBlogPosts = await $content("blog").fetch();
+    return {
+      latestBlogPosts: latestBlogPosts.sort((b, a) => {
+        return new Date(b.date) - new Date(a.date);
+      }),
+    };
   },
   head() {
     return {
