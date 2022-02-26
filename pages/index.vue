@@ -46,7 +46,7 @@ export default {
     EmailIntake,
   },
   async asyncData({ $content }) {
-    const latestBlogPosts = await $content("blog", {text: true}).fetch();
+    const latestBlogPosts = await $content("blog", { text: true }).fetch();
     return {
       latestBlogPosts: latestBlogPosts.sort((b, a) => {
         return new Date(b.date) - new Date(a.date);
