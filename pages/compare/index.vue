@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <page-wrapper>
     <txt type="title" is-main>See how we compare against...</txt>
-    <div class="comparison_container">
+    <div class="">
       <nuxt-link
         v-for="(compare, compareIndex) in comparisons"
         :key="`compare_${compareIndex}`"
@@ -11,14 +11,17 @@
         {{ compare.name }}
       </nuxt-link>
     </div>
-  </div>
+  </page-wrapper>
 </template>
 
 <script>
 import Txt from "../../components/elements/Txt";
+import PageWrapper from "~/components/generic/PageWrapper.vue";
+
 export default {
   components: {
     Txt,
+    PageWrapper,
   },
   head() {
     return {

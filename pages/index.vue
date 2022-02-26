@@ -13,8 +13,9 @@
         v-for="(compare, compareIndex) in comparisons"
         :key="`compare_${compareIndex}`"
         :to="`/compare/${compare.slug}/`"
+        class="w-fit"
       >
-        <txt type="subtitle" class="hover:opacity-60 transition-all">
+        <txt type="subtitle" class="w-fit hover:opacity-60 transition-all">
           {{ compare.name }}
         </txt>
       </nuxt-link>
