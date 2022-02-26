@@ -1,7 +1,7 @@
 ---
 title: 5 ways this blog will benefit you
 slug: 5-ways-this-blog-will-benefit-you
-img: 1.png
+img: woman-run.png
 postDesc: Take less than two minutes to find out how this blog will benefit you greatly.
 author: Mikey Lau
 date: "2020-09-01"

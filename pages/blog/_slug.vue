@@ -10,7 +10,10 @@
       {{ post.title }}
     </txt>
     <txt type="large-body" grey>Created by {{ post.author }}</txt>
-    <txt type="large-body" class="mb-16" grey>{{ shortDate(post.date) }}</txt>
+    <txt type="large-body" class="mb-4" grey>{{ shortDate(post.date) }}</txt>
+    <txt type="large-body" class="mb-16" grey
+      >{{ readingTime(post.text) }} minute read</txt
+    >
     <nuxt-content :document="post" />
     <blog-footer class="mt-16" />
   </article-wrapper>
@@ -30,7 +33,7 @@ export default {
     ArticleWrapper,
   },
   async asyncData({ $content, params }) {
-    const post = await $content("blog", params.slug).fetch();
+    const post = await $content("blog", { text: true }, params.slug).fetch();
     return { post };
   },
   head() {
@@ -76,6 +79,11 @@ export default {
     shortDate(date) {
       const d = new Date(date);
       return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
+    },
+    readingTime(post) {
+      const avgWordsPerMin = 200;
+      const count = post.match(/\w+/g).length;
+      return Math.ceil(count / avgWordsPerMin);
     },
   },
 };
