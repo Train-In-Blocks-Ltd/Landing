@@ -3,7 +3,7 @@ title: Spice up Valentine's Day with our couples workouts
 slug: work-out-as-a-couple-this-valentines-day
 img: woman-single-leg-squat.png
 author: Jamie Spoor
-date: 2022-02-10
+date: 2022-02-14
 postDesc: Work out as a couple this Valentine's Day
 ---
 

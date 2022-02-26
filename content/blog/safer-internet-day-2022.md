@@ -3,7 +3,7 @@ title: Safer Internet Day 2022
 slug: "safer-internet-day-2022"
 img: laptop.png
 author: Jamie Spoor
-date: "2022-02-10"
+date: 2022-02-10
 postDesc: The 8th February 2022 marks the 19th "Safer Internet Day" and it is our belief everyone should play their part in making life safer online, including us here at TIB.
 ---
 
