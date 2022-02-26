@@ -1,25 +1,31 @@
 <template>
   <div>
-    <h1>Thank you!</h1>
-    <h2 class="accent_text">
+    <txt type="title" is-main>Thank you!</txt>
+    <txt type="large-body" class="mt-4 mb-16">
       You will receive an email to finish your sign-up
-    </h2>
-    <div class="spacer" />
-    <h3>
+    </txt>
+    <txt type="large-body">
       It can take up to an hour for the email to arrive. Be sure to check your
       inbox and spam mail.
-    </h3>
-    <h3 class="accent_text">
+    </txt>
+    <txt type="large-body">
       Meanwhile, click
-      <nuxt-link to="/help/" class="text--small">here</nuxt-link> to learn how
-      to use the app.
-    </h3>
-    <div class="spacer" />
+      <nuxt-link to="/help/" class="underline">here</nuxt-link> to learn how to
+      use the app.
+    </txt>
+    <nuxt-link to="/">
+      <txt type="large-body" class="underline mt-16" bold>Return Home</txt>
+    </nuxt-link>
   </div>
 </template>
 
 <script>
+import Txt from "~/components/elements/Txt.vue";
+
 export default {
+  components: {
+    Txt,
+  },
   head() {
     return {
       meta: [{ hid: "robots", name: "robots", content: "noindex" }],
