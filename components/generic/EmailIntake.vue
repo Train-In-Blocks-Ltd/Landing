@@ -71,24 +71,29 @@ export default {
   },
   data() {
     return {
-      email: '',
-      message: ' '
-    }
+      email: "",
+      message: " ",
+    };
   },
   methods: {
     async mcSignup() {
       try {
-        await axios.post('/.netlify/functions/mailchimp', { email: this.email})
-        this.message = 'To complete the subscription process, please click the link in the email we just sent you.'
+        await axios.post("/.netlify/functions/mailchimp", {
+          email: this.email,
+        });
+        this.message =
+          "To complete the subscription process, please click the link in the email we just sent you.";
       } catch (e) {
         if (e.response.status === 400) {
-          this.message = 'You\'re already signed up to our mailing list. Thank you!'
+          this.message =
+            "You're already signed up to our mailing list. Thank you!";
         } else {
-          console.error(e)
-          this.message = e.response.data
+          // eslint-disable-next-line
+          console.error(e);
+          this.message = e.response.data;
         }
       }
-    }
-  }
+    },
+  },
 };
 </script>
