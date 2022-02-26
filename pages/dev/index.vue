@@ -1,113 +1,33 @@
-<style scoped>
-.dev_container {
-  display: grid;
-  grid-gap: 8rem;
-  margin: 4rem 0;
-}
-.dev_post {
-  display: grid;
-  grid-gap: 1rem;
-  border: 3px solid var(--base_dark);
-  border-radius: var(--border_rad_large);
-  padding: 2rem;
-}
-.dev_post__content {
-  display: flex;
-  flex-direction: column;
-}
-.dev_post__link {
-  display: grid;
-  grid-template-columns: 160px 24px;
-  grid-gap: 0.4rem;
-  margin-top: 1rem;
-  transition: grid-gap 0.4s, opacity 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.dev_post__link_text {
-  color: var(--base_dark);
-  margin: auto 0;
-  text-decoration: none;
-}
-.dev_post__link:hover {
-  grid-gap: 1rem;
-  opacity: 0.8;
-}
-.dev_post__link:active {
-  opacity: 0.4;
-}
-
-/* Responsiveness */
-@media (max-width: 992px) {
-  .dev_post {
-    grid-template-columns: 0.8fr 1fr;
-  }
-  .dev_post > img {
-    filter: grayscale(0);
-  }
-  .dev_post__content {
-    padding: 0;
-  }
-  .dev_post__link:hover {
-    grid-gap: 0.4rem;
-    opacity: 1;
-  }
-}
-@media (max-width: 768px) {
-  .dev_post {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-  }
-}
-</style>
-
 <template>
-  <div>
-    <h1>Join our development journey</h1>
-    <div class="dev_container">
-      <div
-        v-for="(post, index) in posts"
-        :key="`dev_${index}`"
-        class="dev_post"
-      >
-        <h3 class="no_margin">
-          {{ post.show ? post.date : "Update currently in the making" }}
-        </h3>
-        <div v-if="post.show" class="dev_post__content">
-          <div>
-            <h3 class="no_margin">
-              {{ post.title }}
-            </h3>
-            <p>
-              {{ post.postDesc }}
-            </p>
-          </div>
-          <div class="dev_post__link">
-            <nuxt-link class="dev_post__link_text" :to="`/dev/${post.slug}/`">
-              Continue reading
-            </nuxt-link>
-            <inline-svg
-              class="svg--read-more"
-              :src="require('../../assets/svg/Arrow.svg')"
-            />
-          </div>
-        </div>
-        <h3 v-else class="accent_text no_margin">Check again soon...</h3>
-      </div>
+  <page-wrapper>
+    <txt type="title" is-main class="mb-16">Join our development journey</txt>
+    <div
+      v-if="posts.length > 0"
+      class="grid xl:grid-cols-2 gap-8 xl:gap-12 mb-8"
+    >
+      <blog-post v-for="post in posts" :key="post.title" :post="post" />
     </div>
-  </div>
+    <txt v-else type="large-body">No posts yet...</txt>
+  </page-wrapper>
 </template>
 
 <script>
+import Txt from "../../components/elements/Txt";
+import PageWrapper from "../../components/generic/PageWrapper";
+import BlogPost from "../../components/pages/blog/BlogPost";
+
 export default {
+  components: {
+    PageWrapper,
+    Txt,
+    BlogPost,
+  },
   async asyncData({ $content }) {
-    const posts = await $content("dev").fetch();
+    const posts = await $content("dev", { text: true }).fetch();
     return {
-      posts: posts
-        .map((post, index) => {
-          return { ...post, id: index };
-        })
-        .sort((b, a) => {
-          return b.id - a.id;
-        }),
+      posts: posts.sort((a, b) => {
+        return new Date(b.date) - new Date(a.date);
+      }),
     };
   },
   head() {
