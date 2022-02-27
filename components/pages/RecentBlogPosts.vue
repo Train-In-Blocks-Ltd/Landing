@@ -13,7 +13,7 @@
           height="auto"
           width="auto"
           :src="require(`../../assets/media-uploads/${blogPost.img}`)"
-          :alt="blogPost.title"
+          :alt="blogPost.alt || blogPost.title"
           class="gray aspect-square object-cover"
           loading="lazy"
         />
