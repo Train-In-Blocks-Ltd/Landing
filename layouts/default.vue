@@ -171,9 +171,9 @@ div.cookieControl__ModalContent label:before {
           <txt type="large-body" bold>
             Before you go...
           </txt>
-          <h4 class="text-lg leading-6 font-medium text-gray-900">
+          <txt bold>
             Let's stay connected!
-          </h4>
+          </txt>
           <div class="mt-2 px-7 py-3">
             <p class="text-sm text-gray-500">
               Learn everything that personal trainers need to know to profit and grow!
