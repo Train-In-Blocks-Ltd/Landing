@@ -179,13 +179,12 @@ div.cookieControl__ModalContent label:before {
               Learn everything that personal trainers need to know to profit and grow!
             </p>
           </div>
-          <input
-            id="mce-EMAIL"
+          <txt-input
+            input-id="mce-EMAIL"
             type="email"
             value=""
             name="EMAIL"
-            class="email z-10"
-            style="background-color: white"
+            input-class="email z-10"
             placeholder="Email"
             required
           />
