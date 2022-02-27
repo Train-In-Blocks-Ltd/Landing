@@ -1,9 +1,9 @@
 ---
 title: Safer Internet Day 2022
 slug: "safer-internet-day-2022"
-img: 21.png
+img: laptop.png
 author: Jamie Spoor
-date: "2022-02-10"
+date: 2022-02-10
 postDesc: The 8th February 2022 marks the 19th "Safer Internet Day" and it is our belief everyone should play their part in making life safer online, including us here at TIB.
 ---
 
@@ -13,7 +13,7 @@ The 8th February 2022 marks the 19th "Safer Internet Day" and it is our belief e
 
 Celebrated annually on the first Tuesday in February, the aim of Safer Internet Day is to promote the safe and positive use of digital technology for children and young people. Our generation is lucky, growing up as we have in an "online world" but we are all too aware of the perils and the pitfalls that come with the territory.
 
-Launched in 2004 with EU-funded network *[Safer Internet Centres](https://digital-strategy.ec.europa.eu/en/policies/safer-internet-centres)* at the forefront, the day is now marked by over 200 countries with some of those outside the traditional geographic stronghold.
+Launched in 2004 with EU-funded network _[Safer Internet Centres](https://digital-strategy.ec.europa.eu/en/policies/safer-internet-centres)_ at the forefront, the day is now marked by over 200 countries with some of those outside the traditional geographic stronghold.
 
 None of us could live without the Internet - we all use it every day of our lives and it's an essential commodity we take for granted when it comes to modern, everyday life. But it carries a risk of exposing some of society's most vulnerable to an entire plethora of problems from cyber security to bullying and trolls.
 

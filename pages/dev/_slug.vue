@@ -1,66 +1,40 @@
-<style>
-.dev_html h2 {
-  font-size: 1.4rem;
-  margin-top: 3rem;
-}
-.dev_html h3 {
-  font-size: 1rem;
-  margin-top: 2rem;
-}
-</style>
-
-<style scoped>
-.dev_body > img {
-  display: flex;
-  margin: auto;
-  width: 60%;
-  border-radius: 10px;
-  box-shadow: var(--low_shadow);
-}
-.back_text {
-  position: fixed;
-  top: 50vh;
-  left: 2rem;
-  transform: rotate(-90deg);
-  text-decoration: none;
-}
-
-/* Responsiveness */
-@media (max-width: 768px) {
-  .dev_body > img {
-    width: 100%;
-  }
-  .back_text {
-    left: 0.8rem;
-  }
-}
-@media (max-width: 567px) {
-  .dev_body > img {
-    margin-top: 2rem;
-  }
-  .back_text {
-    top: 0;
-    left: 0;
-    font-size: 1.6rem;
-    position: static;
-  }
-}
-</style>
-
 <template>
-  <div class="dev_body">
-    <nuxt-link to="/dev/" class="back_text"> Back </nuxt-link>
-    <h1>
+  <article-wrapper>
+    <v-back-button link="/dev/" />
+    <img
+      :src="require(`../../assets/media-uploads/${post.img}`)"
+      :alt="post.alt || post.title"
+      class="w-full aspect-square object-cover max-w-lg m-auto gray"
+      loading="lazy"
+    />
+    <txt type="title" class="mt-8 mb-4" is-main>
       {{ post.title }}
-    </h1>
-    <nuxt-content class="dev_html" :document="post" />
-  </div>
+    </txt>
+    <txt type="large-body" grey>Created by {{ post.author }}</txt>
+    <txt type="large-body" class="mb-4" grey>{{ shortDate(post.date) }}</txt>
+    <txt type="large-body" class="mb-16" grey
+      >{{ readingTime(post.text) }} minute read</txt
+    >
+    <nuxt-content :document="post" />
+    <blog-footer class="mt-16" />
+  </article-wrapper>
 </template>
 
 <script>
+import Txt from "../../components/elements/Txt";
+import BlogFooter from "../../components/pages/blog/BlogFooter";
+import VBackButton from "~/components/generic/VBackButton";
+import ArticleWrapper from "~/components/generic/ArticleWrapper";
+
 export default {
+  components: {
+    Txt,
+    BlogFooter,
+    VBackButton,
+    ArticleWrapper,
+  },
   async asyncData({ $content, params }) {
-    const post = await $content("dev", params.slug).fetch();
+    const post = await $content("dev", { text: true }, params.slug).fetch();
     return { post };
   },
   head() {
@@ -101,6 +75,17 @@ export default {
     this.$parent.$parent.metaHelper.description = this.post.postDesc;
     this.$parent.$parent.metaHelper.image = this.post.img;
     this.$parent.$parent.metaHelper.url = `https://traininblocks.com/dev/${this.$route.params.slug}/`;
+  },
+  methods: {
+    shortDate(date) {
+      const d = new Date(date);
+      return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
+    },
+    readingTime(post) {
+      const avgWordsPerMin = 200;
+      const count = post.match(/\w+/g).length;
+      return Math.ceil(count / avgWordsPerMin);
+    },
   },
 };
 </script>

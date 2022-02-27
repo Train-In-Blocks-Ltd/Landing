@@ -156,14 +156,16 @@ div.cookieControl__ModalContent label:before {
     <nav-menu />
     <nav-bar class="my-16" />
     <nuxt class="fadeIn mb-16" />
-    <nuxt-link
-      v-if="$route.name !== 'help'"
-      style="z-index: 99"
-      class="fixed right-20 bottom-8 px-6 py-2 rounded-full bg-gray-800 dark:bg-white text-white dark:text-gray-800 font-bold hover:opacity-60 transition-opacity"
-      to="/help/"
-    >
-      <txt>I need help</txt>
-    </nuxt-link>
+    <div @click="openNav = false">
+      <nuxt-link
+        v-if="$route.name !== 'help'"
+        style="z-index: 99"
+        class="fixed right-20 bottom-8 px-6 py-2 rounded-full bg-gray-800 dark:bg-white text-white dark:text-gray-800 font-bold hover:opacity-60 transition-opacity"
+        to="/help/"
+      >
+        <txt>I need help</txt>
+      </nuxt-link>
+    </div>
     <footer-section />
     <div v-show="exitIntent" id="my-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" @click="exit">
       <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
