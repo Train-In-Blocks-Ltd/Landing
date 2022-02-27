@@ -189,12 +189,9 @@ div.cookieControl__ModalContent label:before {
             required
           />
           <div class="items-center px-4 py-3">
-            <button
-              id="ok-btn"
-              class="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300"
-            >
+            <default-button id="ok-btn">
               Sign me up
-            </button>
+            </default-button>
           </div>
         </div>
       </div>
