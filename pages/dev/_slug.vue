@@ -3,6 +3,7 @@
     <v-back-button link="/dev/" />
     <img
       :src="require(`../../assets/media-uploads/${post.img}`)"
+      :alt="post.alt || post.title"
       class="w-full aspect-square object-cover max-w-lg m-auto gray"
       loading="lazy"
     />
