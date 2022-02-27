@@ -168,9 +168,9 @@ div.cookieControl__ModalContent label:before {
     <div v-show="exitIntent" id="my-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" @click="exit">
       <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
         <div class="mt-3 text-center">
-          <h3 class="text-lg leading-6 font-medium text-gray-900">
+          <txt type="large-body" bold>
             Before you go...
-          </h3>
+          </txt>
           <h4 class="text-lg leading-6 font-medium text-gray-900">
             Let's stay connected!
           </h4>
