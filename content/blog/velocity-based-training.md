@@ -1,7 +1,7 @@
 ---
 title: More adaptations with less volume using velocity-based training
 slug: velocity-based-training
-img: 8.png
+img: velocity.png
 postDesc: A recent study on an alternative method of training which could increase adaptations with less training volume.
 author: Mikey Lau
 date: "2020-12-02"

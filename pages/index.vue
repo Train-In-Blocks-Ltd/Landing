@@ -13,8 +13,9 @@
         v-for="(compare, compareIndex) in comparisons"
         :key="`compare_${compareIndex}`"
         :to="`/compare/${compare.slug}/`"
+        class="w-fit"
       >
-        <txt type="subtitle" class="hover:opacity-60 transition-all">
+        <txt type="subtitle" class="w-fit hover:opacity-60 transition-all">
           {{ compare.name }}
         </txt>
       </nuxt-link>
@@ -45,7 +46,7 @@ export default {
     EmailIntake,
   },
   async asyncData({ $content }) {
-    const latestBlogPosts = await $content("blog").fetch();
+    const latestBlogPosts = await $content("blog", { text: true }).fetch();
     return {
       latestBlogPosts: latestBlogPosts.sort((b, a) => {
         return new Date(b.date) - new Date(a.date);
