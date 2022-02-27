@@ -149,6 +149,44 @@ div.cookieControl__ModalContent label:before {
     font-size: 14px;
   }
 }
+
+#my-modal > div {
+  width: Min(900px, calc(100vw - 4rem));
+}
+.modal-enter-active,
+.modal-leave-active {
+  transition: all 0.4s;
+}
+.modal-enter,
+.modal-leave-to {
+  opacity: 0;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  transition: opacity .5s
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 0;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
 </style>
 
 <template>
@@ -165,42 +203,51 @@ div.cookieControl__ModalContent label:before {
       <txt>I need help</txt>
     </nuxt-link>
     <footer-section />
-    <div v-show="exitIntent" id="my-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" @click="exit">
-      <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
-        <div class="mt-3 text-center">
-          <txt type="large-body" bold>
-            Before you go...
-          </txt>
-          <txt bold>
-            Let's stay connected!
-          </txt>
-          <div class="mt-2 px-7 py-3">
-            <p class="text-sm text-gray-500">
-              Learn everything that personal trainers need to know to profit and grow!
-            </p>
-          </div>
-          <txt-input
-            input-id="mce-EMAIL"
-            type="email"
-            value=""
-            name="EMAIL"
-            input-class="email z-10"
-            placeholder="Email"
-            required
-          />
-          <div class="items-center px-4 py-3">
-            <default-button id="ok-btn">
-              Sign me up
-            </default-button>
+    <transition name="modal">
+      <div v-if="exitIntent" id="my-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" @click="exit">
+        <div class="relative top-20 mx-auto p-5 border shadow-lg rounded-md bg-white">
+          <button type="button" class="close" @click="exit" />
+          <div class="text-center">
+            <txt type="subtitle" class="my-4">
+              Before you go...
+            </txt>
+            <txt type="title" class="my-4">
+              Let's stay connected!
+            </txt>
+            <txt type="large-body" class="my-8">
+                Learn everything that personal trainers need to know to profit and grow!
+            </txt>
+            <div class="flex justify-center flex-wrap">
+              <txt-input
+                input-id="mce-EMAIL"
+                type="email"
+                value=""
+                name="EMAIL"
+                input-class="email z-10"
+                placeholder="Email"
+                required
+                class="w-96"
+              />
+              <div class="items-center px-4 py-3">
+                <default-button id="ok-btn">
+                  Sign me up
+                </default-button>
+              </div>
+            </div>
+            <txt type="tiny" class="mb-8">
+              By clicking sign me up you consent to us adding you to our mailing list. We promise not to spam you!
+            </txt>
           </div>
         </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
 <script>
 import Txt from "../components/elements/Txt";
+import TxtInput from "../components/elements/TxtInput";
+import DefaultButton from "../components/elements/DefaultButton";
 import NavMenu from "../components/extensive/NavMenu";
 import NavBar from "../components/extensive/NavBar";
 import FooterSection from "../components/extensive/FooterSection";
@@ -212,6 +259,8 @@ export default {
     NavMenu,
     NavBar,
     FooterSection,
+    DefaultButton,
+    TxtInput,
   },
   data() {
     return {
@@ -280,16 +329,18 @@ export default {
         this.setCookie('exitIntentShown', true, 30);
       }
     };
+    /*
     // Wrap the setTimeout into an if statement
     if (!this.getCookie('exitIntentShown')) {
         // Set timeout so exitintent isn't show on page load - wait 10 seconds
         setTimeout(() => {
+          */
           // Add event listener for when user leaves page
           document.addEventListener('mouseout', mouseEvent);
           // Add event listener for when user presses a key - which we listen to the escape key
           document.addEventListener('keydown', this.exit);
-        }, 10000);
-    }
+        /* }, 10000);
+    } */
   },
   methods: {
     // Close the modal
