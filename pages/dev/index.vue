@@ -1,13 +1,14 @@
 <template>
   <page-wrapper>
     <txt type="title" is-main class="mb-16">Join our development journey</txt>
-    <div
-      v-if="posts.length > 0"
-      class="grid xl:grid-cols-2 gap-8 xl:gap-12 mb-8"
-    >
-      <blog-post v-for="post in posts" :key="post.title" :post="post" />
+    <div class="grid xl:grid-cols-2 gap-8 xl:gap-12 mb-8">
+      <blog-post
+        v-for="post in posts"
+        :key="post.title"
+        :post="post"
+        post-type="dev"
+      />
     </div>
-    <txt v-else type="large-body">No posts yet...</txt>
   </page-wrapper>
 </template>
 
