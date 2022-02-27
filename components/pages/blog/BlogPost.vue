@@ -9,7 +9,7 @@
       loading="lazy"
     />
     <div class="flex flex-col w-full sm:w-2/3 max-w-4xl">
-      <nuxt-link :to="`/blog/${post.slug}/`">
+      <nuxt-link :to="`/${postType}/${post.slug}/`">
         <txt type="subtitle" class="hover:opacity-60 transition-all">
           {{ post.title }}
         </txt>
@@ -20,7 +20,7 @@
       <div class="flex justify-between mt-auto">
         <nuxt-link
           class="flex items-center hover:opacity-60 transition-all"
-          :to="`/blog/${post.slug}/`"
+          :to="`/${postType}/${post.slug}/`"
         >
           <txt class="mr-4">Continue reading</txt>
           <inline-svg :src="require('../../../assets/svg/Arrow.svg')" />
@@ -40,6 +40,7 @@ export default {
   },
   props: {
     post: Object,
+    postType: String,
   },
   methods: {
     readingTime(post) {
