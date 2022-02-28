@@ -4,7 +4,7 @@ slug: work-out-as-a-couple-this-valentines-day
 img: woman-single-leg-squat.png
 author: Jamie Spoor
 date: 2022-02-10
-postDesc: Work out as a couple this Valentine's Day
+postDesc: Work out as a couple this Valentine's Day.
 ---
 
 The most romantic day of the year is here again! The fabled Valentine’s Day is synonymous with chocolate, extravagant meals and calorific overindulgence, but there are other ways you and yours can celebrate lover’s day.
