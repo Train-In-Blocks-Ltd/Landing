@@ -52,6 +52,6 @@ The best personal trainers are those whom adapt and make a workout fun but also 
 
 Remember, not all clients are the same so you don’t want a one-size-fits-all identikit: a programme that may work superbly for one client may be terrible for the next - remember, you’re there to help your clients, not torture them! You don’t want to set your clients up to fail so having the ability to adapt and respond is a vital aspect of your raison d’être as a personal trainer.
 
-<markdown-image src="equipment.webp" alt="equipment"></markdown-image>
+<markdown-image src="equipment.jpg" alt="equipment"></markdown-image>
 
 So there you have it: our five ‘fail safe’ Train In Blocks tips to ensure you can become an even better personal trainer, to make a difference and to help make everything fitness has to offer enjoyable for both you and your clients. Good luck!
