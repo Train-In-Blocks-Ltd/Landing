@@ -217,28 +217,9 @@ div.cookieControl__ModalContent label:before {
               Let's stay connected!
             </txt>
             <txt type="large-body" class="my-8">
-                Learn everything that personal trainers need to know to profit and grow!
+              Learn everything that personal trainers need to know to profit and grow!
             </txt>
-            <div class="flex justify-center flex-wrap">
-              <txt-input
-                input-id="mce-EMAIL"
-                type="email"
-                value=""
-                name="EMAIL"
-                input-class="email z-10"
-                placeholder="Email"
-                required
-                class="w-96"
-              />
-              <div class="items-center px-4 py-3">
-                <default-button id="ok-btn">
-                  Sign me up
-                </default-button>
-              </div>
-            </div>
-            <txt type="tiny" class="mb-8">
-              By clicking sign me up you consent to us adding you to our mailing list. We promise not to spam you!
-            </txt>
+            <mailchimp-sign-up />
           </div>
         </div>
       </div>
@@ -247,22 +228,20 @@ div.cookieControl__ModalContent label:before {
 </template>
 
 <script>
-import Txt from "../components/elements/Txt";
-import TxtInput from "../components/elements/TxtInput";
-import DefaultButton from "../components/elements/DefaultButton";
 import NavMenu from "../components/extensive/NavMenu";
 import NavBar from "../components/extensive/NavBar";
 import FooterSection from "../components/extensive/FooterSection";
+import MailchimpSignUp from '../components/generic/MailchimpSignUp';
+import Txt from "../components/elements/Txt";
 
 export default {
   name: "App",
   components: {
-    Txt,
     NavMenu,
     NavBar,
     FooterSection,
-    DefaultButton,
-    TxtInput,
+    MailchimpSignUp,
+    Txt,
   },
   data() {
     return {
@@ -331,18 +310,16 @@ export default {
         this.setCookie('exitIntentShown', true, 30);
       }
     };
-    /*
     // Wrap the setTimeout into an if statement
     if (!this.getCookie('exitIntentShown')) {
         // Set timeout so exitintent isn't show on page load - wait 10 seconds
         setTimeout(() => {
-          */
           // Add event listener for when user leaves page
           document.addEventListener('mouseout', mouseEvent);
           // Add event listener for when user presses a key - which we listen to the escape key
           document.addEventListener('keydown', this.exit);
-        /* }, 10000);
-    } */
+        }, 10000);
+    }
   },
   methods: {
     // Close the modal
