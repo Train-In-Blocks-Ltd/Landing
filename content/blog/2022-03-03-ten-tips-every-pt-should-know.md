@@ -47,14 +47,21 @@ Creating and managing an online presence also allows you to keep your clients up
 
 This might sound obvious but it's one of our most important tips. Your clients have their own needs, aspirations and ideas of why they're using a personal trainer and where they want to get to. Think about it like this - if you have interests, a life, and hobbies outside of your work in the gym, so do your clients, and it’s vital that you take those into consideration when planning your sessions.
 
-Always be prepared to go the extra mile, be flexible, adapt, and get to know them on a personal level. 
+Always be prepared to go the extra mile, be flexible, adapt, and get to know them on a personal level - strike up chat to help build up that rapport, and don't forget: clients aren't only paying for you as a PT, they're also investing in your personality and enthusiasm. Be sure to laugh, converse and exchange banter with your clients during your workouts. 
 
+## Flexibility is key
 
+The fitness industry has grown beyond all recognition and will continue to do so. Demand for personal trainers is on the rise with clients investing more time and money than ever before in a bid to smash through the ceiling.\
+Personal trainers can benefit from being flexible with their scheduling. Many clients work traditional nine-to-five jobs, so a personal trainer needs to be available before or after these times, during a client's lunch break or on weekends. 
 
+Clients may use inconvenient scheduling as one reason they can't exercise. It's up to the personal trainer to work around their schedule and help them make health and fitness an important part of their routine. Sitting around for an hour because your client let you down isn't going to help anyone.
 
+## Expand your knowledge
 
+Successful personal trainers have a balanced combination of physical and mental skills. Knowledge of anatomy, physiology and sports science is essential. Boost your abilities by learning more about nutrition, diet, healthy weight loss, and other related areas.If you're just starting out as a personal trainer, you can earn entry-level income as an apprentice and gain the skills you need to become a higher-ranking trainer.
 
+Completing a PT course is not only an essential prerequisite for most jobs, but it equips you with all the necessary knowledge to be a good personal trainer. You will gain an extensive knowledge of human anatomy, physiology, nutrition principles, how to deliver training sessions and more. For example: if you’re interested in rehabilitation and recovery, why not explore a sports massage qualification?
 
+## Network as often as you can 
 
-
-## Start up your own fitness blog
+No matter how confident you are in your own ability, you simply cannot do it alone. We've mentioned how, without proper communication and scheduling, you won't be able to pass on your expertise or progress effectively as a personal trainer. Stay close to other trainers or entrepreneurs who inspire you. Your inner circle will be your greatest motivation, so make sure you’re surrounded by successful, trustworthy people. Attend network events regularly, introduce yourself to the people you don’t know at the certifications you attend, and be friendly to people you encounter in your day-to-day life. As the old adage said, it's not what you know, it's who you know. You can also consider, as we said earlier, connecting to social media groups and talking to other PTs.
