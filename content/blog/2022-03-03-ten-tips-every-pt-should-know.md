@@ -14,7 +14,7 @@ But how do you stand out in a crowded market? Here, we'll explain how you can pu
 
 Your first port of call should be to start to build your business and develop your brand which will set you apart from the competition.\
 It's too simplistic just to say you specialise in 'everything' - decide what you want to focus on specifically and stay with it, whether it be a weight loss expert, a strength and conditioning coach or training those at the peak of their physical fitness. \
-If you don't give people a specific reason to work with you, they won't come up with one of your own. Stay true to what you want to achieve, your 'uniqueness' is what makes your niche 'you. 
+If you don't give people a specific reason to work with you, they won't come up with one of your own. Stay true to what you want to achieve, your 'uniqueness' is what makes your niche 'you.' 
 
 ## **Set your schedule**
 
@@ -33,11 +33,7 @@ Successful personal trainers should be so much more than simply someone who shap
 
 Set milestones, help them achieve their goals, communicate the whole way through and rejoice every time that they hit their mark. Communication = motivation and you can also consider getting your clients friends on board too - perhaps set up group sessions with their family and expand to a wider support circle. 
 
-
-
-<markdown-image src="running group.jpeg" alt="fist bump"></markdown-image>
-
-
+<markdown-image src="running group.jpeg" alt="running group"></markdown-image>
 
 ## **Learn from others**
 
@@ -62,11 +58,7 @@ Personal trainers can benefit from being flexible with their scheduling. Many cl
 
 Clients may use inconvenient scheduling as one reason they can't exercise. It's up to the personal trainer to work around their schedule and help them make health and fitness an important part of their routine. Sitting around for an hour because your client let you down isn't going to help anyone.
 
-
-
-<markdown-image src="stretch.jpeg" alt="fist bump"></markdown-image>
-
-
+<markdown-image src="stretch.jpeg" alt="stretch.jpeg"></markdown-image>
 
 ## Expand your knowledge
 
