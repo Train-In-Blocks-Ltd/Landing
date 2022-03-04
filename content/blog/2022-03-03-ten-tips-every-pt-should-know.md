@@ -12,8 +12,8 @@ But how do you stand out in a crowded market? Here, we'll explain how you can pu
 
 ## Find your niche and 'own it'
 
-Your first port of call should be to start to build your business and develop your brand which will set you apart from the competition.\
-It's too simplistic just to say you specialise in 'everything' - decide what you want to focus on specifically and stay with it, whether it be a weight loss expert, a strength and conditioning coach or training those at the peak of their physical fitness. \
+Your first port of call should be to start building your business and develop your brand which will set you apart from the competition.\
+It's too simplistic just to say you specialise in 'everything' - decide what you want to focus on specifically and stay with it, whether it be as a weight loss expert, a strength and conditioning coach or training those at the peak of their physical fitness. \
 If you don't give people a specific reason to work with you, they won't come up with one of your own. Stay true to what you want to achieve, your 'uniqueness' is what makes your niche 'you.' 
 
 ## **Set your schedule**
@@ -69,3 +69,5 @@ Completing a PT course is not only an essential prerequisite for most jobs, but 
 ## Network as often as you can
 
 No matter how confident you are in your own ability, you simply cannot do it alone. We've mentioned how, without proper communication and scheduling, you won't be able to pass on your expertise or progress effectively as a personal trainer. Stay close to other trainers or entrepreneurs who inspire you. Your inner circle will be your greatest motivation, so make sure you’re surrounded by successful, trustworthy people. Attend network events regularly, introduce yourself to the people you don’t know at the certifications you attend, and be friendly to people you encounter in your day-to-day life. As the old adage said, it's not what you know, it's who you know. You can also consider, as we said earlier, connecting to social media groups and talking to other PTs.
+
+So there you have it - our "top ten" advice reel for personal trainers - whether you're just starting out on your journey or a season veteran, it's never too late to learn something new. We hope you will find this useful and that Train in Blocks has helped you, even if in just a small way, to become more polished at your craft.
