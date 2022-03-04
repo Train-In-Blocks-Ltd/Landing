@@ -1,7 +1,7 @@
 ---
 title: Ten tips every PT should know
 slug: ten-tips-every-PT
-img: fitness1.jpeg
+img: fitness-1.jpeg
 author: Jamie Spoor
 date: 2022-03-03T09:22:07.098Z
 postDesc: Our essential advice for every personal trainer
