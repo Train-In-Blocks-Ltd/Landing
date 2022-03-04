@@ -33,7 +33,7 @@ Successful personal trainers should be so much more than simply someone who shap
 
 Set milestones, help them achieve their goals, communicate the whole way through and rejoice every time that they hit their mark. Communication = motivation and you can also consider getting your clients friends on board too - perhaps set up group sessions with their family and expand to a wider support circle. 
 
-<markdown-image src="running group.jpeg" alt="running group"></markdown-image>
+<markdown-image src="running-group.jpeg" alt="running-group"></markdown-image>
 
 ## **Learn from others**
 
