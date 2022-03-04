@@ -1,7 +1,7 @@
 ---
 title: Ten tips every PT should know
 slug: ten-tips-every-PT
-img: pt.jpeg
+img: fitness1.jpeg
 author: Jamie Spoor
 date: 2022-03-03T09:22:07.098Z
 postDesc: Our essential advice for every personal trainer
@@ -33,6 +33,12 @@ Successful personal trainers should be so much more than simply someone who shap
 
 Set milestones, help them achieve their goals, communicate the whole way through and rejoice every time that they hit their mark. Communication = motivation and you can also consider getting your clients friends on board too - perhaps set up group sessions with their family and expand to a wider support circle. 
 
+
+
+<markdown-image src="running group.jpeg" alt="fist bump"></markdown-image>
+
+
+
 ## **Learn from others**
 
 This one is perhaps better suited to those just starting out, but the best place to start is to have a look at those with years in the industry. There's nothing wrong in asking others, to bounce ideas off and to gain a stronger identity as a personal trainer. Consider things like how and where they like to train, any specific target market, plans for future growth as a PT and marketing techniques. \
@@ -56,12 +62,18 @@ Personal trainers can benefit from being flexible with their scheduling. Many cl
 
 Clients may use inconvenient scheduling as one reason they can't exercise. It's up to the personal trainer to work around their schedule and help them make health and fitness an important part of their routine. Sitting around for an hour because your client let you down isn't going to help anyone.
 
+
+
+<markdown-image src="stretch.jpeg" alt="fist bump"></markdown-image>
+
+
+
 ## Expand your knowledge
 
 Successful personal trainers have a balanced combination of physical and mental skills. Knowledge of anatomy, physiology and sports science is essential. Boost your abilities by learning more about nutrition, diet, healthy weight loss, and other related areas.If you're just starting out as a personal trainer, you can earn entry-level income as an apprentice and gain the skills you need to become a higher-ranking trainer.
 
 Completing a PT course is not only an essential prerequisite for most jobs, but it equips you with all the necessary knowledge to be a good personal trainer. You will gain an extensive knowledge of human anatomy, physiology, nutrition principles, how to deliver training sessions and more. For example: if you’re interested in rehabilitation and recovery, why not explore a sports massage qualification?
 
-## Network as often as you can 
+## Network as often as you can
 
 No matter how confident you are in your own ability, you simply cannot do it alone. We've mentioned how, without proper communication and scheduling, you won't be able to pass on your expertise or progress effectively as a personal trainer. Stay close to other trainers or entrepreneurs who inspire you. Your inner circle will be your greatest motivation, so make sure you’re surrounded by successful, trustworthy people. Attend network events regularly, introduce yourself to the people you don’t know at the certifications you attend, and be friendly to people you encounter in your day-to-day life. As the old adage said, it's not what you know, it's who you know. You can also consider, as we said earlier, connecting to social media groups and talking to other PTs.
