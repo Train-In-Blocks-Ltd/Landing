@@ -29,7 +29,7 @@ Vonn worked with Tempo to expand their sport-inspired programme and help their c
 
 In 2006, spin class teacher Ruth Zukerman introduced her client, estate agent Elizabeth Cutler, to entertainment head hunter Julie Rice and a fitness phenomena was born. The three entrepreneurial women started up SoulCycle - as the name suggests, a cycling company specialising for trendy studios, high end clients and intense cardio workouts. The classes combine HIIT, resistance and strength training whilst pushing the pedal to the metal to music on a stationary bike and are designed to build your endurance, stamina and speed. Thanks to all those intervals, the workout boosts cardio endurance, burns major calories, and tones muscles while still going easy on your joints
 
-The ever-growing popularity of the classes have proved a hit (no pun intended) among iconic female figures including Michelle Obama, Beyonce and Victoria Beckham. The company is now set up in 99 locations and came to London in 2019. Cutler&Rice sold their shares in the company in 2016 - $90m richer, both women safe in the knowledge they changed the landscape of the modern fitness world. 
+The ever-growing popularity of the classes have proved a hit (no pun intended) among iconic female figures including Michelle Obama, Beyonce and Victoria Beckham. The company is now set up in 99 locations and came to London in 2019. Cutler&Rice sold their shares in the company and stepped down as CEOs in 2016 - $90m richer. 
 
 ## Lisa Lindahl
 
