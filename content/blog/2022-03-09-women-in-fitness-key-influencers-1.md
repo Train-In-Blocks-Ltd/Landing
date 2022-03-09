@@ -1,7 +1,7 @@
 ---
 title: "Women in fitness: Key influencers"
 slug: women-key-influencers-
-img: image1.jpeg
+img: womanoutdoors.jpeg
 author: Jamie Spoor
 date: 2022-03-09T15:31:02.639Z
 postDesc: Inspirational women shaping the fitness industry
