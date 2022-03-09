@@ -25,10 +25,16 @@ Since retiring from the ice in 2019 with two Olympic and eight World Cup medals 
 
 Vonn worked with Tempo to expand their sport-inspired programme and help their clients prepare for their own personal fitness journeys. She set up and released a six-part series of fitness challenges, inspired by her own training routine as a professional athlete before becoming an adviser for the company as the fitness industry has continued to evolve within our own homes, which of course hit its zenith during the lockdowns of 2020 and 2021. Vonn has also taken to YouTube to post regular fitness videos on balance exercises and core workout techniques. 
 
-## Elizabeth Cutler
+## Elizabeth Cutler&
 
 In 2006, spin class teacher Ruth Zukerman introduced her client, estate agent Elizabeth Cutler, to entertainment head hunter Julie Rice and a fitness phenomena was born. The three entrepreneurial women started up SoulCycle - as the name suggests, a cycling company specialising for trendy studios, high end clients and intense cardio workouts. The classes combine HIIT, resistance and strength training whilst pushing the pedal to the metal to music on a stationary bike. The ever-growing popularity of the classes have proved a hit (no pun intended) among iconic female figures including Michelle Obama, Beyonce and Victoria Beckham. The company is now set up in 99 locations and came to London in 2019. 
 
-## Hannah Rose Goodman 
+## Lisa Lindahl
+
+Today, it's impossible to imagine going for a run or popping into a fitness class without a sports bra. But it wasn’t until 1977 that Lisa Lindahl, diagnosed with epilepsy aged four, created you girls' favourite workout partner. After picking up the habit of jogging, Lindahl began working on prototypes for a more supportive fitness bra.
+
+After several attempts, costume designer and Lindahl's business partner Polly Smith sewed two jockstraps together and Lindahl tested it on a run. This became the first workable sports bra prototype. The design of the “jockbra”—later known as the jogbra, and now the sports bra —has been improved and improved over the years, so much so its now an essential part of every girl's workout and exercise raison d'etre.
+
+## Hannah Rose Goodman
 
 Our very own marketing and branding queen, the lovely lass from Birmingham and now an adopted maid of Kent, Hannah - the only girl on our team -  is the brains behind the operation that is TIB (women are always the brains behind everything, aren't they..). In short, she makes it all happen and keeps us all in order. My one time gym buddy and now respected colleague, she's always in our ears (only kidding), but always offering advice and support particularly in these early days of our business. Hannah's steady hand on the tiller - particularly with the social media and SEO side of us, has helped to keep us running. Without her, TIB wouldn't be where we are now as we continue to grow. Thank you Hannah and well done! You're a star.
