@@ -52,11 +52,11 @@
             name="Blog"
             :on-click="() => ($parent.openNav = false)"
           />
-          <!-- <nav-menu-link
+          <nav-menu-link
             link-to="/dev/"
             name="News"
             :on-click="() => ($parent.openNav = false)"
-          /> -->
+          />
           <!-- <nav-menu-link
             link-to="/help/"
             name="Help"

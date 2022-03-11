@@ -57,7 +57,7 @@ export default {
   beforeCreate() {
     this.$parent.$parent.metaHelper.title = "Trainerize";
     this.$parent.$parent.metaHelper.description =
-      "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.";
+      "Train In Blocks vs Trainerize. See how these Personal Trainer software products stack up against each other with product feature comparisons.";
     this.$parent.$parent.metaHelper.url =
       "https://traininblocks.com/compare/trainerize/";
   },

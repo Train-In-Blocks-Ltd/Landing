@@ -2,7 +2,12 @@
   <page-wrapper>
     <txt type="title" is-main class="mb-16">Find power in knowledge</txt>
     <div class="grid xl:grid-cols-2 gap-8 xl:gap-12 mb-8">
-      <blog-post v-for="post in posts" :key="post.title" :post="post" />
+      <blog-post
+        v-for="post in posts"
+        :key="post.title"
+        :post="post"
+        post-type="blog"
+      />
     </div>
   </page-wrapper>
 </template>
@@ -19,7 +24,7 @@ export default {
     BlogPost,
   },
   async asyncData({ $content }) {
-    const posts = await $content("blog").fetch();
+    const posts = await $content("blog", { text: true }).fetch();
     return {
       posts: posts.sort((a, b) => {
         return new Date(b.date) - new Date(a.date);

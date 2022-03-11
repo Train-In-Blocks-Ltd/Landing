@@ -8,10 +8,15 @@
       It can take up to an hour for the email to arrive. Be sure to check your
       inbox and spam mail.
     </txt>
-    <txt type="large-body">
+    <txt type="large-body" class="mb-8">
       Meanwhile, click
       <nuxt-link to="/help/" class="underline">here</nuxt-link> to learn how to
       use the app.
+    </txt>
+    <txt type="large-body">
+      Also, head over to our
+      <nuxt-link to="/blog/" class="underline">blog</nuxt-link> to learn
+      something new and find power in knowledge.
     </txt>
     <nuxt-link to="/">
       <txt type="large-body" class="underline mt-16" bold>Return Home</txt>
