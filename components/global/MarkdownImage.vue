@@ -17,7 +17,7 @@ export default {
   methods: {
     imgSrc() {
       try {
-        return require(`~/assets/media-uploads/${this.src}`);
+        return require(`~/assets/media-uploads/${this.src}?webp`);
       } catch (error) {
         return null;
       }
