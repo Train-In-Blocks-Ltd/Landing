@@ -13,7 +13,7 @@
     <img
       height="auto"
       width="auto"
-      :src="require('../../assets/images/trainer.jpg')"
+      :src="require('../../assets/images/trainer.jpg?webp')"
       class="gray ml-auto md:w-8/12 mt-16 xl:mt-0 xl:w-5/12 xl:ml-0 h-auto z-0"
       alt="Training people"
     />
