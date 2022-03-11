@@ -22,7 +22,6 @@ module.exports = {
         order: ["style", "template", "script"],
       },
     ],
-    "vue/script-setup-uses-vars": "off",
     "vue/require-default-prop": "off",
   },
 };

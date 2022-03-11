@@ -13,7 +13,7 @@
           height="auto"
           width="auto"
           :src="require(`../../assets/media-uploads/${blogPost.img}`)"
-          :alt="blogPost.title"
+          :alt="blogPost.alt || blogPost.title"
           class="gray aspect-square object-cover"
           loading="lazy"
         />
@@ -37,7 +37,7 @@
             <txt class="mr-4" bold> Continue reading </txt>
             <inline-svg :src="require('../../assets/svg/Arrow.svg')" />
           </nuxt-link>
-          <span>{{readingTime(blogPost.text)}} minute read</span>
+          <span>{{ readingTime(blogPost.text) }} minute read</span>
         </div>
       </div>
     </div>
@@ -63,11 +63,11 @@ export default {
     },
   },
   methods: {
-    readingTime (post) {
+    readingTime(post) {
       const avgWordsPerMin = 200;
       const count = post.match(/\w+/g).length;
       return Math.ceil(count / avgWordsPerMin);
-    }
+    },
   },
 };
 </script>

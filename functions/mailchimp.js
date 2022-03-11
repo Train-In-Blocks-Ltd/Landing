@@ -1,0 +1,57 @@
+const axios = require("axios");
+const headers = {
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "POST, OPTIONS",
+  "Content-Type": "application/json; charset=UTF-8",
+  "X-Frame-Options": "DENY",
+  "Strict-Transport-Security": "max-age=15552000; preload",
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "no-referrer",
+  "Content-Security-Policy": 'default-src "self"',
+};
+exports.handler = function handler(event, context, callback) {
+  if (event.httpMethod === "OPTIONS") {
+    return callback(null, {
+      statusCode: 200,
+      headers,
+      body: "",
+    });
+  } else if (event.body && JSON.parse(event.body).email) {
+    axios
+      .post(
+        "https://us8.api.mailchimp.com/3.0/lists/73101450d0/members/",
+        {
+          email_address: JSON.parse(event.body).email,
+          status: "subscribed",
+          tags: ["Client user"],
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Origin: "https://traininblocks.com",
+            Authorization: "Basic c6cac5a9179698482b202a29d1c88988-us8",
+          },
+        }
+      )
+      .then((mc) => {
+        return callback(null, {
+          statusCode: 200,
+          headers,
+          body: JSON.stringify(mc.data),
+        });
+      })
+      .catch((e) => {
+        return callback(null, {
+          statusCode: e.response.data.status,
+          headers,
+          body: e.response.data.detail,
+        });
+      });
+  } else {
+    return callback(null, {
+      statusCode: 400,
+      headers,
+      body: "400 - Bad Request",
+    });
+  }
+};

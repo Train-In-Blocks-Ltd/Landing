@@ -6,13 +6,14 @@ author: Jamie Spoor
 date: 2022-02-25T13:45:57.978Z
 postDesc: Make your healthy pancakes with TIB.
 ---
+
 As February gives way to March and spring draws near, Shrove Tuesday marks the start of Lent - 47 days before Easter and, as history suggests, a time of fasting. It's a moveable feast, quite literally, depending on when Easter is, but in 2022 Shrove Tuesday - aka Pancake Day - falls today, on 1st March. It really has 'creped' up on us this year...
 
 Why not cook up your own pancakes - Train In Blocks style - with our healthy version of this much loved and ever popular dessert.
 
 ## Origins of Pancake Day
 
-Lent was traditionally a time of famine and  and so to use up the last dregs of the perishables such as eggs, flour, and butter, pancakes were made to provide one last meal before embarking on the pre-Easter fast. The three main ingredients (eggs, flour, and milk) come to symbolise points of significance associated with this time of year: creation, life, and purity respectively. In the UK, traditions such as pancake races and pancake breakfasts are also held on Shrove Tuesday dating back to the 14th century and continuing to this day.
+Lent was traditionally a time of famine and and so to use up the last dregs of the perishables such as eggs, flour, and butter, pancakes were made to provide one last meal before embarking on the pre-Easter fast. The three main ingredients (eggs, flour, and milk) come to symbolise points of significance associated with this time of year: creation, life, and purity respectively. In the UK, traditions such as pancake races and pancake breakfasts are also held on Shrove Tuesday dating back to the 14th century and continuing to this day.
 
 The tradition has spread throughout Europe, with people in France following the trend too - serving waffles and crepes to utilise their dairy products.
 
@@ -20,11 +21,11 @@ The tradition has spread throughout Europe, with people in France following the 
 
 You will need:
 
-* 50g self raising flour
-* 50g wholemeal or wholegrain flour
-* 2 small eggs
-* 150ml skimmed milk
-* Berries, fruit or fromage frais to serve
+- 50g self raising flour
+- 50g wholemeal or wholegrain flour
+- 2 small eggs
+- 150ml skimmed milk
+- Berries, fruit or fromage frais to serve
 
 ## Now for the how
 

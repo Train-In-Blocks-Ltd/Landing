@@ -1,10 +1,10 @@
 ---
 title: What did we do in Pegasus 3.2.4?
-date: 2021 03 12
-img: 1.svg
-slug: pegasus-3-2-4
+slug: pegasus-update
+img: laptop.png
 postDesc: A quick overview on the changes made in this update so far.
-show: true
+author: Mikey Lau
+date: "2021-03-12"
 ---
 
 ## Dark mode
@@ -17,7 +17,7 @@ We've made a minor change to how the editor looks but it still works in a simila
 
 ## Plan overview
 
-You can now organise your plans in the order that they will occur. Much like a periodised model, you can see how the number of microcycles and their colour-code in this general overview.
+You can now organise your plans in the order that they will occur. Much like a periodized model, you can see how the number of microcycles and their colour-code in this general overview.
 
 ## Printing session
 

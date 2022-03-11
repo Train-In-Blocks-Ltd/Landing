@@ -28,34 +28,25 @@
     />
     <form
       id="mc-embedded-subscribe-form"
-      action="https://traininblocks.us8.list-manage.com/subscribe/post?u=a2c4d1f0522fa78cbfc518fc0&amp;id=73101450d0"
       method="post"
       name="mc-embedded-subscribe-form"
       class="validate grid gap-2 w-full my-12"
-      target="_blank"
       novalidate
+      @submit.prevent="mcSignup"
     >
       <label for="mce-EMAIL" class="mb-4"
         >Want to manage your clients easily?</label
       >
       <input
         id="mce-EMAIL"
+        v-model="email"
         type="email"
-        value=""
         name="EMAIL"
         class="email z-10"
         style="background-color: white"
         placeholder="Email"
         required
       />
-      <div style="position: absolute; left: -5000px" aria-hidden="true">
-        <input
-          type="text"
-          name="b_a2c4d1f0522fa78cbfc518fc0_73101450d0"
-          tabindex="-1"
-          value=""
-        />
-      </div>
       <div class="clear mt-4">
         <input
           id="mc-embedded-subscribe"
@@ -64,17 +55,45 @@
           name="subscribe"
           class="button"
         />
+        <p class="mt-4" style="min-height: 1.5em" v-text="message" />
       </div>
     </form>
   </card-wrapper>
 </template>
 
 <script>
+import axios from "axios";
 import CardWrapper from "../generic/CardWrapper";
 
 export default {
   components: {
     CardWrapper,
+  },
+  data() {
+    return {
+      email: "",
+      message: " ",
+    };
+  },
+  methods: {
+    async mcSignup() {
+      try {
+        await axios.post("/.netlify/functions/mailchimp", {
+          email: this.email,
+        });
+        this.message =
+          "To complete the subscription process, please click the link in the email we just sent you.";
+      } catch (e) {
+        if (e.response.status === 400) {
+          this.message =
+            "You're already signed up to our mailing list. Thank you!";
+        } else {
+          // eslint-disable-next-line
+          console.error(e);
+          this.message = e.response.data;
+        }
+      }
+    },
   },
 };
 </script>
