@@ -1,13 +1,13 @@
 <template>
   <card-wrapper
-    class="md:flex relative justify-center items-center text-center mx-auto w-full lg:w-2/3 xl:1/3 px-8 pt-4"
+    class="md:flex relative justify-center items-center text-center mx-auto w-full xl:w-2/3 2xl:1/3 px-8 pt-4"
     no-hover
   >
     <img
       height="auto"
       width="auto"
       :src="require('../../assets/images/trainer-facing.png')"
-      class="z-0 absolute top-0 right-0 gray opacity-20 h-64 md:mr-12 md:relative md:opacity-100"
+      class="z-0 absolute bottom-0 right-0 gray opacity-20 h-64 md:mr-12 md:relative md:opacity-100"
       alt="Trainer"
       loading="lazy"
     />
@@ -22,7 +22,7 @@
 <script>
 import Txt from "../elements/Txt";
 import CardWrapper from "./CardWrapper";
-import MailchimpSignUp from './MailchimpSignUp';
+import MailchimpSignUp from "./MailchimpSignUp";
 
 export default {
   components: {

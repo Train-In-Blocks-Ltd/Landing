@@ -5,7 +5,7 @@
 </style>
 
 <template>
-  <div class="h-fit w-auto cursor-pointer self-center">
+  <div class="h-fit cursor-pointer self-center">
     <label v-if="label" :for="name" :class="labelClass">
       {{ label }}
     </label>
@@ -31,10 +31,7 @@
 </template>
 
 <script>
-const Txt = () =>
-  import(
-    /* webpackChunkName: "components.txt", webpackPrefetch: true  */ "./Txt"
-  );
+import Txt from "../elements/Txt";
 
 export default {
   components: {
