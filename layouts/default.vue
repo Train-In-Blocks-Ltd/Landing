@@ -235,7 +235,7 @@ export default {
         image: "https://traininblocks.com/android-chrome-512x512.png",
         url: "https://traininblocks.com",
       },
-      exitIntent: true,
+      exitIntent: false,
     };
   },
   head() {
