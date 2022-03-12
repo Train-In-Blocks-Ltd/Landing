@@ -47,10 +47,10 @@
       @output="(data) => (contactForm.message = data)"
     />
     <label class="flex items-center gap-2 mb-4">
-      <input v-model="contactForm.mcConsent" type="checkbox">
+      <input v-model="contactForm.mcConsent" type="checkbox" />
       <span>
         By ticking this box you consent to us adding you to our mailing list.
-        <br>
+        <br />
         We promise not to spam you!
       </span>
     </label>
@@ -94,7 +94,7 @@ export default {
         email: "",
         confirm: "",
         message: "",
-        mcConsent: false
+        mcConsent: false,
       },
       submitted: null,
       submittedClasses: "",
@@ -125,31 +125,29 @@ export default {
           message: "",
         };
         this.submitted = "Message sent successfully!";
-        this.submittedClasses =
-          "text-green-700";
+        this.submittedClasses = "text-green-700";
       } catch (e) {
         // eslint-disable-next-line
-        console.error(e)
+        console.error(e);
         this.submitted = e.toString() + " Please try again.";
-        this.submittedClasses =
-          "text-red-700";
+        this.submittedClasses = "text-red-700";
       }
       try {
         if (this.contactForm.mcConsent) {
           await axios.post("/.netlify/functions/mailchimp", {
-            email: this.contactForm.email
-          })
+            email: this.contactForm.email,
+          });
         }
       } catch (e) {
         // eslint-disable-next-line
-        console.error(e)
+        console.error(e);
       }
     },
     ValidateEmail(mail) {
       if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
-        return (true)
+        return true;
       }
-      return (false)
+      return false;
     },
   },
 };
