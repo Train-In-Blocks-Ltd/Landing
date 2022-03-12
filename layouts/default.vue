@@ -161,32 +161,6 @@ div.cookieControl__ModalContent label:before {
 .modal-leave-to {
   opacity: 0;
 }
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 32px;
-  height: 32px;
-  opacity: 0.3;
-  transition: opacity .5s
-}
-.close:hover {
-  opacity: 1;
-}
-.close:before, .close:after {
-  position: absolute;
-  left: 0;
-  content: ' ';
-  height: 33px;
-  width: 2px;
-  background-color: #333;
-}
-.close:before {
-  transform: rotate(45deg);
-}
-.close:after {
-  transform: rotate(-45deg);
-}
 </style>
 
 <template>
@@ -205,19 +179,26 @@ div.cookieControl__ModalContent label:before {
       </nuxt-link>
     </div>
     <footer-section />
+
+    <!-- Pop up intent -->
     <transition name="modal">
-      <div v-if="exitIntent" id="my-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" @click="exit">
-        <div class="relative top-20 mx-auto p-5 border shadow-lg rounded-md bg-white">
-          <button type="button" class="close" @click="exit" />
+      <div
+        v-if="exitIntent"
+        id="my-modal"
+        class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
+        @click="exit"
+      >
+        <div class="relative top-20 mx-auto p-8 rounded-md bg-white">
+          <inline-svg
+            :src="require('../assets/svg/close.svg')"
+            class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all"
+            @click="exitIntent = false"
+          />
           <div class="text-center">
-            <txt type="subtitle" class="my-4">
-              Before you go...
-            </txt>
-            <txt type="title" class="my-4">
-              Let's stay connected!
-            </txt>
+            <txt type="title" class="my-4"> Let's stay connected! </txt>
             <txt type="large-body" class="my-8">
-              Learn everything that personal trainers need to know to profit and grow!
+              Learn everything that personal trainers need to know to profit and
+              grow!
             </txt>
             <mailchimp-sign-up />
           </div>
@@ -231,7 +212,7 @@ div.cookieControl__ModalContent label:before {
 import NavMenu from "../components/extensive/NavMenu";
 import NavBar from "../components/extensive/NavBar";
 import FooterSection from "../components/extensive/FooterSection";
-import MailchimpSignUp from '../components/generic/MailchimpSignUp';
+import MailchimpSignUp from "../components/generic/MailchimpSignUp";
 import Txt from "../components/elements/Txt";
 
 export default {
@@ -254,7 +235,7 @@ export default {
         image: "https://traininblocks.com/android-chrome-512x512.png",
         url: "https://traininblocks.com",
       },
-      exitIntent: false
+      exitIntent: true,
     };
   },
   head() {
@@ -292,65 +273,63 @@ export default {
       link: [{ hid: "canonical", rel: "canonical", href: this.metaHelper.url }],
     };
   },
-  mounted () {
-    const mouseEvent = e => {
+  mounted() {
+    const mouseEvent = (e) => {
       // Check that we are exiting the window at the top and not from the sides or bottom of the screen
-      const shouldShowExitIntent = 
-        !e.toElement && 
-        !e.relatedTarget &&
-        e.clientY < 10;
+      const shouldShowExitIntent =
+        !e.toElement && !e.relatedTarget && e.clientY < 10;
 
       if (shouldShowExitIntent) {
         // Remove the mouseout event listener so we don't get into a loop
-        document.removeEventListener('mouseout', mouseEvent);
+        document.removeEventListener("mouseout", mouseEvent);
         // Show the popup
-        this.exitIntent = true
-          
+        this.exitIntent = true;
+
         // Set the cookie when the popup is shown to the user - so we don't show the popup again for 30 days
-        this.setCookie('exitIntentShown', true, 30);
+        this.setCookie("exitIntentShown", true, 30);
       }
     };
     // Wrap the setTimeout into an if statement
-    if (!this.getCookie('exitIntentShown')) {
-        // Set timeout so exitintent isn't show on page load - wait 10 seconds
-        setTimeout(() => {
-          // Add event listener for when user leaves page
-          document.addEventListener('mouseout', mouseEvent);
-          // Add event listener for when user presses a key - which we listen to the escape key
-          document.addEventListener('keydown', this.exit);
-        }, 10000);
+    if (!this.getCookie("exitIntentShown")) {
+      // Set timeout so exitintent isn't show on page load - wait 10 seconds
+      setTimeout(() => {
+        // Add event listener for when user leaves page
+        document.addEventListener("mouseout", mouseEvent);
+        // Add event listener for when user presses a key - which we listen to the escape key
+        document.addEventListener("keydown", this.exit);
+      }, 10000);
     }
   },
   methods: {
     // Close the modal
     exit(e) {
       const shouldExit =
-        e.target.id === 'my-modal' || // user clicks on mask, not inside modal
-        e.target.className === 'close' || // user clicks on the close icon, not inside modal
+        e.target.id === "my-modal" || // user clicks on mask, not inside modal
+        e.target.className === "close" || // user clicks on the close icon, not inside modal
         e.keyCode === 27; // user hits escape
       if (shouldExit) {
-        this.exitIntent = false
+        this.exitIntent = false;
       }
     },
     setCookie(name, value, days) {
-      let expires = '';
+      let expires = "";
       if (days) {
-          const date = new Date();
-          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-          expires = '; expires=' + date.toUTCString();
+        const date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = "; expires=" + date.toUTCString();
       }
-      document.cookie = name + '=' + (value || '')  + expires + ';';
+      document.cookie = name + "=" + (value || "") + expires + ";";
     },
     getCookie(name) {
-      const cookies = document.cookie.split(';');
+      const cookies = document.cookie.split(";");
       for (const cookie of cookies) {
         // eslint-disable-next-line
-        if (cookie.indexOf(name + '=') > -1) {
-            return cookie.split('=')[1];
+        if (cookie.indexOf(name + "=") > -1) {
+          return cookie.split("=")[1];
         }
       }
       return null;
-    }
-  }
+    },
+  },
 };
 </script>
