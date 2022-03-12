@@ -31,10 +31,7 @@
 </template>
 
 <script>
-const Txt = () =>
-  import(
-    /* webpackChunkName: "components.txt", webpackPrefetch: true  */ "./Txt"
-  );
+import Txt from "../elements/Txt";
 
 export default {
   components: {
