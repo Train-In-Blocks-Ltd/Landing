@@ -183,6 +183,7 @@ export default async () => {
       "@aceforth/nuxt-optimized-images",
       "@nuxtjs/pwa",
       "@nuxt/postcss8",
+      "@nuxtjs/google-analytics",
     ],
     /*
      ** Nuxt.js modules
@@ -205,6 +206,9 @@ export default async () => {
       ],
       "@nuxt/content",
     ],
+    googleAnalytics: {
+      id: "UA-167770206-1",
+    },
     cookies: {
       necessary: [
         {

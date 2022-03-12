@@ -150,7 +150,7 @@ div.cookieControl__ModalContent label:before {
   }
 }
 
-#my-modal > div {
+#exit-modal > div {
   width: Min(900px, calc(100vw - 4rem));
 }
 .modal-enter-active,
@@ -184,7 +184,7 @@ div.cookieControl__ModalContent label:before {
     <transition name="modal">
       <div
         v-if="exitIntent"
-        id="my-modal"
+        id="exit-modal"
         class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
         @click="exit"
       >
@@ -287,11 +287,19 @@ export default {
 
         // Set the cookie when the popup is shown to the user - so we don't show the popup again for 30 days
         this.setCookie("exitIntentShown", true, 30);
+
+        // GA event
+        this.$ga.event({
+          eventCategory: "intake",
+          eventAction: "exit-intent",
+          eventLabel: "show",
+          eventValue: 1,
+        });
       }
     };
     // Wrap the setTimeout into an if statement
     if (!this.getCookie("exitIntentShown")) {
-      // Set timeout so exitintent isn't show on page load - wait 10 seconds
+      // Set timeout so exit intent isn't show on page load - wait 10 seconds
       setTimeout(() => {
         // Add event listener for when user leaves page
         document.addEventListener("mouseout", mouseEvent);
@@ -303,13 +311,7 @@ export default {
   methods: {
     // Close the modal
     exit(e) {
-      const shouldExit =
-        e.target.id === "my-modal" || // user clicks on mask, not inside modal
-        e.target.className === "close" || // user clicks on the close icon, not inside modal
-        e.keyCode === 27; // user hits escape
-      if (shouldExit) {
-        this.exitIntent = false;
-      }
+      if (e.target.id === "exit-modal") this.exitIntent = false;
     },
     setCookie(name, value, days) {
       let expires = "";
