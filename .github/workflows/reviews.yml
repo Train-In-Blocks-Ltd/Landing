@@ -1,15 +1,10 @@
-name: Add Reviewers
-
-on: [pull_request]
+name: "Auto Assign"
+on:
+  pull_request:
+    types: [opened, ready_for_review]
 
 jobs:
-  build:
+  add-reviews:
     runs-on: ubuntu-latest
     steps:
-      - name: Add Reviewers
-        uses: madrapps/add-reviewers@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          reviewers: MikeyJL, joebailey26
-          re-request-when-approved: true
-          re-request-when-changes-requested: true
+      - uses: kentaro-m/auto-assign-action@v1.2.1
