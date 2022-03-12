@@ -2,7 +2,7 @@
   <div id="pricing">
     <txt type="title" class="mb-16 pt-8">Pricing</txt>
     <div class="grid lg:grid-cols-2 gap-8">
-      <card-wrapper class="p-4" no-shadow no-hover>
+      <card-wrapper id="demo" class="p-4" no-shadow no-hover>
         <div class="flex justify-between">
           <txt type="title"> Free </txt>
           <link-button
@@ -19,6 +19,7 @@
       </card-wrapper>
       <card-wrapper
         v-for="(product, index) in products"
+        :id="product.name.toLowerCase()"
         :key="`product_${index}`"
         class="p-4"
         no-shadow
