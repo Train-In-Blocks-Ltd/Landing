@@ -33,6 +33,8 @@ Groundwater is a vital resource that provides almost half of all drinking water 
 
 A World Water Day on groundwater puts a spotlight on this invisible resource, enhance knowledge exchange and collaboration and in turn increase the awareness of the importance of taking care of our groundwater.
 
+<markdown-image src="waterbottle1.jpg" alt="waterbottle1"></markdown-image>
+
 ## Water and workouts
 
 Around 65% of our bodies are water, and it of course plays a vital role in every bodily function. You will lose much of this fluid when exercising - on average a litre or two an hour - so it's vital to replenish this supply when exercising in a gym. 
