@@ -11,7 +11,9 @@ I don't know about you, but doesn't it seem like there's a day to mark anything 
 
 But whilst these are perhaps reasonably well known, you can bet the vast majority of you reading this didn't know - like me - there was such a thing as World Water Day. Well (no pun intended!) there is and in 2022 it happens to be today, Tuesday 22 March.
 
-Of course, here at TIB we're all too aware of just how important fresh water is - especially when it comes to fitness and a tough session of pumping the iron down the gym. 
+Of course, at TIB we're all too aware of just how important fresh water is - especially when it comes to fitness and a tough session of pumping the iron down the gym. 
+
+In this piece we'll look you the origins of World Water Day, the idea behind it, how to do your bit as well as how we can help you here at Train in Blocks. 
 
 ## What is it?
 
@@ -29,9 +31,9 @@ For 2022, the theme of WWD is Groundwater: Making the Invisible Visible. The Wor
 
 Groundwater is a vital resource that provides almost half of all drinking water worldwide, about 40% of water for irrigated agriculture and about 1/3 of water required for world industries. It sustains ecosystems, maintains the base flow of rivers and prevents land subsidence and seawater intrusion. Groundwater is an important part of climate change adaptation process and is often a solution for people without access to safe water.
 
-A World Water Day on groundwater puts a spotlight on this invisible resource, enhance knowledge exchange and collaboration and thereby increase the awareness of the importance of taking care of our groundwater.
+A World Water Day on groundwater puts a spotlight on this invisible resource, enhance knowledge exchange and collaboration and in turn increase the awareness of the importance of taking care of our groundwater.
 
-## Water and workouts 
+## Water and workouts
 
 Around 65% of our bodies are water, and it of course plays a vital role in every bodily function. You will lose much of this fluid when exercising - on average a litre or two an hour - so it's vital to replenish this supply when exercising in a gym. 
 
