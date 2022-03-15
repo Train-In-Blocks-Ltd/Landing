@@ -33,7 +33,7 @@ Groundwater is a vital resource that provides almost half of all drinking water 
 
 A World Water Day on groundwater puts a spotlight on this invisible resource, enhance knowledge exchange and collaboration and in turn increase the awareness of the importance of taking care of our groundwater.
 
-<markdown-image src="waterbottle1.jpg" alt="waterbottle1"></markdown-image>
+<markdown-image src="waterbottle1.jpg" alt="waterbottle"></markdown-image>
 
 ## Water and workouts
 
