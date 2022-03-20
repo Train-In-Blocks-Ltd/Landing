@@ -21,7 +21,7 @@ World Water Day (WWD) is an annual United Nations observance day, first establis
 
 ## How is it marked?
 
-World Water Day is celebrated and marked around the world with a variety of events from economic forums, fundraising efforts, TV adverts, social media campaigns, competitions and educational activities. With climate change, the environment and ecosystem affect and result in the water-crises. Due to floods, drought, water pollution; vegetation, soil, rivers, and lakes are degrading.
+World Water Day is celebrated and marked around the world with a variety of events from economic forums, fundraising efforts, TV adverts, social media campaigns, competitions and educational activities. With climate change, the environment and ecosystem affect, and result in, the water crises. Due to floods, drought, water pollution; vegetation, soil, rivers, and lakes are degrading.
 
 For 2022, the theme of WWD is Groundwater: Making the Invisible Visible. The World Water Day campaign this year is built around three main groundwater-related topics and issues, namely: 
 
@@ -50,9 +50,9 @@ If you don’t top this fluid back up, you can get dehydrated. This can affect b
 
 Water helps fuel your muscles, so drinking before, during and after exercise will boost your energy levels, and may help to prevent cramps.
 
-Dehydration, when you lose more water than you take in,  can effect anyone no matter how healthy. This makes it harder for your body to maintain basic jobs like keeping energy levels up and your temperature steady. 
+Dehydration, when you lose more water than you take in, can effect anyone no matter how healthy. This makes it harder for your body to maintain basic jobs like keeping energy levels up and your temperature steady. 
 
 
-Drinking little and often rather than a lot less often will give you the best chance of hitting your exercise targets - the amount you need to drink depends on how much you sweat and the length and intensity of your workout. A short water break between sets or during quick breaks from cardio can help stave off exercise-induced dehydration, keeping you at your best for consistently high performance.
+Drinking little and often rather than a lot less often will give you the best chance of hitting your exercise targets –the amount you need to drink depends on how much you sweat and the length and intensity of your workout. A short water break between sets or during quick breaks from cardio can help stave off exercise induced dehydration, keeping you at your best for consistently high performance.
 
 Commemorate World Water Day on Tuesday by keeping hydrated, drinking plenty of water during your gym workout, and spare a thought for those without access to a precious commodity we all take for granted.
