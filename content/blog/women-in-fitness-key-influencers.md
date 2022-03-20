@@ -19,7 +19,7 @@ Although not a medically qualified doctor, the outspoken - and often controversi
 
 On her blog, McKeith points out that food is potentially an emotional issue. It can be uncomfortable for some people to have to give up certain junk foods to which they have become accustomed. Gillian’s goal is to make it easier for people to get onto the path of a new life, keep them supported, motivated and inspired; her mission is to empower people to improve their lives through information, food and lifestyle. By keeping fit, maintaining a healthy diet and smashing your fitness goals, TIB can look to follow Gillian's philosophy when it comes to getting in your groove. You can take a look at Gillian's strength and aerobics training ideas here: [](https://gillianmckeith.com/your-body/fitness/home-exercise/)
 
-##  Lindsey Vonn
+## Lindsey Vonn
 
 Olympic gold medallist and World champion ski racer Vonn has become a social media sensation with her home workouts and collaboration with an award winning personal training brand. 
 Since retiring from the ice in 2019 with two Olympic and eight World Cup medals in her pocket, American Vonn has been putting her expertise to good use, swapping skis for the treadmill in creating exclusive content and running fitness and personal training classes as smart home gym Tempo's Coach and Strategic Advisor. 
@@ -46,4 +46,4 @@ After several attempts, costume designer and Lindahl's business partner Polly Sm
 
 Our very own marketing and branding queen, the lovely lass from Birmingham and now an adopted maid of Kent, Hannah  is the brains behind the operation that is TIB.
 
- In short, she makes it all happen and keeps us all in order. My one time gym buddy and now respected colleague, she's always in our ears, but always offering advice and support particularly in these early days of our business. Hannah's steady hand on the tiller - particularly with the social media and SEO side of us, has helped to keep us running. Without her, TIB wouldn't be where we are now as we continue to grow. Thank you Hannah and well done! You're a star.
+ In short, she makes it all happen and keeps us all in order. My one time gym buddy and now respected colleague, Hannah always offers advice and support particularly in these early days of our business. Hannah's steady hand on the tiller - particularly with the social media and SEO side of us, has helped to keep us running. Without her, TIB wouldn't be where we are now as we continue to grow. Thank you Hannah and well done! You're a star.
