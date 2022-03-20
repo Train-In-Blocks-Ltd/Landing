@@ -13,7 +13,7 @@ We love how there's a national day for everything now, from women to tea, to dog
 
 Of course, at TIB we're all too aware of just how important water is - especially when it comes to fitness and a tough session of pumping the iron down the gym. 
 
-In this piece, we'll look at the origins of World Water Day, the idea behind it, how to do your bit as well as how we can help you here at Train In Blocks. 
+In this piece, we'll look into the origins of World Water Day, the idea behind it, how to do your bit as well as how we can help you here at Train In Blocks. 
 
  What is it?
 
