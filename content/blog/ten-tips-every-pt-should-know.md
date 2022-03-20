@@ -19,7 +19,7 @@ If you don't give people a specific reason to work with you, they won't come up 
 
  Set your schedule
 
-By keeping an efficient and well maintained schedule, you immediately appear much more professional and focused to your clients. You will come across as someone who's passionate about what they do, as well as someone who won't let them down by turning up late or unprepared or even not at all - all of which are, of course, significant red flags.\
+By keeping an efficient and well maintained schedule, you immediately appear much more professional and focused to your clients. You will come across as someone who's passionate about what they do, as well as someone who won't let them down by turning up late, unprepared or even not at all - all of which are, of course, significant red flags.\
 By being organised to a high level, it will also allow you to maintain a strong work/life balance, in turn preventing the risk of fatigue/burnout and preserving your career. This is perhaps the most essential piece of advice we can give you - to always stay organised and structured in your approach.
 
  Never stop learning
