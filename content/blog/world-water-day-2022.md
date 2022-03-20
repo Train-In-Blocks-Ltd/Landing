@@ -9,9 +9,9 @@ postDesc: "Keep hydrated as we mark World Water Day 2022 "
 ---
 Our earth is made up of 70% of the stuff, so it figures the wonderful world of water should get its own moment in the national spotlight.
 
-We love how there's a national day for everything now, from women to tea, to dogs, babies and patron saints. Like me, I bet you didn't know there's a World Water Day and this year it takes place today - 22nd March. 
+We love how there's a national day for everything now, from women to tea, to dogs, babies and patron saints. Like me, I bet you didn't know there's a World Water Day and this year it takes place today, 22nd March. 
 
-Of course, at TIB we're all too aware of just how important water is - especially when it comes to fitness and a tough session of pumping the iron down the gym. 
+Of course, at TIB we're all too aware of just how important water is especially when it comes to fitness and a tough session of pumping the iron down the gym. 
 
 In this piece, we'll look into the origins of World Water Day, the idea behind it, how to do your bit as well as how we can help you here at Train In Blocks. 
 
@@ -44,13 +44,15 @@ A World Water Day on groundwater puts a spotlight on this invisible resource, en
 
 ## Water and workouts
 
-Around 65% of our bodies are comprised of water, and it plays a vital role in every bodily function. You will lose much of this fluid when exercising - on average a litre or two an hour - so it's vital to replenish this supply whenever exercising. Good hydration is also important for HIIT: http://traininblocks.com/blog/hiit. 
+Around 65% of our bodies are comprised of water, and it plays a vital role in every bodily function. You will lose much of this fluid when exercising  on average a litre or two an hour –  so it's vital to replenish this supply whenever exercising. Good hydration is also important for HIIT: http://traininblocks.com/blog/hiit. 
 
 If you don’t top this fluid back up, you can get dehydrated. This can affect both your general health and how well you can exercise. You’ll feel tired more quickly if you’re dehydrated, and you won’t be able to control your temperature as well as usual.
 
 Water helps fuel your muscles, so drinking before, during and after exercise will boost your energy levels, and may help to prevent cramps.
 
-Dehydration, when you lose more water than you take in - can effect anyone no matter how healthy. This makes it harder for your body to maintain basic jobs like keeping energy levels up and your temperature steady. 
+Dehydration, when you lose more water than you take in,  can effect anyone no matter how healthy. This makes it harder for your body to maintain basic jobs like keeping energy levels up and your temperature steady. 
+
+
 Drinking little and often rather than a lot less often will give you the best chance of hitting your exercise targets - the amount you need to drink depends on how much you sweat and the length and intensity of your workout. A short water break between sets or during quick breaks from cardio can help stave off exercise-induced dehydration, keeping you at your best for consistently high performance.
 
 Commemorate World Water Day on Tuesday by keeping hydrated, drinking plenty of water during your gym workout, and spare a thought for those without access to a precious commodity we all take for granted.
