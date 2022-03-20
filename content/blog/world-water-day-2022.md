@@ -9,17 +9,17 @@ postDesc: "Keep hydrated as we mark World Water Day 2022 "
 ---
 Our bodies are made up by 70% of the stuff, so it figures the wonderful world of water should get its own moment in the national spotlight.
 
-We love how there's a national day for everything now, from women to tea, to dogs, babies, patron saints and water. Yes, there is indeed a World Water Day and this year it takes place today - 22nd March. 
+We love how there's a national day for everything now, from women to tea, to dogs, babies and patron saints. Like me, I bet you didn't know there's a World Water Day and this year it takes place today - 22nd March. 
 
-Of course, at TIB we're all too aware of just how important fresh water is - especially when it comes to fitness and a tough session of pumping the iron down the gym. 
+Of course, at TIB we're all too aware of just how important water is - especially when it comes to fitness and a tough session of pumping the iron down the gym. 
 
 In this piece, we'll look at the origins of World Water Day, the idea behind it, how to do your bit as well as how we can help you here at Train in Blocks. 
 
-What is it?
+## What is it?
 
 World Water Day (WWD) is an annual United Nations observance day, first established in 1993 (www.un.org.en). Its aim is to highlight the importance of fresh water and to champion the use for sustainable management of freshwater resources. WWD celebrates water and raises awareness of the 2 billion people living without access to this most basic yet precious commodity whilst tackling the global water crisis. By the year 2030, WWD aims to support the achievement of Sustainable Development through water and Sanitation for all. 
 
-How is it marked?
+## How is it marked?
 
 World Water Day is celebrated and marked around the world with a variety of events from economic forums, fundraising efforts, TV adverts, social media campaigns, competitions and educational activities. With climate change, the environment and ecosystem affect and result in the water-crises. Due to floods, drought, water pollution; vegetation, soil, rivers, and lakes are degrading.
 
@@ -29,15 +29,15 @@ For 2022, the theme of WWD is Groundwater: Making the Invisible Visible. The Wor
 * A resource without borders
 * A finite supply 
 
-The National Geographic Society (www.nationalgeographic.org) describes groundwater as a vital resource that provides almost half of all drinking water worldwide, about 40% of water for irrigated agriculture and about 1/3 of water required for world industries. It sustains ecosystems, maintains the base flow of rivers and prevents land subsidence and seawater intrusion. Groundwater is an important part of climate change adaptation process and is often a solution for people without access to safe water.
+The National Geographic Society (www.nationalgeographic.org) explains how groundwater is a vital resource that provides almost half of all drinking water worldwide, about 40% of water for irrigated agriculture and about 1/3 of water required for world industries. It sustains ecosystems, maintains the base flow of rivers and prevents land subsidence and seawater intrusion. Groundwater is an important part of climate change adaptation process and is often a solution for people without access to safe water.
 
 A World Water Day on groundwater puts a spotlight on this invisible resource, enhance knowledge exchange and collaboration and in turn increase the awareness of the importance of taking care of our groundwater.
 
 <markdown-image src="waterbottle1.jpg" alt="waterbottle"></markdown-image>
 
-Water and workouts
+## Water and workouts
 
-Around 65% of our bodies are comprised of water, and it of course plays a vital role in every bodily function. You will lose much of this fluid when exercising - on average a litre or two an hour - so it's vital to replenish this supply whenever exercising. Good hydration is also important for HIIT: http://traininblocks.com/blog/hiit. 
+As we mentioned earlier, around 65% of our bodies are comprised of water, and it plays a vital role in every bodily function. You will lose much of this fluid when exercising - on average a litre or two an hour - so it's vital to replenish this supply whenever exercising. Good hydration is also important for HIIT: http://traininblocks.com/blog/hiit. 
 
 If you don’t top this fluid back up, you can get dehydrated. This can affect both your general health and how well you can exercise. You’ll feel tired more quickly if you’re dehydrated, and you won’t be able to control your temperature as well as usual.
 
