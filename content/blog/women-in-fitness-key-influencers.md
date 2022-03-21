@@ -54,6 +54,6 @@ After several attempts, costume designer and Lindahl's business partner Polly Sm
 
 ## Hannah Rose Goodman
 
-Our very own marketing and branding queen, the lovely lass from Birmingham and now an adopted maid of Kent, Hannah  is the brains behind the operation that is TIB.
+Our very own marketing and branding queen, the lovely lass from Birmingham and now an adopted maid of Kent, Hannah is the brains behind the operation that is TIB.
 
  In short, she makes it all happen and keeps us all in order. My one time gym buddy and now respected colleague, Hannah always offers advice and support particularly in these early days of our business. Hannah's steady hand on the tiller - particularly with the social media and SEO side of us, has helped to keep us running. Without her, TIB wouldn't be where we are now as we continue to grow. Thank you Hannah and well done! You're a star.
