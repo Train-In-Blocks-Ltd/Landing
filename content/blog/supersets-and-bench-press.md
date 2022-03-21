@@ -2,9 +2,12 @@
 title: Effects of supersets on barbell bench press performance
 slug: supersets-and-bench-press
 img: man-bench-press.png
-postDesc: Supersets may help you improve your bench press performance depending on which outcome you desire. It will affect peak force and velocity differently.
+alt: Superset and barbell
 author: Mikey Lau
-date: "2021-03-03"
+date: 2021-03-04T00:00:00.000Z
+postDesc: Supersets may help you improve your bench press performance depending
+  on which outcome you desire. It will affect peak force and velocity
+  differently.
 ---
 
 ## What are _Quick Articles_?
