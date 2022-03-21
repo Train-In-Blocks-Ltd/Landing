@@ -32,6 +32,8 @@ Vonn worked with Tempo to expand their sport-inspired programme and help their c
 
 <https://www.youtube.com/watch?v=J7yefk6mcvg>
 
+<markdown-image src="lindseyvonn.jpeg" alt="lindsey vonn></markdown-image> (Source: @lindseyvonn)
+
 ## Elizabeth Cutler & Julie Rice
 
 In 2006, spin class teacher Ruth Zukerman introduced her client, estate agent Elizabeth Cutler, to entertainment head hunter Julie Rice and a fitness phenomena was born. The three entrepreneurial women started up SoulCycle - as the name suggests, a cycling company specialising in trendy studios, high end clients and intense cardio workouts. 
@@ -40,11 +42,15 @@ The classes combine HIIT, resistance and strength training whilst pushing the pe
 
 The ever-growing popularity of the classes have proved a hit (no pun intended) among iconic female figures including Michelle Obama, Beyonce and Victoria Beckham. The company is now set up in 99 locations and came to London in 2019. Cutler& Rice sold their shares in the company and stepped down as CEOs in 2016 - $90m richer.
 
+<markdown-image src="soulcycle-founders-jpeg" alt="soul cycle founders></markdown-image> (Startups.com)
+
 ## Lisa Lindahl
 
 Today, it's impossible to imagine going for a run or popping into a fitness class without a sports bra. But it wasn’t until 1977 that Lisa Lindahl, diagnosed with epilepsy aged four, created a girl's favourite workout partner. After picking up the habit of jogging, Lindahl began working on prototypes for a more supportive fitness bra.
 
 After several attempts, costume designer and Lindahl's business partner Polly Smith sewed two jockstraps together and Lindahl tested it on a run. This became the first workable sports bra prototype. The design of the “jockbra”—later known as the jogbra, and now the sports bra —has been improved and improved over the years, so much so its now an essential part of every girl's workout and exercise raison d'etre. In the "About" section on her website, there is the full story of Lindahl's life changing invention and the story of the "jogbra."  <http://www.lisalindahl.com/about/>
+
+<markdown-image src="lisalindahl.jpeg" alt="lisa lindahl></markdown-image> (lisalindahl.com)
 
 ## Hannah Rose Goodman
 
