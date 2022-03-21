@@ -17,7 +17,7 @@ Train In Blocks didn't want to let the occasion pass by without acknowledging th
 
 Although not a medically qualified doctor, the outspoken - and often controversial Scot - is a PhD in nutrition and a dietectic technician. Whatever your opinion on her may be, there can by no denying she has done more than her fair share in improving the nation's dietary conscience. 
 
-Despite the fact she is best known for fainting on live TV during her stint on the 2010 series of *I'm a Celebrity,* McKeith has also published diet books, five of which have become best sellers, developed her own range of foods, gels and powders and appeared on TV championing the benefits of healthy living.
+Despite the fact she is best known for fainting on live TV during her stint on the 2010 series of *I'm a Celebrity,* McKeith has also published diet books, five of which have become best sellers. She has also developed her own range of foods, gels and powders and appeared on TV championing the benefits of healthy living.
 
 On her blog, McKeith points out that food is potentially an emotional issue. It can be uncomfortable for some people to have to give up certain junk foods to which they have become accustomed. 
 
@@ -30,7 +30,7 @@ By keeping fit, maintaining a healthy diet and smashing your fitness goals, TIB 
 ## Lindsey Vonn
 
 Olympic gold medallist and World champion ski racer Vonn has become a social media sensation with her home workouts and collaboration with an award winning personal training brand. 
-Since retiring from the ice in 2019 with two Olympic and eight World Cup medals in her pocket, American Vonn has been putting her expertise to good use, swapping skis for the treadmill in creating exclusive content and running fitness and personal training classes as smart home gym Tempo's Coach and Strategic Advisor. 
+Since retiring from the ice in 2019 with two Olympic and eight World Cup medals in her pocket, American Vonn has been putting her expertise to good use. She has swapped skis for the treadmill in creating exclusive content and running fitness and personal training classes as smart home gym Tempo's Coach and Strategic Advisor. 
 
 <https://tempo.fit/blog/lindsey-vonn-joins-the-tempo-team>
 
@@ -56,7 +56,7 @@ The ever-growing popularity of the classes have proved a hit (no pun intended) a
 
 Today, it's impossible to imagine going for a run or popping into a fitness class without a sports bra. But it wasn’t until 1977 that Lisa Lindahl, diagnosed with epilepsy aged four, created a girl's favourite workout partner. After picking up the habit of jogging, Lindahl began working on prototypes for a more supportive fitness bra.
 
-After several attempts, costume designer and Lindahl's business partner Polly Smith sewed two jockstraps together and Lindahl tested it on a run. This became the first workable sports bra prototype. The design of the “jockbra”—later known as the jogbra, and now the sports bra —has been improved and improved over the years, so much so its now an essential part of every girl's workout and exercise raison d'etre. In the "About" section on her website, there is the full story of Lindahl's life changing invention and the story of the "jogbra."  <http://www.lisalindahl.com/about/>
+After several attempts, costume designer and Lindahl's business partner Polly Smith sewed two jockstraps together and Lindahl tested it on a run. This became the first workable sports bra prototype. The design of the “jockbra”—later known as the jogbra, and now the sports bra —has been improved and improved over the years, so much so its now an essential part of every girl's workout and exercise raison d'etre. In the "About" section on her website, there is the full story of Lindahl's life changing invention.  <http://www.lisalindahl.com/about/>
 
 <markdown-image src="lisalindahl.jpeg" alt="lisa lindahl></markdown-image> (lisalindahl.com)
 
