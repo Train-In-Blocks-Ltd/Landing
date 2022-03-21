@@ -51,12 +51,8 @@ Water helps fuel your muscles, so drinking before, during and after exercise wil
 
 Dehydration, when you lose more water than you take in, can effect anyone no matter how healthy. This makes it harder for your body to maintain basic jobs like keeping energy levels up and your temperature steady. 
 
-
-
 <markdown-image src="waterbottle1.jpg" alt="waterbottle"></markdown-image>
-
-
 
 Drinking little and often rather than a lot less often will give you the best chance of hitting your exercise targets –the amount you need to drink depends on how much you sweat and the length and intensity of your workout. A short water break between sets or during quick breaks from cardio can help stave off exercise induced dehydration, keeping you at your best for consistently high performance.
 
-Commemorate World Water Day on Tuesday by keeping hydrated, drinking plenty of water during your gym workout, and spare a thought for those without access to a precious commodity we all take for granted.
+Commemorate World Water Day on Tuesday by keeping hydrated, drinking plenty of water during your workouts, and spare a thought for those without access to a precious commodity we all take for granted.
