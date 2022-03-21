@@ -17,7 +17,9 @@ Train In Blocks didn't want to let the occasion pass by without acknowledging th
 
 Although not a medically qualified doctor, the outspoken - and often controversial Scot - is a PhD in nutrition and a dietectic technician. Whatever your opinion on her may be, there can by no denying she has done more than her fair share in improving the nation's dietary conscience. Despite the fact she is best known for fainting on live TV during her stint on the 2010 series of *I'm a Celebrity,* McKeith has also published diet books, five of which have become best sellers, developed her own range of foods, gels and powders and appeared on TV championing the benefits of healthy living.
 
-On her blog, McKeith points out that food is potentially an emotional issue. It can be uncomfortable for some people to have to give up certain junk foods to which they have become accustomed. Gillian’s goal is to make it easier for people to get onto the path of a new life, keep them supported, motivated and inspired; her mission is to empower people to improve their lives through information, food and lifestyle. By keeping fit, maintaining a healthy diet and smashing your fitness goals, TIB can look to follow Gillian's philosophy when it comes to getting in your groove. [](https://gillianmckeith.com/your-body/fitness/home-exercise/)
+On her blog, McKeith points out that food is potentially an emotional issue. It can be uncomfortable for some people to have to give up certain junk foods to which they have become accustomed. Gillian’s goal is to make it easier for people to get onto the path of a new life, keep them supported, motivated and inspired; her mission is to empower people to improve their lives through information, food and lifestyle. By keeping fit, maintaining a healthy diet and smashing your fitness goals, TIB can look to follow Gillian's philosophy when it comes to getting in your groove. 
+
+<markdown-image src="gillianmckeithjpeg" alt="gillianmckeith></markdown-image> (Source: McKeith Research Ltd) 
 
 ## Lindsey Vonn
 
