@@ -31,15 +31,15 @@ For 2022, the theme of WWD is Groundwater: Making the Invisible Visible. The Wor
 
 Groundwater is a vital resource that provides almost half of all drinking water worldwide, about 40% of water for irrigated agriculture and about 1/3 of water required for world industries. It sustains ecosystems, maintains the base flow of rivers and prevents land subsidence and seawater intrusion. Groundwater is an important part of climate change adaptation process and is often a solution for people without access to safe water.
 
-[Groundwater | National Geographic Society](https://www.nationalgeographic.org/encyclopedia/groundwater/)
-
-If you live in the UK you’ll be no stranger to rain. It feels as if it rains pretty much all the time and that rain is water that we could be using. Rainwater tanks can be installed either in your garden, close to the house, or ideally on the roof of your house (if you have a flat roof of course!).
-
-Rainwater harvesting, as it is known, is essentially collecting rainwater in a tank and then pumping it out into the house for use. If the water is to be consumed it will also need to go through a purification process, or you could just have it hooked up to your non-drinking taps, for example the bath or plumbed into the dishwasher or washing machine. This is just one of the ways in which humanity can help to use water sustainable. 
-
 A World Water Day on groundwater puts a spotlight on this invisible resource, enhance knowledge exchange and collaboration and in turn increase the awareness of the importance of taking care of our groundwater.
 
 <markdown-image src="groundwater,jpeg" alt="groundwater"></markdown-image>
+
+[Groundwater | National Geographic Society](https://www.nationalgeographic.org/encyclopedia/groundwater/)
+
+Here in the UK we're no strangers to rain. It feels as if it rains pretty much all the time and that rain is water that we could be using. Rainwater tanks can be installed either in your garden, close to the house, or ideally on the roof of your house (if you have a flat roof of course!).
+
+Rainwater harvesting, as it is known, is essentially collecting rainwater in a tank and then pumping it out into the house for use. If the water is to be consumed it will also need to go through a purification process, or you could just have it hooked up to your non-drinking taps, for example the bath or plumbed into the dishwasher or washing machine. This is just one of the ways in which humanity can help to use water sustainable. 
 
 ## Water and workouts
 
