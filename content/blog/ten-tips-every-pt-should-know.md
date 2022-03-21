@@ -26,7 +26,8 @@ By being organised to a high level, it will also allow you to maintain a strong 
 
 This is true in any job - indeed, it's a modern day mantra we can apply in all walks of life. Even after you've gone through your own training journey and are well on the way to becoming a fully-fledged PT, be sure to continue learning and expanding your knowledge. \
 The health and fitness industry is always shifting, so it's important to keep up to speed with the latest developments and the winds of change. Not only is there an ever growing raft of books, magazines and journals but we live in the age of the Internet - with tools like YouTube and Instagram, clients and consumers are now more "up to date" than ever. \
-We would definitely recommend incorporating different sources into your everyday working routine.
+We would definitely recommend incorporating different sources into your everyday working routine. We have some other top tips here:\
+https://traininblocks.com/blog/so-you-want-to-become-a-better-pt/
 
 Empower your clients
 
@@ -72,3 +73,5 @@ Completing a PT course is not only an essential prerequisite for most jobs, but 
 No matter how confident you are in your own ability, you simply cannot do it alone. We've mentioned how, without proper communication and scheduling, you won't be able to pass on your expertise or progress effectively as a personal trainer. Stay close to other trainers or entrepreneurs who inspire you. Your inner circle will be your greatest motivation, so make sure you’re surrounded by successful, trustworthy people. Attend network events regularly, introduce yourself to the people you don’t know at the certifications you attend, and be friendly to people you encounter in your day-to-day life. As the old adage said, it's not what you know, it's who you know. You can also consider, as we said earlier, connecting to social media groups and talking to other PTs.
 
 So there you have it - our "top ten" advice reel for personal trainers - whether you're just starting out on your journey or a season veteran, it's never too late to learn something new. We hope you will find this useful and that Train in Blocks has helped you, even if in just a small way, to become more polished at your craft.
+
+If you're just starting out on your journey, you can find some more fail safe advice here: https://origympersonaltrainercourses.co.uk/blog/personal-trainer-tips-for-beginners
