@@ -43,7 +43,7 @@ Rainwater harvesting, as it is known, is essentially collecting rainwater in a t
 
 ## Water and workouts
 
-Around 65% of our bodies are comprised of water, and it plays a vital role in every bodily function. You will lose much of this fluid when exercising  on average a litre or two an hour –  so it's vital to replenish this supply whenever exercising. Good hydration is also important for HIIT as mentioned on our blog. 
+Around 65% of our bodies are comprised of water, and it plays a vital role in every bodily function. You will lose much of this fluid when exercising  on average a litre or two an hour –  so it's vital to replenish this supply whenever exercising. Good hydration is also important for HIIT as mentioned elsewhere on our site. 
 
 If you don’t top this fluid back up, you can get dehydrated. This can affect both your general health and how well you can exercise. You’ll feel tired more quickly if you’re dehydrated, and you won’t be able to control your temperature as well as usual. 
 
