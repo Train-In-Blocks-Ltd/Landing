@@ -9,7 +9,7 @@ postDesc: Our essential advice for every personal trainer
 ---
 Being a good personal trainer has its perks perhaps more than any other job in the fitness industry - perhaps indeed more than any other job full stop: it's rewarding, it's potentially lucrative, you're making a difference to people's lives, you can become whoever you want to be and there's unlimited potential.
 
-But how do you stand out in a crowded market? Here, we'll explain how you can push your head above the parapet and become a PT your client will want to stay with. Here are Train In Blocks' ten pieces of "must know" advice to get you there.
+But how do you stand out in a crowded market? Here, we'll explain how you can push your head above the parapet and become a PT your client will want to stay with. Here is Train In Blocks' ten pieces of "must know" advice to get you there.
 
  Find your niche and 'own it'
 
@@ -19,8 +19,8 @@ If you don't give people a specific reason to work with you, they won't come up 
 
  Set your schedule
 
-By keeping an efficient and well maintained schedule, you immediately appear much more professional and focused to your clients. You will come across as someone who's passionate about what they do, as well as someone who won't let them down by turning up late, unprepared or even not at all - all of which are, of course, significant red flags.\
-By being organised to a high level, it will also allow you to maintain a strong work/life balance, in turn preventing the risk of fatigue/burnout and preserving your career. This is perhaps the most essential piece of advice we can give you - to always stay organised and structured in your approach.
+By keeping an efficient and well maintained schedule, you immediately appear much more professional and focused on your clients. You will come across as someone who's passionate about what they do, as well as someone who won't let them down by turning up late, unprepared or even not at all - all of which are, of course, significant red flags.\
+By being organised to a high level, it will also allow you as a personal trainer to maintain a strong work/life balance, in turn preventing the risk of fatigue/burnout and preserving your career. This is perhaps the most essential piece of advice we can give you - to always stay organised and structured in your approach.
 
  Never stop learning
 
@@ -33,7 +33,7 @@ Empower your clients
 
 Successful personal trainers should be so much more than simply someone who shapes your body. They have the potential to shape and transform lives too! They build confidence and self esteem, and embody the mantra that the sky's the limit with dedication and hard work. Bear this in mind when working closely with your clients and consider it's not only WHAT you do, but how you do it. Work on finding out exactly why they want to work with you and use this to encourage and motivate.
 
-Set milestones, help them achieve their goals, communicate the whole way through and rejoice every time that they hit their mark. Communication = motivation and you can also consider getting your clients friends on board too - perhaps set up group sessions with their family and expand to a wider support circle.
+Set milestones, help them achieve their goals, communicate the whole way through and rejoice every time that they hit their mark. Communication = motivation and you can also consider getting your clients' friends on board too - perhaps set up group sessions with their family and expand to a wider support circle.
 
 <markdown-image src="running-group.jpeg" alt="running-group"></markdown-image>
 
@@ -66,12 +66,12 @@ Expand your knowledge
 
 Successful personal trainers have a balanced combination of physical and mental skills. Knowledge of anatomy, physiology and sports science is essential. Boost your abilities by learning more about nutrition, diet, healthy weight loss, and other related areas. If you're just starting out as a personal trainer, you can earn entry-level income as an apprentice and gain the skills you need to become a higher-ranking trainer.
 
-Completing a PT course is not only an essential prerequisite for most jobs, but it equips you with all the necessary knowledge to be a good personal trainer. You will gain an extensive knowledge of human anatomy, physiology, nutrition principles, how to deliver training sessions and more. For example: if you’re interested in rehabilitation and recovery, why not explore a sports massage qualification?
+Completing a PT course is not only an essential prerequisite for most jobs, but it equips you with all the necessary knowledge to be a good personal trainer. You will gain extensive knowledge of human anatomy, physiology, nutrition principles, how to deliver training sessions and more. For example: if you’re interested in rehabilitation and recovery, why not explore a sports massage qualification?
 
  Network as often as you can
 
 No matter how confident you are in your own ability, you simply cannot do it alone. We've mentioned how, without proper communication and scheduling, you won't be able to pass on your expertise or progress effectively as a personal trainer. Stay close to other trainers or entrepreneurs who inspire you. Your inner circle will be your greatest motivation, so make sure you’re surrounded by successful, trustworthy people. Attend network events regularly, introduce yourself to the people you don’t know at the certifications you attend, and be friendly to people you encounter in your day-to-day life. As the old adage said, it's not what you know, it's who you know. You can also consider, as we said earlier, connecting to social media groups and talking to other PTs.
 
-So there you have it - our "top ten" advice reel for personal trainers - whether you're just starting out on your journey or a season veteran, it's never too late to learn something new. We hope you will find this useful and that Train in Blocks has helped you, even if in just a small way, to become more polished at your craft.
+So there you have it - our "top ten" advice reel for personal trainers - whether you're just starting out on your journey or a seasoned veteran, it's never too late to learn something new. We hope you will find this useful and that Train in Blocks has helped you, even if in just a small way, to become more polished at your craft.
 
 If you're just starting out on your journey, you can find some more fail safe advice here: https://origympersonaltrainercourses.co.uk/blog/personal-trainer-tips-for-beginners
