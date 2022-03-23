@@ -25,4 +25,32 @@ You know the drill; breakfast in bed, flowers, chocolates, pampering and maybe a
 
 But fitness is our vibe, so let’s look at Mother’s Day a little differently this time. Let’s look at it from a Health and Fitness perspective. And why not? She champions our health and wellbeing, doesn't she? Perhaps, indeed, more so than she looks after her own.
 
-She might be a stay-at-home mom who barely has time to think about health and fitness. She might be a mom already committed to a gym routine, or has concocted a list of routines that she follows at home or at the office. Or, she might have a liking for combat sports and follows everything that’s hot about it. Maybe she’s even training for it.
+She might be a stay-at-home mum who barely has time to think about health and fitness. She might be a mum already committed to a gym routine, or has concocted a list of routines that she follows at home or at the office. Or, she might have a liking for combat sports and follows everything that’s hot about it. Maybe she’s even training for it. Or maybe it's all of the above. 
+
+Either way, consider either doing a nice home workout with your mum or buy her a perfect Mother's Day gift for the fitness fanatic.
+
+Some ideas for these could be: 
+
+Exercise/workout: 
+
+**Squats**
+
+To perform a squat, stand with you feet shoulder width apart and toes pointed forward. Sit back (as if on a chair), keeping your chest upright and back neutral, whilst ensuring your core is activated for balance. Push through your heels to extend back to your starting stance and squeeze your glutes after each rep. Y
+
+**Push ups**
+
+Here, begin with hands below shoulders, core tight, and with your body in neutral stance - straight from head to heel in a "high plank" position. Bend at the elbows to lower your chest towards the ground, keeping elbows tight to your torso. Press through your hands into the ground as you push back up to your starting position. 
+
+**Mountain climbers**
+
+Don't worry, this one won't have you climbing Ben Nevis! Instead, begin with hands below shoulders, with your core again tight and body in a neutral position - again, as with the push ups, a straight line from head to heel in a "high plank" position. Lift one leg off the ground, drawing your knee as close as you can to your chest. Return to starting position, and switch legs, alternating between right and left. 
+
+**Lunges**
+
+For stationary lunges, begin in a split stance with you feet hip distance apart. Keeping weight through your front leg, bend down and bring your back knee nice and low until it's just above the ground. The front knee should be behind the front toes, with both legs forming a 90 degree angle. Press up through the front leg to return to your starting position. 
+
+**Glutes**
+
+**Downward to upward "dog"**
+
+You can find plenty more inspiration when it comes to home workouts  elsewhere on our TIB site.
