@@ -18,3 +18,11 @@ In keeping with our raison d'etre here at Fitness HQ, we'll look at how you can 
 It all began in the US of A in 1907 when a young woman called Anna Jarvis held a memorial to honour her own mother and all mothers in Grafton, West Virginia.  This event marked the first official observance of Mother’s Day and in 1914, US President Woodrow Wilson made a proclamation establishing the second Sunday of May as the official date in the US for the observance of a national day to celebrate mothers. The date varies from nation to nation, but the premise remains the same. 
 
 The idea slowly caught on, came to the UK and grew into the celebration we know today. As with all we celebrate, perhaps the traditional side of the occasion has been lost amidst the heavily commercialised world of 21st century Britain.
+
+## **How can we celebrate it?** 
+
+You know the drill; breakfast in bed, flowers, chocolates, pampering and maybe a spot of 'retail therapy." All ways, perfectly acceptable ones of course, in which we can show our Mum just how much she means to us. 
+
+But fitness is our vibe, so let’s look at Mother’s Day a little differently this time. Let’s look at it from a Health and Fitness perspective. And why not? She champions our health and wellbeing, doesn't she? Perhaps, indeed, more so than she looks after her own.
+
+She might be a stay-at-home mom who barely has time to think about health and fitness. She might be a mom already committed to a gym routine, or has concocted a list of routines that she follows at home or at the office. Or, she might have a liking for combat sports and follows everything that’s hot about it. Maybe she’s even training for it.
