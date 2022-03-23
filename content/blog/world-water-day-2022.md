@@ -9,7 +9,7 @@ postDesc: "Keep hydrated as we mark World Water Day 2022 "
 ---
 Our earth is made up of 70% of the stuff, so it figures the wonderful world of water should get its moment in the national spotlight.
 
-We love how there's a national day for everything now, from women to tea, to dogs, babies and patron saints. Like me, I bet you didn't know there's a World Water Day and this year it takes place today, 22nd March. 
+We love how there's a national day for everything now, from women to tea, to dogs, babies and patron saints. Like me, I bet you didn't know there's a World Water Day and this year it takes place on 22nd March. 
 
 Of course, at TIB we're all too aware of just how important water is, especially when it comes to fitness and a tough session of pumping the iron down the gym. 
 
