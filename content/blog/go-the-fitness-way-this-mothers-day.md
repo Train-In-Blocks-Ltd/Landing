@@ -31,7 +31,7 @@ Either way, consider either doing a nice home workout with your mum or buy her a
 
 Some ideas for these could be: 
 
-Exercise/workout: 
+Exercise/workout routine for a busy, working Mum: 
 
 **Squats**
 
@@ -51,6 +51,10 @@ For stationary lunges, begin in a split stance with you feet hip distance apart.
 
 **Glutes**
 
+To perform glute bridges, begin lying flat on your back with knees bent, feet firmly planted on the ground, and hands at your sides for support. With core tight and spine neutral, engage the glutes to press up through the hips. Slowly lower to the ground and repeat.
+
 **Downward to upward "dog"**
 
-You can find plenty more inspiration when it comes to home workouts  elsewhere on our TIB site.
+To perform this exercise, begin in a pushup position, then bend at the hips, keeping knees straight and spine neutral to shift hips up and back, pushing through the upper body to achieve a stretch in the calves and hamstrings, while pressing through the upper body to bring your chest closer to the ground. Bend at the elbows, and swoop into an upward dog position, extending through the chest and looking up towards the sky. Pause to breathe. Push back into downward dog and repeat.
+
+You can find plenty more inspiration when it comes to home exercise and workout  elsewhere on our TIB site.
