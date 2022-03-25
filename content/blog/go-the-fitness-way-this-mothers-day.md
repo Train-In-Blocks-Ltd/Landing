@@ -19,7 +19,7 @@ It all began in the US of A in 1907 when a young woman called Anna Jarvis held a
 
 The idea slowly caught on, came to the UK and grew into the celebration we know today. As with all we celebrate, perhaps the traditional side of the occasion has been lost amidst the heavily commercialised world of 21st century Britain.
 
-## **How can we celebrate it?** 
+## **How can we celebrate it?**
 
 You know the drill; breakfast in bed, flowers, chocolates, pampering and maybe a spot of 'retail therapy." All ways, perfectly acceptable ones of course, in which we can show our Mum just how much she means to us. 
 
@@ -58,3 +58,7 @@ To perform glute bridges, begin lying flat on your back with knees bent, feet fi
 To perform this exercise, begin in a pushup position, then bend at the hips, keeping knees straight and spine neutral to shift hips up and back, pushing through the upper body to achieve a stretch in the calves and hamstrings, while pressing through the upper body to bring your chest closer to the ground. Bend at the elbows, and swoop into an upward dog position, extending through the chest and looking up towards the sky. Pause to breathe. Push back into downward dog and repeat.
 
 You can find plenty more inspiration when it comes to home exercise and workout  elsewhere on our TIB site.
+
+If your mum is a fitness fanatic, why not forego the traditional Mother's Day gift in favour of something more sporty? You could consider a gym membership, a yoga mat, headphones or a new pair of running shoes to break from tradition and get your calorie busting Mum the perfect Mother's Day present. Etsy have a large range of gift ideas which you can find here: https://www.etsy.com/uk/market/mother_fitness_gift
+
+Happy Mother's Day to all mums and stepmums out there. You're all amazing!
