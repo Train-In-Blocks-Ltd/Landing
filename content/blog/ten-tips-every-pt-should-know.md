@@ -15,7 +15,7 @@ But how do you stand out in a crowded market? Here, we'll explain how you can pu
 
 Your first port of call should be to start building your business and develop your brand which will set you apart from the competition.\
 It's too simplistic just to say you specialise in 'everything' - decide what you want to focus on specifically and stay with it, whether it be as a weight loss expert, a strength and conditioning coach or training those at the peak of their physical fitness. \
-If you don't give people a specific reason to work with you, they won't come up with one of your own. Stay true to what you want to achieve, your 'uniqueness' is what makes your niche 'you.'
+If you don't give people a specific reason to work with you, they won't come up with one of your own. Stay true to what you want to achieve, your 'uniqueness' is what makes your niche 'you'.
 
  Set your schedule
 
