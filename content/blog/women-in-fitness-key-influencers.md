@@ -25,7 +25,7 @@ Gillian’s goal is to make it easier for people to get onto the path of a new l
 
 By keeping fit, maintaining a healthy diet and smashing your fitness goals, TIB can look to follow Gillian's philosophy when it comes to getting in your groove. 
 
-<markdown-image src="gillianmckeithjpeg" alt="gillianmckeith"></markdown-image> (Source: McKeith Research Ltd) 
+<markdown-image src="gillian-mckeith.jpeg" alt="gillianmckeith"></markdown-image> (Source: McKeith Research Ltd) 
 
 ## Lindsey Vonn
 
@@ -39,7 +39,7 @@ Vonn worked with Tempo to expand their sport-inspired programme and help their c
 
 <https://www.youtube.com/watch?v=J7yefk6mcvg>
 
-<markdown-image src="lindseyvonn.jpeg" alt="Lindsey Vonn"></markdown-image> (Source: @lindseyvonn)
+<markdown-image src="lindsey-vonn.jpeg" alt="Lindsey Vonn"></markdown-image> (Source: @lindseyvonn)
 
 ## Elizabeth Cutler & Julie Rice
 
@@ -51,7 +51,7 @@ Thanks to all those intervals, the workout boosts cardio endurance, burns major 
 
 The ever-growing popularity of the classes have proved a hit (no pun intended) among iconic female figures including Michelle Obama, Beyonce and Victoria Beckham. The company is now set up in 99 locations and came to London in 2019. Cutler& Rice sold their shares in the company and stepped down as CEOs in 2016 - $90m richer.
 
-<markdown-image src="soulcycle-founders-jpeg" alt="Soul Cycle Founders"></markdown-image> (Startups.com)
+<markdown-image src="soulcycle-founders.jpeg" alt="Soul Cycle Founders"></markdown-image> (Startups.com)
 
 ## Lisa Lindahl
 
@@ -67,4 +67,4 @@ Our very own marketing and branding queen, the lovely lass from Birmingham and n
 
 In short, she makes it all happen and keeps us all in order. My one time gym buddy and now respected colleague, Hannah always offers advice and support particularly in these early days of our business. Hannah's steady hand on the tiller - particularly with the social media and SEO side of us, has helped to keep us running. Without her, TIB wouldn't be where we are now as we continue to grow. Thank you Hannah and well done! You're a star.
 
-<markdown-image src="hannah.jpeg" alt="Hannah Rose Goodman"></markdown-image>
+<markdown-image src="hannah.jpg" alt="Hannah Rose Goodman"></markdown-image>
