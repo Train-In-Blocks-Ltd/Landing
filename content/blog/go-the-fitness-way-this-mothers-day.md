@@ -1,12 +1,14 @@
 ---
 title: Go the fitness way this Mother's Day
 slug: fitness-way-mothersday
-img: mum fitness
+img: mother's day.jpeg
 alt: fitness, mother's day, workout
 author: Jamie Spoor
 date: 2022-03-23T14:56:12.608Z
 postDesc: Celebrate Mother's Day in style
 ---
+Image credit: Barbell Athletic Club 
+
 Hot on the heels of World Water Day comes another celebration of all we hold dear - it's that time of year again, yes, of course, it's Mother's Day. 
 
 Every year we commemorate all things "mum" and this year it falls on Sunday 27th March. Whether she's your real mother, your stepmother or simply the motherly figure in your life, it's time to stop, reflect and simply say thank you to the wonder woman in your life.
@@ -58,7 +60,3 @@ To perform glute bridges, begin lying flat on your back with knees bent, feet fi
 To perform this exercise, begin in a pushup position, then bend at the hips, keeping knees straight and spine neutral to shift hips up and back, pushing through the upper body to achieve a stretch in the calves and hamstrings, while pressing through the upper body to bring your chest closer to the ground. Bend at the elbows, and swoop into an upward dog position, extending through the chest and looking up towards the sky. Pause to breathe. Push back into downward dog and repeat.
 
 You can find plenty more inspiration when it comes to home exercise and workout  elsewhere on our TIB site.
-
-If your mum is a fitness fanatic, why not forego the traditional Mother's Day gift in favour of something more sporty? You could consider a gym membership, a yoga mat, headphones or a new pair of running shoes to break from tradition and get your calorie busting Mum the perfect Mother's Day present. Etsy have a large range of gift ideas which you can find here: https://www.etsy.com/uk/market/mother_fitness_gift
-
-Happy Mother's Day to all mums and stepmums out there. You're all amazing!
