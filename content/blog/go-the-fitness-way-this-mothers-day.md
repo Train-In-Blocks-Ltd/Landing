@@ -4,7 +4,7 @@ slug: fitness-way-mothersday
 img: mother's day.jpeg
 alt: fitness, mother's day, workout
 author: Jamie Spoor
-date: 2022-03-23T14:56:12.608Z
+date: 2022-03-26T14:56:12.608Z
 postDesc: Celebrate Mother's Day in style
 ---
 Image credit: Barbell Athletic Club 
