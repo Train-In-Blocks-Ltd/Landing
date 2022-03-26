@@ -15,6 +15,7 @@ postDesc: Inspirational women shaping the fitness industry
 4. [Lisa Lindahl](#lisa-lindahl)
 5. [Hannah Rose Goodman](#hannah-rose-goodman)
 
+
 Tuesday 8th March marked International Women's Day in which the world marked the seismic achievements of women in the social, political, economical and historical landscape across the globe.
 
 Women now have major roles to play in almost every major world industry you can think of, including health and fitness, with an increasing number of female influencers having a string-pulling impact on a crowded market.
