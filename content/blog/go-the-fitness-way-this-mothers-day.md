@@ -1,7 +1,7 @@
 ---
 title: Go the fitness way this Mother's Day
 slug: fitness-way-mothersday
-img: mother's day.jpeg
+img: mother-s-day.jpeg
 alt: fitness, mother's day, workout
 author: Jamie Spoor
 date: 2022-03-26T14:56:12.608Z
