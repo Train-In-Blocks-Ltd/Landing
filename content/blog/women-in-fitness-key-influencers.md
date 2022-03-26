@@ -25,11 +25,12 @@ Gillian’s goal is to make it easier for people to get onto the path of a new l
 
 By keeping fit, maintaining a healthy diet and smashing your fitness goals, TIB can look to follow Gillian's philosophy when it comes to getting in your groove. 
 
-<markdown-image src="gillianmckeithjpeg" alt="gillianmckeith></markdown-image> (Source: McKeith Research Ltd) 
+<markdown-image src="gillianmckeithjpeg" alt="gillianmckeith"></markdown-image> (Source: McKeith Research Ltd) 
 
 ## Lindsey Vonn
 
 Olympic gold medallist and World champion ski racer Vonn has become a social media sensation with her home workouts and collaboration with an award winning personal training brand. 
+
 Since retiring from the ice in 2019 with two Olympic and eight World Cup medals in her pocket, American Vonn has been putting her expertise to good use. She has swapped skis for the treadmill in creating exclusive content and running fitness and personal training classes as smart home gym Tempo's Coach and Strategic Advisor. 
 
 <https://tempo.fit/blog/lindsey-vonn-joins-the-tempo-team>
@@ -38,7 +39,7 @@ Vonn worked with Tempo to expand their sport-inspired programme and help their c
 
 <https://www.youtube.com/watch?v=J7yefk6mcvg>
 
-<markdown-image src="lindseyvonn.jpeg" alt="lindsey vonn></markdown-image> (Source: @lindseyvonn)
+<markdown-image src="lindseyvonn.jpeg" alt="Lindsey Vonn"></markdown-image> (Source: @lindseyvonn)
 
 ## Elizabeth Cutler & Julie Rice
 
@@ -50,7 +51,7 @@ Thanks to all those intervals, the workout boosts cardio endurance, burns major 
 
 The ever-growing popularity of the classes have proved a hit (no pun intended) among iconic female figures including Michelle Obama, Beyonce and Victoria Beckham. The company is now set up in 99 locations and came to London in 2019. Cutler& Rice sold their shares in the company and stepped down as CEOs in 2016 - $90m richer.
 
-<markdown-image src="soulcycle-founders-jpeg" alt="soul cycle founders></markdown-image> (Startups.com)
+<markdown-image src="soulcycle-founders-jpeg" alt="Soul Cycle Founders"></markdown-image> (Startups.com)
 
 ## Lisa Lindahl
 
@@ -58,10 +59,12 @@ Today, it's impossible to imagine going for a run or popping into a fitness clas
 
 After several attempts, costume designer and Lindahl's business partner Polly Smith sewed two jockstraps together and Lindahl tested it on a run. This became the first workable sports bra prototype. The design of the “jockbra”—later known as the jogbra, and now the sports bra —has been improved and improved over the years, so much so its now an essential part of every girl's workout and exercise raison d'etre. In the "About" section on her website, there is the full story of Lindahl's life changing invention.  <http://www.lisalindahl.com/about/>
 
-<markdown-image src="lisalindahl.jpeg" alt="lisa lindahl></markdown-image> (lisalindahl.com)
+<markdown-image src="lisalindahl.jpeg" alt="Lisa Lindahl"></markdown-image> (lisalindahl.com)
 
 ## Hannah Rose Goodman
 
 Our very own marketing and branding queen, the lovely lass from Birmingham and now an adopted maid of Kent, Hannah is the brains behind the operation that is TIB.
 
- In short, she makes it all happen and keeps us all in order. My one time gym buddy and now respected colleague, Hannah always offers advice and support particularly in these early days of our business. Hannah's steady hand on the tiller - particularly with the social media and SEO side of us, has helped to keep us running. Without her, TIB wouldn't be where we are now as we continue to grow. Thank you Hannah and well done! You're a star.
+In short, she makes it all happen and keeps us all in order. My one time gym buddy and now respected colleague, Hannah always offers advice and support particularly in these early days of our business. Hannah's steady hand on the tiller - particularly with the social media and SEO side of us, has helped to keep us running. Without her, TIB wouldn't be where we are now as we continue to grow. Thank you Hannah and well done! You're a star.
+
+<markdown-image src="hannah.jpeg" alt="Hannah Rose Goodman"></markdown-image>
