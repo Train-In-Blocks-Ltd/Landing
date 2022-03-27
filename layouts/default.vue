@@ -122,17 +122,6 @@ div.cookieControl__ModalContent label:before {
   @apply dark:bg-gray-800 bg-white;
 }
 
-/* Scroll-bar */
-::-webkit-scrollbar {
-  @apply w-3;
-}
-::-webkit-scrollbar-track {
-  @apply bg-gray-300 dark:bg-gray-700;
-}
-::-webkit-scrollbar-thumb {
-  @apply rounded-sm bg-gray-800 dark:bg-white hover:opacity-60 transition-opacity;
-}
-
 /* Responsiveness */
 @media (max-width: 768px) {
   .cookieControl__ModalContent {
