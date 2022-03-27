@@ -9,7 +9,7 @@ postDesc: "Keep hydrated as we mark World Water Day 2022 "
 ---
 Our earth is made up of 70% of the stuff, so it figures the wonderful world of water should get its moment in the national spotlight.
 
-We love how there's a national day for everything now, from women to tea, to dogs, babies and patron saints. Like me, I bet you didn't know there's a World Water Day and this year it takes place today, 22nd March. 
+We love how there's a national day for everything now, from women to tea, to dogs, babies and patron saints. Like me, I bet you didn't know there's a World Water Day and this year it took place on 22nd March. 
 
 Of course, at TIB we're all too aware of just how important water is, especially when it comes to fitness and a tough session of pumping the iron down the gym. 
 
@@ -55,4 +55,4 @@ Dehydration, when you lose more water than you take in, can affect anyone no mat
 
 Drinking little and often rather than a lot less often will give you the best chance of hitting your exercise targets - the amount you need to drink depends on how much you sweat and the length and intensity of your workout. A short water break between sets or during quick breaks from cardio can help stave off exercise- induced dehydration, keeping you at your best for consistently high performance.
 
-Commemorate World Water Day on Tuesday by keeping hydrated, drinking plenty of water during your workouts, and spare a thought for those without access to a precious commodity we all take for granted.
+Commemorate World Water Day by keeping hydrated, drinking plenty of water during your workouts, and spare a thought for those without access to a precious commodity we all take for granted.
