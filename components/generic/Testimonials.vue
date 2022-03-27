@@ -26,7 +26,7 @@ export default {
       testimonials: [
         {
           name: "Kies",
-          text: "Train in blocks has been a huge time saver for me and helped me get a lot of my clients in order. They’ve also found it helpful to have the platform to aid their workouts. It’s easy to navigate and very affordable.",
+          text: "Train In Blocks has been a huge time saver for me and helped me get a lot of my clients in order. They’ve also found it helpful to have the platform to aid their workouts. It’s easy to navigate and very affordable.",
         },
         {
           name: "Nicola",
