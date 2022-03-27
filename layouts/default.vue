@@ -185,6 +185,7 @@ div.cookieControl__ModalContent label:before {
       <div
         v-if="exitIntent"
         id="exit-modal"
+        style="z-index: 71"
         class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
         @click="exit"
       >
