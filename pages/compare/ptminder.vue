@@ -13,10 +13,12 @@ export default {
       info: {
         name: "PTminder",
         slug: "ptminder",
-        price: "$40–$123 per month",
+        price: "£28-£99 per month",
         price_desc: [
-          "For that price, you don't get unlimited clients",
+          "Paying £200 for unlimited clients",
           "Complicated pricing plans",
+          "Creating workouts not free-form and follows a specific structure",
+          "Can be complex and confusing",
         ],
       },
     };

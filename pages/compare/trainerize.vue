@@ -4,6 +4,7 @@
 
 <script>
 import Compare from "../../components/pages/compare/Compare";
+
 export default {
   components: {
     Compare,
@@ -17,6 +18,9 @@ export default {
         price_desc: [
           "Crazy price for unlimited clients",
           "Complicated pricing",
+          "Paying upwards of $350 a month for unlimited clients",
+          "Can be complex and confusing",
+          "Creating workouts not free-form and follows a specific structure",
         ],
       },
     };
