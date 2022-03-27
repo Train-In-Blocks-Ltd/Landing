@@ -13,7 +13,7 @@ collections:
     slug: "{{slug}}"
     editor:
       preview: false
-    show_preview: true
+    show_preview_links: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
@@ -36,6 +36,7 @@ collections:
     slug: "{{slug}}"
     editor:
       preview: false
+    show_preview_links: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
@@ -57,6 +58,7 @@ collections:
     slug: "{{slug}}"
     editor:
       preview: false
+    show_preview_links: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
