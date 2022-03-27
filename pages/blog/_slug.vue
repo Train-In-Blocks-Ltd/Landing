@@ -13,9 +13,10 @@
     <txt type="large-body" grey>Created by {{ post.author }}</txt>
     <txt type="large-body" class="mb-4" grey>{{ shortDate(post.date) }}</txt>
     <txt type="large-body" class="mb-16" grey
-      >{{ readingTime(post.text) }} minute read</txt
+      >{{ post.readTime }} minute read</txt
     >
-    <nuxt-content :document="post" />
+    <nuxt-content v-if="existingLead" :document="post" />
+    <div>Sign up</div>
     <blog-footer class="mt-16" />
   </article-wrapper>
 </template>
@@ -35,7 +36,15 @@ export default {
   },
   async asyncData({ $content, params }) {
     const post = await $content("blog", { text: true }, params.slug).fetch();
-    return { post };
+    const avgWordsPerMin = 200;
+    const count = post.text.match(/\w+/g).length;
+    const readTime = Math.ceil(count / avgWordsPerMin);
+    return { post: { ...post, readTime } };
+  },
+  data() {
+    return {
+      existingLead: false,
+    };
   },
   head() {
     return {
@@ -75,16 +84,12 @@ export default {
     this.$parent.$parent.metaHelper.description = this.post.postDesc;
     this.$parent.$parent.metaHelper.image = this.post.img;
     this.$parent.$parent.metaHelper.url = `https://traininblocks.com/blog/${this.$route.params.slug}/`;
+    this.existingLead = window.localStorage.getItem("existing-lead");
   },
   methods: {
     shortDate(date) {
       const d = new Date(date);
       return `${d.getFullYear()}-${d.getMonth()}-${d.getDate()}`;
-    },
-    readingTime(post) {
-      const avgWordsPerMin = 200;
-      const count = post.match(/\w+/g).length;
-      return Math.ceil(count / avgWordsPerMin);
     },
   },
 };

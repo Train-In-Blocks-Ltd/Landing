@@ -52,6 +52,7 @@ export default {
           "To complete the subscription process, please click the link in the email we just sent you.";
         this.messageClasses = "text-green-700";
       } catch (e) {
+        window.localStorage.setItem("existing-lead", true);
         if (e.response.status === 400) {
           this.message =
             "You're already signed up to our mailing list. Thank you!";
