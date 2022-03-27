@@ -15,7 +15,7 @@
     <txt type="large-body" class="mb-16" grey
       >{{ post.readTime }} minute read</txt
     >
-    <nuxt-content v-if="existingLead" :document="post" />
+    <nuxt-content v-if="existingLead || !post.exclusive" :document="post" />
     <div v-else>
       <card-wrapper class="p-4 lg:w-1/2 mx-auto mb-16" no-hover>
         <txt type="large-body" class="mb-8" bold

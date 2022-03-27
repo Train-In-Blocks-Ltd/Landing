@@ -6,7 +6,9 @@ alt: fitness, mother's day, workout
 author: Jamie Spoor
 date: 2022-03-26T14:56:12.608Z
 postDesc: Celebrate Mother's Day in style
+exclusive: false
 ---
+
 Image credit: Barbell Athletic Club
 
 Hot on the heels of [World Water Day](https://traininblocks.com/blog/world-water-day-2022/) comes another celebration of all we hold dear - it's that time of year again, yes, of course, it's Mother's Day.
@@ -59,4 +61,4 @@ To perform glute bridges, begin lying flat on your back with knees bent, feet fi
 
 To perform this exercise, begin in a pushup position, then bend at the hips, keeping knees straight and spine neutral to shift hips up and back, pushing through the upper body to achieve a stretch in the calves and hamstrings, while pressing through the upper body to bring your chest closer to the ground. Bend at the elbows, and swoop into an upward dog position, extending through the chest and looking up towards the sky. Pause to breathe. Push back into downward dog and repeat.
 
-You can find plenty more inspiration when it comes to home exercise and workout  elsewhere on our TIB site.
+You can find plenty more inspiration when it comes to home exercise and workout elsewhere on our TIB site.

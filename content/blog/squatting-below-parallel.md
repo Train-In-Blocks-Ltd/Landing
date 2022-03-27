@@ -5,6 +5,7 @@ img: man-heavy-squat.png
 postDesc: How deep should we squat? This is a common topic of debate amongst fitness professionals. Here's my take on the matter.
 author: Mikey Lau
 date: "2021-08-10"
+exclusive: false
 ---
 
 ## Why is there a debate?

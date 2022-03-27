@@ -5,6 +5,7 @@ img: laptop.png
 author: Jamie Spoor
 date: 2022-02-10
 postDesc: The 8th February 2022 marks the 19th "Safer Internet Day" and it is our belief everyone should play their part in making life safer online, including us here at TIB.
+exclusive: false
 ---
 
 The 8th February 2022 marks the 19th "Safer Internet Day" and it is our belief everyone should play their part in making life safer online, including us here at TIB. So whilst we are a personal training company by trade, we're also part of the safe, secure and strong online community we should all be part of.

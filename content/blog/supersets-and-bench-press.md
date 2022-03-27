@@ -8,6 +8,7 @@ date: 2021-03-04T00:00:00.000Z
 postDesc: Supersets may help you improve your bench press performance depending
   on which outcome you desire. It will affect peak force and velocity
   differently.
+exclusive: false
 ---
 
 ## What are _Quick Articles_?

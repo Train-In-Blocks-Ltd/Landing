@@ -5,6 +5,7 @@ img: massage.png
 postDesc: If you have taken part in sports or am an avid gym member, you may be familiar with the sports massage therapist. Here we will discuss what to look for and to expect from a treatment.
 author: Mikey Lau
 date: "2021-05-12"
+exclusive: false
 ---
 
 ## Introduction and common misconceptions

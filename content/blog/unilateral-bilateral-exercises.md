@@ -5,6 +5,7 @@ img: woman-kneel-squat.png
 postDesc: An insight into the effects of unilateral and bilateral exercises on sprint and agility performance.
 author: Mikey Lau
 date: "2020-10-28"
+exclusive: false
 ---
 
 ## What are _Quick Articles_?

@@ -5,6 +5,7 @@ img: man-squat-rack.png
 author: Jamie Spoor
 date: 2022-02-09
 postDesc: Six ideas for your fitness challenge
+exclusive: false
 ---
 
 Fitness challenges have long been a “go to” tool for clients, personal trainers and mentors alike when it comes to boosting motivation, participation and to maintain retention for members both old and new.

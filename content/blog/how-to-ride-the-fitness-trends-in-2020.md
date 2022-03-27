@@ -5,6 +5,7 @@ img: two-gym-women.png
 postDesc: Learn how to take advantage of current trends and grow your business.
 author: Mikey Lau
 date: "2020-09-23"
+exclusive: false
 ---
 
 ## It’s not all doom and gloom
