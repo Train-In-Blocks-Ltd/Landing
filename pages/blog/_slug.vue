@@ -16,7 +16,15 @@
       >{{ post.readTime }} minute read</txt
     >
     <nuxt-content v-if="existingLead" :document="post" />
-    <div>Sign up</div>
+    <div v-else>
+      <card-wrapper class="p-4 lg:w-1/2 mx-auto mb-16" no-hover>
+        <txt type="large-body" class="mb-8" bold
+          >Sign up to read the full article</txt
+        >
+        <mailchimp-sign-up :on-exist="() => (existingLead = true)" />
+      </card-wrapper>
+      <hr />
+    </div>
     <blog-footer class="mt-16" />
   </article-wrapper>
 </template>
@@ -26,6 +34,8 @@ import Txt from "../../components/elements/Txt";
 import BlogFooter from "../../components/pages/blog/BlogFooter";
 import VBackButton from "~/components/generic/VBackButton";
 import ArticleWrapper from "~/components/generic/ArticleWrapper";
+import MailchimpSignUp from "~/components/generic/MailchimpSignUp.vue";
+import CardWrapper from "~/components/generic/CardWrapper.vue";
 
 export default {
   components: {
@@ -33,6 +43,8 @@ export default {
     BlogFooter,
     VBackButton,
     ArticleWrapper,
+    MailchimpSignUp,
+    CardWrapper,
   },
   async asyncData({ $content, params }) {
     const post = await $content("blog", { text: true }, params.slug).fetch();
