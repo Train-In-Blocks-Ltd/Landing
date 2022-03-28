@@ -13,8 +13,12 @@ export default {
       info: {
         name: "My PT Hub",
         slug: "pthub",
-        price: "£20-£49 per month",
-        price_desc: ["Only 5 clients with the cheaper plan."],
+        price: "£49 per month",
+        price_desc: [
+          "Can be complex and confusing",
+          "Creating workouts not free-form and follows a specific structure",
+          "Could be slow and unresponsive",
+        ],
       },
     };
   },

@@ -5,6 +5,7 @@ img: crossfit-handstand.png
 postDesc: What does the research suggest about CrossFit or military-style training and how it can benefit you?
 author: Mikey Lau
 date: "2021-06-11"
+exclusive: false
 ---
 
 ## The rise of HIFT

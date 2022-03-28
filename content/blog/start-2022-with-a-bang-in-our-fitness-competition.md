@@ -5,6 +5,7 @@ img: man-push-up.png
 postDesc: Train in Blocks will run an online, social-media based fitness competition each day for the rest of the month.
 author: Jamie Spoor
 date: "2022-01-15"
+exclusive: false
 ---
 
 ## Table of Contents

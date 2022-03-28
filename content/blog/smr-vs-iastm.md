@@ -5,6 +5,7 @@ img: woman-sit-up.png
 postDesc: A recent stance on a comparison between the use of equipment such as foam rollers and instrument-assisted manual recipe.
 author: Mikey Lau
 date: "2021-01-03"
+exclusive: false
 ---
 
 ## What are _Quick Articles_?

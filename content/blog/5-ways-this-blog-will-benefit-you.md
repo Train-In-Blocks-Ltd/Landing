@@ -5,6 +5,7 @@ img: woman-run.png
 postDesc: Take less than two minutes to find out how this blog will benefit you greatly.
 author: Mikey Lau
 date: "2020-09-01"
+exclusive: false
 ---
 
 ## 1. We're keeping it simple

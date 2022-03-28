@@ -6,7 +6,9 @@ alt: "International-Womens-Day 2022 "
 author: Jamie Spoor
 date: 2022-03-09T09:51:48.533Z
 postDesc: Inspirational women shaping the fitness industry
+exclusive: false
 ---
+
 ## Table of Contents
 
 1. [Gillian McKeith](#gillian-mckeith)
@@ -23,23 +25,23 @@ Train In Blocks didn't want to let the occasion pass by without acknowledging th
 
 ## Gillian McKeith
 
-Although not a medically qualified doctor, the outspoken - and often controversial Scot - is a PhD in nutrition and a dietetic technician. Whatever your opinion of her may be, there can be no denying she has done more than her fair share in improving the nation's dietary conscience. 
+Although not a medically qualified doctor, the outspoken - and often controversial Scot - is a PhD in nutrition and a dietetic technician. Whatever your opinion of her may be, there can be no denying she has done more than her fair share in improving the nation's dietary conscience.
 
-Despite the fact she is best known for fainting on live TV during her stint on the 2010 series of *I'm a Celebrity,* McKeith has also published diet books, five of which have become bestsellers. She has also developed her own range of foods, gels and powders and appeared on TV championing the benefits of healthy living.
+Despite the fact she is best known for fainting on live TV during her stint on the 2010 series of _I'm a Celebrity,_ McKeith has also published diet books, five of which have become bestsellers. She has also developed her own range of foods, gels and powders and appeared on TV championing the benefits of healthy living.
 
-[On her blog, ](https://gillianmckeith.com/your-body/fitness/home-exercise/)McKeith points out that food is potentially an emotional issue. It can be uncomfortable for some people to have to give up certain junk foods to which they have become accustomed. 
+[On her blog, ](https://gillianmckeith.com/your-body/fitness/home-exercise/)McKeith points out that food is potentially an emotional issue. It can be uncomfortable for some people to have to give up certain junk foods to which they have become accustomed.
 
-Gillian’s goal is to make it easier for people to get onto the path of a new life, keep them supported, motivated and inspired; her mission is to empower people to improve their lives through information, food and lifestyle. 
+Gillian’s goal is to make it easier for people to get onto the path of a new life, keep them supported, motivated and inspired; her mission is to empower people to improve their lives through information, food and lifestyle.
 
-By keeping fit, maintaining a healthy diet and smashing your fitness goals, TIB can look to follow Gillian's philosophy when it comes to getting in your groove. 
+By keeping fit, maintaining a healthy diet and smashing your fitness goals, TIB can look to follow Gillian's philosophy when it comes to getting in your groove.
 
 <markdown-image src="gillian-mckeith.jpeg" alt="gillianmckeith"></markdown-image> (Source: [McKeith Research Ltd) ](https://gillianmckeith.com/about/mr-ltd/)
 
 ## Lindsey Vonn
 
-Olympic gold medallist and World champion ski racer Vonn has become a social media sensation with her home workouts and collaboration with an award winning personal training brand. 
+Olympic gold medallist and World champion ski racer Vonn has become a social media sensation with her home workouts and collaboration with an award winning personal training brand.
 
-Since retiring from the ice in 2019 with two Olympic and eight World Cup medals in her pocket, American Vonn has been putting her expertise to good use. She has swapped skis for the treadmill in creating exclusive content and running fitness and personal training classes as smart home gym Tempo's Coach and Strategic Advisor. 
+Since retiring from the ice in 2019 with two Olympic and eight World Cup medals in her pocket, American Vonn has been putting her expertise to good use. She has swapped skis for the treadmill in creating exclusive content and running fitness and personal training classes as smart home gym Tempo's Coach and Strategic Advisor.
 
 <https://tempo.fit/blog/lindsey-vonn-joins-the-tempo-team>
 
@@ -51,13 +53,13 @@ Vonn worked with Tempo to expand their sport-inspired programme and help their c
 
 ## Elizabeth Cutler & Julie Rice
 
-In 2006, spin class teacher Ruth Zukerman introduced her client, estate agent Elizabeth Cutler, to entertainment head hunter Julie Rice and a fitness phenomena was born. The three entrepreneurial women started up SoulCycle - as the name suggests, a cycling company specialising in trendy studios, high-end clients and intense cardio workouts. 
+In 2006, spin class teacher Ruth Zukerman introduced her client, estate agent Elizabeth Cutler, to entertainment head hunter Julie Rice and a fitness phenomena was born. The three entrepreneurial women started up SoulCycle - as the name suggests, a cycling company specialising in trendy studios, high-end clients and intense cardio workouts.
 
-The classes combine HIIT, resistance and strength training whilst pushing the pedal to the metal to music on a stationary bike and are designed to build your endurance, stamina and speed. 
+The classes combine HIIT, resistance and strength training whilst pushing the pedal to the metal to music on a stationary bike and are designed to build your endurance, stamina and speed.
 
 Thanks to all those intervals, the workout boosts cardio endurance, burns major calories, and tones muscles. All while still going easy on your joints. You can check out "how to HIFT" [here: ](https://traininblocks.com/blog/hift/)
 
-The ever-growing popularity of the classes have proved a hit (no pun intended) among iconic female figures including Michelle Obama, Beyonce and Victoria Beckham. The company is now set up in 99 locations and came to London in 2019. Cutler& Rice sold their shares in the company and stepped down as CEOs in 2016  -  $90m richer 
+The ever-growing popularity of the classes have proved a hit (no pun intended) among iconic female figures including Michelle Obama, Beyonce and Victoria Beckham. The company is now set up in 99 locations and came to London in 2019. Cutler& Rice sold their shares in the company and stepped down as CEOs in 2016 - $90m richer
 
 <markdown-image src="soulcycle-founders.jpeg" alt="Soul Cycle Founders"></markdown-image> ([Startups.com)](https://www.startups.com/library/founder-stories/julie-rice-elizabeth-cutler)
 
@@ -65,9 +67,9 @@ The ever-growing popularity of the classes have proved a hit (no pun intended) a
 
 Today, it's impossible to imagine going for a run or popping into a fitness class without a sports bra. But it wasn’t until 1977 that Lisa Lindahl, diagnosed with epilepsy aged four, created a girl's favourite workout partner. After picking up the habit of jogging, Lindahl began working on prototypes for a more supportive fitness bra.
 
-After several attempts, costume designer and Lindahl's business partner Polly Smith sewed two jockstraps together and Lindahl tested it on a run. This became the first workable sports bra prototype. The design of the “jockbra”—later known as the jogbra, and now the sports bra —has been improved and improved over the years, so much so its now an essential part of every girl's workout and exercise raison d'etre. In the "About" section on her website, there is the full story of Lindahl's life changing invention.  <http://www.lisalindahl.com/about/>
+After several attempts, costume designer and Lindahl's business partner Polly Smith sewed two jockstraps together and Lindahl tested it on a run. This became the first workable sports bra prototype. The design of the “jockbra”—later known as the jogbra, and now the sports bra —has been improved and improved over the years, so much so its now an essential part of every girl's workout and exercise raison d'etre. In the "About" section on her website, there is the full story of Lindahl's life changing invention. <http://www.lisalindahl.com/about/>
 
-<markdown-image src="lisalindahl.jpeg" alt="Lisa Lindahl"></markdown-image> ([lisalindahl.com)](https://www.lisalindahl.com/) 
+<markdown-image src="lisalindahl.jpeg" alt="Lisa Lindahl"></markdown-image> ([lisalindahl.com)](https://www.lisalindahl.com/)
 
 ## Hannah Rose Goodman
 

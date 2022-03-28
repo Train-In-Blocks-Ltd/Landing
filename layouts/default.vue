@@ -122,17 +122,6 @@ div.cookieControl__ModalContent label:before {
   @apply dark:bg-gray-800 bg-white;
 }
 
-/* Scroll-bar */
-::-webkit-scrollbar {
-  @apply w-3;
-}
-::-webkit-scrollbar-track {
-  @apply bg-gray-300 dark:bg-gray-700;
-}
-::-webkit-scrollbar-thumb {
-  @apply rounded-sm bg-gray-800 dark:bg-white hover:opacity-60 transition-opacity;
-}
-
 /* Responsiveness */
 @media (max-width: 768px) {
   .cookieControl__ModalContent {
@@ -148,6 +137,18 @@ div.cookieControl__ModalContent label:before {
   body {
     font-size: 14px;
   }
+}
+
+#exit-modal > div {
+  width: Min(900px, calc(100vw - 4rem));
+}
+.modal-enter-active,
+.modal-leave-active {
+  transition: all 0.4s;
+}
+.modal-enter,
+.modal-leave-to {
+  opacity: 0;
 }
 </style>
 
@@ -167,22 +168,51 @@ div.cookieControl__ModalContent label:before {
       </nuxt-link>
     </div>
     <footer-section />
+
+    <!-- Pop up intent -->
+    <transition name="modal">
+      <div
+        v-if="exitIntent"
+        id="exit-modal"
+        style="z-index: 71"
+        class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
+        @click="exit"
+      >
+        <div class="relative top-20 mx-auto p-8 rounded-md bg-white">
+          <inline-svg
+            :src="require('../assets/svg/close.svg')"
+            class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all"
+            @click="exitIntent = false"
+          />
+          <div class="text-center">
+            <txt type="title" class="my-4"> Let's stay connected! </txt>
+            <txt type="large-body" class="my-8">
+              Learn everything that personal trainers need to know to profit and
+              grow!
+            </txt>
+            <mailchimp-sign-up />
+          </div>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
 <script>
-import Txt from "../components/elements/Txt";
 import NavMenu from "../components/extensive/NavMenu";
 import NavBar from "../components/extensive/NavBar";
 import FooterSection from "../components/extensive/FooterSection";
+import MailchimpSignUp from "../components/generic/MailchimpSignUp";
+import Txt from "../components/elements/Txt";
 
 export default {
   name: "App",
   components: {
-    Txt,
     NavMenu,
     NavBar,
     FooterSection,
+    MailchimpSignUp,
+    Txt,
   },
   data() {
     return {
@@ -195,6 +225,7 @@ export default {
         image: "https://traininblocks.com/android-chrome-512x512.png",
         url: "https://traininblocks.com",
       },
+      exitIntent: false,
     };
   },
   head() {
@@ -231,6 +262,66 @@ export default {
       ],
       link: [{ hid: "canonical", rel: "canonical", href: this.metaHelper.url }],
     };
+  },
+  mounted() {
+    const mouseEvent = (e) => {
+      // Check that we are exiting the window at the top and not from the sides or bottom of the screen
+      const shouldShowExitIntent =
+        !e.toElement && !e.relatedTarget && e.clientY < 10;
+
+      if (shouldShowExitIntent) {
+        // Remove the mouseout event listener so we don't get into a loop
+        document.removeEventListener("mouseout", mouseEvent);
+        // Show the popup
+        this.exitIntent = true;
+
+        // Set the cookie when the popup is shown to the user - so we don't show the popup again for 30 days
+        this.setCookie("exitIntentShown", true, 30);
+
+        // GA event
+        this.$ga.event({
+          eventCategory: "intake",
+          eventAction: "exit-intent",
+          eventLabel: "show",
+          eventValue: 1,
+        });
+      }
+    };
+    // Wrap the setTimeout into an if statement
+    if (!this.getCookie("exitIntentShown")) {
+      // Set timeout so exit intent isn't show on page load - wait 10 seconds
+      setTimeout(() => {
+        // Add event listener for when user leaves page
+        document.addEventListener("mouseout", mouseEvent);
+        // Add event listener for when user presses a key - which we listen to the escape key
+        document.addEventListener("keydown", this.exit);
+      }, 10000);
+    }
+  },
+  methods: {
+    // Close the modal
+    exit(e) {
+      if (e.target.id === "exit-modal") this.exitIntent = false;
+    },
+    setCookie(name, value, days) {
+      let expires = "";
+      if (days) {
+        const date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + ";";
+    },
+    getCookie(name) {
+      const cookies = document.cookie.split(";");
+      for (const cookie of cookies) {
+        // eslint-disable-next-line
+        if (cookie.indexOf(name + "=") > -1) {
+          return cookie.split("=")[1];
+        }
+      }
+      return null;
+    },
   },
 };
 </script>

@@ -5,6 +5,7 @@ img: kettlebell.png
 postDesc: When working towards your New Year's resolution, try to apply consistency in four key areas - Strength Training, Conditioning, Recovery and Consumption.
 author: Jamie Spoor
 date: "2022-02-06"
+exclusive: false
 ---
 
 Photos by [Chelsea Gibson](https://blossomtreephoto.co.uk)

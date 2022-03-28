@@ -5,7 +5,7 @@
     </txt>
     <txt type="title" class="mb-16" grey>Here's a breakdown...</txt>
     <div class="grid lg:grid-cols-2 gap-8 mb-16">
-      <card-wrapper class="p-4 border-green-700">
+      <card-wrapper class="p-4 border-green-700" no-hover>
         <txt type="subtitle" bold>Train In Blocks</txt>
         <txt type="large-body" grey>£10 per month</txt>
         <ul>
@@ -17,7 +17,7 @@
           <li>Minimal and easy to use with features that are relevant</li>
         </ul>
       </card-wrapper>
-      <card-wrapper class="p-4 border-red-700">
+      <card-wrapper class="p-4 border-red-700" no-hover>
         <txt type="subtitle" bold>
           {{ details.name }}
         </txt>
@@ -34,7 +34,8 @@
         </ul>
       </card-wrapper>
     </div>
-    <benefits class="mb-16" />
+    <benefits class="mb-32" />
+    <testimonials class="mb-32" />
     <payment />
   </page-wrapper>
 </template>
@@ -44,7 +45,8 @@ import Txt from "../../elements/Txt";
 import CardWrapper from "../../generic/CardWrapper";
 import Benefits from "../Benefits";
 import Payment from "../Payment";
-import PageWrapper from "~/components/generic/PageWrapper.vue";
+import PageWrapper from "~/components/generic/PageWrapper";
+import Testimonials from "~/components/generic/Testimonials";
 
 export default {
   components: {
@@ -53,6 +55,7 @@ export default {
     Benefits,
     CardWrapper,
     PageWrapper,
+    Testimonials,
   },
   props: {
     details: {

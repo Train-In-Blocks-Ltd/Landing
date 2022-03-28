@@ -40,7 +40,11 @@ Train In Blocks may revise these terms of service for its website at any time wi
 
 These terms and conditions are governed by and construed in accordance with the laws of the United Kingdom and you irrevocably submit to the exclusive jurisdiction of its courts.
 
-## 9. More Information
+## 9. Refunds
+
+Train In Blocks Ltd will be under no obligation to refund any payment made by the Customer if their Agreement with us terminates earlier than the expiring period or if they no longer wish to use our services before the end of the period.
+
+## 10. More Information
 
 If you are still looking for more information then you can contact us at **hello@traininblocks.com**
 

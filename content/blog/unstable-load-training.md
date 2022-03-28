@@ -5,6 +5,7 @@ img: barbell.png
 postDesc: A comparison between different training conditions by hanging weights at the ends of a barbell using resistance bands.
 author: Mikey Lau
 date: "2020-10-12"
+exclusive: false
 ---
 
 ## What are _Quick Articles_?

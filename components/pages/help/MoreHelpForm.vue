@@ -46,8 +46,16 @@
       class="mb-4"
       @output="(data) => (contactForm.message = data)"
     />
+    <label class="flex items-center gap-2 mb-4">
+      <input v-model="contactForm.mcConsent" type="checkbox" />
+      <span>
+        By ticking this box you consent to us adding you to our mailing list.
+        <br />
+        We promise not to spam you!
+      </span>
+    </label>
     <div v-if="submitted">
-      <txt>
+      <txt :class="submittedClasses">
         {{ submitted }}
       </txt>
     </div>
@@ -58,7 +66,8 @@
       :disabled="
         contactForm.name === '' ||
         contactForm.email === '' ||
-        contactForm.message === ''
+        contactForm.message === '' ||
+        !ValidateEmail(contactForm.email)
       "
     >
       Send
@@ -85,8 +94,10 @@ export default {
         email: "",
         confirm: "",
         message: "",
+        mcConsent: false,
       },
       submitted: null,
+      submittedClasses: "",
     };
   },
   methods: {
@@ -98,13 +109,12 @@ export default {
         .join("&");
     },
     async send_message() {
-      const self = this;
       try {
         await axios.post(
           "/",
-          self.encode({
+          this.encode({
             "form-name": "contact_form",
-            ...self.contactForm,
+            ...this.contactForm,
           }),
           { header: { "Content-Type": "application/x-www-form-urlencoded" } }
         );
@@ -115,9 +125,29 @@ export default {
           message: "",
         };
         this.submitted = "Message sent successfully!";
+        this.submittedClasses = "text-green-700";
       } catch (e) {
+        // eslint-disable-next-line
+        console.error(e);
         this.submitted = e.toString() + " Please try again.";
+        this.submittedClasses = "text-red-700";
       }
+      try {
+        if (this.contactForm.mcConsent) {
+          await axios.post("/.netlify/functions/mailchimp", {
+            email: this.contactForm.email,
+          });
+        }
+      } catch (e) {
+        // eslint-disable-next-line
+        console.error(e);
+      }
+    },
+    ValidateEmail(mail) {
+      if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+        return true;
+      }
+      return false;
     },
   },
 };

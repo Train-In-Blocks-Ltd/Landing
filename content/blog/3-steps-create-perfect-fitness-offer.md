@@ -5,6 +5,7 @@ img: woman-front-sit-up.png
 postDesc: How can businesses get maximum potential from the festive season and drum up the clients ahead of the new year?
 author: Jamie Spoor
 date: "2021-12-10"
+exclusive: false
 ---
 
 ## Table of Contents

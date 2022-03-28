@@ -5,6 +5,7 @@ img: music.png
 postDesc: Most of us will listen to music whilst we're training, but does it actually improve performance and reduce the perception of fatigue.
 author: Mikey Lau
 date: "2020-11-10"
+exclusive: false
 ---
 
 ## What are _Quick Articles_?

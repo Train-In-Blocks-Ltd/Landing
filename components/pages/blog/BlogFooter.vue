@@ -1,5 +1,5 @@
 <template>
-  <card-wrapper class="p-4">
+  <card-wrapper class="p-4" no-hover>
     <txt type="large-body" class="mb-4" bold
       >Let's save you time and money so you can focus on what matters!</txt
     >
