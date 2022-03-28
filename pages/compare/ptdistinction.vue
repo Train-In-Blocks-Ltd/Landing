@@ -4,6 +4,7 @@
 
 <script>
 import Compare from "../../components/pages/compare/Compare";
+
 export default {
   components: {
     Compare,
@@ -18,6 +19,8 @@ export default {
           "Limits on the number of clients, e.g. you can only have 3 clients on the cheapest plan",
           "Complicated pricing",
           "Hard to use and little flexibility",
+          "Paying at most $80 a month for unlimited access",
+          "Creating workouts not free-form and follows a specific structure",
         ],
       },
     };

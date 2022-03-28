@@ -5,7 +5,7 @@
     </txt>
     <txt type="title" class="mb-16" grey>Here's a breakdown...</txt>
     <div class="grid lg:grid-cols-2 gap-8 mb-16">
-      <card-wrapper class="p-4 border-green-700">
+      <card-wrapper class="p-4 border-green-700" no-hover>
         <txt type="subtitle" bold>Train In Blocks</txt>
         <txt type="large-body" grey>£10 per month</txt>
         <ul>
@@ -17,7 +17,7 @@
           <li>Minimal and easy to use with features that are relevant</li>
         </ul>
       </card-wrapper>
-      <card-wrapper class="p-4 border-red-700">
+      <card-wrapper class="p-4 border-red-700" no-hover>
         <txt type="subtitle" bold>
           {{ details.name }}
         </txt>

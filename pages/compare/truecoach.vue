@@ -4,6 +4,7 @@
 
 <script>
 import Compare from "../../components/pages/compare/Compare";
+
 export default {
   components: {
     Compare,
@@ -13,8 +14,13 @@ export default {
       info: {
         name: "TrueCoach",
         slug: "truecoach",
-        price: "$19-$99 per month",
-        price_desc: ["Only 5 clients with the cheaper plan."],
+        price: "$19-$110 per month",
+        price_desc: [
+          "Only 5 clients with the cheaper plan.",
+          "Paying at most $110 a month for unlimited access",
+          "Can be complex and confusing",
+          "Could be slow and unresponsive",
+        ],
       },
     };
   },
