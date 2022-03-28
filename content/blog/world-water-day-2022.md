@@ -19,7 +19,7 @@ In this piece, we'll look into the origins of World Water Day, the idea behind i
 
 ## What is it?
 
-World Water Day (WWD) is an annual United Nations observance day, established in 1993 (www.un.org.en). It aims to highlight the importance of fresh water and to champion the use for sustainable management of freshwater resources. WWD celebrates water and raises awareness of the 2 billion people living without access to this most basic yet precious commodity whilst tackling the global water crisis. By the year 2030, WWD aims to support the achievement of Sustainable Development through water and Sanitation for all.
+[World Water Day (WWD)](https://www.worldwaterday.org/) is an annual United Nations observance day, established in 1993 [(www.un.org)](https://www.un.org/). It aims to highlight the importance of fresh water and to champion the use for sustainable management of freshwater resources. WWD celebrates water and raises awareness of the 2 billion people living without access to this most basic yet precious commodity whilst tackling the global water crisis. By the year 2030, WWD aims to support the achievement of Sustainable Development through water and Sanitation for all.
 
 ## How is it marked?
 
@@ -31,13 +31,13 @@ For 2022, the theme of WWD is Groundwater: Making the Invisible Visible. The Wor
 - A resource without borders
 - A finite supply
 
-Groundwater is a vital resource that provides almost half of all drinking water worldwide, about 40% of water for irrigated agriculture and about 1/3 of water required for world industries. It sustains ecosystems, maintains rivers base flow and prevents land subsidence and seawater intrusion. Groundwater is an important part of the climate change adaptation process and is often a solution for people without access to safe water.
+[Groundwater ](https://www.un-igrac.org/agenda/un-water-summit-groundwater)is a vital resource that provides almost half of all drinking water worldwide, about 40% of water for irrigated agriculture and about 1/3 of water required for world industries. It sustains ecosystems, maintains rivers base flow and prevents land subsidence and seawater intrusion. Groundwater is an important part of the climate change adaptation process and is often a solution for people without access to safe water.
 
 A World Water Day on groundwater puts a spotlight on this invisible resource, enhance knowledge exchange and collaboration and in turn increase the awareness of the importance of taking care of our groundwater.
 
 <markdown-image src="groundwater.jpeg" alt="groundwater"></markdown-image> (Groundwateruk.org)
 
-[Groundwater | National Geographic Society](https://www.nationalgeographic.org/encyclopedia/groundwater/)
+You can find out everything there is to know about the importance of groundwater here: [Groundwater | National Geographic Society](https://www.nationalgeographic.org/encyclopedia/groundwater/)
 
 Here in the UK, we're no strangers to rain. It feels as if it rains pretty much all the time and that rain is water that we could be using. Rainwater tanks can be installed either in your garden, close to the house or ideally on the roof of your house (if you have a flat roof of course!).
 
@@ -45,7 +45,7 @@ Rainwater harvesting, as it is known, is essentially collecting rainwater in a t
 
 ## Water and workouts
 
-Around 65% of our bodies are comprised of water, and it plays a vital role in every bodily function. You will lose much of this fluid when exercising on average a litre or two an hour – so it's vital to replenish this supply whenever exercising. Good hydration is also important for HIIT as mentioned elsewhere on our site.
+Around 65% of our bodies are comprised of water, and it plays a vital role in every bodily function. You will lose much of this fluid when exercising on average a litre or two an hour – so it's vital to replenish this supply whenever exercising. Good hydration is also important for HIFT as mentioned[ here](https://traininblocks.com/blog/hift/)
 
 If you don’t top this fluid back up, you can get dehydrated. This can affect both your general health and how well you can exercise. You’ll feel tired more quickly if you’re dehydrated, and you won’t be able to control your temperature as well as usual.
 
