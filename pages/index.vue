@@ -4,6 +4,7 @@
     <showcase class="mb-32" />
     <benefits class="mb-24" />
     <email-intake class="mb-24" />
+    <testimonials class="mb-24" />
     <payment class="mb-32" />
 
     <!-- Comparison section -->
@@ -33,6 +34,7 @@ import Showcase from "../components/pages/Showcase";
 import HomeTopSection from "../components/pages/HomeTopSection";
 import RecentBlogPosts from "../components/pages/RecentBlogPosts";
 import EmailIntake from "../components/generic/EmailIntake";
+import Testimonials from "~/components/generic/Testimonials.vue";
 
 export default {
   components: {
@@ -44,6 +46,7 @@ export default {
     HomeTopSection,
     RecentBlogPosts,
     EmailIntake,
+    Testimonials,
   },
   async asyncData({ $content }) {
     const latestBlogPosts = await $content("blog", { text: true }).fetch();

@@ -34,7 +34,8 @@
         </ul>
       </card-wrapper>
     </div>
-    <benefits class="mb-16" />
+    <benefits class="mb-32" />
+    <testimonials class="mb-32" />
     <payment />
   </page-wrapper>
 </template>
@@ -44,7 +45,8 @@ import Txt from "../../elements/Txt";
 import CardWrapper from "../../generic/CardWrapper";
 import Benefits from "../Benefits";
 import Payment from "../Payment";
-import PageWrapper from "~/components/generic/PageWrapper.vue";
+import PageWrapper from "~/components/generic/PageWrapper";
+import Testimonials from "~/components/generic/Testimonials";
 
 export default {
   components: {
@@ -53,6 +55,7 @@ export default {
     Benefits,
     CardWrapper,
     PageWrapper,
+    Testimonials,
   },
   props: {
     details: {
