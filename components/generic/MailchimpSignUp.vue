@@ -4,7 +4,7 @@
     <div class="flex justify-center items-center">
       <txt-input
         :value="email"
-        class="w-2/4 mr-4"
+        class="w-1/2 mr-4"
         placeholder="Email"
         type="email"
         required
@@ -34,6 +34,9 @@ export default {
     TxtInput,
     DefaultButton,
   },
+  props: {
+    onExist: Function,
+  },
   data() {
     return {
       email: "",
@@ -48,10 +51,14 @@ export default {
         await axios.post("/.netlify/functions/mailchimp", {
           email,
         });
+        this.onExist();
+        window.localStorage.setItem("existing-lead", true);
         this.message =
           "To complete the subscription process, please click the link in the email we just sent you.";
         this.messageClasses = "text-green-700";
       } catch (e) {
+        this.onExist();
+        window.localStorage.setItem("existing-lead", true);
         if (e.response.status === 400) {
           this.message =
             "You're already signed up to our mailing list. Thank you!";

@@ -5,7 +5,9 @@ img: two-battle-rope.jpeg
 author: Jamie Spoor
 date: 2022-02-21T10:05:05.550Z
 postDesc: Our top tips to up your game.
+exclusive: false
 ---
+
 ## So you want to become a better personal trainer?
 
 Being a personal trainer is, no doubt, fun, fulfilling and very fruitful when it comes to helping clients and members strive to hit the heights.

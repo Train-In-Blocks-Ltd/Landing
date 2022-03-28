@@ -5,6 +5,7 @@ img: crossfit-barbell.png
 postDesc: Get creative and keep your clients for longer with these practical techniques.
 author: Mikey Lau
 date: "2020-10-22"
+exclusive: false
 ---
 
 ## 1. Make your rewards progressive

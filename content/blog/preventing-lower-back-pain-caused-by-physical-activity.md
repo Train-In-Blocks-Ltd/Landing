@@ -5,6 +5,7 @@ img: back-pain.png
 postDesc: In this post, we’ll go through a few ways in which you can prevent the likelihood of sustaining a LBP injury from physical activity.
 author: Mikey Lau
 date: "2021-07-06"
+exclusive: false
 ---
 
 ## Prevalence of lower back pain

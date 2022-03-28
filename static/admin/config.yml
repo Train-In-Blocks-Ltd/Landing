@@ -29,6 +29,12 @@ collections:
         }
       - { label: "Description", name: "postDesc", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Exclusive content",
+          name: "exclusive",
+          widget: "boolean",
+          default: false,
+        }
   - name: "dev"
     label: "Dev"
     folder: "content/dev"

@@ -6,23 +6,25 @@ alt: PT-trainer-top-tips
 author: Jamie Spoor
 date: 2022-03-03T09:22:07.098Z
 postDesc: Our essential advice for every personal trainer
+exclusive: false
 ---
+
 Being a good personal trainer has its perks perhaps more than any other job in the fitness industry - perhaps indeed more than any other job full stop: it's rewarding, it's potentially lucrative, you're making a difference to people's lives, you can become whoever you want to be and there's unlimited potential.
 
 But how do you stand out in a crowded market? Here, we'll explain how you can push your head above the parapet and become a PT your client will want to stay with. Here is Train In Blocks' ten pieces of "must know" advice to get you there.
 
- Find your niche and 'own it'
+Find your niche and 'own it'
 
 Your first port of call should be to start building your business and develop your brand which will set you apart from the competition.\
 It's too simplistic just to say you specialise in 'everything' - decide what you want to focus on specifically and stay with it, whether it be as a weight loss expert, a strength and conditioning coach or training those at the peak of their physical fitness. \
 If you don't give people a specific reason to work with you, they won't come up with one of your own. Stay true to what you want to achieve, your 'uniqueness' is what makes your niche 'you'.
 
- Set your schedule
+Set your schedule
 
 By keeping an efficient and well maintained schedule, you immediately appear much more professional and focused on your clients. You will come across as someone who's passionate about what they do, as well as someone who won't let them down by turning up late, unprepared or even not at all - all of which are, of course, significant red flags.\
 By being organised to a high level, it will also allow you as a personal trainer to maintain a strong work/life balance, in turn preventing the risk of fatigue/burnout and preserving your career. This is perhaps the most essential piece of advice we can give you - to always stay organised and structured in your approach.
 
- Never stop learning
+Never stop learning
 
 This is true in any job - indeed, it's a modern day mantra we can apply in all walks of life. Even after you've gone through your own training journey and are well on the way to becoming a fully-fledged PT, be sure to continue learning and expanding your knowledge. \
 The health and fitness industry is always shifting, so it's important to keep up to speed with the latest developments and the winds of change. Not only is there an ever growing raft of books, magazines and journals but we live in the age of the Internet - with tools like YouTube and Instagram, clients and consumers are now more "up to date" than ever. \
@@ -68,7 +70,7 @@ Successful personal trainers have a balanced combination of physical and mental 
 
 Completing a PT course is not only an essential prerequisite for most jobs, but it equips you with all the necessary knowledge to be a good personal trainer. You will gain extensive knowledge of human anatomy, physiology, nutrition principles, how to deliver training sessions and more. For example: if you’re interested in rehabilitation and recovery, why not explore a sports massage qualification?
 
- Network as often as you can
+Network as often as you can
 
 No matter how confident you are in your own ability, you simply cannot do it alone. We've mentioned how, without proper communication and scheduling, you won't be able to pass on your expertise or progress effectively as a personal trainer. Stay close to other trainers or entrepreneurs who inspire you. Your inner circle will be your greatest motivation, so make sure you’re surrounded by successful, trustworthy people. Attend network events regularly, introduce yourself to the people you don’t know at the certifications you attend, and be friendly to people you encounter in your day-to-day life. As the old adage said, it's not what you know, it's who you know. You can also consider, as we said earlier, connecting to social media groups and talking to other PTs.
 

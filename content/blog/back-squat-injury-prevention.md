@@ -5,6 +5,7 @@ img: man-squat.png
 postDesc: An alternative screening method to prevent injuries associated with lower body movements.
 author: Mikey Lau
 date: "2021-02-01"
+exclusive: false
 ---
 
 ## What are _Quick Articles_?
