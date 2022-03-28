@@ -25,20 +25,11 @@ Train In Blocks didn't want to let the occasion pass by without acknowledging th
 
 ## Gillian McKeith
 
-<<<<<<< HEAD
-Although not a medically qualified doctor, the outspoken - and often controversial Scot - is a PhD in nutrition and a dietectic technician. Whatever your opinion on her may be, there can by no denying she has done more than her fair share in improving the nation's dietary conscience.
-
-Despite the fact she is best known for fainting on live TV during her stint on the 2010 series of _I'm a Celebrity,_ McKeith has also published diet books, five of which have become best sellers. She has also developed her own range of foods, gels and powders and appeared on TV championing the benefits of healthy living.
-
-# On her blog, McKeith points out that food is potentially an emotional issue. It can be uncomfortable for some people to have to give up certain junk foods to which they have become accustomed.
-
 Although not a medically qualified doctor, the outspoken - and often controversial Scot - is a PhD in nutrition and a dietetic technician. Whatever your opinion of her may be, there can be no denying she has done more than her fair share in improving the nation's dietary conscience.
 
 Despite the fact she is best known for fainting on live TV during her stint on the 2010 series of _I'm a Celebrity,_ McKeith has also published diet books, five of which have become bestsellers. She has also developed her own range of foods, gels and powders and appeared on TV championing the benefits of healthy living.
 
 [On her blog, ](https://gillianmckeith.com/your-body/fitness/home-exercise/)McKeith points out that food is potentially an emotional issue. It can be uncomfortable for some people to have to give up certain junk foods to which they have become accustomed.
-
-> > > > > > > c5368945721060c56d6403a6f6c8401e9ae09f2a
 
 Gillian’s goal is to make it easier for people to get onto the path of a new life, keep them supported, motivated and inspired; her mission is to empower people to improve their lives through information, food and lifestyle.
 
