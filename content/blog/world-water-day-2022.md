@@ -6,7 +6,7 @@ alt: Groundwater in the UK | World Water Day
 author: Jamie Spoor
 date: 2022-03-22T14:27:00.000Z
 postDesc: "Keep hydrated as we mark World Water Day 2022 "
-exclusive: true
+exclusive: false
 ---
 Our earth is made up of 70% of the stuff, so it figures the wonderful world of water should get its moment in the national spotlight.
 
