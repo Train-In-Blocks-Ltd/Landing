@@ -8,6 +8,7 @@ date: 2022-03-22T14:27:00.000Z
 postDesc: "Keep hydrated as we mark World Water Day 2022 "
 exclusive: false
 ---
+
 Our earth is made up of 70% of the stuff, so it figures the wonderful world of water should get its moment in the national spotlight.
 
 We love how there's a national day for everything now, from women to tea, to dogs, babies and patron saints. Like me, I bet you didn't know there's a World Water Day and this year it took place on 22nd March.

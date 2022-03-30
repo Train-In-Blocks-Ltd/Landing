@@ -8,6 +8,7 @@ date: 2022-03-09T09:51:48.533Z
 postDesc: Inspirational women shaping the fitness industry
 exclusive: false
 ---
+
 ## Table of Contents
 
 1. [Gillian McKeith](#gillian-mckeith)
@@ -26,7 +27,7 @@ Train In Blocks didn't want to let the occasion pass by without acknowledging th
 
 Although not a medically qualified doctor, the outspoken — and often controversial Scot — is a PhD in nutrition and a dietetic technician. Whatever your opinion of her may be, there can be no denying she has done more than her fair share in improving the nation's dietary conscience.
 
-Despite the fact she is best known for fainting on live TV during her stint on the 2010 series of *I'm a Celebrity,* McKeith has also published diet books, five of which have become bestsellers. She has also developed her own range of foods, gels and powders and appeared on TV championing the benefits of healthy living.
+Despite the fact she is best known for fainting on live TV during her stint on the 2010 series of _I'm a Celebrity,_ McKeith has also published diet books, five of which have become bestsellers. She has also developed her own range of foods, gels and powders and appeared on TV championing the benefits of healthy living.
 
 [On her blog](https://gillianmckeith.com/your-body/fitness/home-exercise/), McKeith points out that food is potentially an emotional issue. It can be uncomfortable for some people to have to give up certain junk foods to which they have become accustomed.
 
