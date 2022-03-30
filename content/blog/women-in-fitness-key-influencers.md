@@ -8,6 +8,11 @@ date: 2022-03-09T09:51:48.533Z
 postDesc: Inspirational women shaping the fitness industry
 exclusive: false
 ---
+Tuesday 8th March marked [International Women's Day](https://www.internationalwomensday.com/) in which the world marked the seismic achievements of women in the social, political, economical and historical landscape across the globe.
+
+Women now have major roles to play in almost every major world industry you can think of, including health and fitness, with an increasing number of female influencers having a string-pulling impact on a crowded market.
+
+Train In Blocks didn't want to let the occasion pass by without acknowledging the important roles amazing women have had when it comes to shaping our game. So here, we take a look at just a few key female figures from the world of fitness and how TIB can help you to follow their lead.
 
 ## Table of Contents
 
@@ -16,12 +21,6 @@ exclusive: false
 3. [Elizabeth Cutler & Julie Rice](#elizabeth-cutler-&-julie-rice)
 4. [Lisa Lindahl](#lisa-lindahl)
 5. [Hannah Rose Goodman](#hannah-rose-goodman)
-
-Tuesday 8th March marked [International Women's Day](https://www.internationalwomensday.com/) in which the world marked the seismic achievements of women in the social, political, economical and historical landscape across the globe.
-
-Women now have major roles to play in almost every major world industry you can think of, including health and fitness, with an increasing number of female influencers having a string-pulling impact on a crowded market.
-
-Train In Blocks didn't want to let the occasion pass by without acknowledging the important roles amazing women have had when it comes to shaping our game. So here, we take a look at just a few key female figures from the world of fitness and how TIB can help you to follow their lead.
 
 ## Gillian McKeith
 
