@@ -45,7 +45,7 @@ This is true in any job — indeed, it's a modern-day mantra we can apply in all
 
 The health and fitness industry is always shifting, so it's important to keep up to speed with the latest developments and the winds of change. Not only is there an ever-growing raft of books, magazines and journals but we live in the age of the Internet — with tools like YouTube and Instagram, clients and consumers are now more "up to date" than ever. 
 
-We would definitely recommend incorporating different sources into your everyday working routine. [We have some other top tips here:](https://traininblocks.com/blog/so-you-want-to-become-a-better-pt/)
+We would definitely recommend incorporating different sources into your everyday working routine. [We have some other top tips here.](https://traininblocks.com/blog/so-you-want-to-become-a-better-pt/)
 
 ## Empower your clients
 
@@ -94,4 +94,4 @@ No matter how confident you are in your own ability, you simply cannot do it alo
 
 So there you have it — our "top ten" advice reel for personal trainers — whether you're just starting out on your journey or a seasoned veteran, it's never too late to learn something new. We hope you will find this useful and that Train in Blocks has helped you, even if in just a small way, to become more polished at your craft.
 
-If you're just starting out on your journey, you can [find some more fail-safe advice here: ](https://origympersonaltrainercourses.co.uk/blog/personal-trainer-tips-for-beginners)
+If you're just starting out on your journey, you can [find some more fail-safe advice here. ](https://origympersonaltrainercourses.co.uk/blog/personal-trainer-tips-for-beginners)
