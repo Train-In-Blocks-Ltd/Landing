@@ -14,16 +14,16 @@ But how do you stand out in a crowded market? Here, we'll explain how you can pu
 
 ## Table of contents
 
-1. **Find your niche and own it**
-2. **Set your schedule**
-3. **Never stop learning**
-4. **Empower your clients**
-5. **Learn from others**
-6. **Use social media, but be wary**
-7. **Understand your audience,**
-8. **Flexibility is key**
-9. **Expand your knowledge**
-10. **Network as often as you can**
+1. [Find your niche and own it](#find-your-niche-and-own-it)
+2. [Set your schedule](#set-your-schedule)
+3. [Never stop learning](#never-stop-learning)
+4. [Empower your clients](#empower-your-clients)
+5. [Learn from others](#learn-from-others)
+6. [Use social media, but be wary](#use-social-media-but-be-wary)
+7. [Understand your audience](#understand-your-audience)
+8. [Flexibility is key](#flexibility-is-key)
+9. [Expand your knowledge](#expand-your-knowledge)
+10. [Network as often as you can](#network-as-often-as-you-can)
 
 ## Find your niche and 'own it'
 
