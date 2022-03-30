@@ -16,6 +16,12 @@ Of course, at TIB we're all too aware of just how important water is, especially
 
 In this piece, we'll look into the origins of World Water Day, the idea behind it, how to do your bit and how we can help you here at Train In Blocks.
 
+## Table of contents
+
+1. [What is it?](#what-is-it)
+2. [How is it marked?](#how-is-it-marked)
+3. [Water and workouts](#water-and-workouts)
+
 ## What is it?
 
 [World Water Day (WWD)](https://www.worldwaterday.org/) is an annual [United Nations observance day](https://www.un.org/en/observances/water-day), established in 1993. It aims to highlight the importance of fresh water and to champion the use for sustainable management of freshwater resources. WWD celebrates water and raises awareness of the 2 billion people living without access to this most basic yet precious commodity whilst tackling the global water crisis. By the year 2030, WWD aims to support the achievement of Sustainable Development through water and Sanitation for all.
