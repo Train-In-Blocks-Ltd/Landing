@@ -8,6 +8,11 @@ date: 2022-03-09T09:51:48.533Z
 postDesc: Inspirational women shaping the fitness industry
 exclusive: false
 ---
+Tuesday 8th March marked [International Women's Day](https://www.internationalwomensday.com/) in which the world marked the seismic achievements of women in the social, political, economical and historical landscape across the globe.
+
+Women now have major roles to play in almost every major world industry you can think of, including health and fitness, with an increasing number of female influencers having a string-pulling impact on a crowded market.
+
+Train In Blocks didn't want to let the occasion pass by without acknowledging the important roles amazing women have had when it comes to shaping our game. So here, we take a look at just a few key female figures from the world of fitness and how TIB can help you to follow their lead.
 
 ## Table of Contents
 
@@ -16,12 +21,6 @@ exclusive: false
 3. [Elizabeth Cutler & Julie Rice](#elizabeth-cutler-&-julie-rice)
 4. [Lisa Lindahl](#lisa-lindahl)
 5. [Hannah Rose Goodman](#hannah-rose-goodman)
-
-Tuesday 8th March marked [International Women's Day](https://www.internationalwomensday.com/) in which the world marked the seismic achievements of women in the social, political, economical and historical landscape across the globe.
-
-Women now have major roles to play in almost every major world industry you can think of, including health and fitness, with an increasing number of female influencers having a string-pulling impact on a crowded market.
-
-Train In Blocks didn't want to let the occasion pass by without acknowledging the important roles amazing women have had when it comes to shaping our game. So here, we take a look at just a few key female figures from the world of fitness and how TIB can help you to follow their lead.
 
 ## Gillian McKeith
 
@@ -35,21 +34,17 @@ Gillian’s goal is to make it easier for people to get onto the path of a new l
 
 By keeping fit, maintaining a healthy diet and smashing your fitness goals, TIB can look to follow Gillian's philosophy when it comes to getting in your groove.
 
-<markdown-image src="gillian-mckeith.jpeg" alt="Gillian McKeith"></markdown-image> (Source: [McKeith Research Ltd)](https://gillianmckeith.com/about/mr-ltd/)
+<markdown-image src="gillian-mckeith.jpeg" alt="Gillian McKeith"></markdown-image> (Source: [McKeith Research Ltd](https://gillianmckeith.com/about/mr-ltd/))
 
 ## Lindsey Vonn
 
 Olympic gold medallist and World champion ski racer Vonn has become a social media sensation with her home workouts and collaboration with an award-winning personal training brand.
 
-Since retiring from the ice in 2019 with two Olympic and eight World Cup medals in her pocket, American Vonn has been putting her expertise to good use. She has swapped skis for the treadmill in creating exclusive content and running fitness and personal training classes as smart home gym Tempo's Coach and Strategic Advisor.
+Since retiring from the ice in 2019 with two Olympic and eight World Cup medals in her pocket, American Vonn has been putting her expertise to good use. She has swapped skis for the treadmill in [creating exclusive content and running fitness and personal training classes](https://tempo.fit/blog/lindsey-vonn-joins-the-tempo-team) as smart home gym Tempo's Coach and Strategic Advisor.
 
-<https://tempo.fit/blog/lindsey-vonn-joins-the-tempo-team>
+Vonn worked with Tempo to expand their sport-inspired programme and help their clients prepare for their own personal fitness journeys. She set up and released a six-part series of fitness challenges, inspired by her own training routine as a professional athlete before becoming an adviser for the company as the fitness industry has continued to evolve within our own homes, which of course hit its zenith during the lockdowns of 2020 and 2021. Vonn has also taken to [YouTube to post regular fitness videos](https://www.youtube.com/watch?v=J7yefk6mcvg) on balance exercises and core workout techniques.
 
-Vonn worked with Tempo to expand their sport-inspired programme and help their clients prepare for their own personal fitness journeys. She set up and released a six-part series of fitness challenges, inspired by her own training routine as a professional athlete before becoming an adviser for the company as the fitness industry has continued to evolve within our own homes, which of course hit its zenith during the lockdowns of 2020 and 2021. Vonn has also taken to YouTube to post regular fitness videos on balance exercises and core workout techniques.
-
-<https://www.youtube.com/watch?v=J7yefk6mcvg>
-
-<markdown-image src="lindsey-vonn.jpeg" alt="Lindsey Vonn"></markdown-image> (Source: [@lindseyvonn)](https://www.instagram.com/lindseyvonn/?hl=en)
+<markdown-image src="lindsey-vonn.jpeg" alt="Lindsey Vonn"></markdown-image> (Source: [@lindseyvonn](https://www.instagram.com/lindseyvonn/?hl=en))
 
 ## Elizabeth Cutler & Julie Rice
 
@@ -61,15 +56,15 @@ Thanks to all those intervals, the workout boosts cardio endurance, burns major 
 
 The ever-growing popularity of the classes has proved a hit (no pun intended) among iconic female figures including Michelle Obama, Beyonce and Victoria Beckham. The company is now set up in 99 locations and came to London in 2019. Cutler & Rice sold their shares in the company and stepped down as CEOs in 2016 — $90m richer
 
-<markdown-image src="soulcycle-founders.jpeg" alt="Soul Cycle Founders"></markdown-image> [(Startups.com)](https://www.startups.com/library/founder-stories/julie-rice-elizabeth-cutler)
+<markdown-image src="soulcycle-founders.jpeg" alt="Soul Cycle Founders"></markdown-image> ([Startups.com](https://www.startups.com/library/founder-stories/julie-rice-elizabeth-cutler))
 
 ## Lisa Lindahl
 
 Today, it's impossible to imagine going for a run or popping into a fitness class without a sports bra. But it wasn’t until 1977 that Lisa Lindahl, diagnosed with epilepsy aged four, created a girl's favourite workout partner. After picking up the habit of jogging, Lindahl began working on prototypes for a more supportive fitness bra.
 
-After several attempts, costume designer and Lindahl's business partner Polly Smith sewed two jockstraps together and Lindahl tested it on a run. This became the first workable sports bra prototype. The design of the “jockbra”—later known as the jogbra, and now the sports bra —has been improved and improved over the years, so much so it's now an essential part of every girl's workout and exercise raison d'etre. In the "About" section on her website, there is the full story of Lindahl's life-changing invention. <http://www.lisalindahl.com/about/>
+After several attempts, costume designer and Lindahl's business partner Polly Smith sewed two jockstraps together and Lindahl tested it on a run. This became the first workable sports bra prototype. The design of the “jockbra”—later known as the jogbra, and now the sports bra —has been improved and improved over the years, so much so it's now an essential part of every girl's workout and exercise raison d'etre. In the ["About" section on her website](http://www.lisalindahl.com/about/), there is the full story of Lindahl's life-changing invention.
 
-<markdown-image src="lisalindahl.jpeg" alt="Lisa Lindahl"></markdown-image> [(lisalindahl.com)](https://www.lisalindahl.com/)
+<markdown-image src="lisalindahl.jpeg" alt="Lisa Lindahl"></markdown-image> ([lisalindahl.com](https://www.lisalindahl.com/))
 
 ## Hannah Rose Goodman
 
