@@ -41,7 +41,7 @@ For 2022, the theme of WWD is Groundwater: Making the Invisible Visible. The Wor
 
 A World Water Day on groundwater puts a spotlight on this invisible resource, enhance knowledge exchange and collaboration and in turn increase the awareness of the importance of taking care of our groundwater.
 
-<markdown-image src="groundwater.jpeg" alt="Map of the UK indicating groundwater locations"></markdown-image> (Groundwateruk.org)
+<markdown-image src="groundwater.jpeg" alt="Map of the UK indicating groundwater locations"></markdown-image> ([Groundwateruk.org](https://groundwateruk.org))
 
 You can find out everything there is to know about the importance of groundwater here: [Groundwater | National Geographic Society](https://www.nationalgeographic.org/encyclopedia/groundwater/)
 
