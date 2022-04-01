@@ -9,8 +9,6 @@ postDesc: Celebrate Mother's Day in style
 exclusive: false
 ---
 
-Image credit: Barbell Athletic Club
-
 Hot on the heels of [World Water Day](https://traininblocks.com/blog/world-water-day-2022/) comes another celebration of all we hold dear — it's that time of year again, yes, of course, it's Mother's Day.
 
 Every year we commemorate all things "mum" and this year it falls on Sunday 27th March. Whether she's your real mother, your stepmother or simply the motherly figure in your life, it's time to stop, reflect and simply say thank you to the wonder woman in your life.
