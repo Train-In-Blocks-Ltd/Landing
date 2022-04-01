@@ -1,7 +1,7 @@
 ---
 title: Go the fitness way this Mother's Day
 slug: fitness-way-mothersday
-img: pexels-kamaji-ogino-5094673.jpg
+img: mothers-day.jpg
 alt: "Barbell squat; Mother's Day "
 author: Jamie Spoor
 date: 2022-03-26T14:56:12.608Z
