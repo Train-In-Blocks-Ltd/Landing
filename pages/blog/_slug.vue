@@ -2,7 +2,7 @@
   <article-wrapper>
     <v-back-button link="/blog/" />
     <img
-      :src="require(`../../assets/media-uploads/${post.img}`)"
+      :src="require(`../../assets/media-uploads/${post.img}?resize&size=600&format=webp`)"
       :alt="post.alt || post.title"
       class="w-full aspect-square object-cover max-w-lg m-auto gray"
       loading="lazy"

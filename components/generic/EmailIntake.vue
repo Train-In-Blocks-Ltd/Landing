@@ -6,7 +6,7 @@
     <img
       height="auto"
       width="auto"
-      :src="require('../../assets/images/trainer-facing.png')"
+      :src="require('../../assets/images/trainer-facing.png?resize&size=300&format=webp')"
       class="z-0 absolute bottom-0 right-0 gray opacity-20 h-64 md:mr-12 md:relative md:opacity-100"
       alt="Trainer"
       loading="lazy"

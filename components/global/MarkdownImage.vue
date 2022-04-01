@@ -17,7 +17,11 @@ export default {
   methods: {
     imgSrc() {
       try {
-        return require(`~/assets/media-uploads/${this.src}`);
+        if (this.src.includes('.gif')) {
+          return require(`~/assets/media-uploads/${this.src}`);
+        } else {
+          return require(`~/assets/media-uploads/${this.src}?resize&size=600&format=webp`);
+        }
       } catch (error) {
         return null;
       }
