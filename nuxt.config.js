@@ -241,18 +241,6 @@ export default async () => {
     optimizedImages: {
       optimizeImages: true,
       optimizeImagesInDev: true,
-      mozjpeg: {
-        quality: 70,
-      },
-      pngquant: {
-        stripe: true,
-      },
-      webp: {
-        quality: 70,
-      },
-      svgo: {
-        plugins: [{ removeScriptElement: true }],
-      },
     },
     pwa: {
       workbox: {

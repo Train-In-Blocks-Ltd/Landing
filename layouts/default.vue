@@ -51,7 +51,7 @@ b {
   @apply underline text-blue-700;
 }
 .nuxt-content img {
-  @apply w-full md:w-1/2 sm:max-w-lg my-4 grayscale;
+  @apply w-full md:w-1/2 sm:max-w-lg my-4;
 }
 ul,
 ol {
