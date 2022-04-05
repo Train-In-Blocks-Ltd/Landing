@@ -52,7 +52,11 @@ export default {
           name: "og:description",
           content: this.post.postDesc,
         },
-        { hid: "og:image", name: "og:image", content: require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`) },
+        {
+          hid: "og:image",
+          name: "og:image",
+          content: require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`),
+        },
         {
           hid: "twitter:title",
           name: "twitter:title",
@@ -69,7 +73,13 @@ export default {
           content: require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`),
         },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: `https://traininblocks.com/blog/${this.$route.params.slug}/` }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: `https://traininblocks.com/blog/${this.$route.params.slug}/`,
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {

@@ -38,13 +38,19 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.",
+          content:
+            "Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.",
         },
-        { hid: "og:title", name: "og:title", content: "Free Content for Personal Trainers" },
+        {
+          hid: "og:title",
+          name: "og:title",
+          content: "Free Content for Personal Trainers",
+        },
         {
           hid: "og:description",
           name: "og:description",
-          content: "Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.",
+          content:
+            "Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.",
         },
         {
           hid: "twitter:title",
@@ -54,10 +60,17 @@ export default {
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: "Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.",
+          content:
+            "Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.",
         },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com/blog/" }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/blog/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {

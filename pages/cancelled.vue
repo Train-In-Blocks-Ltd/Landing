@@ -28,7 +28,13 @@ export default {
         { hid: "twitter:title", name: "twitter:title", content: "Cancelled" },
         { hid: "robots", name: "robots", content: "noindex" },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com/cancelled/" }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/cancelled/",
+        },
+      ],
     };
   },
 };

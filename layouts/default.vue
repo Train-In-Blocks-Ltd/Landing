@@ -228,15 +228,25 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.",
+          content:
+            "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.",
         },
-        { hid: "og:title", name: "og:title", content: "Affordable Personal Training Software" },
+        {
+          hid: "og:title",
+          name: "og:title",
+          content: "Affordable Personal Training Software",
+        },
         {
           hid: "og:description",
           name: "og:description",
-          content: "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.",
+          content:
+            "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.",
         },
-        { hid: "og:image", name: "og:image", content: "https://traininblocks.com/android-chrome-512x512.png" },
+        {
+          hid: "og:image",
+          name: "og:image",
+          content: "https://traininblocks.com/android-chrome-512x512.png",
+        },
         {
           hid: "twitter:title",
           name: "twitter:title",
@@ -245,7 +255,8 @@ export default {
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.",
+          content:
+            "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.",
         },
         {
           hid: "twitter:img",
@@ -253,7 +264,13 @@ export default {
           content: "https://traininblocks.com/android-chrome-512x512.png",
         },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com" }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com",
+        },
+      ],
     };
   },
   mounted() {

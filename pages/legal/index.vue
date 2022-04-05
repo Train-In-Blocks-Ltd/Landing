@@ -46,7 +46,13 @@ export default {
           content: "Index of legal documents for Train In Blocks",
         },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com/legal/" }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/legal/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {

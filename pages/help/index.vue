@@ -57,13 +57,15 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Need help with something? We are happy to help with anything.",
+          content:
+            "Need help with something? We are happy to help with anything.",
         },
         { hid: "og:title", name: "og:title", content: "Support Desk" },
         {
           hid: "og:description",
           name: "og:description",
-          content: "Need help with something? We are happy to help with anything.",
+          content:
+            "Need help with something? We are happy to help with anything.",
         },
         {
           hid: "twitter:title",
@@ -73,10 +75,17 @@ export default {
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: "Need help with something? We are happy to help with anything.",
+          content:
+            "Need help with something? We are happy to help with anything.",
         },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com/help/" }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/help/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {

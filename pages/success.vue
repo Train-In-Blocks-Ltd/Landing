@@ -39,7 +39,13 @@ export default {
         { hid: "og:title", name: "og:title", content: "Success" },
         { hid: "twitter:title", name: "twitter:title", content: "Success" },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com/success/" }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/success/",
+        },
+      ],
     };
   },
 };

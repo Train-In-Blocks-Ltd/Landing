@@ -36,7 +36,13 @@ export default {
           content: this.post.postDesc,
         },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: `https://traininblocks.com/blog/${this.$route.params.slug}/` }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: `https://traininblocks.com/blog/${this.$route.params.slug}/`,
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {

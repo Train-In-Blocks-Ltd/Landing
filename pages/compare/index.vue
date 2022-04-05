@@ -62,7 +62,13 @@ export default {
           content: "Index of comparisons for Train In Blocks",
         },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com/compare/" }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/compare/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {

@@ -30,13 +30,15 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Train In Blocks vs PTminder. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+          content:
+            "Train In Blocks vs PTminder. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
         },
         { hid: "og:title", name: "og:title", content: "PTminder" },
         {
           hid: "og:description",
           name: "og:description",
-          content: "Train In Blocks vs PTminder. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+          content:
+            "Train In Blocks vs PTminder. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
         },
         {
           hid: "twitter:title",
@@ -46,10 +48,17 @@ export default {
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: "Train In Blocks vs PTminder. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+          content:
+            "Train In Blocks vs PTminder. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
         },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com/compare/ptminder/" }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/compare/ptminder/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {

@@ -29,13 +29,15 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "Train In Blocks vs PTHub. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+          content:
+            "Train In Blocks vs PTHub. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
         },
         { hid: "og:title", name: "og:title", content: "PTHub" },
         {
           hid: "og:description",
           name: "og:description",
-          content: "Train In Blocks vs PTHub. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+          content:
+            "Train In Blocks vs PTHub. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
         },
         {
           hid: "twitter:title",
@@ -45,10 +47,17 @@ export default {
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: "Train In Blocks vs PTHub. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+          content:
+            "Train In Blocks vs PTHub. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
         },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com/compare/pthub/" }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/compare/pthub/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {

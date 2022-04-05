@@ -38,13 +38,15 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "We are extremely active and always developing the most elegant solution for you. Follow our journey here.",
+          content:
+            "We are extremely active and always developing the most elegant solution for you. Follow our journey here.",
         },
         { hid: "og:title", name: "og:title", content: "Development Log" },
         {
           hid: "og:description",
           name: "og:description",
-          content: "We are extremely active and always developing the most elegant solution for you. Follow our journey here.",
+          content:
+            "We are extremely active and always developing the most elegant solution for you. Follow our journey here.",
         },
         {
           hid: "twitter:title",
@@ -54,10 +56,17 @@ export default {
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: "We are extremely active and always developing the most elegant solution for you. Follow our journey here.",
+          content:
+            "We are extremely active and always developing the most elegant solution for you. Follow our journey here.",
         },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com/dev/" }],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/dev/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
