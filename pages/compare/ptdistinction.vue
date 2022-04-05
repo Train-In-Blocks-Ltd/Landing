@@ -27,6 +27,31 @@ export default {
   },
   head() {
     return {
+      title: "PTDistinction",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Train In Blocks vs PTDistinction. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+        },
+        { hid: "og:title", name: "og:title", content: "PTDistinction" },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: "Train In Blocks vs PTDistinction. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "PTDistinction",
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: "Train In Blocks vs PTDistinction. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+        },
+      ],
+      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com/compare/ptdistinction/" }],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
@@ -57,13 +82,6 @@ export default {
         },
       ],
     };
-  },
-  beforeCreate() {
-    this.$parent.$parent.metaHelper.title = "PTDistinction";
-    this.$parent.$parent.metaHelper.description =
-      "Train In Blocks vs PTDistinction. See how these Personal Trainer software products stack up against each other with product feature comparisons.";
-    this.$parent.$parent.metaHelper.url =
-      "https://traininblocks.com/compare/ptdistinction/";
   },
 };
 </script>

@@ -218,49 +218,42 @@ export default {
     return {
       theme: "Light",
       openNav: false,
-      metaHelper: {
-        title: "Train In Blocks",
-        description:
-          "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.",
-        image: "https://traininblocks.com/android-chrome-512x512.png",
-        url: "https://traininblocks.com",
-      },
       exitIntent: false,
     };
   },
   head() {
     return {
-      title: this.metaHelper.title,
+      title: "Affordable Personal Training Software",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: this.metaHelper.description,
+          content: "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.",
         },
-        { hid: "og:title", name: "og:title", content: this.metaHelper.title },
+        { hid: "og:title", name: "og:title", content: "Affordable Personal Training Software" },
         {
           hid: "og:description",
           name: "og:description",
-          content: this.metaHelper.description,
+          content: "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.",
         },
-        { hid: "og:image", name: "og:image", content: this.metaHelper.img },
+        { hid: "og:image", name: "og:image", content: "https://traininblocks.com/android-chrome-512x512.png" },
         {
           hid: "twitter:title",
           name: "twitter:title",
-          content: this.metaHelper.title,
+          content: "Affordable Personal Training Software",
         },
         {
           hid: "twitter:description",
           name: "twitter:description",
-          content: this.metaHelper.description,
+          content: "Over-delivering doesn't have to cost you. Impress your clients and help them reach their health and fitness goals.",
         },
         {
           hid: "twitter:img",
           name: "twitter:img",
-          content: this.metaHelper.image,
+          content: "https://traininblocks.com/android-chrome-512x512.png",
         },
       ],
-      link: [{ hid: "canonical", rel: "canonical", href: this.metaHelper.url }],
+      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com" }],
     };
   },
   mounted() {

@@ -60,6 +60,37 @@ export default {
   },
   head() {
     return {
+      title: this.post.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.post.postDesc,
+        },
+        { hid: "og:title", name: "og:title", content: this.post.title },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: this.post.postDesc,
+        },
+        { hid: "og:image", name: "og:image", content: require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`) },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.post.title,
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.post.postDesc,
+        },
+        {
+          hid: "twitter:img",
+          name: "twitter:img",
+          content: require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`),
+        },
+      ],
+      link: [{ hid: "canonical", rel: "canonical", href: `https://traininblocks.com/blog/${this.$route.params.slug}/` }],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
@@ -91,11 +122,7 @@ export default {
       ],
     };
   },
-  mounted() {
-    this.$parent.$parent.metaHelper.title = this.post.title;
-    this.$parent.$parent.metaHelper.description = this.post.postDesc;
-    this.$parent.$parent.metaHelper.image = this.post.img;
-    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/blog/${this.$route.params.slug}/`;
+  mounted () {
     this.existingLead = window.localStorage.getItem("existing-lead");
   },
   methods: {

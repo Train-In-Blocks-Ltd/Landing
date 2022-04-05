@@ -25,6 +25,31 @@ export default {
   },
   head() {
     return {
+      title: "PTminder",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Train In Blocks vs PTminder. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+        },
+        { hid: "og:title", name: "og:title", content: "PTminder" },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: "Train In Blocks vs PTminder. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "PTminder",
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: "Train In Blocks vs PTminder. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+        },
+      ],
+      link: [{ hid: "canonical", rel: "canonical", href: "https://traininblocks.com/compare/ptminder/" }],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
@@ -55,13 +80,6 @@ export default {
         },
       ],
     };
-  },
-  beforeCreate() {
-    this.$parent.$parent.metaHelper.title = "PTminder";
-    this.$parent.$parent.metaHelper.description =
-      "Train In Blocks vs PTminder. See how these Personal Trainer software products stack up against each other with product feature comparisons.";
-    this.$parent.$parent.metaHelper.url =
-      "https://traininblocks.com/compare/ptminder/";
   },
 };
 </script>

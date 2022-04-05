@@ -18,6 +18,31 @@ export default {
   },
   head() {
     return {
+      title: this.post.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.post.postDesc,
+        },
+        { hid: "og:title", name: "og:title", content: this.post.title },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: this.post.postDesc,
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: this.post.title,
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: this.post.postDesc,
+        },
+      ],
+      link: [{ hid: "canonical", rel: "canonical", href: `https://traininblocks.com/blog/${this.$route.params.slug}/` }],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
@@ -48,11 +73,6 @@ export default {
         },
       ],
     };
-  },
-  mounted() {
-    this.$parent.$parent.metaHelper.title = this.post.title;
-    this.$parent.$parent.metaHelper.description = this.post.postDesc;
-    this.$parent.$parent.metaHelper.url = `https://traininblocks.com/help/${this.$route.params.slug}/`;
   },
 };
 </script>

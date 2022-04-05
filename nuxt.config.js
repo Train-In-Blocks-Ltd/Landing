@@ -23,7 +23,7 @@ export default async () => {
      ** Headers of the page
      */
     head: {
-      titleTemplate: "Train In Blocks | %s",
+      titleTemplate: "%s | Train In Blocks",
       htmlAttrs: {
         lang: "en-GB",
       },
@@ -47,7 +47,7 @@ export default async () => {
         {
           hid: "twitter:title",
           name: "twitter:title",
-          template: (chunk) => `Train In Blocks | ${chunk}`,
+          template: (chunk) => `${chunk} | Train In Blocks`,
         },
         {
           hid: "twitter:description",
@@ -73,7 +73,7 @@ export default async () => {
         {
           hid: "og:title",
           property: "og:title",
-          template: (chunk) => `Train In Blocks | ${chunk}`,
+          template: (chunk) => `${chunk} | Train In Blocks`,
         },
         {
           hid: "og:image",
