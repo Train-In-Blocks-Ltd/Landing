@@ -8,7 +8,6 @@ date: 2022-03-26T14:56:12.608Z
 postDesc: Celebrate Mother's Day in style
 exclusive: false
 ---
-
 Hot on the heels of [World Water Day](https://traininblocks.com/blog/world-water-day-2022/) comes another celebration of all we hold dear — it's that time of year again, yes, of course, it's Mother's Day.
 
 Every year we commemorate all things "mum" and this year it falls on Sunday 27th March. Whether she's your real mother, your stepmother or simply the motherly figure in your life, it's time to stop, reflect and simply say thank you to the wonder woman in your life.
@@ -44,26 +43,26 @@ Put your Mum through her paces with the following ideas for that calorie busting
 
 ## Squats
 
-To perform a squat, stand with your feet shoulder-width apart and toes pointed forward. Sit back (as if on a chair), keeping your chest upright and back neutral, whilst ensuring your core is activated for balance. Push through your heels to extend back to your starting stance and squeeze your glutes after each rep. You can see more on how to [perfect your squats here.](https://traininblocks.com/blog/squatting-below-parallel/)
+To[ perform a squat, ](https://www.youtube.com/watch?v=aclHkVaku9U)stand with your feet shoulder-width apart and toes pointed forward. Sit back (as if on a chair), keeping your chest upright and back neutral, whilst ensuring your core is activated for balance. Push through your heels to extend back to your starting stance and squeeze your glutes after each rep. You can see more on how to [perfect your squats here.](https://traininblocks.com/blog/squatting-below-parallel/)
 
 ## Push-ups
 
-Here, begin with hands below shoulders, core tight, and with your body in a neutral stance — straight from head to heel in a "high plank" position. Bend at the elbows to lower your chest towards the ground, keeping elbows tight to your torso. Press your hands into the ground as you push back up to your starting position.
+[Here, begin with hands ](https://www.youtube.com/watch?v=lsRAK6cr5kY)below shoulders, core tight, and with your body in a neutral stance — straight from head to heel in a "high plank" position. Bend at the elbows to lower your chest towards the ground, keeping elbows tight to your torso. Press your hands into the ground as you push back up to your starting position.
 
 ## Mountain Climbers
 
-Don't worry, this one won't have you climbing Ben Nevis! Instead, begin with hands below shoulders, with your core again tight and body in a neutral position — again, as with the push-ups, a straight line from head to heel in a "high plank" position. Lift one leg off the ground, drawing your knee as close as you can to your chest. Return to starting position, and switch legs, alternating between right and left.
+Don't worry, this one won't have you climbing Ben Nevis! [Instead, begin with hands below shoulders,](https://www.youtube.com/watch?v=cnyTQDSE884) with your core again tight and body in a neutral position — again, as with the push-ups, a straight line from head to heel in a "high plank" position. Lift one leg off the ground, drawing your knee as close as you can to your chest. Return to starting position, and switch legs, alternating between right and left.
 
 ## Lunges
 
-For stationary lunges, begin in a split stance with your feet hip distance apart. Keeping weight through your front leg, bend down and bring your back knee nice and low until it's just above the ground. The front knee should be behind the front toes, with both legs forming a 90-degree angle. Press up through the front leg to return to your starting position.
+[For stationary lunges, ](https://www.youtube.com/watch?v=QOVaHwm-Q6U)begin in a split stance with your feet hip distance apart. Keeping weight through your front leg, bend down and bring your back knee nice and low until it's just above the ground. The front knee should be behind the front toes, with both legs forming a 90-degree angle. Press up through the front leg to return to your starting position.
 
 ## Glutes
 
-To perform glute bridges, begin lying flat on your back with knees bent, feet firmly planted on the ground, and hands at your sides for support. With core tight and spine neutral, engage the glutes to press up through the hips. Slowly lower to the ground and repeat.
+To [perform glute bridges,](https://www.youtube.com/watch?v=wPM8icPu6H8) begin lying flat on your back with knees bent, feet firmly planted on the ground, and hands at your sides for support. With core tight and spine neutral, engage the glutes to press up through the hips. Slowly lower to the ground and repeat.
 
 ## Downward to upward "dog"
 
-To perform this exercise, begin in a pushup position, then bend at the hips, keeping knees straight and spine neutral to shift hips up and back, pushing through the upper body to achieve a stretch in the calves and hamstrings, while pressing through the upper body to bring your chest closer to the ground. Bend at the elbows, and swoop into an upward dog position, extending through the chest and looking up towards the sky. Pause to breathe. Push back into downward dog and repeat.
+[To perform this exercise, ](https://www.youtube.com/watch?v=axMTMvev2L8)begin in a pushup position, then bend at the hips, keeping knees straight and spine neutral to shift hips up and back, pushing through the upper body to achieve a stretch in the calves and hamstrings, while pressing through the upper body to bring your chest closer to the ground. Bend at the elbows, and swoop into an upward dog position, extending through the chest and looking up towards the sky. Pause to breathe. Push back into downward dog and repeat.
 
 You can find plenty more inspiration when it comes to home exercise and workouts [elsewhere on our TIB site.](https://traininblocks.com/blog/work-out-as-a-couple-this-valentines-day/)
