@@ -17,7 +17,7 @@ export default {
   methods: {
     imgSrc() {
       try {
-        if (this.src.includes('.gif')) {
+        if (this.src.includes(".gif")) {
           return require(`~/assets/media-uploads/${this.src}`);
         } else {
           return require(`~/assets/media-uploads/${this.src}?resize&size=600&format=webp`);

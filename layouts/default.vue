@@ -58,7 +58,7 @@ b {
 .nuxt-content video,
 .nuxt-content iframe {
   aspect-ratio: 16/9;
-  height: auto
+  height: auto;
 }
 ul,
 ol {

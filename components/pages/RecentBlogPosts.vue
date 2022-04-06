@@ -12,7 +12,9 @@
         <img
           height="auto"
           width="auto"
-          :src="require(`../../assets/media-uploads/${blogPost.img}?resize&size=600&format=webp`)"
+          :src="
+            require(`../../assets/media-uploads/${blogPost.img}?resize&size=600&format=webp`)
+          "
           :alt="blogPost.alt || blogPost.title"
           class="gray aspect-square object-cover"
           loading="lazy"
