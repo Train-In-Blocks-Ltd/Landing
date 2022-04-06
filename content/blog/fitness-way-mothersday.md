@@ -43,26 +43,36 @@ Put your Mum through her paces with the following ideas for that calorie busting
 
 ## Squats
 
-To[ perform a squat, ](https://www.youtube.com/watch?v=aclHkVaku9U)stand with your feet shoulder-width apart and toes pointed forward. Sit back (as if on a chair), keeping your chest upright and back neutral, whilst ensuring your core is activated for balance. Push through your heels to extend back to your starting stance and squeeze your glutes after each rep. You can see more on how to [perfect your squats here.](https://traininblocks.com/blog/squatting-below-parallel/)
+To perform a squat, stand with your feet shoulder-width apart and toes pointed forward. Sit back (as if on a chair), keeping your chest upright and back neutral, whilst ensuring your core is activated for balance. Push through your heels to extend back to your starting stance and squeeze your glutes after each rep. You can see more on how to [perfect your squats here.](https://traininblocks.com/blog/squatting-below-parallel/)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aclHkVaku9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 ## Push-ups
 
-[Here, begin with hands ](https://www.youtube.com/watch?v=lsRAK6cr5kY)below shoulders, core tight, and with your body in a neutral stance — straight from head to heel in a "high plank" position. Bend at the elbows to lower your chest towards the ground, keeping elbows tight to your torso. Press your hands into the ground as you push back up to your starting position.
+Here, begin with hands below shoulders, core tight, and with your body in a neutral stance — straight from head to heel in a "high plank" position. Bend at the elbows to lower your chest towards the ground, keeping elbows tight to your torso. Press your hands into the ground as you push back up to your starting position.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lsRAK6cr5kY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 ## Mountain Climbers
 
-Don't worry, this one won't have you climbing Ben Nevis! [Instead, begin with hands below shoulders,](https://www.youtube.com/watch?v=cnyTQDSE884) with your core again tight and body in a neutral position — again, as with the push-ups, a straight line from head to heel in a "high plank" position. Lift one leg off the ground, drawing your knee as close as you can to your chest. Return to starting position, and switch legs, alternating between right and left.
+Don't worry, this one won't have you climbing Ben Nevis! Instead, begin with hands below shoulders, with your core again tight and body in a neutral position — again, as with the push-ups, a straight line from head to heel in a "high plank" position. Lift one leg off the ground, drawing your knee as close as you can to your chest. Return to starting position, and switch legs, alternating between right and left.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cnyTQDSE884" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 ## Lunges
 
-[For stationary lunges, ](https://www.youtube.com/watch?v=QOVaHwm-Q6U)begin in a split stance with your feet hip distance apart. Keeping weight through your front leg, bend down and bring your back knee nice and low until it's just above the ground. The front knee should be behind the front toes, with both legs forming a 90-degree angle. Press up through the front leg to return to your starting position.
+For stationary lunges, begin in a split stance with your feet hip distance apart. Keeping weight through your front leg, bend down and bring your back knee nice and low until it's just above the ground. The front knee should be behind the front toes, with both legs forming a 90-degree angle. Press up through the front leg to return to your starting position.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QOVaHwm-Q6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 ## Glutes
 
-To [perform glute bridges,](https://www.youtube.com/watch?v=wPM8icPu6H8) begin lying flat on your back with knees bent, feet firmly planted on the ground, and hands at your sides for support. With core tight and spine neutral, engage the glutes to press up through the hips. Slowly lower to the ground and repeat.
+To perform glute bridges, begin lying flat on your back with knees bent, feet firmly planted on the ground, and hands at your sides for support. With core tight and spine neutral, engage the glutes to press up through the hips. Slowly lower to the ground and repeat.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wPM8icPu6H8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 ## Downward to upward "dog"
 
-[To perform this exercise, ](https://www.youtube.com/watch?v=axMTMvev2L8)begin in a pushup position, then bend at the hips, keeping knees straight and spine neutral to shift hips up and back, pushing through the upper body to achieve a stretch in the calves and hamstrings, while pressing through the upper body to bring your chest closer to the ground. Bend at the elbows, and swoop into an upward dog position, extending through the chest and looking up towards the sky. Pause to breathe. Push back into downward dog and repeat.
+To perform this exercise, begin in a pushup position, then bend at the hips, keeping knees straight and spine neutral to shift hips up and back, pushing through the upper body to achieve a stretch in the calves and hamstrings, while pressing through the upper body to bring your chest closer to the ground. Bend at the elbows, and swoop into an upward dog position, extending through the chest and looking up towards the sky. Pause to breathe. Push back into downward dog and repeat.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/axMTMvev2L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
 
 You can find plenty more inspiration when it comes to home exercise and workouts [elsewhere on our TIB site.](https://traininblocks.com/blog/work-out-as-a-couple-this-valentines-day/)
+
+<br>
+<br>
+<small><b>The YouTube videos in this article are short clips of workouts that we think may help you. They are in no way associated with Train In Blocks.<b></small>
