@@ -2,7 +2,7 @@
 title: Interview with...Sean Wilson
 slug: sean-wilson-interview
 img: Sean Wilson
-alt: Fitness coach guru Sean Wilson
+alt: Coach and fitness guru Sean Wilson
 author: Jamie Spoor
 date: 2022-04-06T15:48:49.726Z
 postDesc: Interview with PT Sean Wilson
