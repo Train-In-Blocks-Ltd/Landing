@@ -50,8 +50,15 @@ b {
 .nuxt-content a {
   @apply underline text-blue-700;
 }
-.nuxt-content img {
+.nuxt-content img,
+.nuxt-content video,
+.nuxt-content iframe {
   @apply w-full md:w-1/2 sm:max-w-lg my-4;
+}
+.nuxt-content video,
+.nuxt-content iframe {
+  aspect-ratio: 16/9;
+  height: auto
 }
 ul,
 ol {
