@@ -1,14 +1,14 @@
 ---
-title: "Interview with: Sean Wilson"
-slug: pt-sean-wilson
+title: Interview with...Sean Wilson
+slug: sean-wilson-interview
 img: Sean Wilson
-alt: Fitness guru Sean Wilson
+alt: Fitness coach guru Sean Wilson
 author: Jamie Spoor
-date: 2022-04-06T15:44:15.243Z
-postDesc: TIB speak to Sean Wilson
-exclusive: false
+date: 2022-04-06T15:48:49.726Z
+postDesc: Interview with PT Sean Wilson
+exclusive: true
 ---
-[For Sean Wilson,](http://seanwilsonfitness.com/) Sport Journalism graduate turned Personal Trainer extraordinaire, a love of pumping the iron created a monster.
+[For Sean Wilson](http://seanwilsonfitness.com/), Sport Journalism graduate turned Personal Trainer extraordinaire, a love of pumping the iron created a monster.
 
 When a future in putting pen to paper didn't quite happen, Berkshire-based gym fanatic Sean decided to take matters into his own hands and become a fitness coach, completely off his own back and with no help whatsoever. Intrigued by the story and his inspirational journey, TIB sat down with the ambitious 25-year old to discuss all things fitness.
 
@@ -22,10 +22,10 @@ Sean himself takes up the story...
 
 It's a common misconception that coaching and training are one and the same and sit together hand in glove, but in fact there's a notable difference — as Sean explained.
 
-***SW:*** "If you're just going off and training people without any outcome, plan or end destination, it's a tough job and you aren't going to be fulfilled.\
+***SW:*** "If you're just going off and training people without any outcome, plan or end destination, it's a tough job and you aren't going to be fulfilled.
 "On the other hand, coaching is finding out what someone wants to achieve and then working towards that with them. If your clients are progressing and doing really well, it's remarkably rewarding and an amazing sense of achievement you get as a result."
 
 ***TIB: What are some of the perks and pitfalls of the personal training industry?***
 
-***SW:*** "In terms of the perks, I absolutely love the transformation of people over time. Seeing someone change not just physically but mentally and emotionally is absolutely amazing. Many personal trainers start in gyms but I'm self employed so I can be the master of my own destiny which I very much enjoy; every success (or failure) is down to me and I'm fully responsible. You never know enough in terms of your coaching knowledge, you're constantly learning and always improving.\
-"The main pitfall is the long hours. I do very long days from 5.30am until 8pm, it's not just simply coaching clients, you're running a business as well so it's things like doing the accounts, marketing, content creation,
+***SW:*** "In terms of the perks, I absolutely love the transformation of people over time. Seeing someone change not just physically but mentally and emotionally is absolutely amazing. Many personal trainers start in gyms but I'm self employed so I can be the master of my own destiny which I very much enjoy; every success (or failure) is down to me and I'm fully responsible. You never know enough in terms of your coaching knowledge, you're constantly learning and always improving.
+"The main pitfall is the long hours. I do very long days from 5.30am until 8pm, it's not just simply coaching clients, you're running a business as well so it's things like doing the accounts, marketing, content creation, client programming, web design and networking etc.
