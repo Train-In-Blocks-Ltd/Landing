@@ -23,7 +23,7 @@
         <txt type="large-body" class="mb-8" bold
           >Sign up to read the full article</txt
         >
-        <mailchimp-sign-up :on-exist="() => (existingLead = true)" />
+        <mailchimp-sign-up tag="Blog" :on-exist="() => (existingLead = true)" />
       </card-wrapper>
       <hr />
     </div>

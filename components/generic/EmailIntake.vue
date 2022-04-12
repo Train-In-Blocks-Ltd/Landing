@@ -13,7 +13,7 @@
       alt="Trainer"
       loading="lazy"
     />
-    <mailchimp-sign-up>
+    <mailchimp-sign-up tag="Home">
       <txt type="subtitle" class="my-4">
         Want to manage your clients easily?
       </txt>

@@ -36,6 +36,7 @@ export default {
   },
   props: {
     onExist: Function,
+    tag: String,
   },
   data() {
     return {
@@ -50,6 +51,7 @@ export default {
       try {
         await axios.post("/.netlify/functions/mailchimp", {
           email,
+          tag: this.tag,
         });
         this.onExist();
         window.localStorage.setItem("existing-lead", true);

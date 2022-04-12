@@ -16,14 +16,15 @@ exports.handler = function handler(event, context, callback) {
       headers,
       body: "",
     });
-  } else if (event.body && JSON.parse(event.body).email) {
+  } else if (event.body) {
+    const payload = JSON.parse(event.body);
     axios
       .post(
         "https://us8.api.mailchimp.com/3.0/lists/73101450d0/members/",
         {
-          email_address: JSON.parse(event.body).email,
+          email_address: payload.email,
           status: "subscribed",
-          tags: ["Client user"],
+          tags: ["Lead", payload.tag],
         },
         {
           headers: {

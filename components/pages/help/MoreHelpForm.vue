@@ -136,6 +136,7 @@ export default {
         if (this.contactForm.mcConsent) {
           await axios.post("/.netlify/functions/mailchimp", {
             email: this.contactForm.email,
+            tag: "Help",
           });
         }
       } catch (e) {
