@@ -32,6 +32,10 @@ export default {
           name: "Nicola",
           text: "The app is perfect for storing client data, making programming easy, and more organised. So much more affordable than other software and just as good! I love the features that come with it and guidance on how to use them.",
         },
+        {
+          name: "Dave",
+          text: "I love using Train In Blocks. It has helped me to create detailed training sessions for my clients, track their progress, and to divide different stages of my clients’ training. It’s so easy to use and looks very smart too at a very good price point.",
+        },
       ],
     };
   },
