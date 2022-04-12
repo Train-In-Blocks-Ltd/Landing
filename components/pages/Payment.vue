@@ -29,7 +29,7 @@
           <txt type="title">
             {{ product.price }}
           </txt>
-          <default-button :on-click-prevent="() => checkout(product.stripe)"
+          <default-button :on-click="() => checkout(product.stripe)"
             >Select</default-button
           >
         </div>
