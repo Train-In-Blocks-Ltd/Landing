@@ -33,6 +33,44 @@ export default {
   },
   head() {
     return {
+      title: "Free Content for Personal Trainers",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Use our high-quality content to improve your knowledge in all things health, fitness and well-being related.",
+        },
+        {
+          hid: "og:title",
+          name: "og:title",
+          content: "Free Content for Personal Trainers",
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content:
+            "Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.",
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "Free Content for Personal Trainers",
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content:
+            "Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.",
+        },
+      ],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/blog/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
@@ -50,13 +88,6 @@ export default {
         },
       ],
     };
-  },
-  beforeCreate() {
-    this.$parent.$parent.metaHelper.title =
-      "Free Content for Personal Trainers";
-    this.$parent.$parent.metaHelper.description =
-      "Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.";
-    this.$parent.$parent.metaHelper.url = "https://traininblocks.com/blog/";
   },
   mounted() {
     const OBSERVER = new IntersectionObserver(

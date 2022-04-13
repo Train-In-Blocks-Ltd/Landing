@@ -22,11 +22,20 @@ export default {
   },
   head() {
     return {
-      meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      title: "Cancelled",
+      meta: [
+        { hid: "og:title", name: "og:title", content: "Cancelled" },
+        { hid: "twitter:title", name: "twitter:title", content: "Cancelled" },
+        { hid: "robots", name: "robots", content: "noindex" },
+      ],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/cancelled/",
+        },
+      ],
     };
-  },
-  beforeCreate() {
-    this.$parent.$parent.metaHelper.title = "Cancelled";
   },
 };
 </script>

@@ -33,6 +33,40 @@ export default {
   },
   head() {
     return {
+      title: "Development Log",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "We are extremely active and always developing the most elegant solution for you. Follow our journey here.",
+        },
+        { hid: "og:title", name: "og:title", content: "Development Log" },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content:
+            "We are extremely active and always developing the most elegant solution for you. Follow our journey here.",
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "Development Log",
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content:
+            "We are extremely active and always developing the most elegant solution for you. Follow our journey here.",
+        },
+      ],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/dev/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
@@ -50,12 +84,6 @@ export default {
         },
       ],
     };
-  },
-  beforeCreate() {
-    this.$parent.$parent.metaHelper.title = "Development Log";
-    this.$parent.$parent.metaHelper.description =
-      "We are extremely active and always developing the most elegant solution for you. Follow our journey here.";
-    this.$parent.$parent.metaHelper.url = "https://traininblocks.com/dev/";
   },
 };
 </script>

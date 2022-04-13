@@ -38,6 +38,37 @@ export default {
   },
   head() {
     return {
+      title: "Compare",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Index of comparisons for Train In Blocks",
+        },
+        { hid: "og:title", name: "og:title", content: "Compare" },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: "Index of comparisons for Train In Blocks",
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "Compare",
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: "Index of comparisons for Train In Blocks",
+        },
+      ],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/compare/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
@@ -55,12 +86,6 @@ export default {
         },
       ],
     };
-  },
-  mounted() {
-    this.$parent.$parent.metaHelper.title = "Compare";
-    this.$parent.$parent.metaHelper.description =
-      "Index of comparisons for Train In Blocks";
-    this.$parent.$parent.metaHelper.url = "https://traininblocks.com/compare/";
   },
 };
 </script>

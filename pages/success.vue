@@ -33,11 +33,20 @@ export default {
   },
   head() {
     return {
-      meta: [{ hid: "robots", name: "robots", content: "noindex" }],
+      title: "Success",
+      meta: [
+        { hid: "robots", name: "robots", content: "noindex" },
+        { hid: "og:title", name: "og:title", content: "Success" },
+        { hid: "twitter:title", name: "twitter:title", content: "Success" },
+      ],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/success/",
+        },
+      ],
     };
-  },
-  beforeCreate() {
-    this.$parent.$parent.metaHelper.title = "Success";
   },
 };
 </script>

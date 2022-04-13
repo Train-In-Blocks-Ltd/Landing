@@ -27,6 +27,40 @@ export default {
   },
   head() {
     return {
+      title: "Trainerize",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Train In Blocks vs Trainerize. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+        },
+        { hid: "og:title", name: "og:title", content: "Trainerize" },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content:
+            "Train In Blocks vs Trainerize. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "Trainerize",
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content:
+            "Train In Blocks vs Trainerize. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
+        },
+      ],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/compare/trainerize/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
@@ -57,13 +91,6 @@ export default {
         },
       ],
     };
-  },
-  beforeCreate() {
-    this.$parent.$parent.metaHelper.title = "Trainerize";
-    this.$parent.$parent.metaHelper.description =
-      "Train In Blocks vs Trainerize. See how these Personal Trainer software products stack up against each other with product feature comparisons.";
-    this.$parent.$parent.metaHelper.url =
-      "https://traininblocks.com/compare/trainerize/";
   },
 };
 </script>

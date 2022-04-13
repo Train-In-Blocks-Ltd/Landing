@@ -22,6 +22,37 @@ export default {
   },
   head() {
     return {
+      title: "Legal",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Index of legal documents for Train In Blocks",
+        },
+        { hid: "og:title", name: "og:title", content: "Legal" },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content: "Index of legal documents for Train In Blocks",
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "Legal",
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content: "Index of legal documents for Train In Blocks",
+        },
+      ],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/legal/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
@@ -39,12 +70,6 @@ export default {
         },
       ],
     };
-  },
-  mounted() {
-    this.$parent.$parent.metaHelper.title = "Legal";
-    this.$parent.$parent.metaHelper.description =
-      "Index of legal documents for Train In Blocks";
-    this.$parent.$parent.metaHelper.url = "https://traininblocks.com/legal/";
   },
 };
 </script>

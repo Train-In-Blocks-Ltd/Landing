@@ -52,6 +52,40 @@ export default {
   },
   head() {
     return {
+      title: "Support Desk",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Need help with something? We are happy to help with anything.",
+        },
+        { hid: "og:title", name: "og:title", content: "Support Desk" },
+        {
+          hid: "og:description",
+          name: "og:description",
+          content:
+            "Need help with something? We are happy to help with anything.",
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "Support Desk",
+        },
+        {
+          hid: "twitter:description",
+          name: "twitter:description",
+          content:
+            "Need help with something? We are happy to help with anything.",
+        },
+      ],
+      link: [
+        {
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com/help/",
+        },
+      ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
@@ -69,12 +103,6 @@ export default {
         },
       ],
     };
-  },
-  beforeCreate() {
-    this.$parent.$parent.metaHelper.title = "Support Desk";
-    this.$parent.$parent.metaHelper.description =
-      "Need help with something? We are happy to help with anything.";
-    this.$parent.$parent.metaHelper.url = "https://traininblocks.com/help/";
   },
   methods: {
     scroll() {
