@@ -69,10 +69,10 @@ export default {
     darkmode() {
       if (this.darkmodeOn) {
         document.documentElement.setAttribute("class", "dark");
-        this.$parent.$parent.theme = 'Dark';
+        this.$parent.$parent.theme = "Dark";
       } else {
         document.documentElement.removeAttribute("class");
-        this.$parent.$parent.theme = 'Light';
+        this.$parent.$parent.theme = "Light";
       }
     },
   },

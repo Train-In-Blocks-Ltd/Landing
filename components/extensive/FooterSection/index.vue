@@ -57,7 +57,18 @@
           :src="require('../../../assets/svg/socials/lk.svg')"
         />
       </a>
-      <a href="https://www.producthunt.com/posts/train-in-blocks?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-train&#0045;in&#0045;blocks" target="_blank"><img :src="`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=336071&theme=${$parent.theme === 'Light' ? 'dark' : 'light'}`" alt="Train&#0032;In&#0032;Blocks - We&#0039;ve&#0032;taken&#0032;exercise&#0032;programming&#0032;to&#0032;the&#0032;next&#0032;level&#0046; | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+      <a
+        href="https://www.producthunt.com/posts/train-in-blocks?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-train&#0045;in&#0045;blocks"
+        target="_blank"
+        ><img
+          :src="`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=336071&theme=${
+            $parent.theme === 'Light' ? 'dark' : 'light'
+          }`"
+          alt="Train&#0032;In&#0032;Blocks - We&#0039;ve&#0032;taken&#0032;exercise&#0032;programming&#0032;to&#0032;the&#0032;next&#0032;level&#0046; | Product Hunt"
+          style="width: 250px; height: 54px"
+          width="250"
+          height="54"
+      /></a>
     </div>
     <div>
       <txt type="tiny" class="mt-4" bold>Train In Blocks Ltd</txt>
