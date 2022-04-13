@@ -1,11 +1,19 @@
+<style>
+@media (min-width: 768px) {
+  .testimonial-item {
+     flex-basis: calc(50% - 16px)
+  }
+}
+</style>
+
 <template>
   <div>
     <txt type="title" class="mb-16 pt-8">Testimonials</txt>
-    <div class="grid gap-8 md:grid-cols-2">
+    <div class="flex flex-wrap gap-8 justify-center">
       <div
         v-for="testimonial in testimonials"
         :key="testimonial.text"
-        class="grid gap-4 text-center"
+        class="grid gap-4 text-center testimonial-item"
       >
         <txt class="italic">"{{ testimonial.text }}"</txt>
         <txt>- {{ testimonial.name }}</txt>
