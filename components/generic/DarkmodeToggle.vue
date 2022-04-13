@@ -67,9 +67,13 @@ export default {
   },
   methods: {
     darkmode() {
-      if (this.darkmodeOn)
+      if (this.darkmodeOn) {
         document.documentElement.setAttribute("class", "dark");
-      else document.documentElement.removeAttribute("class");
+        this.$parent.$parent.theme = 'Dark';
+      } else {
+        document.documentElement.removeAttribute("class");
+        this.$parent.$parent.theme = 'Light';
+      }
     },
   },
 };
