@@ -1,7 +1,7 @@
 <style>
 @media (min-width: 768px) {
   .testimonial-item {
-     flex-basis: calc(50% - 16px)
+    flex-basis: calc(50% - 16px);
   }
 }
 </style>
