@@ -39,7 +39,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.",
+            "Use our high-quality content to improve your knowledge in all things health, fitness and well-being related.",
         },
         {
           hid: "og:title",
