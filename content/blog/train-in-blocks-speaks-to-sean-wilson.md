@@ -30,3 +30,11 @@ He adds: "70% of personal trainers don't make it past the first year, the main r
 "If you're just going off and training people without any outcome, plan or end destination, it's a tough job and you aren't going to be fulfilled. I think a lot of people don’t understand what’s involved and that’s why a lot of people leave. On the other hand, coaching is finding out what someone wants to achieve and then working towards that with them. If your clients are progressing and doing really well, it's remarkably rewarding and an amazing sense of achievement you get as a result." 
 
 It hasn't all been plain sailing for the ambitious sports fanatic though – his fledgling business took the first tentative steps towards becoming [Sean Wilson Fitness ](http://seanwilsonfitness.com/services/)from the cosy confines and the inauspicious surroundings of his garage. Two years on, and Sean has recently moved into his new state-of-the-art studio in Newbury, Berkshire as his career continues to climb from strength to strength.
+
+His love of his job and the profession shines through as Sean speaks passionately about the impact of changing people's lives physically, mentally and emotionally.
+
+ He says: "I absolutely love the transformation of people over time.  Many personal trainers start in gyms but I'm self employed so I love being the master of my own destiny. The problem I had with Sport Journalism was because I was applying for jobs, my destiny was in someone’s else’s hands, i.e the employer. Whereas with this one, every success (or failure) is down to me and I’m 110% fully responsible. But I love that, I love being in control of my future. It’s an industry where you never know enough in terms of your coaching knowledge, you're constantly learning and always improving which is brilliant."
+
+But there is also a world beyond the fitness studio — as he touched on, Sean's status as a self employed PT brings with it long hours as he 
+
+you're running a business as well so it's things like doing the accounts, marketing, content creation, client programming, web design, networking, all those things. You’re doing a lot of tasks outside of just coaching people. It’s a long day definitely.
