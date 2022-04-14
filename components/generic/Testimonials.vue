@@ -5,7 +5,7 @@
       <div
         v-for="testimonial in testimonials"
         :key="testimonial.text"
-        class="grid gap-4 text-center mt-12 md:w-1/2 px-4"
+        class="grid gap-4 text-center mt-12 md:w-1/2 md:px-4"
       >
         <txt class="italic">"{{ testimonial.text }}"</txt>
         <txt>- {{ testimonial.name }}</txt>
