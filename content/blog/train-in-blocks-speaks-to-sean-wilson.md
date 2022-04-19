@@ -1,7 +1,7 @@
 ---
 title: Train in Blocks speaks to... Sean Wilson
 slug: sean-wilson-interview
-img: Sean Wilson
+img: Sean Wilson PT
 alt: Fitness coach guru Sean Wilson
 author: Jamie Spoor
 date: 2022-04-13T09:06:56.124Z
@@ -59,7 +59,7 @@ It's advice that goes for clients too:
 
 In a fascinating discussion, the most insightful part of our chat came when Sean explained how a coach differs from a trainer. We were under the impression the two were actually one and the same, but there's actually a very pertinent difference. 
 
-Sean says: "A coach is still taking people through a workout but the difference between a trainer and a coach - apart from taking them to an outcome - is the interaction outside of the session. \
+Sean says: "A coach is still taking people through a workout but the difference between a trainer and a coach - apart from taking them to an outcome - is the interaction outside of the session. 
 "So for example, if you see someone three times a week, what a trainer will do is take you through a workout and say thanks, see you on Wednesday and nothing in between then. What a coach will do, if they see you struggling with something, they will send you an article via WhatsApp or they’ll constantly be asking you during the sessions, how’s your sleep going, how's your diet, how are you feeling etc. It’s good sleep, it’s low stress levels, being more active during the day, having a more positive outlook. A coach works with someone on psychology and lifestyle whereas a trainer just takes someone through a workout."
 
 As he's touched upon, the transformative effect his work has on others is the best aspect of the job for Sean. During his two years in the industry, his client's lives have changed beyond all recognition under his tutelage, and it's this which Sean loves so much. 
@@ -72,13 +72,15 @@ Sean has the nuances down to a tee with the willingness to charge more for your 
 * Your self worth goes up so much, you get better quality clients which in turn helps you to improve. If clients are paying more they will stick to the plan and value what you bring. 
 * You’re rewarding yourself, investing in yourself. If you invest hundreds or even thousands of hours and money in development, you want to reward yourself by charging more. 
 * The career is draining if you don’t get certain things right. If you don’t feel like you’re financially getting what you deserve, the job is very unfulfilling. 
-* You earn that price increase by investing in yourself and improving your knowledge, skill and reputation over time 
+* You earn that price increase by investing in yourself and improving your knowledge, skill and reputation over time.
 
 So what next for Sean, his business and the industry as a whole? Fuelled by the lingering legacy of the pandemic, online coaching has become big business, but Sean says the future is bright:
 
-"I think the standard of the industry is going to improve. Sometimes I think personal training gets a bit of a bad rep. People might look at them in gyms and think they’re know-it-all fitness freaks and things like that. There’s a big shift in the industry in the number of coaches becoming online coaches rather than PTs. But at the same time I think there’s going to be a divide between people who go firmly down the online coaching route and people who become firmly personal trainers. \
+"I think the standard of the industry is going to improve. Sometimes I think personal training gets a bit of a bad rep. People might look at them in gyms and think they’re know-it-all fitness freaks and things like that. There’s a big shift in the industry in the number of coaches becoming online coaches rather than PTs. But at the same time I think there’s going to be a divide between people who go firmly down the online coaching route and people who become firmly personal trainers. 
 "I really believe the standard of the industry is getting higher because of mentors in the industry who are instilling excellence within coaches. Personal training is a bit of a luxury, it can be cushty, but it’s a life-changing investment if you can make it."
 
 TIB would like to thank Sean for taking time out of his busy schedule to talk to us, for his insight and for his willingness to allow us the use of [his website](http://seanwilsonfitness.com/) and [social media channels. ](https://www.instagram.com/seanwilsonpt/)
 
 Keep an eye out for our exclusive content from Sean coming soon across all platforms.
+
+All images kindly used with Sean's permission. 
