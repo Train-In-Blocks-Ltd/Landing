@@ -1,7 +1,7 @@
 ---
 title: Train in Blocks speaks to... Sean Wilson
 slug: sean-wilson-interview
-img: Sean Wilson PT
+img: Sean WilsonPT
 alt: Fitness coach guru Sean Wilson
 author: Jamie Spoor
 date: 2022-04-13T09:06:56.124Z
