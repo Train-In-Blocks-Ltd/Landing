@@ -77,7 +77,7 @@ export default {
         {
           hid: "canonical",
           rel: "canonical",
-          href: `https://traininblocks.com/blog/${this.$route.params.slug}/`,
+          href: `https://traininblocks.com/dev/${this.$route.params.slug}/`,
         },
       ],
       __dangerouslyDisableSanitizers: ["script"],
@@ -103,7 +103,7 @@ export default {
               "@type": "ListItem",
               "position": 3,
               "name": "${this.post.title}",
-              "item": "https://traininblocks.com/legal/${this.$route.params.slug}/"
+              "item": "https://traininblocks.com/dev/${this.$route.params.slug}/"
             }]
           }`,
           type: "application/ld+json",

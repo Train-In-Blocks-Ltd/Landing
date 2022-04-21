@@ -126,7 +126,7 @@ export default {
               "@type": "ListItem",
               "position": 3,
               "name": "${this.post.title}",
-              "item": "https://traininblocks.com/legal/${this.$route.params.slug}/"
+              "item": "https://traininblocks.com/blog/${this.$route.params.slug}/"
             }]
           }`,
           type: "application/ld+json",
