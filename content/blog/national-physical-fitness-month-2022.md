@@ -1,6 +1,6 @@
 ---
 title: National Physical Fitness month 2022
-slug: natio
+slug: national-physical-fitness-month
 img: NPF&S
 alt: National Physical Fitness Month
 author: Jamie Spoor
