@@ -1,12 +1,12 @@
 ---
 title: Train in Blocks speaks to... Sean Wilson
-slug: sean-wilson-interview
+slug: sean-wilson-personal-trainer-interview
 img: Sean WilsonPT
-alt: Fitness coach guru Sean Wilson
+alt: Personal trainer and fitness guru Sean Wilson
 author: Jamie Spoor
 date: 2022-04-13T09:06:56.124Z
-postDesc: Interview with PT Sean Wilson
-exclusive: false
+postDesc: Interview with Personal Trainer Sean Wilson
+exclusive: true
 ---
 The personal training industry is synonymous with rapid growth in more ways than one, with a 15% increase in fitness coaches in the UK since 2019 despite the restraints of the pandemic. In a lucrative market, the rewards for a successful PT are great. There are risks too, but more on that later. 
 
@@ -17,6 +17,8 @@ When a career in Sport Journalism failed to come to fruition, [25-year-old Sean 
 What began as regular gym sessions transcended into a thriving personal training business with Berkshire-based Wilson now an esteemed industry expert in his own right. 
 
 As the UK went into lockdown in March of 2020, Sean took a personal training qualification and, as the old adage says, the rest is history.
+
+## The industry
 
 We sat down with Sean over Zoom for a fascinating insight on all things fitness.
 
@@ -37,8 +39,12 @@ His love of his job and the profession shines through as Sean has fully embraced
 
 <markdown-image src="Sean Wilson jpg" alt="Fitness guru Sean Wilson "></markdown-image>
 
+## Risk vs reward
+
 But there is also a world beyond the fitness studio — as a self employed PT, Sean will often work up to 15 hours a day, not simply coaching his clients but keeping up to speed with the scheduling and financial aspect that comes with the territory of having your own business. Up with the lark at 5.30 and clocking off at 8pm, an essential part of Sean's role entails things like doing the accounts, marketing, content creation, client programming, web design and networking. Whilst all this is important, Sean describes the long days as the main pitfall of his work.\
 "You have to know your limits in terms of how many sessions you do a week. If you try and chase clients, chase money, you get to the point where your diary is crazy busy and then it’s not sustainable in my view. I do around 30 sessions a week, about six a day. People can do more but I like that number so knowing your limits is very important otherwise you can become burned out very quickly."
+
+## Find the 'why'
 
 Breaking down the barriers by working with a PT to smash through the ceiling can be a daunting prospect for many. It's inevitable some will fall by the wayside (more on that in a moment) but Sean gave us a compelling insight into the secrets of success. 
 
@@ -59,6 +65,8 @@ It's advice that goes for clients too:
  "What I’ve found fascinating in coaching is every client’s different psychologically, bio-mechanically, their behaviours are different. It’s not a one-size-fits-all thing. 
 “Working with a coach is one of the best things you can do. A coach takes guesswork out of the equation and makes the adjustment over time you wouldn’t realise you can do. I would describe it as a life-changing experience. You’re not only changing your body shape but your lifestyle, your habits. You’re eating better, you’re sleeping better, you just feel like a different person."
 
+## A life changing investment
+
 In a fascinating discussion, the most insightful part of our chat came when Sean explained how a coach differs from a trainer. We were under the impression the two were actually one and the same, but there's actually a very pertinent difference. 
 
 Sean says: "A coach is still taking people through a workout but the difference between a trainer and a coach - apart from taking them to an outcome - is the interaction outside of the session. 
@@ -67,7 +75,9 @@ Sean says: "A coach is still taking people through a workout but the difference 
 As he's touched upon, the transformative effect his work has on others is the best aspect of the job for Sean. During his two years in the industry, his client's lives have changed beyond all recognition under his tutelage, and it's this which Sean loves so much. 
 "Absolutely you’re changing people’s lives. The most rewarding part of the job without a doubt is when you see a client grow, change, develop over the weeks and months. It beats any other thing like how much money you earn or anything and gives you confidence as a coach. I take people to life-changing outcomes, that’s inspiring and that’s why every day I wake up inspired and excited to go to work because you know you’re going to have a positive impact on people’s lives."
 
-Sean has the nuances down to a tee with the willingness to charge more for your services over time an important [facet of a PT's development.](https://traininblocks.com/blog/ten-tips-every-pt-should-know/) To sum up: 
+## Tricks of the trade
+
+Sean has the nuances down to a tee with the willingness to charge more for your services over time an important [facet of a PT's development. ](https://traininblocks.com/blog/ten-tips-every-pt-should-know/)To sum up: 
 
 * A lot of coaches just stick with the same price every year but it's essential to learn you need to charge more
 * Not only just because you earn more money, it’s because you value yourself so much more when you charge more. 
@@ -76,13 +86,13 @@ Sean has the nuances down to a tee with the willingness to charge more for your 
 * The career is draining if you don’t get certain things right. If you don’t feel like you’re financially getting what you deserve, the job is very unfulfilling. 
 * You earn that price increase by investing in yourself and improving your knowledge, skill and reputation over time.
 
+## The future...
+
 So what next for Sean, his business and the industry as a whole? Fuelled by the lingering legacy of the pandemic, online coaching has become big business, but Sean says the future is bright:
 
 "I think the standard of the industry is going to improve. Sometimes I think personal training gets a bit of a bad rep. People might look at them in gyms and think they’re know-it-all fitness freaks and things like that. There’s a big shift in the industry in the number of coaches becoming online coaches rather than PTs. But at the same time I think there’s going to be a divide between people who go firmly down the online coaching route and people who become firmly personal trainers. 
 "I really believe the standard of the industry is getting higher because of mentors in the industry who are instilling excellence within coaches. Personal training is a bit of a luxury, it can be cushty, but it’s a life-changing investment if you can make it."
 
-TIB would like to thank Sean for taking time out of his busy schedule to talk to us, for his insight and for his willingness to allow us the use of [his website](http://seanwilsonfitness.com/) and [social media channels. ](https://www.instagram.com/seanwilsonpt/)
+Train in Blocks would like to thank Sean for taking time out of his busy schedule to talk to us, for his insight, his permission for us to use images and for his willingness to allow us the use of [](http://seanwilsonfitness.com/)his website and [social media channels. ](https://www.instagram.com/seanwilsonpt/)
 
-Keep an eye out for our exclusive content from Sean coming soon across all platforms.
-
-All images kindly used with Sean's permission.
+Keep an eye out for our exclusive content from Sean coming soon across all platforms and be sure to share, like, retweet, comment and send it to your friends.
