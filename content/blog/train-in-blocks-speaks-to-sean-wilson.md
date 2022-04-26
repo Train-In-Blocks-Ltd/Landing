@@ -1,5 +1,5 @@
 ---
-title: Train in Blocks speaks to... Sean Wilson
+title: "Train in Blocks speaks to: Sean Wilson"
 slug: sean-wilson-personal-trainer-interview
 img: Sean WilsonPT
 alt: Personal trainer and fitness guru Sean Wilson
