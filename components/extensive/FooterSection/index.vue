@@ -1,3 +1,10 @@
+<style>
+  .sf-root img {
+    height: 54px;
+    min-width: 100%;
+  }
+</style>
+
 <template>
   <footer class="grid gap-4 border-t-3 border-gray-800 dark:border-white py-12">
     <CookieControl>
@@ -58,22 +65,29 @@
         />
       </a>
     </div>
-
-    <!-- Product hunt widget -->
-    <a
-      href="https://www.producthunt.com/posts/train-in-blocks?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-train&#0045;in&#0045;blocks"
-      target="_blank"
-      class="mt-4"
-      ><img
-        :src="`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=336071&theme=${
-          $parent.theme === 'Light' ? 'light' : 'dark'
-        }`"
-        alt="Train&#0032;In&#0032;Blocks - We&#0039;ve&#0032;taken&#0032;exercise&#0032;programming&#0032;to&#0032;the&#0032;next&#0032;level&#0046; | Product Hunt"
-        style="width: 250px; height: 54px"
-        width="250"
-        height="54"
-    /></a>
-
+    <div class="flex wrap gap-4 mt-4">
+      <!-- Product hunt widget -->
+      <a
+        href="https://www.producthunt.com/posts/train-in-blocks?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-train&#0045;in&#0045;blocks"
+        target="_blank"
+        ><img
+          :src="`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=336071&theme=${
+            $parent.theme === 'Light' ? 'light' : 'dark'
+          }`"
+          alt="Train&#0032;In&#0032;Blocks - We&#0039;ve&#0032;taken&#0032;exercise&#0032;programming&#0032;to&#0032;the&#0032;next&#0032;level&#0046; | Product Hunt"
+          style="width: 250px; height: 54px"
+          width="250"
+          height="54"
+      /></a>
+      <!--Sourceforge widget -->
+      <div class="sf-root" data-id="3497855" :data-badge="`customers-love-us-${
+            $parent.theme === 'Light' ? 'white' : 'black'
+          }`" data-variant-id="sf">
+          <a href="https://sourceforge.net/software/product/Train-In-Blocks/" target="_blank">Train In Blocks Reviews</a>
+      </div>
+      <script>(function () {var sc=document.createElement('script');sc.async=true;sc.src='https://b.sf-syn.com/badge_js?sf_id=3497855&variant_id=sf';var p=document.getElementsByTagName('script')[0];p.parentNode.insertBefore(sc, p);})();
+      </script>
+    </div>
     <div>
       <txt type="tiny" class="mt-4" bold>Train In Blocks Ltd</txt>
       <txt type="tiny">12515717</txt>
