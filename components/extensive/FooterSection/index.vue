@@ -1,8 +1,8 @@
 <style>
-  .sf-root img {
-    height: 54px;
-    min-width: 100%;
-  }
+.sf-root img {
+  height: 54px;
+  min-width: 100%;
+}
 </style>
 
 <template>
@@ -80,12 +80,28 @@
           height="54"
       /></a>
       <!--Sourceforge widget -->
-      <div class="sf-root" data-id="3497855" :data-badge="`customers-love-us-${
-            $parent.theme === 'Light' ? 'white' : 'black'
-          }`" data-variant-id="sf">
-          <a href="https://sourceforge.net/software/product/Train-In-Blocks/" target="_blank">Train In Blocks Reviews</a>
+      <div
+        class="sf-root"
+        data-id="3497855"
+        :data-badge="`customers-love-us-${
+          $parent.theme === 'Light' ? 'white' : 'black'
+        }`"
+        data-variant-id="sf"
+      >
+        <a
+          href="https://sourceforge.net/software/product/Train-In-Blocks/"
+          target="_blank"
+          >Train In Blocks Reviews</a
+        >
       </div>
-      <script>(function () {var sc=document.createElement('script');sc.async=true;sc.src='https://b.sf-syn.com/badge_js?sf_id=3497855&variant_id=sf';var p=document.getElementsByTagName('script')[0];p.parentNode.insertBefore(sc, p);})();
+      <script>
+        (function () {
+          var sc = document.createElement("script");
+          sc.async = true;
+          sc.src = "https://b.sf-syn.com/badge_js?sf_id=3497855&variant_id=sf";
+          var p = document.getElementsByTagName("script")[0];
+          p.parentNode.insertBefore(sc, p);
+        })();
       </script>
     </div>
     <div>
