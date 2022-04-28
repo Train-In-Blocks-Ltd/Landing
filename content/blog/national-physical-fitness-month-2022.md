@@ -5,7 +5,7 @@ img: Cycling 1
 alt: National Physical Fitness Month
 author: Jamie Spoor
 date: 2022-04-25T09:02:50.903Z
-postDesc: Celebrate all things fitness this May
+postDesc: "Keep fit and get moving this May "
 exclusive: false
 ---
 May marks the annual observance of [National Physical Fitness and Sports Month. ](https://health.gov/news/202105/move-may-and-celebrate-national-physical-fitness-sports-month)
