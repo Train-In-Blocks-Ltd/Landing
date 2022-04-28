@@ -96,3 +96,5 @@ So what next for Sean, his business and the industry as a whole? Fuelled by the 
 Train in Blocks would like to thank Sean for taking time out of his busy schedule to talk to us, for his insight, his permission for us to use images and for his willingness to allow us the use of [](http://seanwilsonfitness.com/)his website and [social media channels. ](https://www.instagram.com/seanwilsonpt/)
 
 Keep an eye out for our exclusive content from Sean coming soon across all platforms and be sure to share, like, retweet, comment and send it to your friends.
+
+Sean and his business have been nominated for the Berkshire Retail Business Awards 2022 with the regional winner to go on to the Grand Final. Congratulations to him!
