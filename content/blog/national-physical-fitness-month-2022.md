@@ -42,6 +42,8 @@ Getting into fitness can be a terrific way to meet people and make new friends. 
 
 Sometimes, getting active can be as simple as taking a walk in the woods. Set aside some time on the weekend for a hike, then research cool hiking spots near where you live. From recreational trails to nature reserves to national parks, there are no wrong answers here. Just get out there, hike a few miles, and enjoy the scenery. 
 
+<markdown-image src="Fitness month jpg" alt="Get out and play in May "></markdown-image> (Image courtesy of National Health) 
+
 ## Bike to work for the month
 
 If possible, pledge to bike to work for a month. Not only is this kind of commitment a fantastic way to get your daily exercise, but it’s also an effective way to reduce your carbon footprint. You don’t necessarily have to bike to work every day — especially if it’s raining. However, challenging yourself to do it once a week or so will honour the spirit of National Physical Fitness & Sports Month and might even encourage your co-workers to get involved.
