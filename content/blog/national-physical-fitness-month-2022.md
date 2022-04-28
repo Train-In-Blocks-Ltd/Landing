@@ -1,7 +1,7 @@
 ---
 title: National Physical Fitness month 2022
 slug: national-physical-fitness-month
-img: NPF&S
+img: Cycling 1
 alt: National Physical Fitness Month
 author: Jamie Spoor
 date: 2022-04-25T09:02:50.903Z
