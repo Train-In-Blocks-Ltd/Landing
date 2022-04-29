@@ -6,7 +6,7 @@ alt: Personal trainer and fitness guru Sean Wilson
 author: Jamie Spoor
 date: 2022-04-13T09:06:56.124Z
 postDesc: Interview with Personal Trainer Sean Wilson
-exclusive: true
+exclusive: false
 ---
 ## Table of Contents
 
