@@ -2,7 +2,7 @@
   <div id="pricing">
     <txt type="title" class="mb-16 pt-8">Pricing</txt>
     <div class="grid lg:grid-cols-2 gap-8">
-      <card-wrapper id="demo" class="p-4" no-shadow no-hover>
+      <card-wrapper id="demo" class="p-4 lg:col-span-2" no-shadow no-hover>
         <div class="flex justify-between">
           <txt type="title"> Free </txt>
           <link-button
@@ -29,7 +29,7 @@
           <txt type="title">
             {{ product.price }}
           </txt>
-          <default-button :on-click="() => checkout(product.stripe)"
+          <default-button :on-click="() => checkout(product.stripe, product.price)"
             >Select</default-button
           >
         </div>
@@ -68,7 +68,7 @@ export default {
       products: [
         {
           name: "Yearly",
-          price: "£102",
+          price: "£99.99",
           timeframe: "per year",
           points: [
             "Save 15% when you sign up on this plan",
@@ -79,11 +79,11 @@ export default {
             "Client-access",
             "Session bookings",
           ],
-          stripe: { price: "price_1GtvcPBYbiJubfJM7nWmNywN", quantity: 1 },
+          stripe: { price: "price_1KuExhBYbiJubfJMQ6fAWCq8", quantity: 1 },
         },
         {
           name: "Monthly",
-          price: "£10",
+          price: "£9.99",
           timeframe: "per month",
           points: [
             "Unlimited clients",
@@ -93,34 +93,36 @@ export default {
             "Client-access",
             "Session bookings",
           ],
-          stripe: { price: "price_1GtvcPBYbiJubfJM2voqpLIo", quantity: 1 },
-        },
-        {
-          name: "Supporter",
-          price: "£15",
-          timeframe: "per month",
-          points: [
-            "Extra karma for helping us out",
-            "Unlimited clients",
-            "Unlimited plans",
-            "Unlimited sessions",
-            "Create session templates",
-            "Client-access",
-            "Session bookings",
-          ],
-          stripe: { price: "price_1IFGHBBYbiJubfJMNHoR9viV", quantity: 1 },
+          stripe: { price: "price_1KuEwgBYbiJubfJMbeYkuXP6", quantity: 1 },
         },
       ],
     };
   },
   methods: {
-    async checkout(item) {
+    async checkout(item, price) {
       const response = await axios.post("/.netlify/functions/checkout", {
         line_items: [item],
+        price: parseInt(price.replace('£', ''))
       });
+      this.gtag_report_conversion({value: parseInt(price.replace('£', ''))})
       // eslint-disable-next-line no-undef
       const stripe = await Stripe("pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX");
       stripe.redirectToCheckout({ sessionId: response.data });
+    },
+    gtag_report_conversion({url, value}) {
+      const callback = function () {
+        // eslint-disable-next-line eqeqeq
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      window.dataLayer.push('event', 'conversion', {
+          'send_to': 'AW-407043956/2rv5CL35k7kDEPT-i8IB',
+          value,
+          'currency': 'GBP',
+          'event_callback': callback
+      });
+      return false;
     },
   },
 };

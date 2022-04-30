@@ -233,6 +233,7 @@ export default async () => {
             gtag("set", "anonymizeIp", true);
             gtag("js", new Date());
             gtag("config", "UA-167770206-1", { anonymize_ip: true });
+            gtag('config', 'AW-407043956');
           },
           declined: () => {},
         },

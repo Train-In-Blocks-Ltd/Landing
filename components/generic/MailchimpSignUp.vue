@@ -56,6 +56,7 @@ export default {
         this.message =
           "To complete the subscription process, please click the link in the email we just sent you.";
         this.messageClasses = "text-green-700";
+        this.gtag_report_conversion();
       } catch (e) {
         this.onExist();
         window.localStorage.setItem("existing-lead", true);
@@ -76,6 +77,20 @@ export default {
       }
       return false;
     },
+    gtag_report_conversion(url) {
+      const callback = function () {
+      // eslint-disable-next-line eqeqeq
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      window.dataLayer.push('event', 'conversion', {
+          'send_to': 'AW-407043956/0H1UCNjR4LgDEPT-i8IB',
+          'value': 9.99,
+          'event_callback': callback
+      });
+      return false;
+    }
   },
 };
 </script>
