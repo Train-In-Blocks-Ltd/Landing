@@ -29,7 +29,8 @@
           <txt type="title">
             {{ product.price }}
           </txt>
-          <default-button :on-click="() => checkout(product.stripe, product.price)"
+          <default-button
+            :on-click="() => checkout(product.stripe, product.price)"
             >Select</default-button
           >
         </div>
@@ -102,25 +103,25 @@ export default {
     async checkout(item, price) {
       const response = await axios.post("/.netlify/functions/checkout", {
         line_items: [item],
-        price: parseInt(price.replace('£', ''))
+        price: parseInt(price.replace("£", "")),
       });
-      this.gtag_report_conversion({value: parseInt(price.replace('£', ''))})
+      this.gtag_report_conversion({ value: parseInt(price.replace("£", "")) });
       // eslint-disable-next-line no-undef
       const stripe = await Stripe("pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX");
       stripe.redirectToCheckout({ sessionId: response.data });
     },
-    gtag_report_conversion({url, value}) {
+    gtag_report_conversion({ url, value }) {
       const callback = function () {
         // eslint-disable-next-line eqeqeq
-        if (typeof(url) != 'undefined') {
+        if (typeof url != "undefined") {
           window.location = url;
         }
       };
-      window.dataLayer.push('event', 'conversion', {
-          'send_to': 'AW-407043956/2rv5CL35k7kDEPT-i8IB',
-          value,
-          'currency': 'GBP',
-          'event_callback': callback
+      window.dataLayer.push("event", "conversion", {
+        send_to: "AW-407043956/2rv5CL35k7kDEPT-i8IB",
+        value,
+        currency: "GBP",
+        event_callback: callback,
       });
       return false;
     },

@@ -79,18 +79,18 @@ export default {
     },
     gtag_report_conversion(url) {
       const callback = function () {
-      // eslint-disable-next-line eqeqeq
-        if (typeof(url) != 'undefined') {
+        // eslint-disable-next-line eqeqeq
+        if (typeof url != "undefined") {
           window.location = url;
         }
       };
-      window.dataLayer.push('event', 'conversion', {
-          'send_to': 'AW-407043956/0H1UCNjR4LgDEPT-i8IB',
-          'value': 9.99,
-          'event_callback': callback
+      window.dataLayer.push("event", "conversion", {
+        send_to: "AW-407043956/0H1UCNjR4LgDEPT-i8IB",
+        value: 9.99,
+        event_callback: callback,
       });
       return false;
-    }
+    },
   },
 };
 </script>
