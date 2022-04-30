@@ -48,7 +48,7 @@ Disadvantages of this type of business are the need for equipment and transport.
 
 Look. The industry is now packed full of apps and ready-made online programmes to serve the masses. Yes, they are cheaper and they are great stepping stones for beginners. Still, it is important to create bespoke programmes for your clients. Let new prospects know your value and how you can get them to their goals faster than any pre-made programmes.
 
-Speaking of which, be sure to check out our app that you can use to create a bespoke programme in a matter of minutes - not hours. Not to forget that it’s only **£10 a month (save 15% on an annual plan)** with amazing up and coming features. Give one of our main features a try [here](http://www.traininblocks.com/features).
+Speaking of which, be sure to check out our app that you can use to create a bespoke programme in a matter of minutes - not hours. Not to forget that it’s only **£9.99 a month (save 15% on an annual plan)** with amazing up and coming features. Give one of our main features a try [here](http://www.traininblocks.com/features).
 
 ## References
 

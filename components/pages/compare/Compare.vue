@@ -7,7 +7,7 @@
     <div class="grid lg:grid-cols-2 gap-8 mb-16">
       <card-wrapper class="p-4 border-green-700" no-hover>
         <txt type="subtitle" bold>Train In Blocks</txt>
-        <txt type="large-body" grey>£10 per month</txt>
+        <txt type="large-body" grey>£9.99 per month</txt>
         <ul>
           <li>No limits on clients or programmes</li>
           <li>Cancel anytime and with ease</li>
