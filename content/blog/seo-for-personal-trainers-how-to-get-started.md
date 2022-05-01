@@ -25,7 +25,7 @@ What we’ve learned is that while SEO is ultimately a long-term investment, new
 
 ### Buy a custom domain
 
-A domain name gives an identity to your business. You can find out how to what you need to know about domain names, how to choose the right one, and the steps to take to check if a domain name is available and to register your domain [here](https://mailchimp.com/resources/how-to-buy-a-domain-name/)
+A domain name gives an identity to your business. You can find out how to what you need to know about domain names, how to choose the right one, and the steps to take to check if a domain name is available and to[ register your domain here.](https://mailchimp.com/resources/how-to-buy-a-domain-name/)
 
 ### Set up Analytics
 
