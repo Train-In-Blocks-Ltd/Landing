@@ -21,7 +21,7 @@ For Train In Blocks, organic traffic has become a key pillar for our overall gro
 
 ## Basic SEO Checklist
 
-What we’ve learned is that while SEO is ultimately a long-term investment, new personal trainers can get a lot of value by building a simple strategy and making sure their website is following recommended on-page practices. To help you do just that, we’ve outlined suggested steps for getting started in an easy-to-follow checklist.
+What we’ve learned is that while SEO is ultimately a long-term investment, new personal trainers can get a lot of value by building a simple strategy and making sure their website is following recommended on-page practices. To help you do just that, we’ve outlined suggested steps to getting started.
 
 ### Buy a custom domain
 
