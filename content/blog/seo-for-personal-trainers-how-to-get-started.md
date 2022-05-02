@@ -1,7 +1,7 @@
 ---
 title: "SEO for Personal Trainers: How to get Started"
 slug: SEO for Personal Trainers
-img: SEO-for-Personal-Trainers.jpg
+img: seo-for-personal-trainers.jpg
 alt: Galexia Creative Agency
 author: Hannah Goodman
 date: 2022-04-19T19:48:09.630Z
