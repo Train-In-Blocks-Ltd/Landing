@@ -2,17 +2,17 @@
 title: National Physical Fitness month 2022
 slug: national-physical-fitness-month
 img: Cycling 1
-alt: National Physical Fitness Month
+alt: Get out and about, keep active this month
 author: Jamie Spoor
 date: 2022-04-25T09:02:50.903Z
-postDesc: "Keep fit and get moving this May "
+postDesc: Keep fit and move in May with National Physical fitness month
 exclusive: false
 ---
 May marks the annual observance of [National Physical Fitness and Sports Month. ](https://health.gov/news/202105/move-may-and-celebrate-national-physical-fitness-sports-month)
 
-Celebrated in the fifth month each year since 1983, NPF&S month provides an opportunity to celebrate and promote physical activity and the benefits of sports participation.
+Celebrated in the fifth month each year since 1983, National Physical Fitness month provides an opportunity to celebrate and promote physical activity and the benefits of sports participation.
 
-Only further emphasised during life under lockdown, physical activity is key to maintaining health and well-being. Getting active can improve fitness and reduce stress, reduce risk for many chronic diseases, and ease symptoms of anxiety and depression. Youth sports can help kids and teens get active and develop leadership, time management, and relationship-building skills.
+Only further emphasised during life under lockdown, physical fitness is key to maintaining health and well-being. Getting active can improve fitness and reduce stress, reduce risk for many chronic diseases, and ease symptoms of anxiety and depression. 
 
 Don’t look at National Physical Fitness and Sports Month as a brief 30-day period for you to move around a bit. Instead, look at this month as an opportunity to start a healthy new lifestyle for you and your family that embraces physical fitness.
 
@@ -30,19 +30,26 @@ Regular exercise is a vital aspect of our lifestyle:
 
 Here are a few ideas on how we can mark an important event in the fitness calendar. 
 
+Table of contents
+
+* [Sign up for a road race](<## Sign up for a road race>)
+* [](<## Join a local sports group>)[ Join a local sports group or club](<## Join a local sports group or club>)
+* [ Pick out a cool place to hike](<## Pick out a cool place to hike>)
+* [Bike to work for the month](<Bike to work for the month>)[](<## Get friends or family members together for a physical activity>)
+* [ Get friends or family members together for a physical activity](<## Get friends or family members together for a physical activity>)
+
 ## Sign up for a road race
 
-Running is the perfect way to get active (or stay active), and May is a great running month. As the weather warms up and the trails shed any last vestiges of snow or ice, now is the time to get out there and start making miles. To keep yourself motivated, sign up for a road race. Countless businesses and organisations throughout the country sponsor road race events in the spring and summer. Bank Holiday weekends are an especially favourite time for these kinds of activities. Look for one near you. If you are getting into running, a 5K or 10K race is a good challenge. If you’ve been running for a while, test your boundaries with a marathon or a half-marathon. 
+Running is the perfect way to get active (or stay active), and May is a great running month. As the weather warms up and the trails shed any last vestiges of snow or ice, now is the time to get out there and start making miles. If you are getting into running, a 5K or 10K race is a good challenge. If you’ve been running for a while, test your boundaries with a marathon or a half-marathon. 
 
-## Join a local sports group
+## Join a local sports group or club
 
-Getting into fitness can be a terrific way to meet people and make new friends. Look for a sports group, team, or league near you that appeals to your talents and interests. Depending on where you live, you could have a wide range of options available to you, some team sports and some not so competitive (local biking or running groups). Either way, getting involved with a group will help you stay motivated because you’ll be accountable to others as well as yourself. 
+Getting into fitness can be a terrific way to meet people and make new friends. Look for a sports group, team, or league near you that appeals to your talents and interests. 
+Depending on where you live, you could have a wide range of options available to you, some team sports and some not so competitive (local biking or running groups). Either way, getting involved with a group will help you stay motivated because you’ll be accountable to others as well as yourself. 
 
 ## Pick out a cool place to hike
 
-Sometimes, getting active can be as simple as taking a walk in the woods. Set aside some time on the weekend for a hike, then research cool hiking spots near where you live. From recreational trails to nature reserves to national parks, there are no wrong answers here. Just get out there, hike a few miles, and enjoy the scenery. 
-
-<markdown-image src="Fitness month jpg" alt="Get out and play in May "></markdown-image> (Image courtesy of National Health) 
+Sometimes, getting active can be as simple as taking a walk in the woods. Set aside some time on the weekend for a hike, then research cool hiking spots near where you live. From recreational trails to nature reserves to national parks, there are no wrong answers here. Just get out there, hike a few miles, and enjoy the scenery.
 
 ## Bike to work for the month
 
