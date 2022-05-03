@@ -1,5 +1,5 @@
 ---
-title: National Physical Fitness month 2022
+title: National Physical Fitness Month 2022
 slug: national-physical-fitness-month
 img: cycling1.jpg
 alt: Get out and about, keep active this month
@@ -34,9 +34,9 @@ Table of contents
 
 * [Sign up for a road race](<## Sign up for a road race>)
 * [](<## Join a local sports group>)[ Join a local sports group or club](<## Join a local sports group or club>)
-* [ Pick out a cool place to hike](<## Pick out a cool place to hike>)
+* [Pick out a cool place to hike](<## Pick out a cool place to hike>)
 * [Bike to work for the month](<Bike to work for the month>)[](<## Get friends or family members together for a physical activity>)
-* [ Get friends or family members together for a physical activity](<## Get friends or family members together for a physical activity>)
+* [Get friends or family members together for a physical activity](<## Get friends or family members together for a physical activity>)
 
 ## Sign up for a road race
 
