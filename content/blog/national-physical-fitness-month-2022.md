@@ -30,7 +30,7 @@ Regular exercise is a vital aspect of our lifestyle:
 
 We'll outline a few ideas on how you can mark an important event in the fitness calendar.
 
-Table of contents
+## Table of contents
 
 * [Sign up for a road race](sign-up-for-a-road-race)
 * [Join a local sports group](join-a-local-sports-group-or-club)
@@ -59,8 +59,6 @@ If possible, pledge to bike to work for a month. Not only is this kind of commit
 ## Get friends or family members together for a physical activity
 
 Next time you get together with friends or family, miss that trip to the pub and arrange a physical activity. A bike ride; a bracing walk by the sea or a good ol' fashioned game of bat and ball.  These kinds of events are all a lot of fun and provide great bonding experiences — all while getting your heart rate up.
-
-
 
 There are countless ways to [celebrate National Physical Fitness & Sports Month](https://health.gov/news/202004/celebrate-national-physical-fitness-sports-month). The five ideas discussed above are just that: ideas. As long as you are finding some way to get active this month, you are playing your part. Just remember to have fun!
 
