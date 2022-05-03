@@ -1,7 +1,7 @@
 ---
 title: National Physical Fitness month 2022
 slug: national-physical-fitness-month
-img: Cycling 1
+img: cycling1.jpg
 alt: Get out and about, keep active this month
 author: Jamie Spoor
 date: 2022-04-25T09:02:50.903Z
