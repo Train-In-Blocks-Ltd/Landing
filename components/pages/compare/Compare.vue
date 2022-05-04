@@ -34,9 +34,9 @@
         </ul>
       </card-wrapper>
     </div>
+    <payment class="mb-32" />
     <benefits class="mb-32" />
-    <testimonials class="mb-32" />
-    <payment />
+    <testimonials />
   </page-wrapper>
 </template>
 
