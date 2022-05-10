@@ -18,7 +18,7 @@ I’ve worked on a variety of projects in my career with Train In Blocks, and I 
 
 **Where do you see yourself in five years?** 
 
-Right now I'd like to continue to develop my leadership skills, which is why I'm excited about the opportunity to be a marketing manager at Train In Blocks. Additionally, I'm interested in learning more about the technical side of the business. However, I find it most important to find a company that encourages continuous learning, as Train In Blocks does.
+Right now I'd like to continue to develop my leadership skills, which is why I'm excited about the opportunity to be a marketing manager at Train In Blocks. Additionally, I'm interested in learning more about the technical side of the business. However, I find it most important to find a company that encourages [continuous learning, as Train In Blocks does.](https://traininblocks.com/blog/seo-for-personal-trainers-how-to-get-started/)
 
 **Personal fitness**
 
