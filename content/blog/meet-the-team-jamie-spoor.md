@@ -16,7 +16,7 @@ My strong background in journalism and copywriting made Train in Blocks seem a n
 
 **Do you have a favourite project?** 
 
- It has taken me out my comfort zone but I’ve learned so much and loved every minute of the role. The interview with Sean Wilson stands out as my favourite moment and the best project we have worked on. I was given free rein to plan, interview and write everything up, Sean proved a great interviewee and the whole team loved the final outcome. It gives me great satisfaction and a tremendous buzz when my colleagues love my work.  I’ve also learned loads about what’s required when it comes to running a business, how coding works and the importance of SEO. 
+ It has taken me out my comfort zone but I’ve learned so much and loved every minute of the role. The [interview with Sean Wilson ](https://traininblocks.com/blog/sean-wilson-personal-trainer-interview/)stands out as my favourite moment and the best project we have worked on. I was given free rein to plan, interview and write everything up, Sean proved a great interviewee and the whole team loved the final outcome. It gives me great satisfaction and a tremendous buzz when my colleagues love my work.  I’ve also learned loads about what’s required when it comes to running a business, how coding works and the importance of SEO. 
 
 **Your Personal fitness?** 
 
