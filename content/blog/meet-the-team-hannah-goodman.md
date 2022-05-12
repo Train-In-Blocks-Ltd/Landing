@@ -1,7 +1,7 @@
 ---
 title: Meet the Team... Hannah Goodman
 slug: meet-the-tib-team-hannah
-img: hannah-goodman.jpg
+img: hannah.jpg
 alt: Train In Blocks Marketing Manager Hannah Goodman
 author: Jamie Spoor
 date: 2022-05-05T15:26:11.908Z
