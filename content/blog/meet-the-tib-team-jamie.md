@@ -13,7 +13,7 @@ Jamie joined our team in late 2021 and since then has been responsible for putti
 
 ## Jamie, tell us about your Train In Blocks journey?
 
-My strong background in journalism and copywriting made Train In Blocks seem a natural fit for the next phase of my career despite the fact I’ve never worked for a fitness app before. I knew Joe and Hannah from university so when I was asked if I wanted to join the team as a writer, I jumped at the chance to turn my hand to something different.
+My [strong background](https://www.amazon.co.uk/s?i=stripbooks&rh=p_27%3AJamie+Spoor&s=relevancerank&text=Jamie+Spoor&ref=dp_byline_sr_book_1) in journalism and copywriting made Train In Blocks seem a natural fit for the next phase of my career despite the fact I’ve never worked for a fitness app before. I knew Joe and Hannah from university so when I was asked if I wanted to join the team as a writer, I jumped at the chance to turn my hand to something different.
 
 ## What has been your favourite project worked on as part of Train In Blocks?
 
@@ -29,4 +29,4 @@ The journalism industry is such a fast-moving one it’s difficult to predict wh
 
 ## Anything else you'd like to tell our readers?
 
-I'm a bit of an “av geek.” I’m interested in planes, especially modern jets and try to visit as many air displays as possible (I am doing RIAT this year, which is the biggest in the world) as well as reading and researching aviation topics. I have co-written a book on aviation in my home county of Sussex.
+I'm a bit of an “av geek.” I’m interested in planes, especially modern jets and try to visit as many air displays as possible (I am doing RIAT this year, which is the biggest in the world) as well as reading and researching aviation topics. I have [co-written a book](https://www.pen-and-sword.co.uk/The-Dawn-of-Aviation-The-Pivotal-Role-of-Sussex-People-and-Places-in-the-Development-of-Flight-Hardback/p/18784) on aviation in my home county of Sussex.
