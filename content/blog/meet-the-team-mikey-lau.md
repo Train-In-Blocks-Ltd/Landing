@@ -14,12 +14,12 @@ Last up in our "Meet the team" series of blog posts, it's the turn of our co-fou
 
 Table of contents:
 
-1. [How did you get into TIB?](<## **How did you get into TIB?**>)
+1. [How did you get into TIB?](<## How did you get into TIB?>)
 2. [Favourite project worked on as part of TIB? ](<## Favourite project worked on as part of TIB?>)
-3. [Personal fitness? ](<## **Personal fitness?**>)
+3. [Personal fitness? ](<## Personal fitness?>)
 4. [Anything else? ](<## Anything else?>)
 
-## **How did you get into TIB?**
+## How did you get into TIB?
 
 "Hi, I’m Mikey, an ex-personal trainer and sports massage therapist. I’ve been in the industry working in big box gyms as well as running fitness classes for residential companies. I loved every bit of personal training and how I was able to make an impact on people day-to-day. Joe and I (link to Joe's page) founded Train In Blocks in 2020 after realising PTs needed an affordable solution to manage their clientele and their programmes."
 
@@ -27,7 +27,7 @@ Table of contents:
 
 "Being able to have the opportunity to create something worthwhile and valuable to other trainers. We have received much positive feedback about our simplicity, the app's functionality, and how it saved time for our users."
 
-## **Personal fitness?**
+## Personal fitness?
 
 "My personal fitness journey began when I was 16 and have visited my first ever gym session. My goal was to lose weight and improve my general health. I also suffered from Osgood - Schlatter disease which is a common issue just below the knees where it impacted my day-to-day life and mobility. I wasn’t able to squat properly and without pain. After years of training and trying new things like Olympic Weightlifting, cross-training, and swimming, I am now able to move pain-free and squat below parallel. Nowadays, I’m actively boxing and have continued my functional training journey."
 
