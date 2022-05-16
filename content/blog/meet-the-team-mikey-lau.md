@@ -5,11 +5,19 @@ img: Mikey
 alt: Our esteemed co-founder Mikey Lau
 author: Jamie Spoor
 date: 2022-05-16T09:34:12.994Z
-postDesc: In our final "Meet the team" series, let us introduce the big boss and
-  the man to make it all happen
+postDesc: In our final "Meet the team" series, our boss Mikey reveals how it all began
 exclusive: false
 ---
-Last up in our "Meet the team" series of blog posts, it's the turn of our co-founder and fitness extraordinaire: our very own Mikey Lau. Mikey is our man to make it all happen having the company up and, without him, Train In Blocks simply would not exist. Mikey provides us with an insight into how it all began, his journey to this point and what the future may hold. Over to you, boss...
+Last up in our "Meet the team" series of blog posts, it's the turn of our co-founder and fitness extraordinaire: our very own Mikey Lau. Mikey is our man to make it all happen having set the company up and, without him, Train In Blocks simply would not exist. Here, Mikey provides us with an insight into how it all began, his journey to this point and what the future may hold. Over to you, boss...
+
+(Pic of Mikey) 
+
+Table of contents:
+
+1. [How did you get into TIB?](<## **How did you get into TIB?**>)
+2. [Favourite project worked on as part of TIB? ](<## Favourite project worked on as part of TIB?>)
+3. [Personal fitness? ](<## **Personal fitness?**>)
+4. [Anything else? ](<## Anything else?>)
 
 ## **How did you get into TIB?**
 
@@ -25,8 +33,7 @@ Last up in our "Meet the team" series of blog posts, it's the turn of our co-fou
 
 ## Anything else?
 
-"One thing that may surprise you is that I don’t like beer, cider, or anything that’s really sweet. I’m more of a whiskey kinda guy. 
+"One thing that may surprise you is that I don’t like beer, cider, or anything that’s really sweet. I’m more of a whisky kind of guy. \
+"In five years I see myself running and expanding Train In Blocks and helping more PTs and coaches around the world — offering more value with each step. That's the ultimate aim." 
 
-In five years I see myself running and expanding Train In Blocks and helping more PTs and coaches around the world — offering more value with each step."
-
-We would all like to thank Mikey for his sterling efforts so far with the business and for giving us the opportunity to work for him.
+We would all like to thank Mikey for his sterling efforts so far with the business and for giving us the opportunity to work for him. Keep up the good work.
