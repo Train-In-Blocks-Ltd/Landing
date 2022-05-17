@@ -4,7 +4,7 @@ slug: meet-the-tib-team-joe
 img: joe-bailey.jpg
 alt: Train In Blocks Technical Director Joe Bailey
 author: Jamie Spoor
-date: 2022-05-10T13:26:28.942Z
+date: 2022-05-15T13:26:28.942Z
 postDesc: In the penultimate part of our four-piece series we meet Joe Bailey,
   our Technical Director
 exclusive: false
