@@ -1,15 +1,15 @@
 ---
 title: Meet the team... Mikey Lau
 slug: meet-the-tib-team-mikey
+exclusive: false
 img: mikey.jpg
 alt: Train In Blocks Founder Mikey Lau
 author: Jamie Spoor
 date: 2022-05-20T09:34:12.994Z
 postDesc: In our final part of our four-piece series, our founder Mikey reveals
   how it all began
-exclusive: false
 ---
-Last up in our "Meet the team" series of blog posts, it's the turn of our co-founder and fitness extraordinaire: our very own Mikey Lau. Mikey is an ex-personal trainer and sports massage therapist turned developer. He is our man to make it all happen having set the company up and, without him, Train In Blocks simply would not exist. Here, Mikey provides us with an insight into how it all began, his journey to this point and what the future may hold.
+Last up in our "Meet the Team" series of blog posts, it's the turn of our co-founder and fitness extraordinaire: our very own Mikey Lau. Mikey is an ex-personal trainer and sports massage therapist turned developer. He is our man to make it all happen having set the company up and, without him, Train In Blocks simply would not exist. Here, Mikey provides us with an insight into how it all began, his journey to this point and what the future may hold.
 
 ## Mikey, tell us about your Train In Blocks journey?
 
