@@ -18,6 +18,12 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string" }
+      - {
+          label: "Exclusive content",
+          name: "exclusive",
+          widget: "boolean",
+          default: false,
+        }
       - { label: "Image", name: "img", widget: "string" }
       - { label: "Alt", name: "alt", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
@@ -29,12 +35,6 @@ collections:
         }
       - { label: "Description", name: "postDesc", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - {
-          label: "Exclusive content",
-          name: "exclusive",
-          widget: "boolean",
-          default: false,
-        }
   - name: "dev"
     label: "Dev"
     folder: "content/dev"
