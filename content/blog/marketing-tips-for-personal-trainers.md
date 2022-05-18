@@ -20,4 +20,4 @@ People love fresh experiences and trying new things, even more so if these are o
 
 ## Local networking
 
-Many groups, such as home-based business groups, are inexpensive to join. And the marketing benefits are huge.
+Many groups, such as home-based business groups, are inexpensive to join. And the marketing benefits of doing so are huge. Once they get to know you and what you do, the other business people in your group will mention your business to others and may even give you referrals thereby expanding your outreach and strengthening your networking.  Such information includes names, phone numbers, email addresses, social media, services and website links. This can help you find clients, investors and staff to enhance your business as a personal trainer.
