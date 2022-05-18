@@ -1,5 +1,5 @@
 ---
-title: Meet the team... Mikey Lau
+title: Meet the Team... Mikey Lau
 slug: meet-the-tib-team-mikey
 exclusive: false
 img: mikey.jpg
