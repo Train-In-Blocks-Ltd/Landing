@@ -21,3 +21,7 @@ People love fresh experiences and trying new things, even more so if these are o
 ## Local networking
 
 Many groups, such as home-based business groups, are inexpensive to join. And the marketing benefits of doing so are huge. Once they get to know you and what you do, the other business people in your group will mention your business to others and may even give you referrals thereby expanding your outreach and strengthening your networking.  Such information includes names, phone numbers, email addresses, social media, services and website links. This can help you find clients, potential investors and build a rapport with fellow industry professionals to enhance your business as a personal trainer.
+
+## Blogging
+
+A blog is a great way to build an audience of people who would be interested in your products or services. And [creating a blog ](https://traininblocks.com/blog/)is easier than creating a website, so it takes no time to get one up and running. Not only is it a great opportunity for you to 'sell' yourself as an individual and promote your business as a whole, it will give clients a flavour of how you operate and what to expect if they sign with you. You can write regularly about your business, what it's doing and what you plan to do in the future. You'll start connecting with other bloggers, business people, and potential clients.
