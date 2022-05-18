@@ -8,7 +8,7 @@ author: Jamie Spoor
 date: 2022-05-18T08:47:25.694Z
 postDesc: Follow these simple but effective tips to improve your marketing skills
 ---
-## Being a personal trainer is undoubtedly a challenging but rewarding industry. You are making a pertinent difference to people's lives and watching someone grow and develop before your eyes surely brings an immense feeling of satisfaction. 
+Being a personal trainer is undoubtedly a challenging but rewarding industry. You are making a pertinent difference to people's lives and watching someone grow and develop before your eyes surely brings an immense feeling of satisfaction. 
 
 But to continue on an upward trajectory, and to get the best out of life in the industry, personal trainers — as self-employed workers — have to be business savvy by marketing themselves and the services they offer.[ In our interview with PT Sean Wilson](https://traininblocks.com/blog/sean-wilson-personal-trainer-interview/), Sean spoke at length about how marketing strategy is a crucial piece of weaponry in a trainer's armoury. 
 
@@ -29,4 +29,4 @@ A blog is a great way to build an audience of people who would be interested in 
 ## Consistency is key 
 
 A happy customer is a returning customer, and word of mouth is a great and free tool available to you. People trust recommendations from people they know. There is nothing worse than inconsistent service, and if your customer knows they will always get the same from you, they are likely to not only return, but tell others.
-However you choose to engage, the number one rule is to not get discouraged if your campaign is not an overnight success. The general rule of thumb is to give it six months to take root, so keep chipping away to see the rewards for your hard work.
+However you choose to engage, the number one rule is to not get discouraged if your campaign is not an overnight success. The general rule of thumb is to give it six months to bed in, so keep chipping away to see the rewards for your hard work.
