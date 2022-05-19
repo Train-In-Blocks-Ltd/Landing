@@ -26,7 +26,15 @@ Many groups, such as home-based business groups, are inexpensive to join. And th
 
 A blog is a great way to build an audience of people who would be interested in your products or services. And [creating a blog ](https://traininblocks.com/blog/)is easier than creating a website, so it takes no time to get one up and running. Not only is it a great opportunity for you to 'sell' yourself as an individual and promote your business as a whole, it will give clients a flavour of how you operate and what to expect if they sign with you. You can write regularly about your business, what it's doing and what you plan to do in the future. You'll start connecting with other bloggers, business people, and potential clients. 
 
-## Consistency is key 
+## Consistency is key
 
 A happy customer is a returning customer, and word of mouth is a great and free tool available to you. People trust recommendations from people they know. There is nothing worse than inconsistent service, and if your customer knows they will always get the same from you, they are likely to not only return, but tell others.
 However you choose to engage, the number one rule is to not get discouraged if your campaign is not an overnight success. The general rule of thumb is to give it six months to bed in, so keep chipping away to see the rewards for your hard work.
+
+## Referrals
+
+Referrals schemes are a highly effective and fairly low-cost way of [](https://origympersonaltrainercourses.co.uk/blog/how-to-get-pt-clients)gaining new clients It essentially capitalises on your existing clients to gain new ones!  But don't just take our word for it. [Statistics have shown](https://www.extole.com/blog/15-referral-marketing-statistics-you-need-to-know/#:~:text=Customers%20acquired%20through%20referrals%20have,in%20profits%20from%20referred%20customers.) that when referred by a friend, customers are 4 times more likely to make a purchase, and customers acquired through referrals have a 37% higher retention rate!  A referral program in personal training is typically when you offer an existing client an incentive to get a friend to sign up. Without an incentive, a client is likely to forget to recommend you to their friends. After all, what would be in it for them? Don't be shy — you can even offer a discount or other incentive to your customers for every referral that turns into a sale.
+
+## Social media engagement
+
+Whether it’s on Facebook, Instagram, Twitter, or LinkedIn, starting (and continuing) the conversation with people who interact with you on social media is crucial. Engaging with clients on social media will help demonstrate your expertise in the fitness field, which can turn readers into long-term clients. Answer any questions they have and try to provide as much value as possible in every conversation. You can consider posting "before and after" images and videos, fitness tips, competitions, user generated content and "CTAs" (call to action - simply a line of text that prompts viewers to carry out a specific action). 
