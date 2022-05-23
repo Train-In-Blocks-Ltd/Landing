@@ -8,9 +8,9 @@ author: Jamie Spoor
 date: 2022-05-18T08:47:25.694Z
 postDesc: Follow these simple but effective tips to improve your marketing skills
 ---
-Being a personal trainer is undoubtedly a challenging but rewarding industry. You are making a pertinent difference to people's lives and watching someone grow and develop before your eyes surely brings an immense feeling of satisfaction. 
+As we know, being a personal trainer is undoubtedly a challenging but rewarding industry. You are making a pertinent difference to people's lives and watching someone grow and develop before your eyes surely brings an immense feeling of satisfaction. 
 
-But to continue on an upward trajectory, and to get the best out of life in the industry, personal trainers — as self-employed workers — have to be business savvy by marketing themselves and the services they offer.[ In our interview with PT Sean Wilson](https://traininblocks.com/blog/sean-wilson-personal-trainer-interview/), Sean spoke at length about how marketing strategy is a crucial piece of weaponry in a trainer's armoury. 
+But to continue on an upward trajectory, and to get the best out of life in the industry, personal trainers — as self-employed workers — have to be business savvy by marketing themselves and the services they offer.[ In our interview with PT Sean Wilson](https://traininblocks.com/blog/sean-wilson-personal-trainer-interview/), Sean spoke at length about how marketing strategy is a crucial piece of weaponry in a trainer's armoury. It sets you apart from the field and strong marketing gives you a unique USP. 
 
 So with that in mind, Train In Blocks can help you, with a few simple marketing tips, to improve this aspect of your modus operandi. 
 
