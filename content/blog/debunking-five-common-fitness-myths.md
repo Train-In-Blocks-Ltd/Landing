@@ -30,7 +30,8 @@ However, adding in more protein in does not mean you will then make progress in 
 
 ## You don't have to train every day to get in shape
 
-Recovery is an essential part of the process. Do you feel that you have to train with intensity every day to get in shape? Does it make you exhausted and overwhelmed? If you love your sessions, it's easy to fall into this trap and put your best foot forward every day. But this is not necessary or sustainable. Your recovery is also a crucial part of the process. Without it, you will really struggle to be consistent. So, stick to three or four high quality sessions per week, depending on what your body can handle, spread them out across the week, and prioritise recovery along the way.
+Do you feel that you have to train with intensity every day to get in shape? Does it make you exhausted and overwhelmed? If you love your sessions, it's easy to fall into this trap and put your best foot forward every day. No only will it fail to procure the results you want but you will become tired quickly and both the quality and quantity of your sessions will decrease. \
+But this approach is not necessary nor is it sustainable. Your recovery is also a crucial part of the process. Without it, you will really struggle to be consistent. So, stick to three or four high quality sessions per week, depending on what your body can handle, spread them out across the week, and prioritise recovery along the way.
 
 
 
