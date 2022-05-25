@@ -8,7 +8,8 @@ author: Jamie Spoor
 date: 2022-05-24T10:37:36.210Z
 postDesc: Debunking those common fitness misconceptions you're tired of hearing
 ---
-Ever wondered exactly how accurate those "golden rules" you get fed up of hearing are? You know the ones we mean: those well-worn nuggets of advice repeated ad nauseam by fitness experts up and down the land as you battle to get in shape. You never think of questioning what you've been told but, deep down, the lingering doubts remain — am I 'doing it right?' Fact and fiction often seem to intertwine even when it comes to fitness and, as a result, it can be easy to go off track. Here, we attempt to debunk some of the most common fitness myths you've come across and what your correct approach to the process should be. 
+Ever wondered exactly how accurate those "golden rules" you get fed up of hearing are? You know the ones we mean: those well-worn nuggets of advice repeated ad nauseam by fitness experts up and down the land as you battle to get in shape. \
+You never think of questioning what you've been told but, deep down, the lingering doubts remain — am I 'doing it right?' Fact and fiction often seem to intertwine even when it comes to fitness and, as a result, it can be easy to go off track. Here, we attempt to debunk some of the most common fitness myths you've come across and what your correct approach to the process should be. 
 
 ## Running alone is not an effective way to lose fat
 
@@ -44,6 +45,7 @@ To keep up with increased energy requirements, adding more food is crucial to yo
 
 ## Lifting heavy weights DON'T bulk you up
 
-Probably the most common misconception of them all. The belief about heavy weight training, especially among women, is lifting heavy weight will lead to a bulky looking physique. It’s true that lifting heavy will promote hypertrophy in muscles leading to a size increase.\
+Probably the most common misconception of them all. The belief about heavy weight training, especially among women, is lifting heavy weight will lead to a bulky looking physique. It’s true that lifting heavy will lead to a growth and increase of muscle cells, but the idea it leads to a "bulky" look is simply untrue. 
  Excessive body fat is what causes both men and women to look bulky. The most important aspect of someone’s physique is his or her body fat percentage: a good physique nearly always requires a fairly low body fat percentage to achieve. 
-Lifting heavy can help accomplish this. Heavy weight training has a plethora of benefits that can help develop muscle, shed fat and ultimately lead to anyone’s desired physique. 'Lifting heavy' make your muscles stronger, increases your bone density and physical co-ordination and decreases body fat. But this will all be for nothing if your diet does not follow suit.
+Lifting heavy can help accomplish this. Heavy weight training has a plethora of benefits that can help develop muscle, shed fat and ultimately lead to anyone’s desired physique. Pulling weights make your muscles stronger, increases your bone density and physical co-ordination and decreases body fat. \
+In order to lose fat and get rid of the “bulk,” a cutting diet is required. In simple terms, this requires you to burn more calories than you eat. There is much more to the process, but in a nutshell, eat healthy and eat less.
