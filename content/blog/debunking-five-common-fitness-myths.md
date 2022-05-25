@@ -10,6 +10,8 @@ postDesc: Debunking those common fitness misconceptions you never knew existed
 ---
 r## Running alone is not sufficient
 
+## Running alone is not an effective way to lose fat
+
 Running several times per week is very challenging on the body. It places your joints under enormous strain due to the consistent impact of you hitting the ground, particularly when you run on hard surfaces.
 It is also unachievable for many. If you're struggling to shed the pounds, regularly going for a run isn't   sufficient.  It will help in the immediate short term, but to build up long term calorie loss, you need a higher metabolic rate through resistance training. 
 Adding more muscle means that your body requires more energy (calories) to recover from your sessions and then maintain that muscle. Therefore, your metabolic rate and calorie burning efficiency increases. This is far more effective and sustainable than just relying on running. 
@@ -42,6 +44,6 @@ To keep up with increased energy requirements, adding more food is crucial to yo
 
 ## Lifting heavy weights DON'T bulk you up
 
-Probably the most common misconception of them all. The belief about heavy weight training, especially among women, is lifting heavy weight will lead to a bulky looking physique. It’s true that lifting heavy will promote hypertrophy in muscles leading to a size increase.  
+Probably the most common misconception of them all. The belief about heavy weight training, especially among women, is lifting heavy weight will lead to a bulky looking physique. It’s true that lifting heavy will promote hypertrophy in muscles leading to a size increase.\
  Excessive body fat is what causes both men and women to look bulky. The most important aspect of someone’s physique is his or her body fat percentage: a good physique nearly always requires a fairly low body fat percentage to achieve. 
 Lifting heavy can help accomplish this. Heavy weight training has a plethora of benefits that can help develop muscle, shed fat and ultimately lead to anyone’s desired physique. 'Lifting heavy' make your muscles stronger, increases your bone density and physical co-ordination and decreases body fat. But this will all be for nothing if your diet does not follow suit.
