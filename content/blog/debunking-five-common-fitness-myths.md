@@ -6,9 +6,9 @@ img: Fitness 1
 alt: Separating the fact from the fiction in the world of fitness
 author: Jamie Spoor
 date: 2022-05-24T10:37:36.210Z
-postDesc: Debunking those common fitness misconceptions you never knew existed
+postDesc: Debunking those common fitness misconceptions you're tired of hearing
 ---
-r## Running alone is not sufficient
+Ever wondered exactly how accurate those "golden rules" you get fed up of hearing are? You know the ones we mean: those well-worn nuggets of advice repeated ad nauseum by fitness experts up and down the land as you battle to get in shape. You never think of questioning what you've been told but, deep down, the lingering doubts remain — am I 'doing it right?' Fact and fiction often seem to intertwine even when it comes to fitness and, as a result, it can be easy to go off track. Here, we attempt to debunk some of the most common fitness myths you've come across and what your correct approach to the process should be. 
 
 ## Running alone is not an effective way to lose fat
 
