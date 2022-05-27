@@ -19,7 +19,7 @@
       </default-button>
     </div>
     <txt class="mt-4 mb-8" :class="messageClasses">
-      {{message}}
+      {{ message }}
     </txt>
   </form>
 </template>

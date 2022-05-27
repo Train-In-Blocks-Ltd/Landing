@@ -49,7 +49,9 @@ export default {
         {
           hid: "og:image",
           name: "og:image",
-          content: this.post.img ? require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`) : 'https://traininblocks.com/android-chrome-512x512.png?v=192',
+          content: this.post.img
+            ? require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`)
+            : "https://traininblocks.com/android-chrome-512x512.png?v=192",
         },
         {
           hid: "twitter:title",
@@ -64,7 +66,9 @@ export default {
         {
           hid: "twitter:img",
           name: "twitter:img",
-          content: this.post.img ? require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`) : 'https://traininblocks.com/android-chrome-512x512.png?v=192',
+          content: this.post.img
+            ? require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`)
+            : "https://traininblocks.com/android-chrome-512x512.png?v=192",
         },
       ],
       link: [

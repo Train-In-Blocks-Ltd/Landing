@@ -11,7 +11,10 @@
       class="w-full aspect-square object-cover gray sm:w-64 mb-8 sm:mb-0 sm:mr-8 max-w-4xl"
       loading="lazy"
     />
-    <div class="flex flex-col w-full" :class="{ 'sm:w-2/3 max-w-4xl': post.img }">
+    <div
+      class="flex flex-col w-full"
+      :class="{ 'sm:w-2/3 max-w-4xl': post.img }"
+    >
       <nuxt-link :to="`/${postType}/${post.slug}/`">
         <txt type="subtitle" class="hover:opacity-60 transition-all">
           {{ post.title }}
