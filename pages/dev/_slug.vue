@@ -1,12 +1,6 @@
 <template>
   <article-wrapper>
     <v-back-button link="/dev/" />
-    <img
-      :src="require(`../../assets/media-uploads/${post.img}`)"
-      :alt="post.alt || post.title"
-      class="w-full aspect-square object-cover max-w-lg m-auto gray"
-      loading="lazy"
-    />
     <txt type="title" class="mt-8 mb-4" is-main>
       {{ post.title }}
     </txt>
@@ -55,7 +49,7 @@ export default {
         {
           hid: "og:image",
           name: "og:image",
-          content: require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`),
+          content: this.post.img ? require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`) : 'https://traininblocks.com/android-chrome-512x512.png?v=192',
         },
         {
           hid: "twitter:title",
@@ -70,7 +64,7 @@ export default {
         {
           hid: "twitter:img",
           name: "twitter:img",
-          content: require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`),
+          content: this.post.img ? require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`) : 'https://traininblocks.com/android-chrome-512x512.png?v=192',
         },
       ],
       link: [

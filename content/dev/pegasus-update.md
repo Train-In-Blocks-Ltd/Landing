@@ -1,10 +1,9 @@
 ---
-title: What did we do in Pegasus 3.2.4?
+title: What did we do in the Pegasus update?
 slug: pegasus-update
-img: laptop.png
-postDesc: A quick overview on the changes made in this update so far.
+postDesc: Now on version 3.0 of the app, we're bringing you more requested features.
 author: Mikey Lau
-date: "2021-03-12"
+date: "2021-03-02"
 ---
 
 ## Dark mode

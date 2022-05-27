@@ -18,6 +18,7 @@ blockquote cite {
   <article-wrapper>
     <v-back-button link="/blog/" />
     <img
+      v-if="post.img"
       :src="
         require(`../../assets/media-uploads/${post.img}?resize&size=600&format=webp`)
       "
@@ -94,7 +95,7 @@ export default {
         {
           hid: "og:image",
           name: "og:image",
-          content: require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`),
+          content: this.post.img ? require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`) : 'https://traininblocks.com/android-chrome-512x512.png?v=192',
         },
         {
           hid: "twitter:title",
@@ -109,7 +110,7 @@ export default {
         {
           hid: "twitter:img",
           name: "twitter:img",
-          content: require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`),
+          content: this.post.img ? require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`) : 'https://traininblocks.com/android-chrome-512x512.png?v=192',
         },
       ],
       link: [
