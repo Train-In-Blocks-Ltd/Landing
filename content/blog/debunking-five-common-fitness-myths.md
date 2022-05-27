@@ -15,16 +15,17 @@ Table of contents
 
 1. [Running alone is not an effective way to lose fat](<## Running alone is not an effective way to lose fat>)
 2. [High protein foods don't guarantee fat loss ](<## High protein foods don't guarantee fat loss>)
-3.   
+3. [You don't have to train every day to get in shape](<## You don't have to train every day to get in shape>)
+4.
 
-## Running alone is not an effective way to lose fat         
+## Running alone is not an effective way to lose fat
 
-Running several times per week is very challenging on the body. It places your joints under enormous strain due to the consistent impact of you hitting the ground, particularly when you run on hard surfaces.
+Running several times per week is very challenging on the body. It places your joints under enormous strain  due to the consistent impact of you hitting the ground, particularly when you run on hard surfaces.
 It is also unachievable for many. If you're struggling to shed the pounds, regularly going for a run isn't   sufficient.  It will help in the immediate short term, but to build up long term calorie loss, you need a higher metabolic rate through resistance training. 
-Adding more muscle means that your body requires more energy (calories) to recover from your sessions and then maintain that muscle. Therefore, your metabolic rate and calorie burning efficiency increases. This is far more effective and sustainable than just relying on running. 
+Adding more muscle means that your body requires more energy (calories) to recover from your sessions and  then maintain that muscle. Therefore, your metabolic rate and calorie burning efficiency increases. This is far more effective and sustainable than just relying on running. 
 Running is great for cardio work but it should be a supplement, not the main course.  To achieve a better body shape, try and aim for something realistic, enjoyable , sustainable, and effective. 
 
-## High protein foods don't guarantee fat loss  
+## High protein foods don't guarantee fat loss
 
 Do you struggle to understand why you can’t lose body fat? You add more protein to your diet but are still unable to make progress? A higher protein diet will be beneficial to your weight loss goal, as it will help to change your body shape and help you gain muscle. 
 However, adding in more protein in does not mean you will then make progress in terms of weight and fat loss. It's a common error to prioritise protein over calories. High protein foods are useful, but if they are high in calories they are not the best option when it comes to diet. For leaner food options, consider:    
@@ -43,7 +44,7 @@ Do you feel that you have to train with intensity every day to get in shape? Doe
 
 But this approach is neither necessary nor is it sustainable. Your recovery is also a crucial part of the process.   Without it, you will really struggle to be consistent. So stick to three or four high quality sessions per week, depending on what your body can handle, spread them out across the week, and prioritise recovery and cardio on non-training days to make better progress. 
 
-## Increasing those calories gradually is key
+## Increasing calories gradually is key
 
 Yes, you read that right!  Many people believe that to lose lots of fat, you have to go on super low-calorie diets and restrict yourself immensely. Because the less you eat, the more fat you lose, right? Well, the truth is that this is one of the worst things you can do for fat loss. 
 Your metabolism will stop working if you are not eating enough, because your body will not have enough food  to turn into energy. Once your metabolism stops, fat loss stops. So, a much better method is to start on relatively low calories and build up over time. This is because the more you train and the more muscle you put on, the more energy and calories you require. 
