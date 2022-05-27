@@ -94,15 +94,6 @@
           >Train In Blocks Reviews</a
         >
       </div>
-      <script>
-        (function () {
-          var sc = document.createElement("script");
-          sc.async = true;
-          sc.src = "https://b.sf-syn.com/badge_js?sf_id=3497855&variant_id=sf";
-          var p = document.getElementsByTagName("script")[0];
-          p.parentNode.insertBefore(sc, p);
-        })();
-      </script>
     </div>
     <div>
       <txt type="tiny" class="mt-4" bold>Train In Blocks Ltd</txt>
