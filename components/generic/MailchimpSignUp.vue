@@ -18,7 +18,9 @@
         Sign me up
       </default-button>
     </div>
-    <txt class="mt-4 mb-8" :class="messageClasses" v-text="message" />
+    <txt class="mt-4 mb-8" :class="messageClasses">
+      {{message}}
+    </txt>
   </form>
 </template>
 
