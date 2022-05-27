@@ -11,14 +11,20 @@ postDesc: Debunking those common fitness misconceptions you're tired of hearing
 Ever wondered exactly how accurate those "golden rules" you get fed up of hearing are? You know the ones we mean: those well-worn nuggets of advice repeated ad nauseam by fitness experts up and down the land as you battle to get in shape. \
 You never think of questioning what you've been told but, deep down, the lingering doubts remain — am I 'doing it right?' Fact and fiction often seem to intertwine even when it comes to fitness and, as a result, it can be easy to go off track. Here, we attempt to debunk some of the most common fitness myths you've come across and what your correct approach to the process should be. 
 
-## Running alone is not an effective way to lose fat
+Table of contents
+
+1. [Running alone is not an effective way to lose fat](<## Running alone is not an effective way to lose fat>)
+2. [High protein foods don't guarantee fat loss ](<## High protein foods don't guarantee fat loss>)
+3.   
+
+## Running alone is not an effective way to lose fat         
 
 Running several times per week is very challenging on the body. It places your joints under enormous strain due to the consistent impact of you hitting the ground, particularly when you run on hard surfaces.
 It is also unachievable for many. If you're struggling to shed the pounds, regularly going for a run isn't   sufficient.  It will help in the immediate short term, but to build up long term calorie loss, you need a higher metabolic rate through resistance training. 
 Adding more muscle means that your body requires more energy (calories) to recover from your sessions and then maintain that muscle. Therefore, your metabolic rate and calorie burning efficiency increases. This is far more effective and sustainable than just relying on running. 
 Running is great for cardio work but it should be a supplement, not the main course.  To achieve a better body shape, try and aim for something realistic, enjoyable , sustainable, and effective. 
 
-## High protein foods don't guarantee fat loss
+## High protein foods don't guarantee fat loss  
 
 Do you struggle to understand why you can’t lose body fat? You add more protein to your diet but are still unable to make progress? A higher protein diet will be beneficial to your weight loss goal, as it will help to change your body shape and help you gain muscle. 
 However, adding in more protein in does not mean you will then make progress in terms of weight and fat loss. It's a common error to prioritise protein over calories. High protein foods are useful, but if they are high in calories they are not the best option when it comes to diet. For leaner food options, consider:    
