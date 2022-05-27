@@ -8,7 +8,7 @@ author: Jamie Spoor
 date: 2022-05-24T10:37:36.210Z
 postDesc: Debunking those common fitness misconceptions you're tired of hearing
 ---
- Ever wondered exactly how accurate those "golden rules" you get fed up of hearing are? You know the ones we mean: those well-worn nuggets of advice repeated ad nauseam by fitness experts up and down the land as you battle to get in shape. \
+Ever wondered exactly how accurate those "golden rules" you get fed up of hearing are? You know the ones we mean: those well-worn nuggets of advice repeated ad nauseam by fitness experts up and down the land as you battle to get in shape. \
 You never think of questioning what you've been told but, deep down, the lingering doubts remain — am I 'doing it right?' Fact and fiction often seem to intertwine even when it comes to fitness and, as a result, it can be easy to go off track. Here, we attempt to debunk some of the most common fitness myths you've come across and what your correct approach to the process should be. 
 
 Table of contents:
@@ -16,7 +16,7 @@ Table of contents:
 1. [Running alone is not an effective way to lose fat](<## Running alone is not an effective way to lose fat>)
 2. [High protein foods don't guarantee fat loss ](<## High protein foods don't guarantee fat loss>)
 3. [You don't have to train every day to get in shape](<## You don't have to train every day to get in shape>)
-4.  [Increasing calories gradually is key ](<## Increasing calories gradually is key>)
+4. [Increasing calories gradually is key ](<## Increasing calories gradually is key>)
 5. [ Lifting heavy weights don't bulk you up ](<## Lifting heavy weights DON'T bulk you up>)
 
 ## Running alone is not an effective way to lose fat
