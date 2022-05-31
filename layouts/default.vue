@@ -305,7 +305,10 @@ export default {
       }
     };
     // Wrap the setTimeout into an if statement
-    if (!this.getCookie("exitIntentShown") && !window.localStorage.getItem("existing-lead")) {
+    if (
+      !this.getCookie("exitIntentShown") &&
+      !window.localStorage.getItem("existing-lead")
+    ) {
       // Set timeout so exit intent isn't show on page load - wait 10 seconds
       setTimeout(() => {
         // Add event listener for when user leaves page
