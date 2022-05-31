@@ -15,7 +15,10 @@
         :to="`/help/${post.slug}/`"
       >
         <txt class="mr-4">Continue reading</txt>
-        <img class="rounded-none" :src="require('../../../assets/svg/Arrow.svg?inline')" />
+        <img
+          class="rounded-none"
+          :src="require('../../../assets/svg/Arrow.svg?inline')"
+        />
       </nuxt-link>
     </div>
   </div>

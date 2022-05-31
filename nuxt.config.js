@@ -241,7 +241,7 @@ export default async () => {
     },
     optimizedImages: {
       optimizeImages: true,
-      optimizeImagesInDev: true
+      optimizeImagesInDev: true,
     },
     pwa: {
       workbox: {

@@ -39,7 +39,10 @@
             class="flex mt-auto items-center hover:opacity-60 transition-all"
           >
             <txt class="mr-4" bold> Continue reading </txt>
-            <img class="rounded-none" :src="require('../../assets/svg/Arrow.svg?inline')" />
+            <img
+              class="rounded-none"
+              :src="require('../../assets/svg/Arrow.svg?inline')"
+            />
           </nuxt-link>
           <span>{{ readingTime(blogPost.text) }} minute read</span>
         </div>

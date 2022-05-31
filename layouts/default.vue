@@ -160,13 +160,13 @@ div.cookieControl__ModalContent label:before {
 
 /* Animation */
 .fadeHidden {
-  opacity: 0
+  opacity: 0;
 }
 .showElement {
   opacity: 1;
   transform: translate(0, 0);
-  transition: all .75s ease-out;
-  transition-delay: var(--delay)
+  transition: all 0.75s ease-out;
+  transition-delay: var(--delay);
 }
 </style>
 

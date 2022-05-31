@@ -2,7 +2,13 @@
   <div id="pricing">
     <txt type="title" class="mb-16 pt-8">Pricing</txt>
     <div class="grid lg:grid-cols-2 gap-8">
-      <card-wrapper id="demo" v-infocus="'showElement'" class="p-4 lg:col-span-2 fadeHidden" no-shadow no-hover>
+      <card-wrapper
+        id="demo"
+        v-infocus="'showElement'"
+        class="p-4 lg:col-span-2 fadeHidden"
+        no-shadow
+        no-hover
+      >
         <div class="flex justify-between">
           <txt type="title"> Free </txt>
           <link-button
