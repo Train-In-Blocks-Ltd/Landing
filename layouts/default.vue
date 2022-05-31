@@ -306,14 +306,14 @@ export default {
     };
     // Wrap the setTimeout into an if statement
     if (!this.getCookie("exitIntentShown")) {
-      window.addEventListener('mousemove', startExitCountdown)
-      window.addEventListener('scroll', startExitCountdown)
-      window.addEventListener('keydown', startExitCountdown)
-      window.addEventListener('click', startExitCountdown)
-      window.addEventListener('touchstart', startExitCountdown)
+      window.addEventListener("mousemove", startExitCountdown);
+      window.addEventListener("scroll", startExitCountdown);
+      window.addEventListener("keydown", startExitCountdown);
+      window.addEventListener("click", startExitCountdown);
+      window.addEventListener("touchstart", startExitCountdown);
     }
     const self = this;
-    function startExitCountdown () {
+    function startExitCountdown() {
       // Set timeout so exit intent isn't show on page load - wait 10 seconds
       setTimeout(() => {
         // Add event listener for when user leaves page
@@ -321,11 +321,11 @@ export default {
         // Add event listener for when user presses a key - which we listen to the escape key
         document.addEventListener("keydown", self.exit);
       }, 10000);
-      window.removeEventListener('mousemove', startExitCountdown)
-      window.removeEventListener('scroll', startExitCountdown)
-      window.removeEventListener('keydown', startExitCountdown)
-      window.removeEventListener('click', startExitCountdown)
-      window.removeEventListener('touchstart', startExitCountdown)
+      window.removeEventListener("mousemove", startExitCountdown);
+      window.removeEventListener("scroll", startExitCountdown);
+      window.removeEventListener("keydown", startExitCountdown);
+      window.removeEventListener("click", startExitCountdown);
+      window.removeEventListener("touchstart", startExitCountdown);
     }
   },
   methods: {
