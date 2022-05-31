@@ -1,15 +1,15 @@
 <template>
   <div>
-    <txt type="title" class="mb-4 pt-8">Testimonials</txt>
-    <div class="flex flex-wrap justify-center">
-      <div
+    <txt type="title" class="mb-16 pt-8">Testimonials</txt>
+    <div class="flex flex-wrap justify-center gap-8">
+      <blockquote
         v-for="testimonial in testimonials"
         :key="testimonial.text"
-        class="grid gap-4 text-center mt-12 md:w-1/2 md:px-4"
+        class="md:w-[calc(50%-2rem)] text-lg"
       >
-        <txt class="italic">"{{ testimonial.text }}"</txt>
-        <txt>- {{ testimonial.name }}</txt>
-      </div>
+        <txt>{{ testimonial.text }}</txt>
+        <txt class="mt-4 font-bold">- {{ testimonial.name }}</txt>
+      </blockquote>
     </div>
   </div>
 </template>
