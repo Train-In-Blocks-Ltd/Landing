@@ -48,7 +48,7 @@ b {
   @apply mb-4;
 }
 .nuxt-content a {
-  @apply underline text-blue-700;
+  @apply underline text-blue-700 dark:text-white;
 }
 .nuxt-content img,
 .nuxt-content video,
