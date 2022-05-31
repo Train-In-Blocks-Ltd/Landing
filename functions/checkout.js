@@ -26,12 +26,16 @@ exports.handler = async function handler(event, context, callback) {
         line_items: JSON.parse(event.body).line_items,
         mode: "subscription",
         allow_promotion_codes: true,
+        subscription_data: {
+          trial_period_days: 14
+        },
         success_url: `https://traininblocks.com/success/?value=${
           JSON.parse(event.body).price
         }`,
         cancel_url: `https://traininblocks.com/cancelled/?value=${
           JSON.parse(event.body).price
         }`,
+
       });
       return callback(null, {
         statusCode: 200,
