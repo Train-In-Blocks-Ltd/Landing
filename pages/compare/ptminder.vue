@@ -25,7 +25,7 @@ export default {
   },
   head() {
     return {
-      title: "PTminder",
+      title: "How do we compare against PTminder?",
       meta: [
         {
           hid: "description",
