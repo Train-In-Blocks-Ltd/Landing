@@ -160,7 +160,7 @@ div.cookieControl__ModalContent label:before {
 </style>
 
 <template>
-  <div id="app" class="px-8">
+  <div id="app" class="px-4 md:px-8">
     <nav-menu />
     <nav-bar class="my-16" />
     <nuxt class="fadeIn mb-16" />
