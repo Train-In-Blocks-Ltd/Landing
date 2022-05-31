@@ -63,11 +63,14 @@ export default {
     },
   },
   beforeMount() {
-    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    darkModeMediaQuery.addEventListener('change', e => {
+    const darkModeMediaQuery = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    );
+    darkModeMediaQuery.addEventListener("change", (e) => {
       this.darkmodeOn = e.matches;
     });
-    if (localStorage.getItem("darkmode") || darkModeMediaQuery.matches) this.darkmodeOn = true;
+    if (localStorage.getItem("darkmode") || darkModeMediaQuery.matches)
+      this.darkmodeOn = true;
   },
   methods: {
     darkmode() {
