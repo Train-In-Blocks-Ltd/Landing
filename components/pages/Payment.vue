@@ -17,7 +17,7 @@
           subscription.
         </txt>
         <txt>
-          Auto-renews at the plan selected at the end of the free-trial.
+          After 14 days you will be automatically billed for your subscription.
         </txt>
       </card-wrapper>
       <card-wrapper
