@@ -1,6 +1,6 @@
 ---
 title: Debunking five common fitness myths
-slug: Fact-vs-fiction-the-fitness-way
+slug: Fact-vs-fiction-the-fitness-myths
 exclusive: false
 img: Fitness 1
 alt: Separating the fact from the fiction in the world of fitness
