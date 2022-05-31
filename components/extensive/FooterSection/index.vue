@@ -26,9 +26,9 @@
         title="Facebook"
         rel="noreferrer"
       >
-        <inline-svg
-          class="w-8"
-          :src="require('../../../assets/svg/socials/fb.svg')"
+        <img
+          class="w-8 rounded-none"
+          :src="require('../../../assets/svg/socials/fb.svg?inline')"
         />
       </a>
       <a
@@ -37,9 +37,9 @@
         title="Instagram"
         rel="noreferrer"
       >
-        <inline-svg
-          class="w-8"
-          :src="require('../../../assets/svg/socials/ig.svg')"
+        <img
+          class="w-8 rounded-none"
+          :src="require('../../../assets/svg/socials/ig.svg?inline')"
         />
       </a>
       <a
@@ -48,9 +48,9 @@
         title="Twitter"
         rel="noreferrer"
       >
-        <inline-svg
-          class="w-8"
-          :src="require('../../../assets/svg/socials/tw.svg')"
+        <img
+          class="w-8 rounded-none"
+          :src="require('../../../assets/svg/socials/tw.svg?inline')"
         />
       </a>
       <a
@@ -59,9 +59,9 @@
         title="LinkedIn"
         rel="noreferrer"
       >
-        <inline-svg
-          class="w-8"
-          :src="require('../../../assets/svg/socials/lk.svg')"
+        <img
+          class="w-8 rounded-none"
+          :src="require('../../../assets/svg/socials/lk.svg?inline')"
         />
       </a>
     </div>

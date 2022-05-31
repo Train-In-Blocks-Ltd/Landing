@@ -5,12 +5,14 @@
       <card-wrapper
         v-for="(member, index) in team"
         :key="`member-${index}`"
-        class="p-4 flex"
+        v-infocus="'showElement'"
+        class="p-4 flex fadeHidden"
         no-hover
+        :style="`--delay: ${0.25 * index}s`"
       >
-        <inline-svg
-          :src="require('../../../assets/svg/user.svg')"
-          class="w-1/6 md:w-1/12 lg:w-1/6 h-fit mr-4"
+        <img
+          :src="require('../../../assets/svg/user.svg?inline')"
+          class="w-1/6 md:w-1/12 lg:w-1/6 h-fit mr-4 rounded-none"
         />
         <div class="w-5/6 md:w-11/12 lg:w-5/6">
           <txt type="subtitle">{{ member.name }}</txt>

@@ -199,11 +199,12 @@
         >
           {{ item.desc }}
         </txt>
-        <inline-svg
+        <span 
           :id="item.id"
-          :src="require(`../../assets/anim-elements/${item.id}.svg`)"
-          class="w-full sm:w-5/12"
-        />
+          class="w-full sm:w-5/12 rounded-none"
+          v-html="require(`../../assets/anim-elements/${item.id}.svg?include`)"
+        >
+        </span>
       </div>
     </div>
   </div>

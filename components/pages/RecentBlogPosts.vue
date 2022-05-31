@@ -2,12 +2,14 @@
   <div>
     <txt type="title" class="mb-16">Recent blog posts</txt>
     <div
-      class="grid gap-12 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-4 mb-16"
+      class="grid gap-12 sm:gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-4 mb-16"
     >
       <div
-        v-for="(blogPost, blogPostIndex) in latestBlogPosts.slice(-3).reverse()"
-        :key="`post_${blogPostIndex}`"
-        class="flex flex-col pr-4"
+        v-for="(blogPost, index) in latestBlogPosts.slice(-4).reverse()"
+        :key="`post_${index}`"
+        v-infocus="'showElement'"
+        class="flex flex-col pr-4 fadeHidden"
+        :style="`--delay: ${0.25 * index}s`"
       >
         <img
           height="auto"
@@ -37,7 +39,7 @@
             class="flex mt-auto items-center hover:opacity-60 transition-all"
           >
             <txt class="mr-4" bold> Continue reading </txt>
-            <inline-svg :src="require('../../assets/svg/Arrow.svg')" />
+            <img class="rounded-none" :src="require('../../assets/svg/Arrow.svg?inline')" />
           </nuxt-link>
           <span>{{ readingTime(blogPost.text) }} minute read</span>
         </div>

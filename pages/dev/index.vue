@@ -3,10 +3,13 @@
     <txt type="title" is-main class="mb-16">Join our development journey</txt>
     <div class="grid xl:grid-cols-2 gap-8 xl:gap-12 mb-8">
       <blog-post
-        v-for="post in posts"
+        v-for="(post, index) in posts"
         :key="post.title"
+        v-infocus="'showElement'"
         :post="post"
         post-type="dev"
+        class="fadeHidden"
+        :style="`--delay: ${0.15 * index}s`"
       />
     </div>
   </page-wrapper>

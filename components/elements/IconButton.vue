@@ -7,10 +7,10 @@
       }
     "
   >
-    <inline-svg
-      :class="svgClass"
+    <img
+      :class="svgClass + ' rounded-none'"
       :style="{ height: `${iconSize}px`, width: `${iconSize}px` }"
-      :src="require(`@/assets/svg/${svg}.svg`)"
+      :src="require(`@/assets/svg/${svg}.svg?inline`)"
     />
   </div>
 </template>

@@ -29,7 +29,7 @@
           :to="`/${postType}/${post.slug}/`"
         >
           <txt class="mr-4">Continue reading</txt>
-          <inline-svg :src="require('../../../assets/svg/Arrow.svg')" />
+          <img class="rounded-none" :src="require('../../../assets/svg/Arrow.svg?inline')" />
         </nuxt-link>
         <span>{{ readingTime(post.text) }} minute read</span>
       </div>

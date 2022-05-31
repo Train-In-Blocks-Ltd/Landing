@@ -8,9 +8,9 @@
     <nav style="z-index: 80" class="fixed right-12 top-8 z-20">
       <transition enter-active-class="fadeIn">
         <div v-show="$parent.openNav" class="flex flex-col items-end">
-          <inline-svg
-            :src="require('../../../assets/svg/close.svg')"
-            class="mb-6 cursor-pointer hover:opacity-60 transition-all"
+          <img
+            :src="require('../../../assets/svg/close.svg?inline')"
+            class="mb-6 cursor-pointer hover:opacity-60 transition-all rounded-none"
             @click="$parent.openNav = false"
           />
           <nav-menu-link

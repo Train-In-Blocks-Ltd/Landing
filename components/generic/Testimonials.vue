@@ -3,9 +3,11 @@
     <txt type="title" class="mb-4 pt-8">Testimonials</txt>
     <div class="flex flex-wrap justify-center">
       <div
-        v-for="testimonial in testimonials"
+        v-for="(testimonial, index) in testimonials"
         :key="testimonial.text"
-        class="grid gap-4 text-center mt-12 md:w-1/2 md:px-4"
+        v-infocus="'showElement'"
+        class="grid gap-4 text-center mt-12 md:w-1/2 md:px-4 fadeHidden"
+        :style="`--delay: ${0.25 * index}s`"
       >
         <txt class="italic">"{{ testimonial.text }}"</txt>
         <txt>- {{ testimonial.name }}</txt>

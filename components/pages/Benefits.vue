@@ -5,13 +5,15 @@
       <card-wrapper
         v-for="(item, index) in benefits"
         :key="`benefit_${index}`"
-        class="p-4"
+        v-infocus="'showElement'"
+        class="p-4 fadeHidden"
         no-hover
         no-shadow
+        :style="`--delay: ${0.15 * index}s`"
       >
-        <inline-svg
-          :src="require(`../../assets/svg/features/${item.svg}.svg`)"
-          class="h-16 mb-4 mx-auto"
+        <img
+          :src="require(`../../assets/svg/features/${item.svg}.svg?inline`)"
+          class="h-16 mb-4 mx-auto rounded-none"
         />
         <txt type="large-body" class="mb-2" bold>
           {{ item.subtitle }}

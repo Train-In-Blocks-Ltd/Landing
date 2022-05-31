@@ -173,7 +173,7 @@ export default async () => {
     /*
      ** Plugins to load before mounting the App
      */
-    plugins: ["~/plugins/vue-inline-svg.js"],
+    plugins: ["~/plugins/fade-on-load.js"],
     /*
      ** Nuxt.js dev-modules
      */
@@ -241,7 +241,7 @@ export default async () => {
     },
     optimizedImages: {
       optimizeImages: true,
-      optimizeImagesInDev: true,
+      optimizeImagesInDev: true
     },
     pwa: {
       workbox: {

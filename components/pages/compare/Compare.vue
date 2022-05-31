@@ -26,8 +26,8 @@
         </txt>
         <ul>
           <li
-            v-for="(desc, descIndex) in details.price_desc"
-            :key="`desc_${descIndex}`"
+            v-for="(desc, index) in details.price_desc"
+            :key="`desc_${index}`"
           >
             {{ desc }}
           </li>

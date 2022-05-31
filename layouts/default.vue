@@ -157,6 +157,17 @@ div.cookieControl__ModalContent label:before {
 .modal-leave-to {
   opacity: 0;
 }
+
+/* Animation */
+.fadeHidden {
+  opacity: 0
+}
+.showElement {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all .75s ease-out;
+  transition-delay: var(--delay)
+}
 </style>
 
 <template>
@@ -186,9 +197,9 @@ div.cookieControl__ModalContent label:before {
         @click="exit"
       >
         <div class="relative top-20 mx-auto p-8 rounded-md bg-white">
-          <inline-svg
-            :src="require('../assets/svg/close.svg')"
-            class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all"
+          <img
+            :src="require('../assets/svg/close.svg?inline')"
+            class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all rounded-none"
             @click="exitIntent = false"
           />
           <div class="text-center">
