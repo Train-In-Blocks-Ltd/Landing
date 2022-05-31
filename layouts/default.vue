@@ -71,7 +71,7 @@ ol {
   @apply list-decimal;
 }
 blockquote {
-  @apply px-2 pt-12 pb-4 md:py-8 md:px-12 rounded-lg border-3 border-gray-800 dark:border-white rounded-lg text-gray-800 dark:text-white bg-white dark:bg-gray-800 text-center relative leading-normal ;
+  @apply px-2 pt-12 pb-4 md:py-8 md:px-12 rounded-lg border-3 border-gray-800 dark:border-white rounded-lg text-gray-800 dark:text-white bg-white dark:bg-gray-800 text-center relative leading-normal;
 }
 blockquote::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' style='fill: rgb(40 40 40)'%3E%3C!----%3E%3Cpath d='M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z'/%3E%3C/svg%3E");
