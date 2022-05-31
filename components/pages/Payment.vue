@@ -2,13 +2,19 @@
   <div id="pricing">
     <txt type="title" class="mb-16 pt-8">Pricing</txt>
     <div class="grid lg:grid-cols-4 gap-8">
-      <card-wrapper class="p-4 lg:col-span-full lg:col-start-2 lg:col-end-4 lg:text-center" no-shadow no-hover>
+      <card-wrapper
+        class="p-4 lg:col-span-full lg:col-start-2 lg:col-end-4 lg:text-center"
+        no-shadow
+        no-hover
+      >
         <txt type="title"> 14 Day Free Trial </txt>
         <txt class="mt-4">
-          Sign up for either our yearly or monthly plan and benefit from a 14 day free trial.
+          Sign up for either our yearly or monthly plan and benefit from a 14
+          day free trial.
         </txt>
         <txt>
-          Cancel at any time by logging in to your account and managing your subscription.
+          Cancel at any time by logging in to your account and managing your
+          subscription.
         </txt>
         <txt>
           Auto-renews at the plan selected at the end of the free-trial.
