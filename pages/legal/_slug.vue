@@ -40,7 +40,7 @@ export default {
         {
           hid: "canonical",
           rel: "canonical",
-          href: `https://traininblocks.com/blog/${this.$route.params.slug}/`,
+          href: `https://traininblocks.com/legal/${this.$route.params.slug}/`,
         },
       ],
       __dangerouslyDisableSanitizers: ["script"],

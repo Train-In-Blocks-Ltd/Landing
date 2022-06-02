@@ -32,11 +32,11 @@ We'll outline a few ideas on how you can mark an important event in the fitness 
 
 ## Table of contents
 
-* [Sign up for a road race](sign-up-for-a-road-race)
-* [Join a local sports group](join-a-local-sports-group-or-club)
-* [Pick out a cool place to hike](pick-out-a-cool-place-to-hike)
-* [Bike to work for the month](bike-to-work-for-the-month)
-* [Get friends or family members together for a physical activity](get-friends-or-family-members-together-for-a-physical-activity)
+* [Sign up for a road race](#sign-up-for-a-road-race)
+* [Join a local sports group](#join-a-local-sports-group-or-club)
+* [Pick out a cool place to hike](#pick-out-a-cool-place-to-hike)
+* [Bike to work for the month](#bike-to-work-for-the-month)
+* [Get friends or family members together for a physical activity](#get-friends-or-family-members-together-for-a-physical-activity)
 
 ## Sign up for a road race
 

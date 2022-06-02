@@ -27,7 +27,7 @@ export default {
   },
   head() {
     return {
-      title: "Trainerize",
+      title: "How do we compare against Trainerize?",
       meta: [
         {
           hid: "description",

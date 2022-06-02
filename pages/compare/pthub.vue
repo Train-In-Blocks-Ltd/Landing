@@ -24,7 +24,7 @@ export default {
   },
   head() {
     return {
-      title: "PTHub",
+      title: "How do we compare against PTHub?",
       meta: [
         {
           hid: "description",

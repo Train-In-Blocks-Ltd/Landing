@@ -39,7 +39,7 @@ For this one, partner one lays on their back with their feet planted firmly on t
 
 <markdown-image src="sit-up.jpg" alt="Plan and sit-up"></markdown-image>
 
-_(Source:_ [](https://www.flickr.com/photos/30478819@N08/50017876526)_[Tyler Read](www.ptpioneer.com))_
+_(Source:_ _[Tyler Read](https://www.ptpioneer.com))_
 
 ## Wall squat and tricep dip
 
