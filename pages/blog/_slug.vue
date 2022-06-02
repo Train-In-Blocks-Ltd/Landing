@@ -39,7 +39,7 @@ blockquote cite {
     >
     <nuxt-content v-if="existingLead || !post.exclusive" :document="post" />
     <div v-else>
-      <card-wrapper class="p-4 lg:w-1/2 mx-auto mb-16" no-hover>
+      <card-wrapper class="p-4 lg:w-3/4 mx-auto mb-16" no-hover>
         <txt type="large-body" class="mb-8" bold
           >Sign up to read the full article</txt
         >
