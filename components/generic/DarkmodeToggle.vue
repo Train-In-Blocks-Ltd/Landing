@@ -35,7 +35,7 @@ input:checked + .slider:before {
 </style>
 
 <template>
-  <div class="flex items-center mr-6">
+  <div class="flex items-center mr-2 md:mr-6">
     <inline-svg
       :src="require('../../assets/svg/darkmode.svg')"
       :class="{ darkmode: darkmodeOn }"
