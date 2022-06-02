@@ -48,7 +48,7 @@ b {
   @apply mb-4;
 }
 .nuxt-content a {
-  @apply underline text-blue-700;
+  @apply underline text-blue-700 dark:text-white;
 }
 .nuxt-content img,
 .nuxt-content video,
@@ -160,7 +160,7 @@ div.cookieControl__ModalContent label:before {
 </style>
 
 <template>
-  <div id="app" class="px-8">
+  <div id="app" class="px-4 md:px-8">
     <nav-menu />
     <nav-bar class="my-16" />
     <nuxt class="fadeIn mb-16" />
@@ -185,7 +185,9 @@ div.cookieControl__ModalContent label:before {
         class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
         @click="exit"
       >
-        <div class="relative top-20 mx-auto p-8 rounded-md bg-white">
+        <div
+          class="relative top-20 mx-auto p-8 rounded-md bg-gray-100 dark:bg-gray-800"
+        >
           <inline-svg
             :src="require('../assets/svg/close.svg')"
             class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all"
@@ -309,13 +311,26 @@ export default {
       !this.getCookie("exitIntentShown") &&
       !window.localStorage.getItem("existing-lead")
     ) {
+      window.addEventListener("mousemove", startExitCountdown);
+      window.addEventListener("scroll", startExitCountdown);
+      window.addEventListener("keydown", startExitCountdown);
+      window.addEventListener("click", startExitCountdown);
+      window.addEventListener("touchstart", startExitCountdown);
+    }
+    const self = this;
+    function startExitCountdown() {
       // Set timeout so exit intent isn't show on page load - wait 10 seconds
       setTimeout(() => {
         // Add event listener for when user leaves page
         document.addEventListener("mouseout", mouseEvent);
         // Add event listener for when user presses a key - which we listen to the escape key
-        document.addEventListener("keydown", this.exit);
+        document.addEventListener("keydown", self.exit);
       }, 10000);
+      window.removeEventListener("mousemove", startExitCountdown);
+      window.removeEventListener("scroll", startExitCountdown);
+      window.removeEventListener("keydown", startExitCountdown);
+      window.removeEventListener("click", startExitCountdown);
+      window.removeEventListener("touchstart", startExitCountdown);
     }
   },
   methods: {

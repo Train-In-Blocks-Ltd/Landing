@@ -35,7 +35,7 @@ input:checked + .slider:before {
 </style>
 
 <template>
-  <div class="flex items-center mr-6">
+  <div class="flex items-center mr-2 md:mr-6">
     <inline-svg
       :src="require('../../assets/svg/darkmode.svg')"
       :class="{ darkmode: darkmodeOn }"
@@ -62,8 +62,15 @@ export default {
       this.darkmode();
     },
   },
-  mounted() {
-    if (localStorage.getItem("darkmode")) this.darkmodeOn = true;
+  beforeMount() {
+    const darkModeMediaQuery = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    );
+    darkModeMediaQuery.addEventListener("change", (e) => {
+      this.darkmodeOn = e.matches;
+    });
+    if (localStorage.getItem("darkmode") || darkModeMediaQuery.matches)
+      this.darkmodeOn = true;
   },
   methods: {
     darkmode() {
