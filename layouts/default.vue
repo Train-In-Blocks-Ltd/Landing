@@ -307,7 +307,10 @@ export default {
       }
     };
     // Wrap the setTimeout into an if statement
-    if (!this.getCookie("exitIntentShown")) {
+    if (
+      !this.getCookie("exitIntentShown") &&
+      !window.localStorage.getItem("existing-lead")
+    ) {
       window.addEventListener("mousemove", startExitCountdown);
       window.addEventListener("scroll", startExitCountdown);
       window.addEventListener("keydown", startExitCountdown);
