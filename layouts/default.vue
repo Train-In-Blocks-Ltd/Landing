@@ -185,7 +185,9 @@ div.cookieControl__ModalContent label:before {
         class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
         @click="exit"
       >
-        <div class="relative top-20 mx-auto p-8 rounded-md bg-white">
+        <div
+          class="relative top-20 mx-auto p-8 rounded-md bg-gray-100 dark:bg-gray-800"
+        >
           <inline-svg
             :src="require('../assets/svg/close.svg')"
             class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all"
