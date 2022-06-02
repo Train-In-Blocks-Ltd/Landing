@@ -5,14 +5,18 @@
       <card-wrapper
         v-for="(member, index) in team"
         :key="`member-${index}`"
-        class="p-4 flex"
+        class="p-4 md:flex"
         no-hover
       >
-        <inline-svg
-          :src="require('../../../assets/svg/user.svg')"
-          class="w-1/6 md:w-1/12 lg:w-1/6 h-fit mr-4"
+        <img
+          :src="
+            require(`../../../assets/images/${member.name
+              .toLowerCase()
+              .replace(' ', '-')}.jpg`)
+          "
+          class="w-1/2 mx-auto mb-4 md:ml-0 md:mb-0 md:mr-4 md:w-4/12 h-fit aspect-square object-cover"
         />
-        <div class="w-5/6 md:w-11/12 lg:w-5/6">
+        <div class="w-full md:w-8/12">
           <txt type="subtitle">{{ member.name }}</txt>
           <txt type="large-body" class="mb-2">{{ member.role }}</txt>
           <txt>{{ member.bio }}</txt>

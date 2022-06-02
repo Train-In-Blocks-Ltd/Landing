@@ -9,17 +9,17 @@
         :key="`post_${blogPostIndex}`"
         class="flex flex-col pr-4"
       >
-        <img
-          height="auto"
-          width="auto"
-          :src="
-            require(`../../assets/media-uploads/${blogPost.img}?resize&size=600&format=webp`)
-          "
-          :alt="blogPost.alt || blogPost.title"
-          class="gray aspect-square object-cover"
-          loading="lazy"
-        />
         <nuxt-link :to="`/blog/${blogPost.slug}/`">
+          <img
+            height="auto"
+            width="auto"
+            :src="
+              require(`../../assets/media-uploads/${blogPost.img}?resize&size=600&format=webp`)
+            "
+            :alt="blogPost.alt || blogPost.title"
+            class="gray aspect-square object-cover"
+            loading="lazy"
+          />
           <txt
             type="large-body"
             class="my-6 hover:opacity-60 transition-all"

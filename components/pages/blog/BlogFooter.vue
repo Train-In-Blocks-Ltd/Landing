@@ -1,16 +1,10 @@
 <template>
-  <card-wrapper class="p-4" no-hover>
+  <card-wrapper class="p-4 text-center" no-hover>
     <txt type="large-body" class="mb-4" bold
       >Let's save you time and money so you can focus on what matters!</txt
     >
-    <txt>1. Select <b>demo account details</b></txt>
-    <txt>2. Enter the details into the log-in form</txt>
-    <txt>3. Start exploring</txt>
-    <link-button
-      link="https://app.traininblocks.com"
-      :button-class="'mt-4'"
-      new-tab
-      >Check out our demo</link-button
+    <link-button link="/#yearly" :button-class="'mt-4'" new-tab
+      >Sign up for our 14 day free trial</link-button
     >
   </card-wrapper>
 </template>
