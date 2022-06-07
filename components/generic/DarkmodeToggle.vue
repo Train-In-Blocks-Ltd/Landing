@@ -36,10 +36,10 @@ input:checked + .slider:before {
 
 <template>
   <div class="flex items-center mr-6">
-    <img
-      :src="require('../../assets/svg/darkmode.svg?inline')"
+    <span
       :class="{ darkmode: darkmodeOn }"
       class="mode_icon rounded-none"
+      v-html="require('../../assets/svg/darkmode.svg?include')"
     />
     <label class="switch">
       <input v-model="darkmodeOn" type="checkbox" aria-label="Darkmode" />

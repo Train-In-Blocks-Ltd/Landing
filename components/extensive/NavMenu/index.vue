@@ -8,10 +8,10 @@
     <nav style="z-index: 80" class="fixed right-12 top-8 z-20">
       <transition enter-active-class="fadeIn">
         <div v-show="$parent.openNav" class="flex flex-col items-end">
-          <img
-            :src="require('../../../assets/svg/close.svg?inline')"
+          <span
             class="mb-6 cursor-pointer hover:opacity-60 transition-all rounded-none"
             @click="$parent.openNav = false"
+            v-html="require('../../../assets/svg/close.svg?include')"
           />
           <nav-menu-link
             link-to="https://app.traininblocks.com"

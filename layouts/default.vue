@@ -213,10 +213,10 @@ div.cookieControl__ModalContent label:before {
         @click="exit"
       >
         <div class="relative top-20 mx-auto p-8 rounded-md bg-gray-100 dark:bg-gray-800">
-          <img
-            :src="require('../assets/svg/close.svg?inline')"
+          <span
             class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all rounded-none"
             @click="exitIntent = false"
+            v-html="require('../assets/svg/close.svg?include')"
           />
           <div class="text-center">
             <txt type="title" class="my-4"> Let's stay connected! </txt>

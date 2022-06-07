@@ -1,9 +1,9 @@
 <style>
 /* Shared anim */
-.svg_item > svg .stroke_color {
+.svg_item > span > svg .stroke_color {
   @apply stroke-gray-800 dark:stroke-white;
 }
-.svg_item > svg .fill_color {
+.svg_item > span > svg .fill_color {
   @apply fill-white dark:fill-gray-800;
 }
 #editing-session .preview,

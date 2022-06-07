@@ -1,3 +1,9 @@
+<style>
+  .benefit-icon svg {
+    @apply h-16 mx-auto;
+  }
+</style>
+
 <template>
   <div id="features">
     <txt type="title" class="mb-16 pt-8">Benefits and features</txt>
@@ -11,9 +17,9 @@
         no-shadow
         :style="`--delay: ${0.15 * index}s`"
       >
-        <img
-          :src="require(`../../assets/svg/features/${item.svg}.svg?inline`)"
-          class="h-16 mb-4 mx-auto rounded-none"
+        <span
+          class="benefit-icon mb-4 rounded-none block"
+          v-html="require(`../../assets/svg/features/${item.svg}.svg?include`)"
         />
         <txt type="large-body" class="mb-2" bold>
           {{ item.subtitle }}
