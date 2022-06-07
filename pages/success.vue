@@ -55,6 +55,11 @@ export default {
         value: this.$route.query.value,
         currency: "GBP",
       });
+      // eslint-disable-next-line no-undef
+      fbq("track", "Purchase", {
+        currency: "GBP",
+        value: this.$route.query.value,
+      });
     }
   },
 };

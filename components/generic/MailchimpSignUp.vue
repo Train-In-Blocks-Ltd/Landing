@@ -59,6 +59,8 @@ export default {
           "To complete the subscription process, please click the link in the email we just sent you.";
         this.messageClasses = "text-green-700";
         this.gtag_report_conversion();
+        // eslint-disable-next-line no-undef
+        fbq("track", "CompleteRegistration", { email });
       } catch (e) {
         this.onExist();
         window.localStorage.setItem("existing-lead", true);
