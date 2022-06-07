@@ -116,6 +116,15 @@ export default async () => {
       __dangerouslyDisableSanitizers: ["script"],
       script: [
         {
+          innerHtml: `{
+            const darkModeMediaQuery = window.matchMedia(
+              "(prefers-color-scheme: dark)"
+            );
+            if (localStorage.getItem("darkmode") || darkModeMediaQuery.matches)
+              document.documentElement.setAttribute("class", "dark");
+          }`
+        },
+        {
           src: "https://js.stripe.com/v3/",
           async: true,
         },
