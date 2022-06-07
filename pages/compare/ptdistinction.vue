@@ -27,7 +27,7 @@ export default {
   },
   head() {
     return {
-      title: "PTDistinction",
+      title: "How do we compare against PTDistinction?",
       meta: [
         {
           hid: "description",

@@ -1,26 +1,24 @@
 <template>
   <div id="pricing">
     <txt type="title" class="mb-16 pt-8">Pricing</txt>
-    <div class="grid lg:grid-cols-2 gap-8">
+    <div class="grid lg:grid-cols-4 gap-8">
       <card-wrapper
-        id="demo"
         v-infocus="'showElement'"
-        class="p-4 lg:col-span-2 fadeHidden"
+        class="p-4 lg:col-span-full lg:col-start-2 lg:col-end-4 lg:text-center fadeHidden"
         no-shadow
         no-hover
       >
-        <div class="flex justify-between">
-          <txt type="title"> Free </txt>
-          <link-button
-            link="https://app.traininblocks.com?utm=landingPricing"
-            new-tab
-            >Select</link-button
-          >
-        </div>
-        <txt type="large-body" class="my-2" bold> Demo </txt>
+        <txt type="title"> 14 Day Free Trial </txt>
+        <txt class="mt-4">
+          Sign up for either our yearly or monthly plan and benefit from a 14
+          day free trial.
+        </txt>
         <txt>
-          Sign in to our demo account to see how our services can benefit you.
-          You can find the details on the log-in page.
+          Cancel at any time by logging in to your account and managing your
+          subscription.
+        </txt>
+        <txt>
+          After 14 days you will be automatically billed for your subscription.
         </txt>
       </card-wrapper>
       <card-wrapper
@@ -28,7 +26,7 @@
         :id="product.name.toLowerCase()"
         :key="`product_${index}`"
         v-infocus="'showElement'"
-        class="p-4 fadeHidden"
+        class="p-4 col-span-full lg:col-span-2 fadeHidden"
         no-shadow
         no-hover
         :style="`--delay: ${0.25 * index}s`"
@@ -61,14 +59,12 @@
 <script>
 import axios from "axios";
 import Txt from "../elements/Txt";
-import LinkButton from "../elements/LinkButton";
 import DefaultButton from "../elements/DefaultButton";
 import CardWrapper from "../generic/CardWrapper";
 
 export default {
   components: {
     Txt,
-    LinkButton,
     DefaultButton,
     CardWrapper,
   },
@@ -113,26 +109,27 @@ export default {
         line_items: [item],
         price: parseInt(price.replace("£", "")),
       });
-      this.gtag_report_conversion({ value: parseInt(price.replace("£", "")) });
+      // TODO: Reenable this GA report thing, stopped payment from working
+      // this.gtag_report_conversion({ value: parseInt(price.replace("£", "")) });
       // eslint-disable-next-line no-undef
       const stripe = await Stripe("pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX");
       stripe.redirectToCheckout({ sessionId: response.data });
     },
-    gtag_report_conversion({ url, value }) {
-      const callback = function () {
-        // eslint-disable-next-line eqeqeq
-        if (typeof url != "undefined") {
-          window.location = url;
-        }
-      };
-      window.dataLayer.push("event", "conversion", {
-        send_to: "AW-407043956/2rv5CL35k7kDEPT-i8IB",
-        value,
-        currency: "GBP",
-        event_callback: callback,
-      });
-      return false;
-    },
+    // gtag_report_conversion({ url, value }) {
+    //   const callback = function () {
+    //     // eslint-disable-next-line eqeqeq
+    //     if (typeof url != "undefined") {
+    //       window.location = url;
+    //     }
+    //   };
+    //   window.dataLayer.push("event", "conversion", {
+    //     send_to: "AW-407043956/2rv5CL35k7kDEPT-i8IB",
+    //     value,
+    //     currency: "GBP",
+    //     event_callback: callback,
+    //   });
+    //   return false;
+    // },
   },
 };
 </script>

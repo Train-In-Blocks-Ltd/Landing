@@ -26,7 +26,7 @@ export default {
   },
   head() {
     return {
-      title: "TrueCoach",
+      title: "How do we compare against TrueCoach?",
       meta: [
         {
           hid: "description",

@@ -48,7 +48,7 @@ b {
   @apply mb-4;
 }
 .nuxt-content a {
-  @apply underline text-blue-700;
+  @apply underline text-blue-700 dark:text-white;
 }
 .nuxt-content img,
 .nuxt-content video,
@@ -69,6 +69,22 @@ ul {
 }
 ol {
   @apply list-decimal;
+}
+blockquote {
+  @apply px-2 pt-12 pb-4 md:py-8 md:px-12 rounded-lg border-3 border-gray-800 dark:border-white rounded-lg text-gray-800 dark:text-white bg-white dark:bg-gray-800 text-center relative leading-normal;
+}
+blockquote::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' style='fill: rgb(40 40 40)'%3E%3C!----%3E%3Cpath d='M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z'/%3E%3C/svg%3E");
+  @apply absolute w-8 h-8 left-2 top-2 content-[""];
+}
+.nuxt-content blockquote {
+  @apply my-6 text-xl md:text-2xl font-bold shadow-lg;
+}
+.nuxt-content blockquote p {
+  @apply mb-0;
+}
+blockquote cite {
+  @apply hidden;
 }
 
 /* Animations */
@@ -171,7 +187,7 @@ div.cookieControl__ModalContent label:before {
 </style>
 
 <template>
-  <div id="app" class="px-8">
+  <div id="app" class="px-4 md:px-8">
     <nav-menu />
     <nav-bar class="my-16" />
     <nuxt class="fadeIn mb-16" />
@@ -196,7 +212,7 @@ div.cookieControl__ModalContent label:before {
         class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
         @click="exit"
       >
-        <div class="relative top-20 mx-auto p-8 rounded-md bg-white">
+        <div class="relative top-20 mx-auto p-8 rounded-md bg-gray-100 dark:bg-gray-800">
           <img
             :src="require('../assets/svg/close.svg?inline')"
             class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all rounded-none"
@@ -316,14 +332,30 @@ export default {
       }
     };
     // Wrap the setTimeout into an if statement
-    if (!this.getCookie("exitIntentShown")) {
+    if (
+      !this.getCookie("exitIntentShown") &&
+      !window.localStorage.getItem("existing-lead")
+    ) {
+      window.addEventListener("mousemove", startExitCountdown);
+      window.addEventListener("scroll", startExitCountdown);
+      window.addEventListener("keydown", startExitCountdown);
+      window.addEventListener("click", startExitCountdown);
+      window.addEventListener("touchstart", startExitCountdown);
+    }
+    const self = this;
+    function startExitCountdown() {
       // Set timeout so exit intent isn't show on page load - wait 10 seconds
       setTimeout(() => {
         // Add event listener for when user leaves page
         document.addEventListener("mouseout", mouseEvent);
         // Add event listener for when user presses a key - which we listen to the escape key
-        document.addEventListener("keydown", this.exit);
+        document.addEventListener("keydown", self.exit);
       }, 10000);
+      window.removeEventListener("mousemove", startExitCountdown);
+      window.removeEventListener("scroll", startExitCountdown);
+      window.removeEventListener("keydown", startExitCountdown);
+      window.removeEventListener("click", startExitCountdown);
+      window.removeEventListener("touchstart", startExitCountdown);
     }
   },
   methods: {
