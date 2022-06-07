@@ -14,9 +14,9 @@ The good news is, as long as you know what your goals are and some weight traini
 
 ## Establish your goals
 
-It's important to be as specific and precise as possible when it comes to setting your ceiling. Merely aiming to lose weight won't cut it; it's not a goal, just an idea, a desire. Your goal needs to be exact, realistic, within your limits and befitting of your lifestyle. \
+It's important to be as specific and precise as possible when it comes to setting your ceiling. Merely aiming to lose weight won't cut it; it's not a goal, just an idea, a desire. Your goal needs to be exact, realistic, within your limits and befitting of your lifestyle.  \
 Start small at first, then you can continue to grow when your confidence and fitness improves. Put a timeframe on them as well: a five or six week timespan is best initially. Whatever goals you have, there are infinite options and training styles, techniques, exercises, and methods to  get you where you need to be. \
-This leaves a lot of room for creativity, but that creativity must be accompanied by logic, which is where programming gets blurry. Once you’ve got a handle on your main goal(s), you’ll be able to take a deep dive into the nitty-gritty of creating a training program.
+This leaves a lot of room for creativity, but that creativity must be accompanied by logic, which is where programming gets blurry. Once you’ve got a handle on your main goal(s), you’ll be able to take a deep dive into the nitty-gritty of creating a training program. You can then look to target specific areas to work on and develop most (chest, legs etc). 
 
 ## Decide on the frequency
 
