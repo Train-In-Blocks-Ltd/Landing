@@ -106,10 +106,12 @@ export default {
         line_items: [item],
         price: parseInt(price.replace("£", "")),
       });
-      if (this.$cookies.isEnabled('Google Analytics')) {
-        this.gtag_report_conversion({ value: parseInt(price.replace("£", "")) });
+      if (this.$cookies.isEnabled("Google Analytics")) {
+        this.gtag_report_conversion({
+          value: parseInt(price.replace("£", "")),
+        });
       }
-      if (this.$cookies.isEnabled('Facebook Pixel')) {
+      if (this.$cookies.isEnabled("Facebook Pixel")) {
         // eslint-disable-next-line no-undef
         fbq("track", "AddToCart", {
           currency: "GBP",
