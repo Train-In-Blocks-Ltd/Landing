@@ -1,11 +1,13 @@
 ---
 title: Unilateral vs. Bilateral Exercises - Improving Sprint and Agility
 slug: unilateral-bilateral-exercises
-img: woman-kneel-squat.png
-postDesc: An insight into the effects of unilateral and bilateral exercises on sprint and agility performance.
-author: Mikey Lau
-date: "2020-10-28"
 exclusive: false
+img: woman-kneel-squat.png
+alt: Unilateral vs. Bilateral Exercises
+author: Mikey Lau
+date: 2020-10-28
+postDesc: An insight into the effects of unilateral and bilateral exercises on
+  sprint and agility performance.
 ---
 
 ## What are _Quick Articles_?
