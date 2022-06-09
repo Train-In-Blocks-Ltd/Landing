@@ -88,6 +88,7 @@ export default {
           window.location = url;
         }
       };
+      window.dataLayer = window.dataLayer || [];
       window.dataLayer.push("event", "conversion", {
         send_to: "AW-407043956/0H1UCNjR4LgDEPT-i8IB",
         value: 9.99,

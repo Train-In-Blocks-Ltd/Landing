@@ -123,6 +123,7 @@ export default {
           window.location = url;
         }
       };
+      window.dataLayer = window.dataLayer || [];
       window.dataLayer.push("event", "conversion", {
         send_to: "AW-407043956/2rv5CL35k7kDEPT-i8IB",
         value,
