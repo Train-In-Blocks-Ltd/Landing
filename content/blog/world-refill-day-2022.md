@@ -13,7 +13,7 @@ Run by Bristol-based environmental charity *City to Sea,* the annual event aims 
 
 ## The issue
 
-Plastic pollution has quickly become one of the biggest environmental challenges facing us today. We once  thought of our deepest oceans, our highest mountains and our planetary poles as the final frontiers;  unexplored, unknown, and in some places, unreachable. Research has shown this is no longer the case – we’re   living in the age of plastic pollution, where even the Antarctic is floating in an invisible plastic soup. These are sad times for our big blue planet.
+Plastic pollution has quickly become one of the biggest environmental challenges facing us today. We once  thought of our deepest oceans, our highest mountains and our planetary poles as the final frontiers; unexplored, unknown, and in some places, unreachable. Research has shown this is no longer the case – we’re   living in the age of plastic pollution, where even the Antarctic is floating in an invisible plastic soup. These are sad times for our big blue planet. Back in March, we [commemorated World Water Day](https://traininblocks.com/blog/world-water-day-2022/) and, in a similar way, it's Refill counterpart looks to raise awareness of some of our world's biggest issues. 
 
 So how on earth did we get here and what do we need to do to turn off the tap? And how does the production  of plastic connect with the other huge threat to our planet – the climate crisis?
 
