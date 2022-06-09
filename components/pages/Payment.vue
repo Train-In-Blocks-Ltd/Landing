@@ -106,12 +106,16 @@ export default {
         line_items: [item],
         price: parseInt(price.replace("£", "")),
       });
-      this.gtag_report_conversion({ value: parseInt(price.replace("£", "")) });
-      // eslint-disable-next-line no-undef
-      fbq("track", "AddToCart", {
-        currency: "GBP",
-        value: parseInt(price.replace("£", "")),
-      });
+      if (this.$cookies.isEnabled('Google Analytics')) {
+        this.gtag_report_conversion({ value: parseInt(price.replace("£", "")) });
+      }
+      if (this.$cookies.isEnabled('Facebook Pixel')) {
+        // eslint-disable-next-line no-undef
+        fbq("track", "AddToCart", {
+          currency: "GBP",
+          value: parseInt(price.replace("£", "")),
+        });
+      }
       // eslint-disable-next-line no-undef
       const stripe = await Stripe("pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX");
       stripe.redirectToCheckout({ sessionId: response.data });
