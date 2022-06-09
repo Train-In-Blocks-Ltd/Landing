@@ -8,14 +8,15 @@ author: Jamie Spoor
 date: 2022-06-06T13:01:20.246Z
 postDesc: Our step by step guide to building your own training program
 ---
-T o continually make progress, you should always look to develop a set of core training principles to keep you on your toes. Whether you’re heading back to the gym after a long period away or you’re braving the weight room for the first time, figuring out what actually to do once you[ hit the gym can be daunting.](https://traininblocks.com/blog/fact-vs-fiction-the-fitness-myths/)
+   T o continually make progress, you should always look to develop a set of core training principles to keep you on your toes. Whether you’re heading back to the gym after a long period away or you’re braving the weight room for the first time, figuring out what actually to do once you[ hit the gym can be daunting.](https://traininblocks.com/blog/fact-vs-fiction-the-fitness-myths/)
 
 The good news is, as long as you know what your goals are and some weight training basics, you’ll be good to get started in the gym — be it a commercial gym or [your personal home gym](https://barbend.com/best-home-gyms/). This piece will help you articulate your workout goals, choose your workout split, decide which exercises to do, figure out how many reps and sets to do, learn how to progress your gym training, and understand how to put it all together into a  sustainable, effective workout program.
 
 1. [Establish your goals ](<## Establish your goals>)
 2. [Decide on the frequency](<## Decide on the frequency>)
 3. [Make it varied](<## Make it varied>)
-4.
+4. [Pick your equipment wisely ](<## Pick your equipment wisely>)
+5. [Keep an eye on progress ](<## Keep an eye on progress>)
 
 ## Establish your goals
 
