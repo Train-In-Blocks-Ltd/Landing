@@ -14,7 +14,8 @@ The good news is, as long as you know what your goals are and some weight traini
 
 1. [Establish your goals ](<## Establish your goals>)
 2. [Decide on the frequency](<## Decide on the frequency>)
-3.
+3. [Make it varied](<## Make it varied>)
+4.
 
 ## Establish your goals
 
