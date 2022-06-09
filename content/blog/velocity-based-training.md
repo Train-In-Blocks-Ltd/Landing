@@ -1,11 +1,13 @@
 ---
-title: More adaptations with less volume using velocity-based training
+title: "Velocity Based Training: More adaptions with less volume "
 slug: velocity-based-training
-img: velocity.png
-postDesc: A recent study on an alternative method of training which could increase adaptations with less training volume.
-author: Mikey Lau
-date: "2020-12-02"
 exclusive: false
+img: velocity.png
+alt: Velocity based training
+author: Mikey Lau
+date: 2020-12-02
+postDesc: A recent study on an alternative method of training which could
+  increase adaptations with less training volume.
 ---
 
 ## What are _Quick Articles_?
