@@ -1,12 +1,12 @@
 ---
-title: "Women in fitness: Key influencers"
+title: "5 Female Fitness Influencers: International Women's Day 2022 "
 slug: women-in-fitness-key-influencers
+exclusive: false
 img: woman-outdoors.jpeg
 alt: "International Women's Day 2022 "
 author: Jamie Spoor
 date: 2022-03-09T09:51:48.533Z
-postDesc: Inspirational women shaping the fitness industry
-exclusive: false
+postDesc: Read about 5 inspirational women shaping the fitness industry
 ---
 Tuesday 8th March marked [International Women's Day](https://www.internationalwomensday.com/) in which the world marked the seismic achievements of women in the social, political, economical and historical landscape across the globe.
 
