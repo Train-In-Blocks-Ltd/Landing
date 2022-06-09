@@ -8,8 +8,8 @@
         v-infocus="'showElement'"
         :post="post"
         post-type="blog"
-        class="fadeHidden"
-        :style="`--delay: ${0.15 * index}s`"
+        :class="{ 'fadeHidden': index > 5 }"
+        style="--delay: 0.15s"
       />
     </div>
   </page-wrapper>
