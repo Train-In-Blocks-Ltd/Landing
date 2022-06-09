@@ -8,7 +8,7 @@
         v-infocus="'showElement'"
         :post="post"
         post-type="blog"
-        :class="{ 'fadeHidden': index > 5 }"
+        :class="{ fadeHidden: index > 5 }"
         style="--delay: 0.15s"
       />
     </div>
