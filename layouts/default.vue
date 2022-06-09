@@ -215,7 +215,7 @@ div.cookieControl__ModalContent label:before {
               Learn everything that personal trainers need to know to profit and
               grow!
             </txt>
-            <mailchimp-sign-up />
+            <mailchimp-sign-up tag="Intent" />
           </div>
         </div>
       </div>
