@@ -13,7 +13,7 @@ Run by Bristol-based environmental charity *City to Sea,* the annual event aims 
 
 ## The issue
 
-Plastic pollution has quickly become one of the biggest environmental challenges facing us today. We once  thought of our deepest oceans, our highest mountains and our planetary poles as the final frontiers; unexplored, unknown, and in some places, unreachable. Research has shown this is no longer the case – we’re   living in the age of plastic pollution, where even the Antarctic is floating in an invisible plastic soup. These are sad times for our big blue planet.
+Plastic pollution has quickly become one of the biggest environmental challenges facing us today. We once  thought of our deepest oceans, our highest mountains and our planetary poles as the final frontiers;  unexplored, unknown, and in some places, unreachable. Research has shown this is no longer the case – we’re   living in the age of plastic pollution, where even the Antarctic is floating in an invisible plastic soup. These are sad times for our big blue planet.
 
 So how on earth did we get here and what do we need to do to turn off the tap? And how does the production of plastic connect with the other huge threat to our planet – the climate crisis?
 
@@ -26,3 +26,13 @@ Lightweight, cheap to produce and virtually indestructible, plastic has been s
 Say goodbye to single-use plastic and make small changes by switching to a reusable water bottle, trying a zero-waste shop or using a reusable coffee cup.
 
 *Download the free refill app*
+
+Download the free topping up app to find a place to refill and reuse at work, in the gym or in your local cafe.
+
+*Make reuse the new normal*
+
+
+
+In the wake of the pandemic, our habits have changed and we need to remind people that it’s perfectly safe to choose to reuse. Help us make a splash on social media and remind everyone to dig out their reusable bottle again.
+
+Share a selfie of you and your reusable bottle, cup or container and tell the world you’re taking action on plastics by choosing to reuse this #WorldRefillDay.
