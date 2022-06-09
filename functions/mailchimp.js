@@ -30,7 +30,7 @@ exports.handler = function handler(event, context, callback) {
           headers: {
             "Content-Type": "application/json",
             Origin: "https://traininblocks.com",
-            Authorization: "Basic c6cac5a9179698482b202a29d1c88988-us8",
+            Authorization: "Basic 0b03f0cc1adea1c937e097f50f3c0d03-us8",
           },
         }
       )
