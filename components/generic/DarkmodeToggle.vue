@@ -37,51 +37,17 @@ input:checked + .slider:before {
 <template>
   <div class="flex items-center mr-6">
     <span
-      :class="{ darkmode: darkmodeOn }"
+      :class="{ darkmode: $parent.$parent.darkmodeOn }"
       class="mode_icon rounded-none"
       v-html="require('../../assets/svg/darkmode.svg?include')"
     />
     <label class="switch">
-      <input v-model="darkmodeOn" type="checkbox" aria-label="Darkmode" />
-      <span :class="{ darkmode: darkmodeOn }" class="slider" />
+      <input
+        v-model="$parent.$parent.darkmodeOn"
+        type="checkbox"
+        aria-label="Darkmode"
+      />
+      <span :class="{ darkmode: $parent.$parent.darkmodeOn }" class="slider" />
     </label>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      darkmodeOn: false,
-    };
-  },
-  watch: {
-    darkmodeOn(state) {
-      if (state) localStorage.setItem("darkmode", true);
-      else localStorage.removeItem("darkmode");
-      this.darkmode();
-    },
-  },
-  beforeMount() {
-    const darkModeMediaQuery = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    );
-    darkModeMediaQuery.addEventListener("change", (e) => {
-      this.darkmodeOn = e.matches;
-    });
-    if (localStorage.getItem("darkmode") || darkModeMediaQuery.matches)
-      this.darkmodeOn = true;
-  },
-  methods: {
-    darkmode() {
-      if (this.darkmodeOn) {
-        document.documentElement.setAttribute("class", "dark");
-        this.$parent.$parent.theme = "Dark";
-      } else {
-        document.documentElement.removeAttribute("class");
-        this.$parent.$parent.theme = "Light";
-      }
-    },
-  },
-};
-</script>

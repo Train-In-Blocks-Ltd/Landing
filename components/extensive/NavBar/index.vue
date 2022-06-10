@@ -1,8 +1,8 @@
 <style>
-  #logo--home svg {
-    height: 48px;
-    width: 117.469px
-  }
+#logo--home svg {
+  height: 48px;
+  width: 117.469px;
+}
 </style>
 
 <template>

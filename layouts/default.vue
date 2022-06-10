@@ -212,7 +212,9 @@ div.cookieControl__ModalContent label:before {
         class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
         @click="exit"
       >
-        <div class="relative top-20 mx-auto p-8 rounded-md bg-gray-100 dark:bg-gray-800">
+        <div
+          class="relative top-20 mx-auto p-8 rounded-md bg-gray-100 dark:bg-gray-800"
+        >
           <span
             class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all rounded-none"
             @click="exitIntent = false"
@@ -253,6 +255,7 @@ export default {
       theme: "Light",
       openNav: false,
       exitIntent: false,
+      darkmodeOn: false,
     };
   },
   head() {
@@ -307,6 +310,24 @@ export default {
       ],
     };
   },
+  watch: {
+    darkmodeOn(state) {
+      if (state) localStorage.setItem("darkmode", true);
+      else localStorage.removeItem("darkmode");
+      this.darkmode();
+    },
+  },
+  beforeMount() {
+    const darkModeMediaQuery = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    );
+    darkModeMediaQuery.addEventListener("change", (e) => {
+      this.darkmodeOn = e.matches;
+    });
+    if (localStorage.getItem("darkmode") || darkModeMediaQuery.matches)
+      this.darkmodeOn = true;
+    this.darkmode();
+  },
   mounted() {
     const mouseEvent = (e) => {
       // Check that we are exiting the window at the top and not from the sides or bottom of the screen
@@ -359,6 +380,15 @@ export default {
     }
   },
   methods: {
+    darkmode() {
+      if (this.darkmodeOn) {
+        document.documentElement.setAttribute("class", "dark");
+        this.theme = "Dark";
+      } else {
+        document.documentElement.removeAttribute("class");
+        this.theme = "Light";
+      }
+    },
     // Close the modal
     exit(e) {
       if (e.target.id === "exit-modal") this.exitIntent = false;
