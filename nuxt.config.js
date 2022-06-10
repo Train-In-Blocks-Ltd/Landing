@@ -28,7 +28,6 @@ export default async () => {
         lang: "en-GB",
       },
       meta: [
-        { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           hid: "description",
@@ -118,10 +117,10 @@ export default async () => {
         {
           innerHtml: `{
             const darkModeMediaQuery = window.matchMedia(
-              "(prefers-color-scheme: dark)"
+              '(prefers-color-scheme: dark)'
             );
-            if (localStorage.getItem("darkmode") || darkModeMediaQuery.matches)
-              document.documentElement.setAttribute("class", "dark");
+            if (localStorage.getItem('darkmode') || darkModeMediaQuery.matches)
+              document.documentElement.setAttribute('class', 'dark');
           }`,
         },
         {
@@ -312,8 +311,8 @@ export default async () => {
         minify: {
           collapseBooleanAttributes: true,
           decodeEntities: true,
-          minifyCSS: false,
-          minifyJS: false,
+          minifyCSS: true,
+          minifyJS: true,
           processConditionalComments: true,
           removeEmptyAttributes: true,
           removeRedundantAttributes: true,
