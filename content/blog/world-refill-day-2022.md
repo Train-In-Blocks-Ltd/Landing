@@ -8,10 +8,12 @@ author: Jamie Spoor
 date: 2022-06-09T10:01:59.155Z
 postDesc: Join the refill revolution on 16th June
 ---
-[World Refill Day ](https://www.refill.org.uk/world-refill-day/)on **16th June** is a global public awareness campaign to prevent plastic pollution and help people live with less waste.
+ [World Refill Day ](https://www.refill.org.uk/world-refill-day/)on **16th June** is a global public awareness campaign to prevent plastic pollution and help people live with less waste.
 Run by Bristol-based environmental charity *City to Sea,* the annual event aims to help put the issue of single-use plastic  back into the national spotlight, with many businesses having banned the use of reusable cups and containers altogether. 
 
-## The issue
+1. [The issue](<## The issue>)
+2. [How can you help? ](<## How can you help?>)
+3. [Keep your bottle ](<## Keep your bottle>)
 
 Plastic pollution has quickly become one of the biggest environmental challenges facing us today. We once  thought of our deepest oceans, our highest mountains and our planetary poles as the final frontiers; unexplored, unknown, and in some places, unreachable. 
 Research has shown this is no longer the case – we’re living in the age of plastic pollution, where even the Antarctic is floating in an invisible plastic soup. These are sad times for our big blue planet. Back in March, we [commemorated World Water Day](https://traininblocks.com/blog/world-water-day-2022/) and, in a similar way, it's Refill counterpart looks to raise awareness of some of our world's biggest issues. 
