@@ -14,7 +14,7 @@
           :src="
             require(`../../../assets/images/${member.name
               .toLowerCase()
-              .replace(' ', '-')}.jpg`)
+              .replace(' ', '-')}.jpg?resize&size=240&format=webp`)
           "
           class="w-1/2 mx-auto mb-4 md:ml-0 md:mb-0 md:mr-4 md:w-4/12 h-fit aspect-square object-cover"
         />
