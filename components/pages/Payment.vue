@@ -3,7 +3,8 @@
     <txt type="title" class="mb-16 pt-8">Pricing</txt>
     <div class="grid lg:grid-cols-4 gap-8">
       <card-wrapper
-        class="p-4 lg:col-span-full lg:col-start-2 lg:col-end-4 lg:text-center"
+        v-infocus="'showElement'"
+        class="p-4 lg:col-span-full lg:col-start-2 lg:col-end-4 lg:text-center fadeHidden"
         no-shadow
         no-hover
       >
@@ -24,9 +25,11 @@
         v-for="(product, index) in products"
         :id="product.name.toLowerCase()"
         :key="`product_${index}`"
-        class="p-4 col-span-full lg:col-span-2"
+        v-infocus="'showElement'"
+        class="p-4 col-span-full lg:col-span-2 fadeHidden"
         no-shadow
         no-hover
+        :style="`--delay: ${0.25 * index}s`"
       >
         <div class="flex justify-between">
           <txt type="title">

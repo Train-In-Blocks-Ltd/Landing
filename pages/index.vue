@@ -11,10 +11,12 @@
     <txt type="title">See how we compare against...</txt>
     <div class="grid sm:grid-cols-2 gap-y-4 mt-16 mb-32">
       <nuxt-link
-        v-for="(compare, compareIndex) in comparisons"
-        :key="`compare_${compareIndex}`"
+        v-for="(compare, index) in comparisons"
+        :key="`compare_${index}`"
+        v-infocus="'showElement'"
         :to="`/compare/${compare.slug}/`"
-        class="w-fit"
+        class="w-fit fadeHidden"
+        :style="`--delay: ${0.15 * index}s`"
       >
         <txt type="subtitle" class="w-fit hover:opacity-60 transition-all">
           {{ compare.name }}

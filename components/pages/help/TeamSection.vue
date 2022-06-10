@@ -5,8 +5,10 @@
       <card-wrapper
         v-for="(member, index) in team"
         :key="`member-${index}`"
-        class="p-4 md:flex"
+        v-infocus="'showElement'"
+        class="p-4 flex fadeHidden"
         no-hover
+        :style="`--delay: ${0.25 * index}s`"
       >
         <img
           :src="

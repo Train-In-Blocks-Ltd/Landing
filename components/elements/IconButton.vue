@@ -7,10 +7,10 @@
       }
     "
   >
-    <inline-svg
-      :class="svgClass"
+    <span
+      :class="svgClass + ' rounded-none'"
       :style="{ height: `${iconSize}px`, width: `${iconSize}px` }"
-      :src="require(`@/assets/svg/${svg}.svg`)"
+      v-html="require(`@/assets/svg/${svg}.svg?include`)"
     />
   </div>
 </template>
