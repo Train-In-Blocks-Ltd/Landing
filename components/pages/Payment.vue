@@ -106,27 +106,38 @@ export default {
         line_items: [item],
         price: parseInt(price.replace("£", "")),
       });
-      // TODO: Reenable this GA report thing, stopped payment from working
-      // this.gtag_report_conversion({ value: parseInt(price.replace("£", "")) });
+      if (this.$cookies.isEnabled("Google Analytics")) {
+        this.gtag_report_conversion({
+          value: parseInt(price.replace("£", "")),
+        });
+      }
+      if (this.$cookies.isEnabled("Facebook Pixel")) {
+        // eslint-disable-next-line no-undef
+        fbq("track", "AddToCart", {
+          currency: "GBP",
+          value: parseInt(price.replace("£", "")),
+        });
+      }
       // eslint-disable-next-line no-undef
       const stripe = await Stripe("pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX");
       stripe.redirectToCheckout({ sessionId: response.data });
     },
-    // gtag_report_conversion({ url, value }) {
-    //   const callback = function () {
-    //     // eslint-disable-next-line eqeqeq
-    //     if (typeof url != "undefined") {
-    //       window.location = url;
-    //     }
-    //   };
-    //   window.dataLayer.push("event", "conversion", {
-    //     send_to: "AW-407043956/2rv5CL35k7kDEPT-i8IB",
-    //     value,
-    //     currency: "GBP",
-    //     event_callback: callback,
-    //   });
-    //   return false;
-    // },
+    gtag_report_conversion({ url, value }) {
+      const callback = function () {
+        // eslint-disable-next-line eqeqeq
+        if (typeof url != "undefined") {
+          window.location = url;
+        }
+      };
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push("event", "conversion", {
+        send_to: "AW-407043956/2rv5CL35k7kDEPT-i8IB",
+        value,
+        currency: "GBP",
+        event_callback: callback,
+      });
+      return false;
+    },
   },
 };
 </script>
