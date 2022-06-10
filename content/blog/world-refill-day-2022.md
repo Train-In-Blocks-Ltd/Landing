@@ -49,3 +49,5 @@ Show some love to the amazing businesses that have been powering the #RefillRevo
 Research suggests that buying a reusable water bottle rather than a single use plastic bottle could stop over 1,000 plastic bottles littering the ocean (over the course of 3 years). Plus, reusable water bottles can last a long time. We take them everywhere – to work, school, university, the gym: the list is endless.
 
 These will not be made from single-use plastic. Instead, they are made from significantly more durable types of plastic.  These reusable plastic water bottles are commonly used as promotional items for companies, popular with those doing sports. As a nation, we collect a lot of them and, after use, you can either keep it for next time or take it down to your local refuse and recycling centre (a.k.a the tip).
+
+Do your bit and #choosetoreuse this World Refill Day: 16th June 2022
