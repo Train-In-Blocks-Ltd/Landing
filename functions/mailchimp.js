@@ -16,20 +16,21 @@ exports.handler = function handler(event, context, callback) {
       headers,
       body: "",
     });
-  } else if (event.body && JSON.parse(event.body).email) {
+  } else if (event.body) {
+    const payload = JSON.parse(event.body);
     axios
       .post(
         "https://us8.api.mailchimp.com/3.0/lists/73101450d0/members/",
         {
-          email_address: JSON.parse(event.body).email,
+          email_address: payload.email,
           status: "subscribed",
-          tags: ["Client user"],
+          tags: ["Lead", payload.tag],
         },
         {
           headers: {
             "Content-Type": "application/json",
             Origin: "https://traininblocks.com",
-            Authorization: "Basic c6cac5a9179698482b202a29d1c88988-us8",
+            Authorization: "Basic 0b03f0cc1adea1c937e097f50f3c0d03-us8",
           },
         }
       )

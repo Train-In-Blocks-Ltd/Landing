@@ -1,13 +1,14 @@
 ---
-title: Start 2022 with a bang in our fitness competition
-slug: start-2022-with-a-bang-in-our-fitness-competition
-img: man-push-up.png
-postDesc: Train in Blocks will run an online, social-media based fitness competition each day for the rest of the month.
-author: Jamie Spoor
-date: "2022-01-15"
+title: Start 2022 with a bang with the Train In Blocks fitness competition
+slug: start-2022-with-a-bang-in-the-train-in-blocks-fitness-competition
 exclusive: false
+img: man-push-up.png
+alt: Train In Blocks fitness competition
+author: Jamie Spoor
+date: 2022-01-15
+postDesc: Train in Blocks runs an online, social-media based fitness competition
+  each day for January 2022.
 ---
-
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -20,7 +21,7 @@ January is a difficult month - the weather is cold and wet, the nation stumbles 
 
 The idea is a simple one: Train in Blocks will run an online, social-media based fitness competition each day for the rest of the month. Personal trainers and clients alike have to upload a photo or video of their workout - which could be anything from planking and push ups to against-the-clock sit ups, squats, punches and lunges. It can be a one off, timed challenge or a series of different routines over a specific number of days - what goes down is up to you.
 
-From quirky, quick challenges on YouTube to full bloodied daily workout routines, fitness challenges come in all shapes and sizes - if that’s your vibe then Train in Blocks is the personal training Bible you never knew you needed.
+[From quirky, quick challenges on YouTube](https://www.youtube.com/watch?v=41N6bKO-NVI) to full bloodied daily workout routines, fitness challenges come in all shapes and sizes - if that’s your vibe then Train in Blocks is the personal training Bible you never knew you needed.
 
 Whether you’re new to the fitness furnace (perhaps you’re hitting the gym for the first time), or a season veteran by comparison, a competition such as this is a great way to get “up and at em” with one key buzzword at the forefront: motivation - and that doesn’t always simply just mean having the wherewithal to pump a bit of iron a few times a week.
 

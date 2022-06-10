@@ -38,6 +38,7 @@ export default {
   },
   props: {
     onExist: Function,
+    tag: String,
   },
   data() {
     return {
@@ -52,13 +53,20 @@ export default {
       try {
         await axios.post("/.netlify/functions/mailchimp", {
           email,
+          tag: this.tag,
         });
         this.onExist();
         window.localStorage.setItem("existing-lead", true);
         this.message =
           "To complete the subscription process, please click the link in the email we just sent you.";
         this.messageClasses = "text-green-700";
-        this.gtag_report_conversion();
+        if (this.$cookies.isEnabled("Google Analytics")) {
+          this.gtag_report_conversion();
+        }
+        if (this.$cookies.isEnabled("Facebook Pixel")) {
+          // eslint-disable-next-line no-undef
+          fbq("track", "CompleteRegistration", { email });
+        }
       } catch (e) {
         this.onExist();
         window.localStorage.setItem("existing-lead", true);
@@ -86,6 +94,7 @@ export default {
           window.location = url;
         }
       };
+      window.dataLayer = window.dataLayer || [];
       window.dataLayer.push("event", "conversion", {
         send_to: "AW-407043956/0H1UCNjR4LgDEPT-i8IB",
         value: 9.99,

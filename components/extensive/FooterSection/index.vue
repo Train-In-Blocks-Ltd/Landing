@@ -27,9 +27,9 @@
         rel="noreferrer"
         class="hover:opacity-60 transition-all"
       >
-        <inline-svg
-          class="w-8"
-          :src="require('../../../assets/svg/socials/fb.svg')"
+        <span
+          class="w-8 rounded-none"
+          v-html="require('../../../assets/svg/socials/fb.svg?include')"
         />
       </a>
       <a
@@ -39,9 +39,9 @@
         rel="noreferrer"
         class="hover:opacity-60 transition-all"
       >
-        <inline-svg
-          class="w-8"
-          :src="require('../../../assets/svg/socials/ig.svg')"
+        <span
+          class="w-8 rounded-none"
+          v-html="require('../../../assets/svg/socials/ig.svg?include')"
         />
       </a>
       <a
@@ -51,9 +51,9 @@
         rel="noreferrer"
         class="hover:opacity-60 transition-all"
       >
-        <inline-svg
-          class="w-8"
-          :src="require('../../../assets/svg/socials/tw.svg')"
+        <span
+          class="w-8 rounded-none"
+          v-html="require('../../../assets/svg/socials/tw.svg?include')"
         />
       </a>
       <a
@@ -63,9 +63,9 @@
         rel="noreferrer"
         class="hover:opacity-60 transition-all"
       >
-        <inline-svg
-          class="w-8"
-          :src="require('../../../assets/svg/socials/lk.svg')"
+        <span
+          class="w-8 rounded-none"
+          v-html="require('../../../assets/svg/socials/lk.svg?include')"
         />
       </a>
     </div>

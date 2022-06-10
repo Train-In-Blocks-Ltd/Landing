@@ -50,11 +50,20 @@ export default {
   },
   mounted() {
     if (this.$route.query.value) {
-      window.dataLayer.push("event", "conversion", {
-        send_to: "AW-407043956/vgkJCLzAlLkDEPT-i8IB",
-        value: this.$route.query.value,
-        currency: "GBP",
-      });
+      if (this.$cookies.isEnabled("Google Analytics")) {
+        window.dataLayer.push("event", "conversion", {
+          send_to: "AW-407043956/vgkJCLzAlLkDEPT-i8IB",
+          value: this.$route.query.value,
+          currency: "GBP",
+        });
+      }
+      if (this.$cookies.isEnabled("Facebook Pixel")) {
+        // eslint-disable-next-line no-undef
+        fbq("track", "Purchase", {
+          currency: "GBP",
+          value: this.$route.query.value,
+        });
+      }
     }
   },
 };

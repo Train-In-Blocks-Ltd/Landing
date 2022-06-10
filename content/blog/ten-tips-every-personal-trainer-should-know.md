@@ -1,12 +1,12 @@
 ---
-title: Ten tips every PT should know
-slug: ten-tips-every-pt-should-know
+title: Ten tips every personal trainer should know
+slug: ten-tips-every-personal-trainer-should-know
+exclusive: false
 img: fitness-1.jpeg
 alt: Personal trainer action
 author: Jamie Spoor
 date: 2022-03-03T09:22:07.098Z
 postDesc: Our essential advice for every personal trainer
-exclusive: false
 ---
 Being a good personal trainer has its perks perhaps more than any other job in the fitness industry  — perhaps indeed more than any other job full stop: it's rewarding, it's potentially lucrative, you're making a difference to people's lives, you can become whoever you want to be and there's unlimited potential.
 

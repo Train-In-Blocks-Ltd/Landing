@@ -5,7 +5,8 @@
       <blockquote
         v-for="testimonial in testimonials"
         :key="testimonial.text"
-        class="md:w-[calc(50%-2rem)] text-lg"
+        v-infocus="'showElement'"
+        class="md:w-[calc(50%-2rem)] text-lg fadeHidden"
       >
         <txt>{{ testimonial.text }}</txt>
         <txt class="mt-4 font-bold">- {{ testimonial.name }}</txt>

@@ -1,3 +1,9 @@
+<style>
+  .benefit-icon svg {
+    @apply h-16 mx-auto;
+  }
+</style>
+
 <template>
   <div id="features">
     <txt type="title" class="mb-16 pt-8">Benefits and features</txt>
@@ -5,13 +11,15 @@
       <card-wrapper
         v-for="(item, index) in benefits"
         :key="`benefit_${index}`"
-        class="p-4"
+        v-infocus="'showElement'"
+        class="p-4 fadeHidden"
         no-hover
         no-shadow
+        :style="`--delay: ${0.15 * index}s`"
       >
-        <inline-svg
-          :src="require(`../../assets/svg/features/${item.svg}.svg`)"
-          class="h-16 mb-4 mx-auto"
+        <span
+          class="benefit-icon mb-4 rounded-none block"
+          v-html="require(`../../assets/svg/features/${item.svg}.svg?include`)"
         />
         <txt type="large-body" class="mb-2" bold>
           {{ item.subtitle }}

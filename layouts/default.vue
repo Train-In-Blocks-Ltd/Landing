@@ -173,6 +173,17 @@ div.cookieControl__ModalContent label:before {
 .modal-leave-to {
   opacity: 0;
 }
+
+/* Animation */
+.fadeHidden {
+  opacity: 0;
+}
+.showElement {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: all 0.75s ease-out;
+  transition-delay: var(--delay);
+}
 </style>
 
 <template>
@@ -201,13 +212,11 @@ div.cookieControl__ModalContent label:before {
         class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
         @click="exit"
       >
-        <div
-          class="relative top-20 mx-auto p-8 rounded-md bg-gray-100 dark:bg-gray-800"
-        >
-          <inline-svg
-            :src="require('../assets/svg/close.svg')"
-            class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all"
+        <div class="relative top-20 mx-auto p-8 rounded-md bg-gray-100 dark:bg-gray-800">
+          <span
+            class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all rounded-none"
             @click="exitIntent = false"
+            v-html="require('../assets/svg/close.svg?include')"
           />
           <div class="text-center">
             <txt type="title" class="my-4"> Let's stay connected! </txt>
@@ -215,7 +224,7 @@ div.cookieControl__ModalContent label:before {
               Learn everything that personal trainers need to know to profit and
               grow!
             </txt>
-            <mailchimp-sign-up />
+            <mailchimp-sign-up tag="Intent" />
           </div>
         </div>
       </div>
