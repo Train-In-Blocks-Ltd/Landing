@@ -15,7 +15,7 @@ Run by Bristol-based environmental charity *City to Sea,* the annual event aims 
 2. [How can you help? ](<## How can you help?>)
 3. [Keep your bottle ](<## Keep your bottle>)
 
-## The issue 
+## The issue
 
 Plastic pollution has quickly become one of the biggest environmental challenges facing us today. We once  thought of our deepest oceans, our highest mountains and our planetary poles as the final frontiers; unexplored, unknown, and in some places, unreachable. 
 Research has shown this is no longer the case – we’re living in the age of plastic pollution, where even the Antarctic is floating in an invisible plastic soup. These are sad times for our big blue planet. Back in March, we [commemorated World Water Day](https://traininblocks.com/blog/world-water-day-2022/) and, in a similar way, it's Refill counterpart looks to raise awareness of some of our world's biggest issues. 
@@ -52,4 +52,4 @@ Research suggests that buying a reusable water bottle rather than a single use p
 
 These will not be made from single-use plastic. Instead, they are made from significantly more durable types of plastic.  These reusable plastic water bottles are commonly used as promotional items for companies, popular with those doing sports. As a nation, we collect a lot of them and, after use, you can either keep it for next time or take it down to your local refuse and recycling centre (a.k.a the tip).
 
-Do your bit and #choosetoreuse this World Refill Day: 16th June 2022
+Do your bit and #choosetoreuse this World Refill Day: 16th June 2022.
