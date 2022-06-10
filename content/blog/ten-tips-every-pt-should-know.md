@@ -12,7 +12,7 @@ Being a good personal trainer has its perks perhaps more than any other job in t
 
 But how do you stand out in a crowded market? Here, we'll explain how you can push your head above the parapet and become a PT your client will want to stay with. Here is Train In Blocks' ten pieces of "must-know" advice to get you there.
 
-## Table of contents
+## Table of Contents
 
 1. [Find your niche and own it](#find-your-niche-and-own-it)
 2. [Set your schedule](#set-your-schedule)
@@ -29,7 +29,7 @@ But how do you stand out in a crowded market? Here, we'll explain how you can pu
 
 Your first port of call should be to start building your business and develop your brand which will set you apart from the competition.
 
-It's too simplistic just to say you specialise in 'everything': decide what you want to focus on specifically and stay with it, whether it be as a weight loss expert, a strength and conditioning coach or training those at the peak of their physical fitness. 
+It's too simplistic just to say you specialise in 'everything': decide what you want to focus on specifically and stay with it, whether it be as a weight loss expert, a strength and conditioning coach or training those at the peak of their physical fitness.
 
 If you don't give people a specific reason to work with you, they won't come up with one of your own. Stay true to what you want to achieve, your 'uniqueness' is what makes your niche 'you'.
 
@@ -41,9 +41,9 @@ By being organised to a high level, it will also allow you as a personal trainer
 
 ## Never stop learning
 
-This is true in any job — indeed, it's a modern-day mantra we can apply in all walks of life. Even after you've gone through your own training journey and are well on the way to becoming a fully-fledged PT, be sure to continue learning and expanding your knowledge. 
+This is true in any job — indeed, it's a modern-day mantra we can apply in all walks of life. Even after you've gone through your own training journey and are well on the way to becoming a fully-fledged PT, be sure to continue learning and expanding your knowledge.
 
-The health and fitness industry is always shifting, so it's important to keep up to speed with the latest developments and the winds of change. Not only is there an ever-growing raft of books, magazines and journals but we live in the age of the Internet — with tools like YouTube and Instagram, clients and consumers are now more "up to date" than ever. 
+The health and fitness industry is always shifting, so it's important to keep up to speed with the latest developments and the winds of change. Not only is there an ever-growing raft of books, magazines and journals but we live in the age of the Internet — with tools like YouTube and Instagram, clients and consumers are now more "up to date" than ever.
 
 We would definitely recommend incorporating different sources into your everyday working routine. [We have some other top tips here.](https://traininblocks.com/blog/so-you-want-to-become-a-better-pt/)
 
@@ -57,14 +57,14 @@ Set milestones, help them achieve their goals, communicate the whole way through
 
 ## Learn from others
 
-This one is perhaps better suited to those just starting out, but the best place to start is to have a look at those with years in the industry. There's nothing wrong with asking others, to bounce ideas off and to gain a stronger identity as a personal trainer. Consider things like how and where they like to train, any specific target market, plans for future growth as a PT and marketing techniques. 
+This one is perhaps better suited to those just starting out, but the best place to start is to have a look at those with years in the industry. There's nothing wrong with asking others, to bounce ideas off and to gain a stronger identity as a personal trainer. Consider things like how and where they like to train, any specific target market, plans for future growth as a PT and marketing techniques.
 This will allow you to effectively 'scout' your opposition and, armed with this knowledge you can tailor and adapt your services and fitness packages to be different from the rest and exploit gaps in the market. You can become both sustainable and progressive. Maybe even consider working out with another personal trainer to set a good example and to strengthen your learning experience.
 
 ## Use social media, but be wary
 
-Building and maintaining an online presence is a vital weapon in your armoury if you want to succeed as a personal trainer. Like it or loathe it, social media can be used to your advantage — whilst it shouldn't consume all your energy and take away your focus from the job at hand, it can help you to develop an online community and reach out to clients. For example, you could create a Facebook group where your clients can ask questions, share ideas, discuss techniques and fitness tips. 
+Building and maintaining an online presence is a vital weapon in your armoury if you want to succeed as a personal trainer. Like it or loathe it, social media can be used to your advantage — whilst it shouldn't consume all your energy and take away your focus from the job at hand, it can help you to develop an online community and reach out to clients. For example, you could create a Facebook group where your clients can ask questions, share ideas, discuss techniques and fitness tips.
 
-You could use Instagram to build the aesthetic of your brand and put together a 'teaser' video or a photo reel of your expertise for your followers. 
+You could use Instagram to build the aesthetic of your brand and put together a 'teaser' video or a photo reel of your expertise for your followers.
 Creating and managing an online presence also allows you to keep your clients updated — for example, if you're on holiday or in absentia, a simple click of a button or a message will let everyone know at once and saves you a lot of time and effort.
 
 ## Understand your audience
@@ -94,4 +94,4 @@ No matter how confident you are in your own ability, you simply cannot do it alo
 
 So there you have it — our "top ten" advice reel for personal trainers — whether you're just starting out on your journey or a seasoned veteran, it's never too late to learn something new. We hope you will find this useful and that Train in Blocks has helped you, even if in just a small way, to become more polished at your craft.
 
-If you're just starting out on your journey, you can [find some more fail-safe advice here. ](https://origympersonaltrainercourses.co.uk/blog/personal-trainer-tips-for-beginners)
+If you're just starting out on your journey, you can [find some more fail-safe advice here.](https://origympersonaltrainercourses.co.uk/blog/personal-trainer-tips-for-beginners)

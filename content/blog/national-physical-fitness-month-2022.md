@@ -30,7 +30,7 @@ Regular exercise is a vital aspect of our lifestyle:
 
 We'll outline a few ideas on how you can mark an important event in the fitness calendar.
 
-## Table of contents
+## Table of Contents
 
 * [Sign up for a road race](#sign-up-for-a-road-race)
 * [Join a local sports group](#join-a-local-sports-group-or-club)

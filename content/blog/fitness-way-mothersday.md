@@ -32,7 +32,7 @@ Either way, consider doing a nice home workout with your mum or buy her a perfec
 
 Put your Mum through her paces with the following ideas for that calorie busting Mother's Day workout.
 
-## Table of contents
+## Table of Contents
 
 1. [Squats](#squats)
 2. [Push-ups](#push-ups)

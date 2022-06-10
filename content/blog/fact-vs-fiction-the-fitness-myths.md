@@ -12,7 +12,7 @@ Ever wondered exactly how accurate those "golden rules" you get fed up of hearin
 
 You never think of questioning what you've been told but, deep down, the lingering doubts remain — am I 'doing it right?' Fact and fiction often seem to intertwine even when it comes to fitness and, as a result, it can be easy to go off track. Here, we attempt to debunk some of the most common fitness myths you've come across and what your correct approach to the process should be.
 
-## Table of contents:
+## Table of Contents:
 
 1. [Running alone is not an effective way to lose fat](#running-alone-is-not-an-effective-way-to-lose-fat)
 2. [High protein foods don't guarantee fat loss](#high-protein-foods-dont-guarantee-fat-loss)

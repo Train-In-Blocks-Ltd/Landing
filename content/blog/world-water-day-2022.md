@@ -17,7 +17,7 @@ Of course, at TIB we're all too aware of just how important water is, especially
 
 In this piece, we'll look into the origins of World Water Day, the idea behind it, how to do your bit and how we can help you here at Train In Blocks.
 
-## Table of contents
+## Table of Contents
 
 1. [What is it?](#what-is-it)
 2. [How is it marked?](#how-is-it-marked)

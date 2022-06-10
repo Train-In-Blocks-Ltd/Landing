@@ -14,7 +14,7 @@ But to continue on an upward trajectory, and to get the best out of life in the 
 
 So with that in mind, Train In Blocks can help you, with a few simple marketing tips, to improve this aspect of your modus operandi.
 
-## Table of contents
+## Table of Contents
 
 1. [Classes and Workshops](#classes-and-workshops)
 2. [Local Networking](#local-networking)
