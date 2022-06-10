@@ -1,6 +1,6 @@
 ---
 title: Start 2022 with a bang with the Train In Blocks fitness competition
-slug: start-2022-with-a-bang-the-train-in-blocks-fitness-competition
+slug: start-2022-with-a-bang-in-the-train-in-blocks-fitness-competition
 exclusive: false
 img: man-push-up.png
 alt: Train In Blocks fitness competition
