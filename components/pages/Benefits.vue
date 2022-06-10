@@ -1,7 +1,7 @@
 <style>
-  .benefit-icon svg {
-    @apply h-16 mx-auto;
-  }
+.benefit-icon svg {
+  @apply h-16 mx-auto;
+}
 </style>
 
 <template>

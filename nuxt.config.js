@@ -122,7 +122,7 @@ export default async () => {
             );
             if (localStorage.getItem("darkmode") || darkModeMediaQuery.matches)
               document.documentElement.setAttribute("class", "dark");
-          }`
+          }`,
         },
         {
           src: "https://js.stripe.com/v3/",
