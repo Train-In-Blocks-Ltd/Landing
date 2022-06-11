@@ -114,6 +114,11 @@ export default {
           value: parseInt(price.replace("£", "")),
         });
       }
+      if (this.$cookies.isEnabled("Microsoft Universal Event Tracking")) {
+        this.uet_report_conversion({
+          value: parseInt(price.replace("£", "")),
+        });
+      }
       if (this.$cookies.isEnabled("Facebook Pixel")) {
         // eslint-disable-next-line no-undef
         fbq("track", "AddToCart", {
@@ -140,6 +145,13 @@ export default {
         event_callback: callback,
       });
       return false;
+    },
+    uet_report_conversion({ value }) {
+      window.uetq = window.uetq || [];
+      window.uetq.push("event", "begin_checkout", {
+        revenue_value: value,
+        currency: "GBP",
+      });
     },
   },
 };

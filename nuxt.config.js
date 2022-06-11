@@ -232,7 +232,7 @@ export default async () => {
             "Google Analytics is a web analytics service offered by Google that tracks and reports website traffic.",
           src: "https://www.googletagmanager.com/gtag/js?id=UA-167770206-1",
           async: true,
-          cookies: ["_ga", "_gat", "_gid"],
+          cookies: ["_ga", "_gat", "_gid", "_gcl_au"],
           accepted: () => {
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -278,6 +278,37 @@ export default async () => {
             );
             fbq("init", "720008829338288");
             fbq("track", "PageView");
+            /* eslint-enable */
+          },
+          declined: () => {},
+        },
+        {
+          name: "Microsoft Universal Event Tracking",
+          description:
+            "Microsoft Universal Event Tracking is a web analytics service offered by Microsoft that tracks and reports website traffic.",
+          async: true,
+          cookies: ["MUID", "_uetmsclkid", "_uetsid", "_uetvid"],
+          accepted: () => {
+            /* eslint-disable */
+            (function (w, d, t, r, u) {
+              var f, n, i;
+              (w[u] = w[u] || []),
+                (f = function () {
+                  var o = { ti: "52005290" };
+                  (o.q = w[u]), (w[u] = new UET(o)), w[u].push("pageLoad");
+                }),
+                (n = d.createElement(t)),
+                (n.src = r),
+                (n.async = 1),
+                (n.onload = n.onreadystatechange =
+                  function () {
+                    var s = this.readyState;
+                    (s && s !== "loaded" && s !== "complete") ||
+                      (f(), (n.onload = n.onreadystatechange = null));
+                  }),
+                (i = d.getElementsByTagName(t)[0]),
+                i.parentNode.insertBefore(n, i);
+            })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
             /* eslint-enable */
           },
           declined: () => {},

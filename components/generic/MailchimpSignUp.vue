@@ -63,6 +63,9 @@ export default {
         if (this.$cookies.isEnabled("Google Analytics")) {
           this.gtag_report_conversion();
         }
+        if (this.$cookies.isEnabled("Microsoft Universal Event Tracking")) {
+          this.clarity_report_conversion();
+        }
         if (this.$cookies.isEnabled("Facebook Pixel")) {
           // eslint-disable-next-line no-undef
           fbq("track", "CompleteRegistration", { email });
@@ -101,6 +104,10 @@ export default {
         event_callback: callback,
       });
       return false;
+    },
+    uet_report_conversion() {
+      window.uetq = window.uetq || [];
+      window.uetq.push("event", "signup", {});
     },
   },
 };

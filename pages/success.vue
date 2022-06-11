@@ -64,6 +64,15 @@ export default {
           value: this.$route.query.value,
         });
       }
+      if (this.$cookies.isEnable("Microsoft Universal Event Tracking")) {
+        window.uetq = window.uetq || [];
+        window.uetq.push("event", "PRODUCT_PURCHASE", {
+          ecomm_prodid: this.$route.query.value,
+          ecomm_pagetype: "PURCHASE",
+          revenue_value: this.$route.query.value,
+          currency: "GBP",
+        });
+      }
     }
   },
 };
