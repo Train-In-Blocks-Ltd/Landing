@@ -1,6 +1,6 @@
 ---
-title: Debunking Five Common Fitness Myths
-slug: fact-vs-fiction-the-fitness-myths
+title: Debunking 5 Common Fitness Myths
+slug: debunking-five-common-fitness-myths
 exclusive: false
 img: debunking-common-fitness-myths.jpg
 alt: Separating the fact from the fiction in the world of fitness
@@ -41,6 +41,7 @@ However, adding in more protein does not mean you will then make progress in ter
 * Cod over mackerel
 * Low fat yoghurt over ordinary yoghurt
 * Beans over nuts
+* [Savoury pancakes over sweet](https://traininblocks.com/blog/pancake-day-2022/)
 
 This will ensure you hit your protein target but also not take your calories overboard, and even giving you room for the occasional treat. It makes the process more enjoyable and allows you to keep the foods you enjoy.
 
