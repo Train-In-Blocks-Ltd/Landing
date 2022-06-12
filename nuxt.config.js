@@ -212,6 +212,7 @@ export default async () => {
           },
         },
       ],
+      'nuxt-content-body-html',
       "@nuxt/content",
     ],
     googleAnalytics: {
@@ -243,7 +244,7 @@ export default async () => {
             gtag("config", "UA-167770206-1", { anonymize_ip: true });
             gtag("config", "AW-407043956");
           },
-          declined: () => {},
+          declined: () => { },
         },
         {
           name: "Facebook Pixel",
@@ -280,7 +281,7 @@ export default async () => {
             fbq("track", "PageView");
             /* eslint-enable */
           },
-          declined: () => {},
+          declined: () => { },
         },
         {
           name: "Microsoft Universal Event Tracking",
@@ -311,7 +312,7 @@ export default async () => {
             })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
             /* eslint-enable */
           },
-          declined: () => {},
+          declined: () => { },
         },
       ],
     },
