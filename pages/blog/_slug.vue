@@ -15,6 +15,12 @@ blockquote::after {
 blockquote cite {
   @apply hidden;
 }
+.preview {
+  @apply relative;
+}
+.preview::after {
+  @apply absolute w-full h-full bg-gradient-to-b from-transparent to-white content-[''] top-0 left-0;
+}
 </style>
 
 <template>
@@ -39,7 +45,12 @@ blockquote cite {
     >
     <nuxt-content v-if="existingLead || !post.exclusive" :document="post" />
     <div v-else>
-      <card-wrapper class="p-4 lg:w-3/4 mx-auto mb-16" no-hover>
+      <div class="nuxt-content preview">
+        <template v-for="(element, index) in post.bodyHtml.split('\n')">
+          <span v-if="element.startsWith('<p>') && index < 6" :key="index" v-html="element" />
+        </template>
+      </div>
+      <card-wrapper class="p-4 lg:w-3/4 mx-auto mb-16 -mt-36 relative" no-hover>
         <txt type="large-body" class="mb-8" bold
           >Sign up to read the full article</txt
         >
@@ -47,7 +58,7 @@ blockquote cite {
       </card-wrapper>
       <hr />
     </div>
-    <blog-footer class="mt-16" />
+    <blog-footer class="mt-16 lg:w-3/4 mx-auto" />
   </article-wrapper>
 </template>
 
