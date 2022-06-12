@@ -265,7 +265,7 @@ export default async () => {
             });
           }
         },
-        path: "/blog/feed",
+        path: "/blog/feed.xml",
         type: "rss2",
       },
       {
@@ -294,7 +294,7 @@ export default async () => {
             });
           });
         },
-        path: "/dev/feed",
+        path: "/dev/feed.xml",
         type: "rss2",
       },
       {
@@ -318,7 +318,7 @@ export default async () => {
             });
           });
         },
-        path: "/help/feed",
+        path: "/help/feed.xml",
         type: "rss2",
       },
     ],
