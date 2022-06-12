@@ -226,7 +226,7 @@ export default async () => {
       ],
       "nuxt-content-body-html",
       "@nuxt/content",
-      "@nuxtjs/feed",
+      "./modules/rss/feed-module",
     ],
     feed: [
       {
@@ -246,22 +246,16 @@ export default async () => {
             const url = `https://traininblocks.com/blog/${post.slug}`;
             feed.addItem({
               author: post.author,
-              content: `
-                <p>
-                  <img
-                    alt="Cover image"
-                    src="${await base64Encode(
-                      `./assets/media-uploads/${post.img}`
-                    )}"
-                  >
-                </p>
-                ${post.bodyHtml}
-              `,
+              content: post.bodyHtml,
               date: new Date(post.date),
               description: post.postDesc,
               id: url,
               link: url,
               title: post.title,
+              img: {
+                url: await base64Encode(`./assets/media-uploads/${post.img}`),
+                type: "image/jpg",
+              },
             });
           }
         },
