@@ -1,5 +1,17 @@
 import * as path from "path";
 import * as glob from "glob";
+// eslint-disable-next-line
+const sharp = require("sharp");
+
+async function base64Encode(file) {
+  const image = await sharp(file)
+    .resize(600, 600)
+    .toFormat("jpeg")
+    .jpeg({ quality: 70, force: true })
+    .toBuffer();
+  const resizedImageData = image.toString("base64");
+  return `data:image/jpg;base64,${resizedImageData}`;
+}
 
 function getDynamicPaths(urlFilepathTable) {
   return [].concat(
@@ -212,8 +224,103 @@ export default async () => {
           },
         },
       ],
-      'nuxt-content-body-html',
+      "nuxt-content-body-html",
       "@nuxt/content",
+      "@nuxtjs/feed",
+    ],
+    feed: [
+      {
+        create: async (feed) => {
+          const $content = require("@nuxt/content").$content;
+          feed.options = {
+            title: "Train In Blocks Blog",
+            link: "https://traininblocks.com/blog/",
+            description: "Find power in knowledge",
+          };
+
+          let posts = await $content("blog").fetch();
+          posts = posts.sort((a, b) => {
+            return new Date(b.date) - new Date(a.date);
+          });
+          for (const post of posts) {
+            const url = `https://traininblocks.com/blog/${post.slug}`;
+            feed.addItem({
+              author: post.author,
+              content: `
+                <p>
+                  <img
+                    alt="Cover image"
+                    src="${await base64Encode(
+                      `./assets/media-uploads/${post.img}`
+                    )}"
+                  >
+                </p>
+                ${post.bodyHtml}
+              `,
+              date: new Date(post.date),
+              description: post.postDesc,
+              id: url,
+              link: url,
+              title: post.title,
+            });
+          }
+        },
+        path: "/blog/feed",
+        type: "rss2",
+      },
+      {
+        create: async (feed) => {
+          const $content = require("@nuxt/content").$content;
+          feed.options = {
+            title: "Train In Blocks News",
+            link: "https://traininblocks.com/dev/",
+            description: "Join our development journey",
+          };
+
+          let posts = await $content("dev").fetch();
+          posts = posts.sort((a, b) => {
+            return new Date(b.date) - new Date(a.date);
+          });
+          posts.forEach((post) => {
+            const url = `https://traininblocks.com/dev/${post.slug}`;
+            feed.addItem({
+              author: post.author,
+              content: post.bodyHtml,
+              date: new Date(post.date),
+              description: post.postDesc,
+              id: url,
+              link: url,
+              title: post.title,
+            });
+          });
+        },
+        path: "/dev/feed",
+        type: "rss2",
+      },
+      {
+        create: async (feed) => {
+          const $content = require("@nuxt/content").$content;
+          feed.options = {
+            title: "Train In Blocks Help",
+            link: "https://traininblocks.com/help/",
+            description: "Need help with something?",
+          };
+
+          const posts = await $content("help").sortBy("title", "desc").fetch();
+          posts.forEach((post) => {
+            const url = `https://traininblocks.com/help/${post.slug}`;
+            feed.addItem({
+              content: post.bodyHtml,
+              description: post.postDesc,
+              id: url,
+              link: url,
+              title: post.title,
+            });
+          });
+        },
+        path: "/help/feed",
+        type: "rss2",
+      },
     ],
     googleAnalytics: {
       id: "UA-167770206-1",
@@ -244,7 +351,7 @@ export default async () => {
             gtag("config", "UA-167770206-1", { anonymize_ip: true });
             gtag("config", "AW-407043956");
           },
-          declined: () => { },
+          declined: () => {},
         },
         {
           name: "Facebook Pixel",
@@ -281,7 +388,7 @@ export default async () => {
             fbq("track", "PageView");
             /* eslint-enable */
           },
-          declined: () => { },
+          declined: () => {},
         },
         {
           name: "Microsoft Universal Event Tracking",
@@ -312,7 +419,7 @@ export default async () => {
             })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
             /* eslint-enable */
           },
-          declined: () => { },
+          declined: () => {},
         },
       ],
     },
