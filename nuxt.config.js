@@ -224,7 +224,7 @@ export default async () => {
       {
         create: async (feed) => {
           const $content = require("@nuxt/content").$content;
-          const dir = './static/rss';
+          const dir = './dist/rss';
           if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
           }
@@ -239,7 +239,7 @@ export default async () => {
               .resize(600, 600)
               .toFormat("jpeg")
               .jpeg({ quality: 70, force: true })
-              .toFile(`./static/rss/${post.img}`);
+              .toFile(`./dist/rss/${post.img}`);
           }
           feed.options = {
             title: "Train In Blocks Blog",
