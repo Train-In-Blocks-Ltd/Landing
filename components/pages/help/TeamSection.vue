@@ -6,7 +6,7 @@
         v-for="(member, index) in team"
         :key="`member-${index}`"
         v-infocus="'showElement'"
-        class="p-4 flex fadeHidden"
+        class="p-4 md:flex fadeHidden"
         no-hover
         :style="`--delay: ${0.25 * index}s`"
       >
