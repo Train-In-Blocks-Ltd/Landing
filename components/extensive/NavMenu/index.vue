@@ -3,13 +3,19 @@
     <div
       v-if="$parent.openNav"
       style="z-index: 70"
-      class="fixed top-0 left-0 bg-white dark:bg-gray-800 h-full w-full"
+      class="fixed top-0 left-0 bg-white dark:bg-slate h-full w-full"
     />
     <nav style="z-index: 80" class="fixed right-12 top-8 z-20">
       <transition enter-active-class="fadeIn">
         <div v-show="$parent.openNav" class="flex flex-col items-end">
           <span
-            class="mb-6 cursor-pointer hover:opacity-60 transition-all rounded-none"
+            class="
+              mb-6
+              cursor-pointer
+              hover:opacity-60
+              transition-all
+              rounded-none
+            "
             @click="$parent.openNav = false"
             v-html="require('../../../assets/svg/close.svg?include')"
           />

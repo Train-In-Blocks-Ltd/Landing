@@ -1,6 +1,6 @@
 <style>
 .txt-input {
-  @apply w-full px-2 py-3 font-sans outline-none text-base bg-transparent text-gray-800 dark:text-white border-2 border-gray-400 dark:border-gray-200 rounded-lg hover:border-gray-800 focus:border-gray-800 dark:hover:border-white dark:focus:border-white transition-all;
+  @apply w-full px-2 py-3 font-sans outline-none text-base bg-transparent text-slate dark:text-white border-2 border-gray-400 dark:border-graphite rounded-lg hover:border-slate focus:border-slate dark:hover:border-white dark:focus:border-white transition-all;
 }
 </style>
 

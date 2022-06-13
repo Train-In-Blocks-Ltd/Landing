@@ -4,29 +4,31 @@
     <div class="grid lg:grid-cols-4 gap-8">
       <card-wrapper
         v-infocus="'showElement'"
-        class="p-4 lg:col-span-full lg:col-start-2 lg:col-end-4 lg:text-center fadeHidden"
+        class="p-4 col-span-full lg:col-span-2 fadeHidden"
         no-shadow
         no-hover
       >
         <txt type="title"> 14 Day Free Trial </txt>
-        <txt class="mt-4">
+        <ul class="mt-4">
+          <li>
           Sign up for either our yearly or monthly plan and benefit from a 14
           day free trial.
-        </txt>
-        <txt>
+        </li>
+        <li>
           Cancel at any time by logging in to your account and managing your
           subscription.
-        </txt>
-        <txt>
+        </li>
+        <li>
           After 14 days you will be automatically billed for your subscription.
-        </txt>
+        </li>
+        </ul>
       </card-wrapper>
       <card-wrapper
         v-for="(product, index) in products"
         :id="product.name.toLowerCase()"
         :key="`product_${index}`"
         v-infocus="'showElement'"
-        class="p-4 col-span-full lg:col-span-2 fadeHidden"
+        class="p-4 col-span-full lg:col-span-2 lg:row-start-2 fadeHidden"
         no-shadow
         no-hover
         :style="`--delay: ${0.25 * index}s`"

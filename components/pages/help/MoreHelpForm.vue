@@ -1,6 +1,6 @@
 <style scoped>
 .default-button {
-  @apply select-none cursor-pointer self-center rounded border-none px-6 py-3 font-bold text-white dark:text-gray-800 bg-gray-800 dark:bg-white transition-all hover:opacity-60 active:scale-95 disabled:opacity-60 disabled:cursor-default;
+  @apply select-none cursor-pointer self-center rounded border-none px-6 py-3 font-bold text-white dark:text-slate bg-slate dark:bg-white transition-all hover:opacity-60 active:scale-95 disabled:opacity-60 disabled:cursor-default;
 }
 </style>
 
@@ -125,12 +125,12 @@ export default {
           message: "",
         };
         this.submitted = "Message sent successfully!";
-        this.submittedClasses = "text-green-700";
+        this.submittedClasses = "text-pine";
       } catch (e) {
         // eslint-disable-next-line
         console.error(e);
         this.submitted = e.toString() + " Please try again.";
-        this.submittedClasses = "text-red-700";
+        this.submittedClasses = "text-tomato";
       }
       try {
         if (this.contactForm.mcConsent) {

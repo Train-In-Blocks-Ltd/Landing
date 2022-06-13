@@ -1,10 +1,10 @@
 <style>
 /* Shared anim */
 .svg_item > span > svg .stroke_color {
-  @apply stroke-gray-800 dark:stroke-white;
+  @apply stroke-slate dark:stroke-white;
 }
 .svg_item > span > svg .fill_color {
-  @apply fill-white dark:fill-gray-800;
+  @apply fill-white dark:fill-slate;
 }
 #editing-session .preview,
 #client-user .placeholder,

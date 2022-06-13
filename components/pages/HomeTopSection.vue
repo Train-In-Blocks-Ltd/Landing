@@ -18,7 +18,7 @@
       :src="
         require('../../assets/images/trainer.jpg?resize&size=700&format=webp&inline')
       "
-      class="gray ml-auto md:w-8/12 mt-16 xl:mt-0 xl:w-5/12 xl:ml-0 h-auto z-0"
+      class="ml-auto md:w-8/12 mt-16 xl:mt-0 xl:w-5/12 xl:ml-0 h-auto z-0"
       alt="Training people"
     />
   </div>
