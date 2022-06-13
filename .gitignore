@@ -91,6 +91,3 @@ sw.*
 
 # Local Netlify folder
 .netlify
-
-# RSS Images
-/static/rss
