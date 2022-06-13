@@ -195,21 +195,7 @@ div.cookieControl__ModalContent label:before {
       <nuxt-link
         v-if="$route.name !== 'help'"
         style="z-index: 99"
-        class="
-          fixed
-          right-20
-          bottom-8
-          px-6
-          py-2
-          rounded-full
-          bg-slate
-          dark:bg-white
-          text-white
-          dark:text-slate
-          font-bold
-          hover:opacity-60
-          transition-opacity
-        "
+        class="fixed right-20 bottom-8 px-6 py-2 rounded-full bg-slate dark:bg-white text-white dark:text-slate font-bold hover:opacity-60 transition-opacity"
         to="/help/"
       >
         <txt>I need help</txt>
@@ -223,29 +209,14 @@ div.cookieControl__ModalContent label:before {
         v-if="exitIntent"
         id="exit-modal"
         style="z-index: 71"
-        class="
-          fixed
-          inset-0
-          bg-gray-600 bg-opacity-50
-          overflow-y-auto
-          h-full
-          w-full
-        "
+        class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
         @click="exit"
       >
         <div
           class="relative top-20 mx-auto p-8 rounded-md bg-paper dark:bg-slate"
         >
           <span
-            class="
-              absolute
-              top-8
-              right-8
-              cursor-pointer
-              hover:opacity-60
-              transition-all
-              rounded-none
-            "
+            class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all rounded-none"
             @click="exitIntent = false"
             v-html="require('../assets/svg/close.svg?include')"
           />

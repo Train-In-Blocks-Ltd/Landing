@@ -11,16 +11,17 @@
         <txt type="title"> 14 Day Free Trial </txt>
         <ul class="mt-4">
           <li>
-          Sign up for either our yearly or monthly plan and benefit from a 14
-          day free trial.
-        </li>
-        <li>
-          Cancel at any time by logging in to your account and managing your
-          subscription.
-        </li>
-        <li>
-          After 14 days you will be automatically billed for your subscription.
-        </li>
+            Sign up for either our yearly or monthly plan and benefit from a 14
+            day free trial.
+          </li>
+          <li>
+            Cancel at any time by logging in to your account and managing your
+            subscription.
+          </li>
+          <li>
+            After 14 days you will be automatically billed for your
+            subscription.
+          </li>
         </ul>
       </card-wrapper>
       <card-wrapper

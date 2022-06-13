@@ -9,13 +9,7 @@
       <transition enter-active-class="fadeIn">
         <div v-show="$parent.openNav" class="flex flex-col items-end">
           <span
-            class="
-              mb-6
-              cursor-pointer
-              hover:opacity-60
-              transition-all
-              rounded-none
-            "
+            class="mb-6 cursor-pointer hover:opacity-60 transition-all rounded-none"
             @click="$parent.openNav = false"
             v-html="require('../../../assets/svg/close.svg?include')"
           />
