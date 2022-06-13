@@ -2,7 +2,7 @@
 title: World Refill Day 2022
 slug: do-your-bit-on-world-refill-day
 exclusive: false
-img: image
+img: refill.jpg
 alt: World Refill Day raises awareness of waste and pollution
 author: Jamie Spoor
 date: 2022-06-09T10:01:59.155Z
