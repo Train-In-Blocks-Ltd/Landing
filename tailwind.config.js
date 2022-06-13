@@ -24,6 +24,9 @@ module.exports = {
         ghostCoral: "#576066",
         beauBlue: "#BDD5EA",
       },
+      screens: {
+        'xs': '400px',
+      },
     },
   },
   plugins: [],

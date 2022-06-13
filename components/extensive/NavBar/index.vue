@@ -1,7 +1,19 @@
 <style>
 #logo--home svg {
-  height: 48px;
-  width: 117.469px;
+  height: 36px;
+  width: 85.85px;
+}
+.menu-container {
+  height: 68px;
+}
+@media (min-width: 400px) {
+  #logo--home svg {
+    height: 48px;
+    width: 117.469px;
+  }
+  .menu-container {
+    height: 80px;
+  }
 }
 </style>
 
@@ -22,7 +34,7 @@
       />
     </nuxt-link>
     <div
-      class="flex bg-white dark:bg-slate p-4 rounded-lg shadow-lg h-20 items-center"
+      class="menu-container flex bg-white dark:bg-slate p-4 rounded-lg shadow-lg items-center"
     >
       <darkmode-toggle />
       <span
