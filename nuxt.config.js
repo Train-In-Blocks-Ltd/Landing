@@ -2,16 +2,8 @@ import * as path from "path";
 import * as glob from "glob";
 // eslint-disable-next-line
 const sharp = require("sharp");
-
-async function base64Encode(file) {
-  const image = await sharp(file)
-    .resize(600, 600)
-    .toFormat("jpeg")
-    .jpeg({ quality: 70, force: true })
-    .toBuffer();
-  const resizedImageData = image.toString("base64");
-  return `data:image/jpg;base64,${resizedImageData}`;
-}
+// eslint-disable-next-line
+const fs = require('fs');
 
 function getDynamicPaths(urlFilepathTable) {
   return [].concat(
@@ -232,16 +224,29 @@ export default async () => {
       {
         create: async (feed) => {
           const $content = require("@nuxt/content").$content;
+          const dir = './static/rss';
+          if (!fs.existsSync(dir)) {
+            fs.mkdirSync(dir, { recursive: true });
+          }
+
+          let posts = await $content("blog").fetch();
+          posts = posts.sort((a, b) => {
+            return new Date(b.date) - new Date(a.date);
+          });
+
+          for (const post of posts) {
+            await sharp(`./assets/media-uploads/${post.img}`)
+              .resize(600, 600)
+              .toFormat("jpeg")
+              .jpeg({ quality: 70, force: true })
+              .toFile(`./static/rss/${post.img}`);
+          }
           feed.options = {
             title: "Train In Blocks Blog",
             link: "https://traininblocks.com/blog/",
             description: "Find power in knowledge",
           };
 
-          let posts = await $content("blog").fetch();
-          posts = posts.sort((a, b) => {
-            return new Date(b.date) - new Date(a.date);
-          });
           for (const post of posts) {
             const url = `https://traininblocks.com/blog/${post.slug}`;
             feed.addItem({
@@ -253,7 +258,7 @@ export default async () => {
               link: url,
               title: post.title,
               img: {
-                url: await base64Encode(`./assets/media-uploads/${post.img}`),
+                url: `https://traininblocks.com/rss/${post.img}`,
                 type: "image/jpg",
               },
             });
@@ -271,11 +276,11 @@ export default async () => {
             description: "Join our development journey",
           };
 
-          let posts = await $content("dev").fetch();
-          posts = posts.sort((a, b) => {
+          let devposts = await $content("dev").fetch();
+          devposts = devposts.sort((a, b) => {
             return new Date(b.date) - new Date(a.date);
           });
-          posts.forEach((post) => {
+          devposts.forEach((post) => {
             const url = `https://traininblocks.com/dev/${post.slug}`;
             feed.addItem({
               author: post.author,
@@ -300,8 +305,8 @@ export default async () => {
             description: "Need help with something?",
           };
 
-          const posts = await $content("help").sortBy("title", "desc").fetch();
-          posts.forEach((post) => {
+          const helposts = await $content("help").sortBy("title", "desc").fetch();
+          helposts.forEach((post) => {
             const url = `https://traininblocks.com/help/${post.slug}`;
             feed.addItem({
               content: post.bodyHtml,

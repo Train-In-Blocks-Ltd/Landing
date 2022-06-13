@@ -84,8 +84,8 @@ function resolveContentType(type) {
   const lookup = {
     rss2: "application/rss+xml",
   };
-  // eslint-disable-next-line
   return (
+  // eslint-disable-next-line
     (lookup.hasOwnProperty(type) ? lookup[type] : "application/xml") +
     "; charset=UTF-8"
   );
