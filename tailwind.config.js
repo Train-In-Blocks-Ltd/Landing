@@ -25,7 +25,7 @@ module.exports = {
         beauBlue: "#BDD5EA",
       },
       screens: {
-        'xs': '400px',
+        xs: "400px",
       },
     },
   },
