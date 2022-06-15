@@ -12,17 +12,27 @@ Want to write a health, diet or fitness guest post?  If you are an expert in t
 
 Guest posting is an all around win-win. We get a great article for our readers to enjoy and you get exposure to readers of the blog and our followers on Facebook, Twitter, LinkedIn and elsewhere. Not to mention if you own  a website, guest posting can have great SEO benefits.
 
+Here are a couple of tips to keep in mind when guest blogging: 
+
+1. Focus on websites related to your industry - No one wants to read about  fashion trends on a blog about fitness training! 
+2. Keep the target audience in mind while writing - Most blogs have strict guidelines in place for guest bloggers.
+3. Write content under your own name - After all, you don’t want someone else getting credit for your work.
+4. Link to influencers - They will notice and might even help promote your guest blog post, which in return will increase the referral traffic it generates.
+
 Guest posting has many different benefits to you and your business and skillset as a PT.
 
 * Increase your brand awareness and credibility
 
-Brand awareness among your audience and the general public doesn’t happen overnight. It also doesn’t happen from a simple advertisement or marketing campaign. Ensure you promote yourself as more than simply a company and a service and give your audience of the person, or people, behind the brand. \
-Guest posting can be a great way to do this as it shows adaptability, self awareness and a willingness to reach out to different demographics even through a potential competitor.Guest blogging is one of the best ways to increase brand awareness with minimal effort. \
+Brand awareness among your audience and the general public doesn’t happen overnight. It also doesn’t happen from a simple, one off advertisement or marketing campaign. Ensure you promote yourself as more than simply a company and a service and give your audience of the person, or people, behind the brand. 
+ Guest posting can be a great way to do this as it shows adaptability, self awareness and a willingness to reach out to different demographics even through a potential competitor. Guest blogging is one of the best ways to increase brand awareness with minimal effort. 
 You can take advantage of the traffic that’s already arriving at another website to get more eyes on your brand  while offering helpful and relevant content.In other words, you’re not just pushing out your product on people who aren’t ready to buy, but rather writing in your brand voice and presenting yourself as human first, company second. Another great alternative to guest blogging would be publishing [](https://blog.hubspot.com/marketing/sponsored-content-that-doesnt-suck)sponsored content on niche websites.
 
-
-
 * Generate referral traffic back to your fitness website
+
+Starting your own blog and promoting yourself can drive traffic to your website. This works best if your blog has some relation to the topic of your website. You can use your blog to host give-a-ways if your website sells products. Post often to your blog to drive traffic to it, and then point your blog followers to your website. 
+
+Guest blog posts create numerous opportunities to get referral traffic to your site. [External links,](https://traininblocks.com/blog/improve-your-skillset-as-a-pt/) author bios, and call to actions are typically present on most blog posts. If you can get a post featured on a well-know industry website you’ll benefit from the referral traffic and links coming to your site. It’s best to focus your efforts on websites that are considered thought leaders in your industry.
+
 * Connect with peers and build relationships with businesses in their personal training industry
 * Use external links of high-authority domains, bloggers to boost DA (domain authority)
 * Guest posting is a two-way street that offers mutual benefits for the guest bloggers and the Train In Blocks website where the content will be published.
