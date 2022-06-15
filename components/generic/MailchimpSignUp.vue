@@ -59,7 +59,7 @@ export default {
         window.localStorage.setItem("existing-lead", true);
         this.message =
           "To complete the subscription process, please click the link in the email we just sent you.";
-        this.messageClasses = "text-green-700";
+        this.messageClasses = "text-pine";
         if (this.$cookies.isEnabled("Google Analytics")) {
           this.gtag_report_conversion();
         }
@@ -76,7 +76,7 @@ export default {
         if (e.response.status === 400) {
           this.message =
             "You're already signed up to our mailing list. Thank you!";
-          this.messageClasses = "text-red-700";
+          this.messageClasses = "text-tomato";
         } else {
           // eslint-disable-next-line
           console.error(e);

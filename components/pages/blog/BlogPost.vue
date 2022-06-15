@@ -9,7 +9,7 @@
           require(`../../../assets/media-uploads/${post.img}?resize&size=300&format=webp`)
         "
         :alt="post.alt || post.title"
-        class="w-full aspect-square object-cover gray sm:w-64 mb-8 sm:mb-0 sm:mr-8 max-w-4xl"
+        class="w-full aspect-square object-cover sm:w-64 mb-8 sm:mb-0 sm:mr-8 max-w-4xl"
         loading="lazy"
       />
     </nuxt-link>

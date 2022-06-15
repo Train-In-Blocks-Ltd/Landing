@@ -1,6 +1,6 @@
 <style>
 .default-button {
-  @apply select-none cursor-pointer self-center rounded border-none px-6 py-3 font-bold text-white dark:text-gray-800 transition-all hover:opacity-60 active:scale-95 disabled:opacity-60 disabled:cursor-default;
+  @apply select-none cursor-pointer self-center rounded border-none px-6 py-3 font-bold text-white dark:text-slate transition-all hover:opacity-60 active:scale-95 disabled:opacity-60 disabled:cursor-default;
 }
 </style>
 
@@ -8,9 +8,9 @@
   <button
     v-if="prevent"
     :class="{
-      'bg-red-700': theme === 'red',
-      'bg-green-700': theme === 'green',
-      'bg-gray-800 dark:bg-white ': theme === 'normal',
+      'bg-tomato': theme === 'red',
+      'bg-pine': theme === 'green',
+      'bg-slate dark:bg-white ': theme === 'normal',
     }"
     class="default-button"
     @click.prevent="
@@ -24,9 +24,9 @@
   <button
     v-else
     :class="{
-      'bg-red-700': theme === 'red',
-      'bg-green-700': theme === 'green',
-      'bg-gray-800 dark:bg-white ': theme === 'normal',
+      'bg-tomato': theme === 'red',
+      'bg-pine': theme === 'green',
+      'bg-slate dark:bg-white ': theme === 'normal',
     }"
     class="default-button"
     @click="

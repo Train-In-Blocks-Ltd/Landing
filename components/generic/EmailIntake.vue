@@ -10,7 +10,7 @@
       :src="
         require('../../assets/images/trainer-facing.png?resize&size=300&format=webp')
       "
-      class="gray h-64 mr-12 relative opacity-100 hidden md:block"
+      class="h-64 mr-12 relative opacity-100 hidden md:block"
       alt="Trainer"
       loading="lazy"
     />

@@ -7,7 +7,7 @@
         >
         <txt type="title" class="block lg:hidden mt-4 mb-16">
           <a
-            class="underline hover:opacity-60 transition-opacity text-gray-200 cursor-pointer"
+            class="underline hover:opacity-60 transition-opacity text-graphite cursor-pointer"
             @click="scroll()"
           >
             Click here</a

@@ -3,7 +3,7 @@ import * as glob from "glob";
 // eslint-disable-next-line
 const sharp = require("sharp");
 // eslint-disable-next-line
-const fs = require('fs');
+const fs = require("fs");
 
 function getDynamicPaths(urlFilepathTable) {
   return [].concat(
@@ -224,7 +224,7 @@ export default async () => {
       {
         create: async (feed) => {
           const $content = require("@nuxt/content").$content;
-          const dir = './dist/rss';
+          const dir = "./dist/rss";
           if (!fs.existsSync(dir)) {
             fs.mkdirSync(dir, { recursive: true });
           }
@@ -305,7 +305,9 @@ export default async () => {
             description: "Need help with something?",
           };
 
-          const helposts = await $content("help").sortBy("title", "desc").fetch();
+          const helposts = await $content("help")
+            .sortBy("title", "desc")
+            .fetch();
           helposts.forEach((post) => {
             const url = `https://traininblocks.com/help/${post.slug}`;
             feed.addItem({

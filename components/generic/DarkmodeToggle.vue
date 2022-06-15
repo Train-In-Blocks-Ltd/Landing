@@ -19,15 +19,15 @@
   @apply opacity-0 w-0 h-0;
 }
 .slider {
-  @apply absolute cursor-pointer inset-0 bg-gray-800 dark:bg-white rounded-full transition-all;
+  @apply absolute cursor-pointer inset-0 bg-slate dark:bg-white rounded-full transition-all;
 }
 .slider:before {
   content: "";
-  @apply absolute h-5 w-5 left-1 bottom-1 bg-white dark:bg-gray-800 rounded-full transition-all;
+  @apply absolute h-5 w-5 left-1 bottom-1 bg-white dark:bg-slate rounded-full transition-all;
 }
 input:checked + .slider {
   background-color: var(--base_dark);
-  @apply bg-gray-800 dark:bg-white;
+  @apply bg-slate dark:bg-white;
 }
 input:checked + .slider:before {
   @apply translate-x-5;

@@ -1,22 +1,40 @@
 <style>
 #logo--home svg {
-  height: 48px;
-  width: 117.469px;
+  height: 36px;
+  width: 85.85px;
+}
+.menu-container {
+  height: 68px;
+}
+@media (min-width: 400px) {
+  #logo--home svg {
+    height: 48px;
+    width: 117.469px;
+  }
+  .menu-container {
+    height: 80px;
+  }
 }
 </style>
 
 <template>
-  <div class="flex justify-between items-center mb-16">
-    <nuxt-link to="/" title="Home">
+  <div
+    class="flex justify-between items-center pt-16 mb-24 sticky top-0 left-4 md:left-8 right-4 md:right-8"
+    style="z-index: 60"
+  >
+    <nuxt-link
+      to="/"
+      title="Home"
+      class="rounded-none bg-white dark:bg-slate rounded-lg shadow-lg p-4"
+    >
       <span
         id="logo--home"
-        class="h-12 w-auto hover:opacity-60 transition-opacity duration-300 rounded-none"
+        class="w-auto hover:opacity-60 transition-opacity duration-300"
         v-html="require('../../../assets/svg/LogoV12.svg?include')"
       />
     </nuxt-link>
     <div
-      style="z-index: 60"
-      class="flex bg-white dark:bg-gray-800 fixed top-14 right-4 md:right-8 p-4 rounded-lg shadow-lg"
+      class="menu-container flex bg-white dark:bg-slate p-4 rounded-lg shadow-lg items-center"
     >
       <darkmode-toggle />
       <span

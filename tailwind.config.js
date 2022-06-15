@@ -14,11 +14,18 @@ module.exports = {
         3: "3px",
       },
       colors: {
-        gray: {
-          100: "#F9F9F9",
-          200: "#686868",
-          800: "#282828",
-        },
+        slate: "#282828",
+        graphite: "#686868",
+        paper: "#F9F9F9",
+        pine: "#047857",
+        tomato: "#B91C1C",
+        pinkPanther: "#FF7B9C",
+        ghostWhite: "#F7F7FF",
+        ghostCoral: "#576066",
+        beauBlue: "#BDD5EA",
+      },
+      screens: {
+        xs: "400px",
       },
     },
   },

@@ -85,7 +85,7 @@ function resolveContentType(type) {
     rss2: "application/rss+xml",
   };
   return (
-  // eslint-disable-next-line
+    // eslint-disable-next-line
     (lookup.hasOwnProperty(type) ? lookup[type] : "application/xml") +
     "; charset=UTF-8"
   );

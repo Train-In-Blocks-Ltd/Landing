@@ -6,7 +6,7 @@
 </style>
 
 <template>
-  <footer class="grid gap-4 border-t-3 border-gray-800 dark:border-white py-12">
+  <footer class="grid gap-4 border-t-3 border-slate dark:border-white py-12">
     <CookieControl>
       <template #bar>
         <txt type="tiny">

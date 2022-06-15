@@ -12,13 +12,13 @@
   --transition-standard: 1s all cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 body {
-  @apply m-0 text-base text-gray-800 dark:text-white bg-gray-100 dark:bg-gray-800 scroll-smooth;
+  @apply m-0 text-base text-slate dark:text-white bg-paper dark:bg-slate scroll-smooth;
 }
 svg path.transparent {
-  @apply stroke-gray-800 dark:stroke-white;
+  @apply stroke-slate dark:stroke-white;
 }
 svg path:not(.transparent, .no-fill) {
-  @apply fill-gray-800 dark:fill-white;
+  @apply fill-slate dark:fill-white;
 }
 
 img,
@@ -31,7 +31,7 @@ li {
 }
 a,
 b {
-  @apply text-gray-800 dark:text-white;
+  @apply text-slate dark:text-white;
 }
 
 /* Blog */
@@ -71,7 +71,7 @@ ol {
   @apply list-decimal;
 }
 blockquote {
-  @apply px-2 pt-12 pb-4 md:py-8 md:px-12 rounded-lg border-3 border-gray-800 dark:border-white rounded-lg text-gray-800 dark:text-white bg-white dark:bg-gray-800 text-center relative leading-normal;
+  @apply px-2 pt-12 pb-4 md:py-8 md:px-12 rounded-lg border-3 border-slate dark:border-white rounded-lg text-slate dark:text-white bg-white dark:bg-slate text-center relative leading-normal;
 }
 blockquote::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' style='fill: rgb(40 40 40)'%3E%3C!----%3E%3Cpath d='M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z'/%3E%3C/svg%3E");
@@ -109,40 +109,40 @@ div.cookieControl__ModalContent button {
   @apply grid gap-4 m-auto px-8 py-10;
 }
 div.cookieControl__Bar {
-  @apply bg-gray-800 dark:bg-white;
+  @apply bg-slate dark:bg-white;
 }
 div.cookieControl__Bar p {
-  @apply text-white dark:text-gray-800;
+  @apply text-white dark:text-slate;
 }
 
 /* Cookie button */
 .cookieControl__ControlButton {
-  @apply bottom-8 bg-gray-800 dark:bg-white hover:opacity-60 transition-opacity;
+  @apply bottom-8 bg-slate dark:bg-white hover:opacity-60 transition-opacity;
 }
 .cookieControl__ControlButton svg > path:not(.transparent) {
-  @apply fill-white dark:fill-gray-800;
+  @apply fill-white dark:fill-slate;
 }
 .cookieControl__BarButtons > button {
-  @apply dark:text-white text-gray-800 dark:bg-gray-800 bg-white;
+  @apply dark:text-white text-slate dark:bg-slate bg-white;
 }
 
 /* Cookie modal */
 .cookieControl__ModalContent {
-  @apply bg-white dark:bg-gray-800;
+  @apply bg-white dark:bg-slate;
 }
 div.cookieControl__ModalContent *:not(button) {
-  @apply text-gray-800 dark:text-white;
+  @apply text-slate dark:text-white;
 }
 div.cookieControl__ModalContent button {
-  @apply text-white dark:text-gray-800 bg-gray-800 dark:bg-white;
+  @apply text-white dark:text-slate bg-slate dark:bg-white;
 }
 div.cookieControl__ModalContent input:checked:disabled + label,
 div.cookieControl__ModalContent input:checked + label {
-  @apply bg-gray-800 dark:bg-white;
+  @apply bg-slate dark:bg-white;
 }
 div.cookieControl__ModalContent input:checked:disabled + label:before,
 div.cookieControl__ModalContent label:before {
-  @apply dark:bg-gray-800 bg-white;
+  @apply dark:bg-slate bg-white;
 }
 
 /* Responsiveness */
@@ -189,13 +189,13 @@ div.cookieControl__ModalContent label:before {
 <template>
   <div id="app" class="px-4 md:px-8">
     <nav-menu />
-    <nav-bar class="my-16" />
+    <nav-bar />
     <nuxt class="fadeIn mb-16" />
     <div @click="openNav = false">
       <nuxt-link
         v-if="$route.name !== 'help'"
         style="z-index: 99"
-        class="fixed right-20 bottom-8 px-6 py-2 rounded-full bg-gray-800 dark:bg-white text-white dark:text-gray-800 font-bold hover:opacity-60 transition-opacity"
+        class="fixed right-20 bottom-8 px-6 py-2 rounded-full bg-slate dark:bg-white text-white dark:text-slate font-bold hover:opacity-60 transition-opacity"
         to="/help/"
       >
         <txt>I need help</txt>
@@ -213,7 +213,7 @@ div.cookieControl__ModalContent label:before {
         @click="exit"
       >
         <div
-          class="relative top-20 mx-auto p-8 rounded-md bg-gray-100 dark:bg-gray-800"
+          class="relative top-20 mx-auto p-8 rounded-md bg-paper dark:bg-slate"
         >
           <span
             class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all rounded-none"
