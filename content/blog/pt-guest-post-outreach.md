@@ -21,7 +21,71 @@ Here are a couple of tips to keep in mind when guest blogging:
 
 Guest posting has many different benefits to you and your business and skillset as a PT.
 
-* Increase your brand awareness and credibility
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Increase your brand awareness and credibility
 
 Brand awareness among your audience and the general public doesn’t happen overnight. It also doesn’t happen from a simple, one off advertisement or marketing campaign. Ensure you promote yourself as more than simply a company and a service and give your audience of the person, or people, behind the brand. 
  Guest posting can be a great way to do this as it shows adaptability, self awareness and a willingness to reach out to different demographics even through a potential competitor. Guest blogging is one of the best ways to increase brand awareness with minimal effort. 
@@ -31,8 +95,25 @@ You can take advantage of the traffic that’s already arriving at another websi
 
 Starting your own blog and promoting yourself can drive traffic to your website. This works best if your blog has some relation to the topic of your website. You can use your blog to host give-a-ways if your website sells products. Post often to your blog to drive traffic to it, and then point your blog followers to your website. 
 
-Guest blog posts create numerous opportunities to get referral traffic to your site. [External links,](https://traininblocks.com/blog/improve-your-skillset-as-a-pt/) author bios, and call to actions are typically present on most blog posts. If you can get a post featured on a well-know industry website you’ll benefit from the referral traffic and links coming to your site. It’s best to focus your efforts on websites that are considered thought leaders in your industry.
+Guest blog posts create numerous opportunities to get referral traffic to your site. [External links,](https://traininblocks.com/blog/improve-your-skillset-as-a-pt/) author bios,  and call to actions are typically present on most blog posts. If you can get a post featured on a well-know industry website you’ll benefit from the referral traffic and links coming to your site. It’s best to focus your efforts on websites that are considered thought leaders in your industry.
 
 * Connect with peers and build relationships with businesses in their personal training industry
-* Use external links of high-authority domains, bloggers to boost DA (domain authority)
+
+The fitness industry is a people business, first and foremost. Whether you're a personal trainer or a group fitness instructor, your relationship with your clients can often determine whether they stay or go. Sometimes, and surprisingly, this can even be more impactful than your client reaching their fitness goals.\
+People in your gym or fitness studio will likely see your positive relationships and realise that you are a trainer that they can trust.\
+Building that rapport isn't always easy. It all boils down to communication. Working on your ability to communicate and handle vulnerability will be key to developing more intimate relationships with your personal training clients. Great relationships start here.\
+Different clients will have different expectations, no different than having different fitness goals. It's essential that you be mindful of where people are coming from and meeting them there.
+
+
+
+
+
+
+
+
+
+  
+
+ Use external links of high-authority domains, bloggers to boost DA (domain authority)
+
 * Guest posting is a two-way street that offers mutual benefits for the guest bloggers and the Train In Blocks website where the content will be published.
