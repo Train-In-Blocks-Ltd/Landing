@@ -35,12 +35,13 @@ Guest blog posts create numerous opportunities to get referral traffic to your s
 
 ## Connect with peers and build relationships with businesses in their personal training industry
 
-People in your gym or fitness studio will likely see your positive relationships and realize that you are a trainer that they can trust. \
-Building rapport isn't always easy. It all boils down to communication. Working on your ability to communicate and handle vulnerability will be key to developing more intimate relationships with your personal training clients. Great relationships start here. \
+People in your gym or fitness studio will likely see your positive relationships and realise that you are a trainer that they can trust. 
+Building rapport isn't always easy. It all boils down to communication. Working on your ability to communicate and handle vulnerability will be key to developing more intimate relationships with your personal training clients. Great relationships start here. 
 Different clients will have different expectations, no different than having different fitness goals. It's essential that you be mindful of where people are coming from and meeting them there.
 
-## Use external links of high-authority domains, bloggers to boost DA (domain authority)
+## Use external links of high-authority domains and bloggers to boost DA (domain authority)
 
+For anyone doing SEO (search engine optimisation), it’s important to know that among the 200 different [ranking factors on Google](https://www.monsterinsights.com/google-ranking-factors/), domain authority is one of them. Domain authority (DA) is a ranking metric that you can use to predict how well your website will rank on search engines.\
+Another way of looking at domain authority definition is that it shows the relevance of your site with respect to your industry or a specific topic. And you can see the strength or authority of your domain in terms of rankings. To improve your domain authority and, in turn, your SEO, link externally to the websites of high ranked sites. 
 
-
-* Guest posting is a two-way street that offers mutual benefits for the guest bloggers and the Train In Blocks website where the content will be published.
+Guest posting is a two-way street: it helps to get you and your business "out there" and improves our SEO and marketing content too. All content would be published on the [Train In Blocks website ](https://traininblocks.com/)and, as we have seen when we [interviewed Sean Wilson ](https://traininblocks.com/blog/sean-wilson-personal-trainer-interview/)recently, it is mutually beneficial. Since interviewing Sean we have used snippets of his soundbites to improve credibility and also get Sean noticed.
