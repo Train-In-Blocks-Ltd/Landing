@@ -23,6 +23,7 @@ Guest posting has many different benefits to you and your business and skillset 
 
 1. [Increase your brand awareness and credibility ](<## Increase your brand awareness and credibility>)
 2. [Generate referral traffic back to your fitness website](<## Generate referral traffic back to your fitness website>)
+3. [Connect with peers and build relationships in the personal training industry](<## Connect with peers and build relationships with businesses in the personal training industry>)
 
 ## Increase your brand awareness and credibility
 
@@ -36,7 +37,7 @@ Starting your own blog and promoting yourself can drive traffic to your website.
 
 Guest blog posts create numerous opportunities to get referral traffic to your site. [External links,](https://traininblocks.com/blog/improve-your-skillset-as-a-pt/) author bios, and call to actions are typically present on most blog posts. If you can get a post featured on a well-know industry website you’ll benefit from the referral traffic and links coming to your site. It’s best to focus your efforts on websites that are considered thought leaders in your industry.
 
-## Connect with peers and build relationships with businesses in their personal training industry
+## Connect with peers and build relationships with businesses in the personal training industry
 
 People in your gym or fitness studio will likely see your positive relationships and realise that you are a trainer that they can trust. 
 Building rapport isn't always easy. It all boils down to communication. Working on your ability to communicate and handle vulnerability will be key to developing more intimate relationships with your personal training clients. Great relationships start here. 
