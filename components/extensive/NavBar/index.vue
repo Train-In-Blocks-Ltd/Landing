@@ -19,7 +19,7 @@
 
 <template>
   <div
-    class="flex justify-between items-center pt-16 mb-24 sticky top-0 left-4 md:left-8 right-4 md:right-8 pointer-events-none"
+    class="flex justify-between items-center pt-8 mb-8 md:pt-16 md:mb-24 sticky top-0 left-4 md:left-8 right-4 md:right-8 pointer-events-none"
     style="z-index: 60"
   >
     <nuxt-link

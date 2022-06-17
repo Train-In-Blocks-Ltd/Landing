@@ -1,7 +1,7 @@
 <template>
   <card-wrapper
     v-infocus="'showElement'"
-    class="md:flex relative justify-center items-center text-center mx-auto w-full xl:w-2/3 2xl:1/3 px-8 pt-4 fadeHidden"
+    class="md:flex relative md:justify-center md:items-center sm:text-center mx-auto w-full xl:w-2/3 2xl:1/3 px-8 pt-4 fadeHidden"
     no-hover
   >
     <img

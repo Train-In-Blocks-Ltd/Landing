@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col xl:flex-row">
-    <div class="md:w-7/12 md:mr-8 my-auto">
+  <div class="flex flex-col md:flex-row">
+    <div class="w-full md:w-6/12 lg:w-7/12 md:mr-8 my-auto">
       <txt type="title" is-main>
         We've taken exercise programming to the next level.
       </txt>
@@ -18,7 +18,7 @@
       :src="
         require('../../assets/images/trainer.jpg?resize&size=700&format=webp&inline')
       "
-      class="ml-auto md:w-8/12 mt-16 xl:mt-0 xl:w-5/12 xl:ml-0 h-auto z-0"
+      class="hidden md:block md:w-6/12 lg:w-5/12 h-auto z-0 object-cover"
       alt="Training people"
     />
   </div>

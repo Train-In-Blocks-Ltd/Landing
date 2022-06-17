@@ -1,10 +1,10 @@
 <template>
   <form class="grid gap-2 w-full" @submit.prevent="mc(email)">
     <slot />
-    <div class="flex justify-center items-center">
+    <div class="sm:flex sm:justify-center sm:items-center">
       <txt-input
         :value="email"
-        class="w-1/2 mr-4"
+        class="sm:w-1/2 mr-4"
         placeholder="Email"
         type="email"
         required
@@ -12,7 +12,7 @@
       />
       <default-button
         type="submit"
-        class="z-10"
+        class="z-10 mt-2 sm:mt-0"
         :disabled="!email || !ValidateEmail(email)"
       >
         Sign me up

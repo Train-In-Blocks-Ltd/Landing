@@ -10,7 +10,7 @@
     <!-- Comparison section -->
     <txt type="title">See how we compare against...</txt>
     <div class="grid lg:grid-cols-2 gap-x-16 gap-y-4 mt-16 mb-32">
-      <div class="flex justify-between text-pine">
+      <div class="sm:flex sm:justify-between text-pine">
         <txt type="subtitle">Train In Blocks</txt>
         <div class="flex items-baseline">
           <txt type="subtitle">£9.99</txt>
@@ -22,7 +22,7 @@
         :key="`compare_${index}`"
         v-infocus="'showElement'"
         :to="`/compare/${compare.slug}/`"
-        class="flex justify-between fadeHidden group"
+        class="sm:flex sm:justify-between fadeHidden group"
         :style="`--delay: ${0.15 * index}s`"
       >
         <txt
@@ -32,7 +32,7 @@
           {{ compare.name }}
         </txt>
         <div
-          class="flex items-baseline group-hover:opacity-60 transition-opacity"
+          class="flex items-baseline group-hover:opacity-60 transition-opacity text-graphite"
         >
           <txt type="subtitle">{{ compare.price }}</txt>
           <txt class="ml-2 font-bold">/ month</txt>
