@@ -44,7 +44,9 @@ b {
 .nuxt-content h3 {
   @apply text-xl font-bold mb-4;
 }
-.nuxt-content p, .nuxt-content ol, .nuxt-content ul {
+.nuxt-content p,
+.nuxt-content ol,
+.nuxt-content ul {
   @apply mb-4;
 }
 .nuxt-content a {
