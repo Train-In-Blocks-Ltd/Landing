@@ -19,7 +19,9 @@ Here are a couple of tips to keep in mind when guest blogging:
 3. Write content under your own name - After all, you don’t want someone else getting credit for your work.
 4. Link to influencers - They will notice and might even help promote your guest blog post, which in return will increase the referral traffic it generates.
 
-Guest posting has many different benefits to you and your business and skillset as a PT
+Guest posting has many different benefits to you and your business and skillset as a PT. Here are a few ideas to get you started
+
+1. [Increase your brand awareness and credibility ](<## Increase your brand awareness and credibility>)
 
 ## Increase your brand awareness and credibility
 
