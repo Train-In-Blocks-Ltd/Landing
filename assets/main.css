@@ -11,3 +11,9 @@
 .page-leave-to {
   opacity: 0;
 }
+
+@layer utilities {
+  .benefit-icon svg {
+    @apply h-16 mx-auto;
+  }
+}

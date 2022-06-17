@@ -1,9 +1,3 @@
-<style>
-.benefit-icon svg {
-  @apply h-16 mx-auto;
-}
-</style>
-
 <template>
   <div id="features">
     <txt type="title" class="mb-16 pt-8">Benefits and features</txt>
@@ -12,13 +6,13 @@
         v-for="(item, index) in benefits"
         :key="`benefit_${index}`"
         v-infocus="'showElement'"
-        class="p-4 fadeHidden"
+        class="group p-4 fadeHidden"
         no-hover
         no-shadow
         :style="`--delay: ${0.15 * index}s`"
       >
         <span
-          class="benefit-icon mb-4 rounded-none block"
+          class="benefit-icon mb-4 rounded-none block group-hover:animate-bounce"
           v-html="require(`../../assets/svg/features/${item.svg}.svg?include`)"
         />
         <txt type="large-body" class="mb-2" bold>
