@@ -23,7 +23,8 @@
         </txt>
       </nuxt-link>
     </div>
-    <recent-blog-posts :latest-blog-posts="latestBlogPosts" />
+    <recent-blog-posts :latest-blog-posts="latestBlogPosts" class="mb-32" />
+    <social-feed />
   </page-wrapper>
 </template>
 
@@ -37,6 +38,7 @@ import HomeTopSection from "../components/pages/HomeTopSection";
 import RecentBlogPosts from "../components/pages/RecentBlogPosts";
 import EmailIntake from "../components/generic/EmailIntake";
 import Testimonials from "~/components/generic/Testimonials.vue";
+import SocialFeed from "~/components/generic/SocialFeed.vue";
 
 export default {
   components: {
@@ -49,6 +51,7 @@ export default {
     RecentBlogPosts,
     EmailIntake,
     Testimonials,
+    SocialFeed,
   },
   async asyncData({ $content }) {
     const latestBlogPosts = await $content("blog", { text: true }).fetch();
