@@ -9,18 +9,34 @@
 
     <!-- Comparison section -->
     <txt type="title">See how we compare against...</txt>
-    <div class="grid sm:grid-cols-2 gap-y-4 mt-16 mb-32">
+    <div class="grid lg:grid-cols-2 gap-x-16 gap-y-4 mt-16 mb-32">
+      <div class="flex justify-between text-pine">
+        <txt type="subtitle">Train In Blocks</txt>
+        <div class="flex items-baseline">
+          <txt type="subtitle">£9.99</txt>
+          <txt class="ml-2 font-bold">/ month</txt>
+        </div>
+      </div>
       <nuxt-link
         v-for="(compare, index) in comparisons"
         :key="`compare_${index}`"
         v-infocus="'showElement'"
         :to="`/compare/${compare.slug}/`"
-        class="w-fit fadeHidden"
+        class="flex justify-between fadeHidden group"
         :style="`--delay: ${0.15 * index}s`"
       >
-        <txt type="subtitle" class="w-fit hover:opacity-60 transition-all">
+        <txt
+          type="subtitle"
+          class="w-fit group-hover:opacity-60 transition-opacity"
+        >
           {{ compare.name }}
         </txt>
+        <div
+          class="flex items-baseline group-hover:opacity-60 transition-opacity"
+        >
+          <txt type="subtitle">{{ compare.price }}</txt>
+          <txt class="ml-2 font-bold">/ month</txt>
+        </div>
       </nuxt-link>
     </div>
     <recent-blog-posts :latest-blog-posts="latestBlogPosts" />
@@ -62,11 +78,15 @@ export default {
     return {
       title: "Want to train more clients effectively?",
       comparisons: [
-        { name: "TrueCoach", slug: "truecoach" },
-        { name: "MyPTHub", slug: "pthub" },
-        { name: "PTminder", slug: "ptminder" },
-        { name: "PTDistinction", slug: "ptdistinction" },
-        { name: "Trainerize", slug: "trainerize" },
+        { name: "TrueCoach", slug: "truecoach", price: "$19-$110" },
+        { name: "MyPTHub", slug: "pthub", price: "£49" },
+        { name: "PTminder", slug: "ptminder", price: "£28-£99" },
+        {
+          name: "PTDistinction",
+          slug: "ptdistinction",
+          price: "$19-$80",
+        },
+        { name: "Trainerize", slug: "trainerize", price: "$300" },
       ],
     };
   },
