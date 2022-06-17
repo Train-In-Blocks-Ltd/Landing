@@ -11,3 +11,9 @@
 .page-leave-to {
   opacity: 0;
 }
+
+@layer utilities {
+  body *:not(input):focus {
+    @apply outline-none rounded-lg opacity-60 bg-beauBlue;
+  }
+}
