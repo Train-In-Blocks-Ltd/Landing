@@ -24,6 +24,7 @@ Guest posting has many different benefits to you and your business and skillset 
 1. [Increase your brand awareness and credibility ](<## Increase your brand awareness and credibility>)
 2. [Generate referral traffic back to your fitness website](<## Generate referral traffic back to your fitness website>)
 3. [Connect with peers and build relationships in the personal training industry](<## Connect with peers and build relationships with businesses in the personal training industry>)
+4. [Use external links of high authority domains and bloggers to boost DA](<## Use external links of high-authority domains and bloggers to boost DA (domain authority)>)
 
 ## Increase your brand awareness and credibility
 
