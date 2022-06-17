@@ -19,13 +19,13 @@
 
 <template>
   <div
-    class="flex justify-between items-center pt-16 mb-24 sticky top-0 left-4 md:left-8 right-4 md:right-8"
+    class="flex justify-between items-center pt-16 mb-24 sticky top-0 left-4 md:left-8 right-4 md:right-8 pointer-events-none"
     style="z-index: 60"
   >
     <nuxt-link
       to="/"
       title="Home"
-      class="rounded-none bg-white dark:bg-slate rounded-lg shadow-lg p-4"
+      class="rounded-none bg-white dark:bg-slate rounded-lg shadow-lg p-4 pointer-events-auto"
     >
       <span
         id="logo--home"
@@ -34,7 +34,7 @@
       />
     </nuxt-link>
     <div
-      class="menu-container flex bg-white dark:bg-slate p-4 rounded-lg shadow-lg items-center"
+      class="menu-container flex bg-white dark:bg-slate p-4 rounded-lg shadow-lg items-center pointer-events-auto"
     >
       <darkmode-toggle />
       <span
