@@ -111,7 +111,7 @@ As he's touched upon, the transformative effect his work has on others is the be
 
 ## Tricks of the trade
 
-Sean has the nuances down to a tee with the willingness to charge more for your services over time an important [facet of a PT's development](https://traininblocks.com/blog/ten-tips-every-pt-should-know/).
+Sean has the nuances down to a tee with the willingness to charge more for your services over time an important [facet of a PT's development](https://traininblocks.com/blog/ten-tips-every-personal-trainer-should-know/).
 
 To sum up:
 
