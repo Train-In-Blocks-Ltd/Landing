@@ -17,7 +17,7 @@ Here are a couple of tips to keep in mind when guest blogging:
 1. Focus on websites related to your industry - No one wants to read about  fashion trends on a blog about fitness training! 
 2. Keep the target audience in mind while writing - Most blogs have strict guidelines in place for guest bloggers.
 3. Write content under your own name - After all, you don’t want someone else getting credit for your work.
-4. Link to influencers - They will notice and might even help promote your guest blog post, which in return will increase the referral traffic it generates.
+4. Link to influencers - They will notice and might even help promote your guest blog post, which in return will increase the referral traffic it generates. 
 
 Guest posting has many different benefits to you and your business and skillset as a PT. Here are a few ideas to get you started when it comes to outreach. 
 
