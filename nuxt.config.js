@@ -61,7 +61,7 @@ export default async () => {
         {
           hid: "twitter:image",
           name: "twitter:image",
-          content: "https://traininblocks.com/android-chrome-512x512.png?v=192",
+          content: "https://traininblocks.com/Social-Share-Image.jpg",
         },
 
         // Open Graph data
@@ -81,12 +81,13 @@ export default async () => {
         {
           hid: "og:image",
           property: "og:image",
-          content: "https://traininblocks.com/android-chrome-512x512.png?v=192",
+          content: "https://traininblocks.com/Social-Share-Image.jpg",
         },
         { property: "og:url", content: "https://traininblocks.com" },
       ],
       link: [
-        { hid: "canonical", rel: "canonical" },
+        {
+          hid: "canonical", rel: "canonical", href: "https://traininblocks.com", },
         {
           rel: "apple-touch-icon",
           sizes: "180x180",
