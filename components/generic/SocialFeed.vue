@@ -5,11 +5,17 @@
 .j-overlay-content .j-meta {
   @apply hidden;
 }
+.feed-item {
+  @apply cursor-pointer;
+}
 .feed-item.juicer.image-post.juicer-about {
-  display: none;
+  @apply hidden;
+}
+.juicer-feed.image-grid li.feed-item:hover .j-text {
+  @apply rounded-lg;
 }
 h1.referral {
-  opacity: 0;
+  @apply opacity-0;
 }
 </style>
 
