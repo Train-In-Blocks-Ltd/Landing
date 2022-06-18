@@ -46,7 +46,7 @@ Different clients will have different expectations, no different than having dif
 
 ## Use external links of high-authority domains and bloggers to boost DA (domain authority)
 
-For anyone doing SEO (search engine optimisation), it’s important to know that among the 200 different [ranking factors on Google](https://www.monsterinsights.com/google-ranking-factors/), domain authority is one of them. Domain authority (DA) is a ranking metric that you can use to predict how well your website will rank on search engines.
+For anyone doing SEO (search engine optimisation), it’s important to know that among the 200 different [ranking factors on Google](https://www.monsterinsights.com/google-ranking-factors/), domain authority is one of them. Domain authority (DA) is a ranking metric you can use to predict how well your website will rank on search engines.
 Another way of looking at domain authority definition is that it shows the relevance of your site with respect to your industry or a specific topic. And you can see the strength or authority of your domain in terms of rankings. To improve your domain authority and, in turn, your SEO, link externally to the websites of high ranked sites. 
 
 Guest posting is a two-way street: it helps to get you and your business "out there" and improves our SEO and marketing content too. All content would be published on the [Train In Blocks website ](https://traininblocks.com/)and, as when we [interviewed Sean Wilson ](https://traininblocks.com/blog/sean-wilson-personal-trainer-interview/)recently, it's mutually beneficial. 
