@@ -1,26 +1,22 @@
 <template>
-  <div class="flex">
-    <txt type="title" class="mr-8">
-      {{ post.id + 1 }}
-    </txt>
-    <div>
+  <div>
+    <div
+      class="flex justify-between items-center cursor-pointer hover:opacity-60 transition"
+      @click="show = !show"
+    >
       <txt type="large-body" bold>
-        {{ post.title }}
+        {{ item.title }}
       </txt>
-      <txt class="my-4">
-        {{ post.postDesc }}
-      </txt>
-      <nuxt-link
-        class="flex items-center hover:opacity-60 transition-opacity"
-        :to="`/help/${post.slug}/`"
-      >
-        <txt class="mr-4">Continue reading</txt>
-        <span
-          class="rounded-none"
-          v-html="require('../../../assets/svg/Arrow.svg?include')"
-        />
-      </nuxt-link>
+      <span
+        class="transition"
+        :class="show ? 'rotate-180' : 'rotate-0'"
+        v-html="require('../../../assets/svg/chevron-down.svg?include')"
+      />
     </div>
+
+    <txt v-if="show" class="mt-4">
+      {{ item.content }}
+    </txt>
   </div>
 </template>
 
@@ -32,7 +28,12 @@ export default {
     Txt,
   },
   props: {
-    post: Object,
+    item: Object,
+  },
+  data() {
+    return {
+      show: false,
+    };
   },
 };
 </script>
