@@ -14,11 +14,11 @@ Yes, it's that time of year again when the world's greatest tennis stars descend
 
 Wimbledon is one of the four majors (also known as the "Grand Slams"), the third such event of the year and the only one played on grass. These tournaments carry the most prestige in terms of prize money, ranking points, media coverage, strength and size of the field and five sets for the men instead of the usual three. 
 
-Physical and mental strength, endurance, stamina, agility and athleticism are all integral to the tennis pro's armoury. Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, these exercises will help you improve your skills so you feel invincible on the court.
+The very best players have everything you need to be a top tennis star: physical and mental strength, endurance, stamina, agility and athleticism are all integral to the tennis pro's armoury. Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, get 'set' for Wimbledon with these tennis-themed exercises to help you feel unbeatable on grass, clay or hard courts. 
 
 **POGO JUMPS**
 
-Jumping exercises like pogo jumps are great for power and conditioning. They help strengthen the quads, hamstrings and calves for tennis players who need to move quickly across the court. Pogo jumps are also one of the most straightforward plyometrics exercises you can do, with some of the biggest returns.
+Jumping exercises like pogo jumps are great for power and conditioning. They help strengthen the quads, hamstrings and calves for tennis players who need to move quickly across the court. Pogo jumps are also one of the most straightforward muscle building exercises you can do, with some of the most notable gains in terms of muscle mass.  
 
 *How to pogo jump:*
 
