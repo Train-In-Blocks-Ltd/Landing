@@ -8,7 +8,7 @@ author: Jamie Spoor
 date: 2022-06-20T08:54:47.955Z
 postDesc: Tennis styled workouts to up your game ahead of Wimbledon
 ---
-Nothing says the great British summer quite like extortionately priced strawberries, a pint of Pimm's and the distant thwack of tennis balls. 
+Nothing says the great British summer quite like extortionately priced strawberries, inclement weather, a pint of Pimm's and the distant thwack of tennis balls. 
 
 Yes, it's that time of year again when the world's greatest tennis stars descend on a leafy suburb in west London to strut their stuff in front of the world: Wimbledon is back! It's a fortnight when the casual tennis watcher becomes an expert on break points, double faults, net cords and the nuances of the sport's unique scoring system. 
 
