@@ -16,7 +16,7 @@ Wimbledon is one of the four majors (also known as the "Grand Slams"), the third
 
 The very best players have everything you need to be a top tennis star: physical and mental strength, endurance, stamina, agility and athleticism are all integral to the tennis pro's armoury. Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, get 'set' for Wimbledon with these tennis-themed exercises to help you feel unbeatable on grass, clay or hard courts. 
 
-**POGO JUMPS**
+## **Pogo jumps**
 
 Jumping exercises like pogo jumps are great for power and conditioning. They help strengthen the quads, hamstrings and calves for tennis players who need to move quickly across the court. Pogo jumps are also one of the most straightforward muscle building exercises you can do, with some of the most notable gains in terms of muscle mass.  
 
@@ -26,7 +26,7 @@ Jump as high as you can while pushing off from your ankles instead of your hips 
 
 Try and master 25 jumps in a row, and repeat the set four times.
 
-**WEIGHTED CHIN-UPS**
+## **Weighted chin ups**
 
 Players can use their own body weight to help improve their strength on the tennis court. If you’re new to chin-ups, you can use a resistance band to counter-balance your weight at the beginning of your training. In the weeks and months following, you should slowly work your way up to doing chin-ups without needing any assistance. Once you feel confident, you can introduce using a weighted belt as well.
 
@@ -35,3 +35,12 @@ Players can use their own body weight to help improve their strength on the tenn
 To perform chin-ups properly, hold a pull-up bar with your hands hip-distance apart and your palms facing inwards. Then, taking as much time as you need, pull your body up with your arms and your lats until your chin is just above the bar, and slowly lengthen your arms back down. You should aim to bring your elbows into your sides
 
 Aim for three sets of 10 pull-ups, and you’ll quickly notice your game strength and "match play" arsenal improving.
+
+## Medicine ball throws
+
+The best tennis players maintain their core upper body strength to ensure they can outlast their opponent and keep up with the physical demands of what can sometimes be a four or five hour match. This workout is designed to help you with that. \
+*How to throw:*
+
+Hold a medicine ball firmly in each hand, and stand with your side several feet away from a wall. Rotate your shoulders away from the wall, winding up in preparation for the throw. Then, reverse direction, turn your shoulders and release the ball as fast as you can.
+
+Aim for three sets of five throws per arm.
