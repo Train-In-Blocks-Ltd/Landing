@@ -87,7 +87,10 @@ export default async () => {
       ],
       link: [
         {
-          hid: "canonical", rel: "canonical", href: "https://traininblocks.com", },
+          hid: "canonical",
+          rel: "canonical",
+          href: "https://traininblocks.com",
+        },
         {
           rel: "apple-touch-icon",
           sizes: "180x180",
