@@ -1,12 +1,16 @@
 <style>
+.juicer-feed {
+  margin-top: 1rem!important;
+}
 .j-overlay-content {
   @apply rounded-lg;
 }
 .j-overlay-content .j-meta {
   @apply hidden;
 }
-.feed-item {
-  @apply cursor-pointer;
+.juicer-feed li.feed-item {
+  @apply cursor-pointer mr-4 mb-4;
+  width: calc(100% - 1rem);
 }
 .feed-item.juicer.image-post.juicer-about {
   @apply hidden;
@@ -14,30 +18,15 @@
 .juicer-feed.image-grid li.feed-item:hover .j-text {
   @apply rounded-lg;
 }
-h1.referral {
-  @apply opacity-0;
+.juicer-feed h1.referral {
+  display: none!important
 }
 </style>
 
 <template>
   <div>
     <txt type="title" class="pt-8">Follow our journey</txt>
-
-    <script
-      src="https://assets.juicer.io/embed.js"
-      type="text/javascript"
-    ></script>
-    <link
-      href="https://assets.juicer.io/embed.css"
-      media="all"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <ul class="juicer-feed" data-feed-id="traininblocks">
-      <h1 class="referral">
-        <a href="https://www.juicer.io">Powered by Juicer.io</a>
-      </h1>
-    </ul>
+    <ul class="juicer-feed" data-feed-id="traininblocks" />
   </div>
 </template>
 
