@@ -63,4 +63,4 @@ Endurance is key and so circuit training is ideal: an exercise format which invo
 You can sign up for circuit training at your local gym or [even devise something yourself](https://traininblocks.com/blog/building-your-own-training-programme/), to see your stamina and overall fitness quickly get up to speed (no pun intended). \
 Circuit training includes exercises such as squats, calf raises, abdominal crunches and push ups, but this is not inclusive and you can ultimately make them whatever you want them to be. 
 
-Cardio classes are also a good way to increase energy, stamina and lung capacity. There are a number of different, varied cardio classes you can deploy: aerobics, spin classes and pilates, to name but three.
+Cardio classes are also a good way to increase energy, stamina and lung capacity. There are a number of different, varied cardio classes you can carry out: aerobics, spin cycling and boot camps to name but three. |
