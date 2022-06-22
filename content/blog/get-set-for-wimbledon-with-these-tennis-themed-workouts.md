@@ -6,7 +6,7 @@ img: Wimbledon logo?
 alt: Exercises to serve up tennis excellence
 author: Jamie Spoor
 date: 2022-06-20T08:54:47.955Z
-postDesc: Tennis styled workouts to up your game ahead of Wimbledon
+postDesc: Tennis styled workouts to serve up excellence ahead of Wimbledon
 ---
 Nothing says the great British summer quite like extortionately priced strawberries, inclement weather, a pint of Pimm's and the distant thwack of tennis balls. 
 
@@ -14,7 +14,7 @@ Yes, it's that time of year again when the world's greatest tennis stars descend
 
 Wimbledon is one of the four majors (also known as the "Grand Slams"), the third such event of the year and the only one played on grass. These tournaments carry the most prestige in terms of prize money, ranking points, media coverage, strength and size of the field and five sets for the men instead of the usual three. 
 
-The very best players have everything you need to be a top tennis star: physical and mental strength, endurance, stamina, agility and athleticism are all integral to the tennis pro's armoury. Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, get 'set' for Wimbledon with these tennis-themed exercises to help you feel unbeatable on grass, clay or hard courts. 
+The very best players have everything you need to be a top tennis star: physical and mental strength, endurance, stamina, agility and athleticism are all integral to the tennis pro's armoury.                                                               Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, get 'set' for Wimbledon with these tennis-themed exercises to help you feel unbeatable on grass, clay or hard courts. Ready? Play...
 
 These exercises [focus on building strength and tenacity on court.](https://traininblocks.com/blog/concurrent-training/)
 
@@ -41,6 +41,8 @@ Aim for three sets of 10 pull-ups, and you’ll quickly notice your game strengt
 ## Medicine ball throws
 
 The best tennis players maintain their core upper body strength to ensure they can outlast their opponent and keep up with the physical demands of what can sometimes be a four or five hour match. This workout is designed to help you with those elements of the game. 
+
+
 *How to throw:*
 
 Hold a medicine ball firmly in each hand, and stand with your side several feet away from a wall. Rotate your shoulders away from the wall, winding up in preparation for the throw. Then, reverse direction, turn your shoulders and release the ball as fast as you can.
@@ -49,8 +51,12 @@ Aim for three sets of five throws per arm.
 
 ## Speed and agility exercises
 
-These workouts will help you to up your game when it comes to explosiveness, footwork and balance
+These workouts will help you to up your game when it comes to explosiveness, footwork and balance on the tennis court. 
 
 * [HIIT Treadmill training ](https://www.coachmag.co.uk/cardio-workouts/6419/how-to-get-hiit-workouts-right-because-they-re-easy-to-get-wrong)will help you work on your cardio 
 * Deadlift (four sets of 12)
 * Kettlebells (four sets of 10)
+
+Tennis is one of, if not THE, most energy-sapping and gruelling sports out there. The longest match ever was played over three days with a duration of 11 hours five minutes whilst Rafael Nadal and Novak Djokovic did battle for nearly six hours in 2012's Australian Open final — the longest major final in history. \
+Endurance is key and so circuit training is ideal: an exercise format which involves between six and ten different types of workout used in quick succession, all focused on upper body, lower body and core conditioning. \
+You can sign up for circuit training at your local gym or [even devise something yourself](https://traininblocks.com/blog/building-your-own-training-programme/), to see your stamina and overall fitness quickly get up to speed (no pun intended). Circuit training includes exercises such as squats, calf raises, abdominal crunches and push ups, but this is not inclusive and you can make them whatever you want them to be.
