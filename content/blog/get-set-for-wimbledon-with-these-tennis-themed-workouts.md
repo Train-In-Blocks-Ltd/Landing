@@ -58,5 +58,9 @@ These workouts will help you to up your game when it comes to explosiveness, foo
 * Kettlebells (four sets of 10)
 
 Tennis is one of, if not THE, most energy-sapping and gruelling sports out there. The longest match ever was played over three days with a duration of 11 hours five minutes whilst Rafael Nadal and Novak Djokovic did battle for nearly six hours in 2012's Australian Open final — the longest major final in history. \
+\
 Endurance is key and so circuit training is ideal: an exercise format which involves between six and ten different types of workout used in quick succession, all focused on upper body, lower body and core conditioning. \
-You can sign up for circuit training at your local gym or [even devise something yourself](https://traininblocks.com/blog/building-your-own-training-programme/), to see your stamina and overall fitness quickly get up to speed (no pun intended). Circuit training includes exercises such as squats, calf raises, abdominal crunches and push ups, but this is not inclusive and you can make them whatever you want them to be.
+You can sign up for circuit training at your local gym or [even devise something yourself](https://traininblocks.com/blog/building-your-own-training-programme/), to see your stamina and overall fitness quickly get up to speed (no pun intended). \
+Circuit training includes exercises such as squats, calf raises, abdominal crunches and push ups, but this is not inclusive and you can ultimately make them whatever you want them to be. 
+
+Cardio classes are also a good way to increase energy, stamina and lung capacity. There are a number of different, varied cardio classes you can deploy: aerobics, spin classes and pilates, to name but three.
