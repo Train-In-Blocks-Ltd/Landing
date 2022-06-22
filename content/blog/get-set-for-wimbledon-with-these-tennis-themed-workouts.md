@@ -64,6 +64,6 @@ You can sign up for circuit training at your local gym or [even devise something
 Circuit training includes exercises such as squats, calf raises, abdominal crunches and push ups, but this is not inclusive and you can ultimately make them whatever you want them to be. 
 
 Cardio classes are also a good way to increase energy, power, stamina and lung capacity. There are a number of different, varied cardio classes you can carry out: aerobics, spin cycling and boot camps to name but three. \
-These 'Wimbledon workouts' will not only help you past the breaking point but are also 'transferrable' so, as a PT, a client or a gym instructor they are ideal for any other area of fitness, too. \
+These 'Wimbledon workouts' will not only help you past the breaking point as a tennis player, but are also 'transferrable' so, as a PT, a client or a gym instructor they are ideal for anyone in the fitness industry, too. \
 \
 Wimbledon begins on Monday, 27th June live across the BBC.
