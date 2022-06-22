@@ -16,6 +16,8 @@ Wimbledon is one of the four majors (also known as the "Grand Slams"), the third
 
 The very best players have everything you need to be a top tennis star: physical and mental strength, endurance, stamina, agility and athleticism are all integral to the tennis pro's armoury. Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, get 'set' for Wimbledon with these tennis-themed exercises to help you feel unbeatable on grass, clay or hard courts. 
 
+These exercises [focus on building strength and tenacity on court.](https://traininblocks.com/blog/concurrent-training/)
+
 ## **Pogo jumps**
 
 Jumping exercises like pogo jumps are great for power and conditioning. They help strengthen the quads, hamstrings and calves for tennis players who need to move quickly across the court. Pogo jumps are also one of the most straightforward muscle building exercises you can do, with some of the most notable gains in terms of muscle mass.  
@@ -38,9 +40,17 @@ Aim for three sets of 10 pull-ups, and you’ll quickly notice your game strengt
 
 ## Medicine ball throws
 
-The best tennis players maintain their core upper body strength to ensure they can outlast their opponent and keep up with the physical demands of what can sometimes be a four or five hour match. This workout is designed to help you with that. \
+The best tennis players maintain their core upper body strength to ensure they can outlast their opponent and keep up with the physical demands of what can sometimes be a four or five hour match. This workout is designed to help you with those elements of the game. 
 *How to throw:*
 
 Hold a medicine ball firmly in each hand, and stand with your side several feet away from a wall. Rotate your shoulders away from the wall, winding up in preparation for the throw. Then, reverse direction, turn your shoulders and release the ball as fast as you can.
 
 Aim for three sets of five throws per arm.
+
+## Speed and agility exercises
+
+These workouts will help you to up your game when it comes to explosiveness, footwork and balance
+
+* [HIIT Treadmill training ](https://www.coachmag.co.uk/cardio-workouts/6419/how-to-get-hiit-workouts-right-because-they-re-easy-to-get-wrong)will help you work on your cardio 
+* Deadlift (four sets of 12)
+* Kettlebells (four sets of 10)
