@@ -14,7 +14,8 @@ Yes, it's that time of year again when the world's greatest tennis stars descend
 
 Wimbledon is one of the four majors (also known as the "Grand Slams"), the third such event of the year and the only one played on grass. These tournaments carry the most prestige in terms of prize money, ranking points, media coverage, strength and size of the field and five sets for the men instead of the usual three. 
 
-The very best players have everything you need to be a top tennis star: physical and mental strength, endurance, stamina, agility and athleticism are all integral to the tennis pro's armoury.                                                               Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, get 'set' for Wimbledon with these tennis-themed exercises to help you feel unbeatable on grass, clay or hard courts. Ready? Play...
+The very best players have everything you need to be a top tennis star: physical and mental strength, endurance, stamina, agility and athleticism are all integral to the tennis pro's armoury. 
+Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, get 'set' for Wimbledon with these tennis-themed exercises to help you feel unbeatable on grass, clay or hard courts. Ready? Play...
 
 These exercises [focus on building strength and tenacity on court.](https://traininblocks.com/blog/concurrent-training/)
 
@@ -57,13 +58,13 @@ These workouts will help you to up your game when it comes to explosiveness, foo
 * Deadlift (four sets of 12)
 * Kettlebells (four sets of 10)
 
-Tennis is one of, if not THE, most energy-sapping and gruelling sports out there. The longest match ever was played over three days with a duration of 11 hours five minutes whilst Rafael Nadal and Novak Djokovic did battle for nearly six hours in 2012's Australian Open final — the longest major final in history. \
-\
-Endurance is key and so circuit training is ideal: an exercise format which involves between six and ten different types of workout used in quick succession, all focused on upper body, lower body and core conditioning. \
-You can sign up for circuit training at your local gym or [even devise something yourself](https://traininblocks.com/blog/building-your-own-training-programme/), to see your stamina and overall fitness quickly get up to speed (no pun intended). \
+Tennis is one of, if not THE, most energy-sapping and gruelling sports out there. The longest match ever was played over three days with a duration of 11 hours five minutes whilst Rafael Nadal and Novak Djokovic did battle for nearly six hours in 2012's Australian Open final — the longest major final in history. 
+
+Endurance is key and so circuit training is ideal: an exercise format which involves between six and ten different types of workout used in quick succession, all focused on upper body, lower body and core conditioning. 
+You can sign up for circuit training at your local gym or [even devise something yourself](https://traininblocks.com/blog/building-your-own-training-programme/), to see your stamina and overall fitness quickly get up to speed (no pun intended). 
 Circuit training includes exercises such as squats, calf raises, abdominal crunches and push ups, but this is not inclusive and you can ultimately make them whatever you want them to be. 
 
-Cardio classes are also a good way to increase energy, power, stamina and lung capacity. There are a number of different, varied cardio classes you can carry out: aerobics, spin cycling and boot camps to name but three. \
-These 'Wimbledon workouts' will not only help you past the breaking point as a tennis player, but are also 'transferrable' so, as a PT, a client or a gym instructor they are ideal for anyone in the fitness industry, too. \
-\
+Cardio classes are also a good way to increase energy, power, stamina and lung capacity. There are a number of different, varied cardio classes you can carry out: aerobics, spin cycling and boot camps to name but three. 
+These 'Wimbledon workouts' will not only help you past the breaking point as a tennis player, but are also 'transferrable' so, as a PT, a client or a gym instructor they are ideal for anyone in the fitness industry, too. 
+
 Wimbledon begins on Monday, 27th June live across the BBC.
