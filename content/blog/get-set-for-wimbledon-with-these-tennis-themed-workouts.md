@@ -67,4 +67,4 @@ Circuit training includes exercises such as squats, calf raises, abdominal crunc
 Cardio classes are also a good way to increase energy, power, stamina and lung capacity. There are a number of different, varied cardio classes you can carry out: aerobics, spin cycling and boot camps to name but three. 
 These 'Wimbledon workouts' will not only help you past the breaking point as a tennis player, but are also 'transferrable' so, as a PT, a client or a gym instructor they are ideal for anyone in the fitness industry, too. 
 
-Wimbledon begins on Monday, 27th June live across the BBC.
+Why should you never date a tennis player? Because love means nothing to them...
