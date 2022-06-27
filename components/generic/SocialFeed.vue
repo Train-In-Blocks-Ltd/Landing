@@ -1,6 +1,6 @@
 <style>
 .juicer-feed {
-  margin-top: 1rem!important;
+  margin-top: 1rem !important;
 }
 .j-overlay-content .j-meta {
   @apply hidden;
@@ -20,10 +20,22 @@
 .juicer-feed.image-grid li.feed-item:hover .j-text {
   @apply rounded-lg;
 }
-.juicer-feed h1.referral, .juicer-feed li.feed-item:nth-of-type(n+2) {
-  display: none!important
+.juicer-feed h1.referral,
+.juicer-feed li.feed-item:nth-of-type(n + 2) {
+  display: none !important;
 }
-.juicer-feed.image-grid .j-text .j-message p, .juicer-feed.image-grid .j-text .j-edit p, .juicer-feed.slider .j-text .j-message p, .juicer-feed.slider .j-text .j-edit p, .juicer-feed.hip .j-text .j-message p, .juicer-feed.hip .j-text .j-edit p, .juicer-feed.image-grid .j-text .j-message a, .juicer-feed.image-grid .j-text .j-edit a, .juicer-feed.slider .j-text .j-message a, .juicer-feed.slider .j-text .j-edit a, .juicer-feed.hip .j-text .j-message a, .juicer-feed.hip .j-text .j-edit a {
+.juicer-feed.image-grid .j-text .j-message p,
+.juicer-feed.image-grid .j-text .j-edit p,
+.juicer-feed.slider .j-text .j-message p,
+.juicer-feed.slider .j-text .j-edit p,
+.juicer-feed.hip .j-text .j-message p,
+.juicer-feed.hip .j-text .j-edit p,
+.juicer-feed.image-grid .j-text .j-message a,
+.juicer-feed.image-grid .j-text .j-edit a,
+.juicer-feed.slider .j-text .j-message a,
+.juicer-feed.slider .j-text .j-edit a,
+.juicer-feed.hip .j-text .j-message a,
+.juicer-feed.hip .j-text .j-edit a {
   color: white;
 }
 </style>
