@@ -5,7 +5,7 @@ exclusive: false
 img: wimbledon.png
 alt: Exercises to serve up tennis excellence
 author: Jamie Spoor
-date: 2022-06-20T08:54:47.955Z
+date: 2022-06-27T08:54:47.955Z
 postDesc: Tennis-styled workouts to serve up excellence ahead of Wimbledon
 ---
 Nothing says the great British summer quite like extortionately priced strawberries, inclement weather, a pint of Pimm's and the distant thwack of tennis balls.
