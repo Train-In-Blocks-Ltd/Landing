@@ -39,13 +39,13 @@ Guest blog posts create numerous opportunities to get referral traffic to your s
 
 People in your gym or fitness studio will likely see your positive relationships and realise that you are a trainer that they can trust.
 
-Building rapport isn't always easy. It all boils down to communication. Working on your ability to communicate and handle vulnerability will be key to developing more intimate relationships with your personal training clients. Great relationships start here.
+Building rapport isn't always easy. It all boils down to communication. Working on your ability to communicate and handle vulnerability will be key to developing more intimate relationships with your personal training clients. Let everyone see your personality come across by writing for this blog. Great relationships start here.
 
-Different clients will have different expectations, no different than having different fitness goals. It's essential that you be mindful of where people are coming from and meet them there.
+Different clients will have different expectations, no different than having different fitness goals. It's essential that you be mindful of where people are coming from and meet them there. By guest posting, you're showing potential clients you have what it takes to be successful in the industry.
 
 ## Use external links of high-authority domains and bloggers to boost Domain Authority
 
-For anyone doing SEO (Search Engine Optimisation), it’s important to know that among the 200 different [ranking factors on Google](https://www.monsterinsights.com/google-ranking-factors/), Domain Authority is one of them. Domain Authority is a ranking metric you can use to predict how well your website will rank on search engines.
+For anyone doing SEO (Search Engine Optimisation), it’s important to know that among the 200 different [ranking factors on Google](https://www.monsterinsights.com/google-ranking-factors/), Domain Authority is one of them. Domain Authority is a ranking metric you can use to predict how well your website will rank on search engines. You can [find out what your own Domain Authoirty is here](https://ahrefs.com/website-authority-checker).
 
 Another way of looking at Domain Authority is that it shows the relevance of your site with respect to your industry or a specific topic. And you can see the strength or authority of your domain in terms of rankings. To improve your Domain Authority and, in turn, your SEO, link externally to high-ranked websites.
 
