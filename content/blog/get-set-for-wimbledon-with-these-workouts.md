@@ -41,7 +41,7 @@ Aim for three sets of 10 pull-ups, and you’ll quickly notice your game strengt
 
 ## Medicine ball throws
 
-The best tennis players maintain their core upper body strength to ensure they can outlast their opponent and keep up with the physical demands of what can sometimes be a four or five-hour match. This workout is designed to help you with those elements of the game.
+The best tennis players maintain their core upper body strength to ensure they can outlast their opponent and keep up with the physical demands of what can sometimes be a four or five-hour match. This training workout is designed to help you with those elements of the game.
 
 ### How to throw
 
@@ -51,13 +51,13 @@ Aim for three sets of five throws per arm.
 
 ## Speed and agility exercises
 
-These workouts will help you to up your game when it comes to explosiveness, footwork, and balance on the tennis court.
+These workouts with Train In Blocks will help you to up your game when it comes to explosiveness, footwork, and balance on the tennis court.
 
 * [HIIT Treadmill training](https://www.coachmag.co.uk/cardio-workouts/6419/how-to-get-hiit-workouts-right-because-they-re-easy-to-get-wrong) will help you work on your cardio
 * Deadlift (four sets of 12)
 * Kettlebells (four sets of 10)
 
-Tennis is one of, if not THE, most energy-sapping and gruelling sports out there. The longest match ever was played over three days with a duration of 11 hours five minutes whilst Rafael Nadal and Novak Djokovic did battle for nearly six hours in 2012's Australian Open final — the longest major final in history.
+Tennis is one of, if not THE, most energy-sapping and gruelling sports out there. The longest match ever was played over three days with a duration of 11 hours five minutes whilst Rafael Nadal and Novak Djokovic showed extraordinary motivation, stamina and fitness for nearly six hours in 2012's Australian Open final — the longest Grand Slam final in history. Djokovic goes into this year's tournament on the grass at SW19 as favourite to win and in doing so would win his seventh Wimbledon title: one behind his great rival, Swiss maestro Roger Federer. 
 
 Endurance is key and so circuit training is ideal: an exercise format which involves between six and ten different types of workout used in quick succession, all focused on upper body, lower body and core conditioning.
 
