@@ -51,7 +51,7 @@ Aim for three sets of five throws per arm.
 
 ## Speed and agility exercises
 
-These workouts with Train In Blocks will help you to up your game when it comes to explosiveness, footwork, and balance on the tennis court.
+These workouts with Train In Blocks will help you to up your game when it comes to explosiveness, footwork, motivation and balance on the tennis court.
 
 * [HIIT Treadmill training](https://www.coachmag.co.uk/cardio-workouts/6419/how-to-get-hiit-workouts-right-because-they-re-easy-to-get-wrong) will help you work on your cardio
 * Deadlift (four sets of 12)
@@ -67,6 +67,6 @@ Circuit training includes exercises such as squats, calf raises, abdominal crunc
 
 Cardio classes are also a good way to increase energy, power, stamina, and lung capacity. There are a number of different, varied cardio classes you can carry out: aerobics, spin cycling and boot camps to name but three.
 
-These 'Wimbledon workouts' will not only help you past the breaking point as a tennis player, but are also 'transferrable' so, as a PT, a client, or a gym instructor they are ideal for anyone in the fitness industry, too.
+These 'Wimbledon workouts' will not only help you past the breaking point as a tennis player, but are also 'transferrable' and that's where Train In Blocks can help you: as a PT, a client, or a gym instructor they are ideal for anyone in the fitness industry, too.
 
 Why should you never date a tennis player? Because love means nothing to them...
