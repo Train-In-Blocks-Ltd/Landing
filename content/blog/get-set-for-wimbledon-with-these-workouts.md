@@ -15,7 +15,7 @@ Yes, it's that time of year again when the world's greatest tennis stars descend
 Wimbledon is one of the four majors (also known as the "Grand Slams"), the third such event of the year and the only one played on grass. These tournaments carry the most prestige in terms of prize money, ranking points, media coverage, strength and size of the field and five sets for the men instead of the usual three.
 
 The very best players have everything you need to be a top tennis star: physical and mental strength, endurance, stamina, agility and athleticism are all integral to the tennis pro's armoury.
-Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, get 'set' for Wimbledon with these tennis-themed exercises to help you feel unbeatable on grass, clay, or hard courts. Ready? Play...
+Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, Train In Blocks can help you get 'set' for Wimbledon with these tennis-themed exercises. Ready? Play...
 
 These exercises [focus on building strength and tenacity on court](https://traininblocks.com/blog/concurrent-training/).
 
