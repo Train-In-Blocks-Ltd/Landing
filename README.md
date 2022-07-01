@@ -8,7 +8,7 @@
 
 ```bash
 # install netlify cli
-$ npm i -g netlify
+$ npm i -g netlify-cli
 
 # Set up netlify
 $ netlify login
