@@ -14,8 +14,9 @@ Yes, it's that time of year again when the world's greatest tennis stars descend
 
 Wimbledon is one of the four majors (also known as the "Grand Slams"), the third such event of the year and the only one played on grass. These tournaments carry the most prestige in terms of prize money, ranking points, media coverage, strength and size of the field and five sets for the men instead of the usual three.
 
-The very best players have everything you need to be a top tennis star: physical and mental strength, endurance, stamina, agility and athleticism are all integral to the tennis pro's armoury.
-Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, get 'set' for Wimbledon with these tennis-themed exercises to help you feel unbeatable on grass, clay, or hard courts. Ready? Play...
+The very best players have everything you need to be a top tennis star: physical and mental strength, endurance, stamina, agility and athleticism are all integral to the tennis pro's armoury. Here at Train In Blocks, we'll equip you with everything you need to smash your healthy lifestyle this summer. 
+
+Whether you’re a tennis newbie inspired to follow in the footsteps of Andy Murray or Emma Raducanu, or a seasoned pro looking to improve your game over the summer, Train In Blocks can help you get 'set' for Wimbledon with these tennis-themed exercises. Ready? Play...
 
 These exercises [focus on building strength and tenacity on court](https://traininblocks.com/blog/concurrent-training/).
 
@@ -25,13 +26,13 @@ Jumping exercises like pogo jumps are great for power and conditioning. They hel
 
 ### How to pogo jump
 
-Jump as high as you can while pushing off from your ankles instead of your hips and knees (keep knee bending to a minimal). Bounce off the ground as quickly as possible with both feet together and stay on the balls of your feet, avoiding your heels touching the ground.  
+Hit the gym to jump as high as you can while pushing off from your ankles instead of your hips and knees (keep knee bending to a minimal). Bounce off the ground as quickly as possible with both feet together and stay on the balls of your feet, avoiding your heels touching the ground.  
 
 Try and master 25 jumps in a row, and repeat the set four times.
 
 ## Weighted chin-ups
 
-Players can use their own body weight to help improve their strength on the tennis court. If you’re new to chin-ups, you can use a resistance band to counter-balance your weight at the beginning of your training. In the weeks and months following, you should slowly work your way up to doing chin-ups without needing any assistance. Once you feel confident, you can introduce using a weighted belt as well.
+Players can use their own body weight to help improve their strength on the tennis court and you too can replicate this one in the gym. If you’re new to chin-ups, you can use a resistance band to counter-balance your weight at the beginning of your training. In the weeks and months following, you should slowly work your way up to doing chin-ups without needing any assistance. Once you feel confident, you can keep your fitness and motivation high by using a weighted belt as well.
 
 ### How to do a chin-up
 
@@ -41,7 +42,7 @@ Aim for three sets of 10 pull-ups, and you’ll quickly notice your game strengt
 
 ## Medicine ball throws
 
-The best tennis players maintain their core upper body strength to ensure they can outlast their opponent and keep up with the physical demands of what can sometimes be a four or five-hour match. This workout is designed to help you with those elements of the game.
+The best tennis players maintain their core upper body strength to ensure they can outlast their opponent and keep up with the physical demands of what can sometimes be a four or five-hour match. This training workout is designed to help you with those elements of the game.
 
 ### How to throw
 
@@ -51,13 +52,13 @@ Aim for three sets of five throws per arm.
 
 ## Speed and agility exercises
 
-These workouts will help you to up your game when it comes to explosiveness, footwork, and balance on the tennis court.
+These workouts with Train In Blocks will help you to up your game when it comes to explosiveness, footwork, motivation and balance on the tennis court.
 
 * [HIIT Treadmill training](https://www.coachmag.co.uk/cardio-workouts/6419/how-to-get-hiit-workouts-right-because-they-re-easy-to-get-wrong) will help you work on your cardio
 * Deadlift (four sets of 12)
 * Kettlebells (four sets of 10)
 
-Tennis is one of, if not THE, most energy-sapping and gruelling sports out there. The longest match ever was played over three days with a duration of 11 hours five minutes whilst Rafael Nadal and Novak Djokovic did battle for nearly six hours in 2012's Australian Open final — the longest major final in history.
+Tennis is one of, if not THE, most energy-sapping and gruelling sports out there. The longest match ever was played over three days with a duration of 11 hours five minutes whilst Rafael Nadal and Novak Djokovic showed extraordinary motivation, stamina and fitness for nearly six hours in 2012's Australian Open final — the longest Grand Slam final in history. Djokovic goes into this year's tournament on the grass at SW19 as favourite to win and in doing so would win his seventh Wimbledon title: one behind his great rival, Swiss maestro Roger Federer. 
 
 Endurance is key and so circuit training is ideal: an exercise format which involves between six and ten different types of workout used in quick succession, all focused on upper body, lower body and core conditioning.
 
@@ -65,8 +66,8 @@ You can sign up for circuit training at your local gym or [even devise something
 
 Circuit training includes exercises such as squats, calf raises, abdominal crunches and push-ups, but this is not inclusive and you can ultimately make them whatever you want them to be.
 
-Cardio classes are also a good way to increase energy, power, stamina, and lung capacity. There are a number of different, varied cardio classes you can carry out: aerobics, spin cycling and boot camps to name but three.
+Cardio classes are also a good way to increase energy, power, stamina, and lung capacity. There are a number of different, varied cardio classes you can do, in the gym, online or at home: aerobics, spin cycling and boot camps to name but three.
 
-These 'Wimbledon workouts' will not only help you past the breaking point as a tennis player, but are also 'transferrable' so, as a PT, a client, or a gym instructor they are ideal for anyone in the fitness industry, too.
+These 'Wimbledon workouts' will not only help you past the breaking point as a tennis player, but are also 'transferrable' and that's where Train In Blocks can help you: as a PT, a client, or a gym instructor they are ideal for anyone in the fitness industry, too. So why not consider signing up to Train In Blocks so we can help you on your fitness journey? 
 
 Why should you never date a tennis player? Because love means nothing to them...
