@@ -20,8 +20,6 @@ Table of contents
 5. [The future? ](<## How about the future, both for the industry and for TIB?>)\
 6. [What have you learned from running Train In Blocks? ](<## What have you learned from running Train In Blocks?>)
 
-
-
 Mikey has been in the sports and fitness industry throughout his life and provided a fascinating insight in his own personal journey and the transition from coach to coder. The man himself takes up the story...
 
 ## Mikey, tell us about your experience in the industry?
@@ -71,8 +69,8 @@ Staying open minded and adapting to the breakneck pace of the fast moving fitnes
 
 ## What have you learned from running Train In Blocks?
 
-"Running a business was part of being a personal trainer because you are self employed.  Train In Blocks is my first company, as I was a sole trader when a PT. Everything was quite new to me when I was starting the business, meeting Joe and basically designing and programming with Joe and everything so that was a lot of learning initially. \
+"Train In Blocks is my first company, as I was a self employed sole trader when a PT. Everything was quite new to me when I was starting the business, meeting Joe and then designing and programming with Joe, so that was a lot of learning initially. \
 "The learning curve was quite steep as well as it was only just the two of us boot-strapping this financially.          We had support from the university and they granted us some money which was great; we did a Dragon’s Den style pitch which was quite fun!
-"It's been wonderful to see how our users have benefited from the app. We’ve had some reviews and comments about how simple it is to use, and how affordable it is compared to our competitors. It’s such a crowded market, you really have to put yourself out there and then in turn people then see you with the clients and get to know your name, get to know you a bit more and be familiar. Then you can pick up more clients and extend your influence. \
-Our ethos is affordable, accessible and functional. We have made the user interface as simple as we can, aimed at reducing a lot of clutter so you know where you want to go from there. What you see is what you get. \
+"It's been wonderful to see how our users have benefited from the app. We’ve had some reviews and comments about how simple it is to use, and how affordable it is compared to our competitors. \
+"Our ethos is affordable, accessible and functional. We have made the user interface as simple as we can, aimed at reducing a lot of clutter so you know where you want to go from there. What you see is what you get. \
 "You have to to market yourself as a personal trainer to sell to people why they should pick you. You have to be the whole package but that’s why it’s such a good learning experience. Even if you’re not a PT for the rest of your life, the skills you get from it are invaluable.”
