@@ -8,7 +8,7 @@ author: Jamie Spoor
 date: 2022-07-02T11:24:30.501Z
 postDesc: We sat down to quiz our esteemed brainchild on all things fitness
 ---
-Hot on the heels of our successful interview with[ personal training expert Sean Wilson](https://traininblocks.com/blog/sean-wilson-personal-trainer-interview/), we sat down with the man who made all this possible: our esteemed Train In Blocks co-founder and former PT Mikey Lau.
+Hot on the heels of our successful interview with[ personal training expert Sean Wilson](https://traininblocks.com/blog/sean-wilson-personal-trainer-interview/), we sat down with the man who made all this possible: our esteemed Train In Blocks [co-founder and former PT Mikey Lau.](https://traininblocks.com/blog/meet-the-tib-team-mikey/)
 We sat down with Mikey over Zoom to discuss pretty much everything under the sun when it comes to fitness: to his experiences in the industry, the idea and inspiration behind TIB, the lasting legacy of the pandemic, the future and just about everything else in between. We would like to thank Mikey for taking time out of his busy schedule to talk to us:
 
 Table of contents
