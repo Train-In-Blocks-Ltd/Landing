@@ -51,7 +51,7 @@ As with every global industry, the fitness world was hit hard by the onset of th
 "Luckily they managed to put some protocols in place and reopen the gyms fairly early on but even the after effects, you could see how initially reluctant people were to go back to the gym and people still wanted to do online. There was a big shift in that and a lot more online personal, not training as such, but presets and templates which really helped people to get back into fitness. \
 "Personal trainers are still very relevant and were during Covid, but the general shift towards online coaching was quite a big move for the industry."
 
-## How can you become a better PT? 
+## How can you become a better PT?
 
 Staying open minded and adapting to the breakneck pace of the fast moving fitness industry are Mikey's two 'golden nuggets' as you work towards constant improvement as a PT. Also consider: 
 
@@ -74,3 +74,7 @@ Staying open minded and adapting to the breakneck pace of the fast moving fitnes
 "It's been wonderful to see how our users have benefited from the app. We’ve had some reviews and comments about how simple it is to use, and how affordable it is compared to our competitors. \
 "Our ethos is affordable, accessible and functional. We have made the user interface as simple as we can, aimed at reducing a lot of clutter so you know where you want to go from there. What you see is what you get. \
 "You have to to market yourself as a personal trainer to sell to people why they should pick you. You have to be the whole package but that’s why it’s such a good learning experience. Even if you’re not a PT for the rest of your life, the skills you get from it are invaluable.”
+
+We would like to thank Mikey for taking the time to talk to us and for all his hard work and efforts in running TIB, keeping us going over the last few months.  
+
+You can sign up to Train In Blocks now through [the website, here:](https://traininblocks.com/)
