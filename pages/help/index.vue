@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import { faqItems } from "../../content/help/faq";
 import PageWrapper from "../../components/generic/PageWrapper";
 import Txt from "../../components/elements/Txt";
 import HelpPost from "~/components/pages/help/HelpPost";
@@ -44,33 +45,7 @@ export default {
   },
   data() {
     return {
-      faqItems: [
-        {
-          title: "How can I setup my profile?",
-          content:
-            "From the navigation bar, select 'Portfolio'. Here you can edit information that your clients can access from their home screen.",
-        },
-        {
-          title: "How do I add a new client?",
-          content:
-            "On the home screen, click on the + icon on the top-right. Fill out the form and submit.",
-        },
-        {
-          title: "How can I create a new template for my sessions?",
-          content:
-            "From the navigation bar, select 'Templates'. Here you can create preset templates that you can re-use.",
-        },
-        {
-          title: "How do I share workouts with my clients?",
-          content:
-            "On your client's profile page, if not already done, please press 'Give Access'. Then your clients will receive and email to access their plans and sessions.",
-        },
-        {
-          title: "How does the app track data?",
-          content:
-            "You surround an exercise protocol or measurement with square brackets. E.g. [Back squat: 3 x 10 at 50/60/70kg] to track 3 sets of increasing load. Find out more by clicking the info icon above the sessions in a client's plan.",
-        },
-      ],
+      faqItems,
     };
   },
   head() {
