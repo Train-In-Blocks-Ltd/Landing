@@ -1,6 +1,6 @@
 ---
-title: Train In Blocks interviews... Mikey Lau
-slug: TIB-interviews-Mikey Lau
+title: "Fitness expert interview: Mikey Lau"
+slug: fitness-expert-interview-Mikey-Lau
 exclusive: false
 img: Mikey?
 alt: Train In Blocks co-founder and coding guru Mikey Lau
@@ -9,18 +9,20 @@ date: 2022-07-02T11:24:30.501Z
 postDesc: We sat down to quiz our esteemed brainchild on all things fitness
 ---
 Hot on the heels of our successful interview with[ personal training expert Sean Wilson](https://traininblocks.com/blog/sean-wilson-personal-trainer-interview/), we sat down with the man who made all this possible: our esteemed Train In Blocks [co-founder and former PT Mikey Lau.](https://traininblocks.com/blog/meet-the-tib-team-mikey/)
-We sat down with Mikey over Zoom to discuss pretty much everything under the sun when it comes to fitness: to his experiences in the industry, the idea and inspiration behind TIB, the lasting legacy of the pandemic, the future and just about everything else in between. We would like to thank Mikey for taking time out of his busy schedule to talk to us:
+Today we spend a few minutes with Mikey Lau. Mikey is a personal trainer and strength coach based in Southampton with over five years experience in the health and fitness industry…
 
-Table of contents
+We would like to thank Mikey for taking time out of his busy schedule to talk to us:
 
-1. [Mikey's experience in the industry](<##  Mikey, tell us about your experience in the industry?>)\
-2. [How exactly does our App work? ](<## So how exactly does our app work?>)\
-3. [How has Covid affected the industry? ](<## How would you say Covid affected the industry?>)\
-4. [How can you become a better PT? ](<## How can you become a better PT?>)\
-5. [The future? ](<## How about the future, both for the industry and for TIB?>)\
+## Table of contents
+
+1. [Mikey's experience in the industry](<##  Mikey, tell us about your experience in the industry?>)
+2. [How exactly does our App work? ](<## So how exactly does our app work?>)
+3. [How has Covid affected the industry? ](<## How would you say Covid affected the industry?>)
+4. [How can you become a better PT? ](<## How can you become a better PT?>)
+5. [The future? ](<## How about the future, both for the industry and for TIB?>)
 6. [What have you learned from running Train In Blocks? ](<## What have you learned from running Train In Blocks?>)
 
-Mikey has been in the sports and fitness industry throughout his life and provided a fascinating insight in his own personal journey and the transition from coach to coder. The man himself takes up the story...
+Mikey has been in the sports and fitness industry throughout his life and provided a fascinating insight into his own personal journey and the transition from coach to coder. The man himself takes up the story...
 
 ## Mikey, tell us about your experience in the fitness industry?
 
@@ -39,8 +41,8 @@ Mikey went on to explain how, from his fledgling early days in a potentially luc
 
 ## So how exactly does the Train In Blocks app work?
 
-Mikey explains: "We organize things in a comprehensive and easy to manage way. Go to the home screen, you’ll see your clients, go into your clients and you’ll see all the different plans associated with that client. There’s a notes section as well so if there’s something specific, for example a consultation, you go into their profile and then make notes on the client information as you go through the consultation.\
- "That gets saved as well and you can see a high level overview of everything on the home screen so that’s quite nice. \
+Mikey explains: "We organize things in a comprehensive and easy to manage way. Go to the home screen, you’ll see your clients, go into your clients and you’ll see all the different plans associated with that client. There’s a notes section as well so if there’s something specific, for example a consultation, you go into their profile and then make notes on the client information as you go through the consultation.
+ "That gets saved as well and you can see a high level overview of everything on the home screen so that’s quite nice. 
 "There’s the option to give your clients access to the workout information so they can give you feedback or change it slightly if they want to. Inside the client profile you have the plans, they used to be called Blocks, hence the name Train In Blocks, but users got a bit confused so we call them plans now. 
  "When you’re closer to  wherever you want to get to, you can switch in to maximum strength training phase to reach a one rep max to increase your overall strength. Then you need to consider de-loads and things like that. All of this requires complex planning so our idea is we want to compartmentalize everything into a single plan, which would essentially encapsulate everything associated with that phase of the process."
 
@@ -49,7 +51,7 @@ As with every global industry, the fitness world was hit hard by the onset of th
 ## How would you say Covid affected the industry?
 
 "Covid affected every industry, especially the fitness one. I felt it a lot myself personally. I was still personal training throughout the pandemic, but moved online like everyone else. I was running classes as well and ended up doing a lot of online coaching like most trainers and most other people. I think there has been quite a positive shift in fitness, I think people saw how important it was to stay fit especially when you couldn’t go to the gym or even just go out. 
-"Luckily they managed to put some protocols in place and reopen the gyms fairly early on but even the after effects, you could see how initially reluctant people were to go back to the gym and people still wanted to do online. There was a big shift in that and a lot more online personal, not training as such, but presets and templates which really helped people to get back into fitness. \
+"Luckily they managed to put some protocols in place and reopen the gyms fairly early on but even the after effects, you could see how initially reluctant people were to go back to the gym and people still wanted to do online. There was a big shift in that and a lot more online personal, not training as such, but presets and templates which really helped people to get back into fitness. 
 "Personal trainers are still very relevant and were during Covid, but the general shift towards online coaching was quite a big move for the industry."
 
 ## How can you become a better Personal Trainer?
@@ -70,12 +72,12 @@ Staying open minded and adapting to the breakneck pace of the fast moving fitnes
 
 ## What have you learned from running Train In Blocks?
 
-"Train In Blocks is my first company, as I was a self employed sole trader when a PT. Everything was quite new to me when I was starting the business, meeting Joe and then designing and programming with Joe, so that was a lot of learning initially. \
-"The learning curve was quite steep as well as it was only just the two of us boot-strapping this financially.          We had support from the university and they granted us some money which was great; we did a Dragon’s Den style pitch which was quite fun!
-"It's been wonderful to see how our users have benefited from the app. We’ve had some reviews and comments about how simple it is to use, and how affordable it is compared to our competitors. \
-"Our ethos is affordable, accessible and functional. We have made the user interface as simple as we can, aimed at reducing a lot of clutter so you know where you want to go from there. What you see is what you get. \
+"Train In Blocks is my first company, as I was a self employed sole trader when a personal trainer. Everything was quite new to me when I was starting the business, meeting Joe and then designing and programming with Joe, so that was a lot of learning initially. 
+"The learning curve was quite steep as well as it was only just the two of us boot-strapping this financially. We had support from the university and they granted us some money which was great; we did a Dragon’s Den style pitch which was quite fun!
+"It's been wonderful to see how our users have benefited from the app. We’ve had some reviews and comments about how simple it is to use, and how affordable it is compared to our competitors. 
+"Our ethos is affordable, accessible and functional. We have made the user interface as simple as we can, aimed at reducing a lot of clutter so you know where you want to go from there. What you see is what you get. 
 "You have to to market yourself as a personal trainer to sell to people why they should pick you. You have to be the whole package but that’s why it’s such a good learning experience. Even if you’re not a PT for the rest of your life, the skills you get from it are invaluable.”
 
 We would like to thank Mikey for taking the time to talk to us and for all his hard work and efforts in running TIB, keeping us going over the last few months.  
 
-You can sign up to Train In Blocks now through [the website, here:](https://traininblocks.com/)
+If anyone needs ANY advice related to strength and fitness, you [can contact Mikey](https://traininblocks.com/), but don't delay, Mikey is in very high demand and only has spaces for a limited number of people.
