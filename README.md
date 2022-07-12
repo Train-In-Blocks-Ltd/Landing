@@ -4,21 +4,25 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2e57bd0c-af95-4ec5-a96d-b008fbdac402/deploy-status)](https://app.netlify.com/sites/train-in-blocks/deploys)
 
-## Build Setup
+## Local Development
 
 ```bash
+# install netlify cli
+$ npm i -g netlify-cli
+
+# Set up netlify
+$ netlify login
+# OR
+$ netlify switch
+
+# Link local repo with netlify site
+$ netlify link
+
 # install dependencies
-$ npm install
+$ yarn install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+# serve at localhost:8888
+$ netlify dev
 ```
 
 ## Blog

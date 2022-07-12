@@ -119,6 +119,11 @@ export default async () => {
           href: "https://traininblocks.com/safari-pinned-tab.svg?v=192",
           color: "#282828",
         },
+        {
+          href:"https://assets.juicer.io/embed.css",
+          media:"all",
+          rel:"stylesheet"
+        },
       ],
       __dangerouslyDisableSanitizers: ["script"],
       script: [
@@ -134,6 +139,14 @@ export default async () => {
         {
           src: "https://js.stripe.com/v3/",
           async: true,
+        },
+        {
+          src: "https://assets.juicer.io/embed.js",
+          body: true,
+        },
+        {
+          innerHtml: "document.querySelector('referral').remove()",
+          body: true,
         },
         {
           innerHTML: `{

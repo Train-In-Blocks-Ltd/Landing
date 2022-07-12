@@ -1,6 +1,4 @@
-const stripe = require("stripe")(
-  "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"
-);
+const stripe = require("stripe")(process.env.STRIPE);
 const headers = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
