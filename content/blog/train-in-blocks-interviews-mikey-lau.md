@@ -6,14 +6,11 @@ img: Mikey?
 alt: Train In Blocks co-founder and coding guru Mikey Lau
 author: Jamie Spoor
 date: 2022-07-02T11:24:30.501Z
-postDesc: We sat down to quiz our esteemed brainchild on all things fitness
+postDesc: We sat down with personal trainer and strength coach Mikey Lau
 ---
-Hot on the heels of our successful interview with[ personal training expert Sean Wilson](https://traininblocks.com/blog/sean-wilson-personal-trainer-interview/), we sat down with the man who made all this possible: our esteemed Train In Blocks [co-founder and former PT Mikey Lau.](https://traininblocks.com/blog/meet-the-tib-team-mikey/)
-Today we spend a few minutes with Mikey Lau. Mikey is a personal trainer and strength coach based in Southampton with over five years experience in the health and fitness industry…
+Hot on the heels of our successful interview with[ personal training expert Sean Wilson](https://traininblocks.com/blog/sean-wilson-personal-trainer-interview/), today we spend a few minutes [with Mikey Lau](https://traininblocks.com/blog/meet-the-tib-team-mikey/). Mikey is a personal trainer and strength coach based in Southampton with over five years experience in the health and fitness industry…
 
-We would like to thank Mikey for taking time out of his busy schedule to talk to us:
-
-## Table of contents
+We would like to thank Mikey for taking time out of his very busy schedule to put his commitments aside and agree to talk to us. 
 
 1. [Mikey's experience in the industry](<##  Mikey, tell us about your experience in the industry?>)
 2. [How exactly does our App work? ](<## So how exactly does our app work?>)
