@@ -30,4 +30,4 @@ It's not obscure or exotic, you don't need to change, anyone can do it, it's a w
 
   If you are looking to incorporate some of these strategies into your training regime, remember it will take time so be patient. 
 
-  As you begin trying these mindfulness techniques or strategies, consider checking in with your clients on what the experience was like for them. This will provide essential feedback that can help continue to fine-tune the art of using mindfulness in a coaching setting.
+  As you begin trying these mindfulness techniques or strategies, consider checking in with your clients on what the experience was like for them. This will provide essential feedback that can help continue to fine-tune the art of using mindfulness in a coaching setting and will also give you a [strong marketing USP. ](https://traininblocks.com/blog/improve-your-skillset-as-a-pt/)
