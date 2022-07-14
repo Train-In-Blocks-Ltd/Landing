@@ -21,7 +21,8 @@
   @apply rounded-lg;
 }
 .juicer-feed h1.referral,
-.juicer-feed li.feed-item:nth-of-type(n + 2) {
+.juicer-feed li.feed-item:nth-of-type(n + 2),
+.juicer-button {
   display: none !important;
 }
 .juicer-feed.image-grid .j-text .j-message p,
