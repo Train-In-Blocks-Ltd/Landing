@@ -1,4 +1,27 @@
-export const faqItems = [
+export const faqItemsGeneral = [
+  {
+    title: "How do I reset my password?",
+    content:
+      "You can do so from 2 places, the login and the account page. If you're not logged in, simply click on 'Reset Password' and wait for the email to create a new password. If you're logged in, simply head into 'Account' from the sidebar. Then click on 'Change Password'. You need to enter your current password and also create a new one.",
+  },
+  {
+    title: "Can I toggle light and dark theme?",
+    content:
+      "Yes you can, go into your 'Account' from the sidebar. Then, under 'Theme' click on the dropdown to choose the setting you want.",
+  },
+  {
+    title: "How do I import my bookings into my calendar?",
+    content:
+      "Head into your 'Account' from the menu. Then, under 'Calendar' select the option/instruction that is relevant to you. You can download the ICS file and/or subscribe to the calendar for your bookings.",
+  },
+  {
+    title: "How do I opt-out of non-essential cookies?",
+    content:
+      "In your 'Account' and at the bottom, there's a checkbox for analytics. Untick this to opt-out.",
+  },
+];
+
+export const faqItemsTrainer = [
   {
     title: "How can I setup my profile?",
     content:
@@ -120,28 +143,36 @@ export const faqItems = [
       "On the sidebar, click on 'Account'. Then, press the 'Manage your subscription' button. You will be directed to the subscription portal. You can now cancel, upgrade, downgrade, or edit your details on your plan.",
   },
   {
-    title: "How do I reset my password?",
-    content:
-      "You can do so from 2 places, the login and the account page. If you're not logged in, simply click on 'Reset Password' and wait for the email to create a new password. If you're logged in, simply head into 'Account' from the sidebar. Then click on 'Change Password'. You need to enter your current password and also create a new one.",
-  },
-  {
-    title: "Can I toggle light and dark theme?",
-    content:
-      "Yes you can, go into your 'Account' from the sidebar. Then, under 'Theme' click on the dropdown to choose the setting you want.",
-  },
-  {
     title: "How do I share my referral code and get discounts?",
     content:
       "In 'Accounts' accessed from the sidebar, you can find or generate your referral code under the 'Referral' section. Make sure your friends copy and use this code under the 'Promo Code' input on the checkout.",
   },
+];
+
+export const faqItemsClient = [
   {
-    title: "How do I import my bookings into myt calendar?",
+    title: "How do I see my PT's profile?",
     content:
-      "Head into your 'Account' from the menu. Then, under 'Calendar' select the option/instruction that is relevant to you. You can download the ICS file and/or subscribe to the calendar for your bookings.",
+      "On the top of the home page, you'll find the PT information icon button. Click on this to see details about your trainer.",
   },
   {
-    title: "How do I opt-out of non-essential cookies?",
+    title: "How do I edit my profile?",
     content:
-      "In your 'Account' and at the bottom, there's a checkbox for analytics. Untick this to opt-out.",
+      "On the top of the home page, you'll find the profile icon button. Click on this to see details about your account and bookings.",
+  },
+  {
+    title: "How do I manage my booking?",
+    content:
+      "On the top of the home page, you'll find the profile icon button. Open your profile and under 'Bookings', you can request for a session and leave some notes for your trainer. Here you can also cancel any upcoming sessions and your trainer will be notified.",
+  },
+  {
+    title: "How can I access my sessions and plans?",
+    content:
+      "Any sessions that are due on the day will show one the home page. Otherwise, you can see all your plans at the bottom of the home page. Clicking on 'View' will take you to the plan where you can see all its sessions and information. You can also leave feedback on each session for your trainer.",
+  },
+  {
+    title: "What should I do when I've completed a session?",
+    content:
+      "Simply click on the 'Complete' button on the session. You can leave feedback for your trainer too.",
   },
 ];

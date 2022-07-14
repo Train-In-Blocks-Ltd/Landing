@@ -4,7 +4,7 @@
       class="flex justify-between items-center cursor-pointer hover:opacity-60 transition"
       @click="show = !show"
     >
-      <txt type="large-body" bold>
+      <txt type="large-body">
         {{ item.title }}
       </txt>
       <span
