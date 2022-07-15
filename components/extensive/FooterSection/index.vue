@@ -7,18 +7,6 @@
 
 <template>
   <footer class="grid gap-4 border-t-3 border-slate dark:border-white py-12">
-    <CookieControl>
-      <template #bar>
-        <txt type="tiny">
-          We use cookies and other tracking technologies to improve your
-          browsing experience on our site, analyze site traffic, and understand
-          where our audience is coming from. To find out more, please read our
-          <nuxt-link to="/legal/cookies-policy/">
-            <txt type="tiny" bold>Cookies Policy</txt>.
-          </nuxt-link>
-        </txt>
-      </template>
-    </CookieControl>
     <div class="flex flex-wrap items-center gap-4">
       <a
         target="_blank"

@@ -119,7 +119,7 @@ div.cookieControl__Bar p {
 
 /* Cookie button */
 .cookieControl__ControlButton {
-  @apply bottom-8 bg-slate dark:bg-white hover:opacity-60 transition-opacity;
+  @apply bottom-8 bg-slate dark:bg-white hover:opacity-60 focus:opacity-60 transition-opacity;
 }
 .cookieControl__ControlButton svg > path:not(.transparent) {
   @apply fill-white dark:fill-slate;
@@ -190,19 +190,31 @@ div.cookieControl__ModalContent label:before {
 
 <template>
   <div id="app" class="px-4 md:px-8">
-    <nav-menu />
+    <nav-menu :openNav="openNav" />
     <nav-bar />
-    <nuxt class="fadeIn mb-16" />
     <div @click="openNav = false">
       <nuxt-link
         v-if="$route.name !== 'help'"
         style="z-index: 99"
-        class="fixed right-20 bottom-8 px-6 py-2 rounded-full bg-slate dark:bg-white text-white dark:text-slate font-bold hover:opacity-60 transition-opacity"
+        class="fixed right-20 bottom-8 px-6 py-2 rounded-full bg-slate dark:bg-white text-white dark:text-slate font-bold hover:opacity-60 focus:opacity-60 transition-opacity"
         to="/help/"
       >
         <txt>I need help</txt>
       </nuxt-link>
     </div>
+    <CookieControl>
+      <template #bar>
+        <txt type="tiny">
+          We use cookies and other tracking technologies to improve your
+          browsing experience on our site, analyze site traffic, and understand
+          where our audience is coming from. To find out more, please read our
+          <nuxt-link to="/legal/cookies-policy/">
+            <txt type="tiny" bold>Cookies Policy</txt>.
+          </nuxt-link>
+        </txt>
+      </template>
+    </CookieControl>
+    <nuxt class="fadeIn mb-16" />
     <footer-section />
 
     <!-- Pop up intent -->
@@ -217,9 +229,10 @@ div.cookieControl__ModalContent label:before {
         <div
           class="relative top-20 mx-auto p-8 rounded-md bg-paper dark:bg-slate"
         >
-          <span
+          <a
             class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all rounded-none"
-            @click="exitIntent = false"
+            href="#"
+            @click.prevent="exitIntent = false"
             v-html="require('../assets/svg/close.svg?include')"
           />
           <div class="text-center">
@@ -306,6 +319,36 @@ export default {
         document.removeEventListener("mouseout", mouseEvent);
         // Show the popup
         this.exitIntent = true;
+        setTimeout(() => {
+          // add all the elements inside modal which you want to make focusable
+          const  focusableElements =
+              'button:not(:disabled), [href], input:not(:disabled), select, textarea, [tabindex]:not([tabindex="-1"])';
+          const popup = this.$el.querySelector('#exit-modal'); // select the navigation
+
+          const firstFocusableElement = popup.querySelectorAll(focusableElements)[0]; // get first element to be focused inside modal
+          const focusableContent = popup.querySelectorAll(focusableElements);
+          const lastFocusableElement = focusableContent[focusableContent.length - 1]; // get last element to be focused inside modal
+
+          document.addEventListener('keydown', function(e) {
+            const isTabPressed = e.key === 'Tab' || e.keyCode === 9;
+
+            if (!isTabPressed) {
+              return;
+            }
+
+            if (e.shiftKey) { // if shift key pressed for shift + tab combination
+              if (document.activeElement === firstFocusableElement) {
+                lastFocusableElement.focus(); // add focus for the last focusable element
+                e.preventDefault();
+              }
+            } else if (document.activeElement === lastFocusableElement) { // if focused has reached to last focusable element then focus first focusable element after pressing tab
+              firstFocusableElement.focus(); // add focus for the first focusable element
+              e.preventDefault();
+            }
+          });
+
+          lastFocusableElement.focus();
+        }, 200);
 
         // Set the cookie when the popup is shown to the user - so we don't show the popup again for 30 days
         this.setCookie("exitIntentShown", true, 30);

@@ -1,10 +1,6 @@
 <template>
-  <a :href="link" :target="newTab && '_blank'" rel="noreferrer">
-    <div
-      :class="`inline-block font-bold text-white dark:text-slate px-6 py-3 bg-slate dark:bg-white rounded hover:opacity-60 transition-all w-fit ${buttonClass}`"
-    >
-      <slot />
-    </div>
+  <a :href="link" :target="newTab && '_blank'" rel="noreferrer" :class="`link-button inline-block font-bold text-white dark:text-slate px-6 py-3 bg-slate dark:bg-white rounded hover:opacity-60 focus:opacity-60 active:scale-95 transition-all w-fit ${buttonClass}`">
+    <slot />
   </a>
 </template>
 
@@ -15,8 +11,14 @@ export default {
       type: String,
       default: "",
     },
-    newTab: Boolean,
-    buttonClass: String,
+    newTab: {
+      type: Boolean,
+      default: true,
+    },
+    buttonClass: {
+      type: String,
+      default: "",
+    },
   },
 };
 </script>

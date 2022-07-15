@@ -24,15 +24,14 @@
         :to="`/compare/${compare.slug}/`"
         class="sm:flex sm:justify-between fadeHidden group"
         :style="`--delay: ${0.15 * index}s`"
-      >
         <txt
           type="subtitle"
-          class="w-fit group-hover:opacity-60 transition-opacity"
+          class="w-fit group-hover:opacity-60 group-focus:opacity-60 transition-opacity"
         >
           {{ compare.name }}
         </txt>
         <div
-          class="flex items-baseline group-hover:opacity-60 transition-opacity text-graphite"
+          class="flex items-baseline group-hover:opacity-6 group-focus:opacity-600 transition-opacity text-graphite"
         >
           <txt type="subtitle">{{ compare.price }}</txt>
           <txt class="ml-2 font-bold">/ month</txt>
