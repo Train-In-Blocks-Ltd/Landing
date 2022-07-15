@@ -12,6 +12,11 @@
         <txt class="mt-4 font-bold">- {{ testimonial.name }}</txt>
       </blockquote>
     </div>
+    <a href="https://www.google.com/search?q=train+in+blocks&rlz=1C1CHBF_en-GBGB905GB905&oq=train+in+blocks&aqs=chrome.0.69i59j0i22i30l4j69i60l3.1597j0j4&sourceid=chrome&ie=UTF-8#lrd=0x85707bcd5d725553:0x70727b241b22da4e,1,,," target="_blank" class="hover:opacity-60 focus:opacity-60 transition-all w-fit mt-8 block ml-auto mr-auto">
+      <txt type="large-body" bold class="text-center">
+        Check out more reviews on Google
+      </txt>
+    </a>
   </div>
 </template>
 

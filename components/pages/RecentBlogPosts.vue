@@ -36,7 +36,7 @@
         <div class="flex justify-between mt-auto">
           <nuxt-link
             :to="`/blog/${blogPost.slug}/`"
-            class="flex mt-auto items-center hover:opacity-60 transition-all"
+            class="flex mt-auto items-center hover:opacity-60 focus:opacity-60 transition-all"
           >
             <txt class="mr-4" bold> Continue reading </txt>
             <span
@@ -48,8 +48,8 @@
         </div>
       </div>
     </div>
-    <nuxt-link to="/blog/">
-      <txt type="large-body" class="hover:opacity-60 transition-all w-fit" bold>
+    <nuxt-link to="/blog/" class="hover:opacity-60 focus:opacity-60 transition-all w-fit">
+      <txt type="large-body" bold class="w-fit">
         See all blog posts
       </txt>
     </nuxt-link>
