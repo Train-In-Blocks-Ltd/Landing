@@ -24,6 +24,7 @@
         :to="`/compare/${compare.slug}/`"
         class="sm:flex sm:justify-between fadeHidden group"
         :style="`--delay: ${0.15 * index}s`"
+      >
         <txt
           type="subtitle"
           class="w-fit group-hover:opacity-60 group-focus:opacity-60 transition-opacity"

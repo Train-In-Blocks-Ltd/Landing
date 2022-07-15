@@ -120,9 +120,9 @@ export default async () => {
           color: "#282828",
         },
         {
-          href:"https://assets.juicer.io/embed.css",
-          media:"all",
-          rel:"stylesheet"
+          href: "https://assets.juicer.io/embed.css",
+          media: "all",
+          rel: "stylesheet",
         },
       ],
       __dangerouslyDisableSanitizers: ["script"],
