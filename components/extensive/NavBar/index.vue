@@ -37,9 +37,10 @@
       class="menu-container flex bg-white dark:bg-slate p-4 rounded-lg shadow-lg items-center pointer-events-auto"
     >
       <darkmode-toggle />
-      <span
+      <a
         class="cursor-pointer hover:opacity-60 transition-all rounded-none"
-        @click="$parent.openNav = true"
+        href="#"
+        @click.prevent="$parent.openNav = true"
         v-html="require('../../../assets/svg/hamburger.svg?include')"
       />
     </div>

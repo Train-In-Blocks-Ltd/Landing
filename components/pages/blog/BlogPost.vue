@@ -1,6 +1,6 @@
 <template>
   <div class="mb-8 sm:mb-0 sm:flex">
-    <nuxt-link :to="`/${postType}/${post.slug}/`">
+    <nuxt-link :to="`/${postType}/${post.slug}/`" tabindex="-1">
       <img
         v-if="post.img"
         height="auto"
@@ -18,7 +18,7 @@
       class="flex flex-col w-full"
       :class="{ 'sm:w-2/3 max-w-4xl mt-8 sm:mt-0 sm:ml-8 ': post.img }"
     >
-      <nuxt-link :to="`/${postType}/${post.slug}/`">
+      <nuxt-link :to="`/${postType}/${post.slug}/`" tabindex="-1">
         <txt type="subtitle" class="hover:opacity-60 transition-all">
           {{ post.title }}
         </txt>

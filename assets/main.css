@@ -13,9 +13,6 @@
 }
 
 @layer utilities {
-  body *:not(input):focus {
-    @apply outline-none rounded-lg opacity-60 bg-beauBlue;
-  }
   .benefit-icon svg {
     @apply h-16 mx-auto;
   }

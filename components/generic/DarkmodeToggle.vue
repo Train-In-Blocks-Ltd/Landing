@@ -25,11 +25,14 @@
   content: "";
   @apply absolute h-5 w-5 left-1 bottom-1 bg-white dark:bg-slate rounded-full transition-all;
 }
+input:focus + .slider::before {
+  @apply opacity-60;
+}
 input:checked + .slider {
   background-color: var(--base_dark);
   @apply bg-slate dark:bg-white;
 }
-input:checked + .slider:before {
+input:checked + .slider::before {
   @apply translate-x-5;
 }
 </style>

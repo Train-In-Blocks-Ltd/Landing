@@ -15,10 +15,10 @@
         :key="`compare_${index}`"
         v-infocus="'showElement'"
         :to="`/compare/${compare.slug}/`"
-        class="w-fit fadeHidden"
+        class="w-fit fadeHidden hover:opacity-60 focus:opacity-60 active:scale-95 transition-all"
         :style="`--delay: ${0.15 * index}s`"
       >
-        <txt type="subtitle" class="w-fit hover:opacity-60 transition-all">
+        <txt type="subtitle" class="w-fit">
           {{ compare.name }}
         </txt>
       </nuxt-link>

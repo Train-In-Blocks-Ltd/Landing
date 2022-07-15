@@ -11,7 +11,7 @@
         class="flex flex-col pr-4 fadeHidden"
         :style="`--delay: ${0.25 * index}s`"
       >
-        <nuxt-link :to="`/blog/${blogPost.slug}/`">
+        <nuxt-link :to="`/blog/${blogPost.slug}/`" tabindex="-1">
           <img
             height="auto"
             width="auto"
@@ -49,7 +49,7 @@
       </div>
     </div>
     <nuxt-link to="/blog/">
-      <txt type="large-body" class="hover:opacity-60 transition-all" bold>
+      <txt type="large-body" class="hover:opacity-60 transition-all w-fit" bold>
         See all blog posts
       </txt>
     </nuxt-link>
