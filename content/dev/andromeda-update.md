@@ -20,7 +20,7 @@ You can now obtain a link to view current bookings using your calendar of choice
 
 ## Referral Discounts
 
-We like to reward your loyalty. Get others on-board and we will give you a permanent discount on your subscription. The trainer you refer will also recieve a discount as an incentive.
+We like to reward your loyalty. Get others on-board and we will give you a permanent discount on your subscription. The trainer you refer will also receive a discount as an incentive.
 
 ## Stats Table
 

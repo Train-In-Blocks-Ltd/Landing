@@ -226,7 +226,7 @@ export default {
         },
         {
           id: "client-user",
-          desc: "Give access to your clients and recieve feedback",
+          desc: "Give access to your clients and receive feedback",
         },
         {
           id: "stats",
