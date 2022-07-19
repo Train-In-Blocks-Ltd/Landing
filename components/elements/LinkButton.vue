@@ -1,7 +1,6 @@
 <template>
   <a
     :href="link"
-    :target="newTab && '_blank'"
     rel="noreferrer"
     :class="`link-button inline-block font-bold text-white dark:text-slate px-6 py-3 bg-slate dark:bg-white rounded hover:opacity-60 focus:opacity-60 active:scale-95 transition-all w-fit ${buttonClass}`"
   >

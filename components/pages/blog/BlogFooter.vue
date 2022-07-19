@@ -3,7 +3,7 @@
     <txt type="large-body" class="mb-4" bold
       >Let's save you time and money so you can focus on what matters!</txt
     >
-    <link-button link="/#yearly" :button-class="'mt-4'" newTab="false"
+    <link-button link="/#yearly" :button-class="'mt-4'"
       >Sign up for our 14 day free trial</link-button
     >
   </card-wrapper>
