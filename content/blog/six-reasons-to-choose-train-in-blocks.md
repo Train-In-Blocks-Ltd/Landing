@@ -30,7 +30,7 @@ This three-tier pricing plan is difficult to get to grips with and it's unclear 
 
 ## TrueCoach
 
-It's not immediately obvious how TrueCoach works, and you then discover they again, like PT Distinction, have a three-tier pricing structure with a limit on the number of clients. They appear very similar to their aforementioned competitors in that they charge £18 for the Starter Plan (only five clients), £40 a month for their most popular Standard Plan (20 active clients) and an eye-popping £74 at their highest 'Pro' plan (50 clients) but each plan appears to be the same apart from the pricing tiers — it's not clear exactly what you get for your money. This makes things confusing and lacks clarity for clients, it doesn't explain what you can expect and is very vague. When you go on to TIB site, we clearly explain who we are, what we do and [how we can help you. ](https://traininblocks.com/)
+It's not immediately [obvious how TrueCoach ](https://truecoach.co/)works, and you then discover they again, like PT Distinction, have a three-tier pricing structure with a limit on the number of clients. They appear very similar to their aforementioned competitors in that they charge £18 for the Starter Plan (only five clients), £40 a month for their most popular Standard Plan (20 active clients) and an eye-popping £74 at their highest 'Pro' plan (50 clients) but each plan appears to be the same apart from the pricing tiers — it's not clear exactly what you get for your money. This makes things confusing and lacks clarity for clients, it doesn't explain what you can expect and is very vague. When you go on to TIB site, we clearly explain who we are, what we do and [how we can help you. ](https://traininblocks.com/)
 
 ## PT Minder
 
@@ -46,3 +46,5 @@ It's not immediately obvious how TrueCoach works, and you then discover they aga
 * Not clear what the benefits are 
 * Crazy pricing for something which is unclear
 * Rigid structure and no free-form training
+
+With all this in mind, it is clear Train In Blocks should be your go-to software when it comes to your fitness needs, with everything under one roof and a single layer of pricing. [So join us today ](https://traininblocks.com/)and get started on your journey towards those goals. You certainly won't regret it.
