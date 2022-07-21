@@ -3,7 +3,7 @@
     <div class="grid gap-12 lg:grid-cols-2">
       <div>
         <!-- General -->
-        <txt type="title" is-main class="lg:mb-8">General FAQs</txt>
+        <txt type="title" class="lg:mb-8">General FAQs</txt>
         <div class="grid gap-8">
           <help-post
             v-for="item in faqItemsGeneral"
@@ -13,7 +13,7 @@
         </div>
 
         <!-- Trainer -->
-        <txt type="title" is-main class="mt-12 mb-8">Trainer FAQs</txt>
+        <txt type="title" class="mt-12 mb-8">Trainer FAQs</txt>
         <div class="grid gap-8">
           <help-post
             v-for="item in faqItemsTrainer"
@@ -23,7 +23,7 @@
         </div>
 
         <!-- Client -->
-        <txt type="title" is-main class="mt-12 mb-8">Client FAQs</txt>
+        <txt type="title" class="mt-12 mb-8">Client FAQs</txt>
         <div class="grid gap-8">
           <help-post
             v-for="item in faqItemsClient"
