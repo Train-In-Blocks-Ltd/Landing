@@ -8,9 +8,14 @@
         A personal training software to fuel your growth and build deeper
         relationships with your clients.
       </txt>
-      <link-button link="#pricing"
-        >Sign up for our 14 day free trial</link-button
-      >
+      <div class="w-fit inline-block">
+        <link-button link="#pricing"
+          >Sign up for our 14 day free trial</link-button
+        >
+        <txt type="tiny" class="mt-2 text-center">
+          Cancel Anytime
+        </txt>
+      </div>
     </div>
     <img
       height="auto"

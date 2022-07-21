@@ -2,6 +2,13 @@
 .juicer-feed {
   margin-top: 1rem !important;
 }
+.juicer-feed img {
+  height: 100%!important;
+  object-fit: cover;
+}
+.juicer-feed .j-image {
+  height: 100%;
+}
 .j-overlay-content .j-meta {
   @apply hidden;
 }
@@ -38,6 +45,9 @@
 .juicer-feed.hip .j-text .j-message a,
 .juicer-feed.hip .j-text .j-edit a {
   color: white;
+}
+.juicer-feed .j-message {
+  overflow-y: auto!important
 }
 </style>
 
