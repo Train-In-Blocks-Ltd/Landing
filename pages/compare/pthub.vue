@@ -50,6 +50,11 @@ export default {
           content:
             "Train In Blocks vs PTHub. See how these Personal Trainer software products stack up against each other with product feature comparisons.",
         },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: "https://traininblocks.com/compare/pthub/",
+        },
       ],
       link: [
         {

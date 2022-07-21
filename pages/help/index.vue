@@ -96,6 +96,11 @@ export default {
           content:
             "Need help with something? We are happy to help with anything.",
         },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: "https://traininblocks.com/help/",
+        },
       ],
       link: [
         {

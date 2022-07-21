@@ -83,7 +83,11 @@ export default async () => {
           property: "og:image",
           content: "https://traininblocks.com/Social-Share-Image.jpg",
         },
-        { property: "og:url", content: "https://traininblocks.com" },
+        {
+          hid: "og:url",
+          property: "og:url",
+          content: "https://traininblocks.com"
+        },
       ],
       link: [
         {

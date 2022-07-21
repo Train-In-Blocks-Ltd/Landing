@@ -61,6 +61,11 @@ export default {
           name: "twitter:description",
           content: "Index of comparisons for Train In Blocks",
         },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: "https://traininblocks.com/compare/",
+        },
       ],
       link: [
         {

@@ -32,6 +32,11 @@ export default {
         { hid: "og:title", name: "og:title", content: "Cancelled" },
         { hid: "twitter:title", name: "twitter:title", content: "Cancelled" },
         { hid: "robots", name: "robots", content: "noindex" },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: "https://traininblocks.com/cancelled/",
+        },
       ],
       link: [
         {

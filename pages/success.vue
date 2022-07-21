@@ -38,6 +38,11 @@ export default {
         { hid: "robots", name: "robots", content: "noindex" },
         { hid: "og:title", name: "og:title", content: "Success" },
         { hid: "twitter:title", name: "twitter:title", content: "Success" },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: "https://traininblocks.com/success/",
+        },
       ],
       link: [
         {

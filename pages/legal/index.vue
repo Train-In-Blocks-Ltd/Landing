@@ -45,6 +45,11 @@ export default {
           name: "twitter:description",
           content: "Index of legal documents for Train In Blocks",
         },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: "https://traininblocks.com/legal/",
+        },
       ],
       link: [
         {

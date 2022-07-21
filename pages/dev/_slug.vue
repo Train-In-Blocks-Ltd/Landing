@@ -70,6 +70,11 @@ export default {
             ? require(`../../assets/media-uploads/${this.post.img}?resize&size=600&format=webp`)
             : "https://traininblocks.com/android-chrome-512x512.png?v=192",
         },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: `https://traininblocks.com/dev/${this.$route.params.slug}/`,
+        },
       ],
       link: [
         {

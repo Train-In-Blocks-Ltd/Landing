@@ -41,6 +41,11 @@ export default {
           name: "twitter:description",
           content: this.post.postDesc,
         },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: `https://traininblocks.com/help/${this.$route.params.slug}/`,
+        },
       ],
       link: [
         {

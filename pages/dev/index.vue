@@ -62,6 +62,11 @@ export default {
           content:
             "We are extremely active and always developing the most elegant solution for you. Follow our journey here.",
         },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: "https://traininblocks.com/dev/",
+        },
       ],
       link: [
         {

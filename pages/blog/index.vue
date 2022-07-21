@@ -66,6 +66,11 @@ export default {
           content:
             "Use our high-quality content to improve your knowledge in all-things health, fitness and wellbeing related.",
         },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: "https://traininblocks.com/blog/",
+        },
       ],
       link: [
         {
