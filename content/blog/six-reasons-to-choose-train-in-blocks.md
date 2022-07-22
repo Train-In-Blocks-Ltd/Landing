@@ -1,13 +1,18 @@
 ---
-title: Six reasons to choose Train In Blocks
-slug: six-reasons-to-choose-train-in-blocks
+title: How to Choose the best personal training software
+slug: how-to-choose-train-in-blocks
 exclusive: false
 img: why-choose-train-in-blocks.jpg
 alt: Here is how we match up to our rivals in a competitive field
 author: Jamie Spoor
 date: 2022-07-18T13:16:42.741Z
-postDesc: "Let's take a look at how and why Train In Blocks top them all in a crowded market "
+postDesc: "Let's take a look at how and why Train In Blocks top them all in a
+  crowded market "
 ---
+It's no secret the world of fitness and personal training is a [crowded, chaotic and very competitive one](https://traininblocks.com/blog/improve-your-skillset-as-a-pt/). You don't need us to tell you that. So how can we stand out: what makes Train In Blocks unique in an oversaturated market. In order to stay relevant and gain a competitive advantage in today’s fitness industry, it’s essential to evolve as times change.
+
+So let's take a look at some of the other major players in the game and how Train In Blocks can help you to stay in shape whilst not burning a hole in your wallet.
+
 It's no secret the world of fitness and personal training is a [crowded, chaotic and very competitive one](https://traininblocks.com/blog/improve-your-skillset-as-a-pt/). You don't need us to tell you that. So how can we stand out: what makes Train In Blocks unique in an oversaturated market. In order to stay relevant and gain a competitive advantage in today’s fitness industry, it’s essential to evolve as times change.
 
 So let's take a look at some of the other major players in the game and how Train In Blocks can help you to stay in shape whilst not burning a hole in your wallet.
@@ -16,13 +21,30 @@ So let's take a look at some of the other major players in the game and how Trai
 
 ### [My PT Hub](/compare/pthub/)
 
-The first thing to note is how accessible and easy to use we are in comparison to almost everyone else. Many other fitness or training-based web apps become clouded through complicated pricing and a difficult to follow structure. With Train In Blocks, you can gain instant access, our joining fee is one-size fits all and you get a 14-day free trial which you can cancel at any time. During these first 14 days, you get to try out Train In Blocks and see how it can save you time and become an invaluable partner whilst you're training. To get an an instant idea of what we do just check out our [home page](/).
+My PT Hub is a comprehensive 'training centre' for both personal trainers and clients with everything in one place. On the right hand side of the dashboard you can see eight different options for clients. These include: creating a workout, messaging your coach, creating your own training package and adding nutrition plans. On the left hand side is space for personal trainers with a comprehensive drop-down menu of tutorials and YouTube videos with everything from how to keep clients motivated to making money from your subscription. This is a good idea as it enables you to send these features on to the clients and provides a visual aid for those who prefer information in this way and doesn't blind you with science. \
+You also have the option of being able to earn up to £40 simply by signing up and referring to a friend and there is a 30-day free trial for anyone to try. My PTHub is quite pricey with a £49 monthly fee for their basic plan and £42 a month annually, with unlimited clients and it's not immediately clear how to access all the elements you will need. The structure seems a little confusing on first viewing. \
+Train In Blocks will offer a far cheaper pricing structure with no restrictions or number of clients per plan, 
 
-The benefits of joining us are simply undeniable: easy to use, cancel any time with ease and pay only £9.99/month at one simple price tier, compared to nearly five times that over at [My PT Hub](https://www.mypthub.net/). Train In Blocks was deliberately designed for you, the client, in mind. We bring simplicity to your routine — in short, what you see is what you get. On first viewing, the My PT Hub site appears a little cluttered and their steep pricing, £49 a month, instantly catches the eye.
 
-When creating a workout, our features are relevant and are all brought together in one place with the option for client self-input, but my PT Hub do not offer this, indeed, it seems unclear how their structure works.
 
-One review of us said: *"Really easy to use and does exactly what you need as a fitness coach to provide plans to clients! Can organise sessions well and make your own templates so can do your own description on the exercises which is really good."*
+Not only are [PT Distinction](https://www.ptdistinction.com/) more expensive than us, even at their most basic level, with their cheapest plan at $19.90 a month (roughly akin to £15 in our money) but they have also made life difficult for those wishing to join as only a certain number of clients can sign up to their three-step structure at any one time (three clients for the cheapest tier, 25 for the most popular 'Pro' tier and a maximum of 50 for their 'Master' tier.
+
+This three-tier pricing plan is difficult to get to grips with and it's unclear exactly what you get at each level. Train In Blocks are one of the only fitness companies to offer one price at £9.99 a month for all of the features.
+
+### [TrueCoach](/compare/truecoach/)
+
+It's not immediately [obvious how TrueCoach](https://truecoach.co/) works, and you then discover they again, like PT Distinction, have a three-tier pricing structure with a limit on the number of clients. They appear very similar to their aforementioned competitors in that they charge £18 for the Starter Plan (only five clients), £40 a month for their most popular Standard Plan (20 active clients) and an eye-popping £74 at their highest 'Pro' plan (50 clients) but each plan appears to be the same apart from the pricing tiers.
+
+### [PT Minder](/compare/ptminder/)
+
+* Five different pricing bands ranging from £26 to £107
+* Clearly laid out into section showing upcoming plans, past data, reminders and financial details (allowing you to keep track of payments etc) 
+* Comprehensive list of workouts with video tutorial 
+
+### [Trainerize](/compare/trainerize/)
+
+Trainerize matches you to clients based on their needs and your skillsets as a Personal Trainer, with ten different buttons on the app. It's very 'corporate' in appearance and seems geared towards businesses, it lacks the comprehensive programme-building capabilities of others but a nice feature is, when you first sign up, it adds a fully-populated trainer to your account to give you a feel of what to expect without having to go through the process of registering with them. \
+It also gives you the option of connecting your Trainerize account with Apple Pay, Fitbit and MyFitness Pal and an example of what a typical workout looks like. You can see what a trainer's account would look like, but from a client's point of view which is a neat aspect of the app. Some of the options on the Trainerize home page are a little vague and there's a limit on clients with only a maximum of two at their cheapest price structure, £12 a month. This limits your flexibility rather than being able to reach out to a much bigger pool of clients and, although there is an option to have an account without limits, it will cost you an eye watering £300 so price is the main drawback here. 
 
 ### [PT Distinction](/compare/ptdistinction/)
 
