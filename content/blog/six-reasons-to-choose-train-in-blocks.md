@@ -23,7 +23,7 @@ So let's take a look at some of the other major players in the game and how Trai
 
 My PT Hub is a comprehensive 'training centre' for both personal trainers and clients with everything in one place. On the right hand side of the dashboard you can see eight different options for clients. These include: creating a workout, messaging your coach, creating your own training package and adding nutrition plans. On the left hand side is space for personal trainers with a comprehensive drop-down menu of tutorials and YouTube videos with everything from how to keep clients motivated to making money from your subscription. This is a good idea as it enables you to send these features on to the clients and provides a visual aid for those who prefer information in this way and doesn't blind you with science. \
 You also have the option of being able to earn up to £40 simply by signing up and referring to a friend and there is a 30-day free trial for anyone to try. My PTHub is quite pricey with a £49 monthly fee for their basic plan and £42 a month annually, with unlimited clients and it's not immediately clear how to access all the elements you will need. The structure seems a little confusing on first viewing. \
-Train In Blocks will offer a far cheaper pricing structure with no restrictions or number of clients per plan, 
+Train In Blocks will offer a far cheaper pricing structure with no restrictions or number of clients per plan, the layout of the app is clearer and you can feel that personal aspect of you, the client, being able to alter your programme yourself 
 
 
 
@@ -37,9 +37,9 @@ It's not immediately [obvious how TrueCoach](https://truecoach.co/) works, and y
 
 ### [PT Minder](/compare/ptminder/)
 
-* Five different pricing bands ranging from £26 to £107
+* Five different pricing bands ranging from £26 to £107 with anything between one and 250 clients
 * Clearly laid out into section showing upcoming plans, past data, reminders and financial details (allowing you to keep track of payments etc) 
-* Comprehensive list of workouts with video tutorial 
+* Comprehensive list of workouts with video tutorial (suitable for everyone from beginner to expert)
 
 ### [Trainerize](/compare/trainerize/)
 
@@ -64,13 +64,5 @@ It's not immediately [obvious how TrueCoach](https://truecoach.co/) works, and y
 * Doesn't allow you to adapt or change your workout, very specific in structure
 * Complex, confusing and very formal layout
 * No sense of what they can offer you, or how they're different
-
-### [Trainerize](/compare/trainerize/)
-
-* Corporate feel
-* Aimed at a higher class of clientele with prices up to £300 for unlimited clients
-* Not clear what the benefits are
-* Crazy pricing for something which is unclear
-* Rigid structure and no free-form training
 
 With all this in mind, it is clear Train In Blocks should be your go-to software when it comes to your fitness needs, with everything under one roof and a single layer of pricing. [So join us today](https://traininblocks.com/#pricing) and get started on your journey towards those goals. You certainly won't regret it.
