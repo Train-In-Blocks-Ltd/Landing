@@ -23,23 +23,24 @@ So let's take a look at some of the other major players in the game and how Trai
 
 My PT Hub is a comprehensive 'training centre' for both personal trainers and clients with everything in one place. On the right hand side of the dashboard you can see eight different options for clients. These include: creating a workout, messaging your coach, creating your own training package and adding nutrition plans. On the left hand side is space for personal trainers with a comprehensive drop-down menu of tutorials and YouTube videos with everything from how to keep clients motivated to making money from your subscription. This is a good idea as it enables you to send these features on to the clients and provides a visual aid for those who prefer information in this way and doesn't blind you with science. \
 You also have the option of being able to earn up to £40 simply by signing up and referring to a friend and there is a 30-day free trial for anyone to try. My PTHub is quite pricey with a £49 monthly fee for their basic plan and £42 a month annually, with unlimited clients and it's not immediately clear how to access all the elements you will need. The structure seems a little confusing on first viewing. \
-Train In Blocks will offer a far cheaper pricing structure with no restrictions or number of clients per plan, the layout of the app is clearer and you can feel that personal aspect of you, the client, being able to alter your programme yourself 
-
-
-
-Not only are [PT Distinction](https://www.ptdistinction.com/) more expensive than us, even at their most basic level, with their cheapest plan at $19.90 a month (roughly akin to £15 in our money) but they have also made life difficult for those wishing to join as only a certain number of clients can sign up to their three-step structure at any one time (three clients for the cheapest tier, 25 for the most popular 'Pro' tier and a maximum of 50 for their 'Master' tier.
-
-This three-tier pricing plan is difficult to get to grips with and it's unclear exactly what you get at each level. Train In Blocks are one of the only fitness companies to offer one price at £9.99 a month for all of the features.
+Train In Blocks will offer a far cheaper pricing structure with no restrictions or number of clients per plan, the layout of the app is clearer and you can feel that personal aspect of you, the client, being able to alter your programme yourself whereas only the trainer can do this on My PTHub. 
 
 ### [TrueCoach](/compare/truecoach/)
 
-It's not immediately [obvious how TrueCoach](https://truecoach.co/) works, and you then discover they again, like PT Distinction, have a three-tier pricing structure with a limit on the number of clients. They appear very similar to their aforementioned competitors in that they charge £18 for the Starter Plan (only five clients), £40 a month for their most popular Standard Plan (20 active clients) and an eye-popping £74 at their highest 'Pro' plan (50 clients) but each plan appears to be the same apart from the pricing tiers.
+* Comes pre-loaded with over 1,000 exercise videos with the option to upload your own so you can share with your clients from anywhere             
+* Four price bands with the most expensive at £74 a month with up to 50 active clients.
+* All TrueCoach plans include [support for teams](https://truecoach.co/features/team-accounts/ "Team Accounts") which is ideal if organisations want to give access to multiple coaches                                                     
+* Gives you an overview of all the coaches on the system, and how many clients each coach has, so you can manage your team’s client load effectively.
+* Minimalist home screen and slightly 'higgeldy piggledy' in terms of layout: you have to search quite hard to find what you need on the site
+* At Train In Blocks we are 'what you see is what you get' with everything under one roof
 
-### [PT Minder](/compare/ptminder/)
+## PT Minder
 
 * Five different pricing bands ranging from £26 to £107 with anything between one and 250 clients
 * Clearly laid out into section showing upcoming plans, past data, reminders and financial details (allowing you to keep track of payments etc) 
 * Comprehensive list of workouts with video tutorial (suitable for everyone from beginner to expert)
+*  Additional features include performance reporting, online client store, integration with existing websites, client assessments and multiple trainers.
+* Very detailed, perhaps too much so, so could potentially be hard to 'take it all in' and keep track of progress with graphs and numbers prominent
 
 ### [Trainerize](/compare/trainerize/)
 
@@ -48,21 +49,5 @@ It also gives you the option of connecting your Trainerize account with Apple Pa
 
 ### [PT Distinction](/compare/ptdistinction/)
 
-Here at Train In Blocks, we pride ourselves on flexibility and this allows us to offer you as many clients and number or type of programmes as you want: just another reason why Train In Blocks is your go-to software for all things Personal Training.
-
-Not only are [PT Distinction](https://www.ptdistinction.com/) more expensive than us, even at their most basic level, with their cheapest plan at $19.90 a month (roughly akin to £15 in our money) but they have also made life difficult for those wishing to join as only a certain number of clients can sign up to their three-step structure at any one time (three clients for the cheapest tier, 25 for the most popular 'Pro' tier and a maximum of 50 for their 'Master' tier.
-
-This three-tier pricing plan is difficult to get to grips with and it's unclear exactly what you get at each level. Train In Blocks are one of the only fitness companies to offer one price at £9.99 a month for all of the features.
-
-### [TrueCoach](/compare/truecoach/)
-
-It's not immediately [obvious how TrueCoach](https://truecoach.co/) works, and you then discover they again, like PT Distinction, have a three-tier pricing structure with a limit on the number of clients. They appear very similar to their aforementioned competitors in that they charge £18 for the Starter Plan (only five clients), £40 a month for their most popular Standard Plan (20 active clients) and an eye-popping £74 at their highest 'Pro' plan (50 clients) but each plan appears to be the same apart from the pricing tiers.
-
-### [PT Minder](/compare/ptminder/)
-
-* Charging up to £99 a month, or £200 for unlimited clients
-* Doesn't allow you to adapt or change your workout, very specific in structure
-* Complex, confusing and very formal layout
-* No sense of what they can offer you, or how they're different
-
-With all this in mind, it is clear Train In Blocks should be your go-to software when it comes to your fitness needs, with everything under one roof and a single layer of pricing. [So join us today](https://traininblocks.com/#pricing) and get started on your journey towards those goals. You certainly won't regret it.
+PT Distinction's clear USP is their "PTD Groups" feature unique to them. This allows you to create challenges, trials, packages and create group training to then sell online. Beyond that, it will save you huge amounts of time as you can copy as much content and as many schedules to all your clients simply at the click of a button. This feature is unique among all the competitors we've looked at. You can reach out to as many people as you want in double quick time either as part of the group or to individual clients. \
+PT Distinction are expensive though as their top price bracket will cost you £74 a month with a ceiling of 50 clients,
