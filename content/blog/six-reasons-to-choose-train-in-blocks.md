@@ -27,8 +27,6 @@ Train In Blocks will offer a far cheaper pricing structure with no restrictions 
 
 <markdown-image src="Screenshot 3.png alt="MyPT Hub home "></markdown-image>
 
-<!--EndFragment-->
-
 ### [TrueCoach](/compare/truecoach/)
 
 * Comes pre-loaded with over 1,000 exercise videos with the option to upload your own so you can share with your clients from anywhere             
@@ -56,6 +54,8 @@ Train In Blocks will offer a far cheaper pricing structure with no restrictions 
 
 Trainerize matches you to clients based on their needs and your skillsets as a Personal Trainer, with ten different buttons on the app. It's very 'corporate' in appearance and seems geared towards businesses, it lacks the comprehensive programme-building capabilities of others but a nice feature is, when you first sign up, it adds a fully-populated trainer to your account to give you a feel of what to expect without having to go through the process of registering with them. \
 It also gives you the option of connecting your Trainerize account with Apple Pay, Fitbit and MyFitness Pal and an example of what a typical workout looks like. You can see what a trainer's account would look like, but from a client's point of view which is a neat aspect of the app and their USP. Some of the options on the Trainerize home page are a little vague and there's a limit on clients with only a maximum of two at their cheapest price structure, £12 a month. This limits your flexibility rather than being able to reach out to a much bigger pool of clients and, although there is an option to have an account without limits, it will cost you an eye watering £300 so price is the main drawback here. 
+
+<markdown-image src="Screenshot 9.png" =" trainer screen example"></markdown-image>
 
 ### [PT Distinction](/compare/ptdistinction/)
 
