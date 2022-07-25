@@ -25,6 +25,10 @@ My PT Hub is a comprehensive 'training centre' for both personal trainers and cl
 You also have the option of being able to earn up to £40 simply by signing up and referring to a friend and there is a 30-day free trial for anyone to try. My PTHub is quite pricey with a £49 monthly fee for their basic plan and £42 a month annually, with unlimited clients and it's not immediately clear how to access all the elements you will need. The structure seems a little confusing on first viewing. \
 Train In Blocks will offer a far cheaper pricing structure with no restrictions or number of clients per plan, the layout of the app is clearer and you can feel that personal aspect of you, the client, being able to alter your programme yourself whereas only the trainer can do this on My PTHub. 
 
+<markdown-image src="Screenshot 3.png alt="MyPT Hub home "></markdown-image>
+
+<!--EndFragment-->
+
 ### [TrueCoach](/compare/truecoach/)
 
 * Comes pre-loaded with over 1,000 exercise videos with the option to upload your own so you can share with your clients from anywhere             
@@ -34,6 +38,10 @@ Train In Blocks will offer a far cheaper pricing structure with no restrictions 
 * Minimalist home screen and slightly 'higgeldy piggledy' in terms of layout: you have to search quite hard to find what you need on the site
 * At Train In Blocks we are 'what you see is what you get' with everything under one roof
 
+  <markdown-image src="Screenshot 6.png" ="True Coach demo"></markdown-image>
+
+  <markdown-image src="Screenshot 7.png" =" True Coach calendar"></markdown-image>
+
 ## PT Minder
 
 * Five different pricing bands ranging from £26 to £107 with anything between one and 250 clients
@@ -41,6 +49,8 @@ Train In Blocks will offer a far cheaper pricing structure with no restrictions 
 * Comprehensive list of workouts with video tutorial (suitable for everyone from beginner to expert)
 *  Additional features include performance reporting, online client store, integration with existing websites, client assessments and multiple trainers.
 * Very detailed, perhaps too much so, so could potentially be hard to 'take it all in' and keep track of progress with graphs and numbers prominent
+
+  <markdown-image src="Screenshot 5.png" =" PT Minder workout exercises"></markdown-image>
 
 ### [Trainerize](/compare/trainerize/)
 
