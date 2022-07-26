@@ -377,14 +377,14 @@ export default {
       window.addEventListener("click", startExitCountdown);
       window.addEventListener("touchstart", startExitCountdown);
     }
-    const self = this;
+    // const self = this;
     function startExitCountdown() {
       // Set timeout so exit intent isn't show on page load - wait 10 seconds
       setTimeout(() => {
         // Add event listener for when user leaves page
         document.addEventListener("mouseout", mouseEvent);
         // Add event listener for when user presses a key - which we listen to the escape key
-        document.addEventListener("keydown", self.exit);
+        // document.addEventListener("keydown", self.exit);
       }, 10000);
       window.removeEventListener("mousemove", startExitCountdown);
       window.removeEventListener("scroll", startExitCountdown);
