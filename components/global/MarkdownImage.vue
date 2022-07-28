@@ -1,5 +1,7 @@
 <template>
-  <img :src="imgSrc()" :alt="alt" />
+  <a :href="require(`~/assets/media-uploads/${src}`)" target="_blank" :title="alt">
+    <img :src="imgSrc()" :alt="alt" />
+  </a>
 </template>
 
 <script>
