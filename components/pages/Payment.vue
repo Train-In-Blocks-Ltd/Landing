@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 import Txt from "../elements/Txt";
 import DefaultButton from "../elements/DefaultButton";
 import CardWrapper from "../generic/CardWrapper";
@@ -107,11 +107,11 @@ export default {
     };
   },
   methods: {
-    async checkout(item, price) {
-      const response = await axios.post("/.netlify/functions/checkout", {
-        line_items: [item],
-        price: parseInt(price.replace("£", "")),
-      });
+    checkout(item, price) {
+      // const response = await axios.post("/.netlify/functions/checkout", {
+      //   line_items: [item],
+      //   price: parseInt(price.replace("£", "")),
+      // });
       if (this.$cookies.isEnabled("Google Analytics")) {
         this.gtag_report_conversion({
           value: parseInt(price.replace("£", "")),
@@ -130,8 +130,8 @@ export default {
         });
       }
       // eslint-disable-next-line no-undef
-      const stripe = await Stripe("pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX");
-      stripe.redirectToCheckout({ sessionId: response.data });
+      // const stripe = await Stripe("pk_live_shgxQjmTIkJSJjVJpi8N1RQO00aJHHNIWX");
+      // stripe.redirectToCheckout({ sessionId: response.data });
     },
     gtag_report_conversion({ url, value }) {
       const callback = function () {
