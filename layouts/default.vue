@@ -246,6 +246,37 @@ div.cookieControl__ModalContent label:before {
         </div>
       </div>
     </transition>
+
+    <!-- Business Closed Modal -->
+    <transition name="modal">
+      <div
+        v-if="businessCloseModal"
+        id="exit-modal"
+        style="z-index: 71"
+        class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full"
+        @click="exit"
+      >
+        <div
+          class="relative top-20 mx-auto p-8 rounded-md bg-paper dark:bg-slate"
+        >
+          <a
+            class="absolute top-8 right-8 cursor-pointer hover:opacity-60 transition-all rounded-none"
+            href="#"
+            @click.prevent="businessCloseModal = false"
+            v-html="require('../assets/svg/close.svg?include')"
+          />
+          <div class="text-center">
+            <txt type="title" class="my-4"> Thanks for being on this journey with us! </txt>
+            <txt type="large-body" class="my-8">
+              We've taken the unfortunate decision to close the business down, so you won't be able to sign up for a new account anymore.
+            </txt>
+            <txt type="large-body" class="my-8">
+              Please feel free to use this site as a resource, browse our blog posts, and have a look at what we achieved.
+            </txt>
+          </div>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -271,6 +302,7 @@ export default {
       openNav: false,
       exitIntent: false,
       darkmodeOn: false,
+      businessCloseModal: true,
     };
   },
   head() {
